@@ -1,0 +1,32 @@
+services:
+  db:
+    container_name: konsolifin_db
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql:/var/lib/mysql
+
+  web:
+    container_name: konsolifin_web
+    image: thecodingmachine/php:8.4-v4-apache
+    working_dir: /var/www
+    ports:
+      - "8080:80"
+      - "9003:9003"
+    volumes:
+      - ./drupal:/var/www
+      - ./docker/apache_logs:/var/log/apache2
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/web
+      PHP_EXTENSION_XDEBUG: 1
+      PHP_EXTENSION_GD: 1
+      PHP_INI_MEMORY_LIMIT: 512M
+      PHP_INI_XDEBUG__DISCOVER_CLIENT_HOST: 1
+      PHP_INI_XDEBUG__CLIENT_PORT: 9000
+      # PHP_INI_XDEBUG__START_WITH_REQUEST: 1
