@@ -1,0 +1,116 @@
+uuid: 0dbfd9c5-786f-494f-9dae-01a5ee92fe73
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_taxonomy_term_peli
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Peli)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: peli
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  revision_id:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_taxonomy_term_views_rss_itunes_category
+        - upgrade_d7_taxonomy_term_alustat
+        - upgrade_d7_taxonomy_term_ihminen
+        - upgrade_d7_taxonomy_term_lajityyppi
+        - upgrade_d7_taxonomy_term_peli
+        - upgrade_d7_taxonomy_term_pelijulkaisijat
+        - upgrade_d7_taxonomy_term_pelistudiot
+        - upgrade_d7_taxonomy_term_sarja
+        - upgrade_d7_taxonomy_term_alustatarkenne
+        - upgrade_d7_taxonomy_term_ilmoituskategoriat
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+  field_nostokuva:
+    -
+      plugin: sub_process
+      source: field_nostokuva
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_taustapahvi:
+    -
+      plugin: sub_process
+      source: field_taustapahvi
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_www_sivu:
+    -
+      plugin: get
+      source: field_www_sivu
+  field_forum_ketju:
+    -
+      plugin: get
+      source: field_forum_ketju
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: peli
+idMap: {  }
+migration_dependencies:
+  required:
+    - upgrade_d7_taxonomy_vocabulary
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_taxonomy_vocabulary
+include: null

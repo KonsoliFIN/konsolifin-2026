@@ -1,0 +1,38 @@
+uuid: f229f248-857c-4f22-8440-e186cde82f00
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_shortcut_set
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Shortcut sets'
+source:
+  plugin: d7_shortcut_set
+process:
+  id:
+    -
+      plugin: static_map
+      bypass: true
+      source: set_name
+      map:
+        shortcut-set-1: default
+    -
+      plugin: machine_name
+      field: id
+      replace_pattern: '/[^a-z0-9-]+/'
+  label:
+    -
+      plugin: get
+      source: title
+destination:
+  plugin: 'entity:shortcut_set'
+idMap: {  }
+migration_dependencies:
+  required: {  }
+  optional: {  }
+include: null
