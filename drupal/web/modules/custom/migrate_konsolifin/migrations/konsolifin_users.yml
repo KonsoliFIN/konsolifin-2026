@@ -1,0 +1,24 @@
+id: konsolifin_users
+label: Migrate users from Drupal 7
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_user
+process:
+  skip_admin_user:
+    plugin: skip_on_value
+    method: row
+    source: uid
+    value: 1
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: status
+  timezone: timezone
+destination:
+  plugin: entity:user

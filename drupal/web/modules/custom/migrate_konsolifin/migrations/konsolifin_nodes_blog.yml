@@ -1,0 +1,46 @@
+id: konsolifin_nodes_blog
+label: Migrate blog nodes from Drupal 7
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_node_with_alias
+  node_type: blog
+process:
+  nid: nid
+  vid: vid
+  type:
+    plugin: default_value
+    default_value: blog
+  langcode:
+    plugin: default_value
+    default_value: fi
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_kansikuva/target_id:
+    plugin: migration_lookup
+    migration: jryi_media_entities
+    source: field_kuva/0/fid
+  path/alias: url_alias
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: entity:node
+  default_bundle: blog
+migration_dependencies:
+  required:
+    - jryi_users
+    - jryi_files
+    - jryi_media_entities

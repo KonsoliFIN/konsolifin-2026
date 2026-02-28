@@ -1,0 +1,39 @@
+id: konsolifin_media_entities
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+label: 'Migrate images to media entities'
+source:
+  plugin: d7_file
+  scheme: public
+  constants:
+    source_base_path: 'https://jryi.net/'
+process:
+  name: filename
+  field_media_image/target_id:
+    plugin: migration_lookup
+    migration: jryi_files
+    source: fid
+  field_media_image/alt: filename
+  status:
+    plugin: default_value
+    default_value: 1
+  created: timestamp
+  changed: timestamp
+  uid:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: uid
+      message: 'No user for this file.'
+    -
+      plugin: migration_lookup
+      migration: jryi_users
+      no_stub: true
+destination:
+  plugin: 'entity:media'
+  default_bundle: image
+migration_dependencies:
+  required:
+    - jryi_users
+    - jryi_files

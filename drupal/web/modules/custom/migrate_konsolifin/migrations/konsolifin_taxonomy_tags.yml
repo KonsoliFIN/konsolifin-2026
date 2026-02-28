@@ -1,0 +1,23 @@
+id: jryi_taxonomy_tags
+label: Migrate taxonomy terms from Drupal 7
+migration_tags:
+  - Jyri
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_taxonomy_term
+  bundle: tags
+process:
+  tid: tid
+  vid:
+    plugin: default_value
+    default_value: tags
+  name: name
+  description: description
+  weight: weight
+  parent:
+    plugin: skip_on_empty
+    method: process
+    source: parent
+destination:
+  plugin: entity:taxonomy_term
+  default_bundle: tags
