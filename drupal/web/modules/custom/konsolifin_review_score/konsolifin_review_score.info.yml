@@ -1,0 +1,7 @@
+name: Konsolifin Review Score
+type: module
+description: Provides a review score field type displayed as a five-star rating
+core_version_requirement: ^11
+package: KonsoliFIN
+dependencies:
+  - drupal:field

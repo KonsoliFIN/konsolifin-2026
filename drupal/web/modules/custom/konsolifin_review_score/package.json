@@ -1,0 +1,12 @@
+{
+  "name": "konsolifin-review-score",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JS tests for konsolifin_review_score Drupal module",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

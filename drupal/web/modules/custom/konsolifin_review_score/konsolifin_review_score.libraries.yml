@@ -1,0 +1,14 @@
+star-rating:
+  css:
+    component:
+      css/star-rating.css: {}
+
+star-widget:
+  js:
+    js/star-widget.js: {}
+  css:
+    component:
+      css/star-rating.css: {}
+  dependencies:
+    - core/drupal
+    - core/once

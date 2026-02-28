@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Star rating styles for the konsolifin_review_score module.
+ *
+ * Stars are rendered using CSS ::before pseudo-elements with the Unicode
+ * star character ★ (U+2605). Partial fills use linear-gradient with
+ * background-clip: text. No external image assets are required.
+ */
+
+.review-score-stars {
+  display: inline-flex;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.review-score-star {
+  display: inline-block;
+  position: relative;
+}
+
+.review-score-star::before {
+  content: "\2605";
+  display: inline-block;
+}
+
+/* Fully colored star */
+.review-score-star.star--full::before {
+  color: #f5a623;
+}
+
+/* Dimmed/empty star */
+.review-score-star.star--empty::before {
+  color: #ccc;
+}
+
+/*
+ * Partial star fills are applied via inline style attributes in PHP using:
+ *   background: linear-gradient(90deg, #f5a623 {pct}%, #ccc {pct}%);
+ *   -webkit-background-clip: text;
+ *   background-clip: text;
+ *   color: transparent;
+ */
+.review-score-star.star--partial::before {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
