@@ -1,0 +1,14 @@
+uuid: 313858f8-f882-4a4b-9329-9a812cdbc564
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.toimitus
+  module:
+    - user
+id: user_remove_role_action.toimitus
+label: 'Remove the toimitus role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: toimitus

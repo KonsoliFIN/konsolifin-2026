@@ -23,10 +23,14 @@ module:
   history: 0
   image: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
+  migrate_devel: 0
   migrate_drupal: 0
+  migrate_konsolifin: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0

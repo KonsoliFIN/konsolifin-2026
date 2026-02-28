@@ -1,0 +1,14 @@
+uuid: f3304ed5-ced8-4706-9e96-a8becba6db72
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.toimitus
+  module:
+    - user
+id: user_add_role_action.toimitus
+label: 'Add the toimitus role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: toimitus

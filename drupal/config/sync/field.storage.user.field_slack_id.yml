@@ -1,0 +1,21 @@
+uuid: e0868011-fcf9-4d57-9493-32e12fea31ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_slack_id
+field_name: field_slack_id
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

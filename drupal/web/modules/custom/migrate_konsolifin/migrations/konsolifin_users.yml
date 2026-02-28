@@ -20,5 +20,32 @@ process:
   login: login
   status: status
   timezone: timezone
+
+  init:
+    -
+      plugin: get
+      source: init
+  roles:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_user_roles
+      source: roles
+  field_oikea_nimi:
+    -
+      plugin: get
+      source: field_oikea_nimi
+  field_esittely:
+    -
+      plugin: get
+      source: field_esittely
+  field_xenforo_id:
+    -
+      plugin: get
+      source: xenforo_auth_xf_uid
+  field_slack_id:
+    -
+      plugin: get
+      source: field_slack_user_id
+
 destination:
   plugin: entity:user

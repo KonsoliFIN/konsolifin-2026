@@ -1,0 +1,14 @@
+uuid: 41bdd2d2-fccb-40f8-a873-0df55284b4d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.yhteisosisallontuottaja
+  module:
+    - user
+id: user_remove_role_action.yhteisosisallontuottaja
+label: 'Remove the yhteisosisallontuottaja role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: yhteisosisallontuottaja

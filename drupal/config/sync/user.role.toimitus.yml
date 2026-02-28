@@ -1,0 +1,35 @@
+uuid: e892d4fb-6d0a-4362-af0e-f6c45f16dad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.page
+  module:
+    - comment
+    - filter
+    - node
+    - path
+    - shortcut
+    - system
+    - toolbar
+id: toimitus
+label: toimitus
+weight: 4
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer comments'
+  - 'administer nodes'
+  - 'administer url aliases'
+  - 'create page content'
+  - 'create url aliases'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'switch shortcut sets'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

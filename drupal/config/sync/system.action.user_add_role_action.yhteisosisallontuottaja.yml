@@ -1,0 +1,14 @@
+uuid: 34157387-53c2-4b23-8a1e-00a12cbd1fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.yhteisosisallontuottaja
+  module:
+    - user
+id: user_add_role_action.yhteisosisallontuottaja
+label: 'Add the yhteisosisallontuottaja role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: yhteisosisallontuottaja

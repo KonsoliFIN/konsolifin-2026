@@ -1,0 +1,10 @@
+uuid: 7d09aab4-261c-4f9e-a997-772eaab30677
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_konsolifin
+label: migrate_konsolifin
+description: ''
+source_type: null
+module: null
+shared_configuration: null

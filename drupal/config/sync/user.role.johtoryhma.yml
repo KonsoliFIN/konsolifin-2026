@@ -1,0 +1,36 @@
+uuid: a16d8408-9566-42b0-b9e4-4312822a33de
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.page
+  module:
+    - filter
+    - node
+    - shortcut
+    - system
+    - toolbar
+id: johtoryhma
+label: johtoryhmä
+weight: 3
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer themes'
+  - 'administer users'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'switch shortcut sets'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

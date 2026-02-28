@@ -1,0 +1,14 @@
+uuid: 5e36300e-1dfe-4790-9875-733ca4cea438
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.johtoryhma
+  module:
+    - user
+id: user_add_role_action.johtoryhma
+label: 'Add the johtoryhmä role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: johtoryhma

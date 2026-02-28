@@ -1,0 +1,14 @@
+uuid: 74425e47-2148-4bef-b7ca-4672e3ef73b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.kilpailuvastuuhenkilo
+  module:
+    - user
+id: user_add_role_action.kilpailuvastuuhenkilo
+label: 'Add the Kilpailuvastuuhenkilö role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: kilpailuvastuuhenkilo

@@ -1,0 +1,14 @@
+uuid: fd366177-ea72-47b0-aa28-d6123130c82a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.johtoryhma
+  module:
+    - user
+id: user_remove_role_action.johtoryhma
+label: 'Remove the johtoryhmä role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: johtoryhma

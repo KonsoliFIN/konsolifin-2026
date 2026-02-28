@@ -1,0 +1,82 @@
+uuid: 05efb8e6-760d-4713-8c33-c10745625545
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.page
+  module:
+    - announcements_feed
+    - block
+    - comment
+    - contextual
+    - filter
+    - image
+    - node
+    - path
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+id: yllapitaja
+label: Ylläpitäjä
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access announcements'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer actions'
+  - 'administer blocks'
+  - 'administer comments'
+  - 'administer content types'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer search'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'change own username'
+  - 'create article content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'delete any article content'
+  - 'delete any page content'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'post comments'
+  - 'search content'
+  - 'select account cancellation method'
+  - 'skip comment approval'
+  - 'switch shortcut sets'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

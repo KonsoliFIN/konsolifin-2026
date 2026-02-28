@@ -1,0 +1,14 @@
+uuid: 3444e66f-bcc7-484b-957b-910f34a7a35f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.yllapitaja
+  module:
+    - user
+id: user_remove_role_action.yllapitaja
+label: 'Remove the Ylläpitäjä role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: yllapitaja

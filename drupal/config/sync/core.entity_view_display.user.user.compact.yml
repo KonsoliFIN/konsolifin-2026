@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_esittely
+    - field.field.user.user.field_oikea_nimi
+    - field.field.user.user.field_slack_id
+    - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -20,12 +24,16 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: content
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_esittely: true
+  field_oikea_nimi: true
+  field_slack_id: true
+  field_xenforo_id: true
   member_for: true

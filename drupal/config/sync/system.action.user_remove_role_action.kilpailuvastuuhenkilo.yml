@@ -1,0 +1,14 @@
+uuid: 5175c46c-c0f2-47fb-8ccc-9c56fb6325db
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.kilpailuvastuuhenkilo
+  module:
+    - user
+id: user_remove_role_action.kilpailuvastuuhenkilo
+label: 'Remove the Kilpailuvastuuhenkilö role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: kilpailuvastuuhenkilo

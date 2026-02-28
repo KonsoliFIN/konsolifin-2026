@@ -2,21 +2,20 @@ uuid: 7e4ebed0-ae7b-48e9-9515-328718c18edd
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
     - comment
-    - filter
+    - media
     - search
     - system
 _core:
   default_config_hash: xLG41YbRo2NP-0SgRNTkMzLEuaeibanGXgUTbdIcIIg
 id: anonymous
-label: 'Anonymous user'
+label: 'anonyymi käyttäjä'
 weight: 0
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access user profiles'
   - 'search content'
-  - 'use text format restricted_html'
+  - 'view media'

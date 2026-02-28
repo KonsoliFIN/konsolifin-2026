@@ -1,0 +1,19 @@
+uuid: f2154ff9-5179-4bb4-816f-ea5f481e446a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+id: yhteisosisallontuottaja
+label: yhteisosisallontuottaja
+weight: 5
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,22 @@
+uuid: 0de377ff-1d4b-40ef-9784-862e359559a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_esittely
+  module:
+    - text
+    - user
+id: user.user.field_esittely
+field_name: field_esittely
+entity_type: user
+bundle: user
+label: Esittely
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

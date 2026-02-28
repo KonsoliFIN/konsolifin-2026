@@ -1,0 +1,14 @@
+uuid: 29eb7788-3c66-4477-a18a-cd9e6f991101
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.yllapitaja
+  module:
+    - user
+id: user_add_role_action.yllapitaja
+label: 'Add the Ylläpitäjä role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: yllapitaja
