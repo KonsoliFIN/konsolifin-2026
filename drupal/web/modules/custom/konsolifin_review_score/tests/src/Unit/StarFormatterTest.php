@@ -10,7 +10,8 @@ use PHPUnit\Framework\TestCase;
 /**
  * Unit tests for StarFormatter field formatter.
  *
- * Tests computeStarFills() with null concept and boundary values.
+ * Tests computeStarFills() with null concept and boundary values,
+ * and buildStarElement() for image-based rendering.
  *
  * @group konsolifin_review_score
  *
@@ -29,12 +30,8 @@ class StarFormatterTest extends TestCase {
    * **Validates: Requirements 3.7**
    */
   public function testNullScoreConceptProducesNoOutput(): void {
-    // computeStarFills takes int, so null is handled at viewElements level.
-    // We verify that score 0 produces valid fills (all zeros), confirming
-    // that the null guard must happen before computeStarFills is called.
     $fills = StarFormatter::computeStarFills(0);
     $this->assertCount(5, $fills);
-    // All should be 0.0, meaning "no output" is distinct from "score 0".
     foreach ($fills as $fill) {
       $this->assertSame(0.0, $fill);
     }
@@ -93,6 +90,46 @@ class StarFormatterTest extends TestCase {
     $fills = StarFormatter::computeStarFills(320);
     $this->assertCount(5, $fills);
     $this->assertSame([1.0, 1.0, 1.0, 1.0, 0.0], $fills);
+  }
+
+  /**
+   * Tests that buildStarElement for a full star contains gold and dim images.
+   */
+  public function testBuildStarElementFull(): void {
+    $star = StarFormatter::buildStarElement(1.0, '/images/star_gold.png', '/images/star_dim.png');
+
+    $this->assertSame('span', $star['#tag']);
+    $this->assertContains('star--full', $star['#attributes']['class']);
+    // Dim image present.
+    $this->assertSame('img', $star['dim_img']['#tag']);
+    $this->assertSame('/images/star_dim.png', $star['dim_img']['#attributes']['src']);
+    // Gold image present without clip-path.
+    $this->assertSame('img', $star['gold_img']['#tag']);
+    $this->assertSame('/images/star_gold.png', $star['gold_img']['#attributes']['src']);
+    $this->assertArrayNotHasKey('style', $star['gold_img']['#attributes']);
+  }
+
+  /**
+   * Tests that buildStarElement for an empty star has no gold image.
+   */
+  public function testBuildStarElementEmpty(): void {
+    $star = StarFormatter::buildStarElement(0.0, '/images/star_gold.png', '/images/star_dim.png');
+
+    $this->assertContains('star--empty', $star['#attributes']['class']);
+    $this->assertSame('img', $star['dim_img']['#tag']);
+    $this->assertArrayNotHasKey('gold_img', $star);
+  }
+
+  /**
+   * Tests that buildStarElement for a partial star has gold image with clip-path.
+   */
+  public function testBuildStarElementPartial(): void {
+    $star = StarFormatter::buildStarElement(0.5, '/images/star_gold.png', '/images/star_dim.png');
+
+    $this->assertContains('star--partial', $star['#attributes']['class']);
+    $this->assertSame('img', $star['dim_img']['#tag']);
+    $this->assertSame('img', $star['gold_img']['#tag']);
+    $this->assertStringContainsString('clip-path: inset(0 50%', $star['gold_img']['#attributes']['style']);
   }
 
 }

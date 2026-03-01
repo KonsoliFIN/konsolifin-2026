@@ -2,46 +2,57 @@
  * @file
  * Star rating styles for the konsolifin_review_score module.
  *
- * Stars are rendered using CSS ::before pseudo-elements with the Unicode
- * star character ★ (U+2605). Partial fills use linear-gradient with
- * background-clip: text. No external image assets are required.
+ * Stars are rendered using star_gold.png and star_dim.png image assets.
+ * Partial fills use a clip-path approach with layered gold/dim images.
  */
 
 .review-score-stars {
   display: inline-flex;
-  font-size: 1.5rem;
-  line-height: 1;
+  width: var(--review-score-width, 200px);
+  line-height: 0;
 }
 
 .review-score-star {
   display: inline-block;
   position: relative;
+  flex: 1 1 0;
+  aspect-ratio: 1 / 1;
 }
 
-.review-score-star::before {
-  content: "\2605";
-  display: inline-block;
+/* Dim (background) star image — always visible */
+.review-score-star .star-img-dim {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* Fully colored star */
-.review-score-star.star--full::before {
-  color: #f5a623;
+/* Gold (foreground) star image — layered on top */
+.review-score-star .star-img-gold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* Dimmed/empty star */
-.review-score-star.star--empty::before {
-  color: #ccc;
+/* Fully colored star: gold fully visible */
+.review-score-star.star--full .star-img-gold {
+  clip-path: none;
 }
 
-/*
- * Partial star fills are applied via inline style attributes in PHP using:
- *   background: linear-gradient(90deg, #f5a623 {pct}%, #ccc {pct}%);
- *   -webkit-background-clip: text;
- *   background-clip: text;
- *   color: transparent;
- */
-.review-score-star.star--partial::before {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* Empty star: gold hidden */
+.review-score-star.star--empty .star-img-gold {
+  display: none;
+}
+
+/* Partial star: gold clipped via inline style clip-path */
+.review-score-star.star--partial .star-img-gold {
+  /* clip-path set via inline style: inset(0 {100-pct}% 0 0) */
+}
+
+/* Widget-specific: pointer cursor */
+.review-score-widget .review-score-star {
+  cursor: pointer;
 }

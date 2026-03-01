@@ -26,8 +26,17 @@ class StarWidgetTest extends TestCase {
   private function callFormElement(int $score): array {
     $widget = $this->getMockBuilder(StarWidget::class)
       ->disableOriginalConstructor()
-      ->onlyMethods([])
+      ->onlyMethods(['getSetting', 'getImagePaths'])
       ->getMock();
+
+    $widget->method('getSetting')->willReturnMap([
+      ['width', 200],
+    ]);
+
+    $widget->method('getImagePaths')->willReturn([
+      'gold' => '/modules/custom/konsolifin_review_score/images/star_gold.png',
+      'dim' => '/modules/custom/konsolifin_review_score/images/star_dim.png',
+    ]);
 
     $item = new \stdClass();
     $item->value = $score;

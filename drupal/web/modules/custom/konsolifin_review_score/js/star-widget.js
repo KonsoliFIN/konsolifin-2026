@@ -1,6 +1,8 @@
 /**
  * @file
  * Interactive star widget behavior for the konsolifin_review_score module.
+ *
+ * Uses star_gold.png and star_dim.png images with clip-path for partial fills.
  */
 
 (function (Drupal, once) {
@@ -56,25 +58,53 @@
    */
   function updateStarVisuals(container, score) {
     var stars = container.querySelectorAll('.review-score-star');
+    var goldSrc = container.getAttribute('data-gold-src');
+    var dimSrc = container.getAttribute('data-dim-src');
     var fillFraction = (score !== null && score !== '') ? score / 400 : 0;
 
     for (var i = 0; i < stars.length; i++) {
       var starFill = Math.min(1, Math.max(0, fillFraction * 5 - i));
+      var star = stars[i];
 
       // Remove existing state classes.
-      stars[i].classList.remove('star--full', 'star--empty', 'star--partial');
-      stars[i].removeAttribute('style');
+      star.classList.remove('star--full', 'star--empty', 'star--partial');
+
+      // Remove existing gold image if any.
+      var existingGold = star.querySelector('.star-img-gold');
+      if (existingGold) {
+        existingGold.remove();
+      }
+
+      // Ensure dim image exists.
+      var dimImg = star.querySelector('.star-img-dim');
+      if (!dimImg) {
+        dimImg = document.createElement('img');
+        dimImg.src = dimSrc;
+        dimImg.alt = '';
+        dimImg.className = 'star-img-dim';
+        star.appendChild(dimImg);
+      }
 
       if (starFill >= 1.0) {
-        stars[i].classList.add('star--full');
+        star.classList.add('star--full');
+        var goldImg = document.createElement('img');
+        goldImg.src = goldSrc;
+        goldImg.alt = '';
+        goldImg.className = 'star-img-gold';
+        star.appendChild(goldImg);
       }
       else if (starFill <= 0.0) {
-        stars[i].classList.add('star--empty');
+        star.classList.add('star--empty');
       }
       else {
         var pct = starFill * 100;
-        stars[i].classList.add('star--partial');
-        stars[i].style.background = 'linear-gradient(90deg, #f5a623 ' + pct + '%, #ccc ' + pct + '%)';
+        star.classList.add('star--partial');
+        var goldImgPartial = document.createElement('img');
+        goldImgPartial.src = goldSrc;
+        goldImgPartial.alt = '';
+        goldImgPartial.className = 'star-img-gold';
+        goldImgPartial.style.clipPath = 'inset(0 ' + (100 - pct).toFixed(2) + '% 0 0)';
+        star.appendChild(goldImgPartial);
       }
     }
   }
