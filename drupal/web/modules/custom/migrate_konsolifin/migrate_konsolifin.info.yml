@@ -5,8 +5,12 @@ package: KonsoliFIN
 core_version_requirement: ^11
 dependencies:
   - drupal:migrate
-  - drupal:node
-  - drupal:taxonomy
+  - drupal:migrate_drupal
+  - drupal:migrate_plus
+  - drupal:migrate_tools
+  - drupal:media
   - drupal:file
-  - migrate_plus:migrate_plus
-  - migrate_tools:migrate_tools
+  - drupal:image
+  - drupal:media_library
+  - migrate_file_to_media:migrate_file_to_media
+  

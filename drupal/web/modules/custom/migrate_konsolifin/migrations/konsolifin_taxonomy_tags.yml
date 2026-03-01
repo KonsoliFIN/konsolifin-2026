@@ -1,7 +1,7 @@
-id: jryi_taxonomy_tags
+id: konsolifin_taxonomy_tags
 label: Migrate taxonomy terms from Drupal 7
 migration_tags:
-  - Jyri
+  - KonsoliFIN
 migration_group: migrate_konsolifin
 source:
   plugin: d7_taxonomy_term
