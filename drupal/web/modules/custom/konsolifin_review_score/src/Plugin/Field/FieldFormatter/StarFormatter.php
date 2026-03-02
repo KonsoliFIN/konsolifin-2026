@@ -146,10 +146,8 @@ class StarFormatter extends FormatterBase {
    */
   public function viewElements(FieldItemListInterface $items, $langcode): array {
     $elements = [];
-    $modulePath = $this->fieldDefinition->getFieldStorageDefinition()
-      ->getProvider();
-    // Build image paths relative to the module.
-    $basePath = \Drupal::service('extension.list.module')->getPath($modulePath);
+    // Build image paths relative to this module.
+    $basePath = \Drupal::service('extension.list.module')->getPath('konsolifin_review_score');
     $goldPath = '/' . $basePath . '/images/star_gold.png';
     $dimPath = '/' . $basePath . '/images/star_dim.png';
     $width = (int) $this->getSetting('width');
