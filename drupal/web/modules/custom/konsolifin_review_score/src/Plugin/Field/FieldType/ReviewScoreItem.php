@@ -29,7 +29,12 @@ class ReviewScoreItem extends FieldItemBase {
     $properties = [];
 
     $properties['value'] = DataDefinition::create('integer')
-      ->setLabel(new TranslatableMarkup('Score'));
+      ->setLabel(new TranslatableMarkup('Score'))
+      ->addConstraint('Range', [
+        'min' => 0,
+        'max' => 400,
+        'notInRangeMessage' => 'The review score must be between 0 and 400.',
+      ]);
 
     return $properties;
   }
@@ -55,22 +60,6 @@ class ReviewScoreItem extends FieldItemBase {
   public function isEmpty(): bool {
     $value = $this->get('value')->getValue();
     return $value === NULL;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getConstraints(): array {
-    $constraints = parent::getConstraints();
-
-    $constraint_manager = $this->getTypedDataManager()->getValidationConstraintManager();
-    $constraints[] = $constraint_manager->create('Range', [
-      'min' => 0,
-      'max' => 400,
-      'notInRangeMessage' => 'The review score must be between 0 and 400.',
-    ]);
-
-    return $constraints;
   }
 
   /**
