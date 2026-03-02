@@ -1,0 +1,75 @@
+id: konsolifin_taxonomy_ihmiset
+label: Migrate people taxonomy terms from Drupal 7
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_taxonomy_term
+  bundle: ihminen
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  revision_id:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: konsolifin_taxonomy_ihmiset
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+  field_nostokuva:
+    -
+      plugin: sub_process
+      source: field_nostokuva
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: ihminen
+migration_dependencies:
+  required:
+    - konsolifin_taxonomy_vocabulary

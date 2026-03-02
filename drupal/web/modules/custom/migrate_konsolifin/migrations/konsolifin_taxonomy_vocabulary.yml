@@ -1,0 +1,34 @@
+id: konsolifin_taxonomy_vocabulary
+label: 'Taxonomy vocabularies'
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_taxonomy_vocabulary
+process:
+  vid:
+    -
+      plugin: make_unique_entity_field
+      source: machine_name
+      entity_type: taxonomy_vocabulary
+      field: vid
+      length: 30
+      migrated: true
+  label:
+    -
+      plugin: get
+      source: name
+  name:
+    -
+      plugin: get
+      source: name
+  description:
+    -
+      plugin: get
+      source: description
+  weight:
+    -
+      plugin: get
+      source: weight
+destination:
+  plugin: 'entity:taxonomy_vocabulary'
