@@ -16,7 +16,6 @@ dependencies:
     - node
     - path
     - search
-    - shortcut
     - system
     - taxonomy
     - toolbar
@@ -47,7 +46,6 @@ permissions:
   - 'administer nodes'
   - 'administer permissions'
   - 'administer search'
-  - 'administer shortcuts'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'
@@ -61,7 +59,6 @@ permissions:
   - 'create article content'
   - 'create page content'
   - 'create url aliases'
-  - 'customize shortcut links'
   - 'delete any article content'
   - 'delete any page content'
   - 'delete own article content'
@@ -75,7 +72,6 @@ permissions:
   - 'search content'
   - 'select account cancellation method'
   - 'skip comment approval'
-  - 'switch shortcut sets'
   - 'use advanced search'
   - 'use text format full_html'
   - 'view own unpublished content'

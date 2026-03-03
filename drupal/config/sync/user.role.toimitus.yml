@@ -10,7 +10,6 @@ dependencies:
     - filter
     - node
     - path
-    - shortcut
     - system
     - toolbar
 id: toimitus
@@ -29,7 +28,6 @@ permissions:
   - 'create url aliases'
   - 'edit any page content'
   - 'edit own page content'
-  - 'switch shortcut sets'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

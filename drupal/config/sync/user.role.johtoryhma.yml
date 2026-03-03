@@ -8,7 +8,6 @@ dependencies:
   module:
     - filter
     - node
-    - shortcut
     - system
     - toolbar
 id: johtoryhma
@@ -30,7 +29,6 @@ permissions:
   - 'delete own page content'
   - 'edit any page content'
   - 'edit own page content'
-  - 'switch shortcut sets'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'
