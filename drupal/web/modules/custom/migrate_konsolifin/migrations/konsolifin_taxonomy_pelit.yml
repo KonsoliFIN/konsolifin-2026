@@ -17,13 +17,8 @@ process:
     -
       plugin: get
       source: format
-  field_www_sivu:
-    plugin: sub_process
-    source: field_www_sivu
-    process:
-      uri: url
-      title: title
-      options: attributes
+  field_www_sivu/uri: field_www_sivu/0/value
+  field_www_sivu/title: field_www_sivu/0/title
   field_hero_kuva:
     plugin: migration_lookup
     migration: konsolifin_media_images
