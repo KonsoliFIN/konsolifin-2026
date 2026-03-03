@@ -1,0 +1,9 @@
+uuid: e54f85c0-c6e6-4570-8921-766f4e292a84
+langcode: en
+status: true
+dependencies: {  }
+name: Peli
+vid: peli
+description: 'Mihin pellin (tai -sarjaan) arvostelu, artikkeli tai uutinen liittyy'
+weight: -10
+new_revision: false

@@ -1,0 +1,54 @@
+uuid: d4e1a5cb-4342-4e40-b60e-948c8a74437f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.peli.field_forum_ketju
+    - field.field.taxonomy_term.peli.field_hero_kuva
+    - field.field.taxonomy_term.peli.field_www_sivu
+    - taxonomy.vocabulary.peli
+  module:
+    - link
+    - text
+id: taxonomy_term.peli.default
+targetEntityType: taxonomy_term
+bundle: peli
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_forum_ketju:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_www_sivu:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

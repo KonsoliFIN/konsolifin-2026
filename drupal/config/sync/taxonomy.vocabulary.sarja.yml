@@ -1,0 +1,9 @@
+uuid: cbbae032-84f7-43f5-b18b-3a755a7d8f71
+langcode: en
+status: true
+dependencies: {  }
+name: Sarja
+vid: sarja
+description: 'Juttusarjan yhteen kokoava termi'
+weight: 0
+new_revision: false

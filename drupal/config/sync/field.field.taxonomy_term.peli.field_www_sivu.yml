@@ -1,0 +1,23 @@
+uuid: d0c2ca09-a51e-4d1e-a5b0-1ebb2ced4282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_www_sivu
+    - taxonomy.vocabulary.peli
+  module:
+    - link
+id: taxonomy_term.peli.field_www_sivu
+field_name: field_www_sivu
+entity_type: taxonomy_term
+bundle: peli
+label: WWW-sivu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

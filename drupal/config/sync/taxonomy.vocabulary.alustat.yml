@@ -1,0 +1,9 @@
+uuid: 76f83d86-1a57-4636-8ac6-ed7d5e8ae55b
+langcode: en
+status: true
+dependencies: {  }
+name: Alusta
+vid: alustat
+description: 'Mihin konsoliin tai muuhun pelilaitteeseen sisältö liittyy'
+weight: -9
+new_revision: false

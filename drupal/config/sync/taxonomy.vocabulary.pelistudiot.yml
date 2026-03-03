@@ -1,0 +1,9 @@
+uuid: cc592fed-ae0f-424a-9665-884a3f3b5e00
+langcode: en
+status: true
+dependencies: {  }
+name: Pelistudio
+vid: pelistudiot
+description: 'Pelikehittäjät, jotka liittyvät juttuun'
+weight: 0
+new_revision: false

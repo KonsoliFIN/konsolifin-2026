@@ -1,0 +1,19 @@
+uuid: 4ab231d7-150d-4704-9a78-b4a11d32410c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_forum_ketju
+    - taxonomy.vocabulary.peli
+id: taxonomy_term.peli.field_forum_ketju
+field_name: field_forum_ketju
+entity_type: taxonomy_term
+bundle: peli
+label: Forum-ketju
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

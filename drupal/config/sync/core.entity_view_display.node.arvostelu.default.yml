@@ -1,0 +1,29 @@
+uuid: fe16b460-fc07-484a-b68f-218c964bcb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.arvostelu.field_arvosana
+    - node.type.arvostelu
+  module:
+    - konsolifin_review_score
+    - user
+id: node.arvostelu.default
+targetEntityType: node
+bundle: arvostelu
+mode: default
+content:
+  field_arvosana:
+    type: star_formatter
+    label: above
+    settings:
+      width: 200
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

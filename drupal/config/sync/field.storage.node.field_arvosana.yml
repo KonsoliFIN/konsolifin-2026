@@ -1,0 +1,19 @@
+uuid: 4ec23765-5aa5-4fdf-bdc0-82d2695c5eda
+langcode: en
+status: true
+dependencies:
+  module:
+    - konsolifin_review_score
+    - node
+id: node.field_arvosana
+field_name: field_arvosana
+entity_type: node
+type: review_score
+settings: {  }
+module: konsolifin_review_score
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

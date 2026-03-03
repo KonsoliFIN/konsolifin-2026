@@ -1,0 +1,9 @@
+uuid: a5c53494-1c7b-4c3f-ad99-cd0d1e74633b
+langcode: en
+status: true
+dependencies: {  }
+name: Alustatarkenne
+vid: alustatarkenne
+description: 'Mikäli alustasta on useita toisistaan poikkeavia variantteja, tällä voidaan spesifioida tarkka malli'
+weight: 0
+new_revision: false

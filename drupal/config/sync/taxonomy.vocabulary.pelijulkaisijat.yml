@@ -1,0 +1,9 @@
+uuid: 27ec1c6a-5388-422b-aaf8-7983fa9d1007
+langcode: en
+status: true
+dependencies: {  }
+name: Pelijulkaisija
+vid: pelijulkaisijat
+description: 'Julkaisijat, jotka liittyvät juttuihin'
+weight: 0
+new_revision: false

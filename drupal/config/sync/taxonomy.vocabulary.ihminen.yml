@@ -1,0 +1,9 @@
+uuid: f66c91de-1fc9-41bc-bd25-3381b3fb8bbc
+langcode: en
+status: true
+dependencies: {  }
+name: Henkilö
+vid: ihminen
+description: 'Keitä pelialan (merkki)henkilöitä jutussa mainitaan'
+weight: -8
+new_revision: false
