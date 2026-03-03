@@ -1,0 +1,31 @@
+uuid: 5fc3f5c5-fda6-4201-911b-4cb8d115c6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ihminen.field_hero_kuva
+    - taxonomy.vocabulary.ihminen
+  module:
+    - text
+id: taxonomy_term.ihminen.default
+targetEntityType: taxonomy_term
+bundle: ihminen
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

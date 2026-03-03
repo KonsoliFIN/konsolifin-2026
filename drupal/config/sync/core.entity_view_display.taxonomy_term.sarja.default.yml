@@ -1,0 +1,31 @@
+uuid: 98d56abe-3ebb-4f27-be98-b778fbe59787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sarja.field_hero_kuva
+    - taxonomy.vocabulary.sarja
+  module:
+    - text
+id: taxonomy_term.sarja.default
+targetEntityType: taxonomy_term
+bundle: sarja
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

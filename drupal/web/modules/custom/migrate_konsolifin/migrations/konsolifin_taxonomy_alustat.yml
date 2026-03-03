@@ -7,23 +7,9 @@ source:
   plugin: d7_taxonomy_term
   bundle: alustat
 process:
-  tid:
-    -
-      plugin: get
-      source: tid
-  revision_id:
-    -
-      plugin: get
-      source: tid
-  vid:
-    -
-      plugin: migration_lookup
-      migration: konsolifin_taxonomy_vocabulary
-      source: vid
-  name:
-    -
-      plugin: get
-      source: name
+  name: name
+  tid: tid
+  revision_id: tid
   description/value:
     -
       plugin: get
@@ -32,10 +18,7 @@ process:
     -
       plugin: get
       source: format
-  weight:
-    -
-      plugin: get
-      source: weight
+  weight: weight
   parent_id:
     -
       plugin: skip_on_empty
@@ -49,27 +32,15 @@ process:
       plugin: default_value
       default_value: 0
       source: '@parent_id'
-  changed:
-    -
-      plugin: get
-      source: timestamp
-  langcode:
-    -
-      plugin: get
-      source: language
-  field_nostokuva:
-    -
-      plugin: sub_process
-      source: field_nostokuva
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+  changed: timestamp
+  field_hero_kuva:
+    plugin: migration_lookup
+    migration: konsolifin_media_images
+    source: field_nostokuva/0/fid
+  path/alias: url_alias
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
 destination:
   plugin: entity:taxonomy_term
   default_bundle: alustat
-migration_dependencies:
-  required:
-    - konsolifin_taxonomy_vocabulary

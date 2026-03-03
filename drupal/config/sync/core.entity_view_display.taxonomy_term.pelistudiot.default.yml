@@ -1,0 +1,31 @@
+uuid: 9003c837-3861-434d-9d95-6492bb5ad20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pelistudiot.field_hero_kuva
+    - taxonomy.vocabulary.pelistudiot
+  module:
+    - text
+id: taxonomy_term.pelistudiot.default
+targetEntityType: taxonomy_term
+bundle: pelistudiot
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 081b2362-2680-454d-8012-302ad4ce28a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hero_kuva
+    - media.type.image
+    - taxonomy.vocabulary.ihminen
+id: taxonomy_term.ihminen.field_hero_kuva
+field_name: field_hero_kuva
+entity_type: taxonomy_term
+bundle: ihminen
+label: Hero-kuva
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

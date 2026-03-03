@@ -1,0 +1,31 @@
+uuid: fce2efa4-8d46-4978-8856-0184c78e0f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.alustatarkenne.field_hero_kuva
+    - taxonomy.vocabulary.alustatarkenne
+  module:
+    - text
+id: taxonomy_term.alustatarkenne.default
+targetEntityType: taxonomy_term
+bundle: alustatarkenne
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

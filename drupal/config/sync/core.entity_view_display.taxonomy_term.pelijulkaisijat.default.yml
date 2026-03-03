@@ -1,0 +1,31 @@
+uuid: 5ca2e6f3-86b0-4515-a724-a5028d337355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pelijulkaisijat.field_hero_kuva
+    - taxonomy.vocabulary.pelijulkaisijat
+  module:
+    - text
+id: taxonomy_term.pelijulkaisijat.default
+targetEntityType: taxonomy_term
+bundle: pelijulkaisijat
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
