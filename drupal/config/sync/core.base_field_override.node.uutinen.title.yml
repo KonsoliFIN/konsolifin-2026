@@ -1,0 +1,18 @@
+uuid: e599153d-8719-44b9-bc82-fb362a0f93b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.uutinen
+id: node.uutinen.title
+field_name: title
+entity_type: node
+bundle: uutinen
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

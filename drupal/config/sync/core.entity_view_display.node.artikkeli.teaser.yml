@@ -1,0 +1,30 @@
+uuid: 6088c9cb-3074-454f-a838-451376e3a584
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.artikkeli.body
+    - node.type.artikkeli
+  module:
+    - text
+    - user
+id: node.artikkeli.teaser
+targetEntityType: node
+bundle: artikkeli
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: f9902cef-135e-4b71-a03c-c30219f35343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arvosana
+    - node.type.katsotut
+  module:
+    - konsolifin_review_score
+id: node.katsotut.field_arvosana
+field_name: field_arvosana
+entity_type: node
+bundle: katsotut
+label: Arvosana
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: review_score

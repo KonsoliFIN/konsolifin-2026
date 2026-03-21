@@ -1,0 +1,21 @@
+uuid: f3db4dfe-15b4-484a-904b-54043cb88f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arvosana
+    - node.type.peliarvostelu
+  module:
+    - konsolifin_review_score
+id: node.peliarvostelu.field_arvosana
+field_name: field_arvosana
+entity_type: node
+bundle: peliarvostelu
+label: Arvosana
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: review_score

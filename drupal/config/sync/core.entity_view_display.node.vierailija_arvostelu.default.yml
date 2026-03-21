@@ -1,0 +1,38 @@
+uuid: 5e2c5185-5fc6-4602-affc-265e598b11cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vierailija_arvostelu.body
+    - field.field.node.vierailija_arvostelu.field_arvosana
+    - node.type.vierailija_arvostelu
+  module:
+    - konsolifin_review_score
+    - text
+    - user
+id: node.vierailija_arvostelu.default
+targetEntityType: node
+bundle: vierailija_arvostelu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_arvosana:
+    type: star_formatter
+    label: hidden
+    settings:
+      width: '400'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

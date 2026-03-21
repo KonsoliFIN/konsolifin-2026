@@ -1,0 +1,28 @@
+uuid: eadef891-0e29-466a-ab2e-e36a2c5b6274
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.laitearvio.body
+    - node.type.laitearvio
+  module:
+    - text
+    - user
+id: node.laitearvio.default
+targetEntityType: node
+bundle: laitearvio
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

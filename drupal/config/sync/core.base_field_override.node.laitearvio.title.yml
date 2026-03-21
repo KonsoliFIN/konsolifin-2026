@@ -1,0 +1,18 @@
+uuid: aa1eb7f3-4b62-4d99-9c4c-ca3c79fc1dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.laitearvio
+id: node.laitearvio.title
+field_name: title
+entity_type: node
+bundle: laitearvio
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

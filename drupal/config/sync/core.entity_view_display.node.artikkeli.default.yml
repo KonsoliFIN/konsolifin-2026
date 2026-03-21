@@ -1,0 +1,28 @@
+uuid: 82309ec7-804d-4c78-9b77-9a5878f242c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artikkeli.body
+    - node.type.artikkeli
+  module:
+    - text
+    - user
+id: node.artikkeli.default
+targetEntityType: node
+bundle: artikkeli
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

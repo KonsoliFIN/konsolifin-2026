@@ -1,0 +1,28 @@
+uuid: a3077149-51f9-418f-8ecd-c7b2d756230e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.uutinen.body
+    - node.type.uutinen
+  module:
+    - text
+    - user
+id: node.uutinen.default
+targetEntityType: node
+bundle: uutinen
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

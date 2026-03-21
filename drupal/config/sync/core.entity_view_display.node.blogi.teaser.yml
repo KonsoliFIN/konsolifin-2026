@@ -1,0 +1,30 @@
+uuid: 15cab280-9bec-4c5d-9b23-c81b8c3c0fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blogi.body
+    - node.type.blogi
+  module:
+    - text
+    - user
+id: node.blogi.teaser
+targetEntityType: node
+bundle: blogi
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

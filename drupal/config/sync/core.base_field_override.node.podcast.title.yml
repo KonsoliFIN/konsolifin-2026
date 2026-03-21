@@ -1,0 +1,18 @@
+uuid: 4c4b4906-d566-45e2-9c59-5a85b8a57ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.podcast
+id: node.podcast.title
+field_name: title
+entity_type: node
+bundle: podcast
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

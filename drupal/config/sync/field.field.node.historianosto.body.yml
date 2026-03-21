@@ -1,0 +1,26 @@
+uuid: 48ee0364-e910-4c73-8a7a-90d692dd68e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - node.type.historianosto
+  module:
+    - text
+id: node.historianosto.body
+field_name: body
+entity_type: node
+bundle: historianosto
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: 93df2eec-726f-49e9-a3fd-70b20053199b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video
+id: node.video.title
+field_name: title
+entity_type: node
+bundle: video
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

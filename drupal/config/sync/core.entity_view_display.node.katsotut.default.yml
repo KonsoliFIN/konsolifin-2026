@@ -1,0 +1,38 @@
+uuid: 5cbc22ba-861a-451e-b9b0-acb2acbb3c96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.katsotut.body
+    - field.field.node.katsotut.field_arvosana
+    - node.type.katsotut
+  module:
+    - konsolifin_review_score
+    - text
+    - user
+id: node.katsotut.default
+targetEntityType: node
+bundle: katsotut
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_arvosana:
+    type: star_formatter
+    label: hidden
+    settings:
+      width: '400'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

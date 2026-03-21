@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
-    - node.type.article
     - node.type.page
   module:
     - announcements_feed
@@ -56,16 +55,11 @@ permissions:
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
-  - 'create article content'
   - 'create page content'
   - 'create url aliases'
-  - 'delete any article content'
   - 'delete any page content'
-  - 'delete own article content'
   - 'delete own page content'
-  - 'edit any article content'
   - 'edit any page content'
-  - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'post comments'

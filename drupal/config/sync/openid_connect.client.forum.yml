@@ -7,7 +7,7 @@ label: Forum
 plugin: generic
 settings:
   client_id: '4359108866111396'
-  client_secret: vaihda
+  client_secret: _F2ucnIJ7HpsLMkCuNEMaSJDz6vD7LqM
   iss_allowed_domains: forum.konsolifin.net
   issuer_url: ''
   authorization_endpoint: 'https://forum.konsolifin.net/oauth/oidc/authorize'

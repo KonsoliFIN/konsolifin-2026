@@ -1,0 +1,18 @@
+uuid: 35d56ee4-c91d-4824-8de5-1bfa7d7c0bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vierailija_arvostelu
+id: node.vierailija_arvostelu.title
+field_name: title
+entity_type: node
+bundle: vierailija_arvostelu
+label: 'Arvio parilla sanalla'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

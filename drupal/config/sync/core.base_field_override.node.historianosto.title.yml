@@ -1,0 +1,18 @@
+uuid: c76fa3e6-0aa5-49a8-8934-5db48c69018e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.historianosto
+id: node.historianosto.title
+field_name: title
+entity_type: node
+bundle: historianosto
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

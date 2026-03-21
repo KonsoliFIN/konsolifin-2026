@@ -1,0 +1,18 @@
+uuid: 1cb94ef8-8511-4f4a-943c-4196bc2028a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artikkeli
+id: node.artikkeli.title
+field_name: title
+entity_type: node
+bundle: artikkeli
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

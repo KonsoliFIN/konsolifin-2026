@@ -1,0 +1,26 @@
+uuid: ad1d4b6f-1992-4dcd-b0b3-3a1c9b6bd137
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.laitearvio
+  module:
+    - text
+id: node.laitearvio.body
+field_name: body
+entity_type: node
+bundle: laitearvio
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

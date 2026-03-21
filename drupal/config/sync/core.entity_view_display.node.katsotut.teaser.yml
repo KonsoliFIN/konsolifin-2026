@@ -1,0 +1,32 @@
+uuid: e5504e0b-a67d-461f-bf39-c1301aa375c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.katsotut.body
+    - field.field.node.katsotut.field_arvosana
+    - node.type.katsotut
+  module:
+    - text
+    - user
+id: node.katsotut.teaser
+targetEntityType: node
+bundle: katsotut
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_arvosana: true

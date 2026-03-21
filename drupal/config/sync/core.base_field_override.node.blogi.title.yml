@@ -1,0 +1,18 @@
+uuid: 7573c222-176d-44ce-8ced-fd7f780250ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blogi
+id: node.blogi.title
+field_name: title
+entity_type: node
+bundle: blogi
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

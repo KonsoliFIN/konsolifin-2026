@@ -1,0 +1,21 @@
+uuid: d4b30235-2d40-4de3-94c1-e898c6a673c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arvosana
+    - node.type.vierailija_arvostelu
+  module:
+    - konsolifin_review_score
+id: node.vierailija_arvostelu.field_arvosana
+field_name: field_arvosana
+entity_type: node
+bundle: vierailija_arvostelu
+label: Arvosana
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: review_score

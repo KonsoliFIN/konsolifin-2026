@@ -1,0 +1,18 @@
+uuid: f47aa7c7-99e5-42ef-8ab1-e788c411bec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.katsotut
+id: node.katsotut.title
+field_name: title
+entity_type: node
+bundle: katsotut
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

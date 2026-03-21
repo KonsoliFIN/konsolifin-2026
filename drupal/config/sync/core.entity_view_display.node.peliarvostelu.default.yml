@@ -1,0 +1,38 @@
+uuid: 074153e9-f882-465c-b970-02a5197d6d7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.peliarvostelu.body
+    - field.field.node.peliarvostelu.field_arvosana
+    - node.type.peliarvostelu
+  module:
+    - konsolifin_review_score
+    - text
+    - user
+id: node.peliarvostelu.default
+targetEntityType: node
+bundle: peliarvostelu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_arvosana:
+    type: star_formatter
+    label: hidden
+    settings:
+      width: '400'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

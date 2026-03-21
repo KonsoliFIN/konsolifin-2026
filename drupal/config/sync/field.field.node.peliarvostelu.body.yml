@@ -1,0 +1,26 @@
+uuid: 85022ab6-ce7b-42dd-9056-1fe1319d9f76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.peliarvostelu
+  module:
+    - text
+id: node.peliarvostelu.body
+field_name: body
+entity_type: node
+bundle: peliarvostelu
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

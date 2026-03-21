@@ -1,0 +1,28 @@
+uuid: 2f298473-d08e-42b2-b98b-884e8cfbe49c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blogi.body
+    - node.type.blogi
+  module:
+    - text
+    - user
+id: node.blogi.default
+targetEntityType: node
+bundle: blogi
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

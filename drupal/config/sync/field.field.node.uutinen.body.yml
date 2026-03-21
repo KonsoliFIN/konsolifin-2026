@@ -1,0 +1,26 @@
+uuid: e4d6d491-9902-4d7e-ad9d-fc409cfeb73d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.uutinen
+  module:
+    - text
+id: node.uutinen.body
+field_name: body
+entity_type: node
+bundle: uutinen
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

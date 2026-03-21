@@ -1,0 +1,30 @@
+uuid: 9068e157-9ad0-468b-bdfb-d4c67176e703
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.laitearvio.body
+    - node.type.laitearvio
+  module:
+    - text
+    - user
+id: node.laitearvio.teaser
+targetEntityType: node
+bundle: laitearvio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

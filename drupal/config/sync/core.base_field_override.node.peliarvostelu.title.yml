@@ -1,0 +1,18 @@
+uuid: e837e692-b9b1-4ea2-8ba3-0b22ec1d17ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.peliarvostelu
+id: node.peliarvostelu.title
+field_name: title
+entity_type: node
+bundle: peliarvostelu
+label: Otsikko
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

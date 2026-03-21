@@ -1,0 +1,30 @@
+uuid: 4d3692bc-21c5-4bf8-b785-2c410e1ca3d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.historianosto.body
+    - node.type.historianosto
+  module:
+    - text
+    - user
+id: node.historianosto.teaser
+targetEntityType: node
+bundle: historianosto
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
