@@ -5,6 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.uutinen.body
+    - field.field.node.uutinen.field_alustat
+    - field.field.node.uutinen.field_hero
+    - field.field.node.uutinen.field_ihmiset
+    - field.field.node.uutinen.field_julkaisijat
+    - field.field.node.uutinen.field_kuvat
+    - field.field.node.uutinen.field_lahde
+    - field.field.node.uutinen.field_pelit
+    - field.field.node.uutinen.field_sarja
+    - field.field.node.uutinen.field_studiot
     - node.type.uutinen
   module:
     - text
@@ -27,4 +36,13 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_alustat: true
+  field_hero: true
+  field_ihmiset: true
+  field_julkaisijat: true
+  field_kuvat: true
+  field_lahde: true
+  field_pelit: true
+  field_sarja: true
+  field_studiot: true

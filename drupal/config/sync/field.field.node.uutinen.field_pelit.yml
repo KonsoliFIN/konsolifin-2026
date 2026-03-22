@@ -1,0 +1,29 @@
+uuid: 07ca5d8e-8328-45e7-a804-187880697916
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pelit
+    - node.type.uutinen
+    - taxonomy.vocabulary.peli
+id: node.uutinen.field_pelit
+field_name: field_pelit
+entity_type: node
+bundle: uutinen
+label: Pelit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      peli: peli
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

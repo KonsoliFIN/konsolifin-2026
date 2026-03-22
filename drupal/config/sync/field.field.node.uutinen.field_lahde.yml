@@ -1,0 +1,23 @@
+uuid: 485bcf1a-8cd6-44ff-902d-f48807b9e72e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lahde
+    - node.type.uutinen
+  module:
+    - link
+id: node.uutinen.field_lahde
+field_name: field_lahde
+entity_type: node
+bundle: uutinen
+label: Lähde
+description: 'Mistä uutisen tiedot on saatu?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

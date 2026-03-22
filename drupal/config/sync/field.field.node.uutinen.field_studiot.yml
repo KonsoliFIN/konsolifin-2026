@@ -1,0 +1,29 @@
+uuid: 40874a56-5c91-4f7c-bc89-99cc3ca49faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_studiot
+    - node.type.uutinen
+    - taxonomy.vocabulary.pelistudiot
+id: node.uutinen.field_studiot
+field_name: field_studiot
+entity_type: node
+bundle: uutinen
+label: Studiot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pelistudiot: pelistudiot
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

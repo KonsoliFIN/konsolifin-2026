@@ -1,19 +1,12 @@
-id: konsolifin_nodes_artikkeli
-label: Migrate article nodes from Drupal 7
+id: konsolifin_nodes_uutinen
+label: Migrate uutinen nodes from Drupal 7
 migration_tags:
   - KonsoliFIN
 migration_group: migrate_konsolifin
 source:
   plugin: d7_node_complete
-  node_type: artikkeli
+  node_type: uutinen
 process:
-  skip_if_laitearvio:
-    - plugin: get
-      source: field_alustatarkenne/0/tid
-    - plugin: skip_on_value
-      value: 14008
-      method: row
-      message: 'Skipping node because it is tagged with term 14008.'
   nid:
     -
       plugin: get
@@ -62,10 +55,6 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_artikkeli/0/status:
-    -
-      plugin: get
-      source: comment
   body:
     -
       plugin: get
@@ -89,15 +78,9 @@ process:
       process:
         target_id: tid
   field_hero:
-    -
-      plugin: sub_process
-      source: field_nostokuva
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+    plugin: migration_lookup
+    migration: konsolifin_media_images
+    source: field_nostokuva/0/fid
   field_pelit:
     -
       plugin: sub_process
@@ -110,33 +93,28 @@ process:
       source: field_studio
       process:
         target_id: tid
+  field_lahde:
+    plugin: sub_process
+    source: field_lahde
+    process:
+      uri: value
+      title: title
   field_kuvat:
     -
       plugin: sub_process
       source: field_kuvitus
       process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+        target_id:
+          plugin: migration_lookup
+          migration: konsolifin_media_images
+          source: fid
   field_sarja:
     -
       plugin: sub_process
       source: field_sarja
       process:
         target_id: tid
-  field_lisatiedot:
-    -
-      plugin: get
-      source: field_lisatiedot
-  field_alustatarkenne:
-    -
-      plugin: sub_process
-      source: field_alustatarkenne
-      process:
-        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: artikkeli
+  default_bundle: uutinen
