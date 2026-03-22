@@ -4,8 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.artikkeli.body
+    - field.field.node.artikkeli.field_alustat
+    - field.field.node.artikkeli.field_hero
+    - field.field.node.artikkeli.field_ihmiset
+    - field.field.node.artikkeli.field_julkaisijat
+    - field.field.node.artikkeli.field_kuvat
+    - field.field.node.artikkeli.field_lisatiedot
+    - field.field.node.artikkeli.field_pelit
+    - field.field.node.artikkeli.field_sarja
+    - field.field.node.artikkeli.field_studiot
     - node.type.artikkeli
   module:
+    - blazy
     - text
     - user
 id: node.artikkeli.default
@@ -19,6 +29,82 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_alustat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_hero:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ihmiset:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_julkaisijat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_kuvat:
+    type: blazy_entity
+    label: hidden
+    settings:
+      view_mode: slick
+      grid: Flexbox
+      grid_medium: ''
+      grid_small: ''
+      style: grid
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_lisatiedot:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pelit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_sarja:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_studiot:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

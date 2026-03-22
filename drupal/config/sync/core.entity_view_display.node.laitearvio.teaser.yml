@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.laitearvio.body
+    - field.field.node.laitearvio.field_hero
+    - field.field.node.laitearvio.field_kuvat
+    - field.field.node.laitearvio.field_lisatiedot
+    - field.field.node.laitearvio.field_sarja
     - node.type.laitearvio
   module:
     - text
@@ -27,4 +31,8 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_hero: true
+  field_kuvat: true
+  field_lisatiedot: true
+  field_sarja: true

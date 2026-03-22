@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - node.type.artikkeli
+    - node.type.uutinen
+    - node.type.video
   module:
     - filter
     - node
@@ -14,6 +17,12 @@ weight: 5
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'create artikkeli content'
+  - 'create uutinen content'
+  - 'create video content'
+  - 'edit own artikkeli content'
+  - 'edit own uutinen content'
+  - 'edit own video content'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

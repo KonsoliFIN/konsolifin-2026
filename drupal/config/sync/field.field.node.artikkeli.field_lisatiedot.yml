@@ -1,0 +1,19 @@
+uuid: df25c696-4bfe-4189-be29-c25b091f9db4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lisatiedot
+    - node.type.artikkeli
+id: node.artikkeli.field_lisatiedot
+field_name: field_lisatiedot
+entity_type: node
+bundle: artikkeli
+label: Lisätiedot
+description: 'Tässä voi esimerkiksi kiittää laitteen toimittanutta tahoa tai muuten huomauttaa jostain tekstiin liittyvästä yksityiskohdasta.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

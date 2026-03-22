@@ -1,0 +1,29 @@
+uuid: 24adc4b6-9c88-4dfd-b9f1-d26f196d67fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sarja
+    - node.type.artikkeli
+    - taxonomy.vocabulary.sarja
+id: node.artikkeli.field_sarja
+field_name: field_sarja
+entity_type: node
+bundle: artikkeli
+label: Sarja
+description: 'Jos tämä arvio kuuluu johonkin juttusarjaan, määritä se tässä'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sarja: sarja
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

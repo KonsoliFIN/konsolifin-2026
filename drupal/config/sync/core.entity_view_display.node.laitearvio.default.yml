@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.laitearvio.body
+    - field.field.node.laitearvio.field_hero
+    - field.field.node.laitearvio.field_kuvat
+    - field.field.node.laitearvio.field_lisatiedot
+    - field.field.node.laitearvio.field_sarja
     - node.type.laitearvio
   module:
+    - blazy
     - text
     - user
 id: node.laitearvio.default
@@ -18,11 +23,47 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     weight: 0
+    region: content
+  field_kuvat:
+    type: blazy_entity
+    label: hidden
+    settings:
+      view_mode: slick
+      grid: Flexbox
+      grid_medium: ''
+      grid_small: ''
+      style: grid
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_lisatiedot:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_sarja:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden: {  }

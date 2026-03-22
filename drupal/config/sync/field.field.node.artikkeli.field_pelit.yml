@@ -1,0 +1,29 @@
+uuid: e4db0ea4-da6d-4797-85cb-049a9f356627
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pelit
+    - node.type.artikkeli
+    - taxonomy.vocabulary.peli
+id: node.artikkeli.field_pelit
+field_name: field_pelit
+entity_type: node
+bundle: artikkeli
+label: Pelit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      peli: peli
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

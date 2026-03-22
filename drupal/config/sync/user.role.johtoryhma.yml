@@ -4,7 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - node.type.artikkeli
+    - node.type.julkaisu
     - node.type.page
+    - node.type.podcast
+    - node.type.uutinen
+    - node.type.video
   module:
     - filter
     - node
@@ -24,11 +29,36 @@ permissions:
   - 'administer nodes'
   - 'administer themes'
   - 'administer users'
+  - 'create artikkeli content'
+  - 'create julkaisu content'
   - 'create page content'
+  - 'create podcast content'
+  - 'create uutinen content'
+  - 'create video content'
+  - 'delete any artikkeli content'
+  - 'delete any julkaisu content'
   - 'delete any page content'
+  - 'delete any podcast content'
+  - 'delete any uutinen content'
+  - 'delete any video content'
+  - 'delete own artikkeli content'
+  - 'delete own julkaisu content'
   - 'delete own page content'
+  - 'delete own podcast content'
+  - 'delete own uutinen content'
+  - 'delete own video content'
+  - 'edit any artikkeli content'
+  - 'edit any julkaisu content'
   - 'edit any page content'
+  - 'edit any podcast content'
+  - 'edit any uutinen content'
+  - 'edit any video content'
+  - 'edit own artikkeli content'
+  - 'edit own julkaisu content'
   - 'edit own page content'
+  - 'edit own podcast content'
+  - 'edit own uutinen content'
+  - 'edit own video content'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

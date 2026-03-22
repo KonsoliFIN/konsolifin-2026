@@ -1,0 +1,51 @@
+id: konsolifin_nodes_laitearvio
+label: Migrate article nodes from Drupal 7 to hardware review
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_node_complete
+  node_type: artikkeli
+process:
+  _skip_non_matching:
+    -
+      plugin: get
+      source: field_alustatarkenne/0/tid
+    -
+      plugin: skip_on_value
+      method: row
+      not_equals: false
+      value:
+        - 14008
+  nid: nid
+  vid: vid
+  title: title
+  uid:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: uid
+      message: 'No user for this file.'
+    -
+      plugin: migration_lookup
+      migration: konsolifin_users
+      no_stub: true
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body: body
+  field_hero:
+    plugin: migration_lookup
+    migration: konsolifin_media_images
+    source: field_nostokuva/0/fid
+  field_lisatiedot: field_lisatiedot
+destination:
+  plugin: 'entity_complete:node'
+  default_bundle: laitearvio
+migration_dependencies:
+  required:
+    - konsolifin_users
+    - konsolifin_media_images
+    - konsolifin_taxonomy_alustatarkenne
