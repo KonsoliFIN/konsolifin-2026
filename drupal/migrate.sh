@@ -53,5 +53,9 @@ drush migrate:status --group=migrate_konsolifin
 
 # Migrating nodes
 read -p "Press Enter to migrate news nodes" </dev/tty
-drush migrate:import konsolifin_nodes_uutinen
+for i in {1..80}
+do
+    drush migrate:import konsolifin_nodes_uutinen
+    sleep 3
+done
 drush migrate:status --group=migrate_konsolifin  
