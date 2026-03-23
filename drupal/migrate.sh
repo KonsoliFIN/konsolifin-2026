@@ -27,7 +27,7 @@ read -p "Press Enter to migrate platform terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_alustat
 drush migrate:status --group=migrate_konsolifin  
 
-read -p "Press Enter to migrate platform specificity terms" </dev/tty
+read -p "Press Enter to migrate platform specifier terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_alustatarkenne
 drush migrate:status --group=migrate_konsolifin  
 
@@ -52,10 +52,19 @@ drush migrate:import konsolifin_taxonomy_pelit
 drush migrate:status --group=migrate_konsolifin  
 
 # Migrating nodes
-read -p "Press Enter to migrate news nodes" </dev/tty
-for i in {1..80}
+echo "Migrate news nodes, how many rounds?"
+read rounds
+for (( i=1; i<=rounds; i++ ))
 do
     drush migrate:import konsolifin_nodes_uutinen
     sleep 3
 done
+drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate news nodes" </dev/tty
+drush migrate:import konsolifin_nodes_artikkeli
+drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate news nodes" </dev/tty
+drush migrate:import konsolifin_nodes_laitearvio
 drush migrate:status --group=migrate_konsolifin  

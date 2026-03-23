@@ -62,10 +62,6 @@ process:
     -
       plugin: get
       source: timestamp
-  comment_node_artikkeli/0/status:
-    -
-      plugin: get
-      source: comment
   body:
     -
       plugin: get
@@ -89,15 +85,9 @@ process:
       process:
         target_id: tid
   field_hero:
-    -
-      plugin: sub_process
-      source: field_nostokuva
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+    plugin: migration_lookup
+    migration: konsolifin_media_images
+    source: field_nostokuva/0/fid
   field_pelit:
     -
       plugin: sub_process
@@ -115,11 +105,10 @@ process:
       plugin: sub_process
       source: field_kuvitus
       process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+        target_id:
+          plugin: migration_lookup
+          migration: konsolifin_media_images
+          source: fid
   field_sarja:
     -
       plugin: sub_process
@@ -130,12 +119,6 @@ process:
     -
       plugin: get
       source: field_lisatiedot
-  field_alustatarkenne:
-    -
-      plugin: sub_process
-      source: field_alustatarkenne
-      process:
-        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true

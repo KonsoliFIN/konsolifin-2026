@@ -17,35 +17,112 @@ process:
       not_equals: false
       value:
         - 14008
-  nid: nid
-  vid: vid
-  title: title
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  title:
+    -
+      plugin: get
+      source: title
   uid:
     -
-      plugin: skip_on_empty
-      method: process
-      source: uid
-      message: 'No user for this file.'
+      plugin: get
+      source: node_uid
+  status:
     -
-      plugin: migration_lookup
-      migration: konsolifin_users
-      no_stub: true
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  body: body
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  body:
+    -
+      plugin: get
+      source: body
+  field_alustat:
+    -
+      plugin: sub_process
+      source: field_alustat
+      process:
+        target_id: tid
+  field_ihmiset:
+    -
+      plugin: sub_process
+      source: field_ihmiset
+      process:
+        target_id: tid
+  field_julkaisijat:
+    -
+      plugin: sub_process
+      source: field_julkaisijat
+      process:
+        target_id: tid
   field_hero:
     plugin: migration_lookup
     migration: konsolifin_media_images
     source: field_nostokuva/0/fid
-  field_lisatiedot: field_lisatiedot
+  field_pelit:
+    -
+      plugin: sub_process
+      source: field_pelit
+      process:
+        target_id: tid
+  field_studiot:
+    -
+      plugin: sub_process
+      source: field_studio
+      process:
+        target_id: tid
+  field_kuvat:
+    -
+      plugin: sub_process
+      source: field_kuvitus
+      process:
+        target_id:
+          plugin: migration_lookup
+          migration: konsolifin_media_images
+          source: fid
+  field_sarja:
+    -
+      plugin: sub_process
+      source: field_sarja
+      process:
+        target_id: tid
+  field_lisatiedot:
+    -
+      plugin: get
+      source: field_lisatiedot
 destination:
   plugin: 'entity_complete:node'
+  translations: true
   default_bundle: laitearvio
-migration_dependencies:
-  required:
-    - konsolifin_users
-    - konsolifin_media_images
-    - konsolifin_taxonomy_alustatarkenne
