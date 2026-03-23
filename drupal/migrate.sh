@@ -1,41 +1,57 @@
 # Migrating users
+read -p "Press Enter to migrate user roles and users" </dev/tty
 drush migrate:import konsolifin_user_roles
-read -p "Press Enter to continue" </dev/tty
-
 drush migrate:import konsolifin_users
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
 # Migrating files and media entities
+read -p "Press Enter to migrate files" </dev/tty
 drush migrate:import konsolifin_files
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate image media" </dev/tty
 drush migrate:import konsolifin_media_images
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate audio media" </dev/tty
 drush migrate:import konsolifin_media_audio
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate video media" </dev/tty
 drush migrate:import konsolifin_media_video
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
+
 
 # Migrating vocabularies
+read -p "Press Enter to migrate platform terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_alustat
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate platform specificity terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_alustatarkenne
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate people terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_ihmiset
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate publisher terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_pelijulkaisijat
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate studio terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_pelistudiot
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate series terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_sarja
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate games terms" </dev/tty
 drush migrate:import konsolifin_taxonomy_pelit
-read -p "Press Enter to continue" </dev/tty
+drush migrate:status --group=migrate_konsolifin  
+
+# Migrating nodes
+read -p "Press Enter to migrate news nodes" </dev/tty
+drush migrate:import konsolifin_nodes_uutinen
+drush migrate:status --group=migrate_konsolifin  
