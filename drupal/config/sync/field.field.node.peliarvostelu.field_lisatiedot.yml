@@ -1,0 +1,19 @@
+uuid: a172e513-a362-4805-8758-bd7750194a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lisatiedot
+    - node.type.peliarvostelu
+id: node.peliarvostelu.field_lisatiedot
+field_name: field_lisatiedot
+entity_type: node
+bundle: peliarvostelu
+label: Lisätiedot
+description: 'Tässä voi esimerkiksi kiittää laitteen toimittanutta tahoa tai muuten huomauttaa jostain tekstiin liittyvästä yksityiskohdasta.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

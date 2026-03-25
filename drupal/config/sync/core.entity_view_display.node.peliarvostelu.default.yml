@@ -4,7 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.peliarvostelu.body
+    - field.field.node.peliarvostelu.field_alustat
     - field.field.node.peliarvostelu.field_arvosana
+    - field.field.node.peliarvostelu.field_hero
+    - field.field.node.peliarvostelu.field_kuvat
+    - field.field.node.peliarvostelu.field_lisatiedot
+    - field.field.node.peliarvostelu.field_pelin_nimi
+    - field.field.node.peliarvostelu.field_pelit
+    - field.field.node.peliarvostelu.field_sarja
+    - field.field.node.peliarvostelu.field_summary_in_english
+    - field.field.node.peliarvostelu.field_title_in_english
     - node.type.peliarvostelu
   module:
     - konsolifin_review_score
@@ -22,6 +31,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_alustat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_arvosana:
     type: star_formatter
     label: hidden
@@ -29,6 +46,70 @@ content:
       width: '400'
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_hero:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_kuvat:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_lisatiedot:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pelin_nimi:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_pelit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sarja:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_summary_in_english:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_title_in_english:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

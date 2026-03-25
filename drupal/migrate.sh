@@ -52,19 +52,32 @@ drush migrate:import konsolifin_taxonomy_pelit
 drush migrate:status --group=migrate_konsolifin  
 
 # Migrating nodes
-echo "Migrate news nodes, how many rounds?"
+echo "Migrate news nodes, how many rounds? (1000 nodes each)"
 read rounds
 for (( i=1; i<=rounds; i++ ))
 do
-    drush migrate:import konsolifin_nodes_uutinen
+    drush migrate:import --limit=1000 konsolifin_nodes_uutinen
     sleep 3
 done
 drush migrate:status --group=migrate_konsolifin  
 
-read -p "Press Enter to migrate news nodes" </dev/tty
+echo "Migrate games review nodes, how many rounds? (1000 nodes each)"
+read rounds
+for (( i=1; i<=rounds; i++ ))
+do
+    drush migrate:import --limit=1000 konsolifin_nodes_peliarvostelu
+    sleep 3
+done
+drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate media review nodes" </dev/tty
+drush migrate:import konsolifin_nodes_media_arvostelu
+drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate article nodes" </dev/tty
 drush migrate:import konsolifin_nodes_artikkeli
 drush migrate:status --group=migrate_konsolifin  
 
-read -p "Press Enter to migrate news nodes" </dev/tty
+read -p "Press Enter to migrate hardware review nodes" </dev/tty
 drush migrate:import konsolifin_nodes_laitearvio
 drush migrate:status --group=migrate_konsolifin  

@@ -1,0 +1,19 @@
+uuid: 7afb9502-c4d7-428f-9703-9d2e2eba36f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_in_english
+    - node.type.peliarvostelu
+id: node.peliarvostelu.field_title_in_english
+field_name: field_title_in_english
+entity_type: node
+bundle: peliarvostelu
+label: 'Title in English'
+description: 'Title of the review in English. This is used for sending the games data to Metacritic.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

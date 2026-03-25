@@ -1,0 +1,19 @@
+uuid: d3bbab36-e6f6-48ba-ba78-f6b30211e77b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pelin_nimi
+    - node.type.peliarvostelu
+id: node.peliarvostelu.field_pelin_nimi
+field_name: field_pelin_nimi
+entity_type: node
+bundle: peliarvostelu
+label: 'Pelin nimi'
+description: 'Tähän voi kirjoittaa pelin nimen, jos se on jokin muu kuin termistöstä löytyvä pelin nimi, esim. jos kyseessä on DLC.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 772f5e94-005e-48ee-a12e-d8fce0b87480
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - media.type.image
+    - node.type.peliarvostelu
+id: node.peliarvostelu.field_hero
+field_name: field_hero
+entity_type: node
+bundle: peliarvostelu
+label: Hero
+description: 'Eli nostokuva. Näytetään jossain näkyvällä paikalla sisällön otsikon yhteydessä.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

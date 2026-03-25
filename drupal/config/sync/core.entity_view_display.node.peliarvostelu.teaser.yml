@@ -5,7 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.peliarvostelu.body
+    - field.field.node.peliarvostelu.field_alustat
     - field.field.node.peliarvostelu.field_arvosana
+    - field.field.node.peliarvostelu.field_hero
+    - field.field.node.peliarvostelu.field_kuvat
+    - field.field.node.peliarvostelu.field_lisatiedot
+    - field.field.node.peliarvostelu.field_pelin_nimi
+    - field.field.node.peliarvostelu.field_pelit
+    - field.field.node.peliarvostelu.field_sarja
+    - field.field.node.peliarvostelu.field_summary_in_english
+    - field.field.node.peliarvostelu.field_title_in_english
     - node.type.peliarvostelu
   module:
     - text
@@ -29,4 +38,13 @@ content:
     weight: 100
     region: content
 hidden:
+  field_alustat: true
   field_arvosana: true
+  field_hero: true
+  field_kuvat: true
+  field_lisatiedot: true
+  field_pelin_nimi: true
+  field_pelit: true
+  field_sarja: true
+  field_summary_in_english: true
+  field_title_in_english: true

@@ -1,0 +1,21 @@
+uuid: 74d40d53-a464-4d3f-836c-88f52b5a01da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pelin_nimi
+field_name: field_pelin_nimi
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

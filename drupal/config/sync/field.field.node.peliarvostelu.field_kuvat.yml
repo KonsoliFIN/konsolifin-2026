@@ -1,0 +1,29 @@
+uuid: f0c55485-db42-4534-ae24-0067071c9e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kuvat
+    - media.type.image
+    - node.type.peliarvostelu
+id: node.peliarvostelu.field_kuvat
+field_name: field_kuvat
+entity_type: node
+bundle: peliarvostelu
+label: Kuvat
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

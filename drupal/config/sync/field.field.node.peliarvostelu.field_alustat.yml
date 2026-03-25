@@ -1,0 +1,29 @@
+uuid: d8deeb03-fcf4-42bd-867b-a16e10d9d319
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alustat
+    - node.type.peliarvostelu
+    - taxonomy.vocabulary.alustat
+id: node.peliarvostelu.field_alustat
+field_name: field_alustat
+entity_type: node
+bundle: peliarvostelu
+label: 'Arvosteltu versio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alustat: alustat
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

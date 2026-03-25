@@ -1,5 +1,5 @@
-id: konsolifin_nodes_peliarvostelu
-label: 'Node complete (Arvostelu)'
+id: konsolifin_nodes_media_arvostelu
+label: 'Node complete (TV-sarja- tai elokuva-arvostelu)'
 migration_tags:
   - KonsoliFIN
 migration_group: migrate_konsolifin
@@ -7,13 +7,14 @@ source:
   plugin: d7_node_complete
   node_type: arvostelu
 process:
-  skip_if_media_arvio:
+  skip_if_not_media_arvio:
     - plugin: get
       source: field_arvosteltu_versio/0/tid
     - plugin: skip_on_value
       value: 11063
+      not_equals: false
       method: row
-      message: 'Skipping node because it is tagged with term 11063.'
+      message: 'Skipping node because it is not tagged with term 11063.'
   nid:
     -
       plugin: get
@@ -138,4 +139,4 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: peliarvostelu
+  default_bundle: katsotut
