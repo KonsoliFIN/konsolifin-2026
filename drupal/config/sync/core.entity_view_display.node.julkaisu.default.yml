@@ -1,0 +1,83 @@
+uuid: bd0f1a63-4e28-42b6-b392-cf1dc07f84a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.julkaisu.body
+    - field.field.node.julkaisu.field_alustat
+    - field.field.node.julkaisu.field_julkaisijat
+    - field.field.node.julkaisu.field_kuvat
+    - field.field.node.julkaisu.field_pelit
+    - field.field.node.julkaisu.field_studiot
+    - field.field.node.julkaisu.field_tyyppi
+    - node.type.julkaisu
+  module:
+    - options
+    - text
+    - user
+id: node.julkaisu.default
+targetEntityType: node
+bundle: julkaisu
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_alustat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_julkaisijat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_kuvat:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pelit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_studiot:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_tyyppi:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

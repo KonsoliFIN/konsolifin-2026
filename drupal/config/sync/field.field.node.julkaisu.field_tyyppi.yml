@@ -1,0 +1,23 @@
+uuid: 638ce360-dc8d-4f62-8e7a-1a8dfdb2b5a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyyppi
+    - node.type.julkaisu
+  module:
+    - options
+id: node.julkaisu.field_tyyppi
+field_name: field_tyyppi
+entity_type: node
+bundle: julkaisu
+label: Tyyppi
+description: "Mitä nämä tarkoittavat:\r\n<ul>\r\n<li><strong>Early access</strong> Kaikenlaiset betat, early access -julkaisut sun muut, joita pannaan jakoon ennen kuin peli tulee virallisesti jakeluun</li>\r\n<li><strong>Ensijulkaisu</strong> Pelin ensimmäinen tietylle alustalle/tietyille alustoille julkaistava versio. Samasta pelistä on mahdollista ilmestyä useampia ensijulkaisuja, jos esim. peli ilmestyy ensin PC:lle, Playstationille ja Xboxille ja myöhemmin Nintendon konsolille</li>\r\n<li><strong>Remaster</strong> Pelistä tehty virkistetty versio. Edellyttää enemmän muutoksia kuin pelkkä uudelleenjulkaisu uuden sukupolven konsolille. Esim. PS5-versio aikaisemmin PS4:lle julkaistusta pelistä olisi uudelleenjulkaisu, mutta GTA 3 PS5:llä on todennäköisesti remaster, jos ei jopa remake</li>\r\n<li><strong>Remake</strong> Perusteellisempia uudistuksia sisältävä uudelleenjulkaisu kuin mitä remaster. Voi sisältää paranneltuja kontrolleja, muokattua sisältöä tai kokonaan uudistetun pelimoottorin</li>\r\n<li><strong>DLC</strong> Lisäsisältöä, joka edellyttää pääpelin omistamista</li>\r\n<li><strong>Bundle</strong> Peli julkaistaan osana pakettia. Esimerkiksi <i>Mass Effect Legendary Edition</i> on bundle, joka sisältää kolme ensimmäistä Mass Effect -peliä</li>\r\n</ul>"
+required: false
+translatable: false
+default_value:
+  -
+    value: ensijulkaisu
+default_value_callback: ''
+settings: {  }
+field_type: list_string

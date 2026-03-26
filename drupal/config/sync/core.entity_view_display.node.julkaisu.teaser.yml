@@ -1,0 +1,42 @@
+uuid: 7f191abf-b9af-4233-9e57-0ce73644b80d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.julkaisu.body
+    - field.field.node.julkaisu.field_alustat
+    - field.field.node.julkaisu.field_julkaisijat
+    - field.field.node.julkaisu.field_kuvat
+    - field.field.node.julkaisu.field_pelit
+    - field.field.node.julkaisu.field_studiot
+    - field.field.node.julkaisu.field_tyyppi
+    - node.type.julkaisu
+  module:
+    - text
+    - user
+id: node.julkaisu.teaser
+targetEntityType: node
+bundle: julkaisu
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_alustat: true
+  field_julkaisijat: true
+  field_kuvat: true
+  field_pelit: true
+  field_studiot: true
+  field_tyyppi: true

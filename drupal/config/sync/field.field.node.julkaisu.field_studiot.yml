@@ -1,0 +1,29 @@
+uuid: bd5239ff-32a9-4575-8634-da20dcaa4366
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_studiot
+    - node.type.julkaisu
+    - taxonomy.vocabulary.pelistudiot
+id: node.julkaisu.field_studiot
+field_name: field_studiot
+entity_type: node
+bundle: julkaisu
+label: Studiot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pelistudiot: pelistudiot
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

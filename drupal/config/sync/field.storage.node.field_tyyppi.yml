@@ -1,0 +1,39 @@
+uuid: 542dc94e-9fd9-444b-a379-e3fedd465822
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tyyppi
+field_name: field_tyyppi
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: early_access
+      label: 'Early access'
+    -
+      value: ensijulkaisu
+      label: Ensijulkaisu
+    -
+      value: remaster
+      label: Remaster
+    -
+      value: remake
+      label: Remake
+    -
+      value: dlc
+      label: DLC
+    -
+      value: bundle
+      label: Bundle
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

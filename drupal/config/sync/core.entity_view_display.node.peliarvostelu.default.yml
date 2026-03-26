@@ -29,7 +29,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_alustat:
     type: entity_reference_label
@@ -37,7 +37,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 6
     region: content
   field_arvosana:
     type: star_formatter
@@ -45,7 +45,7 @@ content:
     settings:
       width: '400'
     third_party_settings: {  }
-    weight: 101
+    weight: 8
     region: content
   field_hero:
     type: entity_reference_entity_view
@@ -78,7 +78,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 9
     region: content
   field_pelit:
     type: entity_reference_label
@@ -86,7 +86,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 5
     region: content
   field_sarja:
     type: entity_reference_label
@@ -101,7 +101,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 11
     region: content
   field_title_in_english:
     type: string
@@ -109,11 +109,11 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 10
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 7
     region: content
 hidden: {  }
