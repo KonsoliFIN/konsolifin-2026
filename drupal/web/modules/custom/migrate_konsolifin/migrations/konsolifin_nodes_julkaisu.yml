@@ -83,7 +83,7 @@ process:
   field_pelit:
     -
       plugin: sub_process
-      source: field_pelit
+      source: field_peliavainsana
       process:
         target_id: tid
   field_studiot:
