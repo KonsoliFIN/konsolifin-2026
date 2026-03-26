@@ -78,9 +78,14 @@ process:
       process:
         target_id: tid
   field_hero:
-    plugin: migration_lookup
-    migration: konsolifin_media_images
-    source: field_nostokuva/0/fid
+    -
+      plugin: migration_lookup
+      migration: konsolifin_media_images
+      source: field_nostokuva/0/fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
   field_pelit:
     -
       plugin: sub_process
@@ -108,6 +113,7 @@ process:
           plugin: migration_lookup
           migration: konsolifin_media_images
           source: fid
+          no_stub: true
   field_sarja:
     -
       plugin: sub_process
