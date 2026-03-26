@@ -1,0 +1,98 @@
+id: konsolifin_nodes_vierailija_arvostelu
+label: 'Node complete (Käyttäjäarvostelu)'
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_node_complete
+  node_type: kayttajaarvostelu
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  body:
+    -
+      plugin: sub_process
+      source: body
+      process:
+        value:
+          plugin: get
+          source: value
+        summary:
+          plugin: get
+          source: summary
+        format:
+          plugin: static_map
+          source: format
+          map:
+            filtered_html: basic_html
+          bypass: true
+  field_arvosteltu_versio:
+    -
+      plugin: sub_process
+      source: field_arvosteltu_versio
+      process:
+        target_id: tid
+  field_pelit:
+    -
+      plugin: sub_process
+      source: field_pelit
+      process:
+        target_id: tid
+  field_arvosana:
+    -
+      plugin: callback
+      source: field_score/0/review_score
+      callable: '\Drupal\migrate_konsolifin\Utility\MigrateMath::add25'
+    -
+      plugin: callback
+      callable: '\Drupal\migrate_konsolifin\Utility\MigrateMath::multiplyBy32'
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: vierailija_arvostelu

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.vierailija_arvostelu.body
+    - field.field.node.vierailija_arvostelu.field_alustat
     - field.field.node.vierailija_arvostelu.field_arvosana
     - node.type.vierailija_arvostelu
   module:
@@ -28,6 +29,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alustat:
+    type: options_buttons
+    weight: 125
     region: content
     settings: {  }
     third_party_settings: {  }

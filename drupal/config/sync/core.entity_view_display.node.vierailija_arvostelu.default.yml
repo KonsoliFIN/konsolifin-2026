@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.vierailija_arvostelu.body
+    - field.field.node.vierailija_arvostelu.field_alustat
     - field.field.node.vierailija_arvostelu.field_arvosana
     - node.type.vierailija_arvostelu
   module:
@@ -21,6 +22,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_alustat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_arvosana:
     type: star_formatter
