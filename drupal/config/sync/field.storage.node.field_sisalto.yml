@@ -1,0 +1,19 @@
+uuid: 9cb7f968-c7b1-413a-9214-ffb7ea83d357
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_sisalto
+field_name: field_sisalto
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

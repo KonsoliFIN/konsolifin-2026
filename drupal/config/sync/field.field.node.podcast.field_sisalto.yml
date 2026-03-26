@@ -1,0 +1,22 @@
+uuid: 4c526444-d200-4306-ba3e-c0c585495d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sisalto
+    - node.type.podcast
+  module:
+    - text
+id: node.podcast.field_sisalto
+field_name: field_sisalto
+entity_type: node
+bundle: podcast
+label: Sisältö
+description: 'Aikaleimattu kuvaus siitä, mistä jaksossa puhuttiin missäkin vaiheessa.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

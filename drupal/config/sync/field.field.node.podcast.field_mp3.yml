@@ -1,0 +1,29 @@
+uuid: 08e15260-7496-4d6a-93f0-f02dc4182b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mp3
+    - media.type.audio
+    - node.type.podcast
+id: node.podcast.field_mp3
+field_name: field_mp3
+entity_type: node
+bundle: podcast
+label: MP3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

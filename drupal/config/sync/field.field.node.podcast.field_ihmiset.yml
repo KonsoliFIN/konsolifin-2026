@@ -1,0 +1,29 @@
+uuid: 9750e184-6c2e-41f4-b8f7-9c988126f19b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ihmiset
+    - node.type.podcast
+    - taxonomy.vocabulary.ihminen
+id: node.podcast.field_ihmiset
+field_name: field_ihmiset
+entity_type: node
+bundle: podcast
+label: Vieraat
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ihminen: ihminen
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

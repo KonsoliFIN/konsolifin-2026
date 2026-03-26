@@ -1,0 +1,118 @@
+id: konsolifin_nodes_podcast
+label: 'Node complete (Podcast)'
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_node_complete
+  node_type: podcast
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_foorumi_ketju:
+    -
+      plugin: get
+      source: field_foorumi_ketju
+  field_ihmiset:
+    -
+      plugin: sub_process
+      source: field_ihmiset
+      process:
+        target_id: tid
+  field_osallistujat:
+    -
+      plugin: sub_process
+      source: field_osallistujat
+      process:
+        target_id: uid
+  field_mp3:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_media_audio
+      source: field_mp3/0/fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
+  field_hero:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_media_images
+      source: field_nostokuva/0/fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
+  field_pelit:
+    -
+      plugin: sub_process
+      source: field_pelit
+      process:
+        target_id: tid
+  body:
+    -
+      plugin: get
+      source: body
+  field_sisalto:
+    -
+      plugin: sub_process
+      source: field_sisalto
+      process:
+        format:
+        -
+          plugin: default_value
+          default_value: "basic_html"
+        value:
+          -
+            plugin: get
+            source: value
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: podcast

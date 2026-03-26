@@ -5,6 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.podcast.body
+    - field.field.node.podcast.field_hero
+    - field.field.node.podcast.field_ihmiset
+    - field.field.node.podcast.field_mp3
+    - field.field.node.podcast.field_osallistujat
+    - field.field.node.podcast.field_pelit
+    - field.field.node.podcast.field_sisalto
     - node.type.podcast
   module:
     - text
@@ -27,4 +33,10 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_hero: true
+  field_ihmiset: true
+  field_mp3: true
+  field_osallistujat: true
+  field_pelit: true
+  field_sisalto: true
