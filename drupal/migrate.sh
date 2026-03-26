@@ -90,3 +90,7 @@ drush migrate:status --group=migrate_konsolifin
 read -p "Press Enter to migrate hardware review nodes" </dev/tty
 drush migrate:import konsolifin_nodes_laitearvio
 drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate release nodes" </dev/tty
+drush migrate:import konsolifin_nodes_julkaisu
+drush migrate:status --group=migrate_konsolifin  
