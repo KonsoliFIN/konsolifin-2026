@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.julkaisu.body
     - field.field.node.julkaisu.field_alustat
     - field.field.node.julkaisu.field_julkaisijat
+    - field.field.node.julkaisu.field_julkaisuajankohta
     - field.field.node.julkaisu.field_kuvat
     - field.field.node.julkaisu.field_pelit
     - field.field.node.julkaisu.field_studiot
     - field.field.node.julkaisu.field_tyyppi
     - node.type.julkaisu
   module:
+    - date_ish
     - media_library
     - path
     - text
@@ -55,6 +57,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_julkaisuajankohta:
+    type: date_ish_default
+    weight: 26
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_kuvat:
     type: media_library_widget

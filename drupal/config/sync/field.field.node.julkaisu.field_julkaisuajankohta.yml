@@ -1,0 +1,21 @@
+uuid: 6cb4c736-59be-4bdb-a344-d2207f2ffee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_julkaisuajankohta
+    - node.type.julkaisu
+  module:
+    - date_ish
+id: node.julkaisu.field_julkaisuajankohta
+field_name: field_julkaisuajankohta
+entity_type: node
+bundle: julkaisu
+label: Julkaisuajankohta
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: date_ish

@@ -1,0 +1,6 @@
+date-ish-widget:
+  js:
+    js/date-ish-widget.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

@@ -1,0 +1,21 @@
+uuid: 7cae14ad-d912-45f1-b7f9-032648513356
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_julkaisu_pvm
+    - taxonomy.vocabulary.peli
+  module:
+    - date_ish
+id: taxonomy_term.peli.field_julkaisu_pvm
+field_name: field_julkaisu_pvm
+entity_type: taxonomy_term
+bundle: peli
+label: Julkaisu
+description: 'Milloin peli tulee julkisesti saataville?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: date_ish

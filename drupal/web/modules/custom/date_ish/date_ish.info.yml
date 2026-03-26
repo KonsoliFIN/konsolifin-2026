@@ -1,0 +1,7 @@
+name: Date-ish
+type: module
+description: Provides a field type for storing and displaying approximate dates with configurable accuracy levels
+core_version_requirement: ^11
+package: KonsoliFIN
+dependencies:
+  - drupal:field

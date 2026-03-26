@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.julkaisu.body
     - field.field.node.julkaisu.field_alustat
     - field.field.node.julkaisu.field_julkaisijat
+    - field.field.node.julkaisu.field_julkaisuajankohta
     - field.field.node.julkaisu.field_kuvat
     - field.field.node.julkaisu.field_pelit
     - field.field.node.julkaisu.field_studiot
     - field.field.node.julkaisu.field_tyyppi
     - node.type.julkaisu
   module:
+    - date_ish
     - options
     - text
     - user
@@ -42,6 +44,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 9
+    region: content
+  field_julkaisuajankohta:
+    type: date_ish_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   field_kuvat:
     type: entity_reference_entity_view

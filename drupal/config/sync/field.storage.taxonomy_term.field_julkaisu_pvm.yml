@@ -1,0 +1,19 @@
+uuid: f1a3528e-6f07-4d4f-aed9-69cfb5d539b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - date_ish
+    - taxonomy
+id: taxonomy_term.field_julkaisu_pvm
+field_name: field_julkaisu_pvm
+entity_type: taxonomy_term
+type: date_ish
+settings: {  }
+module: date_ish
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

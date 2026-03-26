@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.taxonomy_term.peli.field_forum_ketju
     - field.field.taxonomy_term.peli.field_hero_kuva
+    - field.field.taxonomy_term.peli.field_julkaisu_pvm
     - field.field.taxonomy_term.peli.field_www_sivu
     - taxonomy.vocabulary.peli
   module:
+    - date_ish
     - link
     - text
 id: taxonomy_term.peli.default
@@ -38,6 +40,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_julkaisu_pvm:
+    type: date_ish_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_www_sivu:
     type: link
