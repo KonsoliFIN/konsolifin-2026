@@ -1,0 +1,29 @@
+uuid: 202f2938-266e-4b13-a8d2-acfd1ca80a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_julkaisijat
+    - node.type.blogi
+    - taxonomy.vocabulary.pelijulkaisijat
+id: node.blogi.field_julkaisijat
+field_name: field_julkaisijat
+entity_type: node
+bundle: blogi
+label: Julkaisijat
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pelijulkaisijat: pelijulkaisijat
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

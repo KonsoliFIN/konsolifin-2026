@@ -5,6 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.blogi.body
+    - field.field.node.blogi.field_alustat
+    - field.field.node.blogi.field_hero
+    - field.field.node.blogi.field_ihmiset
+    - field.field.node.blogi.field_julkaisijat
+    - field.field.node.blogi.field_kuvat
+    - field.field.node.blogi.field_pelit
+    - field.field.node.blogi.field_sarja
+    - field.field.node.blogi.field_studiot
     - node.type.blogi
   module:
     - text
@@ -27,4 +35,12 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_alustat: true
+  field_hero: true
+  field_ihmiset: true
+  field_julkaisijat: true
+  field_kuvat: true
+  field_pelit: true
+  field_sarja: true
+  field_studiot: true

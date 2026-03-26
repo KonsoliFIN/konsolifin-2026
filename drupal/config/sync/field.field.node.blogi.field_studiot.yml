@@ -1,0 +1,29 @@
+uuid: b90e150e-cf05-477b-9e54-2532ccf81e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_studiot
+    - node.type.blogi
+    - taxonomy.vocabulary.pelistudiot
+id: node.blogi.field_studiot
+field_name: field_studiot
+entity_type: node
+bundle: blogi
+label: Studiot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pelistudiot: pelistudiot
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

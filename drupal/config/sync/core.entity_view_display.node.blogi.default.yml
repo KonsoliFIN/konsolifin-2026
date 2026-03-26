@@ -4,6 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.blogi.body
+    - field.field.node.blogi.field_alustat
+    - field.field.node.blogi.field_hero
+    - field.field.node.blogi.field_ihmiset
+    - field.field.node.blogi.field_julkaisijat
+    - field.field.node.blogi.field_kuvat
+    - field.field.node.blogi.field_pelit
+    - field.field.node.blogi.field_sarja
+    - field.field.node.blogi.field_studiot
     - node.type.blogi
   module:
     - text
@@ -19,6 +27,72 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_alustat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_hero:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ihmiset:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_julkaisijat:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_kuvat:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pelit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sarja:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_studiot:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
     region: content
   links:
     settings: {  }

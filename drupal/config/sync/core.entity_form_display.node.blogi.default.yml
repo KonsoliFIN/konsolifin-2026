@@ -4,8 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.blogi.body
+    - field.field.node.blogi.field_alustat
+    - field.field.node.blogi.field_hero
+    - field.field.node.blogi.field_ihmiset
+    - field.field.node.blogi.field_julkaisijat
+    - field.field.node.blogi.field_kuvat
+    - field.field.node.blogi.field_pelit
+    - field.field.node.blogi.field_sarja
+    - field.field.node.blogi.field_studiot
     - node.type.blogi
   module:
+    - media_library
     - path
     - text
 id: node.blogi.default
@@ -28,6 +37,80 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_alustat:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hero:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_ihmiset:
+    type: entity_reference_autocomplete
+    weight: 121
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_julkaisijat:
+    type: entity_reference_autocomplete
+    weight: 124
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_kuvat:
+    type: media_library_widget
+    weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_pelit:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sarja:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_studiot:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

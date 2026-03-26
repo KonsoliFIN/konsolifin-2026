@@ -70,6 +70,15 @@ do
 done
 drush migrate:status --group=migrate_konsolifin  
 
+echo "Migrate blog nodes, how many rounds? (1000 nodes each)"
+read rounds
+for (( i=1; i<=rounds; i++ ))
+do
+    drush migrate:import --limit=1000 konsolifin_nodes_blog
+    sleep 3
+done
+drush migrate:status --group=migrate_konsolifin  
+
 read -p "Press Enter to migrate media review nodes" </dev/tty
 drush migrate:import konsolifin_nodes_media_arvostelu
 drush migrate:status --group=migrate_konsolifin  
