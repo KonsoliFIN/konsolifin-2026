@@ -7,8 +7,10 @@ label: Forum
 plugin: generic
 settings:
   client_id: '4359108866111396'
-  client_secret: _F2ucnIJ7HpsLMkCuNEMaSJDz6vD7LqM
+  client_secret: 'jotain kivaa on tässä'
   iss_allowed_domains: forum.konsolifin.net
+  prompt:
+    - login
   issuer_url: ''
   authorization_endpoint: 'https://forum.konsolifin.net/oauth/oidc/authorize'
   token_endpoint: 'https://forum.konsolifin.net/oauth/oidc/token'
