@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.video.body
+    - field.field.node.video.field_comments
     - node.type.video
   module:
+    - comment
     - path
     - text
 id: node.video.default
@@ -26,6 +28,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 127
     region: content
     settings: {  }
     third_party_settings: {  }

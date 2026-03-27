@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.peliarvostelu.body
     - field.field.node.peliarvostelu.field_alustat
     - field.field.node.peliarvostelu.field_arvosana
+    - field.field.node.peliarvostelu.field_comments
     - field.field.node.peliarvostelu.field_hero
     - field.field.node.peliarvostelu.field_kuvat
     - field.field.node.peliarvostelu.field_lisatiedot
@@ -16,6 +18,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_title_in_english
     - node.type.peliarvostelu
   module:
+    - comment
     - konsolifin_review_score
     - text
     - user
@@ -46,6 +49,15 @@ content:
       width: '400'
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_hero:
     type: entity_reference_entity_view

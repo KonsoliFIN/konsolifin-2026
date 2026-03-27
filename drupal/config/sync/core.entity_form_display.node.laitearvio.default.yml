@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.laitearvio.body
+    - field.field.node.laitearvio.field_comments
     - field.field.node.laitearvio.field_hero
     - field.field.node.laitearvio.field_kuvat
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
     - node.type.laitearvio
   module:
+    - comment
     - media_library
     - path
     - text
@@ -31,6 +33,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 127
     region: content
     settings: {  }
     third_party_settings: {  }

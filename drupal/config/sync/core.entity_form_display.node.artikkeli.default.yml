@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.artikkeli.body
     - field.field.node.artikkeli.field_alustat
+    - field.field.node.artikkeli.field_comments
     - field.field.node.artikkeli.field_hero
     - field.field.node.artikkeli.field_ihmiset
     - field.field.node.artikkeli.field_julkaisijat
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.artikkeli.field_studiot
     - node.type.artikkeli
   module:
+    - comment
     - media_library
     - path
     - text
@@ -48,6 +50,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 127
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_hero:
     type: media_library_widget

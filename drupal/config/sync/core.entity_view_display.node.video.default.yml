@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.video.body
+    - field.field.node.video.field_comments
     - node.type.video
   module:
+    - comment
     - text
     - user
 id: node.video.default
@@ -19,6 +22,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 11
     region: content
   links:
     settings: {  }

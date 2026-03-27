@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.podcast.body
+    - field.field.node.podcast.field_comments
     - field.field.node.podcast.field_hero
     - field.field.node.podcast.field_ihmiset
     - field.field.node.podcast.field_mp3
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.podcast.field_sisalto
     - node.type.podcast
   module:
+    - comment
     - media_library
     - path
     - text
@@ -33,6 +35,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 127
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.node.katsotut.body
     - field.field.node.katsotut.field_arvosana
+    - field.field.node.katsotut.field_comments
     - node.type.katsotut
   module:
+    - comment
     - konsolifin_review_score
     - path
     - text
@@ -37,6 +39,12 @@ content:
     region: content
     settings:
       width: '400'
+    third_party_settings: {  }
+  field_comments:
+    type: comment_default
+    weight: 127
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

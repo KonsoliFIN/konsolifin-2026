@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.video.body
+    - field.field.node.video.field_comments
     - node.type.video
   module:
     - text
@@ -27,4 +28,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_comments: true

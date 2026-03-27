@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.katsotut.body
     - field.field.node.katsotut.field_arvosana
+    - field.field.node.katsotut.field_comments
     - node.type.katsotut
   module:
     - text
@@ -30,3 +31,4 @@ content:
     region: content
 hidden:
   field_arvosana: true
+  field_comments: true

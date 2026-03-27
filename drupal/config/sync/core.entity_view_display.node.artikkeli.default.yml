@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.artikkeli.body
     - field.field.node.artikkeli.field_alustat
+    - field.field.node.artikkeli.field_comments
     - field.field.node.artikkeli.field_hero
     - field.field.node.artikkeli.field_ihmiset
     - field.field.node.artikkeli.field_julkaisijat
@@ -15,6 +17,7 @@ dependencies:
     - field.field.node.artikkeli.field_studiot
     - node.type.artikkeli
   module:
+    - comment
     - slick
     - text
     - user
@@ -37,6 +40,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 10
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_hero:
     type: entity_reference_entity_view

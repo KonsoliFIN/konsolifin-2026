@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.laitearvio.body
+    - field.field.node.laitearvio.field_comments
     - field.field.node.laitearvio.field_hero
     - field.field.node.laitearvio.field_kuvat
     - field.field.node.laitearvio.field_lisatiedot
@@ -11,6 +13,7 @@ dependencies:
     - node.type.laitearvio
   module:
     - blazy
+    - comment
     - text
     - user
 id: node.laitearvio.default
@@ -24,6 +27,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_hero:
     type: entity_reference_entity_view
