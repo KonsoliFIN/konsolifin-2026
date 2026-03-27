@@ -95,6 +95,14 @@ read -p "Press Enter to migrate release nodes" </dev/tty
 drush migrate:import konsolifin_nodes_julkaisu
 drush migrate:status --group=migrate_konsolifin  
 
+read -p "Press Enter to migrate blog nodes" </dev/tty
+drush migrate:import konsolifin_nodes_blog
+drush migrate:status --group=migrate_konsolifin  
+
+read -p "Press Enter to migrate guest review nodes" </dev/tty
+drush migrate:import konsolifin_nodes_vierailija_arvostelu
+drush migrate:status --group=migrate_konsolifin  
+
 read -p "Press Enter to migrate basic page nodes" </dev/tty
 drush migrate:import konsolifin_nodes_page
 drush migrate:status --group=migrate_konsolifin  
