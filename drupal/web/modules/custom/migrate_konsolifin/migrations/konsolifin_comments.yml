@@ -1,0 +1,91 @@
+id: konsolifin_comments
+label: Comments
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_comment
+  constants:
+    entity_type: node
+process:
+  cid:
+    -
+      plugin: get
+      source: cid
+  pid:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: pid
+    -
+      plugin: migration_lookup
+      migration: konsolifin_comments
+  entity_id:
+    -
+      plugin: migration_lookup
+      migration:
+        - konsolifin_nodes_artikkeli
+        - konsolifin_nodes_blog
+        - konsolifin_nodes_julkaisu
+        - konsolifin_nodes_laitearvio
+        - konsolifin_nodes_media_arvostelu
+        - konsolifin_nodes_page
+        - konsolifin_nodes_peliarvostelu
+        - konsolifin_nodes_podcast
+        - konsolifin_nodes_uutinen
+        - konsolifin_nodes_vierailija_arvostelu
+      source: nid
+    -
+      plugin: node_complete_node_lookup
+    -
+      plugin: skip_on_empty
+      method: row
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  subject:
+    -
+      plugin: get
+      source: subject
+  uid:
+    -
+      plugin: get
+      source: uid
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  status:
+    -
+      plugin: get
+      source: status
+  thread:
+    -
+      plugin: get
+      source: thread
+  comment_body:
+    -
+      plugin: sub_process
+      source: comment_body
+      process:
+        value:
+          plugin: get
+          source: value
+        format:
+          plugin: static_map
+          source: format
+          map:
+            filtered_html: basic_html
+          bypass: true
+  field_name:
+    -
+      plugin: default_value
+      default_value: field_comments
+destination:
+  plugin: 'entity:comment'
+  default_bundle: comment
