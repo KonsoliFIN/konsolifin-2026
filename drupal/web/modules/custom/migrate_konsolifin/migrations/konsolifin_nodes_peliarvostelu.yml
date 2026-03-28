@@ -91,8 +91,9 @@ process:
         target_id: tid
   field_lisatiedot:
     -
-      plugin: get
-      source: field_lisatiedot
+      plugin: callback
+      callable: strip_tags
+      source: field_lisatiedot/0/value
   field_hero:
     -
       plugin: migration_lookup
