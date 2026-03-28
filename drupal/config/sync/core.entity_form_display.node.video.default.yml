@@ -5,11 +5,16 @@ dependencies:
   config:
     - field.field.node.video.body
     - field.field.node.video.field_comments
+    - field.field.node.video.field_hero
+    - field.field.node.video.field_pelit
+    - field.field.node.video.field_video
     - node.type.video
   module:
     - comment
+    - media_library
     - path
     - text
+    - video_embed_field
 id: node.video.default
 targetEntityType: node
 bundle: video
@@ -34,6 +39,29 @@ content:
   field_comments:
     type: comment_default
     weight: 127
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hero:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_pelit:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: video_embed_field_textfield
+    weight: 128
     region: content
     settings: {  }
     third_party_settings: {  }

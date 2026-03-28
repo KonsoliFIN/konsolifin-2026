@@ -6,11 +6,15 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.video.body
     - field.field.node.video.field_comments
+    - field.field.node.video.field_hero
+    - field.field.node.video.field_pelit
+    - field.field.node.video.field_video
     - node.type.video
   module:
     - comment
     - text
     - user
+    - video_embed_field
 id: node.video.default
 targetEntityType: node
 bundle: video
@@ -31,6 +35,36 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 11
+    region: content
+  field_hero:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pelit:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_video:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+      title_format: '@provider | @title'
+      title_fallback: true
+    third_party_settings: {  }
+    weight: 101
     region: content
   links:
     settings: {  }

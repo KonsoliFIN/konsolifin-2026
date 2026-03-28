@@ -1,0 +1,84 @@
+id: konsolifin_nodes_video
+label: 'Node complete (Video)'
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_node_complete
+  node_type: video
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  body:
+    -
+      plugin: get
+      source: body
+  field_video:
+    -
+      plugin: get
+      source: field_video/0/video_url
+  field_hero:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_media_images
+      source: field_nostokuva/0/fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
+  field_pelit:
+    -
+      plugin: sub_process
+      source: field_pelit
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: video

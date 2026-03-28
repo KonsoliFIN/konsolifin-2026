@@ -1,108 +1,82 @@
-# Migrating users
-read -p "Press Enter to migrate user roles and users" </dev/tty
-drush migrate:import konsolifin_user_roles
-drush migrate:import konsolifin_users
-drush migrate:status --group=migrate_konsolifin  
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Migrating files and media entities
-read -p "Press Enter to migrate files" </dev/tty
-drush migrate:import konsolifin_files
-drush migrate:status --group=migrate_konsolifin  
+BATCH_SIZE=500
+PAUSE=3
 
-read -p "Press Enter to migrate image media" </dev/tty
-drush migrate:import konsolifin_media_images
-drush migrate:status --group=migrate_konsolifin  
+# Runs a migration in batches until all items are imported.
+# Uses drush migrate:status to check remaining items.
+run_migration() {
+  local migration="$1"
+  echo ""
+  echo "=== Starting: $migration ==="
 
-read -p "Press Enter to migrate audio media" </dev/tty
-drush migrate:import konsolifin_media_audio
-drush migrate:status --group=migrate_konsolifin  
+  while true; do
+    # Get the count of unprocessed items.
+    local status_output
+    status_output=$(drush migrate:status "$migration" --format=json 2>/dev/null || echo "[]")
+    local unprocessed
+    unprocessed=$(echo "$status_output" | php -r '
+      $data = json_decode(file_get_contents("php://stdin"), true);
+      if (is_array($data) && count($data) > 0) {
+        echo (int)($data[0]["unprocessed"] ?? 0);
+      } else {
+        echo "0";
+      }
+    ')
 
-read -p "Press Enter to migrate video media" </dev/tty
-drush migrate:import konsolifin_media_video
-drush migrate:status --group=migrate_konsolifin  
+    if [ "$unprocessed" -le 0 ] 2>/dev/null; then
+      echo "  ✓ $migration complete (no remaining items)"
+      break
+    fi
 
+    echo "  → $unprocessed remaining, importing batch of $BATCH_SIZE..."
+    drush migrate:import --limit="$BATCH_SIZE" "$migration" || true
+    sleep "$PAUSE"
+  done
+}
 
-# Migrating vocabularies
-read -p "Press Enter to migrate platform terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_alustat
-drush migrate:status --group=migrate_konsolifin  
+echo "Starting full KonsoliFIN migration..."
+echo "Batch size: $BATCH_SIZE | Pause between batches: ${PAUSE}s"
+echo ""
 
-read -p "Press Enter to migrate platform specifier terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_alustatarkenne
-drush migrate:status --group=migrate_konsolifin  
+# Users
+run_migration konsolifin_user_roles
+run_migration konsolifin_users
 
-read -p "Press Enter to migrate people terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_ihmiset
-drush migrate:status --group=migrate_konsolifin  
+# Files and media
+run_migration konsolifin_files
+run_migration konsolifin_media_images
+run_migration konsolifin_media_audio
+run_migration konsolifin_media_video
 
-read -p "Press Enter to migrate publisher terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_pelijulkaisijat
-drush migrate:status --group=migrate_konsolifin  
+# Taxonomies
+run_migration konsolifin_taxonomy_alustat
+run_migration konsolifin_taxonomy_alustatarkenne
+run_migration konsolifin_taxonomy_ihmiset
+run_migration konsolifin_taxonomy_pelijulkaisijat
+run_migration konsolifin_taxonomy_pelistudiot
+run_migration konsolifin_taxonomy_sarja
+run_migration konsolifin_taxonomy_pelit
 
-read -p "Press Enter to migrate studio terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_pelistudiot
-drush migrate:status --group=migrate_konsolifin  
+# Nodes
+run_migration konsolifin_nodes_uutinen
+run_migration konsolifin_nodes_peliarvostelu
+run_migration konsolifin_nodes_blog
+run_migration konsolifin_nodes_media_arvostelu
+run_migration konsolifin_nodes_artikkeli
+run_migration konsolifin_nodes_laitearvio
+run_migration konsolifin_nodes_julkaisu
+run_migration konsolifin_nodes_video
+run_migration konsolifin_nodes_vierailija_arvostelu
+run_migration konsolifin_nodes_page
 
-read -p "Press Enter to migrate series terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_sarja
-drush migrate:status --group=migrate_konsolifin  
+# Comments
+run_migration konsolifin_comments
 
-read -p "Press Enter to migrate games terms" </dev/tty
-drush migrate:import konsolifin_taxonomy_pelit
-drush migrate:status --group=migrate_konsolifin  
+# URL aliases
+run_migration konsolifin_url_alias
 
-# Migrating nodes
-echo "Migrate news nodes, how many rounds? (1000 nodes each)"
-read rounds
-for (( i=1; i<=rounds; i++ ))
-do
-    drush migrate:import --limit=1000 konsolifin_nodes_uutinen
-    sleep 3
-done
-drush migrate:status --group=migrate_konsolifin  
-
-echo "Migrate games review nodes, how many rounds? (1000 nodes each)"
-read rounds
-for (( i=1; i<=rounds; i++ ))
-do
-    drush migrate:import --limit=1000 konsolifin_nodes_peliarvostelu
-    sleep 3
-done
-drush migrate:status --group=migrate_konsolifin  
-
-echo "Migrate blog nodes, how many rounds? (1000 nodes each)"
-read rounds
-for (( i=1; i<=rounds; i++ ))
-do
-    drush migrate:import --limit=1000 konsolifin_nodes_blog
-    sleep 3
-done
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate media review nodes" </dev/tty
-drush migrate:import konsolifin_nodes_media_arvostelu
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate article nodes" </dev/tty
-drush migrate:import konsolifin_nodes_artikkeli
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate hardware review nodes" </dev/tty
-drush migrate:import konsolifin_nodes_laitearvio
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate release nodes" </dev/tty
-drush migrate:import konsolifin_nodes_julkaisu
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate blog nodes" </dev/tty
-drush migrate:import konsolifin_nodes_blog
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate guest review nodes" </dev/tty
-drush migrate:import konsolifin_nodes_vierailija_arvostelu
-drush migrate:status --group=migrate_konsolifin  
-
-read -p "Press Enter to migrate basic page nodes" </dev/tty
-drush migrate:import konsolifin_nodes_page
-drush migrate:status --group=migrate_konsolifin  
+echo ""
+echo "=== Migration complete ==="
+drush migrate:status --group=migrate_konsolifin

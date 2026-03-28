@@ -6,6 +6,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.video.body
     - field.field.node.video.field_comments
+    - field.field.node.video.field_hero
+    - field.field.node.video.field_pelit
+    - field.field.node.video.field_video
     - node.type.video
   module:
     - text
@@ -30,3 +33,6 @@ content:
     region: content
 hidden:
   field_comments: true
+  field_hero: true
+  field_pelit: true
+  field_video: true
