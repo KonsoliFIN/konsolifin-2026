@@ -96,6 +96,17 @@ settings:
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    media_media:
+      allow_view_mode_override: false
+    video_embed_wysiwyg_video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+          title_format: '@provider | @title'
+          title_fallback: true
 image_upload:
   status: true
   scheme: public

@@ -97,8 +97,25 @@ process:
         target_id: tid
   body:
     -
-      plugin: get
+      plugin: sub_process
       source: body
+      process:
+        value:
+          -
+            plugin: media_wysiwyg_to_embed
+            source: value
+            media_migration:
+              - konsolifin_media_images
+              - konsolifin_media_video
+        summary:
+          plugin: get
+          source: summary
+        format:
+          plugin: static_map
+          source: format
+          map:
+            filtered_html: basic_html
+          bypass: true
   field_sisalto:
     -
       plugin: sub_process
