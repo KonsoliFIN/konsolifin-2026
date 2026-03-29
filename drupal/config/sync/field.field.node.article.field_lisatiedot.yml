@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_lisatiedot
-    - node.type.artikkeli
-id: node.artikkeli.field_lisatiedot
+    - node.type.article
+id: node.article.field_lisatiedot
 field_name: field_lisatiedot
 entity_type: node
-bundle: artikkeli
+bundle: article
 label: Lisätiedot
 description: 'Tässä voi esimerkiksi kiittää laitteen toimittanutta tahoa tai muuten huomauttaa jostain tekstiin liittyvästä yksityiskohdasta.'
 required: false

@@ -1,16 +1,16 @@
-uuid: 4d761a9e-f8f3-4c77-806c-6b6c6dc2a1d2
+uuid: 3c2ef8c3-0a39-497e-af7d-4b97f14bb620
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_studiot
-    - node.type.artikkeli
-    - taxonomy.vocabulary.pelistudiot
-id: node.artikkeli.field_studiot
-field_name: field_studiot
+    - field.storage.node.field_julkaisijat
+    - node.type.article
+    - taxonomy.vocabulary.pelijulkaisijat
+id: node.article.field_julkaisijat
+field_name: field_julkaisijat
 entity_type: node
-bundle: artikkeli
-label: Studiot
+bundle: article
+label: Julkaisijat
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      pelistudiot: pelistudiot
+      pelijulkaisijat: pelijulkaisijat
     sort:
       field: name
       direction: asc

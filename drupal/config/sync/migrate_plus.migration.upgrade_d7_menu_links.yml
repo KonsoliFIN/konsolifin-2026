@@ -115,7 +115,7 @@ migration_dependencies:
   required:
     - upgrade_d7_menu
   optional:
-    - upgrade_d7_node_complete_artikkeli
+    - upgrade_d7_node_complete_article
     - upgrade_d7_node_complete_arvostelu
     - upgrade_d7_node_complete_blog
     - upgrade_d7_node_complete_classified

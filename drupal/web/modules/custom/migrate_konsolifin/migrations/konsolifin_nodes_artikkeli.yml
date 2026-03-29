@@ -1,11 +1,11 @@
-id: konsolifin_nodes_artikkeli
+id: konsolifin_nodes_article
 label: Migrate article nodes from Drupal 7
 migration_tags:
   - KonsoliFIN
 migration_group: migrate_konsolifin
 source:
   plugin: d7_node_complete
-  node_type: artikkeli
+  node_type: article
 process:
   skip_if_laitearvio:
     - plugin: get
@@ -145,4 +145,4 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: artikkeli
+  default_bundle: article

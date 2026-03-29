@@ -1,16 +1,16 @@
-uuid: 3c2ef8c3-0a39-497e-af7d-4b97f14bb620
+uuid: e4db0ea4-da6d-4797-85cb-049a9f356627
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_julkaisijat
-    - node.type.artikkeli
-    - taxonomy.vocabulary.pelijulkaisijat
-id: node.artikkeli.field_julkaisijat
-field_name: field_julkaisijat
+    - field.storage.node.field_pelit
+    - node.type.article
+    - taxonomy.vocabulary.peli
+id: node.article.field_pelit
+field_name: field_pelit
 entity_type: node
-bundle: artikkeli
-label: Julkaisijat
+bundle: article
+label: Pelit
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      pelijulkaisijat: pelijulkaisijat
+      peli: peli
     sort:
       field: name
       direction: asc

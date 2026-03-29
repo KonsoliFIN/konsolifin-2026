@@ -5,13 +5,13 @@ dependencies:
   config:
     - field.storage.node.body
     - filter.format.full_html
-    - node.type.artikkeli
+    - node.type.article
   module:
     - text
-id: node.artikkeli.body
+id: node.article.body
 field_name: body
 entity_type: node
-bundle: artikkeli
+bundle: article
 label: Body
 description: ''
 required: false

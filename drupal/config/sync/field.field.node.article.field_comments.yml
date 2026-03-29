@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_comments
-    - node.type.artikkeli
+    - node.type.article
   module:
     - comment
-id: node.artikkeli.field_comments
+id: node.article.field_comments
 field_name: field_comments
 entity_type: node
-bundle: artikkeli
+bundle: article
 label: Comments
 description: ''
 required: false

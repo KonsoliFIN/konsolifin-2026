@@ -4,26 +4,26 @@ status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
-    - field.field.node.artikkeli.body
-    - field.field.node.artikkeli.field_alustat
-    - field.field.node.artikkeli.field_comments
-    - field.field.node.artikkeli.field_hero
-    - field.field.node.artikkeli.field_ihmiset
-    - field.field.node.artikkeli.field_julkaisijat
-    - field.field.node.artikkeli.field_kuvat
-    - field.field.node.artikkeli.field_lisatiedot
-    - field.field.node.artikkeli.field_pelit
-    - field.field.node.artikkeli.field_sarja
-    - field.field.node.artikkeli.field_studiot
-    - node.type.artikkeli
+    - field.field.node.article.body
+    - field.field.node.article.field_alustat
+    - field.field.node.article.field_comments
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_ihmiset
+    - field.field.node.article.field_julkaisijat
+    - field.field.node.article.field_kuvat
+    - field.field.node.article.field_lisatiedot
+    - field.field.node.article.field_pelit
+    - field.field.node.article.field_sarja
+    - field.field.node.article.field_studiot
+    - node.type.article
   module:
     - comment
     - slick
     - text
     - user
-id: node.artikkeli.default
+id: node.article.default
 targetEntityType: node
-bundle: artikkeli
+bundle: article
 mode: default
 content:
   body:
@@ -93,7 +93,7 @@ content:
       layout: below
       view_mode: slick
       cache: 0
-      admin_uri: '/admin/structure/types/manage/artikkeli/display?ajax_form=1&_wrapper_format=drupal_ajax'
+      admin_uri: '/admin/structure/types/manage/article/display?ajax_form=1&_wrapper_format=drupal_ajax'
       use_lb: false
       background: false
       box_caption: ''

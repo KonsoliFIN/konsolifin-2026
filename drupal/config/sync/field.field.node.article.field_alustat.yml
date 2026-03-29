@@ -1,16 +1,16 @@
-uuid: bdc76bda-0d19-45be-b537-a2142cc0820e
+uuid: 562d3a20-7f81-43f3-b998-ba55fc3e57de
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ihmiset
-    - node.type.artikkeli
-    - taxonomy.vocabulary.ihminen
-id: node.artikkeli.field_ihmiset
-field_name: field_ihmiset
+    - field.storage.node.field_alustat
+    - node.type.article
+    - taxonomy.vocabulary.alustat
+id: node.article.field_alustat
+field_name: field_alustat
 entity_type: node
-bundle: artikkeli
-label: 'Käsitellyt henkilöt'
+bundle: article
+label: Alustat
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      ihminen: ihminen
+      alustat: alustat
     sort:
       field: name
       direction: asc

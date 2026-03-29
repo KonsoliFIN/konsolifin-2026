@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.artikkeli
-id: node.artikkeli.title
+    - node.type.article
+id: node.article.title
 field_name: title
 entity_type: node
-bundle: artikkeli
+bundle: article
 label: Otsikko
 description: ''
 required: true

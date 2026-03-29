@@ -1,16 +1,16 @@
-uuid: 562d3a20-7f81-43f3-b998-ba55fc3e57de
+uuid: 4d761a9e-f8f3-4c77-806c-6b6c6dc2a1d2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_alustat
-    - node.type.artikkeli
-    - taxonomy.vocabulary.alustat
-id: node.artikkeli.field_alustat
-field_name: field_alustat
+    - field.storage.node.field_studiot
+    - node.type.article
+    - taxonomy.vocabulary.pelistudiot
+id: node.article.field_studiot
+field_name: field_studiot
 entity_type: node
-bundle: artikkeli
-label: Alustat
+bundle: article
+label: Studiot
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      alustat: alustat
+      pelistudiot: pelistudiot
     sort:
       field: name
       direction: asc

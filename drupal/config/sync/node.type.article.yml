@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: Artikkeli
-type: artikkeli
+type: article
 description: null
 help: null
 new_revision: true

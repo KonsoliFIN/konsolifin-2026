@@ -45,7 +45,7 @@ process:
     -
       plugin: migration_lookup
       migration:
-        - upgrade_d7_node_complete_artikkeli
+        - upgrade_d7_node_complete_article
         - upgrade_d7_node_complete_arvostelu
         - upgrade_d7_node_complete_blog
         - upgrade_d7_node_complete_classified
@@ -77,7 +77,7 @@ idMap: {  }
 migration_dependencies:
   required: {  }
   optional:
-    - upgrade_d7_node_complete_artikkeli
+    - upgrade_d7_node_complete_article
     - upgrade_d7_node_complete_arvostelu
     - upgrade_d7_node_complete_blog
     - upgrade_d7_node_complete_classified
@@ -89,7 +89,7 @@ migration_dependencies:
     - upgrade_d7_node_complete_poll
     - upgrade_d7_node_complete_uutinen
     - upgrade_d7_node_complete_video
-    - upgrade_d7_node_complete_artikkeli
+    - upgrade_d7_node_complete_article
     - upgrade_d7_node_complete_arvostelu
     - upgrade_d7_node_complete_blog
     - upgrade_d7_node_complete_classified
