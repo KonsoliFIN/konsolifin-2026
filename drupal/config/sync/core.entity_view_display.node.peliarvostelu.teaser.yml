@@ -50,3 +50,4 @@ hidden:
   field_sarja: true
   field_summary_in_english: true
   field_title_in_english: true
+  langcode: true

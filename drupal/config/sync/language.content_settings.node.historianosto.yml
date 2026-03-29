@@ -1,0 +1,11 @@
+uuid: 2c904dfb-5910-4c5a-825b-65ab00341ec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.historianosto
+id: node.historianosto
+target_entity_type_id: node
+target_bundle: historianosto
+default_langcode: site_default
+language_alterable: false

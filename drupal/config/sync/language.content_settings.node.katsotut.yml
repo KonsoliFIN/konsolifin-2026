@@ -1,0 +1,11 @@
+uuid: ef6a7468-63a6-4399-ae82-c3b55ab0c488
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.katsotut
+id: node.katsotut
+target_entity_type_id: node
+target_bundle: katsotut
+default_langcode: site_default
+language_alterable: false

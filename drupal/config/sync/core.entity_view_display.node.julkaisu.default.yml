@@ -18,6 +18,7 @@ dependencies:
     - comment
     - date_ish
     - options
+    - slick
     - text
     - user
 id: node.julkaisu.default
@@ -158,4 +159,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true

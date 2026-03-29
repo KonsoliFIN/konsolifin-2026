@@ -1,0 +1,11 @@
+uuid: 49f62217-3ec6-4891-af99-1f9d20ef5985
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alustat
+id: taxonomy_term.alustat
+target_entity_type_id: taxonomy_term
+target_bundle: alustat
+default_langcode: site_default
+language_alterable: false

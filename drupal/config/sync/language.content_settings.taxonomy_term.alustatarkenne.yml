@@ -1,0 +1,11 @@
+uuid: 86d9a7bc-7de0-4f4e-830c-193b38b36eb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alustatarkenne
+id: taxonomy_term.alustatarkenne
+target_entity_type_id: taxonomy_term
+target_bundle: alustatarkenne
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: c11df75c-162f-47c0-9d2a-be1a879b0e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sarja
+id: taxonomy_term.sarja
+target_entity_type_id: taxonomy_term
+target_bundle: sarja
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 4199580c-41dc-45cc-b7aa-f66d049eabe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blogi
+id: node.blogi
+target_entity_type_id: node
+target_bundle: blogi
+default_langcode: site_default
+language_alterable: false

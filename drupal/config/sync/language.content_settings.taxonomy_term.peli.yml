@@ -1,0 +1,11 @@
+uuid: de46fefe-a9c9-4454-b9ef-a866a711f605
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.peli
+id: taxonomy_term.peli
+target_entity_type_id: taxonomy_term
+target_bundle: peli
+default_langcode: site_default
+language_alterable: false

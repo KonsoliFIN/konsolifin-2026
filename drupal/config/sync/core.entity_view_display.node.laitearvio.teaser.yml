@@ -38,3 +38,4 @@ hidden:
   field_kuvat: true
   field_lisatiedot: true
   field_sarja: true
+  langcode: true

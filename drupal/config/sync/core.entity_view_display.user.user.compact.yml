@@ -36,4 +36,5 @@ hidden:
   field_oikea_nimi: true
   field_slack_id: true
   field_xenforo_id: true
+  langcode: true
   member_for: true

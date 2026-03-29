@@ -32,3 +32,4 @@ content:
 hidden:
   field_alustat: true
   field_arvosana: true
+  langcode: true

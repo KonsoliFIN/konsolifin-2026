@@ -1,0 +1,11 @@
+uuid: c5b27f1b-1762-49db-8c27-a56d1c5913a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vierailija_arvostelu
+id: node.vierailija_arvostelu
+target_entity_type_id: node
+target_bundle: vierailija_arvostelu
+default_langcode: site_default
+language_alterable: false

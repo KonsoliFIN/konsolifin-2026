@@ -32,3 +32,4 @@ content:
 hidden:
   field_arvosana: true
   field_comments: true
+  langcode: true

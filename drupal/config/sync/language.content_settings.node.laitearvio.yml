@@ -1,0 +1,11 @@
+uuid: aeb65993-e2de-44f4-ad8c-8603d1e3d64e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.laitearvio
+id: node.laitearvio
+target_entity_type_id: node
+target_bundle: laitearvio
+default_langcode: site_default
+language_alterable: false

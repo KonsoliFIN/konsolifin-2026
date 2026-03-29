@@ -42,3 +42,4 @@ hidden:
   field_osallistujat: true
   field_pelit: true
   field_sisalto: true
+  langcode: true

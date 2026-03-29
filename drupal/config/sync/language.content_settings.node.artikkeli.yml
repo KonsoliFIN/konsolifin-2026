@@ -1,0 +1,11 @@
+uuid: 77bf3cb1-c7b1-4f3e-b182-574c311c7431
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artikkeli
+id: node.artikkeli
+target_entity_type_id: node
+target_bundle: artikkeli
+default_langcode: site_default
+language_alterable: false

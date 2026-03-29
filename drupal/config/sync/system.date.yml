@@ -1,11 +1,11 @@
 _core:
   default_config_hash: IVsFTD1mvR2NGBP_1myt9kFIFmGepH4PyaN5aQBYpno
-first_day: 0
+first_day: 1
 country:
-  default: null
+  default: FI
 timezone:
-  default: UTC
+  default: Europe/Helsinki
   user:
-    configurable: true
+    configurable: false
     default: 0
     warn: false

@@ -1,0 +1,11 @@
+uuid: be0d8bae-9e6a-4327-b4af-6780f3345660
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pelijulkaisijat
+id: taxonomy_term.pelijulkaisijat
+target_entity_type_id: taxonomy_term
+target_bundle: pelijulkaisijat
+default_langcode: site_default
+language_alterable: false

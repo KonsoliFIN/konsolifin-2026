@@ -28,7 +28,9 @@ module:
   image: 0
   imce: 0
   konsolifin_review_score: 0
+  language: 0
   link: 0
+  locale: 0
   media: 0
   media_library: 0
   menu_link_content: 0

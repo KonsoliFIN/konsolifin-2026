@@ -12,8 +12,8 @@ dependencies:
     - field.field.node.laitearvio.field_sarja
     - node.type.laitearvio
   module:
-    - blazy
     - comment
+    - slick
     - text
     - user
 id: node.laitearvio.default
@@ -132,4 +132,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  langcode: true

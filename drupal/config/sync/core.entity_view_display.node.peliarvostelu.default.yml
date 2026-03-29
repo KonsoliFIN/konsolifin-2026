@@ -20,6 +20,7 @@ dependencies:
   module:
     - comment
     - konsolifin_review_score
+    - slick
     - text
     - user
 id: node.peliarvostelu.default
@@ -185,4 +186,5 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
-hidden: {  }
+hidden:
+  langcode: true

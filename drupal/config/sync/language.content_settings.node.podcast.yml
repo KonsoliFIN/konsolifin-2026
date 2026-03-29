@@ -1,0 +1,11 @@
+uuid: db6a1124-b09c-4e71-90b6-4c1e9d2a3276
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.podcast
+id: node.podcast
+target_entity_type_id: node
+target_bundle: podcast
+default_langcode: site_default
+language_alterable: false

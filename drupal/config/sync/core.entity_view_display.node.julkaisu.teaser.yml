@@ -44,3 +44,4 @@ hidden:
   field_pelit: true
   field_studiot: true
   field_tyyppi: true
+  langcode: true

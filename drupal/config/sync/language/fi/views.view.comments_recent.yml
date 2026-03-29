@@ -1,0 +1,11 @@
+display:
+  default:
+    display_title: Oletus
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Kommentteja ei ole saatavilla.'
+  block_1:
+    display_title: Lohko
+    display_options:
+      block_category: 'Listaukset (Views)'

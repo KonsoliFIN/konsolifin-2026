@@ -17,6 +17,7 @@ dependencies:
     - node.type.blogi
   module:
     - comment
+    - slick
     - text
     - user
 id: node.blogi.default
@@ -168,4 +169,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  langcode: true

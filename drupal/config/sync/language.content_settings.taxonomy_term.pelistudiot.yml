@@ -1,0 +1,11 @@
+uuid: ff009e2d-9aa4-4ced-bea5-14f1dd57f1aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pelistudiot
+id: taxonomy_term.pelistudiot
+target_entity_type_id: taxonomy_term
+target_bundle: pelistudiot
+default_langcode: site_default
+language_alterable: false

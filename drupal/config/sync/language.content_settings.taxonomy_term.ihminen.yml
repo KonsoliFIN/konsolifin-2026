@@ -1,0 +1,11 @@
+uuid: 138c9c14-a711-48b0-9bf5-2e9cc99055f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ihminen
+id: taxonomy_term.ihminen
+target_entity_type_id: taxonomy_term
+target_bundle: ihminen
+default_langcode: site_default
+language_alterable: false

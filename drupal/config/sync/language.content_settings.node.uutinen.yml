@@ -1,0 +1,11 @@
+uuid: dfb2e68d-0d40-4d39-a520-bae57755a968
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.uutinen
+id: node.uutinen
+target_entity_type_id: node
+target_bundle: uutinen
+default_langcode: site_default
+language_alterable: false
