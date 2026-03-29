@@ -1,20 +1,10 @@
-setup: start build install
-# After installing, there are some annoying shortcuts that would
-# block importing configuration. The shortcuts must die before doing
-# anything else.
-	docker exec konsolifin_web ./vendor/bin/drush php:eval '\Drupal::entityTypeManager()->getStorage("shortcut_set")->load("default")->delete();'
-
-# Since this is probably the first time importing the config,
-# some imports fail, so the importing is performed twice. After
-# the second round everything should be completely fine.
-	docker exec konsolifin_web ./vendor/bin/drush config:set -y system.site uuid "55068876-fcca-43bb-b0ea-0b5929f25973"
-	-docker exec konsolifin_web ./vendor/bin/drush config:import -y --source="../config/sync"
-	docker exec konsolifin_web ./vendor/bin/drush config:import -y --source="../config/sync"
+setup: start build install clean
 
 build:
 	docker exec konsolifin_web composer install
 
 install:
+	cp drupal/web/sites/default/default.dev.settings.php drupal/web/sites/default/settings.php
 	docker exec konsolifin_web ./vendor/bin/drush site:install \
 		--db-url=mysql://user:password@db:3306/drupal \
 		--account-name=admin --account-pass=admin --account-mail=toimitus@konsolifin.net \

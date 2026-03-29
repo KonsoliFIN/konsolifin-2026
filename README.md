@@ -27,6 +27,11 @@ tai mitä OrbStack onkaan päättänyt sivustolle antaa osoitteeksi (esim.
 https://web.konsolifin-2026.orb.local/). Käyttäjätunnus ja salasana ovat molemmat
 `admin`.
 
+*Huom!* Koska sivustolle on asennettuna kertakirjautumiseen käytettävä kirjasto,
+kirjautuminen käyttäjätunnuksella ja salasanalla ei onnistu ilman että polun loppuun
+lisätään `/?showcore`. Koko polku voi siis olla esimerkiksi
+`https://web.konsolifin-2026.orb.local/user/login/?showcore`.
+
 ## Sammuttaminen ja käynnistäminen
 
 Ensimmäisen asennuskerran jälkeen Dockerin voi käynnistää uudelleen komennolla `make start` ja
