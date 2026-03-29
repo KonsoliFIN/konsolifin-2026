@@ -1,5 +1,5 @@
 uuid: 0b171e16-bc30-4873-8b6a-32b677d4caf7
-langcode: en
+langcode: fi
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Secondary tabs'
+  label: 'Toissijaiset välilehdet'
   label_display: '0'
   provider: core
   primary: false

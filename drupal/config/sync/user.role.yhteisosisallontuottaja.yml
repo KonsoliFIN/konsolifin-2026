@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
-    - node.type.article
     - node.type.uutinen
     - node.type.video
   module:
@@ -17,10 +16,8 @@ weight: 5
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'create article content'
   - 'create uutinen content'
   - 'create video content'
-  - 'edit own article content'
   - 'edit own uutinen content'
   - 'edit own video content'
   - 'use text format full_html'

@@ -1,5 +1,5 @@
 uuid: 5597e54d-bd3b-4f4f-b6bc-5e026daaf5c5
-langcode: en
+langcode: fi
 status: false
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: QJ2aZ1xfVf59aq6Pz5X7fyUOa2HxuCoTwQ_RQjoulAU
 id: node.full
-label: 'Full content'
+label: 'Koko sisältö'
 description: ''
 targetEntityType: node
 cache: true

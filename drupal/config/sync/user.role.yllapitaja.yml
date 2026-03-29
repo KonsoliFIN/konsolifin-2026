@@ -17,6 +17,8 @@ dependencies:
     - contextual
     - filter
     - image
+    - language
+    - locale
     - node
     - path
     - search
@@ -45,6 +47,7 @@ permissions:
   - 'administer content types'
   - 'administer filters'
   - 'administer image styles'
+  - 'administer languages'
   - 'administer menu'
   - 'administer modules'
   - 'administer nodes'
@@ -96,6 +99,7 @@ permissions:
   - 'search content'
   - 'select account cancellation method'
   - 'skip comment approval'
+  - 'translate interface'
   - 'use advanced search'
   - 'use text format full_html'
   - 'view own unpublished content'

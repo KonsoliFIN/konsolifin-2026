@@ -4,4 +4,5 @@ mode: intermediate
 ignored_config_entities:
   import:
     - openid_connect.client.forum
+    - system.site
   export: {  }

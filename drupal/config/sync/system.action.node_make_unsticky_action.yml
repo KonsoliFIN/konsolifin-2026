@@ -1,5 +1,5 @@
 uuid: afb10302-7ae3-455e-8622-763816b0682b
-langcode: en
+langcode: fi
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
 id: node_make_unsticky_action
-label: 'Make content unsticky'
+label: 'Poista sisällön liimaus'
 type: node
 plugin: node_make_unsticky_action
 configuration: {  }

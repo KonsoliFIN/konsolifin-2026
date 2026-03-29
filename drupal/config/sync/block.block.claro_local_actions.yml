@@ -1,5 +1,5 @@
 uuid: ea1996c9-6cdc-4bc5-85da-3cfdeeaecb0c
-langcode: en
+langcode: fi
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
-  label: 'Primary admin actions'
+  label: 'Ensisijaiset ylläpidon toimenpiteet'
   label_display: '0'
   provider: core
 visibility: {  }

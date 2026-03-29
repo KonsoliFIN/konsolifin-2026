@@ -1,5 +1,5 @@
 uuid: edd02615-1ab9-40f8-b5d6-6efa75bd09d0
-langcode: en
+langcode: fi
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Help
+  label: Ohje
   label_display: '0'
   provider: help
 visibility: {  }

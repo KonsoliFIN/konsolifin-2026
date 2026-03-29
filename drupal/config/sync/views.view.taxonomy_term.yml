@@ -1,5 +1,5 @@
 uuid: ef46ce8b-f6af-4246-83df-4084ec845d87
-langcode: en
+langcode: fi
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: 3o-ZjKjvMBpgaHiS3k8RvejhwJB4yX81fbjQjWc-tC8
 id: taxonomy_term
-label: 'Taxonomy term'
+label: Luokittelutermi
 module: taxonomy
 description: 'Content belonging to a certain taxonomy term.'
 tag: default
@@ -21,7 +21,7 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Oletus
     display_plugin: default
     position: 0
     display_options:
@@ -39,19 +39,19 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Kaikki -'
             offset: false
             offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Käytä
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -104,7 +104,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: All
+            title: Kaikki
           title_enable: true
           title: '{{ arguments.tid }}'
           default_argument_type: fixed
@@ -262,7 +262,7 @@ display:
       tags: {  }
   feed_1:
     id: feed_1
-    display_title: Feed
+    display_title: Syöte
     display_plugin: feed
     position: 2
     display_options:
@@ -300,7 +300,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Sivu
     display_plugin: page
     position: 1
     display_options:

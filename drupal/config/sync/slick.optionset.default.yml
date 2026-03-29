@@ -1,5 +1,5 @@
 uuid: 58d81093-bb74-4c15-a6a9-19a074ae0dea
-langcode: en
+langcode: fi
 status: false
 dependencies:
   enforced:
@@ -10,7 +10,7 @@ _core:
 id: default
 name: default
 weight: -10
-label: Default
+label: Oletus
 group: ''
 skin: default
 breakpoints: 0
@@ -34,8 +34,8 @@ options:
     pauseOnFocus: true
     autoplaySpeed: 3000
     arrows: true
-    prevArrow: Previous
-    nextArrow: Next
+    prevArrow: Edellinen
+    nextArrow: Seuraava
     arrowsPlacement: ''
     downArrow: false
     downArrowTarget: ''

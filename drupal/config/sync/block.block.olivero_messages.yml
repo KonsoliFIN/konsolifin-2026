@@ -1,5 +1,5 @@
 uuid: 3217f60f-a507-4373-b2da-a27a53e714b1
-langcode: en
+langcode: fi
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Tilaviestit
   label_display: '0'
   provider: system
 visibility: {  }

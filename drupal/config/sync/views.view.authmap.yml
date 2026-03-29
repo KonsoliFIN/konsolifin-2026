@@ -1,5 +1,5 @@
 uuid: 5b6b0911-4c20-4474-bfdd-c677b1339a52
-langcode: en
+langcode: fi
 status: true
 dependencies:
   module:
@@ -202,7 +202,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: authmap_link_delete
-          label: delete
+          label: poista
           exclude: false
           alter:
             alter_text: false
@@ -243,7 +243,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: delete
+          text: poista
           output_url_as_text: false
           absolute: false
       pager:
@@ -258,19 +258,19 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Kaikki -'
             offset: false
             offset_label: Offset
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Käytä
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -307,7 +307,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Kaikki
           title_enable: true
           title: 'Links for {{ arguments.provider_field }}'
           default_argument_type: fixed
@@ -496,7 +496,7 @@ display:
       tags: {  }
   page:
     id: page
-    display_title: Page
+    display_title: Sivu
     display_plugin: page
     position: 1
     display_options:
@@ -504,7 +504,7 @@ display:
       path: admin/people/authmap
       menu:
         type: tab
-        title: External
+        title: Ulkoinen
         description: ''
         weight: 20
         expanded: false

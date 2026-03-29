@@ -1,7 +1,6 @@
 uuid: 0c09dd60-5c97-45c1-8282-9a3ba61c8349
 langcode: fi
 status: true
-dependencies: {  }
 id: fi
 label: Suomi
 direction: ltr

@@ -1,5 +1,5 @@
 uuid: 37c15b35-3fd7-4a26-b6f2-e21997fa4602
-langcode: en
+langcode: fi
 status: true
 dependencies:
   module:
@@ -20,7 +20,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Search help'
+  label: Hakuohjeet
   label_display: visible
   provider: search
   page_id: help_search

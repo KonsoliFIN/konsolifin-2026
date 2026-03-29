@@ -1,10 +1,10 @@
 uuid: bfce6d59-f8ff-480b-8459-6c424fe1c88c
-langcode: en
+langcode: fi
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Main navigation'
-description: 'Site section links'
+label: Päävalikko
+description: 'Sivuston osioiden linkit'
 locked: true

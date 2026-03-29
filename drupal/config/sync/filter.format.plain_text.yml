@@ -1,10 +1,10 @@
 uuid: 93e63bab-acbf-456c-8740-7478b701de95
-langcode: en
+langcode: fi
 status: true
 dependencies: {  }
 _core:
   default_config_hash: JLMwODO0epnA_H-jFlH9ezVfa5YBJniRv3MmLqYNl_Q
-name: 'Plain text'
+name: 'Puhdas teksti'
 format: plain_text
 weight: -7
 filters:

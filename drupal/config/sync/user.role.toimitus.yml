@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
-    - node.type.article
     - node.type.julkaisu
     - node.type.page
     - node.type.podcast
@@ -13,6 +12,7 @@ dependencies:
   module:
     - comment
     - filter
+    - locale
     - node
     - path
     - system
@@ -29,28 +29,25 @@ permissions:
   - 'administer comments'
   - 'administer nodes'
   - 'administer url aliases'
-  - 'create article content'
   - 'create julkaisu content'
   - 'create page content'
   - 'create podcast content'
   - 'create url aliases'
   - 'create uutinen content'
   - 'create video content'
-  - 'delete own article content'
   - 'delete own julkaisu content'
   - 'delete own uutinen content'
-  - 'edit any article content'
   - 'edit any julkaisu content'
   - 'edit any page content'
   - 'edit any podcast content'
   - 'edit any uutinen content'
   - 'edit any video content'
-  - 'edit own article content'
   - 'edit own julkaisu content'
   - 'edit own page content'
   - 'edit own podcast content'
   - 'edit own uutinen content'
   - 'edit own video content'
+  - 'translate interface'
   - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

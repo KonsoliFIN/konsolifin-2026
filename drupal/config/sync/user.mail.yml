@@ -1,6 +1,6 @@
 _core:
   default_config_hash: 6CZIzFifRq3qbdq3n3nDpEOO4hWIQtKOAQNPvGNGKeM
-langcode: en
+langcode: fi
 cancel_confirm:
   subject: 'Account cancellation request for [user:display-name] at [site:name]'
   body: |-
@@ -32,7 +32,7 @@ password_reset:
 
     --  [site:name] team
 register_admin_created:
-  subject: 'An administrator created an account for you at [site:name]'
+  subject: 'Ylläpitäjä loi sinulle tilin sivustolla [site:name]'
   body: |-
     [user:display-name],
 
