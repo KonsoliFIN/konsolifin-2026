@@ -18,7 +18,7 @@ install:
 	docker exec konsolifin_web ./vendor/bin/drush site:install \
 		--db-url=mysql://user:password@db:3306/drupal \
 		--account-name=admin --account-pass=admin --account-mail=toimitus@konsolifin.net \
-		--site-name="Kehitysympäristö"
+		--site-name="Kehitysympäristö" --config-dir=../config/sync --existing-config
 
 clean:
 	docker exec konsolifin_web ./vendor/bin/drush cache:rebuild

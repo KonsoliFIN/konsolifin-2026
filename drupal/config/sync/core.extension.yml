@@ -64,8 +64,6 @@ module:
   views_ui: 0
   externalauth: 10
   views: 10
-  standard: 1000
 theme:
   olivero: 0
   claro: 0
-profile: standard
