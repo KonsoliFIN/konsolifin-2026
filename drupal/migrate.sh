@@ -70,6 +70,7 @@ run_migration konsolifin_nodes_julkaisu
 run_migration konsolifin_nodes_video
 run_migration konsolifin_nodes_vierailija_arvostelu
 run_migration konsolifin_nodes_page
+run_migration konsolifin_nodes_podcast
 
 # Comments
 run_migration konsolifin_comments
