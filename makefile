@@ -4,9 +4,8 @@ build:
 	docker exec konsolifin_web composer install
 
 install:
-	cp drupal/web/sites/default/default.dev.settings.php drupal/web/sites/default/settings.php
+	- cp drupal/web/sites/default/default.dev.settings.php drupal/web/sites/default/settings.php
 	docker exec konsolifin_web ./vendor/bin/drush site:install \
-		--db-url=mysql://user:password@db:3306/drupal \
 		--account-name=admin --account-pass=admin --account-mail=toimitus@konsolifin.net \
 		--site-name="Kehitysympäristö" --config-dir=../config/sync --existing-config
 
