@@ -1,0 +1,9 @@
+uuid: ce7a6a13-7282-4661-8b3f-c6272f45fec3
+langcode: fi
+status: true
+dependencies: {  }
+name: Franchise
+vid: franchise
+description: 'Tunnetaan joskus myös nimellä pelisarja tai IP'
+weight: 0
+new_revision: false

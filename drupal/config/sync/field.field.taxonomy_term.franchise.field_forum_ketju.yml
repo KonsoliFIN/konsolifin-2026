@@ -1,0 +1,19 @@
+uuid: d64e459a-ae7c-4a13-8daf-7efb5692af00
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_forum_ketju
+    - taxonomy.vocabulary.franchise
+id: taxonomy_term.franchise.field_forum_ketju
+field_name: field_forum_ketju
+entity_type: taxonomy_term
+bundle: franchise
+label: Forum-ketju
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

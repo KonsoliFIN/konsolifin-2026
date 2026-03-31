@@ -1,0 +1,41 @@
+uuid: 3473d4b9-263f-4685-a42a-5ae206ca4094
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.franchise.field_forum_ketju
+    - field.field.taxonomy_term.franchise.field_hero_kuva
+    - taxonomy.vocabulary.franchise
+  module:
+    - text
+id: taxonomy_term.franchise.default
+targetEntityType: taxonomy_term
+bundle: franchise
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_forum_ketju:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hero_kuva:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

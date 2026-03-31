@@ -1,0 +1,29 @@
+uuid: 0fbb1ed0-bc6b-44b0-936a-9be7907c6ed7
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_kuuluu_pelisarjaan
+    - taxonomy.vocabulary.franchise
+    - taxonomy.vocabulary.peli
+id: taxonomy_term.peli.field_kuuluu_pelisarjaan
+field_name: field_kuuluu_pelisarjaan
+entity_type: taxonomy_term
+bundle: peli
+label: 'Kuuluu pelisarjaan'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      franchise: franchise
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

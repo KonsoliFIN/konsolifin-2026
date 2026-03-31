@@ -1,0 +1,11 @@
+uuid: 2a4635ce-d2c2-4026-8089-2f5bbefa1a2b
+langcode: fi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.franchise
+id: taxonomy_term.franchise
+target_entity_type_id: taxonomy_term
+target_bundle: franchise
+default_langcode: site_default
+language_alterable: false
