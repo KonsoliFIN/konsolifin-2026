@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for the konsolifin_term_page module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\konsolifin_term_page\FranchiseHandler;
+
+/**
+ * Implements hook_theme().
+ */
+function konsolifin_term_page_theme(): array {
+  return [
+    'taxonomy_term__franchise' => [
+      'base hook' => 'taxonomy_term',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_taxonomy_term().
+ */
+function konsolifin_term_page_preprocess_taxonomy_term(array &$variables): void {
+  $term = $variables['term'];
+  $handlers = _konsolifin_term_page_get_handlers();
+  $vid = $term->bundle();
+  if (isset($handlers[$vid])) {
+    $handlers[$vid]->preprocess($variables, $term);
+  }
+}
+
+/**
+ * Returns a map of vocabulary ID to handler instance.
+ *
+ * @return \Drupal\konsolifin_term_page\VocabularyHandlerInterface[]
+ *   Keyed by vocabulary ID.
+ */
+function _konsolifin_term_page_get_handlers(): array {
+  static $handlers;
+
+  if (!isset($handlers)) {
+    $franchiseHandler = new FranchiseHandler();
+    $handlers = [
+      $franchiseHandler->getVocabularyId() => $franchiseHandler,
+    ];
+  }
+
+  return $handlers;
+}
+
+/**
+ * Implements hook_theme_suggestions_taxonomy_term_alter().
+ */
+function konsolifin_term_page_theme_suggestions_taxonomy_term_alter(array &$suggestions, array $variables): void {
+  $term = $variables['elements']['#taxonomy_term'];
+  if ($term->bundle() === 'franchise') {
+    $suggestions[] = 'taxonomy_term__franchise';
+  }
+}

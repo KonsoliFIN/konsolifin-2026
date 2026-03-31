@@ -1,0 +1,8 @@
+name: KonsoliFIN Term Page
+type: module
+description: Customises taxonomy term pages for specific vocabularies (franchise, etc.) on the KonsoliFIN site
+core_version_requirement: ^11
+package: KonsoliFIN
+dependencies:
+  - drupal:taxonomy
+  - date_ish

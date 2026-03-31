@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Template for franchise taxonomy term pages.
+ *
+ * Available variables:
+ * - franchise_description: Markup|null — rendered description field, or null if empty.
+ * - franchise_games: array — list of game entries, each with:
+ *     - name: string — game title
+ *     - url: string — path to the game term page
+ *     - date_display: string — formatted publishing date, or empty string if none
+ * - franchise_no_games_message: string — translatable message shown when no games exist.
+ */
+#}
+<div class="taxonomy-term taxonomy-term--franchise">
+  {% if franchise_description %}
+    <div class="franchise-description">
+      {{ franchise_description }}
+    </div>
+  {% endif %}
+
+  <div class="franchise-games">
+    {% if franchise_games %}
+      <ul class="franchise-games__list">
+        {% for game in franchise_games %}
+          <li class="franchise-games__item">
+            <a href="{{ game.url }}" class="franchise-games__link">{{ game.name }}</a>
+            {% if game.date_display %}
+              <span class="franchise-games__date">{{ game.date_display }}</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="franchise-games__empty">{{ franchise_no_games_message }}</p>
+    {% endif %}
+  </div>
+
+</div>
