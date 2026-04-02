@@ -10,7 +10,7 @@ _core:
   default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
 id: konsolifin2026_search_form_wide
 theme: konsolifin2026
-region: secondary_menu
+region: sidebar
 weight: -5
 provider: null
 plugin: search_form_block

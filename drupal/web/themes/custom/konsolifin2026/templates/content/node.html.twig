@@ -106,23 +106,7 @@
         <h1 class="node__title">{{ label }}</h1>
         {{ title_suffix }}
 
-        <div class="node__meta">
-          {% if display_submitted %}
-            <span class="node__author">{{ author_name }}</span>
-            <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
-              {{ node.getCreatedTime()|date('j.n.Y') }}
-            </time>
-          {% endif %}
-          {% if platforms is not empty %}
-            <div class="card__platforms">
-              {% for platform in platforms %}
-                <span class="card__platform-tag">{{ platform }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-
-        {% if review_score is defined and review_score %}
+        {% if review_label is defined %}
           <div class="node__score-wrapper">
             <span class="review-badge review-badge--large review-badge--{{ review_score_class }}">{{ review_label }}</span>
             <span class="node__score-label">{{ 'Arvosana'|t }}</span>
@@ -131,11 +115,47 @@
       </div>
     </div>
 
-    {% if review_score is defined and content.field_arvosana|render is not empty %}
-      <div class="node__stars-display">
-        {{ content.field_arvosana }}
+    {# --- Summary info bar --- #}
+    <div class="node__summary-info">
+      <div class="node__summary-info-inner">
+        {% if display_submitted %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Kirjoittaja'|t }}</span>
+            <span class="node__summary-value">{{ author_name }}</span>
+          </div>
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Julkaistu'|t }}</span>
+            <time class="node__summary-value" datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+              {{ node.getCreatedTime()|date('j.n.Y') }}
+            </time>
+          </div>
+        {% endif %}
+        {% if content.field_alustat|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Alustat'|t }}</span>
+            <div class="node__summary-value">{{ content.field_alustat }}</div>
+          </div>
+        {% endif %}
+        {% if content.field_pelit|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Pelit'|t }}</span>
+            <div class="node__summary-value">{{ content.field_pelit }}</div>
+          </div>
+        {% endif %}
+        {% if content.field_lisatiedot|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Lisätiedot'|t }}</span>
+            <div class="node__summary-value">{{ content.field_lisatiedot }}</div>
+          </div>
+        {% endif %}
+        {% if review_label is defined and content.field_arvosana|render is not empty %}
+          <div class="node__summary-item node__summary-item--stars">
+            <span class="node__summary-label">{{ 'Arvosana'|t }}</span>
+            <div class="node__summary-value">{{ content.field_arvosana }}</div>
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
+    </div>
 
     <div class="node__body">
       {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_kuvat', 'field_pelit', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
@@ -147,22 +167,7 @@
       </div>
     {% endif %}
 
-    {% if content.field_lisatiedot|render is not empty %}
-      <div class="review-summary">
-        <h3 class="review-summary__heading">{{ 'Lisätiedot'|t }}</h3>
-        <div class="review-summary__details">
-          {{ content.field_lisatiedot }}
-        </div>
-      </div>
-    {% endif %}
-
     <div class="node__tags">
-      {% if content.field_pelit|render is not empty %}
-        {{ content.field_pelit }}
-      {% endif %}
-      {% if content.field_alustat|render is not empty %}
-        {{ content.field_alustat }}
-      {% endif %}
       {% if content.field_ihmiset|render is not empty %}
         {{ content.field_ihmiset }}
       {% endif %}
