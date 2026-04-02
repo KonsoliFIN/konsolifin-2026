@@ -11,7 +11,7 @@ _core:
 id: konsolifin2026_help
 theme: konsolifin2026
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: help_block
 settings:

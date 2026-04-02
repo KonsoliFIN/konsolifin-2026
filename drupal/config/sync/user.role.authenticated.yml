@@ -4,8 +4,10 @@ status: true
 dependencies:
   module:
     - comment
+    - media
     - search
     - system
+    - taxonomy
 _core:
   default_config_hash: hcfESiA8tr3D1muRk2KF7tbcun16ZJlG1R5SzKGed6g
 id: authenticated
@@ -22,3 +24,6 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use advanced search'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view vocabulary labels'

@@ -11,7 +11,7 @@ _core:
 id: konsolifin2026_messages
 theme: konsolifin2026
 region: header
-weight: -5
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:

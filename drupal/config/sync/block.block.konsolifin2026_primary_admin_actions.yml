@@ -9,7 +9,7 @@ _core:
 id: konsolifin2026_primary_admin_actions
 theme: konsolifin2026
 region: header
-weight: -5
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:
