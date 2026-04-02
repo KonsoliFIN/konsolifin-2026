@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * @file
+ * Theme functions for KonsoliFIN 2026.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function konsolifin2026_preprocess_page(array &$variables): void {
+  // Add content type class to page for targeted styling.
+  $node = $variables['node'] ?? NULL;
+  if ($node instanceof NodeInterface) {
+    $variables['attributes']['class'][] = 'page--type-' . $node->bundle();
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function konsolifin2026_preprocess_node(array &$variables): void {
+  $node = $variables['node'];
+  $bundle = $node->bundle();
+
+  // Add content type label as a variable for templates.
+  $type_labels = [
+    'uutinen' => 'Uutinen',
+    'peliarvostelu' => 'Arvostelu',
+    'blogi' => 'Blogi',
+    'article' => 'Artikkeli',
+    'podcast' => 'Podcast',
+    'video' => 'Video',
+    'laitearvio' => 'Laitearvio',
+    'katsotut' => 'Katsotut',
+    'vierailija_arvostelu' => 'Lukijan arvostelu',
+    'julkaisu' => 'Julkaisu',
+  ];
+  $variables['type_label'] = $type_labels[$bundle] ?? $bundle;
+
+  // Expose review score as a top-level variable.
+  if ($node->hasField('field_arvosana') && !$node->get('field_arvosana')->isEmpty()) {
+    $score = (int) $node->get('field_arvosana')->value;
+    $variables['review_score'] = $score;
+
+    // Verbal rating based on score thresholds (0–400 range).
+    if ($score < 100) {
+      $variables['review_label'] = t('Bad');
+      $variables['review_score_class'] = 'low';
+    }
+    elseif ($score < 250) {
+      $variables['review_label'] = t('Meh');
+      $variables['review_score_class'] = 'mid';
+    }
+    elseif ($score <= 350) {
+      $variables['review_label'] = t('Good');
+      $variables['review_score_class'] = 'good';
+    }
+    else {
+      $variables['review_label'] = t('Great');
+      $variables['review_score_class'] = 'high';
+    }
+  }
+
+  // Expose sarja term for highlight styling.
+  if ($node->hasField('field_sarja') && !$node->get('field_sarja')->isEmpty()) {
+    $term = $node->get('field_sarja')->entity;
+    if ($term) {
+      $variables['sarja_name'] = $term->label();
+      $variables['sarja_id'] = $term->id();
+      $variables['attributes']['class'][] = 'node--sarja';
+      $variables['attributes']['class'][] = 'node--sarja-' . $term->id();
+    }
+  }
+
+  // Expose platform tags.
+  if ($node->hasField('field_alustat') && !$node->get('field_alustat')->isEmpty()) {
+    $platforms = [];
+    foreach ($node->get('field_alustat') as $item) {
+      if ($item->entity) {
+        $platforms[] = $item->entity->label();
+      }
+    }
+    $variables['platforms'] = $platforms;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function konsolifin2026_theme_suggestions_page_alter(array &$suggestions, array $variables): void {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof NodeInterface) {
+    $suggestions[] = 'page__' . $node->bundle();
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function konsolifin2026_theme_suggestions_node_alter(array &$suggestions, array $variables): void {
+  $node = $variables['elements']['#node'];
+  $view_mode = $variables['elements']['#view_mode'];
+
+  // Add sarja-specific suggestion for nodes in a series.
+  if ($node->hasField('field_sarja') && !$node->get('field_sarja')->isEmpty()) {
+    $suggestions[] = 'node__' . $node->bundle() . '__sarja';
+    $suggestions[] = 'node__' . $node->bundle() . '__' . $view_mode . '__sarja';
+  }
+}

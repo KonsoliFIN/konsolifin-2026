@@ -27,6 +27,17 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: teaser_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
     weight: 0
     region: content
   links:

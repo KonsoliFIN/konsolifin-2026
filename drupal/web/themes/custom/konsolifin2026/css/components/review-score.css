@@ -1,0 +1,103 @@
+/* Verbal review badge — replaces numeric score */
+.review-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.review-badge--high { background: var(--color-score-high); }
+.review-badge--good { background: #4caf50; }
+.review-badge--mid { background: var(--color-score-mid); }
+.review-badge--low { background: var(--color-score-low); }
+
+/* Large verbal badge for full review page hero */
+.review-badge--large {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--text-lg);
+  border-radius: var(--radius-md);
+}
+
+/* Score wrapper in hero banner */
+.node__score-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin: var(--space-lg) 0 0;
+}
+
+.node__score-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: var(--weight-semibold);
+}
+
+.node__hero-banner .node__score-wrapper {
+  margin-top: var(--space-lg);
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.node__hero-banner .node__score-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Star rating display in full view — below hero, above body */
+.node__stars-display {
+  position: relative;
+  z-index: 3;
+  max-width: var(--container-narrow);
+  margin: 0 auto var(--space-xl);
+  background: var(--color-bg-primary);
+}
+
+.node__stars-display .review-score-stars {
+  --review-score-width: 200px;
+}
+
+/* Star rating in teaser cards */
+.card__stars {
+  margin-bottom: var(--space-sm);
+}
+
+.card__stars .review-score-stars {
+  --review-score-width: 100px;
+}
+
+/* Review summary box */
+.review-summary {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin: var(--space-2xl) 0;
+}
+
+.review-summary__heading {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-md);
+}
+
+.review-summary__details {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.review-summary__details dt {
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--space-sm);
+}

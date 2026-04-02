@@ -1,0 +1,22 @@
+uuid: 2d65c64b-75c0-4c51-81cb-d5e057cd2ad4
+langcode: fi
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: konsolifin2026_content
+theme: konsolifin2026
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Pääsivun sisältö'
+  label_display: '0'
+  provider: system
+visibility: {  }

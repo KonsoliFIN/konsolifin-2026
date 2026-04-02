@@ -1,0 +1,61 @@
+/* Podcast player and listing */
+.podcast-player {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+
+.podcast-player__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.podcast-player__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-badge-podcast);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.podcast-player__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.podcast-player__title {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+}
+
+.podcast-player__participants {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.podcast-player audio {
+  width: 100%;
+  margin-top: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+/* Podcast card in listings */
+.card--podcast .card__badge {
+  background: var(--color-badge-podcast);
+}
+
+.card--podcast .card__duration {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}

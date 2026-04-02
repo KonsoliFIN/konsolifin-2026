@@ -1,0 +1,99 @@
+/* Mobile-first layout system */
+.layout-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.layout-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  padding: var(--space-xl) 0;
+}
+
+/* Sidebar layout kicks in on desktop */
+@media (min-width: 1024px) {
+  .layout-content-wrapper {
+    grid-template-columns: 1fr var(--sidebar-width);
+  }
+}
+
+.layout-main {
+  min-width: 0; /* Prevent grid blowout */
+}
+
+/* Full-width regions */
+.region-hero,
+.region-sarja-highlight {
+  width: 100%;
+}
+
+/* Content grid — used for listing pages */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap);
+}
+
+@media (min-width: 640px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Featured content — first item spans full width */
+.content-grid--featured > *:first-child {
+  grid-column: 1 / -1;
+}
+
+/* Two-column split for mixed layouts */
+.content-grid--split {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .content-grid--split {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Section spacing */
+.layout-section {
+  padding: var(--space-2xl) 0;
+}
+
+.layout-section + .layout-section {
+  border-top: 1px solid var(--color-border);
+}
+
+/* Narrow container for article body text */
+.layout-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  z-index: var(--z-modal);
+  background: var(--color-accent);
+  color: #fff;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-semibold);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}

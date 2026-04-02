@@ -1,0 +1,26 @@
+name: 'KonsoliFIN 2026'
+type: theme
+description: 'Modern, sleek, mobile-first gaming news theme for KonsoliFIN.'
+core_version_requirement: ^11
+base theme: stable9
+version: 1.0.0
+
+libraries:
+  - konsolifin2026/global
+  - core/normalize
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: Hero
+  sarja_highlight: 'Sarja highlight'
+  breadcrumb: Breadcrumb
+  content_top: 'Content top'
+  content: Content
+  sidebar: Sidebar
+  content_bottom: 'Content bottom'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer: Footer

@@ -1,0 +1,110 @@
+{#
+/**
+ * @file
+ * KonsoliFIN 2026 page template.
+ */
+#}
+<a href="#main-content" class="skip-link visually-hidden focusable">
+  {{ 'Siirry sisältöön'|t }}
+</a>
+
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    {% if page.header %}
+      {{ page.header }}
+    {% endif %}
+
+    <nav class="primary-nav" aria-label="{{ 'Päävalikko'|t }}">
+      {% if page.primary_menu %}
+        {{ page.primary_menu }}
+      {% endif %}
+    </nav>
+    <div class="primary-nav__overlay" data-visible="false"></div>
+
+    <div class="site-header__actions">
+      {% if page.secondary_menu %}
+        <div class="secondary-nav">
+          {{ page.secondary_menu }}
+        </div>
+      {% endif %}
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="{{ 'Avaa valikko'|t }}">
+        <span class="menu-toggle__icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+{% if page.sarja_highlight %}
+  <div class="layout-container">
+    <aside class="region-sarja-highlight" aria-label="{{ 'Ajankohtainen sarja'|t }}">
+      {{ page.sarja_highlight }}
+    </aside>
+  </div>
+{% endif %}
+
+{% if page.hero %}
+  <div class="layout-container">
+    <div class="region-hero">
+      {{ page.hero }}
+    </div>
+  </div>
+{% endif %}
+
+<div class="layout-container">
+  {% if page.breadcrumb %}
+    <div class="region-breadcrumb">
+      {{ page.breadcrumb }}
+    </div>
+  {% endif %}
+
+  {% if page.content_top %}
+    <div class="region-content-top">
+      {{ page.content_top }}
+    </div>
+  {% endif %}
+
+  <div class="layout-content-wrapper">
+    <main id="main-content" class="layout-main" role="main">
+      {{ page.content }}
+    </main>
+
+    {% if page.sidebar %}
+      <aside class="region-sidebar" role="complementary" aria-label="{{ 'Sivupalkki'|t }}">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+  </div>
+
+  {% if page.content_bottom %}
+    <div class="region-content-bottom">
+      {{ page.content_bottom }}
+    </div>
+  {% endif %}
+</div>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__grid">
+      {% if page.footer_first %}
+        <div class="site-footer__column">
+          {{ page.footer_first }}
+        </div>
+      {% endif %}
+      {% if page.footer_second %}
+        <div class="site-footer__column">
+          {{ page.footer_second }}
+        </div>
+      {% endif %}
+      {% if page.footer_third %}
+        <div class="site-footer__column">
+          {{ page.footer_third }}
+        </div>
+      {% endif %}
+    </div>
+    {% if page.footer %}
+      <div class="site-footer__bottom">
+        {{ page.footer }}
+      </div>
+    {% endif %}
+  </div>
+</footer>

@@ -1,0 +1,22 @@
+uuid: 271c1874-b900-4486-b3eb-456fc6075fa1
+langcode: fi
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: konsolifin2026_help
+theme: konsolifin2026
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ohje
+  label_display: '0'
+  provider: help
+visibility: {  }

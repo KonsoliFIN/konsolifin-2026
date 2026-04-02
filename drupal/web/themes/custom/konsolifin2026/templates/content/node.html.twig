@@ -1,0 +1,184 @@
+{#
+/**
+ * @file
+ * KonsoliFIN 2026 default node template.
+ *
+ * Available variables:
+ * - type_label: Human-readable content type label.
+ * - review_score: Numeric score (0–400) for review types.
+ * - review_label: Verbal rating (Bad/Meh/Good/Great).
+ * - review_score_class: CSS class for score color (low/mid/good/high).
+ * - sarja_name: Name of the sarja term if present.
+ * - platforms: Array of platform labels.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle(),
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    sarja_name ? 'node--sarja',
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+
+  {% if view_mode == 'teaser' %}
+    {# --- Teaser / Card view — horizontal thumbnail layout --- #}
+    <div class="card card--horizontal">
+      {% if content.field_hero|render is not empty %}
+        <div class="card__thumb">
+          {{ content.field_hero }}
+        </div>
+      {% endif %}
+
+      <div class="card__body">
+        <div class="card__body-top">
+          <span class="card__badge card__badge--{{ node.bundle() }}">
+            {{ type_label }}
+          </span>
+          {% if review_label is defined %}
+            <span class="review-badge review-badge--{{ review_score_class }}">{{ review_label }}</span>
+          {% endif %}
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+
+        {{ title_prefix }}
+        <h3 class="card__title">
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h3>
+        {{ title_suffix }}
+
+        {% if review_score is defined and content.field_arvosana|render is not empty %}
+          <div class="card__stars">
+            {{ content.field_arvosana }}
+          </div>
+        {% endif %}
+
+        {% if content.body|render is not empty %}
+          <div class="card__excerpt">{{ content.body }}</div>
+        {% endif %}
+
+        <div class="card__meta">
+          <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+            {{ node.getCreatedTime()|date('j.n.Y') }}
+          </time>
+          {% if author_name %}
+            <span class="card__author">{{ author_name }}</span>
+          {% endif %}
+          {% if platforms is not empty %}
+            <div class="card__platforms">
+              {% for platform in platforms %}
+                <span class="card__platform-tag">{{ platform }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  {% else %}
+    {# --- Full view --- #}
+    {% set has_hero = content.field_hero|render is not empty %}
+
+    <div class="node__hero-banner{{ has_hero ? ' node__hero-banner--has-image' }}">
+      {% if has_hero %}
+        <div class="node__hero-bg">
+          {{ content.field_hero }}
+        </div>
+        <div class="node__hero-overlay"></div>
+      {% endif %}
+
+      <div class="node__hero-content">
+        <div class="node__badges">
+          <span class="card__badge card__badge--{{ node.bundle() }}">{{ type_label }}</span>
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+
+        {{ title_prefix }}
+        <h1 class="node__title">{{ label }}</h1>
+        {{ title_suffix }}
+
+        <div class="node__meta">
+          {% if display_submitted %}
+            <span class="node__author">{{ author_name }}</span>
+            <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+              {{ node.getCreatedTime()|date('j.n.Y') }}
+            </time>
+          {% endif %}
+          {% if platforms is not empty %}
+            <div class="card__platforms">
+              {% for platform in platforms %}
+                <span class="card__platform-tag">{{ platform }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if review_score is defined and review_score %}
+          <div class="node__score-wrapper">
+            <span class="review-badge review-badge--large review-badge--{{ review_score_class }}">{{ review_label }}</span>
+            <span class="node__score-label">{{ 'Arvosana'|t }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if review_score is defined and content.field_arvosana|render is not empty %}
+      <div class="node__stars-display">
+        {{ content.field_arvosana }}
+      </div>
+    {% endif %}
+
+    <div class="node__body">
+      {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_kuvat', 'field_pelit', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
+    </div>
+
+    {% if content.field_kuvat|render is not empty %}
+      <div class="node__gallery">
+        {{ content.field_kuvat }}
+      </div>
+    {% endif %}
+
+    {% if content.field_lisatiedot|render is not empty %}
+      <div class="review-summary">
+        <h3 class="review-summary__heading">{{ 'Lisätiedot'|t }}</h3>
+        <div class="review-summary__details">
+          {{ content.field_lisatiedot }}
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="node__tags">
+      {% if content.field_pelit|render is not empty %}
+        {{ content.field_pelit }}
+      {% endif %}
+      {% if content.field_alustat|render is not empty %}
+        {{ content.field_alustat }}
+      {% endif %}
+      {% if content.field_ihmiset|render is not empty %}
+        {{ content.field_ihmiset }}
+      {% endif %}
+      {% if content.field_julkaisijat|render is not empty %}
+        {{ content.field_julkaisijat }}
+      {% endif %}
+      {% if content.field_studiot|render is not empty %}
+        {{ content.field_studiot }}
+      {% endif %}
+    </div>
+
+    {% if content.field_comments|render is not empty %}
+      <div class="comment-section">
+        {{ content.field_comments }}
+      </div>
+    {% endif %}
+  {% endif %}
+
+</article>

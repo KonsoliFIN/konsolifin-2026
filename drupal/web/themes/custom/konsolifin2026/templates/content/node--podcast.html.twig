@@ -1,0 +1,128 @@
+{#
+/**
+ * @file
+ * Podcast node template.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-podcast',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    sarja_name ? 'node--sarja',
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+
+  {% if view_mode == 'teaser' %}
+    <div class="card card--horizontal card--podcast">
+      {% if content.field_hero|render is not empty %}
+        <div class="card__thumb">
+          {{ content.field_hero }}
+        </div>
+      {% endif %}
+      <div class="card__body">
+        <div class="card__body-top">
+          <span class="card__badge card__badge--podcast">{{ 'Podcast'|t }}</span>
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+        {{ title_prefix }}
+        <h3 class="card__title">
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h3>
+        {{ title_suffix }}
+        {% if content.body|render is not empty %}
+          <div class="card__excerpt">{{ content.body }}</div>
+        {% endif %}
+        <div class="card__meta">
+          <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+            {{ node.getCreatedTime()|date('j.n.Y') }}
+          </time>
+          {% if content.field_osallistujat|render is not empty %}
+            <span class="card--podcast__participants">{{ content.field_osallistujat }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  {% else %}
+    {% set has_hero = content.field_hero|render is not empty %}
+
+    <div class="node__hero-banner{{ has_hero ? ' node__hero-banner--has-image' }}">
+      {% if has_hero %}
+        <div class="node__hero-bg">
+          {{ content.field_hero }}
+        </div>
+        <div class="node__hero-overlay"></div>
+      {% endif %}
+
+      <div class="node__hero-content">
+        <div class="node__badges">
+          <span class="card__badge card__badge--podcast">{{ 'Podcast'|t }}</span>
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+
+        {{ title_prefix }}
+        <h1 class="node__title">{{ label }}</h1>
+        {{ title_suffix }}
+
+        <div class="node__meta">
+          {% if display_submitted %}
+            <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+              {{ node.getCreatedTime()|date('j.n.Y') }}
+            </time>
+          {% endif %}
+          {% if content.field_osallistujat|render is not empty %}
+            <span>{{ content.field_osallistujat }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if content.field_mp3|render is not empty %}
+      <div class="podcast-player">
+        <div class="podcast-player__header">
+          <div class="podcast-player__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2H3v2a9 9 0 0 0 8 8.94V23h2v-2.06A9 9 0 0 0 21 12v-2h-2z"/></svg>
+          </div>
+          <div>
+            <div class="podcast-player__title">{{ label }}</div>
+            {% if content.field_ihmiset|render is not empty %}
+              <div class="podcast-player__participants">{{ content.field_ihmiset }}</div>
+            {% endif %}
+          </div>
+        </div>
+        {{ content.field_mp3 }}
+      </div>
+    {% endif %}
+
+    {% if content.field_sisalto|render is not empty %}
+      <div class="node__body">
+        {{ content.field_sisalto }}
+      </div>
+    {% endif %}
+
+    <div class="node__body">
+      {{ content|without('field_hero', 'field_mp3', 'field_sisalto', 'field_osallistujat', 'field_ihmiset', 'field_pelit', 'field_comments', 'field_sarja') }}
+    </div>
+
+    {% if content.field_pelit|render is not empty %}
+      <div class="node__tags">
+        {{ content.field_pelit }}
+      </div>
+    {% endif %}
+
+    {% if content.field_comments|render is not empty %}
+      <div class="comment-section">
+        {{ content.field_comments }}
+      </div>
+    {% endif %}
+  {% endif %}
+
+</article>

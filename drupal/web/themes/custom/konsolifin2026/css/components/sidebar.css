@@ -1,0 +1,56 @@
+/* Sidebar region */
+.region-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.sidebar-block {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.sidebar-block__title {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.sidebar-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* Compact cards in sidebar */
+.sidebar-block .card--compact + .card--compact {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-sm);
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* Sidebar on mobile: horizontal scroll */
+@media (max-width: 1023px) {
+  .region-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--space-md);
+    padding-bottom: var(--space-sm);
+  }
+
+  .sidebar-block {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+  }
+}

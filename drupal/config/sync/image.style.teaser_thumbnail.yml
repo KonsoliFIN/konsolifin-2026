@@ -1,0 +1,15 @@
+uuid: b7daa5c3-4c5d-4c11-97e7-b0d338976184
+langcode: fi
+status: true
+dependencies: {  }
+name: teaser_thumbnail
+label: 'Teaser thumbnail'
+effects:
+  97950288-2044-47fa-b36f-687416038549:
+    uuid: 97950288-2044-47fa-b36f-687416038549
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

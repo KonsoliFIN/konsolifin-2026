@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Status messages template.
+ */
+#}
+{% for type, messages in message_list %}
+  {%
+    set classes = [
+      'messages',
+      'messages--' ~ type,
+    ]
+  %}
+  <div role="{{ type == 'error' ? 'alert' : 'status' }}"{{ attributes.addClass(classes) }} aria-label="{{ status_headings[type] }}">
+    {% if status_headings[type] %}
+      <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+    {% endif %}
+    {% if messages|length > 1 %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ messages|first }}
+    {% endif %}
+  </div>
+{% endfor %}

@@ -1,0 +1,25 @@
+uuid: 6a931134-6160-4bd5-b373-02f1ae527ed7
+langcode: fi
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: '-OAAZDw1OR_UyAEPEKX0Hu4LaZD149vW9PmMnIC-v0o'
+id: konsolifin2026_site_branding
+theme: konsolifin2026
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Sivuston brändäys'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

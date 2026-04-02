@@ -1,0 +1,20 @@
+uuid: 33aef463-99c8-4b94-8ef4-60de2af78ba4
+langcode: fi
+status: true
+dependencies:
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: konsolifin2026_primary_admin_actions
+theme: konsolifin2026
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Ensisijaiset ylläpidon toimenpiteet'
+  label_display: '0'
+  provider: core
+visibility: {  }

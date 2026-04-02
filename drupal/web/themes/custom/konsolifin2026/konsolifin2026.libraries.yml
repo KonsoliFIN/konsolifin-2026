@@ -1,0 +1,28 @@
+global:
+  version: 1.0.0
+  css:
+    base:
+      css/base/reset.css: {}
+      css/base/variables.css: {}
+      css/base/typography.css: {}
+    layout:
+      css/layout/layout.css: {}
+    component:
+      css/components/header.css: {}
+      css/components/navigation.css: {}
+      css/components/hero.css: {}
+      css/components/sarja-highlight.css: {}
+      css/components/cards.css: {}
+      css/components/content.css: {}
+      css/components/sidebar.css: {}
+      css/components/review-score.css: {}
+      css/components/podcast.css: {}
+      css/components/footer.css: {}
+    theme:
+      css/theme/theme.css: {}
+  js:
+    js/navigation.js: {}
+    js/sarja-highlight.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

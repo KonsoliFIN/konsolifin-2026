@@ -1,0 +1,106 @@
+/* Mobile-first: off-canvas nav */
+.primary-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100dvh;
+  background: var(--color-bg-secondary);
+  border-left: 1px solid var(--color-border);
+  transform: translateX(100%);
+  transition: transform var(--transition-base);
+  z-index: var(--z-overlay);
+  padding: var(--space-4xl) var(--space-lg) var(--space-lg);
+  overflow-y: auto;
+}
+
+.primary-nav[data-open="true"] {
+  transform: translateX(0);
+}
+
+.primary-nav__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: calc(var(--z-overlay) - 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.primary-nav__overlay[data-visible="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.primary-nav .menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.primary-nav .menu-item a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text-secondary);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-base);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.primary-nav .menu-item a:hover,
+.primary-nav .menu-item a:focus {
+  color: var(--color-text-primary);
+  background: var(--color-bg-hover);
+}
+
+.primary-nav .menu-item--active-trail > a {
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+/* Desktop: horizontal nav */
+@media (min-width: 1024px) {
+  .primary-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    transform: none;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .primary-nav__overlay {
+    display: none;
+  }
+
+  .primary-nav .menu {
+    flex-direction: row;
+    gap: var(--space-xs);
+  }
+
+  .primary-nav .menu-item a {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-sm);
+  }
+}
+
+/* Secondary nav / account menu */
+.secondary-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.secondary-nav a {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.secondary-nav a:hover {
+  color: var(--color-text-primary);
+}

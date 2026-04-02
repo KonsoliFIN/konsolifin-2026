@@ -15,8 +15,10 @@ dependencies:
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
+    - image.style.teaser_thumbnail
     - node.type.uutinen
   module:
+    - media
     - text
     - user
 id: node.uutinen.teaser
@@ -30,17 +32,27 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: teaser_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
     weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
   field_alustat: true
   field_comments: true
-  field_hero: true
   field_ihmiset: true
   field_julkaisijat: true
   field_kuvat: true

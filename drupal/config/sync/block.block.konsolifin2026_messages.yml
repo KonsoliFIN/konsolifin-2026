@@ -1,0 +1,22 @@
+uuid: 9d191e9b-44bc-4d76-9b68-3164836f03d8
+langcode: fi
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: konsolifin2026_messages
+theme: konsolifin2026
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Tilaviestit
+  label_display: '0'
+  provider: system
+visibility: {  }

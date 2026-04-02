@@ -1,0 +1,107 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background: rgba(13, 13, 15, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md);
+  gap: var(--space-md);
+}
+
+.site-branding {
+  flex-shrink: 0;
+}
+
+.site-branding__logo img {
+  height: 36px;
+  width: auto;
+}
+
+.site-branding__name {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-extrabold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.site-branding__name span {
+  color: var(--color-accent);
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  transition: background var(--transition-fast);
+}
+
+.menu-toggle:hover {
+  background: var(--color-bg-hover);
+}
+
+.menu-toggle__icon {
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+
+.menu-toggle__icon::before,
+.menu-toggle__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transition: transform var(--transition-base);
+}
+
+.menu-toggle__icon::before { top: -7px; }
+.menu-toggle__icon::after { top: 7px; }
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon {
+  background: transparent;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header__inner {
+    padding: var(--space-md) var(--space-md);
+  }
+}

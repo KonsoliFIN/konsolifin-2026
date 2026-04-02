@@ -1,0 +1,22 @@
+uuid: 088b9654-5f31-4d8e-b36b-e1f513515d47
+langcode: fi
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - konsolifin2026
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: konsolifin2026_breadcrumbs
+theme: konsolifin2026
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Murupolku
+  label_display: '0'
+  provider: system
+visibility: {  }
