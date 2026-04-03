@@ -31,6 +31,7 @@
         "drupal/openid_connect": "^3.0@alpha",
         "drupal/slick": "^3.0",
         "drupal/video_embed_field": "^3.0",
+        "drupal/views_infinite_scroll": "^2.0",
         "drush/drush": "^13.7"
     },
     "conflict": {

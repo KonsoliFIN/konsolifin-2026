@@ -15,6 +15,7 @@ dependencies:
   module:
     - node
     - user
+    - views_infinite_scroll
 _core:
   default_config_hash: OEEnRQIjfIaCFRsz8U3VqDrE82ltQKlo8wNbQJRZXu0
 id: frontpage
@@ -34,18 +35,16 @@ display:
       title: ''
       fields: {  }
       pager:
-        type: full
+        type: infinite_scroll
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 20
+          items_per_page: 30
           total_pages: 0
           id: 0
           tags:
             next: 'Seuraava ›'
             previous: '‹ Edellinen'
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
           expose:
             items_per_page: false
             items_per_page_label: 'Merkintöjä sivua kohti'
@@ -54,7 +53,10 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset: false
             offset_label: Offset
-          quantity: 7
+          views_infinite_scroll:
+            button_text: 'Load More'
+            automatically_load_content: false
+            initially_load_all_pages: false
       exposed_form:
         type: basic
         options:

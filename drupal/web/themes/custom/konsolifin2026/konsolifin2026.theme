@@ -106,6 +106,10 @@ function konsolifin2026_preprocess_views_view_unformatted(array &$variables): vo
     return;
   }
 
+  // Pass the current page number so the template can differentiate
+  // the first page (tiered layout) from subsequent pages (compact only).
+  $variables['frontpage_current_page'] = (int) $view->getCurrentPage();
+
   // Find the index of the first non-uutinen node for the featured slot.
   $variables['frontpage_featured_index'] = 0;
   foreach ($view->result as $index => $row) {
