@@ -26,7 +26,9 @@ settings:
       - numberedList
       - '|'
       - blockQuote
+      - drupalMedia
       - drupalInsertImage
+      - videoEmbed
       - insertTable
       - horizontalLine
       - '|'
@@ -38,7 +40,7 @@ settings:
     ckeditor5_codeBlock:
       languages:
         -
-          label: 'Plain text'
+          label: 'Puhdas teksti'
           language: plaintext
         -
           label: C
