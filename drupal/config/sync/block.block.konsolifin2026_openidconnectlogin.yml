@@ -1,0 +1,20 @@
+uuid: 1ce5bc52-6b00-42e4-a91e-f386bd5f9d1c
+langcode: fi
+status: true
+dependencies:
+  module:
+    - openid_connect
+  theme:
+    - konsolifin2026
+id: konsolifin2026_openidconnectlogin
+theme: konsolifin2026
+region: primary_menu
+weight: 0
+provider: null
+plugin: openid_connect_login
+settings:
+  id: openid_connect_login
+  label: 'OpenID Connect login'
+  label_display: '0'
+  provider: openid_connect
+visibility: {  }

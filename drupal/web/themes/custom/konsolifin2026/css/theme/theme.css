@@ -261,6 +261,11 @@
   color: var(--color-text-muted);
 }
 
+/* SSO Login button */
+#block-konsolifin2026-openidconnectlogin {
+  margin-top: 10px;
+}
+
 /* Utility: visually hidden but accessible */
 .visually-hidden {
   position: absolute;
