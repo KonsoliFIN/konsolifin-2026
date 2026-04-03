@@ -262,9 +262,11 @@
 }
 
 /* SSO Login button */
-#block-konsolifin2026-openidconnectlogin {
+#block-konsolifin2026-openidconnectlogin,
+#block-konsolifin2026-account-menu {
   margin-top: 10px;
 }
+
 
 /* Utility: visually hidden but accessible */
 .visually-hidden {
