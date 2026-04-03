@@ -275,3 +275,8 @@
     font-size: var(--text-base);
   }
 }
+
+/* Images hidden in node teasers */
+.node--view-mode-teaser img {
+  display: none;
+}
