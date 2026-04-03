@@ -24,6 +24,7 @@ global:
   js:
     js/navigation.js: {}
     js/hero-parallax.js: {}
+    js/sidebar-align.js: {}
     js/sarja-highlight.js: {}
   dependencies:
     - core/drupal

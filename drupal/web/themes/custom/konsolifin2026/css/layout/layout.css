@@ -17,6 +17,7 @@
 @media (min-width: 1024px) {
   .layout-content-wrapper {
     grid-template-columns: 1fr var(--sidebar-width);
+    align-items: start;
   }
 }
 
