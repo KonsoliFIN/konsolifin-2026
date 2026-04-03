@@ -85,6 +85,24 @@ function konsolifin2026_preprocess_node(array &$variables): void {
     }
     $variables['platforms'] = $platforms;
   }
+
+  // For frontpage featured/duo items, re-render field_hero with a large
+  // image style instead of the teaser thumbnail.
+  if (!empty($node->_konsolifin_frontpage_large_image)
+    && $variables['view_mode'] === 'teaser'
+    && $node->hasField('field_hero')
+    && !$node->get('field_hero')->isEmpty()) {
+    $variables['content']['field_hero'] = $node->get('field_hero')->view([
+      'type' => 'media_thumbnail',
+      'label' => 'hidden',
+      'settings' => [
+        'image_style' => 'wide',
+        'image_link' => '',
+        'image_loading' => ['attribute' => 'eager'],
+      ],
+    ]);
+    $variables['frontpage_large_image'] = TRUE;
+  }
 }
 
 /**
@@ -111,12 +129,31 @@ function konsolifin2026_preprocess_views_view_unformatted(array &$variables): vo
   $variables['frontpage_current_page'] = (int) $view->getCurrentPage();
 
   // Find the index of the first non-uutinen node for the featured slot.
-  $variables['frontpage_featured_index'] = 0;
+  $featured_index = 0;
   foreach ($view->result as $index => $row) {
     $node = $row->_entity ?? NULL;
     if ($node instanceof NodeInterface && $node->bundle() !== 'uutinen') {
-      $variables['frontpage_featured_index'] = $index;
+      $featured_index = $index;
       break;
+    }
+  }
+  $variables['frontpage_featured_index'] = $featured_index;
+
+  // Flag the first 3 items (featured + 2 duo) for large image rendering.
+  // Build the ordered indices: featured first, then the rest.
+  $ordered_indices = [$featured_index];
+  foreach (array_keys($view->result) as $idx) {
+    if ($idx !== $featured_index) {
+      $ordered_indices[] = $idx;
+    }
+  }
+
+  // The first 3 in the ordered list get the large image flag.
+  $large_image_indices = array_slice($ordered_indices, 0, 3);
+  foreach ($large_image_indices as $idx) {
+    $node = $view->result[$idx]->_entity ?? NULL;
+    if ($node instanceof NodeInterface) {
+      $node->_konsolifin_frontpage_large_image = TRUE;
     }
   }
 }
