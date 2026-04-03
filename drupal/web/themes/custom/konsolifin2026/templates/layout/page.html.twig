@@ -27,45 +27,11 @@
   </div>
 </header>
 
-{% if page.sarja_highlight %}
-  <div class="layout-container">
-    <aside class="region-sarja-highlight" aria-label="{{ 'Ajankohtainen sarja'|t }}">
-      {{ page.sarja_highlight }}
-    </aside>
-  </div>
-{% endif %}
-
-{% if page.hero %}
-  <div class="layout-container">
-    <div class="region-hero">
-      {{ page.hero }}
-    </div>
-  </div>
-{% endif %}
-
 <div class="layout-container">
-  {% if page.breadcrumb %}
-    <div class="region-breadcrumb">
-      {{ page.breadcrumb }}
-    </div>
-  {% endif %}
-
-  {% if page.content_top %}
-    <div class="region-content-top">
-      {{ page.content_top }}
-    </div>
-  {% endif %}
-
   <div class="layout-content-wrapper">
     <main id="main-content" class="layout-main" role="main">
       {{ page.content }}
     </main>
-
-    {% if page.sidebar %}
-      <aside class="region-sidebar" role="complementary" aria-label="{{ 'Sivupalkki'|t }}">
-        {{ page.sidebar }}
-      </aside>
-    {% endif %}
   </div>
 
   {% if page.content_bottom %}

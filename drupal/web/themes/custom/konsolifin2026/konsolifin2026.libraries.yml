@@ -19,12 +19,12 @@ global:
       css/components/review-score.css: {}
       css/components/podcast.css: {}
       css/components/footer.css: {}
+      css/components/frontpage.css: {}
     theme:
       css/theme/theme.css: {}
   js:
     js/navigation.js: {}
     js/hero-parallax.js: {}
-    js/sidebar-align.js: {}
     js/sarja-highlight.js: {}
   dependencies:
     - core/drupal

@@ -12,12 +12,7 @@ libraries:
 regions:
   header: Header
   primary_menu: 'Primary menu'
-  hero: Hero
-  sarja_highlight: 'Sarja highlight'
-  breadcrumb: Breadcrumb
-  content_top: 'Content top'
   content: Content
-  sidebar: Sidebar
   content_bottom: 'Content bottom'
   footer_first: 'Footer first'
   footer_second: 'Footer second'

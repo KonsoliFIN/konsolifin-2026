@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Front page view template with tiered layout.
+ *
+ * Layout tiers:
+ * 1. First non-uutinen node: full-width hero card
+ * 2. Next 2 uutinen nodes: half-width side by side
+ * 3. Next 5 nodes (any type): standard list cards
+ * 4. Remaining nodes: compact cards at half height
+ *
+ * Variables:
+ * - rows: The view result rows.
+ * - frontpage_featured_index: Index of the first non-uutinen row.
+ */
+#}
+
+{% set featured_idx = frontpage_featured_index ?? 0 %}
+
+{#
+  Build ordered list: featured item first, then the rest in original order
+  (skipping the featured item from its original position).
+#}
+{% set featured_row = rows[featured_idx] %}
+{% set remaining = [] %}
+{% for idx, row in rows %}
+  {% if idx != featured_idx %}
+    {% set remaining = remaining|merge([row]) %}
+  {% endif %}
+{% endfor %}
+
+{# --- Tier 1: Featured hero card (full width) --- #}
+<div class="frontpage-tier frontpage-tier--featured">
+  <div class="frontpage-featured-card">
+    {{ featured_row.content }}
+  </div>
+</div>
+
+{# --- Tier 2: Two half-width cards side by side --- #}
+{% if remaining|length > 0 %}
+  <div class="frontpage-tier frontpage-tier--duo">
+    {% for row in remaining|slice(0, 2) %}
+      <div class="frontpage-duo-card">
+        {{ row.content }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{# --- Tier 3: Five standard list cards --- #}
+{% if remaining|length > 2 %}
+  <div class="frontpage-tier frontpage-tier--standard">
+    {% for row in remaining|slice(2, 5) %}
+      <div class="frontpage-standard-card">
+        {{ row.content }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{# --- Tier 4: Remaining compact cards --- #}
+{% if remaining|length > 7 %}
+  <div class="frontpage-tier frontpage-tier--compact">
+    {% for row in remaining|slice(7) %}
+      <div class="frontpage-compact-card">
+        {{ row.content }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
