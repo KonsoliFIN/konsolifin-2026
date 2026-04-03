@@ -60,7 +60,7 @@
   background: var(--color-accent-glow);
 }
 
-/* Desktop: horizontal nav */
+/* Desktop: inline nav, fills remaining header space */
 @media (min-width: 1024px) {
   .primary-nav {
     position: static;
@@ -71,6 +71,9 @@
     transform: none;
     padding: 0;
     overflow: visible;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .primary-nav__overlay {
@@ -79,28 +82,21 @@
 
   .primary-nav .menu {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--space-xs);
   }
 
   .primary-nav .menu-item a {
     padding: var(--space-xs) var(--space-sm);
     font-size: var(--text-sm);
+    white-space: nowrap;
   }
 }
 
-/* Secondary nav / account menu */
-.secondary-nav {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+/* Local tasks shown inline */
+#block-konsolifin2026-primary-local-tasks li {
+    display: inline;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }
 
-.secondary-nav a {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  transition: color var(--transition-fast);
-}
-
-.secondary-nav a:hover {
-  color: var(--color-text-primary);
-}

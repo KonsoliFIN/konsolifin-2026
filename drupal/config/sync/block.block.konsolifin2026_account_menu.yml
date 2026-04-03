@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: konsolifin2026_account_menu
 theme: konsolifin2026
-region: secondary_menu
-weight: -4
+region: sidebar
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

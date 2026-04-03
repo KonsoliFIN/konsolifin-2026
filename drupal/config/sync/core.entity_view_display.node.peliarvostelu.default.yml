@@ -47,7 +47,7 @@ content:
     type: star_formatter
     label: hidden
     settings:
-      width: '400'
+      width: '350'
     third_party_settings: {  }
     weight: 8
     region: content

@@ -148,18 +148,18 @@
             <div class="node__summary-value">{{ content.field_lisatiedot }}</div>
           </div>
         {% endif %}
-        {% if review_label is defined and content.field_arvosana|render is not empty %}
-          <div class="node__summary-item node__summary-item--stars">
-            <span class="node__summary-label">{{ 'Arvosana'|t }}</span>
-            <div class="node__summary-value">{{ content.field_arvosana }}</div>
-          </div>
-        {% endif %}
       </div>
     </div>
 
     <div class="node__body">
       {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_kuvat', 'field_pelit', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
     </div>
+
+    {% if review_label is defined and content.field_arvosana|render is not empty %}
+      <div class="node__summary-item node__summary-item--stars">
+        <div class="node__summary-value">{{ content.field_arvosana }}</div>
+      </div>
+    {% endif %}
 
     {% if content.field_kuvat|render is not empty %}
       <div class="node__gallery">

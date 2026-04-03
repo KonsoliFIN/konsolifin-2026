@@ -8,8 +8,8 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: konsolifin2026_primary_local_tasks
 theme: konsolifin2026
-region: sidebar
-weight: -6
+region: header
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
