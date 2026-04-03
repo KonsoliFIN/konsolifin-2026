@@ -7,14 +7,17 @@ dependencies:
     - field.field.node.julkaisu.body
     - field.field.node.julkaisu.field_alustat
     - field.field.node.julkaisu.field_comments
+    - field.field.node.julkaisu.field_hero
     - field.field.node.julkaisu.field_julkaisijat
     - field.field.node.julkaisu.field_julkaisuajankohta
     - field.field.node.julkaisu.field_kuvat
     - field.field.node.julkaisu.field_pelit
     - field.field.node.julkaisu.field_studiot
     - field.field.node.julkaisu.field_tyyppi
+    - image.style.teaser_thumbnail
     - node.type.julkaisu
   module:
+    - media
     - text
     - user
 id: node.julkaisu.teaser
@@ -27,6 +30,17 @@ content:
     label: hidden
     settings:
       trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: teaser_thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

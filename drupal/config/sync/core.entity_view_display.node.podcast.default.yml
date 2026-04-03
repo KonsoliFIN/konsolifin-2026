@@ -12,10 +12,12 @@ dependencies:
     - field.field.node.podcast.field_osallistujat
     - field.field.node.podcast.field_pelit
     - field.field.node.podcast.field_sisalto
+    - image.style.hero_banner
     - node.type.podcast
   module:
     - blazy
     - comment
+    - media
     - text
     - user
 id: node.podcast.default
@@ -40,11 +42,13 @@ content:
     weight: 11
     region: content
   field_hero:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: full
-      link: false
+      image_link: ''
+      image_style: hero_banner
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

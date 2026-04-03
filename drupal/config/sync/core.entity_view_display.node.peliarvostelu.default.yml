@@ -16,10 +16,12 @@ dependencies:
     - field.field.node.peliarvostelu.field_sarja
     - field.field.node.peliarvostelu.field_summary_in_english
     - field.field.node.peliarvostelu.field_title_in_english
+    - image.style.hero_banner
     - node.type.peliarvostelu
   module:
     - comment
     - konsolifin_review_score
+    - media
     - slick
     - text
     - user
@@ -61,11 +63,13 @@ content:
     weight: 9
     region: content
   field_hero:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: full
-      link: false
+      image_link: ''
+      image_style: hero_banner
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

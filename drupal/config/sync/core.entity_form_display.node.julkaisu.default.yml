@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.julkaisu.body
     - field.field.node.julkaisu.field_alustat
     - field.field.node.julkaisu.field_comments
+    - field.field.node.julkaisu.field_hero
     - field.field.node.julkaisu.field_julkaisijat
     - field.field.node.julkaisu.field_julkaisuajankohta
     - field.field.node.julkaisu.field_kuvat
@@ -55,6 +56,13 @@ content:
     weight: 127
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_hero:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_julkaisijat:
     type: entity_reference_autocomplete

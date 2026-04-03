@@ -7,16 +7,19 @@ dependencies:
     - field.field.node.julkaisu.body
     - field.field.node.julkaisu.field_alustat
     - field.field.node.julkaisu.field_comments
+    - field.field.node.julkaisu.field_hero
     - field.field.node.julkaisu.field_julkaisijat
     - field.field.node.julkaisu.field_julkaisuajankohta
     - field.field.node.julkaisu.field_kuvat
     - field.field.node.julkaisu.field_pelit
     - field.field.node.julkaisu.field_studiot
     - field.field.node.julkaisu.field_tyyppi
+    - image.style.hero_banner
     - node.type.julkaisu
   module:
     - comment
     - date_ish
+    - media
     - options
     - slick
     - text
@@ -49,6 +52,17 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 11
+    region: content
+  field_hero:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: hero_banner
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_julkaisijat:
     type: entity_reference_label
@@ -83,6 +97,7 @@ content:
       layout: below
       view_mode: slick
       cache: 0
+      admin_uri: ''
       use_lb: false
       background: false
       box_caption: ''

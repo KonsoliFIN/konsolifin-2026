@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.laitearvio.field_kuvat
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
+    - image.style.hero_banner
     - node.type.laitearvio
   module:
     - comment
+    - media
     - slick
     - text
     - user
@@ -38,11 +40,13 @@ content:
     weight: 11
     region: content
   field_hero:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: hero_banner
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -64,6 +68,7 @@ content:
       layout: below
       view_mode: slick
       cache: 0
+      admin_uri: ''
       use_lb: false
       background: false
       box_caption: ''

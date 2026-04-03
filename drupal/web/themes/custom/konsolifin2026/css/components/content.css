@@ -3,16 +3,18 @@
   padding-bottom: var(--space-3xl);
 }
 
-/* Hero banner — full-bleed background image with content on top */
+/* Hero banner — full-bleed parallax background with content on top */
 .node__hero-banner {
   position: relative;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  left: 50%;
+  transform: translateX(-50%);
   min-height: 50vh;
   display: flex;
   align-items: flex-end;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: 0;
   background: var(--color-bg-secondary);
+  overflow: hidden;
 }
 
 .node__hero-banner--has-image {
@@ -31,8 +33,12 @@
 
 .node__hero-bg {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 140%;
   z-index: 0;
+  will-change: transform;
 }
 
 .node__hero-bg img,
@@ -57,10 +63,12 @@
     to top,
     var(--color-bg-primary) 0%,
     var(--color-bg-primary) 8%,
-    rgba(13, 13, 15, 0.92) 20%,
-    rgba(13, 13, 15, 0.6) 50%,
-    rgba(13, 13, 15, 0.25) 100%
+    rgba(13, 13, 15, 0.92) 25%,
+    rgba(13, 13, 15, 0.7) 50%,
+    rgba(13, 13, 15, 0.5) 75%,
+    rgba(13, 13, 15, 0.4) 100%
   );
+  will-change: transform;
 }
 
 .node__hero-content {
@@ -77,6 +85,17 @@
     padding: var(--space-4xl) var(--space-md) var(--space-3xl);
     max-width: min(var(--container-max), 75%);
   }
+}
+
+/* Content backdrop — solid bg that slides over the hero on scroll */
+.node__summary-info,
+.node__body,
+.node__gallery,
+.node__tags,
+.comment-section {
+  position: relative;
+  z-index: 3;
+  background: var(--color-bg-primary);
 }
 
 .node__badges {
@@ -232,13 +251,11 @@
 
 /* Article body content */
 .node__body {
-  position: relative;
-  z-index: 3;
   max-width: var(--container-narrow);
   margin: 0 auto;
+  padding-top: var(--space-2xl);
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
-  background: var(--color-bg-primary);
 }
 
 .node__body p {

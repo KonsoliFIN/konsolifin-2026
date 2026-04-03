@@ -23,6 +23,7 @@ global:
       css/theme/theme.css: {}
   js:
     js/navigation.js: {}
+    js/hero-parallax.js: {}
     js/sarja-highlight.js: {}
   dependencies:
     - core/drupal
