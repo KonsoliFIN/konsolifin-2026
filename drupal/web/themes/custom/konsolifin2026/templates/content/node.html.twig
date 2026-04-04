@@ -71,13 +71,6 @@
           {% if author_name %}
             <span class="card__author">{{ author_name }}</span>
           {% endif %}
-          {% if platforms is not empty %}
-            <div class="card__platforms">
-              {% for platform in platforms %}
-                <span class="card__platform-tag">{{ platform }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
         </div>
       </div>
     </div>

@@ -1,0 +1,118 @@
+{#
+/**
+ * @file
+ * KonsoliFIN 2026 default taxonomy term template.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: (optional) Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+#}
+{%
+  set classes = [
+    'taxonomy-term',
+    'vocabulary-' ~ term.bundle|clean_class,
+  ]
+%}
+
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+
+  {% if view_mode == 'teaser' %}
+    {# --- Teaser / Card view — horizontal thumbnail layout --- #}
+    <div class="card card--horizontal">
+      {% if content.field_hero_kuva|render is not empty %}
+        <div class="card__thumb">
+          {{ content.field_hero_kuva }}
+        </div>
+      {% endif %}
+
+      <div class="card__body">
+        <div class="card__body-top">
+          <span class="card__badge card__badge--{{ node.bundle() }}">
+            {{ type_label }}
+          </span>
+          {% if review_label is defined %}
+            <span class="review-badge review-badge--{{ review_score_class }}">{{ review_label }}</span>
+          {% endif %}
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+
+        {{ title_prefix }}
+        <h3 class="card__title">
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h3>
+        {{ title_suffix }}
+
+        {% if review_score is defined and content.field_arvosana|render is not empty %}
+          <div class="card__stars">
+            {{ content.field_arvosana }}
+          </div>
+        {% endif %}
+
+        {% if content.body|render is not empty %}
+          <div class="card__excerpt">{{ content.body }}</div>
+        {% endif %}
+
+        <div class="card__meta">
+          <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+            {{ node.getCreatedTime()|date('j.n.Y') }}
+          </time>
+          {% if author_name %}
+            <span class="card__author">{{ author_name }}</span>
+          {% endif %}
+          {% if platforms is not empty %}
+            <div class="card__platforms">
+              {% for platform in platforms %}
+                <span class="card__platform-tag">{{ platform }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  {% else %}
+    {# --- Full view --- #}
+    {% set has_hero = content.field_hero_kuva|render is not empty %}
+
+    <div class="node__hero-banner{{ has_hero ? ' node__hero-banner--has-image' }}">
+      {% if has_hero %}
+        <div class="node__hero-bg">
+          {{ content.field_hero_kuva }}
+        </div>
+        <div class="node__hero-overlay"></div>
+      {% endif %}
+
+      <div class="node__hero-content">
+        <div class="node__badges">
+          <span class="card__badge card__badge--{{ node.bundle() }}">{{ type_label }}</span>
+          {% if sarja_name %}
+            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% endif %}
+        </div>
+
+        {{ title_prefix }}
+        <h1 class="node__title">{{ name }}</h1>
+        {{ title_suffix }}
+      </div>
+    </div>
+
+    <div class="node__body">
+      {{ content|without('field_hero_kuva', 'field_kuvat') }}
+    </div>
+  {% endif %}
