@@ -98,13 +98,6 @@
         {{ title_prefix }}
         <h1 class="node__title">{{ label }}</h1>
         {{ title_suffix }}
-
-        {% if review_label is defined %}
-          <div class="node__score-wrapper">
-            <span class="review-badge review-badge--large review-badge--{{ review_score_class }}">{{ review_label }}</span>
-            <span class="node__score-label">{{ 'Arvosana'|t }}</span>
-          </div>
-        {% endif %}
       </div>
     </div>
 
