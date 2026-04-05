@@ -1,0 +1,8 @@
+konsolifin_term_page.add_julkaisu_form:
+  path: '/konsolifin/term/{taxonomy_term}/add-julkaisu'
+  defaults:
+    _form: '\Drupal\konsolifin_term_page\Form\AddJulkaisuModalForm'
+    _title: 'Add Release'
+  requirements:
+    _permission: 'create julkaisu content'
+    taxonomy_term: \d+
