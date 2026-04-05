@@ -1,0 +1,125 @@
+/* ==========================================================================
+   KONSOLIFIN TEXT FORMATTING
+   ========================================================================== */
+
+/*
+    Vanhalla sivustolla käytetyt tekstityylit:
+
+    { name : 'Leipäteksti' , element : 'p' },
+    { name : 'Väliotsikko' , element : 'h3' },
+    { name : 'Kuvateksti' , element : 'div' , attributes : { 'class' : 'sisalto-kuvateksti' }  },
+    { name : 'Ingressi' , element : 'div' , attributes : { 'class' : 'sisalto-ingressi' } },
+    { name : 'Poiminta', element : 'div', attributes : { 'class' : 'sisalto-poiminta' } },
+    { name : 'Lisätietolaatikko', element : 'div', attributes : { 'class' : 'sisalto-lisatieto' } },
+*/
+
+:root {
+    /* Design Tokens - Adjust these for the new look */
+    --color-pro: #27ae60;
+    --color-con: #c0392b;
+    --bg-offset: #f5f5f5;
+    --spacing-base: 1.5rem;
+}
+
+/* --- Base Typography --- */
+.node__body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    font-size: 1.125rem;
+}
+
+/* Ingress / Lead Paragraph */
+.sisalto-ingressi {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+}
+
+/* Sub-headers */
+.node-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* --- Media & Captions --- */
+figure img {
+    margin-bottom: 0 !important;
+}
+
+p + div.sisalto-kuvateksti {
+    margin-top: -2em;
+    margin-bottom: 1em;
+}
+
+.sisalto-kuvateksti,
+figcaption {
+    font-size: 0.9rem;
+}
+
+.oembed-provider-youtube {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 56.5%;
+    padding-top: 0;
+    height: 0;
+    overflow: visible;
+}
+
+/* Video Responsive Container */
+.oembed-provider-youtube iframe,
+.oembed-provider-youtube object,
+.oembed-provider-youtube embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.video-embed-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 2rem 0;
+}
+
+/* --- Quotes & Callouts --- */
+
+
+/* Related Links / "Lue Myös" */
+.sisalto-poiminta {
+    font-size: 1.2rem;
+    padding-left: 1em;
+    border-left: 2px solid var(--color-text-secondary);
+}
+
+p.sisalto-lisatieto {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border-light);
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+p.sisalto-lisatieto + p.sisalto-lisatieto {
+    margin-top: -3rem;
+    border-top: none;
+}
+
+div.sisalto-lisatieto h3 {
+    font-size: 1.1rem;
+}
+
+div.sisalto-lisatieto p {
+    font-size: 1rem;
+}
+
+div.sisalto-lisatieto :first-child  {
+    margin-top: 0px;
+}
+
+div.sisalto-lisatieto :last-child {
+    margin-bottom: 0px;
+}

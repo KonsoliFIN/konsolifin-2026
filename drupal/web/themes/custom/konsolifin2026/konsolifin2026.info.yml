@@ -18,3 +18,6 @@ regions:
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer: Footer
+
+ckeditor5-stylesheets:
+  - css/base/editor-styles.css

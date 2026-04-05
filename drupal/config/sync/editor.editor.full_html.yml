@@ -13,6 +13,8 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - heading
+      - style
       - bold
       - italic
       - strikethrough
@@ -32,7 +34,6 @@ settings:
       - insertTable
       - horizontalLine
       - '|'
-      - heading
       - codeBlock
       - '|'
       - sourceEditing
@@ -83,11 +84,7 @@ settings:
           language: xml
     ckeditor5_heading:
       enabled_headings:
-        - heading2
         - heading3
-        - heading4
-        - heading5
-        - heading6
     ckeditor5_imageResize:
       allow_resize: true
     ckeditor5_list:
@@ -98,6 +95,20 @@ settings:
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: Ingressi
+          element: '<p class="sisalto-ingressi">'
+        -
+          label: Kuvateksti
+          element: '<p class="sisalto-kuvateksti">'
+        -
+          label: Poiminta
+          element: '<p class="sisalto-poiminta">'
+        -
+          label: Lisätietolaatikko
+          element: '<p class="sisalto-lisatieto">'
     media_media:
       allow_view_mode_override: false
     video_embed_wysiwyg_video_embed:

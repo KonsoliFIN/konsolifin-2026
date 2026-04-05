@@ -1,0 +1,48 @@
+/*
+    { name : 'Leipäteksti' , element : 'p' },
+    { name : 'Väliotsikko' , element : 'h3' },
+    { name : 'Kuvateksti' , element : 'div' , attributes : { 'class' : 'sisalto-kuvateksti' }  },
+    { name : 'Ingressi' , element : 'div' , attributes : { 'class' : 'sisalto-ingressi' } },
+    { name : 'Poiminta', element : 'div', attributes : { 'class' : 'sisalto-poiminta' } },
+    { name : 'Lisätietolaatikko', element : 'div', attributes : { 'class' : 'sisalto-lisatieto' } },
+*/
+
+.ck-editor p {
+    font-size: 1.1rem;
+}
+
+.ck-editor h3 {
+    font-size: 1.5rem;
+}
+
+.ck-editor .sisalto-kuvateksti {
+    font-size: 1rem;
+}
+
+.ck-editor .sisalto-poiminta {
+    font-size: 1.2rem;
+    padding-left: 1em;
+    border-left: 2px solid darkblue;
+}
+
+.ck-editor .sisalto-ingressi {
+    font-size: 1.3rem;
+}
+
+.ck-editor .sisalto-lisatieto {
+    font-size: 1rem;
+    background: lightgray;
+    border: 1px solid darkgray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.ck-editor .sisalto-lisatieto:not(:last-of-type) {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.ck-editor .sisalto-lisatieto + .sisalto-lisatieto {
+    margin-top: 0;
+    border-top: none;
+}

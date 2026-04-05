@@ -4,6 +4,7 @@ global:
     base:
       css/base/reset.css: {}
       css/base/variables.css: {}
+      css/base/node-styles.css: {}
       css/base/typography.css: {}
     layout:
       css/layout/layout.css: {}
