@@ -1,0 +1,77 @@
+/* Modal dialog — override jQuery UI dialog to match dark theme */
+
+.ui-dialog {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-border);
+  padding: 0;
+  z-index: var(--z-modal);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.ui-dialog .ui-dialog-title {
+  color: var(--color-text-primary);
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+  color: var(--color-text-primary);
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+  background: none;
+  text-indent: 0;
+  width: auto;
+  height: auto;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon::before {
+  content: '✕';
+  font-size: var(--text-lg);
+}
+
+.ui-dialog .ui-dialog-content {
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  padding: var(--space-lg);
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  background: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg);
+}
+
+/* Overlay behind the modal */
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Reset jQuery UI widget font styles inside the dialog */
+.ui-dialog,
+.ui-dialog .ui-dialog-content,
+.ui-dialog input,
+.ui-dialog select,
+.ui-dialog textarea,
+.ui-dialog label {
+  font-family: var(--font-body);
+}

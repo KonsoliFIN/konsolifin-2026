@@ -6,12 +6,13 @@ namespace Drupal\konsolifin_term_page\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\date_ish\Element\DateIshElement;
 use Drupal\node\Entity\Node;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\CloseModalDialogCommand;
+use Drupal\Core\Ajax\RedirectCommand;
 use Drupal\Core\Ajax\ReplaceCommand;
-use Drupal\Core\Ajax\ReloadCommand;
 
 /**
  * Form for adding a julkaisu node from the peli term page.
@@ -49,7 +50,6 @@ class AddJulkaisuModalForm extends FormBase {
       '#required' => TRUE,
     ];
 
-    // Reference the taxonomy field for alustat.
     $form['alustat'] = [
       '#type' => 'entity_autocomplete',
       '#target_type' => 'taxonomy_term',
@@ -61,35 +61,22 @@ class AddJulkaisuModalForm extends FormBase {
       '#required' => TRUE,
     ];
 
-    // date_ish field. We will use a standard date ish widget structure or just let user input date manually.
-    // However, the cleanest way to embed a field widget in a custom form is by attaching it to an entity,
-    // but since we want a simple form, we can use the date_ish form element if it exists, or just provide inputs.
-    // Let's create a dummy node to use entity form display for date_ish.
-    $node = Node::create([
-      'type' => 'julkaisu',
-    ]);
-    $form_display = \Drupal::entityTypeManager()
-      ->getStorage('entity_form_display')
-      ->load('node.julkaisu.default');
+    $form['field_tyyppi'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Type'),
+      '#options' => [
+        'ensijulkaisu' => $this->t('Ensijulkaisu'),
+        'early_access' => $this->t('Early access'),
+        'remaster' => $this->t('Remaster'),
+        'remake' => $this->t('Remake'),
+        'dlc' => $this->t('DLC'),
+        'bundle' => $this->t('Bundle'),
+      ],
+      '#default_value' => 'ensijulkaisu',
+      '#required' => TRUE,
+    ];
 
-    if ($form_display) {
-      $widget = $form_display->getRenderer('field_julkaisuajankohta');
-      if ($widget) {
-        $items = $node->get('field_julkaisuajankohta');
-        $form['field_julkaisuajankohta'] = $widget->form($items, $form, $form_state);
-        // We only want the widget for field_julkaisuajankohta. The $widget->form might return nested structure.
-      }
-    }
-
-    // If the widget extraction fails or is too complex, we fall back to a simpler approach:
-    if (!isset($form['field_julkaisuajankohta'])) {
-      // Fallback: manually provide date_ish fields if the widget is not straightforward.
-      // Wait, date_ish module defines a 'date_ish' Element type.
-      $form['field_julkaisuajankohta'] = [
-        '#type' => 'date_ish',
-        '#title' => $this->t('Release time'),
-      ];
-    }
+    $form['field_julkaisuajankohta'] = DateIshElement::build($this->t('Release time'));
 
     $form['actions'] = [
       '#type' => 'actions',
@@ -109,7 +96,7 @@ class AddJulkaisuModalForm extends FormBase {
   /**
    * Ajax callback for the form submission.
    */
-  public function ajaxSubmitCallback(array &$form, FormStateInterface $form_state) {
+  public function ajaxSubmitCallback(array &$form, FormStateInterface $form_state): AjaxResponse {
     $response = new AjaxResponse();
 
     if ($form_state->hasAnyErrors()) {
@@ -117,7 +104,11 @@ class AddJulkaisuModalForm extends FormBase {
     }
     else {
       $response->addCommand(new CloseModalDialogCommand());
-      $response->addCommand(new ReloadCommand());
+      // Redirect back to the current page to show the new julkaisu.
+      $peliTid = $form_state->getValue('peli_tid');
+      $term = Term::load($peliTid);
+      $url = $term ? $term->toUrl()->toString() : \Drupal::request()->getRequestUri();
+      $response->addCommand(new RedirectCommand($url));
     }
 
     return $response;
@@ -127,38 +118,42 @@ class AddJulkaisuModalForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
-    $title = $form_state->getValue('title');
-    $peli_tid = $form_state->getValue('peli_tid');
-    $alustat = $form_state->getValue('alustat');
+    try {
+      $title = $form_state->getValue('title');
+      $peli_tid = $form_state->getValue('peli_tid');
+      $alustat = $form_state->getValue('alustat');
 
-    // Extract date_ish value. If we used the widget from entity_form_display, it's nested in field_julkaisuajankohta[0].
-    $date_value = $form_state->getValue('field_julkaisuajankohta');
-    if (isset($date_value[0])) {
-      $date_ish_data = $date_value[0];
-    } else {
-      $date_ish_data = $date_value; // If it's directly the element.
+      $alustat_tids = [];
+      if (!empty($alustat) && is_array($alustat)) {
+        foreach ($alustat as $item) {
+          if (isset($item['target_id'])) {
+            $alustat_tids[] = ['target_id' => $item['target_id']];
+          }
+        }
+      }
+
+      $node = Node::create([
+        'type' => 'julkaisu',
+        'title' => $title,
+        'field_pelit' => [['target_id' => $peli_tid]],
+        'field_tyyppi' => $form_state->getValue('field_tyyppi'),
+        'field_alustat' => $alustat_tids,
+      ]);
+
+      // Extract date_ish value using the helper.
+      $date_ish = DateIshElement::extractValue($form_state->getValue('field_julkaisuajankohta'));
+      if (!empty($date_ish)) {
+        $node->set('field_julkaisuajankohta', $date_ish);
+      }
+
+      $node->save();
     }
-
-    $alustat_tids = array_map(function($item) {
-      return ['target_id' => $item['target_id']];
-    }, $alustat);
-
-    $node = Node::create([
-      'type' => 'julkaisu',
-      'title' => $title,
-      'field_pelit' => [
-        ['target_id' => $peli_tid],
-      ],
-      'field_tyyppi' => 'ensijulkaisu',
-      'field_alustat' => $alustat_tids,
-    ]);
-
-    // Handle date_ish data properly.
-    if (!empty($date_ish_data)) {
-      $node->set('field_julkaisuajankohta', $date_ish_data);
+    catch (\Exception $e) {
+      \Drupal::logger('konsolifin_term_page')->error('Failed to create julkaisu: @message', [
+        '@message' => $e->getMessage(),
+      ]);
+      $this->messenger()->addError($this->t('An error occurred while saving. Please try again.'));
     }
-
-    $node->save();
   }
 
 }

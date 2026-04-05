@@ -36,11 +36,14 @@ class PeliHandler implements VocabularyHandlerInterface {
     $variables['peli_julkaisut'] = $julkaisut;
     $variables['peli_no_julkaisut_message'] = t('No releases are associated with this game.');
 
-    // Check permissions and add add-link.
+    // Invalidate this page when any julkaisu node changes.
+    $variables['#cache']['tags'][] = 'node_list:julkaisu';
     $variables['#cache']['contexts'][] = 'user.permissions';
     if (\Drupal::currentUser()->hasPermission('create julkaisu content')) {
       $variables['peli_add_julkaisu_url'] = Url::fromRoute('konsolifin_term_page.add_julkaisu_form', ['taxonomy_term' => $peliTid])->toString();
-      $variables['#attached']['library'][] = 'core/drupal.dialog.ajax';
+      // Attach the dialog AJAX library to the content render array so it
+      // bubbles through the render pipeline and actually loads on the page.
+      $variables['content']['#attached']['library'][] = 'core/drupal.dialog.ajax';
     }
   }
 
