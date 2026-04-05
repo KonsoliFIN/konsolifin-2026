@@ -10,6 +10,8 @@
   display: inline-flex;
   width: var(--review-score-width, 200px);
   line-height: 0;
+  max-width: 75vw;
+  max-height: 75vw;
 }
 
 .review-score-star {
