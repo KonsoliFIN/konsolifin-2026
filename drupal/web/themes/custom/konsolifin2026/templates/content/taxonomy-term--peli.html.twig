@@ -1,0 +1,86 @@
+{#
+/**
+ * @file
+ * KonsoliFIN 2026 template for peli taxonomy term pages.
+ *
+ * Extends the theme's hero banner pattern with peli-specific content
+ * (julkaisut list, add release button) below the hero.
+ *
+ * Additional variables (set by konsolifin_term_page module):
+ * - peli_julkaisut: array of release groups
+ * - peli_no_julkaisut_message: string
+ * - peli_add_julkaisu_url: string|null
+ */
+#}
+{%
+  set classes = [
+    'taxonomy-term',
+    'vocabulary-peli',
+  ]
+%}
+
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+
+  {# --- Hero banner (same pattern as theme's taxonomy-term.html.twig) --- #}
+  {% set has_hero = content.field_hero_kuva|render is not empty %}
+
+  <div class="node__hero-banner{{ has_hero ? ' node__hero-banner--has-image' }}">
+    {% if has_hero %}
+      <div class="node__hero-bg">
+        {{ content.field_hero_kuva }}
+      </div>
+      <div class="node__hero-overlay"></div>
+    {% endif %}
+
+    <div class="node__hero-content">
+      <div class="node__badges">
+        <span class="card__badge card__badge--peli">{{ 'Peli'|t }}</span>
+      </div>
+
+      {{ title_prefix }}
+      <h1 class="node__title">{{ name }}</h1>
+      {{ title_suffix }}
+    </div>
+  </div>
+
+  {# --- Body content below hero --- #}
+  <div class="node__body">
+    {# Render fields except hero (already above) and julkaisut (handled below) #}
+    {{ content|without('field_hero_kuva') }}
+  </div>
+
+  {# --- Julkaisut section --- #}
+  <div class="peli-julkaisut-section node__body">
+    <h2>{{ 'Julkaisut'|t }}</h2>
+
+    {% if peli_julkaisut %}
+      {% for group_key, group in peli_julkaisut %}
+        <div class="peli-julkaisut-group peli-julkaisut-group--{{ group_key }}">
+          <h3>{{ group.label }}</h3>
+          <ul class="peli-julkaisut__list">
+            {% for item in group.items %}
+              <li class="peli-julkaisut__item">
+                <a href="{{ item.url }}" class="peli-julkaisut__link">{{ item.title }}</a>
+                {% if item.date_display %}
+                  <span class="peli-julkaisut__date">{{ item.date_display }}</span>
+                {% endif %}
+                {% if item.platforms %}
+                  <span class="peli-julkaisut__platforms">({{ item.platforms|join(', ') }})</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="peli-julkaisut__empty">{{ peli_no_julkaisut_message }}</p>
+    {% endif %}
+
+    {% if peli_add_julkaisu_url %}
+      <div class="peli-julkaisut__add">
+        <a href="{{ peli_add_julkaisu_url }}" class="use-ajax button" data-dialog-type="modal" data-dialog-options='{"width": 700}'>{{ 'Lisää julkaisu'|t }}</a>
+      </div>
+    {% endif %}
+  </div>
+
+</div>

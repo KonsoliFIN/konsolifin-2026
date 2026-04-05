@@ -1,0 +1,77 @@
+{#
+/**
+ * @file
+ * KonsoliFIN 2026 template for franchise taxonomy term pages.
+ *
+ * Extends the theme's hero banner pattern with franchise-specific content
+ * (games list) below the hero.
+ *
+ * Additional variables (set by konsolifin_term_page module):
+ * - franchise_description: Markup|null
+ * - franchise_games: array of {name, url, date_display}
+ * - franchise_no_games_message: string
+ */
+#}
+{%
+  set classes = [
+    'taxonomy-term',
+    'vocabulary-franchise',
+  ]
+%}
+
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+
+  {# --- Hero banner (same pattern as theme's taxonomy-term.html.twig) --- #}
+  {% set has_hero = content.field_hero_kuva|render is not empty %}
+
+  <div class="node__hero-banner{{ has_hero ? ' node__hero-banner--has-image' }}">
+    {% if has_hero %}
+      <div class="node__hero-bg">
+        {{ content.field_hero_kuva }}
+      </div>
+      <div class="node__hero-overlay"></div>
+    {% endif %}
+
+    <div class="node__hero-content">
+      <div class="node__badges">
+        <span class="card__badge card__badge--franchise">{{ 'Pelisarja'|t }}</span>
+      </div>
+
+      {{ title_prefix }}
+      <h1 class="node__title">{{ name }}</h1>
+      {{ title_suffix }}
+    </div>
+  </div>
+
+  {# --- Body content below hero --- #}
+  <div class="node__body">
+    {% if franchise_description %}
+      <div class="franchise-description">
+        {{ franchise_description }}
+      </div>
+    {% endif %}
+
+    <div class="franchise-games">
+      <h2>{{ 'Pelit'|t }}</h2>
+
+      {% if franchise_games %}
+        <ul class="franchise-games__list">
+          {% for game in franchise_games %}
+            <li class="franchise-games__item">
+              <a href="{{ game.url }}" class="franchise-games__link">{{ game.name }}</a>
+              {% if game.date_display %}
+                <span class="franchise-games__date">{{ game.date_display }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="franchise-games__empty">{{ franchise_no_games_message }}</p>
+      {% endif %}
+    </div>
+
+    {# Render remaining fields (excluding hero, already rendered above) #}
+    {{ content|without('field_hero_kuva') }}
+  </div>
+
+</div>
