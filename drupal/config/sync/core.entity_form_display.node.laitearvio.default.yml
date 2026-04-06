@@ -65,14 +65,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_sarja:
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     weight: 0
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   langcode:
     type: language_select

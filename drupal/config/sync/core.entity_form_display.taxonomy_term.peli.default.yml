@@ -10,6 +10,7 @@ dependencies:
     - field.field.taxonomy_term.peli.field_www_sivu
     - taxonomy.vocabulary.peli
   module:
+    - autocomplete_deluxe
     - date_ish
     - link
     - media_library
@@ -45,19 +46,26 @@ content:
     third_party_settings: {  }
   field_julkaisu_pvm:
     type: date_ish_default
-    weight: 26
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_kuuluu_pelisarjaan:
-    type: entity_reference_autocomplete
-    weight: 27
+    type: autocomplete_deluxe
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: false
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_www_sivu:
     type: link_default
@@ -66,13 +74,6 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -95,4 +96,5 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

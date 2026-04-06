@@ -42,14 +42,21 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_alustat:
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     weight: 3
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: false
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_comments:
     type: comment_default
@@ -65,14 +72,21 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_julkaisijat:
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     weight: 5
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_julkaisuajankohta:
     type: date_ish_default
@@ -88,24 +102,38 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_pelit:
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     weight: 2
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_studiot:
-    type: entity_reference_autocomplete
+    type: autocomplete_deluxe
     weight: 4
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      placeholder: ''
+      selection_handler: default
+      match_limit: 10
+      min_length: 0
+      delimiter: ''
+      not_found_message_allow: false
+      not_found_message: "The term '@term' will be added"
+      new_terms: true
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_tyyppi:
     type: options_select

@@ -2,6 +2,7 @@ _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
   announcements_feed: 0
+  autocomplete_deluxe: 0
   automated_cron: 0
   big_pipe: 0
   blazy: 0
@@ -53,6 +54,7 @@ module:
   path_alias: 0
   phpass: 0
   search: 0
+  search_autocomplete: 0
   slick: 0
   system: 0
   taxonomy: 0
