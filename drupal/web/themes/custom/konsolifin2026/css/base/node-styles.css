@@ -24,8 +24,8 @@
 /* --- Base Typography --- */
 .node__body {
     font-family: var(--font-primary);
-    line-height: 1.6;
     color: var(--color-text-primary);
+    line-height: 1.6;
     font-size: 1.125rem;
 }
 
@@ -91,12 +91,13 @@ figcaption {
 
 /* Related Links / "Lue Myös" */
 .sisalto-poiminta {
+    margin: 1em;
     font-size: 1.2rem;
     padding-left: 1em;
     border-left: 2px solid var(--color-text-secondary);
 }
 
-p.sisalto-lisatieto {
+.sisalto-lisatieto {
     background: var(--color-bg-card);
     border: 1px solid var(--color-border-light);
     padding: 1.5rem;
