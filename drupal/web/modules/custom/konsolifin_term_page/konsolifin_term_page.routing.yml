@@ -29,4 +29,4 @@ konsolifin_term_page.games_page_settings:
     _form: '\Drupal\konsolifin_term_page\Form\GamesPageSettingsForm'
     _title: 'Games Page Settings'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer konsolifin games page'
