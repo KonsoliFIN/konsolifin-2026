@@ -21,6 +21,7 @@ global:
       css/components/podcast.css: {}
       css/components/footer.css: {}
       css/components/frontpage.css: {}
+      css/components/games-page.css: {}
       css/components/modal.css: {}
     theme:
       css/theme/theme.css: {}

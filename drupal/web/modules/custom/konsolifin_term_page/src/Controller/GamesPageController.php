@@ -62,6 +62,7 @@ class GamesPageController extends ControllerBase {
     return [
       '#theme' => 'games_page',
       '#top_games' => $topGames,
+      '#top_games_heading' => $this->t('Pinnalla juuri nyt'),
       '#search_form' => $searchForm,
       '#upcoming_releases' => $upcomingReleases,
       '#most_discussed' => $mostDiscussed,
@@ -110,14 +111,21 @@ class GamesPageController extends ControllerBase {
         continue;
       }
 
-      // Build hero image render array.
+      // Build hero image URL using 'large' image style.
       $heroImage = [];
       if ($term->hasField('field_hero_kuva') && !$term->get('field_hero_kuva')->isEmpty()) {
         $mediaEntity = $term->get('field_hero_kuva')->entity;
-        if ($mediaEntity) {
-          $heroImage = $this->entityTypeManager()
-            ->getViewBuilder('media')
-            ->view($mediaEntity);
+        if ($mediaEntity && $mediaEntity->hasField('field_media_image') && !$mediaEntity->get('field_media_image')->isEmpty()) {
+          $fileEntity = $mediaEntity->get('field_media_image')->entity;
+          if ($fileEntity) {
+            $imageStyle = $this->entityTypeManager()->getStorage('image_style')->load('large');
+            if ($imageStyle) {
+              $heroImage = [
+                'url' => $imageStyle->buildUrl($fileEntity->getFileUri()),
+                'alt' => $mediaEntity->get('field_media_image')->alt ?? '',
+              ];
+            }
+          }
         }
       }
 

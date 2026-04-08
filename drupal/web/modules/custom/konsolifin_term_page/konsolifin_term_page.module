@@ -26,6 +26,7 @@ function konsolifin_term_page_theme(): array {
     'games_page' => [
       'variables' => [
         'top_games' => [],
+        'top_games_heading' => '',
         'search_form' => [],
         'upcoming_releases' => [],
         'most_discussed' => [],

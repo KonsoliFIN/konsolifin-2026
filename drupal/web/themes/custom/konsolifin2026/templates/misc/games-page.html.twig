@@ -1,13 +1,16 @@
 {#
 /**
  * @file
- * Template for the games page (/pelit).
+ * Theme override for the games page (/pelit).
  *
  * Available variables:
- * - top_games: Array of top game entries, each with 'name', 'url', 'hero_image'.
+ * - top_games: Array of top game entries, each with 'name', 'url',
+ *   'hero_image' (array with 'url' and 'alt').
  * - search_form: Render array for the search autocomplete form.
- * - upcoming_releases: Array of upcoming release entries, each with 'title', 'url', 'date_display'.
- * - most_discussed: Array of most discussed game entries, each with 'name', 'url'.
+ * - upcoming_releases: Array of upcoming release entries, each with
+ *   'title', 'url', 'date_display'.
+ * - most_discussed: Array of most discussed game entries, each with
+ *   'name', 'url'.
  * - most_discussed_error: Error message string if Matomo API failed, or null.
  */
 #}
@@ -16,18 +19,16 @@
   {% if top_games is not empty %}
     <section class="games-page__top-games">
       <h2 class="games-page__top-games-heading">{{ top_games_heading }}</h2>
-      <ul class="games-page__top-games-list">
+      <div class="games-page__top-games-list">
         {% for game in top_games %}
-          <li class="games-page__top-games-item">
+          <a href="{{ game.url }}" class="games-page__top-games-item">
             {% if game.hero_image is not empty %}
-              <div class="games-page__top-games-image">
-                {{ game.hero_image }}
-              </div>
+              <img src="{{ game.hero_image.url }}" alt="{{ game.hero_image.alt }}" class="games-page__top-games-img" loading="lazy">
             {% endif %}
-            <a href="{{ game.url }}" class="games-page__top-games-link">{{ game.name }}</a>
-          </li>
+            <h2 class="games-page__top-games-title">{{ game.name }}</h2>
+          </a>
         {% endfor %}
-      </ul>
+      </div>
     </section>
   {% endif %}
 

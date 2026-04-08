@@ -1,0 +1,75 @@
+/* Games page: top games side by side with title overlay. */
+.games-page__top-games-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.games-page__top-games-item {
+  position: relative;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  aspect-ratio: 16 / 9;
+}
+
+.games-page__top-games-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.games-page__top-games-item:hover .games-page__top-games-img {
+  transform: scale(1.05);
+}
+
+.games-page__top-games-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1.5rem 1rem 0.75rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Stack on mobile. */
+@media (max-width: 768px) {
+  .games-page__top-games-list {
+    flex-direction: column;
+  }
+}
+
+/* Two-column layout below search. */
+.games-page__columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.games-page__upcoming-releases {
+  flex: 1;
+}
+
+.games-page__most-discussed {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .games-page__columns {
+    flex-direction: column;
+  }
+}
+
+/* Search section spacing. */
+.games-page__search {
+  margin-top: 2rem;
+}
