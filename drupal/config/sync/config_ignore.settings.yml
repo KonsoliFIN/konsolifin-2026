@@ -3,6 +3,8 @@ _core:
 mode: intermediate
 ignored_config_entities:
   import:
+    - konsolifin_term_page.games_page_settings
     - openid_connect.client.forum
     - system.site
-  export: {  }
+  export:
+    - konsolifin_term_page.games_page_settings

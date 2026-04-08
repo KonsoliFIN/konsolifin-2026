@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_title_in_english
     - node.type.peliarvostelu
   module:
+    - autocomplete_deluxe
     - comment
     - konsolifin_review_score
     - media_library
@@ -104,21 +105,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_pelit:
-    type: autocomplete_deluxe
+    type: options_select
     weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      size: 60
-      selection_handler: default
-      match_limit: 10
-      min_length: 0
-      delimiter: ''
-      not_found_message_allow: false
-      not_found_message: "The term '@term' will be added"
-      new_terms: true
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+    settings: {  }
     third_party_settings: {  }
   field_sarja:
     type: autocomplete_deluxe

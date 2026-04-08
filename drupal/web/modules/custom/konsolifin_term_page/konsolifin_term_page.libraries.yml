@@ -1,0 +1,4 @@
+admin-form:
+  css:
+    theme:
+      css/admin-form.css: {}

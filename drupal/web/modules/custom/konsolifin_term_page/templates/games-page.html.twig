@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Template for the games page (/pelit).
+ *
+ * Available variables:
+ * - top_games: Array of top game entries, each with 'name', 'url', 'hero_image'.
+ * - search_form: Render array for the search autocomplete form.
+ * - upcoming_releases: Array of upcoming release entries, each with 'title', 'url', 'date_display'.
+ * - most_discussed: Array of most discussed game entries, each with 'name', 'url'.
+ * - most_discussed_error: Error message string if Matomo API failed, or null.
+ */
+#}
+<div class="games-page">
+
+  {% if top_games is not empty %}
+    <section class="games-page__top-games">
+      <ul class="games-page__top-games-list">
+        {% for game in top_games %}
+          <li class="games-page__top-games-item">
+            {% if game.hero_image is not empty %}
+              <div class="games-page__top-games-image">
+                {{ game.hero_image }}
+              </div>
+            {% endif %}
+            <a href="{{ game.url }}" class="games-page__top-games-link">{{ game.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if search_form is not empty %}
+    <section class="games-page__search">
+      {{ search_form }}
+    </section>
+  {% endif %}
+
+  <div class="games-page__columns">
+    <section class="games-page__upcoming-releases">
+      <h2 class="games-page__upcoming-releases-title">Tulevat julkaisut</h2>
+      {% if upcoming_releases is not empty %}
+        <ul class="games-page__upcoming-releases-list">
+          {% for release in upcoming_releases %}
+            <li class="games-page__upcoming-releases-item">
+              <a href="{{ release.url }}" class="games-page__upcoming-releases-link">{{ release.title }}</a>
+              <span class="games-page__upcoming-releases-date">{{ release.date_display }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+
+    <section class="games-page__most-discussed">
+      <h2 class="games-page__most-discussed-title">Puhutuimmat pelit</h2>
+      {% if most_discussed_error %}
+        <p class="games-page__most-discussed-error">{{ most_discussed_error }}</p>
+      {% elseif most_discussed is not empty %}
+        <ul class="games-page__most-discussed-list">
+          {% for game in most_discussed %}
+            <li class="games-page__most-discussed-item">
+              <a href="{{ game.url }}" class="games-page__most-discussed-link">{{ game.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  </div>
+
+</div>

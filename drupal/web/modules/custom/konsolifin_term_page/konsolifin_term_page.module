@@ -23,6 +23,16 @@ function konsolifin_term_page_theme(): array {
     'taxonomy_term__peli' => [
       'base hook' => 'taxonomy_term',
     ],
+    'games_page' => [
+      'variables' => [
+        'top_games' => [],
+        'search_form' => [],
+        'upcoming_releases' => [],
+        'most_discussed' => [],
+        'most_discussed_error' => NULL,
+      ],
+      'template' => 'games-page',
+    ],
   ];
 }
 

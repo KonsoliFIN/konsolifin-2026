@@ -25,3 +25,9 @@ $loader->addPsr4('Drupal\\Component\\', $drupal_root . '/core/lib/Drupal/Compone
 
 // Register taxonomy module namespace (for TermInterface).
 $loader->addPsr4('Drupal\\taxonomy\\', $drupal_root . '/core/modules/taxonomy/src');
+
+// Register node module namespace (for NodeInterface).
+$loader->addPsr4('Drupal\\node\\', $drupal_root . '/core/modules/node/src');
+
+// Register user module namespace (for EntityOwnerInterface, needed by NodeInterface).
+$loader->addPsr4('Drupal\\user\\', $drupal_root . '/core/modules/user/src');

@@ -8,7 +8,7 @@ dependencies:
     - field.field.user.user.field_slack_id
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.slick_media
   module:
     - image
     - text
@@ -25,7 +25,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 3
     region: content
   field_oikea_nimi:
     type: string
@@ -33,37 +33,25 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
-    region: content
-  field_slack_id:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 9
-    region: content
-  field_xenforo_id:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 8
+    weight: 1
     region: content
   member_for:
-    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   user_picture:
     type: image
     label: hidden
     settings:
-      image_link: content
-      image_style: thumbnail
+      image_link: ''
+      image_style: slick_media
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_slack_id: true
+  field_xenforo_id: true
   langcode: true

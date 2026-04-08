@@ -1,0 +1,8 @@
+services:
+  konsolifin_term_page.matomo_service:
+    class: Drupal\konsolifin_term_page\MatomoService
+    arguments:
+      - '@http_client'
+      - '@entity_type.manager'
+      - '@config.factory'
+      - '@logger.factory'

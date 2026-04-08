@@ -8,9 +8,10 @@ dependencies:
     - field.field.user.user.field_slack_id
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.slick_media
   module:
     - image
+    - imce
     - text
     - user
 _core:
@@ -21,11 +22,13 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 1
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_esittely:
     type: text_textarea
-    weight: 8
+    weight: 3
     region: content
     settings:
       rows: 5
@@ -33,41 +36,27 @@ content:
     third_party_settings: {  }
   field_oikea_nimi:
     type: string_textfield
-    weight: 7
+    weight: 2
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_slack_id:
-    type: string_textfield
-    weight: 10
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_xenforo_id:
-    type: string_textfield
-    weight: 9
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  language:
-    weight: 0
-    region: content
   timezone:
     weight: 6
     region: content
   user_picture:
     type: image_image
-    weight: -1
+    weight: 0
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
+      preview_image_style: slick_media
+    third_party_settings:
+      imce:
+        enabled: false
 hidden:
+  field_slack_id: true
+  field_xenforo_id: true
   langcode: true
+  language: true

@@ -1,0 +1,23 @@
+/* Autocomplete dropdown styling for entity_autocomplete fields. */
+ul.ui-autocomplete,
+ul.ui-widget-content,
+.ui-autocomplete.ui-menu {
+  background-color: #fff !important;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+ul.ui-autocomplete li.ui-menu-item,
+.ui-autocomplete .ui-menu-item {
+  background-color: #fff;
+}
+
+ul.ui-autocomplete .ui-menu-item-wrapper,
+.ui-autocomplete .ui-menu-item-wrapper {
+  padding: 8px 10px;
+}
+
+ul.ui-autocomplete .ui-state-active,
+.ui-autocomplete .ui-state-active {
+  background-color: #e8e8e8;
+}

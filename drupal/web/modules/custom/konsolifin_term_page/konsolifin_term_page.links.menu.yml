@@ -1,0 +1,12 @@
+konsolifin_term_page.admin_config_konsolifin:
+  title: 'KonsoliFIN'
+  description: 'KonsoliFIN site configuration.'
+  route_name: konsolifin_term_page.admin_config_konsolifin
+  parent: system.admin_config
+  weight: 50
+
+konsolifin_term_page.games_page_settings:
+  title: 'Games Page Settings'
+  description: 'Configure the games page: top games, Matomo API settings.'
+  route_name: konsolifin_term_page.games_page_settings
+  parent: konsolifin_term_page.admin_config_konsolifin

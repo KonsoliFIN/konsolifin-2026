@@ -6,3 +6,27 @@ konsolifin_term_page.add_julkaisu_form:
   requirements:
     _permission: 'create julkaisu content'
     taxonomy_term: \d+
+
+konsolifin_term_page.games_page:
+  path: '/pelit'
+  defaults:
+    _controller: '\Drupal\konsolifin_term_page\Controller\GamesPageController::build'
+    _title: 'Pelit'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin_term_page.admin_config_konsolifin:
+  path: '/admin/config/konsolifin'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'KonsoliFIN'
+  requirements:
+    _permission: 'access administration pages'
+
+konsolifin_term_page.games_page_settings:
+  path: '/admin/config/konsolifin/games-page'
+  defaults:
+    _form: '\Drupal\konsolifin_term_page\Form\GamesPageSettingsForm'
+    _title: 'Games Page Settings'
+  requirements:
+    _permission: 'administer site configuration'
