@@ -24,4 +24,3 @@ destination:
 migration_dependencies:
   required:
     - konsolifin_users
-    - konsolifin_media_images

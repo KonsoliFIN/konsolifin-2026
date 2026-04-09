@@ -49,6 +49,9 @@ run_migration konsolifin_media_images
 run_migration konsolifin_media_audio
 run_migration konsolifin_media_video
 
+# User pictures
+run_migration konsolifin_user_pictures
+
 # Taxonomies
 run_migration konsolifin_taxonomy_alustat
 run_migration konsolifin_taxonomy_alustatarkenne
