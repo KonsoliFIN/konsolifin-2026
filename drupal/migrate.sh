@@ -41,7 +41,6 @@ echo "Batch size: $BATCH_SIZE | Pause between batches: ${PAUSE}s"
 echo ""
 
 # Users
-run_migration konsolifin_user_roles
 run_migration konsolifin_users
 
 # Files and media

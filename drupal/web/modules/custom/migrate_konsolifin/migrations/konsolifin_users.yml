@@ -20,16 +20,23 @@ process:
   login: login
   status: status
   timezone: timezone
-
   init:
     -
       plugin: get
       source: init
   roles:
     -
-      plugin: migration_lookup
-      migration: konsolifin_user_roles
+      plugin: get
       source: roles
+    -
+      plugin: static_map
+      map:
+        2: authenticated
+        3: administrator
+        4: toimitus
+        5: yhteisosisallontuottaja
+        6: johtoryhma
+      bypass: true
   field_oikea_nimi:
     -
       plugin: get
@@ -46,6 +53,5 @@ process:
     -
       plugin: get
       source: field_slack_user_id
-
 destination:
   plugin: entity:user

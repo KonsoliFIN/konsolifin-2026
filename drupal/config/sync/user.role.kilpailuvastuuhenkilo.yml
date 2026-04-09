@@ -1,9 +1,0 @@
-uuid: 8cff9667-774b-4597-a84a-ada8c694f760
-langcode: en
-status: true
-dependencies: {  }
-id: kilpailuvastuuhenkilo
-label: Kilpailuvastuuhenkilö
-weight: 6
-is_admin: false
-permissions: {  }

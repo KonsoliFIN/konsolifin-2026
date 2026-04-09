@@ -8,7 +8,6 @@ dependencies:
     - field.field.user.user.field_slack_id
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
-    - image.style.slick_media
   module:
     - image
     - text
@@ -45,7 +44,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: slick_media
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }

@@ -1,0 +1,27 @@
+id: konsolifin_user_pictures
+label: Migrate user profile pictures
+migration_tags:
+  - KonsoliFIN
+migration_group: migrate_konsolifin
+source:
+  plugin: d7_user
+  condition:
+    plugin: callback
+    callable: is_numeric
+    source: field_nostokuva
+process:
+  uid: uid
+  name: name
+  user_picture:
+    -
+      plugin: migration_lookup
+      migration: konsolifin_files
+      source: field_nostokuva/0/fid
+destination:
+  plugin: entity:user
+  overwrite_properties:
+    - user_picture
+migration_dependencies:
+  required:
+    - konsolifin_users
+    - konsolifin_media_images

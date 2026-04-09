@@ -12,6 +12,7 @@ dependencies:
   module:
     - comment
     - filter
+    - konsolifin_term_page
     - locale
     - node
     - path
@@ -19,7 +20,7 @@ dependencies:
     - toolbar
 id: toimitus
 label: toimitus
-weight: 4
+weight: -8
 is_admin: false
 permissions:
   - 'access administration pages'
@@ -27,6 +28,7 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'administer comments'
+  - 'administer konsolifin games page'
   - 'administer nodes'
   - 'administer url aliases'
   - 'create julkaisu content'
