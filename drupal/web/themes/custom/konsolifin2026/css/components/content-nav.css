@@ -1,0 +1,95 @@
+/* Content navigation — dual placement */
+
+/* === Desktop: horizontal bar above content === */
+.content-nav--desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .content-nav--desktop {
+    display: block;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) 0;
+  }
+
+  .content-nav--desktop .content-nav__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+  }
+
+  .content-nav--desktop .content-nav__item a {
+    display: block;
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .content-nav--desktop .content-nav__item a:hover {
+    color: var(--color-text-primary);
+    background: var(--color-bg-hover);
+  }
+
+  .content-nav--desktop .content-nav__item a.is-active {
+    color: var(--color-accent);
+    background: var(--color-accent-glow);
+  }
+}
+
+/* === Mobile: inside off-canvas panel === */
+.content-nav--mobile {
+  display: block;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.content-nav--mobile .content-nav__heading {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  padding: 0 var(--space-md);
+}
+
+.content-nav--mobile .content-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.content-nav--mobile .content-nav__item a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.content-nav--mobile .content-nav__item a:hover,
+.content-nav--mobile .content-nav__item a:focus {
+  color: var(--color-text-primary);
+  background: var(--color-bg-hover);
+}
+
+.content-nav--mobile .content-nav__item a.is-active {
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
+}
+
+/* Hide mobile version on desktop */
+@media (min-width: 1024px) {
+  .content-nav--mobile {
+    display: none;
+  }
+}
