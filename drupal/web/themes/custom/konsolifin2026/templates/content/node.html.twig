@@ -66,7 +66,7 @@
 
         <div class="card__meta">
           <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
-            {{ node.getCreatedTime()|date('j.n.Y') }}
+            {{ node.getCreatedTime()|date('j.n.Y H.i') }}
           </time>
           {% if author_name %}
             <span class="card__author">{{ author_name }}</span>
@@ -112,7 +112,7 @@
           <div class="node__summary-item">
             <span class="node__summary-label">{{ 'Julkaistu'|t }}</span>
             <time class="node__summary-value" datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
-              {{ node.getCreatedTime()|date('j.n.Y') }}
+              {{ node.getCreatedTime()|date('j.n.Y H.i') }}
             </time>
           </div>
         {% endif %}
