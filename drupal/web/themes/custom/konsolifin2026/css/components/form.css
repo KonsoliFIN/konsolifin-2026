@@ -396,3 +396,7 @@ select.error:focus {
   color: var(--color-score-low);
   margin-top: var(--space-xs);
 }
+
+#edit-comment-body-0-format-help {
+  display: none;
+}
