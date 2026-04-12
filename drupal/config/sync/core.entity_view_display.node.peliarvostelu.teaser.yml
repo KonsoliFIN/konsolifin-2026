@@ -5,8 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.peliarvostelu.body
-    - field.field.node.peliarvostelu.field_alustat
     - field.field.node.peliarvostelu.field_arvosana
+    - field.field.node.peliarvostelu.field_arvosteltu_versio
     - field.field.node.peliarvostelu.field_comments
     - field.field.node.peliarvostelu.field_hero
     - field.field.node.peliarvostelu.field_kuvat
@@ -61,7 +61,7 @@ content:
     weight: 3
     region: content
 hidden:
-  field_alustat: true
+  field_arvosteltu_versio: true
   field_comments: true
   field_kuvat: true
   field_lisatiedot: true

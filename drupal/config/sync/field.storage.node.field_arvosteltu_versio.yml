@@ -1,0 +1,20 @@
+uuid: 86d12e71-50a5-422a-b2b8-5e80d94d47c4
+langcode: fi
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_arvosteltu_versio
+field_name: field_arvosteltu_versio
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

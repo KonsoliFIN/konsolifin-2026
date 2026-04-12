@@ -113,10 +113,10 @@
             </time>
           </div>
         {% endif %}
-        {% if content.field_alustat|render is not empty %}
+        {% if content.field_arvosteltu_versio|render is not empty %}
           <div class="node__summary-item">
-            <span class="node__summary-label">{{ 'Alustat'|t }}</span>
-            <div class="node__summary-value">{{ content.field_alustat }}</div>
+            <span class="node__summary-label">{{ 'Arvosteltu alustalla'|t }}</span>
+            <div class="node__summary-value">{{ content.field_arvosteltu_versio }}</div>
           </div>
         {% endif %}
         {% if content.field_pelit|render is not empty %}
@@ -140,7 +140,7 @@
     </div>
 
     <div class="node__body">
-      {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_pelit', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
+      {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_pelit', 'field_arvosteltu_versio', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
     </div>
 
     <div class="node__tags">

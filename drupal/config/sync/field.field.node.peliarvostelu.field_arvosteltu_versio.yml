@@ -1,13 +1,13 @@
-uuid: d8deeb03-fcf4-42bd-867b-a16e10d9d319
-langcode: en
+uuid: e2fd4b39-e66e-46d4-8214-b925b61e28ba
+langcode: fi
 status: true
 dependencies:
   config:
-    - field.storage.node.field_alustat
+    - field.storage.node.field_arvosteltu_versio
     - node.type.peliarvostelu
     - taxonomy.vocabulary.alustat
-id: node.peliarvostelu.field_alustat
-field_name: field_alustat
+id: node.peliarvostelu.field_arvosteltu_versio
+field_name: field_arvosteltu_versio
 entity_type: node
 bundle: peliarvostelu
 label: 'Arvosteltu versio'

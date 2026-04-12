@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.peliarvostelu.body
-    - field.field.node.peliarvostelu.field_alustat
     - field.field.node.peliarvostelu.field_arvosana
+    - field.field.node.peliarvostelu.field_arvosteltu_versio
     - field.field.node.peliarvostelu.field_comments
     - field.field.node.peliarvostelu.field_hero
     - field.field.node.peliarvostelu.field_kuvat
@@ -45,7 +45,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_alustat:
+  field_arvosana:
+    type: star_widget
+    weight: 11
+    region: content
+    settings:
+      width: '400'
+    third_party_settings: {  }
+  field_arvosteltu_versio:
     type: term_reference_tree
     weight: 13
     region: content
@@ -55,13 +62,6 @@ content:
       select_parents: false
       cascading_selection: 0
       max_depth: 0
-    third_party_settings: {  }
-  field_arvosana:
-    type: star_widget
-    weight: 11
-    region: content
-    settings:
-      width: '400'
     third_party_settings: {  }
   field_comments:
     type: comment_default
