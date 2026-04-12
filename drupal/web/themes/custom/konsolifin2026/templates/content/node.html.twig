@@ -40,8 +40,10 @@
           <span class="card__badge card__badge--{{ node.bundle() }}">
             {{ type_label }}
           </span>
-          {% if review_label is defined %}
-            <span class="review-badge review-badge--{{ review_score_class }}">{{ review_label }}</span>
+          {% if review_score is defined and content.field_arvosana|render is not empty %}
+            <span class="card__badge card__stars">
+              {{ content.field_arvosana }}
+            </span>
           {% endif %}
           {% if sarja_name %}
             <span class="node__sarja-badge">{{ sarja_name }}</span>
@@ -54,11 +56,6 @@
         </h3>
         {{ title_suffix }}
 
-        {% if review_score is defined and content.field_arvosana|render is not empty %}
-          <div class="card__stars">
-            {{ content.field_arvosana }}
-          </div>
-        {% endif %}
 
         {% if content.body|render is not empty %}
           <div class="card__excerpt">{{ content.body }}</div>

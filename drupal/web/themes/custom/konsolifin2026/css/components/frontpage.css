@@ -107,10 +107,6 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.frontpage-featured-card .card__stars {
-  display: none;
-}
-
 /* --- Tier 2: Two half-width cards side by side --- */
 .frontpage-tier--duo {
   display: grid;
@@ -211,10 +207,6 @@
 .frontpage-duo-card .card__platform-tag {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
-}
-
-.frontpage-duo-card .card__stars {
-  display: none;
 }
 
 /* --- Tier 3: Five standard list cards --- */

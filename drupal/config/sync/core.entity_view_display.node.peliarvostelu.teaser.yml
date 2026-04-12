@@ -16,8 +16,11 @@ dependencies:
     - field.field.node.peliarvostelu.field_sarja
     - field.field.node.peliarvostelu.field_summary_in_english
     - field.field.node.peliarvostelu.field_title_in_english
+    - image.style.teaser_thumbnail
     - node.type.peliarvostelu
   module:
+    - konsolifin_review_score
+    - media
     - text
     - user
 id: node.peliarvostelu.teaser
@@ -33,6 +36,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_arvosana:
+    type: star_formatter
+    label: hidden
+    settings:
+      width: '120'
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_hero:
     type: media_thumbnail
     label: hidden
@@ -47,13 +58,11 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   field_alustat: true
-  field_arvosana: true
   field_comments: true
-  field_hero: true
   field_kuvat: true
   field_lisatiedot: true
   field_pelin_nimi: true

@@ -277,6 +277,11 @@
 }
 
 /* Images hidden in node teasers */
-.node--view-mode-teaser img {
+.node--view-mode-teaser .card__excerpt img {
   display: none;
+}
+
+span.card__badge.card__stars {
+    margin: 0px;
+    margin-top: 5px;
 }
