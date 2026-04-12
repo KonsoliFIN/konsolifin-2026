@@ -59,6 +59,7 @@ module:
   slick: 0
   system: 0
   taxonomy: 0
+  term_reference_tree: 0
   text: 0
   token: 0
   toolbar: 0

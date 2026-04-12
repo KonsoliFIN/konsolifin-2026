@@ -33,6 +33,7 @@
         "drupal/realname": "^2.0",
         "drupal/search_autocomplete": "^4.0",
         "drupal/slick": "^3.0",
+        "drupal/term_reference_tree": "^2.0",
         "drupal/video_embed_field": "^3.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drush/drush": "^13.7"
