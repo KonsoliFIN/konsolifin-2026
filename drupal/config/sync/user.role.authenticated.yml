@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - comment
+    - matomo
     - media
     - search
     - system
@@ -20,6 +21,7 @@ permissions:
   - 'access user profiles'
   - 'change own username'
   - 'edit own comments'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
