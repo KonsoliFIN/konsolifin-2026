@@ -4,7 +4,11 @@ mode: intermediate
 ignored_config_entities:
   import:
     - konsolifin_term_page.games_page_settings
+    - matomo.settings
+    - 'matomo_tagmanager.*'
     - openid_connect.client.forum
     - system.site
   export:
     - konsolifin_term_page.games_page_settings
+    - matomo.settings
+    - 'matomo_tagmanager.*'
