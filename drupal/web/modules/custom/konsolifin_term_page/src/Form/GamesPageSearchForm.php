@@ -24,26 +24,35 @@ class GamesPageSearchForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
-    $form['search'] = [
+    $form['#attached']['library'][] = 'konsolifin_term_page/games-search';
+
+    $form['input_group'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['games-search-input-group'],
+      ],
+    ];
+
+    $form['input_group']['search'] = [
       '#type' => 'entity_autocomplete',
       '#target_type' => 'taxonomy_term',
       '#selection_settings' => [
         'target_bundles' => ['peli' => 'peli'],
       ],
       '#title' => $this->t('Etsi peliä'),
+      '#title_display' => 'invisible',
       '#placeholder' => $this->t('Kirjoita pelin nimi...'),
       '#attributes' => [
-        'class' => ['games-page__search-input'],
+        'class' => ['games-search-input-group__input'],
       ],
     ];
 
-    $form['actions'] = [
-      '#type' => 'actions',
-    ];
-
-    $form['actions']['submit'] = [
+    $form['input_group']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Siirry'),
+      '#attributes' => [
+        'class' => ['games-search-input-group__button'],
+      ],
     ];
 
     return $form;

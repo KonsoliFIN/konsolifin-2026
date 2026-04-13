@@ -1,0 +1,85 @@
+/* Input group: search field + button attached */
+.games-search-input-group {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+  gap: 0;
+}
+
+.games-search-input-group .form-item {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.games-search-input-group .games-search-input-group__input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-right: none;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  height: 100%;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.games-search-input-group .games-search-input-group__input:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent-glow);
+  z-index: 1;
+  position: relative;
+}
+
+.games-search-input-group .games-search-input-group__button {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-accent);
+  color: #fff;
+  border: 1px solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transition-fast);
+}
+
+.games-search-input-group .games-search-input-group__button:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Autocomplete dropdown — match site theme */
+.ui-autocomplete.ui-menu {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xs) 0;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.ui-autocomplete .ui-menu-item-wrapper {
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  border-radius: 0;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.ui-autocomplete .ui-menu-item-wrapper.ui-state-active,
+.ui-autocomplete .ui-menu-item-wrapper:hover {
+  background: var(--color-bg-hover);
+  color: var(--color-accent);
+  border: none;
+}
+
+.konsolifin-games-page-search .ui-menu-item a:hover {
+  color: var(--color-text-primary);
+}
+
+.konsolifin-games-page-search .ui-menu-item a {
+  color: var(--color-accent);
+}

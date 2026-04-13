@@ -2,3 +2,8 @@ admin-form:
   css:
     theme:
       css/admin-form.css: {}
+
+games-search:
+  css:
+    theme:
+      css/games-search.css: {}
