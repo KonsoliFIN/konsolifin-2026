@@ -42,6 +42,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  matomo:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content

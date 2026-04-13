@@ -38,3 +38,4 @@ hidden:
   field_xenforo_id: true
   langcode: true
   member_for: true
+  realname: true

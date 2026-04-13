@@ -54,3 +54,4 @@ hidden:
   field_slack_id: true
   field_xenforo_id: true
   langcode: true
+  realname: true
