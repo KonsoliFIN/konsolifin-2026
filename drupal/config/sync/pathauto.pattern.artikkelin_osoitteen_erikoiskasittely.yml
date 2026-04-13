@@ -1,0 +1,22 @@
+uuid: c84d394b-35e1-4f17-a74d-a0a0b84d8d8a
+langcode: fi
+status: true
+dependencies:
+  module:
+    - node
+id: artikkelin_osoitteen_erikoiskasittely
+label: 'Artikkelin osoitteen erikoiskäsittely'
+type: 'canonical_entities:node'
+pattern: 'artikkeli/[node:title]'
+selection_criteria:
+  fc6097d1-8501-4e58-a95d-21e99b95027f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fc6097d1-8501-4e58-a95d-21e99b95027f
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

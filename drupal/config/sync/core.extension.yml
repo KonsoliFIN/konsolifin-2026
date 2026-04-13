@@ -71,6 +71,7 @@ module:
   video_embed_wysiwyg: 0
   views_infinite_scroll: 0
   views_ui: 0
+  pathauto: 1
   externalauth: 10
   views: 10
 theme:

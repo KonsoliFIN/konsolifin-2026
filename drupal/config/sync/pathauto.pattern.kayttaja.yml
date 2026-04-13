@@ -1,0 +1,14 @@
+uuid: e1ca849e-00b2-4bbb-8c39-1dc0dd7d0c44
+langcode: fi
+status: true
+dependencies:
+  module:
+    - user
+id: kayttaja
+label: Käyttäjä
+type: 'canonical_entities:user'
+pattern: 'users/[user:field_oikea_nimi]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

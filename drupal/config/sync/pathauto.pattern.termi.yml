@@ -1,0 +1,14 @@
+uuid: 67e863e4-a11e-46d5-85b9-f44d37bcf67d
+langcode: fi
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: termi
+label: 'Termien oletuskäsittely'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,14 @@
+uuid: 09ac4e6a-4c67-4fb6-8b3f-2dee5862fddb
+langcode: fi
+status: true
+dependencies:
+  module:
+    - node
+id: default_node_path
+label: 'Sisältöjen oletuskäsittely'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

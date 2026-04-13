@@ -31,6 +31,7 @@
         "drupal/migrate_tools": "^6.1",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/openid_connect": "^3.0@alpha",
+        "drupal/pathauto": "^1.14",
         "drupal/realname": "^2.0",
         "drupal/search_autocomplete": "^4.0",
         "drupal/slick": "^3.0",
