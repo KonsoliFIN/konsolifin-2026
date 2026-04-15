@@ -6,12 +6,15 @@ dependencies:
     - field.field.user.user.field_esittely
     - field.field.user.user.field_oikea_nimi
     - field.field.user.user.field_slack_id
+    - field.field.user.user.field_some_linkit
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
     - image.style.medium
   module:
     - image
     - imce
+    - link
+    - path
     - text
     - user
 _core:
@@ -42,8 +45,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_some_linkit:
+    type: link_default
+    weight: 31
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   matomo:
     weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

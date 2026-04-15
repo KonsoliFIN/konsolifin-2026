@@ -6,10 +6,12 @@ dependencies:
     - field.field.user.user.field_esittely
     - field.field.user.user.field_oikea_nimi
     - field.field.user.user.field_slack_id
+    - field.field.user.user.field_some_linkit
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
   module:
     - image
+    - link
     - text
     - user
 _core:
@@ -24,7 +26,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_oikea_nimi:
     type: string
@@ -34,10 +36,17 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  member_for:
-    settings: {  }
+  field_some_linkit:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   user_picture:
     type: image
@@ -54,4 +63,5 @@ hidden:
   field_slack_id: true
   field_xenforo_id: true
   langcode: true
+  member_for: true
   realname: true

@@ -7,6 +7,7 @@ dependencies:
     - field.field.user.user.field_esittely
     - field.field.user.user.field_oikea_nimi
     - field.field.user.user.field_slack_id
+    - field.field.user.user.field_some_linkit
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -35,6 +36,7 @@ hidden:
   field_esittely: true
   field_oikea_nimi: true
   field_slack_id: true
+  field_some_linkit: true
   field_xenforo_id: true
   langcode: true
   member_for: true
