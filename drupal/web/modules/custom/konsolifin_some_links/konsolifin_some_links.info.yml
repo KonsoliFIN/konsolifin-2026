@@ -1,0 +1,7 @@
+name: 'KonsoliFIN SoMe-linkit'
+type: module
+description: 'Validates and formats user social media links for BlueSky, Instagram, LinkedIn, and Threads.'
+core_version_requirement: ^10 || ^11
+package: KonsoliFIN
+dependencies:
+  - link

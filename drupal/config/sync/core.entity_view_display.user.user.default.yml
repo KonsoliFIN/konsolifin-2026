@@ -37,7 +37,7 @@ content:
     weight: 1
     region: content
   field_some_linkit:
-    type: link
+    type: konsolifin_some_link_formatter
     label: above
     settings:
       trim_length: 80

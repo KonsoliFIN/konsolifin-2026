@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for KonsoliFIN SoMe-linkit module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ */
+function konsolifin_some_links_field_widget_single_element_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getFieldDefinition()->getName() === 'field_some_linkit') {
+    $element['uri']['#element_validate'][] = 'konsolifin_some_links_url_validate';
+  }
+}
+
+/**
+ * Validation callback to prepend https:// if missing.
+ */
+function konsolifin_some_links_url_validate(&$element, FormStateInterface $form_state, &$complete_form) {
+  $value = $element['#value'];
+  if (!empty($value) && !preg_match('~^(?:f|ht)tps?://~i', $value)) {
+    $value = 'https://' . $value;
+    $form_state->setValueForElement($element, $value);
+  }
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function konsolifin_some_links_entity_bundle_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type, $bundle) {
+  if ($entity_type->id() === 'user' && $bundle === 'user') {
+    if (isset($fields['field_some_linkit'])) {
+      $fields['field_some_linkit']->addConstraint('SoMeLink');
+    }
+  }
+}

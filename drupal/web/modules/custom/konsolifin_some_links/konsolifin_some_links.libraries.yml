@@ -1,0 +1,5 @@
+konsolifin_some_links.formatter:
+  version: VERSION
+  css:
+    component:
+      css/konsolifin_some_links.css: {}
