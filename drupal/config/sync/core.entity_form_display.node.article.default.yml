@@ -20,6 +20,7 @@ dependencies:
     - comment
     - media_library
     - path
+    - scheduler
     - text
 id: node.article.default
 targetEntityType: node
@@ -178,6 +179,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 52
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 9
@@ -209,6 +221,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 54
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true

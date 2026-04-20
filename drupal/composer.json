@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.3",
         "drupal/autocomplete_deluxe": "^2.1",
+        "drupal/autosave_form": "^1.11",
         "drupal/config_ignore": "^3.3",
         "drupal/config_readonly": "^1.0",
         "drupal/core-composer-scaffold": "^11.3",
@@ -33,7 +34,9 @@
         "drupal/openid_connect": "^3.0@alpha",
         "drupal/pathauto": "^1.14",
         "drupal/realname": "^2.0",
+        "drupal/scheduler": "^2.2",
         "drupal/search_autocomplete": "^4.0",
+        "drupal/simpleads": "^2.0",
         "drupal/slick": "^3.0",
         "drupal/term_reference_tree": "^2.0",
         "drupal/video_embed_field": "^3.0",

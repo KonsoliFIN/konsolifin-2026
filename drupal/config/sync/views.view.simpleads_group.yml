@@ -1,19 +1,19 @@
-uuid: 5b6b0911-4c20-4474-bfdd-c677b1339a52
+uuid: b7543fae-575c-4b3b-a574-d076f1f60365
 langcode: fi
 status: true
 dependencies:
   module:
-    - externalauth
+    - simpleads
     - user
 _core:
-  default_config_hash: f8-L6ipYpS0rL8RjATRkkOUegT2NYiiC9jhrvPOmqSk
-id: authmap
-label: 'External authentication links'
-module: externalauth
-description: 'Provides overview of external authentication links.'
-tag: default
-base_table: authmap
-base_field: uid
+  default_config_hash: e0nxEg_deFPf_BqnPSBIGd1S-tXSXswDNwpUZnuYybY
+id: simpleads_group
+label: 'SimpleAds Group'
+module: views
+description: ''
+tag: ''
+base_table: simpleads_group
+base_field: id
 display:
   default:
     id: default
@@ -21,125 +21,19 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'External authentication links'
+      title: Ryhmät
       fields:
-        authname:
-          id: authname
-          table: authmap
-          field: authname
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          label: 'Authentication Name'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-        uid:
-          id: uid
-          table: authmap
-          field: uid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          label: 'Drupal User ID'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ''
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
         name:
           id: name
-          table: users_field_data
+          table: simpleads_group
           field: name
-          relationship: uid
+          relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
+          entity_type: null
           entity_field: name
           plugin_id: field
-          label: 'Drupal User Name'
+          label: 'Ryhmän nimi'
           exclude: false
           alter:
             alter_text: false
@@ -181,9 +75,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: user_name
-          settings:
-            link_to_entity: true
+          type: string
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -194,15 +87,17 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        delete_link:
-          id: delete_link
-          table: authmap
-          field: delete_link
+        description:
+          id: description
+          table: simpleads_group
+          field: description
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: authmap_link_delete
-          label: poista
+          entity_type: simpleads_group
+          entity_field: description
+          plugin_id: field
+          label: Kuvaus
           exclude: false
           alter:
             alter_text: false
@@ -243,14 +138,76 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: poista
-          output_url_as_text: false
-          absolute: false
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        operations:
+          id: operations
+          table: simpleads_group
+          field: operations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: simpleads_group
+          plugin_id: entity_operations
+          label: Toimenpiteet
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          destination: false
       pager:
         type: mini
         options:
           offset: 0
-          items_per_page: 50
+          items_per_page: 25
           total_pages: null
           id: 0
           tags:
@@ -277,9 +234,9 @@ display:
       access:
         type: perm
         options:
-          perm: 'view authmap'
+          perm: 'administer simpleads_group entities'
       cache:
-        type: none
+        type: tag
         options: {  }
       empty:
         area_text_custom:
@@ -291,117 +248,38 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No links (from Authentication name to Drupal user) found.'
+          content: 'There are no groups created yet.'
           tokenize: false
       sorts: {  }
-      arguments:
-        provider_field:
-          id: provider_field
-          table: authmap
-          field: provider_field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: string
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: false
-            title: Kaikki
-          title_enable: true
-          title: 'Links for {{ arguments.provider_field }}'
-          default_argument_type: fixed
-          default_argument_options:
-            argument: ''
-          summary_options:
-            base_path: ''
-            count: false
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          glossary: false
-          limit: 0
-          case: none
-          path_case: none
-          transform_dash: false
-          break_phrase: false
+      arguments: {  }
       filters:
-        authname:
-          id: authname
-          table: authmap
-          field: authname
+        name:
+          id: name
+          table: simpleads_group
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: simpleads_group
+          entity_field: name
           plugin_id: string
-          operator: starts
+          operator: contains
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: authname_op
-            label: 'Authentication name'
+            operator_id: name_op
+            label: Nimi
             description: ''
             use_operator: false
-            operator: authname_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: authname
+            operator: name_op
+            identifier: name
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
             placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        uid:
-          id: uid
-          table: users_field_data
-          field: uid
-          relationship: uid
-          group_type: group
-          admin_label: ''
-          entity_type: user
-          entity_field: uid
-          plugin_id: user_name
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: uid_op
-            label: 'Drupal user'
-            description: ''
-            use_operator: false
-            operator: uid_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: uid
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -421,26 +299,11 @@ display:
           row_class: ''
           default_row_class: true
           columns:
-            authname: authname
-            uid: uid
             name: name
-            delete: delete
-          default: authname
+            description: description
+            operations: operations
+          default: name
           info:
-            authname:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            uid:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
             name:
               sortable: true
               default_sort_order: asc
@@ -448,9 +311,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            delete:
+            description:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: true
+              responsive: ''
+            operations:
               align: ''
               separator: ''
               empty_column: false
@@ -458,7 +326,7 @@ display:
           override: true
           sticky: false
           summary: ''
-          empty_table: false
+          empty_table: true
           caption: ''
           description: ''
       row:
@@ -471,17 +339,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships:
-        uid:
-          id: uid
-          table: authmap
-          field: uid
-          relationship: none
-          group_type: group
-          admin_label: 'Linked Drupal user'
-          plugin_id: standard
-          required: false
-      show_admin_links: false
+      relationships: {  }
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -494,23 +352,15 @@ display:
         - url.query_args
         - user.permissions
       tags: {  }
-  page:
-    id: page
-    display_title: Sivu
+  group:
+    id: group
+    display_title: Ryhmä
     display_plugin: page
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
-      path: admin/people/authmap
-      menu:
-        type: tab
-        title: Ulkoinen
-        description: ''
-        weight: 20
-        expanded: false
-        menu_name: admin
-        parent: entity.user.collection
-        context: '0'
+      path: admin/config/simpleads/group
     cache_metadata:
       max-age: -1
       contexts:

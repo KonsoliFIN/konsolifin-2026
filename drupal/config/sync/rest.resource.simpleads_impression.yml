@@ -1,0 +1,20 @@
+uuid: 88c71b6f-7e77-4dc2-8e7e-26f5ef2fd405
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - simpleads
+    - user
+_core:
+  default_config_hash: 7fME_tptRv0PeXNgVOZqusKwRXf_9vtE-CEuPuGNZ4U
+id: simpleads_impression
+plugin_id: simpleads_impression
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

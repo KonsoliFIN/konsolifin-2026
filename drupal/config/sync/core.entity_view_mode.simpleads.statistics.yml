@@ -1,0 +1,13 @@
+uuid: cc3954e9-59b0-4628-b02f-7353ce22d305
+langcode: fi
+status: true
+dependencies:
+  module:
+    - simpleads
+_core:
+  default_config_hash: u4nwMGxNJ1_WbzyNV6dI1Ox0IvHKqwIKhzgNYY57Abg
+id: simpleads.statistics
+label: Tilastot
+description: null
+targetEntityType: simpleads
+cache: true
