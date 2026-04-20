@@ -3,53 +3,205 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.blogi
+    - node.type.historianosto
     - node.type.julkaisu
+    - node.type.katsotut
+    - node.type.laitearvio
     - node.type.page
+    - node.type.peliarvostelu
     - node.type.podcast
     - node.type.uutinen
     - node.type.video
+    - node.type.vierailija_arvostelu
+    - taxonomy.vocabulary.alustat
+    - taxonomy.vocabulary.alustatarkenne
+    - taxonomy.vocabulary.franchise
+    - taxonomy.vocabulary.ihminen
+    - taxonomy.vocabulary.peli
+    - taxonomy.vocabulary.pelijulkaisijat
+    - taxonomy.vocabulary.pelistudiot
+    - taxonomy.vocabulary.sarja
   module:
+    - announcements_feed
     - comment
+    - file
     - filter
+    - help
     - konsolifin_term_page
     - locale
+    - media
     - node
     - path
+    - scheduler
+    - search_autocomplete
     - system
+    - taxonomy
     - toolbar
+    - update
 id: toimitus
 label: toimitus
 weight: -8
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'access announcements'
+  - 'access comments'
+  - 'access content'
   - 'access content overview'
+  - 'access files overview'
+  - 'access help pages'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
-  - 'administer comments'
   - 'administer konsolifin games page'
+  - 'administer node published status'
   - 'administer nodes'
   - 'administer url aliases'
+  - 'bypass node access'
+  - 'create article content'
+  - 'create audio media'
+  - 'create blogi content'
+  - 'create document media'
+  - 'create historianosto content'
+  - 'create image media'
   - 'create julkaisu content'
+  - 'create katsotut content'
+  - 'create laitearvio content'
+  - 'create media'
   - 'create page content'
+  - 'create peliarvostelu content'
   - 'create podcast content'
+  - 'create remote_video media'
+  - 'create terms in franchise'
+  - 'create terms in ihminen'
+  - 'create terms in peli'
+  - 'create terms in pelijulkaisijat'
+  - 'create terms in pelistudiot'
+  - 'create terms in sarja'
   - 'create url aliases'
   - 'create uutinen content'
   - 'create video content'
-  - 'delete own julkaisu content'
-  - 'delete own uutinen content'
+  - 'create video media'
+  - 'create vierailija_arvostelu content'
+  - 'delete media'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any blogi content'
+  - 'edit any document media'
+  - 'edit any historianosto content'
+  - 'edit any image media'
   - 'edit any julkaisu content'
+  - 'edit any katsotut content'
+  - 'edit any laitearvio content'
   - 'edit any page content'
+  - 'edit any peliarvostelu content'
   - 'edit any podcast content'
+  - 'edit any remote_video media'
   - 'edit any uutinen content'
   - 'edit any video content'
+  - 'edit any video media'
+  - 'edit any vierailija_arvostelu content'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own blogi content'
+  - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own historianosto content'
+  - 'edit own image media'
   - 'edit own julkaisu content'
+  - 'edit own katsotut content'
+  - 'edit own laitearvio content'
   - 'edit own page content'
+  - 'edit own peliarvostelu content'
   - 'edit own podcast content'
+  - 'edit own remote_video media'
   - 'edit own uutinen content'
   - 'edit own video content'
+  - 'edit own video media'
+  - 'edit own vierailija_arvostelu content'
+  - 'edit terms in franchise'
+  - 'edit terms in ihminen'
+  - 'edit terms in peli'
+  - 'edit terms in pelijulkaisijat'
+  - 'edit terms in pelistudiot'
+  - 'edit terms in sarja'
+  - 'post comments'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any video media revisions'
+  - 'revert article revisions'
+  - 'revert blogi revisions'
+  - 'revert historianosto revisions'
+  - 'revert julkaisu revisions'
+  - 'revert katsotut revisions'
+  - 'revert laitearvio revisions'
+  - 'revert page revisions'
+  - 'revert peliarvostelu revisions'
+  - 'revert podcast revisions'
+  - 'revert term revisions in franchise'
+  - 'revert term revisions in ihminen'
+  - 'revert term revisions in peli'
+  - 'revert term revisions in pelijulkaisijat'
+  - 'revert term revisions in pelistudiot'
+  - 'revert term revisions in sarja'
+  - 'revert uutinen revisions'
+  - 'revert video revisions'
+  - 'revert vierailija_arvostelu revisions'
+  - 'schedule publishing of nodes'
+  - 'skip comment approval'
   - 'translate interface'
+  - 'update any media'
+  - 'update media'
+  - 'use search autocomplete'
+  - 'use text format basic_html'
   - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
+  - 'view article revisions'
+  - 'view blogi revisions'
+  - 'view historianosto revisions'
+  - 'view julkaisu revisions'
+  - 'view katsotut revisions'
+  - 'view laitearvio revisions'
+  - 'view media'
   - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view peliarvostelu revisions'
+  - 'view podcast revisions'
+  - 'view scheduled content'
+  - 'view term revisions in alustat'
+  - 'view term revisions in alustatarkenne'
+  - 'view term revisions in franchise'
+  - 'view term revisions in ihminen'
+  - 'view term revisions in peli'
+  - 'view term revisions in pelijulkaisijat'
+  - 'view term revisions in pelistudiot'
+  - 'view term revisions in sarja'
   - 'view the administration theme'
+  - 'view update notifications'
+  - 'view uutinen revisions'
+  - 'view video revisions'
+  - 'view vierailija_arvostelu revisions'
+  - 'view vocabulary labels'
