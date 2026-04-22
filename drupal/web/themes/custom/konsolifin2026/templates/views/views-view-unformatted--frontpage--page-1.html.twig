@@ -69,7 +69,7 @@
           {{ row.content }}
         </div>
         {% if (loop.index + 8) % 10 == 0 %}
-          {{ konsolifin_ad('konsolifin_content') }}
+          {{ konsolifin_ad('content') }}
         {% endif %}
       {% endfor %}
     </div>
@@ -83,7 +83,7 @@
         {{ row.content }}
       </div>
       {% if loop.index % 10 == 0 %}
-        {{ konsolifin_ad('konsolifin_content') }}
+        {{ konsolifin_ad('content') }}
       {% endif %}
     {% endfor %}
   </div>

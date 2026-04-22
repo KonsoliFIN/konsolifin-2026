@@ -8,15 +8,15 @@
  * - unique_suffix: Random string to ensure IDs are unique per page render.
  */
 #}
-{% set id_desktop = base_id ~ '_' ~ unique_suffix %}
-{% set id_mobile = base_id ~ '_mobile_' ~ unique_suffix %}
+{% set id_desktop = 'konsolifin_desktop-' ~ base_id ~ unique_suffix %}
+{% set id_mobile = 'konsolifin_mobile-' ~ base_id ~ unique_suffix %}
 <div id="{{ id_desktop }}" class="konsolifin-ad-container konsolifin-ad-desktop"></div>
 <div id="{{ id_mobile }}" class="konsolifin-ad-container konsolifin-ad-mobile"></div>
 <script>
-var isMobile_{{ unique_suffix }} = (window.innerWidth ||
+var isMobile{{ unique_suffix }} = (window.innerWidth ||
 document.documentElement.clientWidth ||
 document.body.clientWidth) < 1000;
 lwhbim.cmd.push(function() {
-lwhbim.loadAd({tagId: isMobile_{{ unique_suffix }} ? '{{ id_mobile }}' : '{{ id_desktop }}'});
+lwhbim.loadAd({tagId: isMobile{{ unique_suffix }} ? '{{ id_mobile }}' : '{{ id_desktop }}'});
 });
 </script>

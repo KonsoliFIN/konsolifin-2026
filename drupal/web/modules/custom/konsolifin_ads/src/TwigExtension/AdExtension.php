@@ -11,6 +11,13 @@ use Twig\TwigFunction;
 class AdExtension extends AbstractExtension {
 
   /**
+   * A counter to keep track of ad invocations.
+   *
+   * @var int
+   */
+  private int $adCounter = 1;
+
+  /**
    * {@inheritdoc}
    */
   public function getFunctions() {
@@ -29,8 +36,12 @@ class AdExtension extends AbstractExtension {
    *   A render array.
    */
   public function renderAd($base_id) {
-    // We add a unique suffix so multiple calls on the same page don't clash.
-    $unique_suffix = substr(md5(uniqid(mt_rand(), TRUE)), 0, 8);
+    if ($base_id ==='top') {
+      $unique_suffix = "";
+    } else {
+      // We add an incrementing unique suffix so multiple calls on the same page don't clash.
+      $unique_suffix = "_" . $this->adCounter++;
+    }
 
     return [
       '#theme' => 'konsolifin_ad',
