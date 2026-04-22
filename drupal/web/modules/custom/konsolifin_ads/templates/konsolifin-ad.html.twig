@@ -10,8 +10,10 @@
 #}
 {% set id_desktop = 'konsolifin_desktop-' ~ base_id ~ unique_suffix %}
 {% set id_mobile = 'konsolifin_mobile-' ~ base_id ~ unique_suffix %}
+<div class="konsolifin_ad-wrapper">
 <div id="{{ id_desktop }}" class="konsolifin-ad-container konsolifin-ad-desktop"></div>
 <div id="{{ id_mobile }}" class="konsolifin-ad-container konsolifin-ad-mobile"></div>
+</div>
 <script>
 var isMobile{{ unique_suffix }} = (window.innerWidth ||
 document.documentElement.clientWidth ||

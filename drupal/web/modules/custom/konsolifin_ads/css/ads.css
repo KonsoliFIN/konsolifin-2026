@@ -1,0 +1,28 @@
+.frontpage-tier--compact .konsolifin_ad-wrapper {
+    grid-column: span 2;
+}
+
+.node__body .konsolifin_ad-wrapper:before {
+    display: block;
+    content: "MAINOS (SISÄLTÖ JATKUU ALLA)";
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+    padding: 0px 12px;
+}
+
+
+.node__body .konsolifin_ad-wrapper:after {
+    display: block;
+    content: "MAINOS PÄÄTTYY";
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+    padding: 0px 12px;
+}
