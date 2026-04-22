@@ -2,10 +2,19 @@
 
 namespace Drupal\konsolifin_ads\Render;
 
+use Drupal\Core\Security\TrustedCallbackInterface;
+
 /**
  * Helper class for injecting ads into rendered content.
  */
-class AdInjector {
+class AdInjector implements TrustedCallbackInterface {
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function trustedCallbacks() {
+    return ['postRenderNodeBody'];
+  }
 
   /**
    * Post-render callback to inject ad after 3rd paragraph.
