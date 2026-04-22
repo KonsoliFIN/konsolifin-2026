@@ -1,0 +1,5 @@
+name: 'KonsoliFIN Ads'
+type: module
+description: 'Custom ads for KonsoliFIN.'
+core_version_requirement: ^10 || ^11
+package: Custom

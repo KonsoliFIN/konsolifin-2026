@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for KonsoliFIN Ads module.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\konsolifin_ads\Render\AdInjector;
+
+/**
+ * Implements hook_theme().
+ */
+function konsolifin_ads_theme($existing, $type, $theme, $path) {
+  return [
+    'konsolifin_ad' => [
+      'variables' => [
+        'base_id' => NULL,
+        'unique_suffix' => NULL,
+      ],
+      'template' => 'konsolifin-ad',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function konsolifin_ads_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  // Only target nodes in full view mode.
+  if ($entity->getEntityTypeId() === 'node' && $build['#view_mode'] === 'full') {
+    // Check if the body field is being rendered.
+    if (isset($build['body'])) {
+      // Add a post-render callback to the body field.
+      $build['body']['#post_render'][] = [AdInjector::class, 'postRenderNodeBody'];
+    }
+  }
+}
