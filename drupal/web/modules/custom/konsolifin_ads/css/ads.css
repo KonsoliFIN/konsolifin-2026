@@ -2,6 +2,10 @@
     grid-column: span 2;
 }
 
+.konsolifin_ad-wrapper {
+    text-align: center;
+}
+
 .node__body .konsolifin_ad-wrapper:before {
     display: block;
     content: "MAINOS (SISÄLTÖ JATKUU ALLA)";
