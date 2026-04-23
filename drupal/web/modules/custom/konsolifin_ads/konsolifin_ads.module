@@ -14,6 +14,44 @@ use Drupal\konsolifin_ads\Render\AdInjector;
  */
 function konsolifin_ads_page_attachments(array &$attachments) {
   $attachments['#attached']['library'][] = 'konsolifin_ads/ads_setup';
+
+  // CMP script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#theme' => 'cmp_script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+        'async' => TRUE,
+      ],
+    ],
+    'im_cmp_script'
+  ];
+
+  // External Livewrapped ad placement script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+        'async' => TRUE,
+        'src' => 'https://lwadm.com/lw/pbjs?pid=8ebbf627-07b0-41d9-98d1-aad15c4af925',
+      ],
+    ],
+    'livewrapped_ad_placement'
+  ];
+
+  // Inline ad loading script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+      ],
+      '#value' => 'var lwhbim = lwhbim || {cmd:[]};',
+    ],
+    'livewrapped_inline_ad_loader'
+  ];
 }
 
 /**
@@ -27,6 +65,9 @@ function konsolifin_ads_theme($existing, $type, $theme, $path) {
         'unique_suffix' => NULL,
       ],
       'template' => 'konsolifin-ad',
+    ],
+    'cmp_script' => [
+      'template' => 'cmp-script',
     ],
   ];
 }
