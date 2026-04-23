@@ -10,6 +10,13 @@ use Drupal\Core\Security\TrustedCallbackInterface;
 class AdInjector implements TrustedCallbackInterface {
 
   /**
+   * A counter to keep track of ad invocations.
+   *
+   * @var int
+   */
+  private static int $adCounter = 1;
+
+  /**
    * {@inheritdoc}
    */
   public static function trustedCallbacks() {
@@ -24,7 +31,7 @@ class AdInjector implements TrustedCallbackInterface {
       return $html;
     }
 
-    $unique_suffix = substr(md5(uniqid(mt_rand(), TRUE)), 0, 8);
+    $unique_suffix = "_" . self::$adCounter++;
     $ad_render_array = [
       '#theme' => 'konsolifin_ad',
       '#base_id' => 'konsolifin_content',
