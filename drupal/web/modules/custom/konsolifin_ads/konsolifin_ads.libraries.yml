@@ -2,7 +2,7 @@ ads_setup:
   version: 1.x
   header: true
   js:
-    js/inmobi-cmp.js: { attributes: { async: false } }
+    js/inmobi-cmp.js: { attributes: { async: true } }
     https://lwadm.com/lw/pbjs?pid=2ea3b841-4507-4978-84cc-15a3d709b1da: { attributes: { async: true } }
     js/lwhbim-init.js: { attributes: { async: false } }
   css:
