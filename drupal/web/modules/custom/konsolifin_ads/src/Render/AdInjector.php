@@ -34,7 +34,7 @@ class AdInjector implements TrustedCallbackInterface {
     $unique_suffix = "_" . self::$adCounter++;
     $ad_render_array = [
       '#theme' => 'konsolifin_ad',
-      '#base_id' => 'konsolifin_content',
+      '#base_id' => 'content',
       '#unique_suffix' => $unique_suffix,
     ];
     $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
