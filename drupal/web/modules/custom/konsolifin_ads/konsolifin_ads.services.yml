@@ -1,0 +1,5 @@
+services:
+  konsolifin_ads.twig_extension:
+    class: Drupal\konsolifin_ads\TwigExtension\AdExtension
+    tags:
+      - { name: twig.extension }

@@ -68,6 +68,9 @@
         <div class="frontpage-compact-card">
           {{ row.content }}
         </div>
+        {% if (loop.index + 8) % 10 == 0 %}
+          {{ konsolifin_ad('content') }}
+        {% endif %}
       {% endfor %}
     </div>
   {% endif %}
@@ -79,6 +82,9 @@
       <div class="frontpage-compact-card">
         {{ row.content }}
       </div>
+      {% if loop.index % 10 == 0 %}
+        {{ konsolifin_ad('content') }}
+      {% endif %}
     {% endfor %}
   </div>
 {% endif %}

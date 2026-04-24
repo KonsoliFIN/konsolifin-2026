@@ -1,0 +1,76 @@
+<?php
+
+namespace Drupal\konsolifin_ads\Render;
+
+use Drupal\Core\Security\TrustedCallbackInterface;
+
+/**
+ * Helper class for injecting ads into rendered content.
+ */
+class AdInjector implements TrustedCallbackInterface {
+
+  /**
+   * A counter to keep track of ad invocations.
+   *
+   * @var int
+   */
+  private static int $adCounter = 1;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function trustedCallbacks() {
+    return ['postRenderNodeBody'];
+  }
+
+  /**
+   * Post-render callback to inject ad after 3rd paragraph.
+   */
+  public static function postRenderNodeBody($html, array $elements) {
+    if (empty(trim($html))) {
+      return $html;
+    }
+
+    $unique_suffix = "_" . self::$adCounter++;
+    $ad_render_array = [
+      '#theme' => 'konsolifin_ad',
+      '#base_id' => 'content',
+      '#unique_suffix' => $unique_suffix,
+    ];
+    $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
+
+    // Split html by paragraph boundaries
+    $paragraphs = preg_split('#(</p>\s*)#i', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
+
+    // preg_split with PREG_SPLIT_DELIM_CAPTURE keeps the delimiter as a separate element.
+    // E.g., [ "para1", "</p>\n", "para2", "</p>\n", "para3", "</p>\n", "para4" ]
+
+    $p_count = 0;
+    $injected = FALSE;
+    $output = '';
+
+    // If there are no </p> tags, just append.
+    if (count($paragraphs) <= 1) {
+      return $html . $ad_html;
+    }
+
+    foreach ($paragraphs as $index => $part) {
+      $output .= $part;
+      // If this part is a closing p tag, we count it as one paragraph processed.
+      if (preg_match('#</p>#i', $part)) {
+        $p_count++;
+        if ($p_count === 3) {
+          $output .= $ad_html;
+          $injected = TRUE;
+        }
+      }
+    }
+
+    if (!$injected) {
+      $output .= $ad_html;
+    }
+
+    return $output;
+  }
+
+}

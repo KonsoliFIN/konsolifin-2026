@@ -1,0 +1,6 @@
+ads_setup:
+  version: 1.x
+  header: true
+  css:
+    component:
+      css/ads.css: {}

@@ -5,6 +5,9 @@ core_version_requirement: ^11
 base theme: stable9
 version: 1.0.0
 
+dependencies:
+  - konsolifin_ads:konsolifin_ads
+
 libraries:
   - konsolifin2026/global
   - core/normalize

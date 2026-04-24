@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for KonsoliFIN Ads module.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\konsolifin_ads\Render\AdInjector;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function konsolifin_ads_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'konsolifin_ads/ads_setup';
+
+  // CMP script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#theme' => 'cmp_script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+        'async' => TRUE,
+      ],
+    ],
+    'im_cmp_script'
+  ];
+
+  // External Livewrapped ad placement script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+        'async' => TRUE,
+        'src' => 'https://lwadm.com/lw/pbjs?pid=8ebbf627-07b0-41d9-98d1-aad15c4af925',
+      ],
+    ],
+    'livewrapped_ad_placement'
+  ];
+
+  // Inline ad loading script
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#tag' => 'script',
+      '#attributes' => [
+        'type' => 'text/javascript',
+      ],
+      '#value' => 'var lwhbim = lwhbim || {cmd:[]};',
+    ],
+    'livewrapped_inline_ad_loader'
+  ];
+}
+
+function konsolifin_ads_page_bottom(array &$page_bottom) {
+  $page_bottom['anchor_ad'] = [
+    '#theme' => 'konsolifin_ad',
+    '#base_id' => 'anchor',
+    '#unique_suffix' => '',
+  ];
+}
+
+/**
+ * Implements hook_theme().
+ */
+function konsolifin_ads_theme($existing, $type, $theme, $path) {
+  return [
+    'konsolifin_ad' => [
+      'variables' => [
+        'base_id' => NULL,
+        'unique_suffix' => NULL,
+      ],
+      'template' => 'konsolifin-ad',
+    ],
+    'cmp_script' => [
+      'template' => 'cmp-script',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function konsolifin_ads_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  // Only target nodes in full view mode.
+  if ($entity->getEntityTypeId() === 'node' && $build['#view_mode'] === 'full') {
+    // Check if the body field is being rendered.
+    if (isset($build['body'])) {
+      // Add a post-render callback to the body field.
+      $build['body']['#post_render'][] = [AdInjector::class, 'postRenderNodeBody'];
+    }
+  }
+}

@@ -67,16 +67,7 @@
     </ul>
   </nav>
 
-<div id='konsolifin_top'></div>
-<div id='konsolifin_mobile-top'></div>
-<script>
-var isMobile = (window.innerWidth ||
-document.documentElement.clientWidth ||
-document.body.clientWidth) < 1000;
-lwhbim.cmd.push(function() {
-lwhbim.loadAd({tagId: isMobile ? 'konsolifin_mobile-top' : 'konsolifin_top'});
-});
-</script>
+{{ konsolifin_ad('top') }}
 
   <div class="layout-content-wrapper">
     <main id="main-content" class="layout-main" role="main">

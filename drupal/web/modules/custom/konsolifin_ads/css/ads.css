@@ -1,0 +1,43 @@
+.konsolifin_ad_wrapper {
+  text-align: center;
+}
+
+.frontpage-tier--compact .konsolifin_ad_wrapper {
+    grid-column: 1 / -1;
+}
+
+.konsolifin_ad_top_bar,
+.konsolifin_ad_bottom_bar {
+  text-align: center;
+  margin: 10px 0;
+  position: relative; /* required for absolute children */
+}
+
+.node__body .konsolifin_ad_top_bar:before,
+.node__body .konsolifin_ad_bottom_bar:before {
+  content: "MAINOS (SISÄLTÖ JATKUU ALLA)";
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: var(--color-bg-primary); /* hides the line behind text */
+  z-index: 1;
+  font-size: 10px;
+}
+
+.node__body .konsolifin_ad_bottom_bar:before {
+  content: "MAINOS PÄÄTTYY";
+}
+
+.node__body .konsolifin_ad_top_bar:after,
+.node__body .konsolifin_ad_bottom_bar:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--color-border);
+  z-index: 0;
+}
