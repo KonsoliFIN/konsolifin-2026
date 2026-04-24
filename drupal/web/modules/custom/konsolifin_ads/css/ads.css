@@ -23,6 +23,7 @@
   white-space: nowrap;
   background: var(--color-bg-primary); /* hides the line behind text */
   z-index: 1;
+  font-size: 10px;
 }
 
 .node__body .konsolifin_ad_bottom_bar:before {
