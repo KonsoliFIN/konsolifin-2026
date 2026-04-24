@@ -54,6 +54,14 @@ function konsolifin_ads_page_attachments(array &$attachments) {
   ];
 }
 
+function konsolifin_ads_page_bottom(array &$page_bottom) {
+  $page_bottom['anchor_ad'] = [
+    '#theme' => 'konsolifin_ad',
+    '#base_id' => 'anchor',
+    '#unique_suffix' => '',
+  ];
+}
+
 /**
  * Implements hook_theme().
  */
