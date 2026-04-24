@@ -1,3 +1,7 @@
+.konsolifin_ad_wrapper {
+  text-align: center;
+}
+
 .frontpage-tier--compact .konsolifin_ad_wrapper {
     grid-column: 1 / -1;
 }
