@@ -9,9 +9,10 @@ dependencies:
     - field.field.user.user.field_some_linkit
     - field.field.user.user.field_xenforo_id
     - field.field.user.user.user_picture
+    - image.style.500x500_skaalattu_nelio
   module:
     - image
-    - link
+    - konsolifin_some_links
     - text
     - user
 _core:
@@ -23,22 +24,22 @@ mode: default
 content:
   field_esittely:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_oikea_nimi:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_some_linkit:
     type: konsolifin_some_link_formatter
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -53,11 +54,11 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: 500x500_skaalattu_nelio
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   field_slack_id: true

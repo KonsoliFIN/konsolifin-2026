@@ -29,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Sisällöt
+      title: 'Käyttäjän tuottama sisältö'
       fields:
         title:
           id: title
@@ -148,7 +148,7 @@ display:
           plugin_id: entity_target_id
           default_action: default
           exception:
-            value: all
+            value: ''
             title_enable: false
             title: All
           title_enable: false
@@ -166,11 +166,16 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: false
+          specify_validation: true
           validate:
-            type: none
+            type: 'entity:user'
             fail: 'not found'
-          validate_options: {  }
+          validate_options:
+            access: true
+            operation: view
+            multiple: 0
+            restrict_roles: false
+            roles: {  }
           break_phrase: false
           not: false
       filters:

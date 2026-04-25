@@ -1,0 +1,25 @@
+.userinfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  padding-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+  .userinfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.userinfo__picture-frame {
+  max-width: 500px;
+  height: auto;
+  border: 3px solid var(--color-border);
+  background: var(--color-background);
+  margin: auto;
+  padding: 15px 10px;
+}
+
+#views-exposed-form-user-content-block-1 {
+  display: none;
+}

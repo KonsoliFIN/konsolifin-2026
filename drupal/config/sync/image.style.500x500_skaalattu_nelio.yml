@@ -1,0 +1,15 @@
+uuid: 5c55a9cb-1afd-46a1-9f5e-4b45aeb75583
+langcode: fi
+status: true
+dependencies: {  }
+name: 500x500_skaalattu_nelio
+label: '500x500 skaalattu neliö'
+effects:
+  fc15b453-0973-48c1-938e-089d2f7c05c5:
+    uuid: fc15b453-0973-48c1-938e-089d2f7c05c5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      anchor: center-center

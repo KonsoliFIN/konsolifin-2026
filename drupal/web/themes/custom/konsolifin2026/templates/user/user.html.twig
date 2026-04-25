@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see \Drupal\user\UserThemeHooks::preprocessUser()
+ */
+#}
+<article{{ attributes }}>
+  {% if content.field_oikea_nimi|render is not empty %}
+    <h1>{{ content.field_oikea_nimi }}</h1>
+  {% endif %}
+  {% if content %}
+    <div class="userinfo">
+      <div class="userinfo__picture">
+        <div class="userinfo__picture-frame">
+          {{ content.user_picture }}
+        </div>
+      </div>
+      <div class="userinfo__info">
+        {% if content.field_esittely|render is not empty %}
+          <div class="userinfo__esittely">
+            {{ content.field_esittely }}
+          </div>
+        {% endif %}
+        {% if content.field_some_linkit|render is not empty %}
+          <div class="userinfo__some-linkit">
+            {{ content.field_some_linkit }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <script>
+      exposer_content_types = () => {
+        const exposer = document.getElementById('views-exposed-form-user-content-block-1');
+        const exposer_link = document.getElementById('views-exposed-form-user-content-block-1-exposer');
+        if (exposer) {
+          exposer.style.display = 'block';
+        }
+        if (exposer_link) {
+          exposer_link.style.display = 'none';
+        }
+      }
+    </script>
+    <a name="content"></a>
+    <p id="views-exposed-form-user-content-block-1-exposer"><a href="#content" onClick="exposer_content_types()">Valitse näytettävät sisältötyypit</a></p>
+    {{ content|without('field_oikea_nimi', 'user_picture', 'field_esittely', 'field_some_linkit') }}
+  {% endif %}
+</article>

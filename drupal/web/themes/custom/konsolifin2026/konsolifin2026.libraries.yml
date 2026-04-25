@@ -24,6 +24,7 @@ global:
       css/components/frontpage.css: {}
       css/components/games-page.css: {}
       css/components/modal.css: {}
+      css/components/user.css: {}
     theme:
       css/theme/theme.css: {}
   js:
