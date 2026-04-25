@@ -38,7 +38,7 @@ content:
     region: content
   field_alustat:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
     region: content
   field_comments:
     type: comment_default
-    label: above
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
@@ -66,7 +66,7 @@ content:
     region: content
   field_julkaisijat:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -74,7 +74,7 @@ content:
     region: content
   field_julkaisuajankohta:
     type: date_ish_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 102
@@ -148,7 +148,7 @@ content:
     region: content
   field_pelit:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -156,7 +156,7 @@ content:
     region: content
   field_studiot:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -164,7 +164,7 @@ content:
     region: content
   field_tyyppi:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 101

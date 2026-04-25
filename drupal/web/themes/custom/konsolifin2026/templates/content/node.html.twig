@@ -125,6 +125,24 @@
             <div class="node__summary-value">{{ content.field_pelit }}</div>
           </div>
         {% endif %}
+        {% if content.field_studiot|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Studiot'|t }}</span>
+            <div class="node__summary-value">{{ content.field_studiot }}</div>
+          </div>
+        {% endif %}
+        {% if content.field_julkaisijat|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Julkaisijat'|t }}</span>
+            <div class="node__summary-value">{{ content.field_julkaisijat }}</div>
+          </div>
+        {% endif %}
+        {% if content.field_ihmiset|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Käsitellyt henkilöt'|t }}</span>
+            <div class="node__summary-value">{{ content.field_ihmiset }}</div>
+          </div>
+        {% endif %}
         {% if content.field_lisatiedot|render is not empty %}
           <div class="node__summary-item">
             <span class="node__summary-label">{{ 'Lisätiedot'|t }}</span>
@@ -140,7 +158,17 @@
     </div>
 
     <div class="node__body">
-      {{ content|without('field_hero', 'field_arvosana', 'field_alustat', 'field_sarja', 'field_comments', 'field_pelit', 'field_arvosteltu_versio', 'field_ihmiset', 'field_julkaisijat', 'field_studiot', 'field_lisatiedot') }}
+      {{ content|without('field_hero',
+                         'field_arvosana',
+                         'field_alustat',
+                         'field_sarja',
+                         'field_comments',
+                         'field_pelit',
+                         'field_arvosteltu_versio',
+                         'field_ihmiset',
+                         'field_julkaisijat',
+                         'field_studiot',
+                         'field_lisatiedot') }}
     </div>
 
     <div class="node__tags">

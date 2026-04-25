@@ -33,7 +33,7 @@ content:
     region: content
   field_comments:
     type: comment_default
-    label: above
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
@@ -53,7 +53,7 @@ content:
     region: content
   field_ihmiset:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -61,7 +61,7 @@ content:
     region: content
   field_mp3:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: full
       link: false
@@ -70,7 +70,7 @@ content:
     region: content
   field_osallistujat:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -78,7 +78,7 @@ content:
     region: content
   field_pelit:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -86,7 +86,7 @@ content:
     region: content
   field_sisalto:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 102

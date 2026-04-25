@@ -27,7 +27,7 @@ content:
     region: content
   field_forum_ketju:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -44,14 +44,14 @@ content:
     region: content
   field_julkaisu_pvm:
     type: date_ish_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4
     region: content
   field_kuuluu_pelisarjaan:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -59,7 +59,7 @@ content:
     region: content
   field_www_sivu:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
