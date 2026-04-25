@@ -2,34 +2,35 @@ global:
   version: 1.0.0
   css:
     base:
-      css/base/reset.css: {}
-      css/base/variables.css: {}
       css/base/node-styles.css: {}
+      css/base/reset.css: {}
       css/base/typography.css: {}
+      css/base/variables.css: {}
     layout:
       css/layout/layout.css: {}
     component:
-      css/components/header.css: {}
-      css/components/navigation.css: {}
-      css/components/hero.css: {}
-      css/components/sarja-highlight.css: {}
       css/components/cards.css: {}
-      css/components/content.css: {}
+      css/components/comment.css: {}
       css/components/content-nav.css: {}
-      css/components/form.css: {}
-      css/components/sidebar.css: {}
-      css/components/review-score.css: {}
-      css/components/podcast.css: {}
+      css/components/content.css: {}
       css/components/footer.css: {}
+      css/components/form.css: {}
       css/components/frontpage.css: {}
       css/components/games-page.css: {}
+      css/components/header.css: {}
+      css/components/hero.css: {}
       css/components/modal.css: {}
+      css/components/navigation.css: {}
+      css/components/podcast.css: {}
+      css/components/review-score.css: {}
+      css/components/sarja-highlight.css: {}
+      css/components/sidebar.css: {}
       css/components/user.css: {}
     theme:
       css/theme/theme.css: {}
   js:
-    js/navigation.js: {}
     js/hero-parallax.js: {}
+    js/navigation.js: {}
     js/sarja-highlight.js: {}
   dependencies:
     - core/drupal

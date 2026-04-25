@@ -42,7 +42,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 6
     region: content
   field_comments:
     type: comment_default
@@ -51,7 +51,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 11
+    weight: 7
     region: content
   field_hero:
     type: media_thumbnail
@@ -70,14 +70,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 5
     region: content
   field_julkaisuajankohta:
     type: date_ish_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 9
     region: content
   field_kuvat:
     type: slick_media
@@ -152,7 +152,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 3
     region: content
   field_studiot:
     type: entity_reference_label
@@ -160,19 +160,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 4
     region: content
   field_tyyppi:
     type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 8
     region: content
 hidden:
   langcode: true
+  links: true

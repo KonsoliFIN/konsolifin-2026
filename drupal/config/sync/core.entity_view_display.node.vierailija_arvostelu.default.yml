@@ -29,7 +29,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
   field_arvosana:
     type: star_formatter
@@ -37,12 +37,8 @@ content:
     settings:
       width: '400'
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
   langcode: true
+  links: true
