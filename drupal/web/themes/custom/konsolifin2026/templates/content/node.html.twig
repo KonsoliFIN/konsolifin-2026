@@ -101,18 +101,6 @@
     {# --- Summary info bar --- #}
     <div class="node__summary-info">
       <div class="node__summary-info-inner">
-        {% if display_submitted %}
-          <div class="node__summary-item">
-            <span class="node__summary-label">{{ 'Kirjoittaja'|t }}</span>
-            <span class="node__summary-value">{{ author_name }}</span>
-          </div>
-          <div class="node__summary-item">
-            <span class="node__summary-label">{{ 'Julkaistu'|t }}</span>
-            <time class="node__summary-value" datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
-              {{ node.getCreatedTime()|date('j.n.Y H.i') }}
-            </time>
-          </div>
-        {% endif %}
         {% if content.field_arvosteltu_versio|render is not empty %}
           <div class="node__summary-item">
             <span class="node__summary-label">{{ 'Arvosteltu alustalla'|t }}</span>
@@ -149,15 +137,18 @@
             <div class="node__summary-value">{{ content.field_lisatiedot }}</div>
           </div>
         {% endif %}
-        {% if review_label is defined and content.field_arvosana|render is not empty %}
-          <div class="node__summary-item node__summary-item--stars">
-            <div class="node__summary-value">{{ content.field_arvosana }}</div>
-          </div>
-        {% endif %}
        </div>
     </div>
 
     <div class="node__body">
+      {% if display_submitted %}
+        <div class="node__author">
+          <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+            {{ node.getCreatedTime()|date('j.n.Y H.i') }}
+          </time> &mdash;
+          <span>{{ author_name }}</span>
+        </div>
+      {% endif %}
       {{ content|without('field_hero',
                          'field_arvosana',
                          'field_alustat',
@@ -171,17 +162,9 @@
                          'field_lisatiedot') }}
     </div>
 
-    <div class="node__tags">
-      {% if content.field_ihmiset|render is not empty %}
-        {{ content.field_ihmiset }}
-      {% endif %}
-      {% if content.field_julkaisijat|render is not empty %}
-        {{ content.field_julkaisijat }}
-      {% endif %}
-      {% if content.field_studiot|render is not empty %}
-        {{ content.field_studiot }}
-      {% endif %}
-    </div>
+    {% if review_label is defined and content.field_arvosana|render is not empty %}
+      <div class="node__summary-value" style="text-align: center;">{{ content.field_arvosana }}</div>
+    {% endif %}
 
     {% if content.field_comments|render is not empty %}
       <div class="comment-section">
