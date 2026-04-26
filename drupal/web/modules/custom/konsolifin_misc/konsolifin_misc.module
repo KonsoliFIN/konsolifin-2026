@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function konsolifin_misc_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $author = $node->getOwner();
+
+  // Log the author's name for debugging purposes
+
+  // Load the author's profile picture URL
+  if (!$author->get('user_picture')->isEmpty()) {
+    $variables['author_headshot'] = [
+      '#theme' => 'image_style',
+      '#style_name' => 'teaser_thumbnail',
+      '#uri' => $author->user_picture->entity->getFileUri(),
+      '#alt' => $author->getDisplayName(),
+      '#cache' => [
+        'tags' => $author->getCacheTags(),
+      ],
+    ];
+  }
+
+  // Load the bio/intro
+  if ($author->hasField('field_esittely')) {
+    $variables['author_bio'] = $author->field_esittely->view('default');
+    // Limit the bio for only the first paragraph
+    if (isset($variables['author_bio'][0]['#text'])) {
+      $bio_text = $variables['author_bio'][0]['#text'];
+      $paragraphs = explode("\n", $bio_text);
+      $variables['author_bio'][0]['#text'] = $paragraphs[0];
+    } else {
+      // If the field is empty, set it to an empty string to avoid rendering issues
+      $variables['author_bio'][0]['#text'] = '';
+    }
+  }
+
+  // Load social links
+  if ($author->hasField('field_some_linkit')) {
+    $variables['author_social'] = $author->field_some_linkit->view('default');
+  }
+}

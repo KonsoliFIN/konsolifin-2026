@@ -13,17 +13,18 @@ use Drupal\konsolifin_ads\Render\AdInjector;
  * Implements hook_page_attachments().
  */
 function konsolifin_ads_page_attachments(array &$attachments) {
+  $basePath = \Drupal::service('extension.list.module')->getPath('konsolifin_ads');
   $attachments['#attached']['library'][] = 'konsolifin_ads/ads_setup';
 
   // CMP script
   $attachments['#attached']['html_head'][] = [
     [
       '#tag' => 'script',
-      '#theme' => 'cmp_script',
       '#attributes' => [
         'type' => 'text/javascript',
         'async' => TRUE,
       ],
+      '#value' => file_get_contents($basePath . '/js/inmobi-cmp.js'),
     ],
     'im_cmp_script'
   ];
@@ -35,10 +36,10 @@ function konsolifin_ads_page_attachments(array &$attachments) {
       '#attributes' => [
         'type' => 'text/javascript',
         'async' => TRUE,
-        'src' => 'https://lwadm.com/lw/pbjs?pid=8ebbf627-07b0-41d9-98d1-aad15c4af925',
+        'src' => '',
       ],
     ],
-    'livewrapped_ad_placement'
+    'im_ad_placement'
   ];
 
   // Inline ad loading script
@@ -50,7 +51,7 @@ function konsolifin_ads_page_attachments(array &$attachments) {
       ],
       '#value' => 'var lwhbim = lwhbim || {cmd:[]};',
     ],
-    'livewrapped_inline_ad_loader'
+    'im_inline_ad_loader'
   ];
 }
 
@@ -73,9 +74,6 @@ function konsolifin_ads_theme($existing, $type, $theme, $path) {
         'unique_suffix' => NULL,
       ],
       'template' => 'konsolifin-ad',
-    ],
-    'cmp_script' => [
-      'template' => 'cmp-script',
     ],
   ];
 }

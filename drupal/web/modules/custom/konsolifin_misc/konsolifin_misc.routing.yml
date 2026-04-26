@@ -1,0 +1,140 @@
+# konsolifin.routing.yml
+#
+# Replaces hook_menu() and hook_menu_alter() from the D7 module.
+#
+# Key changes from D7:
+#  - Routes are declared in YAML, not PHP arrays.
+#  - Page callbacks become methods on a Controller class.
+#  - 'access callback' => TRUE  becomes  requirements: { _access: 'TRUE' }
+#  - 'access callback' => 'user_is_logged_in' becomes
+#    requirements: { _user_is_logged_in: 'TRUE' }
+#  - hook_menu_alter() for user/password is replaced by RouteSubscriber
+#    (see src/EventSubscriber/RouteSubscriber.php).
+
+# ---------------------------------------------------------------------------
+# Content pages
+# ---------------------------------------------------------------------------
+
+konsolifin.staff_list:
+  path: '/toimitus'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::staffList'
+    _title: 'Staff'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.review_summaries:
+  path: '/review_summaries'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::reviewSummaries'
+    _title: 'Review Summaries'
+  requirements:
+    _access: 'TRUE'
+
+
+# ---------------------------------------------------------------------------
+# RSS feeds
+# ---------------------------------------------------------------------------
+
+konsolifin.rss_feed:
+  path: '/feed/feed.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::rssFeed'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.rss_feed_forum:
+  path: '/feed/forforum.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::rssFeedForum'
+  requirements:
+    _access: 'TRUE'
+
+# ---------------------------------------------------------------------------
+# Error pages (registered as normal routes; configure as site 403/404 handler
+# at /admin/config/system/site-information if desired).
+# ---------------------------------------------------------------------------
+
+konsolifin.403:
+  path: '/403_not_allowed'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::accessDenied'
+    _title: 'Access denied'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.404:
+  path: '/404_not_found'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::notFound'
+    _title: 'Page not found'
+  requirements:
+    _access: 'TRUE'
+
+# ---------------------------------------------------------------------------
+# Test / developer page
+# ---------------------------------------------------------------------------
+
+konsolifin.test_links:
+  path: '/kfintest/linkit'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::testLinks'
+    _title: 'Testilinkit'
+  requirements:
+    # Restrict to administrators in production; adjust permission as needed.
+    _permission: 'access administration pages'
+
+# ---------------------------------------------------------------------------
+# Legacy redirects (D7 had these as hook_menu entries calling header()).
+# A dedicated redirect controller is cleaner and returns proper Symfony
+# RedirectResponse objects instead of calling raw header().
+# ---------------------------------------------------------------------------
+
+konsolifin.legacy_redirect_member:
+  path: '/member.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_redirect_konsolifin:
+  path: '/konsolifin.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_redirect_arviolista:
+  path: '/arviolista.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_redirect_getstatistics:
+  path: '/priv.dog.settings/GetStatistics'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_redirect_wplogin:
+  path: '/wp-login.php'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_forum_bbs:
+  path: '/bbs'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyForumRedirect'
+  requirements:
+    _access: 'TRUE'
+
+konsolifin.legacy_forum_domain:
+  path: '/forum.konsolifin.net'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::legacyForumRedirect'
+  requirements:
+    _access: 'TRUE'

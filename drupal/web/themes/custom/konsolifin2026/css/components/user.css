@@ -23,3 +23,60 @@
 #views-exposed-form-user-content-block-1 {
   display: none;
 }
+
+/* Author section in node template */
+.node__author_section {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background-color: var(--color-bg-elevated);
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--color-border-light);
+}
+
+.node__author-headshot {
+  flex-shrink: 0;
+  width: 125px; 
+  max-width: 10vw;
+}
+
+.node__author-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xs);
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .node__author-info {
+    grid-template-columns: 2fr 1fr;
+    column-gap: var(--space-lg);
+  }
+}
+
+.node__author-info .node__author-name,
+.node__author-info .node__author-name a {
+  grid-column: 1 / -1;
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent);
+}
+
+.node__author-info .node__author-bio,
+.node__author-info .node__author-bio p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--text-base);
+}
+
+.node__author-info .node__author-social,
+.node__author-info .node__author-social a {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+}
+
+@media (max-width: 719px) {
+  .node__author-info .node__author-social div {
+    margin-right: 10px;
+    float: left;
+  }
+}
