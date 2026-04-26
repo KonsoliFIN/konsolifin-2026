@@ -163,7 +163,9 @@
     </div>
 
     {% if review_label is defined and content.field_arvosana|render is not empty %}
-      <div class="node__summary-value" style="text-align: center;">{{ content.field_arvosana }}</div>
+      <div class="node__stars-display">
+        <div class="node__summary-value">{{ content.field_arvosana }}</div>
+      </div>
     {% endif %}
 
     {% if content.field_comments|render is not empty %}

@@ -53,17 +53,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Star rating display in full view — below hero, above body */
+/* Star rating display in full view — below body */
 .node__stars-display {
   position: relative;
-  z-index: 3;
-  max-width: var(--container-narrow);
-  margin: 0 auto var(--space-xl);
+  margin: var(--space-2xl);
   background: var(--color-bg-primary);
-}
-
-.node__stars-display .review-score-stars {
-  --review-score-width: 200px;
+  text-align: center;
 }
 
 /* Star rating in teaser cards */
