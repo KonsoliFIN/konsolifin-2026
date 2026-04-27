@@ -1,0 +1,11 @@
+# konsolifin.services.yml
+#
+# Register services used by the konsolifin module.
+
+services:
+
+  # Replaces hook_menu_alter() — alters the user/password route.
+  konsolifin.route_subscriber:
+    class: Drupal\konsolifin_misc\EventSubscriber\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

@@ -168,6 +168,27 @@
       </div>
     {% endif %}
 
+    <div class="node__author_section">
+      {% if author_headshot is defined %}
+        <div class="node__author-headshot">
+          {{ author_headshot }}
+        </div>
+      {% endif %}
+      <div class="node__author-info">
+        {% if author_name %}
+          <div class="node__author-name">{{ author_name }}</div>
+        {% endif %}
+        {% if author_bio is defined %}
+          <div class="node__author-bio">{{ author_bio }}</div>
+        {% endif %}
+        {% if author_social is defined %}
+          <div class="node__author-social">
+            {{ author_social }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
     {% if content.field_comments|render is not empty %}
       <div class="comments-section">
         {{ content.field_comments }}

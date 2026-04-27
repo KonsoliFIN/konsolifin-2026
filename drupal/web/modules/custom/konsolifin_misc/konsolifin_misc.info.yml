@@ -1,0 +1,9 @@
+type: module
+core_version_requirement: ^10 || ^11
+name: 'Konsolifin Misc'
+description: 'Miscellaneous functions for Konsolifin.'
+package: 'KonsoliFIN'
+dependencies:
+  - drupal:node
+  - drupal:pathauto
+  - drupal:taxonomy
