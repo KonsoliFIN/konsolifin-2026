@@ -7,6 +7,7 @@
 
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Render\Markup;
 use Drupal\konsolifin_ads\Render\AdInjector;
 
 /**
@@ -24,7 +25,7 @@ function konsolifin_ads_page_attachments(array &$attachments) {
         'type' => 'text/javascript',
         'async' => TRUE,
       ],
-      '#value' => file_get_contents($basePath . '/js/inmobi-cmp.js'),
+      '#value' => Markup::create(file_get_contents($basePath . '/js/inmobi-cmp.js')),
     ],
     'im_cmp_script'
   ];
@@ -49,7 +50,7 @@ function konsolifin_ads_page_attachments(array &$attachments) {
       '#attributes' => [
         'type' => 'text/javascript',
       ],
-      '#value' => 'var lwhbim = lwhbim || {cmd:[]};',
+      '#value' => Markup::create('var lwhbim = lwhbim || {cmd:[]};'),
     ],
     'im_inline_ad_loader'
   ];
