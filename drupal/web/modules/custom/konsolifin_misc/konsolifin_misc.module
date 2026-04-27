@@ -7,10 +7,8 @@ function konsolifin_misc_preprocess_node(&$variables) {
   $node = $variables['node'];
   $author = $node->getOwner();
 
-  // Log the author's name for debugging purposes
-
   // Load the author's profile picture URL
-  if (!$author->get('user_picture')->isEmpty()) {
+  if ($author && $author->hasField('user_picture') && !$author->get('user_picture')->isEmpty() && $author->user_picture->entity) {
     $variables['author_headshot'] = [
       '#theme' => 'image_style',
       '#style_name' => 'teaser_thumbnail',
@@ -22,8 +20,16 @@ function konsolifin_misc_preprocess_node(&$variables) {
     ];
   }
 
+/*
+[Mon Apr 27 07:07:34.401956 2026] [proxy_fcgi:error] [pid 47938:tid 47938]
+[client 91.153.19.57:59803] AH01071: Got error 'PHP message: Uncaught PHP Exception
+Error: "Call to a member function getFileUri() on null" at
+/var/www/konsolifin/stage/drupal/web/modules/custom/konsolifin_misc/konsolifin_misc.module line 17',
+referer: https://stage.konsolifin.net/admin/reports/dblog
+*/
+
   // Load the bio/intro
-  if ($author->hasField('field_esittely')) {
+  if ($author && $author->hasField('field_esittely')) {
     $variables['author_bio'] = $author->field_esittely->view('default');
     // Limit the bio for only the first paragraph
     if (isset($variables['author_bio'][0]['#text'])) {
@@ -37,7 +43,7 @@ function konsolifin_misc_preprocess_node(&$variables) {
   }
 
   // Load social links
-  if ($author->hasField('field_some_linkit')) {
+  if ($author && $author->hasField('field_some_linkit')) {
     $variables['author_social'] = $author->field_some_linkit->view('default');
   }
 }
