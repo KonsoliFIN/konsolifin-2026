@@ -37,7 +37,7 @@ function konsolifin_ads_page_attachments(array &$attachments) {
       '#attributes' => [
         'type' => 'text/javascript',
         'async' => TRUE,
-        'src' => '',
+        'src' => 'https://lwadm.com/lw/pbjs?pid=8ebbf627-07b0-41d9-98d1-aad15c4af925',
       ],
     ],
     'im_ad_placement'
