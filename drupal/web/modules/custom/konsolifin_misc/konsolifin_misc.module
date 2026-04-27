@@ -20,22 +20,14 @@ function konsolifin_misc_preprocess_node(&$variables) {
     ];
   }
 
-/*
-[Mon Apr 27 07:07:34.401956 2026] [proxy_fcgi:error] [pid 47938:tid 47938]
-[client 91.153.19.57:59803] AH01071: Got error 'PHP message: Uncaught PHP Exception
-Error: "Call to a member function getFileUri() on null" at
-/var/www/konsolifin/stage/drupal/web/modules/custom/konsolifin_misc/konsolifin_misc.module line 17',
-referer: https://stage.konsolifin.net/admin/reports/dblog
-*/
-
   // Load the bio/intro
   if ($author && $author->hasField('field_esittely')) {
     $variables['author_bio'] = $author->field_esittely->view('default');
     // Limit the bio for only the first paragraph
     if (isset($variables['author_bio'][0]['#text'])) {
       $bio_text = $variables['author_bio'][0]['#text'];
-      $paragraphs = explode("\n", $bio_text);
-      $variables['author_bio'][0]['#text'] = $paragraphs[0];
+      $paragraphs = explode("</p>", $bio_text);
+      $variables['author_bio'][0]['#text'] = $paragraphs[0] . '</p>';
     } else {
       // If the field is empty, set it to an empty string to avoid rendering issues
       $variables['author_bio'][0]['#text'] = '';
