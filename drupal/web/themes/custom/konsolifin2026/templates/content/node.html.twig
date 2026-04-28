@@ -131,6 +131,12 @@
             <div class="node__summary-value">{{ content.field_ihmiset }}</div>
           </div>
         {% endif %}
+        {% if content.field_lahde|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Lähteet'|t }}</span>
+            <div class="node__summary-value">{{ content.field_lahde }}</div>
+          </div>
+        {% endif %}
         {% if content.field_lisatiedot|render is not empty %}
           <div class="node__summary-item">
             <span class="node__summary-label">{{ 'Lisätiedot'|t }}</span>
@@ -159,6 +165,7 @@
                          'field_ihmiset',
                          'field_julkaisijat',
                          'field_studiot',
+                         'field_lahde',
                          'field_lisatiedot') }}
     </div>
 

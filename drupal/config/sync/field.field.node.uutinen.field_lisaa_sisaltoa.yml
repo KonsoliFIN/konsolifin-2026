@@ -7,6 +7,7 @@ dependencies:
     - node.type.article
     - node.type.blogi
     - node.type.katsotut
+    - node.type.laitearvio
     - node.type.peliarvostelu
     - node.type.podcast
     - node.type.uutinen
@@ -26,13 +27,14 @@ settings:
     target_bundles:
       article: article
       blogi: blogi
+      laitearvio: laitearvio
       peliarvostelu: peliarvostelu
       podcast: podcast
       katsotut: katsotut
       uutinen: uutinen
     sort:
-      field: _none
-      direction: ASC
+      field: publish_on
+      direction: DESC
     auto_create: false
     auto_create_bundle: article
 field_type: entity_reference
