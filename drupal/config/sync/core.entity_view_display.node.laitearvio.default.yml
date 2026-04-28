@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.laitearvio.field_comments
     - field.field.node.laitearvio.field_hero
     - field.field.node.laitearvio.field_kuvat
+    - field.field.node.laitearvio.field_lisaa_sisaltoa
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
     - image.style.hero_banner
@@ -116,6 +117,15 @@ content:
       visible_items: null
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_lisaa_sisaltoa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_lisatiedot:
     type: basic_string

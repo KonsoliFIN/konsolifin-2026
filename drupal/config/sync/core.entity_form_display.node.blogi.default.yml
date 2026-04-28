@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.blogi.field_ihmiset
     - field.field.node.blogi.field_julkaisijat
     - field.field.node.blogi.field_kuvat
+    - field.field.node.blogi.field_lisaa_sisaltoa
     - field.field.node.blogi.field_pelit
     - field.field.node.blogi.field_sarja
     - field.field.node.blogi.field_studiot
@@ -112,6 +113,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_lisaa_sisaltoa:
+    type: entity_reference_autocomplete
+    weight: 55
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_pelit:
     type: autocomplete_deluxe

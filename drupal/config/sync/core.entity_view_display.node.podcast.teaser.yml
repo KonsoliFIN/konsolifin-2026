@@ -8,12 +8,15 @@ dependencies:
     - field.field.node.podcast.field_comments
     - field.field.node.podcast.field_hero
     - field.field.node.podcast.field_ihmiset
+    - field.field.node.podcast.field_lisaa_sisaltoa
     - field.field.node.podcast.field_mp3
     - field.field.node.podcast.field_osallistujat
     - field.field.node.podcast.field_pelit
     - field.field.node.podcast.field_sisalto
+    - image.style.teaser_thumbnail
     - node.type.podcast
   module:
+    - media
     - text
     - user
 id: node.podcast.teaser
@@ -49,6 +52,7 @@ hidden:
   field_comments: true
   field_hero: true
   field_ihmiset: true
+  field_lisaa_sisaltoa: true
   field_mp3: true
   field_osallistujat: true
   field_pelit: true

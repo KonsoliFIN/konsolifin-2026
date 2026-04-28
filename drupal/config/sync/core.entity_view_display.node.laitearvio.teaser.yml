@@ -8,10 +8,13 @@ dependencies:
     - field.field.node.laitearvio.field_comments
     - field.field.node.laitearvio.field_hero
     - field.field.node.laitearvio.field_kuvat
+    - field.field.node.laitearvio.field_lisaa_sisaltoa
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
+    - image.style.teaser_thumbnail
     - node.type.laitearvio
   module:
+    - media
     - text
     - user
 id: node.laitearvio.teaser
@@ -47,6 +50,7 @@ hidden:
   field_comments: true
   field_hero: true
   field_kuvat: true
+  field_lisaa_sisaltoa: true
   field_lisatiedot: true
   field_sarja: true
   langcode: true

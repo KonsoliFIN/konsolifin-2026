@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_comments
     - field.field.node.peliarvostelu.field_hero
     - field.field.node.peliarvostelu.field_kuvat
+    - field.field.node.peliarvostelu.field_lisaa_sisaltoa
     - field.field.node.peliarvostelu.field_lisatiedot
     - field.field.node.peliarvostelu.field_pelin_nimi
     - field.field.node.peliarvostelu.field_pelit
@@ -64,6 +65,7 @@ hidden:
   field_arvosteltu_versio: true
   field_comments: true
   field_kuvat: true
+  field_lisaa_sisaltoa: true
   field_lisatiedot: true
   field_pelin_nimi: true
   field_pelit: true

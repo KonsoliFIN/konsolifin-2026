@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_ihmiset
     - field.field.node.article.field_julkaisijat
     - field.field.node.article.field_kuvat
+    - field.field.node.article.field_lisaa_sisaltoa
     - field.field.node.article.field_lisatiedot
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
@@ -145,6 +146,15 @@ content:
       visible_items: null
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_lisaa_sisaltoa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_lisatiedot:
     type: basic_string

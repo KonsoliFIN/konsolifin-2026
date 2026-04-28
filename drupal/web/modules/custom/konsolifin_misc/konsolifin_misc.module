@@ -39,3 +39,17 @@ function konsolifin_misc_preprocess_node(&$variables) {
     $variables['author_social'] = $author->field_some_linkit->view('default');
   }
 }
+
+function konsolifin_misc_preprocess_username(&$variables) {
+  $account = $variables['account'];
+  
+  // Haetaan koko nimi Realname-moduulilta
+  if (isset($account->realname)) {
+    $variables['name'] = $account->realname;
+  } elseif (method_exists($account, 'getDisplayName')) {
+    $variables['name'] = $account->getDisplayName();
+  }
+  
+  // Estetään Drupalia lyhentämään nimeä
+  $variables['truncated'] = FALSE;
+}
