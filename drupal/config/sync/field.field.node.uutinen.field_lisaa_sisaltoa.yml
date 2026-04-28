@@ -1,0 +1,38 @@
+uuid: b93c7af0-aa74-4202-a105-026eccf40932
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lisaa_sisaltoa
+    - node.type.article
+    - node.type.blogi
+    - node.type.katsotut
+    - node.type.peliarvostelu
+    - node.type.podcast
+    - node.type.uutinen
+id: node.uutinen.field_lisaa_sisaltoa
+field_name: field_lisaa_sisaltoa
+entity_type: node
+bundle: uutinen
+label: 'Lisää sisältöä'
+description: 'Valitse tähän aiheesen liittyviä juttuja sivustolta'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      blogi: blogi
+      peliarvostelu: peliarvostelu
+      podcast: podcast
+      katsotut: katsotut
+      uutinen: uutinen
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

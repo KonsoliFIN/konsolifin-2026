@@ -11,15 +11,18 @@ dependencies:
     - field.field.node.uutinen.field_julkaisijat
     - field.field.node.uutinen.field_kuvat
     - field.field.node.uutinen.field_lahde
+    - field.field.node.uutinen.field_lisaa_sisaltoa
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
     - node.type.uutinen
   module:
+    - autocomplete_deluxe
     - comment
     - link
     - media_library
     - path
+    - scheduler
     - text
 id: node.uutinen.default
 targetEntityType: node
@@ -120,6 +123,16 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_lisaa_sisaltoa:
+    type: entity_reference_autocomplete
+    weight: 55
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_pelit:
     type: autocomplete_deluxe
