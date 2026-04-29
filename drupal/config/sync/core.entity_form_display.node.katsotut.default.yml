@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.katsotut.field_arvosana
     - field.field.node.katsotut.field_comments
     - field.field.node.katsotut.field_hero
+    - field.field.node.katsotut.field_lisaa_sisaltoa
     - node.type.katsotut
   module:
     - comment
     - konsolifin_review_score
     - media_library
     - path
+    - scheduler
     - text
 id: node.katsotut.default
 targetEntityType: node
@@ -54,6 +56,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_lisaa_sisaltoa:
+    type: entity_reference_autocomplete
+    weight: 55
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

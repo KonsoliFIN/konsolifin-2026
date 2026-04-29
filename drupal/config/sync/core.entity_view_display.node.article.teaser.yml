@@ -11,12 +11,15 @@ dependencies:
     - field.field.node.article.field_ihmiset
     - field.field.node.article.field_julkaisijat
     - field.field.node.article.field_kuvat
+    - field.field.node.article.field_lisaa_sisaltoa
     - field.field.node.article.field_lisatiedot
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
     - field.field.node.article.field_studiot
+    - image.style.teaser_thumbnail
     - node.type.article
   module:
+    - media
     - text
     - user
 id: node.article.teaser
@@ -55,6 +58,7 @@ hidden:
   field_ihmiset: true
   field_julkaisijat: true
   field_kuvat: true
+  field_lisaa_sisaltoa: true
   field_lisatiedot: true
   field_pelit: true
   field_sarja: true

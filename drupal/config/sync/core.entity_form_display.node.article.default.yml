@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_ihmiset
     - field.field.node.article.field_julkaisijat
     - field.field.node.article.field_kuvat
+    - field.field.node.article.field_lisaa_sisaltoa
     - field.field.node.article.field_lisatiedot
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
@@ -113,6 +114,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_lisaa_sisaltoa:
+    type: entity_reference_autocomplete
+    weight: 55
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_lisatiedot:
     type: string_textarea

@@ -11,11 +11,14 @@ dependencies:
     - field.field.node.blogi.field_ihmiset
     - field.field.node.blogi.field_julkaisijat
     - field.field.node.blogi.field_kuvat
+    - field.field.node.blogi.field_lisaa_sisaltoa
     - field.field.node.blogi.field_pelit
     - field.field.node.blogi.field_sarja
     - field.field.node.blogi.field_studiot
+    - image.style.teaser_thumbnail
     - node.type.blogi
   module:
+    - media
     - text
     - user
 id: node.blogi.teaser
@@ -54,6 +57,7 @@ hidden:
   field_ihmiset: true
   field_julkaisijat: true
   field_kuvat: true
+  field_lisaa_sisaltoa: true
   field_pelit: true
   field_sarja: true
   field_studiot: true

@@ -355,3 +355,83 @@
 .node__gallery img:hover {
   opacity: 0.85;
 }
+
+/* Teaser nodes in lisaa sisältöä section */
+.field-lisaa-sisaltoa {
+  --lisaa-sisaltoa-size: 80px;
+}
+
+div.field-lisaa-sisaltoa {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+h3.lisaa-sisaltoa__title {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  font-size: var(--text-lg);
+}
+
+.field-lisaa-sisaltoa .card {
+  background: transparent !important;
+  border: none !important;
+}
+
+.field-lisaa-sisaltoa article{
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.field-lisaa-sisaltoa .card,
+.field-lisaa-sisaltoa .card__thumb,
+.field-lisaa-sisaltoa .card__body,
+.field-lisaa-sisaltoa .card__badge,
+.field-lisaa-sisaltoa .card__title, 
+.field-lisaa-sisaltoa .card__excerpt,
+.field-lisaa-sisaltoa .card__meta {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.field-lisaa-sisaltoa .card,
+.field-lisaa-sisaltoa .card__body,
+.field-lisaa-sisaltoa .card__thumb {
+  height: var(--lisaa-sisaltoa-size) !important;
+}
+
+.field-lisaa-sisaltoa .card__thumb {
+  width: var(--lisaa-sisaltoa-size) !important;
+}
+
+.field-lisaa-sisaltoa img {
+  width: var(--lisaa-sisaltoa-size) !important;
+  height: var(--lisaa-sisaltoa-size) !important;
+  margin: 0 !important;
+}
+
+.field-lisaa-sisaltoa .card__badge {
+  display: none !important;
+}
+
+.field-lisaa-sisaltoa h3 {
+  margin-top: var(--space-xs) !important;
+  font-size: var(--text-sm) !important;
+  margin-bottom: var(--space-xs) !important;
+}
+
+.field-lisaa-sisaltoa h3 a {
+  text-decoration: none !important;
+}
+
+.field-lisaa-sisaltoa .card__excerpt {
+  max-height: 50px !important;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.field-lisaa-sisaltoa .card__meta {
+  position: absolute !important;
+  bottom: 0 !important;
+}

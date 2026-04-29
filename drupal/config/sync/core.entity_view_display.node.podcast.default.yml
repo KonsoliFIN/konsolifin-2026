@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.podcast.field_comments
     - field.field.node.podcast.field_hero
     - field.field.node.podcast.field_ihmiset
+    - field.field.node.podcast.field_lisaa_sisaltoa
     - field.field.node.podcast.field_mp3
     - field.field.node.podcast.field_osallistujat
     - field.field.node.podcast.field_pelit
@@ -58,6 +59,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_lisaa_sisaltoa:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_mp3:
     type: entity_reference_entity_view
