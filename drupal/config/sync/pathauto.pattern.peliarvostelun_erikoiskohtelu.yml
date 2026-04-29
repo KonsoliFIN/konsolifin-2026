@@ -7,12 +7,12 @@ dependencies:
 id: peliarvostelun_erikoiskohtelu
 label: 'Peliarvostelun erikoiskohtelu'
 type: 'canonical_entities:node'
-pattern: 'peliarvostelu/[node:field_pelit]/[node:title]'
+pattern: 'peliarvostelu/[node:title]-[node:field_pelit]'
 selection_criteria:
-  2dea6140-9a7e-4c90-b9b6-711be5f97738:
+  83ef620e-68a8-480e-9680-ecfc6992f12f:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 2dea6140-9a7e-4c90-b9b6-711be5f97738
+    uuid: 83ef620e-68a8-480e-9680-ecfc6992f12f
     context_mapping:
       node: node
     bundles:

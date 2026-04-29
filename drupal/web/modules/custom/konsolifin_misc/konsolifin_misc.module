@@ -53,3 +53,29 @@ function konsolifin_misc_preprocess_username(&$variables) {
   // Estetään Drupalia lyhentämään nimeä
   $variables['truncated'] = FALSE;
 }
+
+// ----------------------------------------
+// PATHAUTO HOOKS
+// ----------------------------------------
+
+function konsolifin_misc_pathauto_alias_alter(&$alias, array &$context)
+{
+  // Show the current alias on UI for debugging purposes
+  if ($context['module'] == 'node' && isset($context['data']['node'])) {
+    $alias_parts = explode('/', $alias);
+    $node = $context['data']['node'];
+
+    if ($node->hasField('field_sarja') && !$node->get('field_sarja')->isEmpty()) {
+      $term = $node->get('field_sarja')->entity;
+      if ($term) {
+        $alias = '/' . $alias_parts[1] .
+          '/' . \Drupal::service('pathauto.alias_cleaner')->cleanString($term->getName()) .
+          '-' . $alias_parts[2];
+      }
+    }
+
+    if ($node->hasField('field_pelin_nimi') && !$node->get('field_pelin_nimi')->isEmpty()) {
+      $alias = $alias . '-' . \Drupal::service('pathauto.alias_cleaner')->cleanString($node->get('field_pelin_nimi')->value);
+    }
+  }
+}

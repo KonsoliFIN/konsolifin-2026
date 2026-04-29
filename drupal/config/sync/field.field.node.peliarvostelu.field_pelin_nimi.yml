@@ -9,8 +9,8 @@ id: node.peliarvostelu.field_pelin_nimi
 field_name: field_pelin_nimi
 entity_type: node
 bundle: peliarvostelu
-label: 'Pelin nimi'
-description: 'Tähän voi kirjoittaa pelin nimen, jos se on jokin muu kuin termistöstä löytyvä pelin nimi, esim. jos kyseessä on DLC.'
+label: 'Julkaisun lisäotsikko'
+description: 'Jos julkaisun nimi eroaa pelin nimestä, tähän kenttään voit kirjoittaa lisäosan, remasterin tai muun tarkenteen, joka lisätään pelin nimen jatkoksi esim. URLissa ja RSS-syötteessä.'
 required: false
 translatable: false
 default_value: {  }
