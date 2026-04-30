@@ -431,7 +431,7 @@ h3.lisaa-sisaltoa__title {
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
-.field-lisaa-sisaltoa .card__meta {
-  position: absolute !important;
-  bottom: 0 !important;
+.field-lisaa-sisaltoa div.card__meta {
+  position: relative !important;
+  bottom: 3px !important;
 }
