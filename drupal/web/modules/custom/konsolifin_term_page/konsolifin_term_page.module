@@ -5,13 +5,13 @@
  * Hook implementations for the konsolifin_term_page module.
  */
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
+use Drupal\Core\Url;
 use Drupal\konsolifin_term_page\FranchiseHandler;
 use Drupal\konsolifin_term_page\PeliHandler;
-use Drupal\Core\Url;
-use Drupal\views\ViewExecutable;
 use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_theme().
@@ -21,19 +21,19 @@ function konsolifin_term_page_theme(): array {
     'taxonomy_term__franchise' => [
       'base hook' => 'taxonomy_term',
     ],
-    'taxonomy_term__peli' => [
+    'taxonomy_term__peli'      => [
       'base hook' => 'taxonomy_term',
     ],
-    'games_page' => [
+    'games_page'               => [
       'variables' => [
-        'top_games' => [],
-        'top_games_heading' => '',
-        'search_form' => [],
-        'upcoming_releases' => [],
-        'most_discussed' => [],
+        'top_games'            => [],
+        'top_games_heading'    => '',
+        'search_form'          => [],
+        'upcoming_releases'    => [],
+        'most_discussed'       => [],
         'most_discussed_error' => NULL,
       ],
-      'template' => 'games-page',
+      'template'  => 'games-page',
     ],
   ];
 }
@@ -42,9 +42,9 @@ function konsolifin_term_page_theme(): array {
  * Implements hook_preprocess_taxonomy_term().
  */
 function konsolifin_term_page_preprocess_taxonomy_term(array &$variables): void {
-  $term = $variables['term'];
+  $term     = $variables['term'];
   $handlers = _konsolifin_term_page_get_handlers();
-  $vid = $term->bundle();
+  $vid      = $term->bundle();
   if (isset($handlers[$vid])) {
     $handlers[$vid]->preprocess($variables, $term);
   }
@@ -59,12 +59,12 @@ function konsolifin_term_page_preprocess_taxonomy_term(array &$variables): void 
 function _konsolifin_term_page_get_handlers(): array {
   static $handlers;
 
-  if (!isset($handlers)) {
+  if (! isset($handlers)) {
     $franchiseHandler = new FranchiseHandler();
-    $peliHandler = new PeliHandler();
-    $handlers = [
+    $peliHandler      = new PeliHandler();
+    $handlers         = [
       $franchiseHandler->getVocabularyId() => $franchiseHandler,
-      $peliHandler->getVocabularyId() => $peliHandler,
+      $peliHandler->getVocabularyId()      => $peliHandler,
     ];
   }
 
@@ -75,7 +75,7 @@ function _konsolifin_term_page_get_handlers(): array {
  * Implements hook_theme_suggestions_taxonomy_term_alter().
  */
 function konsolifin_term_page_theme_suggestions_taxonomy_term_alter(array &$suggestions, array $variables): void {
-  $term = $variables['elements']['#taxonomy_term'];
+  $term   = $variables['elements']['#taxonomy_term'];
   $bundle = $term->bundle();
   if ($bundle === 'franchise' || $bundle === 'peli') {
     $suggestions[] = 'taxonomy_term__' . $bundle;
@@ -88,9 +88,19 @@ function konsolifin_term_page_theme_suggestions_taxonomy_term_alter(array &$sugg
 function konsolifin_term_page_views_query_alter(ViewExecutable $view, QueryPluginBase $query): void {
   if ($view->id() === 'taxonomy_term') {
     $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
-    if ($term instanceof \Drupal\taxonomy\TermInterface && $term->bundle() === 'peli') {
+    if ($term instanceof \Drupal\taxonomy\TermInterface  && $term->bundle() === 'peli') {
       // Exclude 'julkaisu' nodes from the 'peli' taxonomy term page views.
       $query->addWhere('konsolifin_term_page', 'node_field_data.type', 'julkaisu', '!=');
+    }
+  }
+}
+
+function konsolifin_term_page_form_alter(&$form, &$form_state, $form_id) {
+  \Drupal::logger('konsolifin_term_page')->debug('Opening form @form_id', ['@form_id' => $form_id]);
+
+  if ($form_id === 'taxonomy_term_peli_form') {
+    if (isset($form['field_forum_ketju']['widget'][0]['value'])) {
+      $form['field_forum_ketju']['widget'][0]['value']['#autocomplete_route_name'] = 'konsolifin_term_page.forum_threads_query';
     }
   }
 }
@@ -104,11 +114,11 @@ function konsolifin_term_page_preprocess_field(array &$variables): void {
     if ($entity && $entity->hasField('field_forum_ketju')) {
       foreach ($variables['items'] as $delta => $item) {
         $thread_id = $entity->get('field_forum_ketju')->get($delta)->value;
-        if (!empty($thread_id)) {
+        if (! empty($thread_id)) {
           $variables['items'][$delta]['content'] = [
-            '#type' => 'link',
+            '#type'  => 'link',
             '#title' => t('Forum-ketju'),
-            '#url' => Url::fromUri('https://forum.konsolifin.net/threads/' . $thread_id),
+            '#url'   => Url::fromUri('https://forum.konsolifin.net/threads/' . $thread_id),
           ];
         }
       }

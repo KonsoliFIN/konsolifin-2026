@@ -7,10 +7,16 @@ namespace Drupal\konsolifin_term_page\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Database\Database;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+
+// ...
 
 class ForumThreadsController extends ControllerBase {
 
-  public function query(string $string = '', ?string $forum_id = null): JsonResponse {
+  public function query(Request $request, ?string $forum_id = null): JsonResponse {
+    // Extract the string typed by the user in the autocomplete text field.
+    $string = $request->query->get('q', '');
+
     // Get the connection to the external 'xenforo' database.
     try {
       $connection = Database::getConnection('default', 'xenforo');
@@ -28,8 +34,12 @@ class ForumThreadsController extends ControllerBase {
 
       $matches = [];
       foreach ($res as $row) {
-        // Per the request, use the thread ID as the key and title as the value.
-        $matches[$row->thread_id] = $row->title;
+        // Drupal's core autocomplete functionality expects an array of objects,
+        // each with a 'value' and a 'label' key.
+        $matches[] = [
+          'value' => (string) $row->thread_id,
+          'label' => $row->title,
+        ];
       }
 
       return new JsonResponse($matches);
