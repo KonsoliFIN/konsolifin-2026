@@ -24,7 +24,8 @@ class ForumThreadsController extends ControllerBase {
       // Use the dynamic query builder to prevent SQL injection.
       $query = $connection->select('xf_thread', 'xt')
         ->fields('xt', ['thread_id', 'title'])
-        ->condition('title', '%' . $connection->escapeLike($string) . '%', 'LIKE');
+        ->condition('title', '%' . $connection->escapeLike($string) . '%', 'LIKE')
+        ->condition('node_id', 6); // Node 6 = "Pelit" forum
 
       if ($forum_id) {
         $query->condition('node_id', $forum_id);
