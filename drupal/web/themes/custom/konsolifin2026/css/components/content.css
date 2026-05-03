@@ -201,6 +201,36 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .node__summary-item {
+    border-bottom: none;
+    border-right: 1px solid var(--color-border);
+  }
+
+  /* Reset the right border removed by the 640px media query */
+  .node__summary-item:nth-child(2n) {
+    border-right: 1px solid var(--color-border);
+  }
+
+  .node__summary-item:nth-child(3n) {
+    border-right: none;
+  }
+
+  /* Remove bottom border from the 3rd-to-last item added by 640px query */
+  .node__summary-item:nth-last-child(3) {
+    border-bottom: none;
+  }
+
+  /* Add bottom border to all but last row */
+  .node__summary-item:nth-last-child(n+4) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .node__summary-item:nth-last-child(n+4) ~ .node__summary-item:nth-last-child(n+4) {
+    border-bottom: 1px solid var(--color-border);
+  }
+}
+
 .node__summary-item:last-child {
   border-bottom: none;
 }

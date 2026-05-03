@@ -43,10 +43,34 @@
     </div>
   </div>
 
+  <div class="node__summary-info">
+    <div class="node__summary-info-inner">
+      {% if content.field_julkaisu_pvm|render is not empty %}
+        <div class="node__summary-item">
+          <span class="node__summary-label">{{ 'Julkaistu'|t }}</span>
+          <div class="node__summary-value">{{ content.field_julkaisu_pvm }}</div>
+        </div>
+      {% endif %}
+      {% if content.field_www_sivu|render is not empty %}
+        <div class="node__summary-item">
+          <span class="node__summary-label">{{ 'WWW-sivu'|t }}</span>
+          <div class="node__summary-value">{{ content.field_www_sivu }}</div>
+        </div>
+      {% endif %}
+      {% if content.field_forum_ketju|render is not empty %}
+        <div class="node__summary-item">
+          <span class="node__summary-label">{{ 'Forum-ketju'|t }}</span>
+          <div class="node__summary-value">{{ content.field_forum_ketju }}</div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+
   {# --- Body content below hero --- #}
   <div class="node__body">
     {# Render fields except hero (already above) and julkaisut (handled below) #}
-    {{ content|without('field_hero_kuva') }}
+    {{ content|without('field_hero_kuva', 'field_forum_ketju', 'field_www_sivu', 'field_julkaisu_pvm') }}
   </div>
 
   {# --- Julkaisut section --- #}
