@@ -208,7 +208,7 @@ class GamesPageController extends ControllerBase {
         'platforms'    => $platforms,
         'date_display' => $dateDisplay,
         'pelit'        => $pelit,
-        'tyyppi'       => $node->get('field_tyyppi')->value,
+        'tyyppi'       => \Drupal\konsolifin_term_page\PeliHandler::TYYPPI_LABELS[$node->get('field_tyyppi')->value] ?? ucfirst($node->get('field_tyyppi')->value),
       ];
     }
 

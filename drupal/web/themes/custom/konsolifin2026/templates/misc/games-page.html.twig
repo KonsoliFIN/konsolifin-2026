@@ -44,10 +44,12 @@
       {% if upcoming_releases is not empty %}
         <ul class="games-page__upcoming-releases-list">
           {% for release in upcoming_releases %}
-            {% set initial_release = release.tyyppi == 'ensijulkaisu' %}
+            {% set initial_release = release.tyyppi == 'Ensijulkaisu' %}
             <li class="games-page__upcoming-releases-item">
               <span class="games-page__upcoming-releases-title">
-              {% if release.url is not null %}
+              {% if release.tyyppi == 'DLC' %}
+                {{ release.title }} (<a href="{{ release.url }}">{{ release.pelit|first.name }}</a> - {{ release.tyyppi }})
+              {% elseif release.url is not null %}
                 <a href="{{ release.url }}">{{ release.title }}</a>{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
               {% else %}
                 {{ release.title }}{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
