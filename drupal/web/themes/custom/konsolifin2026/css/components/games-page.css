@@ -85,7 +85,7 @@
 li.games-page__upcoming-releases-item {
   margin-bottom: 1.5rem;
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: auto auto;
   column-gap: var(--space-md);
 }
 
