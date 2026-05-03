@@ -1,10 +1,11 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace Drupal\konsolifin_term_page\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
 use Drupal\date_ish\DateIshHelper;
 use Drupal\konsolifin_term_page\MatomoService;
 use Drupal\node\NodeInterface;
@@ -43,37 +44,37 @@ class GamesPageController extends ControllerBase {
    *   Render array with #theme => 'games_page'.
    */
   public function build(): array {
-    $topGames = $this->buildTopGames();
+    $topGames         = $this->buildTopGames();
     $upcomingReleases = $this->buildUpcomingReleases();
-    $mostDiscussed = $this->matomoService->getMostDiscussedGames();
-    $searchForm = $this->formBuilder()->getForm('Drupal\konsolifin_term_page\Form\GamesPageSearchForm');
+    $mostDiscussed    = $this->matomoService->getMostDiscussedGames();
+    $searchForm       = $this->formBuilder()->getForm('Drupal\konsolifin_term_page\Form\GamesPageSearchForm');
 
     // Determine if there was a Matomo error (empty result likely means error).
     $mostDiscussedError = NULL;
     if (empty($mostDiscussed)) {
-      $config = $this->config('konsolifin_term_page.games_page_settings');
-      $apiUrl = $config->get('matomo_api_url');
+      $config    = $this->config('konsolifin_term_page.games_page_settings');
+      $apiUrl    = $config->get('matomo_api_url');
       $authToken = $config->get('matomo_auth_token');
-      if (!empty($apiUrl) && !empty($authToken)) {
+      if (! empty($apiUrl) && ! empty($authToken)) {
         $mostDiscussedError = $this->t('Most discussed games data is temporarily unavailable.');
       }
     }
 
     return [
-      '#theme' => 'games_page',
-      '#top_games' => $topGames,
-      '#top_games_heading' => $this->t('Pinnalla juuri nyt'),
-      '#search_form' => $searchForm,
-      '#upcoming_releases' => $upcomingReleases,
-      '#most_discussed' => $mostDiscussed,
+      '#theme'                => 'games_page',
+      '#top_games'            => $topGames,
+      '#top_games_heading'    => $this->t('Pinnalla juuri nyt'),
+      '#search_form'          => $searchForm,
+      '#upcoming_releases'    => $upcomingReleases,
+      '#most_discussed'       => $mostDiscussed,
       '#most_discussed_error' => $mostDiscussedError,
-      '#cache' => [
-        'tags' => [
+      '#cache'                => [
+        'tags'     => [
           'taxonomy_term_list:peli',
           'node_list:julkaisu',
           'config:konsolifin_term_page.games_page_settings',
         ],
-        'max-age' => 3600,
+        'max-age'  => 3600,
         'contexts' => [],
       ],
     ];
@@ -91,7 +92,7 @@ class GamesPageController extends ControllerBase {
    *   Maximum 3 entries.
    */
   public function buildTopGames(): array {
-    $config = $this->config('konsolifin_term_page.games_page_settings');
+    $config      = $this->config('konsolifin_term_page.games_page_settings');
     $termStorage = $this->entityTypeManager()->getStorage('taxonomy_term');
 
     $topGames = [];
@@ -102,20 +103,20 @@ class GamesPageController extends ControllerBase {
       }
 
       $term = $termStorage->load($tid);
-      if (!$term) {
+      if (! $term) {
         continue;
       }
 
       // Must be a published peli term.
-      if ($term->bundle() !== 'peli' || !$term->isPublished()) {
+      if ($term->bundle() !== 'peli' || ! $term->isPublished()) {
         continue;
       }
 
       // Build hero image URL using 'large' image style.
       $heroImage = [];
-      if ($term->hasField('field_hero_kuva') && !$term->get('field_hero_kuva')->isEmpty()) {
+      if ($term->hasField('field_hero_kuva') && ! $term->get('field_hero_kuva')->isEmpty()) {
         $mediaEntity = $term->get('field_hero_kuva')->entity;
-        if ($mediaEntity && $mediaEntity->hasField('field_media_image') && !$mediaEntity->get('field_media_image')->isEmpty()) {
+        if ($mediaEntity && $mediaEntity->hasField('field_media_image') && ! $mediaEntity->get('field_media_image')->isEmpty()) {
           $fileEntity = $mediaEntity->get('field_media_image')->entity;
           if ($fileEntity) {
             $imageStyle = $this->entityTypeManager()->getStorage('image_style')->load('large');
@@ -130,8 +131,8 @@ class GamesPageController extends ControllerBase {
       }
 
       $topGames[] = [
-        'name' => $term->getName(),
-        'url' => $term->toUrl()->toString(),
+        'name'       => $term->getName(),
+        'url'        => $term->toUrl()->toString(),
         'hero_image' => $heroImage,
       ];
     }
@@ -147,11 +148,11 @@ class GamesPageController extends ControllerBase {
    *
    * @return array
    *   Array of upcoming release entries, each with 'title', 'url',
-   *   'date_display'. Sorted by stored_date ascending.
+   *   'platforms', 'date_display', and 'pelit'. Sorted by stored_date ascending.
    */
   public function buildUpcomingReleases(): array {
     $nodeStorage = $this->entityTypeManager()->getStorage('node');
-    $today = date('Y-m-d');
+    $today       = date('Y-m-d');
 
     $nids = $nodeStorage->getQuery()
       ->condition('type', 'julkaisu')
@@ -166,25 +167,48 @@ class GamesPageController extends ControllerBase {
       return [];
     }
 
-    $nodes = $nodeStorage->loadMultiple($nids);
+    $nodes    = $nodeStorage->loadMultiple($nids);
     $releases = [];
 
     foreach ($nodes as $node) {
-      $dateField = $node->get('field_julkaisuajankohta');
+      $dateField  = $node->get('field_julkaisuajankohta');
       $dateValues = $dateField->getValue();
 
       $dateDisplay = '';
-      if (!empty($dateValues[0]['accuracy_level']) && !empty($dateValues[0]['stored_date'])) {
+      if (! empty($dateValues[0]['accuracy_level']) && ! empty($dateValues[0]['stored_date'])) {
         $dateDisplay = DateIshHelper::formatForDisplay(
           $dateValues[0]['accuracy_level'],
           $dateValues[0]['stored_date'],
         );
       }
 
+      // Get games.
+      $pelit = [];
+      foreach ($node->get('field_pelit') as $peli_item) {
+        if ($peli_item->entity) {
+          $pelit[$peli_item->entity->id()] = [
+            'name' => $peli_item->entity->getName(),
+            'url'  => $peli_item->entity->toUrl()->toString(),
+          ];
+          $peli_url = $peli_item->entity->toUrl()->toString();
+        }
+      }
+
+      // Get platforms.
+      $platforms = [];
+      foreach ($node->get('field_alustat') as $alusta_item) {
+        if ($alusta_item->entity) {
+          $platforms[] = $alusta_item->entity->getName();
+        }
+      }
+
       $releases[] = [
-        'title' => $node->getTitle(),
-        'url' => $node->toUrl()->toString(),
+        'title'        => $node->getTitle(),
+        'url'          => sizeof($pelit) > 1 ? NULL : $peli_url,
+        'platforms'    => $platforms,
         'date_display' => $dateDisplay,
+        'pelit'        => $pelit,
+        'tyyppi'       => $node->get('field_tyyppi')->value,
       ];
     }
 

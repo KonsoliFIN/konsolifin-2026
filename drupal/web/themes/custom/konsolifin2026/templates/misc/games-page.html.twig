@@ -44,9 +44,24 @@
       {% if upcoming_releases is not empty %}
         <ul class="games-page__upcoming-releases-list">
           {% for release in upcoming_releases %}
+            {% set initial_release = release.tyyppi == 'ensijulkaisu' %}
             <li class="games-page__upcoming-releases-item">
-              <a href="{{ release.url }}" class="games-page__upcoming-releases-link">{{ release.title }}</a>
+              <span class="games-page__upcoming-releases-title">
+              {% if release.url is not null %}
+                <a href="{{ release.url }}">{{ release.title }}</a>{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
+              {% else %}
+                {{ release.title }}{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
+              {% endif %}
+              </span>
               <span class="games-page__upcoming-releases-date">{{ release.date_display }}</span>
+              {% if release.pelit|length > 1 %}
+                <span class="games-page__upcoming-releases-games">Sisältää pelit:
+                {% for peli in release.pelit %}
+                  <a href="{{ peli.url }}" class="games-page__upcoming-releases-a-game">{{ peli.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                </span>
+              {% endif %}
+              <span class="games-page__upcoming-releases-platforms">Alusta(t): {{ release.platforms|join(', ') }}</span>
             </li>
           {% endfor %}
         </ul>

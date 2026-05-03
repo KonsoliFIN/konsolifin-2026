@@ -73,3 +73,53 @@
 .games-page__search {
   margin-top: 2rem;
 }
+
+/* Upcoming releases list. */
+.games-page__upcoming-releases-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+li.games-page__upcoming-releases-item {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: var(--space-md);
+}
+
+.games-page__upcoming-releases-title {
+  color: var(--color-primary);
+}
+
+a.games-page__upcoming-releases-title {
+  color: var(--color-accent);
+}
+
+a.games-page__upcoming-releases-title:hover {
+  text-decoration: underline;
+}
+
+.games-page__upcoming-releases-date {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.games-page__upcoming-releases-platforms {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  grid-column: 1 / -1;
+  padding-left: var(--space-xs);
+}
+
+.games-page__upcoming-releases-games {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  grid-column: 1 / -1;
+  padding-left: var(--space-xs);
+}

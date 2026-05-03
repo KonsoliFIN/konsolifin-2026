@@ -97,8 +97,6 @@ function konsolifin_term_page_views_query_alter(ViewExecutable $view, QueryPlugi
 }
 
 function konsolifin_term_page_form_alter(&$form, &$form_state, $form_id) {
-  \Drupal::logger('konsolifin_term_page')->debug('Opening form @form_id', ['@form_id' => $form_id]);
-
   if ($form_id === 'taxonomy_term_peli_form') {
     if (isset($form['field_forum_ketju']['widget'][0]['value'])) {
       $form['field_forum_ketju']['widget'][0]['value']['#autocomplete_route_name'] = 'konsolifin_term_page.forum_threads_query';
