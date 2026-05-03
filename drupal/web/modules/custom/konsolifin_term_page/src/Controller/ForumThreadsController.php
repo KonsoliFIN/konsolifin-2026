@@ -13,6 +13,22 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ForumThreadsController extends ControllerBase {
 
+  const BASE_URL = 'https://forum.konsolifin.net/';
+
+  static public function get_thread_title_by_id(int $thread_id): ?string {
+    try {
+      $connection = Database::getConnection('default', 'xenforo');
+      $query      = $connection->select('xf_thread', 'xt')
+        ->fields('xt', ['title'])
+        ->condition('thread_id', $thread_id);
+      $result = $query->execute()->fetchField();
+      return $result ?: null;
+    } catch (\Exception $e) {
+      \Drupal::logger('konsolifin_term_page')->error('Database connection failed: @message', ['@message' => $e->getMessage()]);
+      return null;
+    }
+  }
+
   public function query(Request $request, ?string $forum_id = null): JsonResponse {
     // Extract the string typed by the user in the autocomplete text field.
     $string = $request->query->get('q', '');
