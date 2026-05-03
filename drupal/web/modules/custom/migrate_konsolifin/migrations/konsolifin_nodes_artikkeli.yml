@@ -13,7 +13,7 @@ process:
     - plugin: skip_on_value
       value: 14008
       method: row
-      message: 'Skipping node because it is tagged with term 14008.'
+      message: 'Skipping node because it is a hardware review.'
   nid:
     -
       plugin: get
