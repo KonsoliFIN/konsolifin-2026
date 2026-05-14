@@ -108,10 +108,6 @@ class MatomoService {
         if (preg_match('/\.(\d+)\/?$/', $item['label'], $matches)) {
           $threadId                    = $matches[1];
           $threadViewCounts[$threadId] = (int) $item['nb_visits'];
-          $this->logger->debug('Thread ID @id has @views views.', [
-            '@id'    => $threadId,
-            '@views' => $item['nb_visits'],
-          ]);
         }
       }
     }
