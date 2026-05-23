@@ -119,3 +119,5 @@ content:
     third_party_settings: {  }
 hidden:
   promote: true
+  publish_on: true
+  unpublish_on: true

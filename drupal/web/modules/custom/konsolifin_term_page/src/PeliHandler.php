@@ -1,18 +1,27 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace Drupal\konsolifin_term_page;
 
-use Drupal\date_ish\DateIshHelper;
-use Drupal\taxonomy\TermInterface;
 use Drupal\Core\Url;
+use Drupal\date_ish\DateIshHelper;
 use Drupal\node\NodeInterface;
+use Drupal\taxonomy\TermInterface;
 
 /**
  * Vocabulary handler for the 'peli' vocabulary.
  */
 class PeliHandler implements VocabularyHandlerInterface {
+
+  const TYYPPI_LABELS = [
+    'early_access' => 'Early access',
+    'ensijulkaisu' => 'Ensijulkaisu',
+    'remaster'     => 'Remaster',
+    'remake'       => 'Remake',
+    'dlc'          => 'DLC',
+    'bundle'       => 'Bundle',
+  ];
 
   /**
    * {@inheritdoc}
@@ -33,11 +42,11 @@ class PeliHandler implements VocabularyHandlerInterface {
     // Group and format.
     $julkaisut = $this->buildJulkaisutList($julkaisuNodes);
 
-    $variables['peli_julkaisut'] = $julkaisut;
+    $variables['peli_julkaisut']            = $julkaisut;
     $variables['peli_no_julkaisut_message'] = t('No releases are associated with this game.');
 
     // Invalidate this page when any julkaisu node changes.
-    $variables['#cache']['tags'][] = 'node_list:julkaisu';
+    $variables['#cache']['tags'][]     = 'node_list:julkaisu';
     $variables['#cache']['contexts'][] = 'user.permissions';
     if (\Drupal::currentUser()->hasPermission('create julkaisu content')) {
       $variables['peli_add_julkaisu_url'] = Url::fromRoute('konsolifin_term_page.add_julkaisu_form', ['taxonomy_term' => $peliTid])->toString();
@@ -85,19 +94,10 @@ class PeliHandler implements VocabularyHandlerInterface {
   public function buildJulkaisutList(array $nodes): array {
     $groups = [];
 
-    $tyyppi_labels = [
-      'early_access' => 'Early access',
-      'ensijulkaisu' => 'Ensijulkaisu',
-      'remaster' => 'Remaster',
-      'remake' => 'Remake',
-      'dlc' => 'DLC',
-      'bundle' => 'Bundle',
-    ];
-
     foreach ($nodes as $node) {
       $tyyppi_field = $node->get('field_tyyppi')->value;
-      $tyyppi_key = $tyyppi_field ?: 'muu';
-      $tyyppi_label = $tyyppi_labels[$tyyppi_key] ?? ucfirst($tyyppi_key);
+      $tyyppi_key   = $tyyppi_field ?: 'muu';
+      $tyyppi_label = self::TYYPPI_LABELS[$tyyppi_key] ?? ucfirst($tyyppi_key);
 
       // Get platforms.
       $platforms = [];
@@ -108,23 +108,22 @@ class PeliHandler implements VocabularyHandlerInterface {
       }
 
       // Get release date.
-      $dateField = $node->get('field_julkaisuajankohta');
+      $dateField  = $node->get('field_julkaisuajankohta');
       $dateValues = $dateField->getValue();
 
-      if (!empty($dateValues[0]['accuracy_level']) && !empty($dateValues[0]['stored_date'])) {
-        $accuracy = $dateValues[0]['accuracy_level'];
-        $storedDate = $dateValues[0]['stored_date'];
+      if (! empty($dateValues[0]['accuracy_level']) && ! empty($dateValues[0]['stored_date'])) {
+        $accuracy    = $dateValues[0]['accuracy_level'];
+        $storedDate  = $dateValues[0]['stored_date'];
         $dateDisplay = DateIshHelper::formatForDisplay($accuracy, $storedDate);
-      }
-      else {
+      } else {
         $dateDisplay = '';
       }
 
-      $groups[$tyyppi_key]['label'] = $tyyppi_label;
+      $groups[$tyyppi_key]['label']   = $tyyppi_label;
       $groups[$tyyppi_key]['items'][] = [
-        'title' => $node->getTitle(),
-        'url' => $node->toUrl()->toString(),
-        'platforms' => $platforms,
+        'title'        => $node->getTitle(),
+        'url'          => $node->toUrl()->toString(),
+        'platforms'    => $platforms,
         'date_display' => $dateDisplay,
       ];
     }

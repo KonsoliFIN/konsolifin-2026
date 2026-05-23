@@ -30,3 +30,11 @@ konsolifin_term_page.games_page_settings:
     _title: 'Games Page Settings'
   requirements:
     _permission: 'administer konsolifin games page'
+
+konsolifin_term_page.forum_threads_query:
+  path: '/forum_data/threads'
+  defaults:
+    _controller: '\Drupal\konsolifin_term_page\Controller\ForumThreadsController::query'
+    _title: 'Forum Threads'
+  requirements:
+    _access: 'TRUE'

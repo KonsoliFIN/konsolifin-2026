@@ -98,3 +98,5 @@ content:
     third_party_settings: {  }
 hidden:
   langcode: true
+  publish_on: true
+  unpublish_on: true

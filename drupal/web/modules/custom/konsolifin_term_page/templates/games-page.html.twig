@@ -57,13 +57,13 @@
       {% if most_discussed_error %}
         <p class="games-page__most-discussed-error">{{ most_discussed_error }}</p>
       {% elseif most_discussed is not empty %}
-        <ul class="games-page__most-discussed-list">
+        <div class="games-page__most-discussed-list">
           {% for game in most_discussed %}
-            <li class="games-page__most-discussed-item">
+            <div class="games-page__most-discussed-item">
               <a href="{{ game.url }}" class="games-page__most-discussed-link">{{ game.name }}</a>
-            </li>
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       {% endif %}
     </section>
   </div>

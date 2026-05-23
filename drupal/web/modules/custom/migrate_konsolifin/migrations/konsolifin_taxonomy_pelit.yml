@@ -17,6 +17,15 @@ process:
     -
       plugin: get
       source: format
+  field_forum_ketju:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: field_forum_ketju/0/value
+    -
+      plugin: preg_match
+      pattern: '/\(ID:(\d+)\)/'
+      group_index: 1
   field_www_sivu/uri: field_www_sivu/0/value
   field_www_sivu/title: field_www_sivu/0/title
   field_hero_kuva:

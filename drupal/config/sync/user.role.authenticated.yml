@@ -2,19 +2,11 @@ uuid: 7b949f94-14b9-4549-bbfb-89f7efbeb993
 langcode: fi
 status: true
 dependencies:
-  config:
-    - rest.resource.simpleads_click
-    - rest.resource.simpleads_group
-    - rest.resource.simpleads_impression
-    - rest.resource.simpleads_reference
-    - rest.resource.simpleads_views
   module:
     - comment
     - matomo
     - media
-    - rest
     - search
-    - simpleads
     - system
     - taxonomy
 _core:
@@ -28,16 +20,9 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'change own username'
-  - 'count simpleads clicks'
-  - 'count simpleads impressions'
   - 'edit own comments'
   - 'opt-in or out of matomo tracking'
   - 'post comments'
-  - 'restful get simpleads_group'
-  - 'restful get simpleads_reference'
-  - 'restful get simpleads_views'
-  - 'restful post simpleads_click'
-  - 'restful post simpleads_impression'
   - 'search content'
   - 'skip comment approval'
   - 'use advanced search'

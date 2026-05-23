@@ -15,8 +15,8 @@ process:
       plugin: skip_on_value
       method: row
       not_equals: false
-      value:
-        - 14008
+      value: 14008
+      message: 'Skipping node because it is not a hardware review.'
   nid:
     -
       plugin: get

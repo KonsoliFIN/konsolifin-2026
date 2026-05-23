@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace Drupal\konsolifin_term_page;
 
@@ -50,8 +50,8 @@ class MatomoService {
    */
   public function getMostDiscussedGames(): array {
     try {
-      $config = $this->configFactory->get('konsolifin_term_page.games_page_settings');
-      $apiUrl = $config->get('matomo_api_url');
+      $config    = $this->configFactory->get('konsolifin_term_page.games_page_settings');
+      $apiUrl    = $config->get('matomo_api_url');
       $authToken = $config->get('matomo_auth_token');
 
       if (empty($apiUrl) || empty($authToken)) {
@@ -65,8 +65,7 @@ class MatomoService {
       }
 
       return $this->mapThreadsToGames($threadViewCounts);
-    }
-    catch (\Exception $e) {
+    } catch (\Exception $e) {
       $this->logger->warning('Failed to fetch most discussed games from Matomo: @message', [
         '@message' => $e->getMessage(),
       ]);
@@ -86,18 +85,18 @@ class MatomoService {
    *   Array of [thread_id => view_count] pairs.
    */
   private function fetchThreadViewCounts(string $apiUrl, string $authToken): array {
-    $response = $this->httpClient->request('GET', $apiUrl, [
-      'query' => [
+    $response = $this->httpClient->request('POST', $apiUrl, [
+      'form_params' => [
         'token_auth' => $authToken,
-        'format' => 'JSON',
       ],
-      'timeout' => 10,
+      'timeout'     => 10,
     ]);
 
     $body = (string) $response->getBody();
+
     $data = json_decode($body, TRUE, 512, JSON_THROW_ON_ERROR);
 
-    if (!is_array($data)) {
+    if (! is_array($data)) {
       return [];
     }
 
@@ -105,9 +104,9 @@ class MatomoService {
     foreach ($data as $item) {
       if (isset($item['label'], $item['nb_visits'])) {
         // Extract thread ID from the label/URL.
-        // Expected format contains the thread ID as part of the page path.
-        if (preg_match('/\/(\d+)\/?/', $item['label'], $matches)) {
-          $threadId = $matches[1];
+        // Expected format contains the thread ID is at the end of the page path.
+        if (preg_match('/\.(\d+)\/?$/', $item['label'], $matches)) {
+          $threadId                    = $matches[1];
           $threadViewCounts[$threadId] = (int) $item['nb_visits'];
         }
       }
@@ -128,7 +127,7 @@ class MatomoService {
    */
   private function mapThreadsToGames(array $threadViewCounts): array {
     $termStorage = $this->entityTypeManager->getStorage('taxonomy_term');
-    $threadIds = array_keys($threadViewCounts);
+    $threadIds   = array_keys($threadViewCounts);
 
     $tids = $termStorage->getQuery()
       ->condition('vid', 'peli')
@@ -141,18 +140,57 @@ class MatomoService {
       return [];
     }
 
-    $terms = $termStorage->loadMultiple($tids);
+    $terms   = $termStorage->loadMultiple($tids);
     $results = [];
 
+    // Load the fallback media entity and extract its file URI.
+    $fallbackMedia = $this->entityTypeManager->getStorage('media')->load(10);
+    $fallbackImage = null;
+    if ($fallbackMedia && $fallbackMedia->hasField('field_media_image') && ! $fallbackMedia->get('field_media_image')->isEmpty()) {
+      $fallbackFile = $fallbackMedia->get('field_media_image')->entity;
+      if ($fallbackFile) {
+        $imageStyle = $this->entityTypeManager->getStorage('image_style')->load('game_hero_thumbnail');
+        if ($imageStyle) {
+          $fallbackImage = [
+            '#theme' => 'image',
+            '#uri'   => $imageStyle->buildUrl($fallbackFile->getFileUri()),
+            '#alt'   => "Pelin otsikkokuva ei saatavilla",
+          ];
+        }
+      }
+    }
+
     foreach ($terms as $term) {
+      $heroImage     = null;
       $forumThreadId = $term->get('field_forum_ketju')->value;
       if ($forumThreadId && isset($threadViewCounts[$forumThreadId])) {
-        $results[] = [
-          'name' => $term->getName(),
-          'url' => $term->toUrl()->toString(),
-          'view_count' => $threadViewCounts[$forumThreadId],
-        ];
+        $mediaEntity = $term->get('field_hero_kuva')->entity;
+        if ($mediaEntity && $mediaEntity->hasField('field_media_image') && ! $mediaEntity->get('field_media_image')->isEmpty()) {
+          $fileEntity = $mediaEntity->get('field_media_image')->entity;
+          if ($fileEntity) {
+            $imageStyle = $this->entityTypeManager->getStorage('image_style')->load('game_hero_thumbnail');
+            if ($imageStyle) {
+              $heroImage = [
+                '#theme' => 'image',
+                '#uri'   => $imageStyle->buildUrl($fileEntity->getFileUri()),
+                '#alt'   => $mediaEntity->get('field_media_image')->alt ?? "Pelin otsikkokuva",
+              ];
+            }
+          }
+        }
+
+        if (! $heroImage && $fallbackImage) { // Fallback to fallback image if no valid image was found
+          $heroImage = $fallbackImage;
+        }
       }
+
+      $results[] = [
+        'name'            => $term->getName(),
+        'url'             => $term->toUrl()->toString(),
+        'hero_image'      => $heroImage,
+        'forum_thread_id' => $term->get('field_forum_ketju')->value,
+        'view_count'      => $threadViewCounts[$forumThreadId],
+      ];
     }
 
     // Sort by view_count descending.

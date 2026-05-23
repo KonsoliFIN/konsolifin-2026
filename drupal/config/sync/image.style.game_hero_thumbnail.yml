@@ -1,0 +1,15 @@
+uuid: f79ddd17-beda-4cef-a7e2-70475c5be068
+langcode: fi
+status: true
+dependencies: {  }
+name: game_hero_thumbnail
+label: 'Game hero thumbnail'
+effects:
+  96de552e-0bdd-4026-ac6c-c332d76e3842:
+    uuid: 96de552e-0bdd-4026-ac6c-c332d76e3842
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center
