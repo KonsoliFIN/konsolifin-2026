@@ -75,18 +75,30 @@
 }
 
 /* Upcoming releases list. */
-.games-page__upcoming-releases-list {
+.games-page__upcoming-releases-list,
+.games-page__most-discussed-list {
   list-style: none;
   padding: 0;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-xl);
 }
 
-li.games-page__upcoming-releases-item {
+li.games-page__upcoming-releases-item,
+div.games-page__most-discussed-item {
   margin-bottom: 1.5rem;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: var(--space-md);
+}
+
+div.games-page__most-discussed-item {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+div.games-page__most-discussed-item .hero-thumbnail {
+    width: 80px;
 }
 
 .games-page__upcoming-releases-title {

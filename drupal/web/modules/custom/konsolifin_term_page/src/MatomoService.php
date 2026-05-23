@@ -143,15 +143,54 @@ class MatomoService {
     $terms   = $termStorage->loadMultiple($tids);
     $results = [];
 
+    // Load the fallback media entity and extract its file URI.
+    $fallbackMedia = $this->entityTypeManager->getStorage('media')->load(10);
+    $fallbackImage = null;
+    if ($fallbackMedia && $fallbackMedia->hasField('field_media_image') && ! $fallbackMedia->get('field_media_image')->isEmpty()) {
+      $fallbackFile = $fallbackMedia->get('field_media_image')->entity;
+      if ($fallbackFile) {
+        $imageStyle = $this->entityTypeManager->getStorage('image_style')->load('game_hero_thumbnail');
+        if ($imageStyle) {
+          $fallbackImage = [
+            '#theme' => 'image',
+            '#uri'   => $imageStyle->buildUrl($fallbackFile->getFileUri()),
+            '#alt'   => "Pelin otsikkokuva ei saatavilla",
+          ];
+        }
+      }
+    }
+
     foreach ($terms as $term) {
+      $heroImage     = null;
       $forumThreadId = $term->get('field_forum_ketju')->value;
       if ($forumThreadId && isset($threadViewCounts[$forumThreadId])) {
-        $results[] = [
-          'name'       => $term->getName(),
-          'url'        => $term->toUrl()->toString(),
-          'view_count' => $threadViewCounts[$forumThreadId],
-        ];
+        $mediaEntity = $term->get('field_hero_kuva')->entity;
+        if ($mediaEntity && $mediaEntity->hasField('field_media_image') && ! $mediaEntity->get('field_media_image')->isEmpty()) {
+          $fileEntity = $mediaEntity->get('field_media_image')->entity;
+          if ($fileEntity) {
+            $imageStyle = $this->entityTypeManager->getStorage('image_style')->load('game_hero_thumbnail');
+            if ($imageStyle) {
+              $heroImage = [
+                '#theme' => 'image',
+                '#uri'   => $imageStyle->buildUrl($fileEntity->getFileUri()),
+                '#alt'   => $mediaEntity->get('field_media_image')->alt ?? "Pelin otsikkokuva",
+              ];
+            }
+          }
+        }
+
+        if (! $heroImage && $fallbackImage) { // Fallback to fallback image if no valid image was found
+          $heroImage = $fallbackImage;
+        }
       }
+
+      $results[] = [
+        'name'            => $term->getName(),
+        'url'             => $term->toUrl()->toString(),
+        'hero_image'      => $heroImage,
+        'forum_thread_id' => $term->get('field_forum_ketju')->value,
+        'view_count'      => $threadViewCounts[$forumThreadId],
+      ];
     }
 
     // Sort by view_count descending.
