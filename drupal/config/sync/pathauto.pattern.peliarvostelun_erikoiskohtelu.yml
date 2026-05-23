@@ -2,17 +2,18 @@ uuid: 8ba459eb-24db-469d-8fc4-335fd3314166
 langcode: fi
 status: true
 dependencies:
+  config:
+    - node.type.peliarvostelu
   module:
     - node
 id: peliarvostelun_erikoiskohtelu
 label: 'Peliarvostelun erikoiskohtelu'
 type: 'canonical_entities:node'
-pattern: 'peliarvostelu/[node:title]-[node:field_pelit]'
+pattern: '/peliarvostelu/[node:title]-[node:field_pelit]'
 selection_criteria:
   83ef620e-68a8-480e-9680-ecfc6992f12f:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 83ef620e-68a8-480e-9680-ecfc6992f12f
     context_mapping:
       node: node
     bundles:
