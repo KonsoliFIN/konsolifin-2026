@@ -31,7 +31,9 @@
     <div class="card card--horizontal">
       {% if content.field_hero|render is not empty %}
         <div class="card__thumb">
-          {{ content.field_hero }}
+          <a href="{{ url }}" rel="bookmark">
+            {{ content.field_hero }}
+          </a>
         </div>
       {% endif %}
 
