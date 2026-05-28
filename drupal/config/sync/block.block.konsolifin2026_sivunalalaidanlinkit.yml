@@ -17,7 +17,7 @@ plugin: 'block_content:ef210f5d-cd07-4e0f-a8fd-4609eee91af4'
 settings:
   id: 'block_content:ef210f5d-cd07-4e0f-a8fd-4609eee91af4'
   label: 'Sivun alalaidan linkit'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   view_mode: full
 visibility: {  }
