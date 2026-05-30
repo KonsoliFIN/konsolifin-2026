@@ -1,0 +1,23 @@
+uuid: 96bb9db9-3f31-486d-9dee-cdfd5c3553ee
+langcode: fi
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef210f5d-cd07-4e0f-a8fd-4609eee91af4'
+  module:
+    - block_content
+  theme:
+    - konsolifin2026
+id: konsolifin2026_sivunalalaidanlinkit
+theme: konsolifin2026
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:ef210f5d-cd07-4e0f-a8fd-4609eee91af4'
+settings:
+  id: 'block_content:ef210f5d-cd07-4e0f-a8fd-4609eee91af4'
+  label: 'Sivun alalaidan linkit'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }
