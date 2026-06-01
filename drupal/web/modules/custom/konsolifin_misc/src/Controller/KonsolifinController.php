@@ -437,7 +437,7 @@ class KonsolifinController extends ControllerBase {
 
       $html .= "<h2>" . htmlspecialchars($title) . "</h2>\n"
       . "<p><em>Published on " . $published . "</em></p>\n"
-      . "<p><a href=\"" . $url . "\">$url</a></p>\n"
+      . "<p><a href=\"" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "\">" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "</a></p>\n"
       . "<p>" . htmlspecialchars($summary) . "</p>\n";
     }
 
