@@ -411,9 +411,13 @@ class KonsolifinController extends ControllerBase {
         && $node->get('field_pelin_nimi')->value !== '') {
         $gamename = $node->get('field_pelin_nimi')->value;
       } else {
-        $game_tid = $node->get('field_pelit')->target_id;
-        $game     = \Drupal\taxonomy\Entity\Term::load($game_tid);
-        $gamename = $game ? $game->label() : '(tuntematon peli)';
+        if (! $node->get('field_pelit')->isEmpty()) {
+          $game_tid = $node->get('field_pelit')->target_id;
+          $game     = \Drupal\taxonomy\Entity\Term::load($game_tid);
+          $gamename = $game ? $game->label() : '(tuntematon peli)';
+        } else {
+          $gamename = '(tuntematon peli)';
+        }
       }
 
       $platform_name = '';
