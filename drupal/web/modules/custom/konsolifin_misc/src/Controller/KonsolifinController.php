@@ -416,9 +416,12 @@ class KonsolifinController extends ControllerBase {
         $gamename = $game ? $game->label() : '(tuntematon peli)';
       }
 
-      $platform_tid  = $node->get('field_arvosteltu_versio')->target_id;
-      $platform      = \Drupal\taxonomy\Entity\Term::load($platform_tid);
-      $platform_name = $platform ? $platform->label() : '';
+      $platform_name = '';
+      if (! $node->get('field_arvosteltu_versio')->isEmpty()) {
+        $platform_tid  = $node->get('field_arvosteltu_versio')->target_id;
+        $platform      = \Drupal\taxonomy\Entity\Term::load($platform_tid);
+        $platform_name = $platform ? $platform->label() : '';
+      }
 
       // Only show items that have an English summary.
       if ($node->get('field_summary_in_english')->isEmpty()) {
