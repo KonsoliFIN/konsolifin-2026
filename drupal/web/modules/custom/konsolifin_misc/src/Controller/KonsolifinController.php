@@ -433,7 +433,7 @@ class KonsolifinController extends ControllerBase {
       }
 
       $score_raw = (int) ($node->get('field_arvosana')->value ?? 0);
-      $score     = round($score_raw / 80, 1);
+      $score     = round($score_raw / 40) / 2;
       $url       = $base_url . '/node/' . $node->id();
       $summary   = $node->get('field_summary_in_english')->value;
       $title     = $gamename . ' - ' . $platform_name . ' - ' . $score . '/5';
