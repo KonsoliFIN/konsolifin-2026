@@ -16,14 +16,12 @@ dependencies:
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
-    - field.field.node.uutinen.field_uutistyonkulku
     - image.style.hero_banner
     - node.type.uutinen
   module:
     - comment
     - link
     - media
-    - options
     - slick
     - text
     - user
@@ -194,13 +192,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 6
-    region: content
-  field_uutistyonkulku:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 12
     region: content
 hidden:
   langcode: true

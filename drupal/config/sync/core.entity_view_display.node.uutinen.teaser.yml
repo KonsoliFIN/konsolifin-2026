@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
-    - field.field.node.uutinen.field_uutistyonkulku
     - image.style.teaser_thumbnail
     - node.type.uutinen
   module:
@@ -63,5 +62,4 @@ hidden:
   field_pelit: true
   field_sarja: true
   field_studiot: true
-  field_uutistyonkulku: true
   langcode: true

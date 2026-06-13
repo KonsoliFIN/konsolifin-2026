@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
-    - field.field.node.uutinen.field_uutistyonkulku
     - node.type.uutinen
   module:
     - autocomplete_deluxe
@@ -25,7 +24,6 @@ dependencies:
     - path
     - scheduler
     - text
-    - workflow
 id: node.uutinen.default
 targetEntityType: node
 bundle: uutinen
@@ -186,13 +184,6 @@ content:
       not_found_message: "The term '@term' will be added"
       new_terms: true
       no_empty_message: 'No terms could be found. Please type in order to add a new term.'
-    third_party_settings: {  }
-  field_uutistyonkulku:
-    type: workflow_default
-    weight: 56
-    region: content
-    settings:
-      form_mode: add
     third_party_settings: {  }
   langcode:
     type: language_select
