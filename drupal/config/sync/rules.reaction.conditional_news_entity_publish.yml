@@ -12,3 +12,15 @@ tags: {  }
 config_version: '3'
 expression:
   id: rules_rule
+  uuid: aa1dce88-de04-4636-a7f9-e2bc17d39718
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 6ed7c0c9-3ec5-40f7-a2ab-8bebdcace935
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: daf70943-0522-46fc-aca4-73a81995c570
+    weight: 0
+    actions: {  }
