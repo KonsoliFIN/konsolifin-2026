@@ -1,0 +1,14 @@
+uuid: ec2eba99-9362-4a05-b070-623651bbb221
+langcode: fi
+status: true
+dependencies: {  }
+id: conditional_news_entity_publish
+label: 'Conditional News entity publish'
+events:
+  -
+    event_name: 'rules_entity_presave:node'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
