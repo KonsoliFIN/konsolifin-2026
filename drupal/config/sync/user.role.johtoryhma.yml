@@ -9,12 +9,14 @@ dependencies:
     - node.type.podcast
     - node.type.uutinen
     - node.type.video
+    - workflow.workflow.uutisen_elinkaari
   module:
     - filter
     - locale
     - node
     - system
     - toolbar
+    - workflow
 id: johtoryhma
 label: johtoryhmä
 weight: -7
@@ -33,6 +35,7 @@ permissions:
   - 'create page content'
   - 'create podcast content'
   - 'create uutinen content'
+  - 'create uutisen_elinkaari workflow_transition'
   - 'create video content'
   - 'delete any julkaisu content'
   - 'delete any page content'

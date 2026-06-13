@@ -1,0 +1,20 @@
+uuid: 023ddb16-951c-42fd-8282-343a607abfbf
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisen_elinkaari_julkaistu
+    - workflow.state.uutisen_elinkaari_luonnos
+id: uutisen_elinkaari_luonnos_julkaistu
+label: Julkaise
+module: workflow
+from_sid: uutisen_elinkaari_luonnos
+to_sid: uutisen_elinkaari_julkaistu
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  anonymous: '0'
+  authenticated: '0'
+  johtoryhma: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

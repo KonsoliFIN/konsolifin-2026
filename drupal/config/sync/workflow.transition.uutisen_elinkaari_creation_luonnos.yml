@@ -1,0 +1,20 @@
+uuid: e2a0eaac-084a-4473-990e-407a71bf93e3
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisen_elinkaari_creation
+    - workflow.state.uutisen_elinkaari_luonnos
+id: uutisen_elinkaari_creation_luonnos
+label: 'Tallenna luonnos'
+module: workflow
+from_sid: uutisen_elinkaari_creation
+to_sid: uutisen_elinkaari_luonnos
+roles:
+  workflow_author: workflow_author
+  anonymous: '0'
+  authenticated: '0'
+  toimitus: '0'
+  johtoryhma: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

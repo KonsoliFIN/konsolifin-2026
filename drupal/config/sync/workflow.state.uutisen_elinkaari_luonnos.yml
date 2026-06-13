@@ -1,0 +1,13 @@
+uuid: ab2db29e-fe78-443e-9f6e-e42b3efc8180
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisen_elinkaari
+id: uutisen_elinkaari_luonnos
+label: Luonnos
+weight: -998
+module: workflow
+wid: uutisen_elinkaari
+sysid: 0
+single_state_widget: ''

@@ -1,0 +1,12 @@
+uuid: 07637cae-1987-4681-9848-1018d3303db8
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisen_elinkaari_julkaistu
+id: uutisen_elinkaari_julkaistu_julkaistu
+label: Tallenna
+module: workflow
+from_sid: uutisen_elinkaari_julkaistu
+to_sid: uutisen_elinkaari_julkaistu
+roles: {  }

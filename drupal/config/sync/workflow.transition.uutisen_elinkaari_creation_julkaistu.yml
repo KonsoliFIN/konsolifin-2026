@@ -1,0 +1,20 @@
+uuid: c2670f4e-7a2f-47d0-9634-d5bc024f12a0
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisen_elinkaari_creation
+    - workflow.state.uutisen_elinkaari_julkaistu
+id: uutisen_elinkaari_creation_julkaistu
+label: Julkaise
+module: workflow
+from_sid: uutisen_elinkaari_creation
+to_sid: uutisen_elinkaari_julkaistu
+roles:
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  toimitus: '0'
+  johtoryhma: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

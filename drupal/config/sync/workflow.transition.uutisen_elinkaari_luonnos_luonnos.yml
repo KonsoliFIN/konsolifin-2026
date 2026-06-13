@@ -1,0 +1,12 @@
+uuid: 7d1f6d40-cf96-4456-bf1c-92f984aec014
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisen_elinkaari_luonnos
+id: uutisen_elinkaari_luonnos_luonnos
+label: 'Tallenna luonnos'
+module: workflow
+from_sid: uutisen_elinkaari_luonnos
+to_sid: uutisen_elinkaari_luonnos
+roles: {  }

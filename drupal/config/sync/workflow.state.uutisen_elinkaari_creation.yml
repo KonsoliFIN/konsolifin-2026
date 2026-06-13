@@ -1,0 +1,13 @@
+uuid: 76b66e74-dd2a-45bd-bbb1-289d7807d9f1
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisen_elinkaari
+id: uutisen_elinkaari_creation
+label: Uusi
+weight: -1000
+module: workflow
+wid: uutisen_elinkaari
+sysid: 1
+single_state_widget: ''

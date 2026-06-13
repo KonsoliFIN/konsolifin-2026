@@ -34,6 +34,7 @@
         "drupal/openid_connect": "^3.0@alpha",
         "drupal/pathauto": "^1.14",
         "drupal/realname": "^2.0",
+        "drupal/rules": "^4.0",
         "drupal/scheduler": "^2.2",
         "drupal/search_autocomplete": "^4.0",
         "drupal/simpleads": "^2.0",
@@ -41,6 +42,7 @@
         "drupal/term_reference_tree": "^2.0",
         "drupal/video_embed_field": "^3.0",
         "drupal/views_infinite_scroll": "^2.0",
+        "drupal/workflow": "^2.2",
         "drush/drush": "^13.7"
     },
     "conflict": {

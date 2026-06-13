@@ -1,0 +1,16 @@
+uuid: fae41b8e-8b4b-4260-983c-12060357e386
+langcode: fi
+status: true
+dependencies: {  }
+id: uutisen_elinkaari
+label: 'Uutisen elinkaari'
+module: workflow
+options:
+  name_as_title: 1
+  fieldset: 1
+  options: buttons
+  schedule_enable: true
+  schedule_timezone: 0
+  always_update_entity: 1
+  comment_log_node: 1
+  watchdog_log: 1

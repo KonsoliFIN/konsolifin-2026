@@ -1,0 +1,13 @@
+uuid: 54de11bc-fe63-4d99-92e6-8de0dde68a02
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisen_elinkaari
+id: uutisen_elinkaari_julkaistu
+label: Julkaistu
+weight: -9
+module: workflow
+wid: uutisen_elinkaari
+sysid: 0
+single_state_widget: ''

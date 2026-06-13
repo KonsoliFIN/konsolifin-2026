@@ -2,12 +2,15 @@ uuid: 7e4ebed0-ae7b-48e9-9515-328718c18edd
 langcode: fi
 status: true
 dependencies:
+  config:
+    - workflow.workflow.uutisen_elinkaari
   module:
     - comment
     - media
     - search
     - system
     - taxonomy
+    - workflow
 _core:
   default_config_hash: xLG41YbRo2NP-0SgRNTkMzLEuaeibanGXgUTbdIcIIg
 id: anonymous
@@ -18,6 +21,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access user profiles'
+  - 'create uutisen_elinkaari workflow_transition'
   - 'search content'
   - 'view media'
   - 'view own unpublished media'

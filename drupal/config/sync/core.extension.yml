@@ -62,6 +62,7 @@ module:
   phpass: 0
   realname: 0
   rest: 0
+  rules: 0
   scheduler: 0
   search: 0
   search_autocomplete: 0
@@ -73,12 +74,14 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  typed_data: 0
   update: 0
   user: 0
   video_embed_field: 0
   video_embed_wysiwyg: 0
   views_infinite_scroll: 0
   views_ui: 0
+  workflow: 0
   pathauto: 1
   externalauth: 10
   views: 10

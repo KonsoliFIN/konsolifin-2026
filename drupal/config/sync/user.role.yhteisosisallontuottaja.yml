@@ -6,10 +6,12 @@ dependencies:
     - filter.format.full_html
     - node.type.uutinen
     - node.type.video
+    - workflow.workflow.uutisen_elinkaari
   module:
     - filter
     - node
     - system
+    - workflow
 id: yhteisosisallontuottaja
 label: yhteisosisallontuottaja
 weight: -6
@@ -17,6 +19,7 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'create uutinen content'
+  - 'create uutisen_elinkaari workflow_transition'
   - 'create video content'
   - 'edit own uutinen content'
   - 'edit own video content'

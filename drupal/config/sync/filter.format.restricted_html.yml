@@ -1,10 +1,10 @@
 uuid: a5a12e7d-6033-420b-9bee-0038b903a9d4
-langcode: en
+langcode: fi
 status: true
 dependencies: {  }
 _core:
   default_config_hash: QiKqQS_YGAT3Qr4vaAgZICJknm-MGCzt_xBAMqg-tRM
-name: 'Restricted HTML'
+name: 'Rajattu HTML'
 format: restricted_html
 weight: -8
 filters:

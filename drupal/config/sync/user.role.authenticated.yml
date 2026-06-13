@@ -2,6 +2,8 @@ uuid: 7b949f94-14b9-4549-bbfb-89f7efbeb993
 langcode: fi
 status: true
 dependencies:
+  config:
+    - workflow.workflow.uutisen_elinkaari
   module:
     - comment
     - matomo
@@ -9,6 +11,7 @@ dependencies:
     - search
     - system
     - taxonomy
+    - workflow
 _core:
   default_config_hash: hcfESiA8tr3D1muRk2KF7tbcun16ZJlG1R5SzKGed6g
 id: authenticated
@@ -20,6 +23,7 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'change own username'
+  - 'create uutisen_elinkaari workflow_transition'
   - 'edit own comments'
   - 'opt-in or out of matomo tracking'
   - 'post comments'

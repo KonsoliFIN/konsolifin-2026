@@ -31,6 +31,7 @@ dependencies:
     - taxonomy.vocabulary.pelijulkaisijat
     - taxonomy.vocabulary.pelistudiot
     - taxonomy.vocabulary.sarja
+    - workflow.workflow.uutisen_elinkaari
   module:
     - announcements_feed
     - comment
@@ -48,6 +49,7 @@ dependencies:
     - taxonomy
     - toolbar
     - update
+    - workflow
 id: toimitus
 label: toimitus
 weight: -8
@@ -92,6 +94,7 @@ permissions:
   - 'create terms in sarja'
   - 'create url aliases'
   - 'create uutinen content'
+  - 'create uutisen_elinkaari workflow_transition'
   - 'create video content'
   - 'create video media'
   - 'create vierailija_arvostelu content'

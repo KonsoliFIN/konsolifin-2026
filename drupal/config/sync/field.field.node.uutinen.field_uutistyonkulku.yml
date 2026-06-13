@@ -1,0 +1,21 @@
+uuid: 8d010dc9-e333-4b13-b7ee-28cfd21aff6a
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uutistyonkulku
+    - node.type.uutinen
+  module:
+    - workflow
+id: node.uutinen.field_uutistyonkulku
+field_name: field_uutistyonkulku
+entity_type: node
+bundle: uutinen
+label: Uutistyönkulku
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow
