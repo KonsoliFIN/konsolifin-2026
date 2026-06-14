@@ -96,7 +96,7 @@
 .node__body,
 .node__gallery,
 .node__tags,
-.comment-section {
+.comments-section {
   position: relative;
   z-index: 3;
   background: var(--color-bg-primary);
