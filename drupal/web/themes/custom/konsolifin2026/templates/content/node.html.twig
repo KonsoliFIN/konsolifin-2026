@@ -197,6 +197,11 @@
 
     {% if content.field_comments|render is not empty %}
       <div class="comments-section">
+        {% if not logged_in %}
+          <div class="comments-login-prompt">
+            <p><a href="{{ path('user.login') }}">{{ 'Kirjaudu sisään'|t }}</a> {{ 'osallistuaksesi keskusteluun.'|t }}</p>
+          </div>
+        {% endif %}
         {{ content.field_comments }}
       </div>
     {% endif %}
