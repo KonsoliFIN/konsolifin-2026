@@ -1,17 +1,17 @@
-uuid: 7bc1ecb5-fcf5-4baf-bedf-896cb3522760
+uuid: 2c6f4e3b-451f-4ece-b59d-3d8f1a1c4712
 langcode: fi
 status: true
 dependencies:
   config:
     - field.storage.node.field_lisatiedot
     - filter.format.basic_html
-    - node.type.article
+    - node.type.blogi
   module:
     - text
-id: node.article.field_lisatiedot
+id: node.blogi.field_lisatiedot
 field_name: field_lisatiedot
 entity_type: node
-bundle: article
+bundle: blogi
 label: Lisätiedot
 description: ''
 required: false

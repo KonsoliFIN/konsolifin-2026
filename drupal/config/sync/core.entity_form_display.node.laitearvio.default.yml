@@ -70,8 +70,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_lisatiedot:
-    type: string_textarea
-    weight: 10
+    type: text_textarea
+    weight: 26
     region: content
     settings:
       rows: 5
