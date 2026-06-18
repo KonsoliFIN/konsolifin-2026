@@ -18,10 +18,7 @@ process:
      - audio/mpeg
   name: filename
 
-  field_media_audio_file/target_id:
-    plugin: migration_lookup
-    migration: konsolifin_files
-    source: fid
+  field_media_audio_file/target_id: fid
   field_media_audio_file/display:
     plugin: default_value
     default_value: 1

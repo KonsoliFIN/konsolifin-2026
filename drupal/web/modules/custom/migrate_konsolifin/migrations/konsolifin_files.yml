@@ -9,6 +9,10 @@ source:
   constants:
     source_base_path: '/var/www/konsolifin/www_2014/'
 process:
+  fid:
+    -
+      plugin: get
+      source: fid
   filename: filename
   source_full_path:
     -
