@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Remedy Entertainment",
+    "description": "Suomalainen pelinkehittäjä, tunnettu Alan Wake- ja Control-peleistä. Perustettu 1995 Espoossa.",
+    "weight": 0
+  },
+  {
+    "id": 2,
+    "name": "Housemarque",
+    "description": "Helsinkiläinen studio, erikoistunut arcade-tyylisiin toimintapeleihin. Tunnettu Returnal-pelistä.",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "name": "Supercell",
+    "description": "Helsinkiläinen mobiilipelistudio, maailman menestyneimpiä pelinkehittäjiä.",
+    "weight": 2
+  },
+  {
+    "id": 4,
+    "name": "Colossal Order",
+    "description": "Tamperelaislähtöinen studio, tunnettu Cities: Skylines -kaupunginrakennuspelistä.",
+    "weight": 3
+  },
+  {
+    "id": 5,
+    "name": "Frozenbyte",
+    "description": "Helsinkiläinen pelinkehittäjä, tunnettu Trine-pelisarjasta ja Starbase-avaruuspelistä.",
+    "weight": 4
+  },
+  {
+    "id": 6,
+    "name": "Larian Studios",
+    "description": "Belgialainen pelinkehittäjä, tunnettu Baldur's Gate 3 -roolipelistä.",
+    "weight": 5
+  },
+  {
+    "id": 7,
+    "name": "Santa Monica Studio",
+    "description": "Sony Interactive Entertainmentin sisäinen studio, tunnettu God of War -sarjasta.",
+    "weight": 6
+  }
+]

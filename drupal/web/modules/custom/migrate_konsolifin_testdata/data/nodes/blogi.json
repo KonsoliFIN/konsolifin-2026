@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Miksi rakastan roolipelejä – henkilökohtainen pohdinta",
+    "body": "<p>Olen pelannut roolipelejä yli 20 vuotta. Ensimmäinen kokemukseni oli <em>Final Fantasy VII</em> PlayStation 1:llä, ja siitä lähtien genre on pitänyt minut otteessaan.</p><p>Roolipeleissä minua kiehtoo erityisesti tarinankerronta ja hahmojen kehitys. Kun saa itse vaikuttaa tarinan kulkuun, pelaaminen tuntuu paljon henkilökohtaisemmalta.</p><p>Tänä vuonna Baldur's Gate 3 muistutti miksi rakastuin genreen alun perin.</p>",
+    "uid": 2,
+    "status": 1,
+    "created": "2024-02-10T18:00:00",
+    "hero_image_id": 1,
+    "pelit_ids": [1],
+    "alustat_ids": [1, 4],
+    "kuvat_ids": [1],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [6]
+  },
+  {
+    "id": 2,
+    "title": "Retropelaamisen viehätys – miksi palaan aina vanhojen pelien pariin",
+    "body": "<p>Jokainen pelaaja tuntee sen tunteen: uusimman AAA-pelin keskellä tulee yhtäkkiä kaipuu vanhan klassikon pariin. Minulle se on usein <em>Super Metroid</em> tai <em>Chrono Trigger</em>.</p><p>Retropelaaminen ei ole pelkkää nostalgiaa. Vanhat pelit opettavat paljon pelisuunnittelusta – ne olivat pakotettuja olemaan tehokkaita rajallisten resurssien vuoksi.</p>",
+    "uid": 4,
+    "status": 1,
+    "created": "2024-03-15T20:00:00",
+    "hero_image_id": 3,
+    "pelit_ids": [],
+    "alustat_ids": [3],
+    "kuvat_ids": [3],
+    "sarja_ids": [2],
+    "ihmiset_ids": [4],
+    "julkaisijat_ids": [],
+    "studiot_ids": []
+  },
+  {
+    "id": 3,
+    "title": "Yhteisöpelit ovat parhaimmillaan kun pelaat ystävien kanssa",
+    "body": "<p>Viime aikoina olen pelannut paljon co-op-pelejä pienen kaveriporukan kanssa. On aivan eri asia pelata yhdessä kuin yksin – erityisesti kun kaikki ovat samassa huoneessa.</p><p>Splitscreen-pelaaminen tuntuu olevan tekemässä paluuta, ja se on loistava asia. Pelit kuten <em>It Takes Two</em> ja <em>Overcooked</em> ovat osoittaneet, että yhdessä pelaaminen myy.</p>",
+    "uid": 5,
+    "status": 1,
+    "created": "2024-04-20T15:30:00",
+    "hero_image_id": 4,
+    "pelit_ids": [],
+    "alustat_ids": [1, 3],
+    "kuvat_ids": [4],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": []
+  }
+]

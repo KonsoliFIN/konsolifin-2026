@@ -1,0 +1,47 @@
+[
+  {
+    "id": 2,
+    "name": "mikkop",
+    "mail": "mikko.pelkonen@example.com",
+    "oikea_nimi": "Mikko Pelkonen",
+    "esittely": "Pelialan toimittaja vuodesta 2010. Erikoistunut JRPG- ja strategiapeleihin.",
+    "roles": ["authenticated", "toimitus"],
+    "status": 1
+  },
+  {
+    "id": 3,
+    "name": "annav",
+    "mail": "anna.virtanen@example.com",
+    "oikea_nimi": "Anna Virtanen",
+    "esittely": "KonsoliFIN:n päätoimittaja. Intohimona toimintapelit ja indie-skenessä.",
+    "roles": ["authenticated", "johtoryhma"],
+    "status": 1
+  },
+  {
+    "id": 4,
+    "name": "jussih",
+    "mail": "jussi.hamalainen@example.com",
+    "oikea_nimi": "Jussi Hämäläinen",
+    "esittely": "Podcast-juontaja ja retropelien ystävä. Striimailee viikonloppuisin.",
+    "roles": ["authenticated", "toimitus"],
+    "status": 1
+  },
+  {
+    "id": 5,
+    "name": "laurak",
+    "mail": "laura.korhonen@example.com",
+    "oikea_nimi": "Laura Korhonen",
+    "esittely": "Videopelien yhteisömanageri ja sisällöntuottaja. Rakastaa co-op-pelejä.",
+    "roles": ["authenticated", "yhteisosisallontuottaja"],
+    "status": 1
+  },
+  {
+    "id": 6,
+    "name": "sampan",
+    "mail": "sampa.nieminen@example.com",
+    "oikea_nimi": "Sampa Nieminen",
+    "esittely": "Teknologiatoimittaja ja laitearviospesialisti. PC-pelaaja sydämeltään.",
+    "roles": ["authenticated", "toimitus"],
+    "status": 1
+  }
+]

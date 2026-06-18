@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Sony Interactive Entertainment",
+    "description": "PlayStation-konsolin valmistaja ja lukuisten yksinoikeuspelien julkaisija.",
+    "weight": 0
+  },
+  {
+    "id": 2,
+    "name": "Xbox Game Studios",
+    "description": "Microsoftin peliosasto, julkaisee pelejä Xbox-konsolille ja PC:lle.",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "name": "Nintendo",
+    "description": "Japanilainen pelialan veteraani, tunnettu Mario-, Zelda- ja Pokémon-sarjoista.",
+    "weight": 2
+  },
+  {
+    "id": 4,
+    "name": "Electronic Arts",
+    "description": "Yhdysvaltalainen suurjulkaisija, tunnettu EA Sports -urheilupeleistä ja Battlefield-sarjasta.",
+    "weight": 3
+  },
+  {
+    "id": 5,
+    "name": "Ubisoft",
+    "description": "Ranskalainen julkaisija, tunnettu Assassin's Creed- ja Far Cry -sarjoista.",
+    "weight": 4
+  },
+  {
+    "id": 6,
+    "name": "505 Games",
+    "description": "Italialainen julkaisija, tunnettu indie-pelien ja AA-pelien julkaisemisesta.",
+    "weight": 5
+  }
+]

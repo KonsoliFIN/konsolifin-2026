@@ -1,0 +1,38 @@
+id: testdata_taxonomy_pelit
+label: Import test fixture game terms
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: taxonomy/pelit.json
+  ids:
+    id:
+      type: integer
+process:
+  vid:
+    plugin: default_value
+    default_value: peli
+  name: name
+  description/value: description
+  description/format:
+    plugin: default_value
+    default_value: basic_html
+  weight: weight
+  field_www_sivu/uri: www_sivu
+  field_hero_kuva:
+    -
+      plugin: migration_lookup
+      migration: testdata_media_images
+      source: hero_image_id
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
+      message: 'No media entity found for hero image.'
+destination:
+  plugin: entity:taxonomy_term
+migration_dependencies:
+  required:
+    - testdata_media_images

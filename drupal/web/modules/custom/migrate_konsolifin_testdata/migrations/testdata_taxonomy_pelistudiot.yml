@@ -1,0 +1,27 @@
+id: testdata_taxonomy_pelistudiot
+label: Import test fixture pelistudiot terms
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: taxonomy/pelistudiot.json
+  ids:
+    id:
+      type: integer
+process:
+  vid:
+    plugin: default_value
+    default_value: pelistudiot
+  name: name
+  description/value: description
+  description/format:
+    plugin: default_value
+    default_value: basic_html
+  weight: weight
+destination:
+  plugin: entity:taxonomy_term
+migration_dependencies:
+  required:
+    - testdata_media_images

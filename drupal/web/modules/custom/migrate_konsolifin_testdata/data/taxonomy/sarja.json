@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Viikon peli",
+    "description": "Viikoittainen juttusarja, jossa nostetaan esiin yksi kiinnostava peli tarkempaan tarkasteluun.",
+    "weight": 0
+  },
+  {
+    "id": 2,
+    "name": "Retrokatsaus",
+    "description": "Katsaus menneisyyden klassikoihin nykyajan silmin, muisteluja ja uudelleenarviointeja.",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "name": "KonsoliFIN Podcast",
+    "description": "KonsoliFIN-sivuston virallinen podcast, jossa keskustellaan ajankohtaisista peliaiheista.",
+    "weight": 2
+  },
+  {
+    "id": 4,
+    "name": "Indie-löydöt",
+    "description": "Sarja jossa esitellään pienten kehittäjien mielenkiintoisimpia projekteja.",
+    "weight": 3
+  }
+]
