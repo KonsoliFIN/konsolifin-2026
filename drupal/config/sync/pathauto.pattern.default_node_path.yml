@@ -7,7 +7,7 @@ dependencies:
 id: default_node_path
 label: 'Sisältöjen oletuskäsittely'
 type: 'canonical_entities:node'
-pattern: '[node:content-type]/[node:title]'
+pattern: '/[node:content-type]/[node:title]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0
