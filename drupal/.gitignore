@@ -15,5 +15,8 @@
 # Ignore Drupal’s file directory
 /web/sites/*/files/
 
+# Ignore whole sites/default directory, since there is nothing in there that should be committed to version control
+/web/sites/default/
+
 # Ignore private files created by Drupal
 /private/
