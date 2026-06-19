@@ -100,11 +100,8 @@ process:
             plugin: get
             source: value
         format:
-          plugin: static_map
-          source: format
-          map:
-            filtered_html: basic_html
-          bypass: true
+          plugin: default_value
+          default_value: basic_html
   field_hero:
     -
       plugin: migration_lookup
