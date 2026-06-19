@@ -41,13 +41,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_alustat:
     type: autocomplete_deluxe
-    weight: 14
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -70,14 +70,14 @@ content:
     third_party_settings: {  }
   field_hero:
     type: media_library_widget
-    weight: 4
+    weight: 0
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_ihmiset:
     type: autocomplete_deluxe
-    weight: 10
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -94,7 +94,7 @@ content:
     third_party_settings: {  }
   field_julkaisijat:
     type: autocomplete_deluxe
-    weight: 13
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -111,14 +111,14 @@ content:
     third_party_settings: {  }
   field_kuvat:
     type: media_library_widget
-    weight: 6
+    weight: 5
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_lahde:
     type: link_default
-    weight: 15
+    weight: 4
     region: content
     settings:
       placeholder_url: ''
@@ -126,7 +126,7 @@ content:
     third_party_settings: {  }
   field_lisaa_sisaltoa:
     type: entity_reference_autocomplete
-    weight: 55
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS
@@ -136,7 +136,7 @@ content:
     third_party_settings: {  }
   field_pelit:
     type: autocomplete_deluxe
-    weight: 11
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
@@ -153,7 +153,7 @@ content:
     third_party_settings: {  }
   field_sarja:
     type: autocomplete_deluxe
-    weight: 1
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -170,7 +170,7 @@ content:
     third_party_settings: {  }
   field_studiot:
     type: autocomplete_deluxe
-    weight: 12
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -187,31 +187,31 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 19
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 52
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 50
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 15
     region: content
     settings:
       display_label: true
@@ -225,7 +225,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -233,7 +233,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -243,7 +243,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 54
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
