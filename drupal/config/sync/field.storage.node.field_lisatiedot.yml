@@ -1,16 +1,16 @@
-uuid: df5bdf10-cd34-48a4-99ac-ebe38cf45ded
-langcode: en
+uuid: 6175435d-f2f1-44da-8b4c-53890b7b5062
+langcode: fi
 status: true
 dependencies:
   module:
     - node
+    - text
 id: node.field_lisatiedot
 field_name: field_lisatiedot
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

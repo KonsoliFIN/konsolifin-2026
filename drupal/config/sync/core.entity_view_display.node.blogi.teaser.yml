@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.blogi.field_julkaisijat
     - field.field.node.blogi.field_kuvat
     - field.field.node.blogi.field_lisaa_sisaltoa
+    - field.field.node.blogi.field_lisatiedot
     - field.field.node.blogi.field_pelit
     - field.field.node.blogi.field_sarja
     - field.field.node.blogi.field_studiot
@@ -58,6 +59,7 @@ hidden:
   field_julkaisijat: true
   field_kuvat: true
   field_lisaa_sisaltoa: true
+  field_lisatiedot: true
   field_pelit: true
   field_sarja: true
   field_studiot: true

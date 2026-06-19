@@ -7,7 +7,7 @@ dependencies:
 id: kayttaja
 label: Käyttäjä
 type: 'canonical_entities:user'
-pattern: 'users/[user:field_oikea_nimi]'
+pattern: '/users/[user:field_oikea_nimi]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0

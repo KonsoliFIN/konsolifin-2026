@@ -1,17 +1,17 @@
-uuid: 7bc1ecb5-fcf5-4baf-bedf-896cb3522760
+uuid: 13609497-07d0-449b-91d8-53271abc6416
 langcode: fi
 status: true
 dependencies:
   config:
     - field.storage.node.field_lisatiedot
     - filter.format.basic_html
-    - node.type.article
+    - node.type.katsotut
   module:
     - text
-id: node.article.field_lisatiedot
+id: node.katsotut.field_lisatiedot
 field_name: field_lisatiedot
 entity_type: node
-bundle: article
+bundle: katsotut
 label: Lisätiedot
 description: ''
 required: false

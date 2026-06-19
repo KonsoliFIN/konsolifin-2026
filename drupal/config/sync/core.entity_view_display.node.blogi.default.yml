@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.blogi.field_julkaisijat
     - field.field.node.blogi.field_kuvat
     - field.field.node.blogi.field_lisaa_sisaltoa
+    - field.field.node.blogi.field_lisatiedot
     - field.field.node.blogi.field_pelit
     - field.field.node.blogi.field_sarja
     - field.field.node.blogi.field_studiot
@@ -154,6 +155,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 11
+    region: content
+  field_lisatiedot:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
     region: content
   field_pelit:
     type: entity_reference_label

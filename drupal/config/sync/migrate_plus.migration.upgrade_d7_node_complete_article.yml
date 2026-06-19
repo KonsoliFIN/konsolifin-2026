@@ -156,6 +156,16 @@ process:
     -
       plugin: get
       source: field_lisatiedot
+      process:
+        value:
+          plugin: get
+          source: value
+        format:
+          plugin: static_map
+          source: format
+          map:
+            filtered_html: basic_html
+          bypass: true
   field_alustatarkenne:
     -
       plugin: sub_process

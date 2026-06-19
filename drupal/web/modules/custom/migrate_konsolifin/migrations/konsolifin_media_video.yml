@@ -18,11 +18,10 @@ process:
      - video/mp4
      - video/webm
   name: filename
-  field_media_image/target_id:
-    plugin: migration_lookup
-    migration: konsolifin_files
-    source: fid
-  field_media_image/alt: filename
+  field_media_video_file/target_id: fid
+  field_media_video_file/display:
+    plugin: default_value
+    default_value: 1
   status:
     plugin: default_value
     default_value: 1
