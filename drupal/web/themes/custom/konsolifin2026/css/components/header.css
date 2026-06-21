@@ -1,6 +1,5 @@
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: var(--z-sticky);
   background: rgba(13, 13, 15, 0.92);
   backdrop-filter: blur(12px);
