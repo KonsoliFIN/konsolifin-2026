@@ -9,7 +9,7 @@
   .content-nav--desktop {
     display: block;
     position: sticky;
-    top: 0;
+    top: var(--drupal-displace-offset-top, 0px);
     z-index: var(--z-sticky);
     background: var(--color-bg-primary);
     border-bottom: 1px solid var(--color-border);
