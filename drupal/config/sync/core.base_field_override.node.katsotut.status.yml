@@ -1,0 +1,22 @@
+uuid: 32440e92-ec16-4d80-85fc-27eef38f8e76
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.katsotut
+id: node.katsotut.status
+field_name: status
+entity_type: node
+bundle: katsotut
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

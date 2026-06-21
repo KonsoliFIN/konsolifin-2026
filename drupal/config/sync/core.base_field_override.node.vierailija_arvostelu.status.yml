@@ -1,0 +1,22 @@
+uuid: 73ebf050-9305-4c84-8970-325a0e7f1a73
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.vierailija_arvostelu
+id: node.vierailija_arvostelu.status
+field_name: status
+entity_type: node
+bundle: vierailija_arvostelu
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

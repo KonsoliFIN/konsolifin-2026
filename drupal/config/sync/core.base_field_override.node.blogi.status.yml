@@ -1,0 +1,22 @@
+uuid: e993bb7c-a2cf-4a98-97c8-8bdf31e3ae32
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.blogi
+id: node.blogi.status
+field_name: status
+entity_type: node
+bundle: blogi
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean
