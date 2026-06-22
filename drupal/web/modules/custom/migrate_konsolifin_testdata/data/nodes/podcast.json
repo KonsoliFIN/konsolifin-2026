@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "KonsoliFIN Podcast #42: Kevään pelit ja odotukset",
+    "body": "<p>Tässä jaksossa käymme läpi kevään 2024 kiinnostavimmat peliljulkaisut ja keskustelemme mitä odotamme loppuvuodelta. Mikko ja Jussi väittelevät onko Baldur's Gate 3 todella vuosikymmenen paras roolipeli.</p><p>Lisäksi kuulemme kuulijan kysymyksiä ja vastaamme niihin jakson lopussa.</p>",
+    "uid": 4,
+    "status": 1,
+    "created": "2024-03-01T08:00:00",
+    "mp3_filename": "podcast-placeholder.mp3",
+    "osallistujat_ids": [1, 2],
+    "pelit_ids": [1, 2],
+    "sarja_ids": [3],
+    "alustat_ids": [1, 4]
+  },
+  {
+    "id": 2,
+    "title": "KonsoliFIN Podcast #43: Nintendo Switch 2 -spekulaatiot",
+    "body": "<p>Omistetamme koko jakson Nintendon seuraavan konsolin pohtimiseen. Mitä tiedämme, mitä uskomme ja mitä toivomme? Aino liittyy keskusteluun indie-pelien näkökulmasta.</p><p>Bonuksena keskustelu siitä, mitkä Switch-pelit ansaitsevat jatko-osia uudella laitteella.</p>",
+    "uid": 4,
+    "status": 1,
+    "created": "2024-03-15T08:00:00",
+    "mp3_filename": "podcast-placeholder.mp3",
+    "osallistujat_ids": [2, 3, 4],
+    "pelit_ids": [4],
+    "sarja_ids": [3],
+    "alustat_ids": [3, 7]
+  },
+  {
+    "id": 3,
+    "title": "KonsoliFIN Podcast #44: Suomalaisen peliteollisuuden tila",
+    "body": "<p>Vieraana peliteollisuuden asiantuntija Pekka Koskinen. Keskustelemme Suomen pelialan nykytilanteesta, haasteista ja tulevaisuudennäkymistä.</p><p>Käsittelemme myös YT-neuvotteluja, joita on nähty useissa suomalaisissa studioissa viime aikoina.</p>",
+    "uid": 4,
+    "status": 1,
+    "created": "2024-04-01T08:00:00",
+    "mp3_filename": "podcast-placeholder.mp3",
+    "osallistujat_ids": [2, 6],
+    "pelit_ids": [],
+    "sarja_ids": [3],
+    "alustat_ids": []
+  }
+]

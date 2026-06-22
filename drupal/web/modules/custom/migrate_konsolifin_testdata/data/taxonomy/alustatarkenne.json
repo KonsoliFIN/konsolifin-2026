@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "PS5 Digital Edition",
+    "description": "PlayStation 5:n levyasematon versio, edullisempi vaihtoehto digitaaliseen pelaamiseen.",
+    "weight": 0
+  },
+  {
+    "id": 2,
+    "name": "Xbox Series S",
+    "description": "Microsoftin edullisempi yhdeksännen sukupolven konsoli, pienempi ja ilman levyasemaa.",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "name": "Nintendo Switch OLED",
+    "description": "Nintendo Switchin parannettu versio suuremmalla OLED-näytöllä.",
+    "weight": 2
+  },
+  {
+    "id": 4,
+    "name": "PS5 Pro",
+    "description": "PlayStation 5:n tehokkaampi versio vaativampaan pelaamiseen.",
+    "weight": 3
+  },
+  {
+    "id": 5,
+    "name": "Steam Deck",
+    "description": "Valven kannettava PC-pelikonsoli, pyörittää Steam-kirjaston pelejä.",
+    "weight": 4
+  }
+]

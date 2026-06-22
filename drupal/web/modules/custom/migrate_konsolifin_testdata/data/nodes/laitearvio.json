@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "PS5 Pro -arvio: onko päivitys hintansa arvoinen?",
+    "body": "<p><strong>PlayStation 5 Pro</strong> on Sonyn tehokkain konsoli koskaan. Se tarjoaa merkittävän suorituskykyhypyn alkuperäiseen PS5:een verrattuna, erityisesti säteenseurannassa ja 4K-pelaamisessa.</p><p>Prosessori on noin 10% nopeampi ja GPU tarjoaa jopa 45% enemmän tehoa. Käytännössä tämä näkyy tasaisempina kuvanopeuksina ja parempana graafisena laatuna.</p><p>799 euron hinta on kuitenkin kova, ja useimmille pelaajille tavallinen PS5 riittää mainiosti.</p>",
+    "uid": 6,
+    "status": 1,
+    "created": "2024-04-01T10:00:00",
+    "hero_image_id": 2,
+    "alustat_ids": [1],
+    "kuvat_ids": [2, 3],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [1],
+    "studiot_ids": [],
+    "pelit_ids": []
+  },
+  {
+    "id": 2,
+    "title": "Steam Deck OLED – paras kannettava pelikonsoli?",
+    "body": "<p>Valven <strong>Steam Deck OLED</strong> on merkittävä parannus alkuperäiseen malliin. Uusi OLED-näyttö on upea – värit ovat elävämmät, mustat syvemmät ja kirkkaus parempi.</p><p>Akunkesto on kasvanut noin 30-50% käyttötilanteesta riippuen. Laite tuntuu myös kevyemmältä ja viimeistellymmältä kuin edeltäjänsä.</p><p>Jos etsit kannettavaa PC-pelikonsolia, Steam Deck OLED on markkinoiden paras vaihtoehto.</p>",
+    "uid": 6,
+    "status": 1,
+    "created": "2024-04-22T14:00:00",
+    "hero_image_id": 5,
+    "alustat_ids": [4],
+    "kuvat_ids": [5],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
+    "pelit_ids": []
+  },
+  {
+    "id": 3,
+    "title": "Xbox Series X -ohjain – klassikko joka toimii aina",
+    "body": "<p>Microsoftin Xbox-ohjain on jo vuosia ollut monien PC-pelaajien suosikkivalinta. <strong>Xbox Series X -ohjain</strong> jatkaa samalla linjalla: ergonomia on erinomainen, painikkeet tuntuvat hyviltä ja yhteensopivuus on laaja.</p><p>Uutuuksina ovat Share-nappi ja hieman parannettu D-pad. Ohjain toimii langattomasti Xboxin kanssa ja Bluetoothin kautta PC:llä ja mobiililaitteilla.</p>",
+    "uid": 6,
+    "status": 1,
+    "created": "2024-05-10T11:00:00",
+    "hero_image_id": 3,
+    "alustat_ids": [2, 4],
+    "kuvat_ids": [3, 4],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [2],
+    "studiot_ids": [],
+    "pelit_ids": []
+  }
+]

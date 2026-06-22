@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Alan Wake 2 – ensivaikutelmat ja gameplay",
+    "body": "<p>Pelasimme Alan Wake 2:n ensimmäiset viisi tuntia ja jaamme tunnelmamme tässä videossa. Remedy on selvästi parantanut pelimekaniikkaa huomattavasti ykkösen ajoista.</p><p>Video sisältää pelimateriaalia pelin alkutunneista, joten varokaa spoilereita!</p>",
+    "uid": 3,
+    "status": 1,
+    "created": "2024-02-05T16:00:00",
+    "hero_image_id": 2,
+    "pelit_ids": [2],
+    "alustat_ids": [1, 4],
+    "kuvat_ids": [2],
+    "sarja_ids": [],
+    "ihmiset_ids": [1],
+    "julkaisijat_ids": [6],
+    "studiot_ids": [1]
+  },
+  {
+    "id": 2,
+    "title": "Zelda: Tears of the Kingdom – vinkit aloittelijoille",
+    "body": "<p>Kokosimme parhaat vinkit Zelda: Tears of the Kingdomin aloittamiseen. Käymme läpi rakennusjärjestelmän perusteita, hyödyllisiä aseita ja parhaita tapoja edetä pelin alussa.</p><p>Tämä video sopii erityisesti niille, jotka eivät ole pelanneet Breath of the Wildia.</p>",
+    "uid": 4,
+    "status": 1,
+    "created": "2024-03-20T12:00:00",
+    "hero_image_id": 4,
+    "pelit_ids": [4],
+    "alustat_ids": [3],
+    "kuvat_ids": [4],
+    "sarja_ids": [1],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [3],
+    "studiot_ids": []
+  },
+  {
+    "id": 3,
+    "title": "God of War Ragnarök PC – grafiikkavertailu ja asetukset",
+    "body": "<p>Vertailemme God of War Ragnarökin grafiikkaa eri asetuksilla PC:llä. Testaamme pelin suorituskykyä useilla eri näytönohjaimilla ja etsimme parhaat asetukset tasapainoisen pelikokemuksen saavuttamiseksi.</p><p>Lisäksi vertailemme PC-versiota PS5-versioon ja katsomme missä erot näkyvät selvimmin.</p>",
+    "uid": 5,
+    "status": 1,
+    "created": "2024-05-25T14:30:00",
+    "hero_image_id": 1,
+    "pelit_ids": [6],
+    "alustat_ids": [1, 4],
+    "kuvat_ids": [1, 3],
+    "sarja_ids": [],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [1],
+    "studiot_ids": [7]
+  }
+]

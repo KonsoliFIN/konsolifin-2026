@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "filename": "hero-placeholder-01.png",
+    "alt": "Hero-kuva: sininen gradientti placeholder",
+    "uid": 2
+  },
+  {
+    "id": 2,
+    "filename": "hero-placeholder-02.png",
+    "alt": "Hero-kuva: vihreä gradientti placeholder",
+    "uid": 3
+  },
+  {
+    "id": 3,
+    "filename": "gallery-placeholder-01.png",
+    "alt": "Galleriakuva: oranssi placeholder",
+    "uid": 2
+  },
+  {
+    "id": 4,
+    "filename": "gallery-placeholder-02.png",
+    "alt": "Galleriakuva: violetti placeholder",
+    "uid": 4
+  },
+  {
+    "id": 5,
+    "filename": "term-placeholder-01.png",
+    "alt": "Taksonomian oletuskuva: harmaa placeholder",
+    "uid": 3
+  }
+]

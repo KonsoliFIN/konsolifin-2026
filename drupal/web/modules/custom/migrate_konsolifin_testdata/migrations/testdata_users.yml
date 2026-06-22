@@ -1,0 +1,22 @@
+id: testdata_users
+label: Import test fixture users
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: users.json
+  ids:
+    id:
+      type: integer
+process:
+  uid: id
+  name: name
+  mail: mail
+  status: status
+  field_oikea_nimi: oikea_nimi
+  field_esittely: esittely
+  roles: roles
+destination:
+  plugin: entity:user
