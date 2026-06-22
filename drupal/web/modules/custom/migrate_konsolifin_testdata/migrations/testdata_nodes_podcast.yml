@@ -11,7 +11,7 @@ source:
     id:
       type: integer
   constants:
-    audio_source_base: data/audio/
+    audio_source_base: modules/custom/migrate_konsolifin_testdata/data/audio/
     audio_dest_base: 'public://testdata/audio/'
 process:
   type:

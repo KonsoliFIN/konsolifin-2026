@@ -11,7 +11,7 @@ source:
     id:
       type: integer
   constants:
-    source_base_path: data/images/
+    source_base_path: modules/custom/migrate_konsolifin_testdata/data/images/
     file_dest: 'public://testdata/'
 process:
   source_full_path:
