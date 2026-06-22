@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "The Legend of Zelda",
+    "description": "Nintendon pitkäikäinen seikkailupelisarja, seurannut Link-nimistä sankaria vuodesta 1986.",
+    "weight": 0
+  },
+  {
+    "id": 2,
+    "name": "Final Fantasy",
+    "description": "Square Enixin roolipelisarja, yksi genren tunnetuimmista ja pitkäikäisimmistä sarjoista.",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "name": "God of War",
+    "description": "PlayStation-yksinoikeussarja, jossa Kratos taistelee mytologisia olentoja vastaan.",
+    "weight": 2
+  },
+  {
+    "id": 4,
+    "name": "Halo",
+    "description": "Microsoftin lippulaiva-ammuntapelisarja, Master Chiefin tarina avaruudessa.",
+    "weight": 3
+  },
+  {
+    "id": 5,
+    "name": "Gran Turismo",
+    "description": "PlayStationin kilpa-ajopelisarja, tunnettu realistisesta ajomallinnuksestaan.",
+    "weight": 4
+  },
+  {
+    "id": 6,
+    "name": "Alan Wake",
+    "description": "Remedy Entertainmentin psykologinen trilleri-pelisarja, yhdistää toimintaa ja kauhua.",
+    "weight": 5
+  }
+]

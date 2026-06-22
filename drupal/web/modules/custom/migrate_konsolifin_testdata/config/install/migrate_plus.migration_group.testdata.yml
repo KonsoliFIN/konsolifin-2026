@@ -1,0 +1,17 @@
+# Migration group for test fixture data.
+# Groups all testdata migrations for batch import/rollback via drush.
+
+id: testdata
+
+label: Test Fixture Data
+
+description: 'Test fixture migrations for local development. Provides realistic Finnish gaming content from JSON fixture files without requiring access to the production database.'
+
+source_type: null
+
+shared_configuration: null
+
+dependencies:
+  enforced:
+    module:
+      - migrate_konsolifin_testdata
