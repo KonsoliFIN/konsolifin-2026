@@ -10,6 +10,12 @@
 #}
 
 {# --- Content navigation links (edit in one place) --- #}
+{% set content_nav_logo %}
+  <li class="content-nav__item content-nav__logo">
+    <a href="/"><img src="/{{ active_theme_path() }}/kf.png" alt="{{ 'KonsoliFIN'|t }}" width="20px" /></a>
+  </li>
+{% endset %}
+
 {% set content_nav_links = [
   { url: '//forum.konsolifin.net', label: 'Forum'|t },
   { url: '/pelit', label: 'Pelit'|t },
@@ -39,6 +45,7 @@
       <div class="content-nav content-nav--mobile" aria-label="{{ 'Sisältövalikko'|t }}">
         <span class="content-nav__heading">{{ 'Sisältö'|t }}</span>
         <ul class="content-nav__list">
+          {{ content_nav_logo }}
           {% for link in content_nav_links %}
             <li class="content-nav__item">
               <a href="{{ link.url }}">{{ link.label }}</a>
@@ -59,6 +66,7 @@
   {# Content nav bar (desktop only) #}
   <nav class="content-nav content-nav--desktop" aria-label="{{ 'Sisältövalikko'|t }}">
     <ul class="content-nav__list">
+      {{ content_nav_logo }}
       {% for link in content_nav_links %}
         <li class="content-nav__item">
           <a href="{{ link.url }}">{{ link.label }}</a>

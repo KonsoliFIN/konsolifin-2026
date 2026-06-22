@@ -8,16 +8,23 @@ function konsolifin_misc_preprocess_node(&$variables) {
   $author = $node->getOwner();
 
   // Load the author's profile picture URL
-  if ($author && $author->hasField('user_picture') && !$author->get('user_picture')->isEmpty() && $author->user_picture->entity) {
-    $variables['author_headshot'] = [
-      '#theme' => 'image_style',
-      '#style_name' => 'teaser_thumbnail',
-      '#uri' => $author->user_picture->entity->getFileUri(),
-      '#alt' => $author->getDisplayName(),
-      '#cache' => [
-        'tags' => $author->getCacheTags(),
-      ],
-    ];
+  if ($author && $author->hasField('field_kuva') && !$author->get('field_kuva')->isEmpty() && $author->field_kuva->entity) {
+    /** @var \Drupal\media\MediaInterface $media */
+    $media = $author->field_kuva->entity;
+    if ($media->hasField('field_media_image') && !$media->get('field_media_image')->isEmpty()) {
+      $file = $media->get('field_media_image')->entity;
+      if ($file) {
+        $variables['author_headshot'] = [
+          '#theme' => 'image_style',
+          '#style_name' => 'teaser_thumbnail',
+          '#uri' => $file->getFileUri(),
+          '#alt' => $author->getDisplayName(),
+          '#cache' => [
+            'tags' => array_merge($author->getCacheTags(), $media->getCacheTags()),
+          ],
+        ];
+      }
+    }
   }
 
   // Load the bio/intro

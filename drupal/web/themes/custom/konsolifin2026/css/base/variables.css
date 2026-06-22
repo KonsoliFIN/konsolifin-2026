@@ -69,6 +69,7 @@
   --space-4xl: 6rem;
 
   /* Layout */
+  --header-height: 92px;
   --container-max: 1280px;
   --container-narrow: 800px;
   --sidebar-width: 320px;

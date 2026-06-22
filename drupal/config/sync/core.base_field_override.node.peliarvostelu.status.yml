@@ -1,0 +1,22 @@
+uuid: 1cb17d5c-4aa8-4b43-a5fc-b77915c6eb58
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.peliarvostelu
+id: node.peliarvostelu.status
+field_name: status
+entity_type: node
+bundle: peliarvostelu
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 54af50ca-3dc6-4b5e-9534-1330bc3654a5
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.uutinen
+id: node.uutinen.status
+field_name: status
+entity_type: node
+bundle: uutinen
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

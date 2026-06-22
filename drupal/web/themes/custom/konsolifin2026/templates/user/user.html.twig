@@ -24,7 +24,7 @@
     <div class="userinfo">
       <div class="userinfo__picture">
         <div class="userinfo__picture-frame">
-          {{ content.user_picture }}
+          {{ content.field_kuva }}
         </div>
       </div>
       <div class="userinfo__info">
@@ -54,6 +54,6 @@
     </script>
     <a name="content"></a>
     <p id="views-exposed-form-user-content-block-1-exposer"><a href="#content" onClick="exposer_content_types()">Valitse näytettävät sisältötyypit</a></p>
-    {{ content|without('field_oikea_nimi', 'user_picture', 'field_esittely', 'field_some_linkit') }}
+    {{ content|without('field_oikea_nimi', 'field_kuva', 'field_esittely', 'field_some_linkit') }}
   {% endif %}
 </article>

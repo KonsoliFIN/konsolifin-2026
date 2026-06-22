@@ -1,0 +1,22 @@
+uuid: d80387e6-f5d8-4b2d-8a16-60a27b34b0a0
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.podcast
+id: node.podcast.status
+field_name: status
+entity_type: node
+bundle: podcast
+label: Julkaistu
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

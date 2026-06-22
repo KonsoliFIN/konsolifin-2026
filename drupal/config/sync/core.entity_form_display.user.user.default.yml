@@ -4,16 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_esittely
+    - field.field.user.user.field_kuva
     - field.field.user.user.field_oikea_nimi
     - field.field.user.user.field_slack_id
     - field.field.user.user.field_some_linkit
     - field.field.user.user.field_xenforo_id
-    - field.field.user.user.user_picture
-    - image.style.medium
   module:
-    - image
-    - imce
     - link
+    - media_library
     - path
     - text
     - user
@@ -37,6 +35,13 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_kuva:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_oikea_nimi:
     type: string_textfield
     weight: 2
@@ -47,36 +52,26 @@ content:
     third_party_settings: {  }
   field_some_linkit:
     type: link_default
-    weight: 31
+    weight: 6
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
   matomo:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
     weight: 6
     region: content
-  user_picture:
-    type: image_image
-    weight: 0
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: medium
-    third_party_settings:
-      imce:
-        enabled: false
 hidden:
   field_slack_id: true
   field_xenforo_id: true

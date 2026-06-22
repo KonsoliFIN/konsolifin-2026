@@ -12,15 +12,19 @@ source:
 process:
   uid: uid
   name: name
-  user_picture:
+  field_kuva/target_id:
     -
       plugin: migration_lookup
-      migration: konsolifin_files
+      migration: konsolifin_media_images
       source: field_nostokuva/0/fid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
 destination:
   plugin: entity:user
   overwrite_properties:
-    - user_picture
+    - field_kuva
 migration_dependencies:
   required:
     - konsolifin_users
