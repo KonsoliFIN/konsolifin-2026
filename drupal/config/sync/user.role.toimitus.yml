@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - filter.format.basic_html
     - filter.format.full_html
-    - filter.format.restricted_html
     - media.type.audio
     - media.type.document
     - media.type.image
@@ -33,6 +33,7 @@ dependencies:
     - taxonomy.vocabulary.sarja
   module:
     - announcements_feed
+    - block_content
     - comment
     - file
     - filter
@@ -43,6 +44,7 @@ dependencies:
     - node
     - path
     - scheduler
+    - search
     - search_autocomplete
     - system
     - taxonomy
@@ -55,6 +57,7 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access announcements'
+  - 'access block library'
   - 'access comments'
   - 'access content'
   - 'access content overview'
@@ -98,6 +101,7 @@ permissions:
   - 'delete media'
   - 'edit any article content'
   - 'edit any audio media'
+  - 'edit any basic block content'
   - 'edit any blogi content'
   - 'edit any document media'
   - 'edit any historianosto content'
@@ -162,14 +166,15 @@ permissions:
   - 'revert video revisions'
   - 'revert vierailija_arvostelu revisions'
   - 'schedule publishing of nodes'
+  - 'search content'
   - 'skip comment approval'
   - 'translate interface'
   - 'update any media'
   - 'update media'
+  - 'use advanced search'
   - 'use search autocomplete'
   - 'use text format basic_html'
   - 'use text format full_html'
-  - 'use text format restricted_html'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all taxonomy revisions'

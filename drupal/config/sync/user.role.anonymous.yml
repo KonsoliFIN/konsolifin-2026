@@ -20,5 +20,4 @@ permissions:
   - 'access user profiles'
   - 'search content'
   - 'view media'
-  - 'view own unpublished media'
   - 'view vocabulary labels'

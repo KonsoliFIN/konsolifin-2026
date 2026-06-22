@@ -2,8 +2,11 @@ uuid: 7b949f94-14b9-4549-bbfb-89f7efbeb993
 langcode: fi
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
     - comment
+    - filter
     - matomo
     - media
     - search
@@ -26,6 +29,7 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use advanced search'
+  - 'use text format basic_html'
   - 'view media'
   - 'view own unpublished media'
   - 'view vocabulary labels'
