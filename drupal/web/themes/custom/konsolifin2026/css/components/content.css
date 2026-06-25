@@ -465,3 +465,16 @@ h3.lisaa-sisaltoa__title {
   position: relative !important;
   bottom: 3px !important;
 }
+
+/* Slick carousel for field_images */
+
+.slick .media--ratio {
+  padding-bottom: 0 !important;
+  height: 85vh !important;
+}
+
+.slick .media__element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
