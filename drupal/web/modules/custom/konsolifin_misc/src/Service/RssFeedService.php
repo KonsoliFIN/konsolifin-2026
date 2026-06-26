@@ -269,7 +269,7 @@ class RssFeedService {
       else {
         // First paragraph: text before first double newline.
         $plainText = strip_tags($body->value);
-        $parts = preg_split('/\n\n/', $plainText, 2);
+        $parts = preg_split('/\n/', $plainText, 2);
         $description .= $parts[0] ?? '';
       }
     }
