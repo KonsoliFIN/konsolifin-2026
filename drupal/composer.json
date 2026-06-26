@@ -25,6 +25,7 @@
         "drupal/core-project-message": "^11.3",
         "drupal/core-recipe-unpack": "^11.3",
         "drupal/imce": "^3.1",
+        "drupal/itunes_rss": "^2.0",
         "drupal/matomo": "^1.26",
         "drupal/media_gallery": "^3.2",
         "drupal/migrate_devel": "^3.0",
