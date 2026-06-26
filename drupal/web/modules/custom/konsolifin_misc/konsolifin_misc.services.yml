@@ -9,3 +9,11 @@ services:
     class: Drupal\konsolifin_misc\EventSubscriber\RouteSubscriber
     tags:
       - { name: event_subscriber }
+
+  konsolifin_misc.rss_feed:
+    class: Drupal\konsolifin_misc\Service\RssFeedService
+    arguments:
+      - '@entity_type.manager'
+      - '@path_alias.manager'
+      - '@file_url_generator'
+      - '@request_stack'
