@@ -174,11 +174,11 @@ class RssFeedService {
     // Append game name for reviews (peliarvostelu bundle).
     if ($node->bundle() === 'peliarvostelu') {
       $gameName = '';
-      if (!$node->get('field_pelin_nimi')->isEmpty()
+      if ($node->hasField('field_pelin_nimi') && !$node->get('field_pelin_nimi')->isEmpty()
           && $node->get('field_pelin_nimi')->value !== '') {
         $gameName = $node->get('field_pelin_nimi')->value;
       }
-      elseif (!$node->get('field_pelit')->isEmpty()) {
+      elseif ($node->hasField('field_pelit') && !$node->get('field_pelit')->isEmpty()) {
         $term = $node->get('field_pelit')->entity;
         $gameName = $term ? $term->label() : '';
       }
@@ -188,7 +188,7 @@ class RssFeedService {
     }
 
     // Prepend series name.
-    if (!$node->get('field_sarja')->isEmpty()) {
+    if ($node->hasField('field_sarja') && !$node->get('field_sarja')->isEmpty()) {
       $series = $node->get('field_sarja')->entity;
       if ($series) {
         $title = $series->label() . ': ' . $title;
@@ -211,7 +211,7 @@ class RssFeedService {
    *   The image URL or NULL if no hero image is available.
    */
   protected function getHeroImageUrl(NodeInterface $node): ?string {
-    if ($node->get('field_hero')->isEmpty()) {
+    if (!$node->hasField('field_hero') || $node->get('field_hero')->isEmpty()) {
       return NULL;
     }
 
