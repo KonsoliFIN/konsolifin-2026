@@ -171,3 +171,14 @@ function konsolifin2026_theme_suggestions_node_alter(array &$suggestions, array 
     $suggestions[] = 'node__' . $node->bundle() . '__' . $view_mode . '__sarja';
   }
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function konsolifin2026_page_attachments_alter(array &$attachments) {
+  foreach ($attachments['#attached']['html_head_link'] as $key => $value) {
+    if (isset($value[0]['rel']) && $value[0]['rel'] === 'icon') {
+      unset($attachments['#attached']['html_head_link'][$key]);
+    }
+  }
+}
