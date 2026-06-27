@@ -473,6 +473,16 @@ class KonsolifinController extends ControllerBase {
     return $this->rssFeedService->buildFeed(RssFeedService::MODE_FULL_BODY);
   }
 
+  /**
+   * Podcast RSS feed (/podcast/podcast.rss).
+   *
+   * iTunes-compatible podcast feed. Channel metadata can be customized by
+   * editing the array below.
+   */
+  public function podcastFeed(): Response {
+    return $this->rssFeedService->buildPodcastFeed();
+  }
+
   // ---------------------------------------------------------------------------
   // testLinks()
   //

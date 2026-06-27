@@ -241,6 +241,221 @@ class RssFeedService {
   }
 
   /**
+   * Builds an iTunes-compatible podcast RSS feed.
+   *
+   * Queries published podcast nodes and outputs an RSS 2.0 feed with
+   * iTunes/podcast namespace extensions. Channel-level metadata is
+   * configurable via the $metadata parameter.
+   *
+   * @param array $metadata
+   *   Podcast channel metadata with keys:
+   *   - title: (string) Podcast title.
+   *   - description: (string) Podcast description.
+   *   - author: (string) Author/owner name.
+   *   - email: (string) Owner email for itunes:owner.
+   *   - image: (string) Podcast artwork URL (1400x1400 – 3000x3000 recommended).
+   *   - category: (string) iTunes category (e.g. "Leisure").
+   *   - subcategory: (string|null) iTunes subcategory (e.g. "Video Games").
+   *   - explicit: (string) "true", "false", or "clean". Defaults to "false".
+   *   - language: (string) Language code. Defaults to "fi".
+   *   - copyright: (string|null) Copyright notice.
+   *   - limit: (int) Max episodes. Defaults to 50.
+   *
+   * @return \Symfony\Component\HttpFoundation\Response
+   */
+  public function buildPodcastFeed(array $metadata = []): Response {
+    $request = $this->requestStack->getCurrentRequest();
+    $baseUrl = $request->getSchemeAndHttpHost();
+
+    // Defaults.
+    $metadata += [
+      'title' => 'KonsoliFIN Podcast',
+      'description' => 'KonsoliFIN Podcast',
+      'author' => 'KonsoliFIN',
+      'email' => 'toimitus@konsolifin.net',
+      'image' => $baseUrl . '/themes/custom/flavor/logo.png',
+      'category' => 'Leisure',
+      'subcategory' => 'Video Games',
+      'explicit' => 'false',
+      'language' => 'fi',
+      'copyright' => '© KonsoliFIN',
+      'limit' => 50,
+    ];
+
+    $nodes = $this->queryPodcastNodes((int) $metadata['limit']);
+
+    $selfUrl = $baseUrl . $request->getRequestUri();
+
+    // XML declaration and <rss> with iTunes namespace.
+    $xml = '<?xml version="1.0" encoding="UTF-8" ?>' . "\n";
+    $xml .= '<rss version="2.0"'
+      . ' xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"'
+      . ' xmlns:atom="http://www.w3.org/2005/Atom"'
+      . ' xmlns:content="http://purl.org/rss/1.0/modules/content/"'
+      . ' xmlns:podcast="https://podcastindex.org/namespace/1.0">' . "\n";
+
+    // Channel.
+    $xml .= "<channel>\n";
+    $xml .= '<title>' . htmlspecialchars($metadata['title']) . "</title>\n";
+    $xml .= '<link>' . $baseUrl . "</link>\n";
+    $xml .= '<description>' . htmlspecialchars($metadata['description']) . "</description>\n";
+    $xml .= '<language>' . htmlspecialchars($metadata['language']) . "</language>\n";
+    $xml .= '<copyright>' . htmlspecialchars($metadata['copyright'] ?? '') . "</copyright>\n";
+    $xml .= '<atom:link href="' . htmlspecialchars($selfUrl) . '" rel="self" type="application/rss+xml" />' . "\n";
+    $xml .= '<itunes:author>' . htmlspecialchars($metadata['author']) . "</itunes:author>\n";
+    $xml .= '<itunes:summary>' . htmlspecialchars($metadata['description']) . "</itunes:summary>\n";
+    $xml .= '<itunes:explicit>' . htmlspecialchars($metadata['explicit']) . "</itunes:explicit>\n";
+    $xml .= "<itunes:owner>\n";
+    $xml .= '  <itunes:name>' . htmlspecialchars($metadata['author']) . "</itunes:name>\n";
+    $xml .= '  <itunes:email>' . htmlspecialchars($metadata['email']) . "</itunes:email>\n";
+    $xml .= "</itunes:owner>\n";
+    $xml .= '<itunes:image href="' . htmlspecialchars($metadata['image']) . '" />' . "\n";
+
+    // Category.
+    if (!empty($metadata['subcategory'])) {
+      $xml .= '<itunes:category text="' . htmlspecialchars($metadata['category']) . '">' . "\n";
+      $xml .= '  <itunes:category text="' . htmlspecialchars($metadata['subcategory']) . '" />' . "\n";
+      $xml .= "</itunes:category>\n";
+    }
+    else {
+      $xml .= '<itunes:category text="' . htmlspecialchars($metadata['category']) . '" />' . "\n";
+    }
+
+    $xml .= '<itunes:type>episodic</itunes:type>' . "\n";
+
+    // Episodes.
+    foreach ($nodes as $node) {
+      $xml .= $this->buildPodcastItemXml($node, $baseUrl);
+    }
+
+    $xml .= "</channel>\n</rss>";
+
+    return new Response($xml, 200, [
+      'Content-Type' => 'application/rss+xml; charset=utf-8',
+    ]);
+  }
+
+  /**
+   * Queries published podcast nodes.
+   *
+   * @param int $limit
+   *   Maximum number of episodes to include.
+   *
+   * @return \Drupal\node\NodeInterface[]
+   */
+  protected function queryPodcastNodes(int $limit = 50): array {
+    $storage = $this->entityTypeManager->getStorage('node');
+    $nids = $storage->getQuery()
+      ->condition('status', 1)
+      ->condition('type', 'podcast')
+      ->sort('created', 'DESC')
+      ->range(0, $limit)
+      ->accessCheck(TRUE)
+      ->execute();
+
+    if (empty($nids)) {
+      return [];
+    }
+
+    return $storage->loadMultiple($nids);
+  }
+
+  /**
+   * Builds a single podcast <item> element with iTunes extensions.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The podcast node.
+   * @param string $baseUrl
+   *   The base URL.
+   *
+   * @return string
+   */
+  protected function buildPodcastItemXml(NodeInterface $node, string $baseUrl): string {
+    $alias = $this->aliasManager->getAliasByPath('/node/' . $node->id());
+    $link = $baseUrl . $alias;
+    $title = $node->label();
+    $pubDate = gmdate('D, d M Y H:i:s O', $node->getCreatedTime());
+    $guid = $baseUrl . '/node/' . $node->id();
+
+    // Episode description from body field.
+    $description = '';
+    if (!$node->get('body')->isEmpty()) {
+      $description = $node->get('body')->processed;
+    }
+
+    // Audio enclosure from field_mp3 (media reference → audio file).
+    $enclosureUrl = '';
+    $enclosureLength = 0;
+    $enclosureType = 'audio/mpeg';
+    if ($node->hasField('field_mp3') && !$node->get('field_mp3')->isEmpty()) {
+      $audioFile = $this->getAudioFileFromMedia($node);
+      if ($audioFile) {
+        $enclosureUrl = $this->fileUrlGenerator->generateAbsoluteString($audioFile->getFileUri());
+        $enclosureLength = (int) $audioFile->getSize();
+        $enclosureType = $audioFile->getMimeType() ?: 'audio/mpeg';
+      }
+    }
+
+    // Episode image from field_hero (falls back to nothing).
+    $episodeImage = $this->getHeroImageUrl($node);
+
+    $xml = "<item>\n";
+    $xml .= '<title>' . htmlspecialchars($title) . "</title>\n";
+    $xml .= '<link>' . htmlspecialchars($link) . "</link>\n";
+    $xml .= '<guid isPermaLink="false">' . htmlspecialchars($guid) . "</guid>\n";
+    $xml .= '<pubDate>' . $pubDate . "</pubDate>\n";
+    $xml .= '<description>' . htmlspecialchars($description) . "</description>\n";
+    $xml .= '<content:encoded><![CDATA[' . $description . "]]></content:encoded>\n";
+
+    if ($enclosureUrl) {
+      $xml .= '<enclosure url="' . htmlspecialchars($enclosureUrl) . '"'
+        . ' length="' . $enclosureLength . '"'
+        . ' type="' . htmlspecialchars($enclosureType) . '" />' . "\n";
+    }
+
+    // iTunes episode tags.
+    $xml .= '<itunes:title>' . htmlspecialchars($title) . "</itunes:title>\n";
+    $xml .= '<itunes:summary>' . htmlspecialchars(strip_tags($description)) . "</itunes:summary>\n";
+    $xml .= '<itunes:explicit>false</itunes:explicit>' . "\n";
+    $xml .= '<itunes:episodeType>full</itunes:episodeType>' . "\n";
+
+    if ($episodeImage) {
+      $xml .= '<itunes:image href="' . htmlspecialchars($episodeImage) . '" />' . "\n";
+    }
+
+    // Author from node owner.
+    $author = $node->getOwner()->getDisplayName();
+    $xml .= '<itunes:author>' . htmlspecialchars($author) . "</itunes:author>\n";
+
+    $xml .= "</item>\n";
+
+    return $xml;
+  }
+
+  /**
+   * Extracts the audio file entity from a podcast node's field_mp3 media ref.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The podcast node.
+   *
+   * @return \Drupal\file\FileInterface|null
+   *   The file entity or NULL.
+   */
+  protected function getAudioFileFromMedia(NodeInterface $node): ?\Drupal\file\FileInterface {
+    /** @var \Drupal\media\MediaInterface|null $media */
+    $media = $node->get('field_mp3')->entity;
+    if (!$media) {
+      return NULL;
+    }
+
+    // The audio media type uses field_media_audio_file as source field.
+    $source_field = $media->getSource()->getSourceFieldDefinition($media->get('bundle')->entity);
+    $file = $media->get($source_field->getName())->entity;
+
+    return $file instanceof \Drupal\file\FileInterface ? $file : NULL;
+  }
+
+  /**
    * Builds the description for an RSS feed item.
    *
    * @param \Drupal\node\NodeInterface $node
