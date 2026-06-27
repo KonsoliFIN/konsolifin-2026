@@ -9,7 +9,6 @@ dependencies:
     - field.storage.node.field_mp3
     - node.type.podcast
   module:
-    - itunes_rss
     - node
     - text
     - user
