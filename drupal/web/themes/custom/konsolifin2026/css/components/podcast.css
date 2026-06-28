@@ -15,8 +15,8 @@
 }
 
 .podcast-player__icon {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   background: var(--color-badge-podcast);
   border-radius: var(--radius-md);
   display: flex;
@@ -43,7 +43,7 @@
 
 .podcast-player audio {
   width: 100%;
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   border-radius: var(--radius-md);
 }
 
