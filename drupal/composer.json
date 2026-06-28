@@ -41,7 +41,8 @@
         "drupal/term_reference_tree": "^2.0",
         "drupal/video_embed_field": "^3.0",
         "drupal/views_infinite_scroll": "^2.0",
-        "drush/drush": "^13.7"
+        "drush/drush": "^13.7",
+        "james-heinrich/getid3": "^1.9"
     },
     "conflict": {
         "drupal/drupal": "*"

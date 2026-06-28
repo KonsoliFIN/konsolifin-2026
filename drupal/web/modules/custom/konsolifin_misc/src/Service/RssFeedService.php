@@ -2,8 +2,11 @@
 
 namespace Drupal\konsolifin_misc\Service;
 
+use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\File\FileUrlGeneratorInterface;
+use Drupal\Core\File\FileSystemInterface;
+use Drupal\file\FileInterface;
 use Drupal\node\NodeInterface;
 use Drupal\path_alias\AliasManagerInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
@@ -29,6 +32,8 @@ class RssFeedService {
     protected AliasManagerInterface $aliasManager,
     protected FileUrlGeneratorInterface $fileUrlGenerator,
     protected RequestStack $requestStack,
+    protected CacheBackendInterface $cacheBackend,
+    protected FileSystemInterface $fileSystem,
   ) {}
 
   /**
@@ -375,7 +380,6 @@ class RssFeedService {
     $link = $baseUrl . $alias;
     $title = $node->label();
     $pubDate = gmdate('D, d M Y H:i:s O', $node->getCreatedTime());
-    $guid = $baseUrl . '/node/' . $node->id();
 
     // Episode description from body field.
     $description = '';
@@ -387,12 +391,17 @@ class RssFeedService {
     $enclosureUrl = '';
     $enclosureLength = 0;
     $enclosureType = 'audio/mpeg';
+    $durationFormatted = '';
     if ($node->hasField('field_mp3') && !$node->get('field_mp3')->isEmpty()) {
       $audioFile = $this->getAudioFileFromMedia($node);
       if ($audioFile) {
         $enclosureUrl = $this->fileUrlGenerator->generateAbsoluteString($audioFile->getFileUri());
         $enclosureLength = (int) $audioFile->getSize();
         $enclosureType = $audioFile->getMimeType() ?: 'audio/mpeg';
+        $durationSeconds = $this->getAudioDuration($audioFile);
+        if ($durationSeconds > 0) {
+          $durationFormatted = $this->formatDuration($durationSeconds);
+        }
       }
     }
 
@@ -402,9 +411,9 @@ class RssFeedService {
     $xml = "<item>\n";
     $xml .= '<title>' . htmlspecialchars($title) . "</title>\n";
     $xml .= '<link>' . htmlspecialchars($link) . "</link>\n";
-    $xml .= '<guid isPermaLink="false">' . htmlspecialchars($guid) . "</guid>\n";
+    $xml .= '<guid isPermaLink="false">' . htmlspecialchars($enclosureUrl) . "</guid>\n";
     $xml .= '<pubDate>' . $pubDate . "</pubDate>\n";
-    $xml .= '<description>' . htmlspecialchars($description) . "</description>\n";
+    $xml .= '<description>' . strip_tags($description) . "</description>\n";
     $xml .= '<content:encoded><![CDATA[' . $description . "]]></content:encoded>\n";
 
     if ($enclosureUrl) {
@@ -418,6 +427,9 @@ class RssFeedService {
     $xml .= '<itunes:summary>' . htmlspecialchars(strip_tags($description)) . "</itunes:summary>\n";
     $xml .= '<itunes:explicit>false</itunes:explicit>' . "\n";
     $xml .= '<itunes:episodeType>full</itunes:episodeType>' . "\n";
+    if ($durationFormatted !== '') {
+      $xml .= '<itunes:duration>' . $durationFormatted . "</itunes:duration>\n";
+    }
 
     if ($episodeImage) {
       $xml .= '<itunes:image href="' . htmlspecialchars($episodeImage) . '" />' . "\n";
@@ -490,6 +502,66 @@ class RssFeedService {
     }
 
     return $description;
+  }
+
+  /**
+   * Resolves the audio duration of an MP3 file, caching the result.
+   *
+   * @param \Drupal\file\FileInterface $audioFile
+   *   The audio file entity.
+   *
+   * @return int
+   *   The duration of the audio in seconds, or 0 if it cannot be determined.
+   */
+  protected function getAudioDuration(FileInterface $audioFile): int {
+    $uri = $audioFile->getFileUri();
+    $cid = 'konsolifin_misc:mp3_duration:' . $audioFile->id() . ':' . $audioFile->getChangedTime();
+
+    if ($cache = $this->cacheBackend->get($cid)) {
+      return (int) $cache->data;
+    }
+
+    $duration = 0;
+    $filePath = $this->fileSystem->realpath($uri);
+    if ($filePath && file_exists($filePath)) {
+      try {
+        $getID3 = new \getID3();
+        $info = $getID3->analyze($filePath);
+        if (!empty($info['playtime_seconds'])) {
+          $duration = (int) round($info['playtime_seconds']);
+        }
+      }
+      catch (\Exception $e) {
+        \Drupal::logger('konsolifin_misc')->error('Error parsing MP3 file @file: @message', [
+          '@file' => $filePath,
+          '@message' => $e->getMessage(),
+        ]);
+      }
+    }
+
+    $this->cacheBackend->set($cid, $duration, CacheBackendInterface::CACHE_PERMANENT);
+
+    return $duration;
+  }
+
+  /**
+   * Formats the duration in seconds to iTunes-compatible format HH:MM:SS or MM:SS.
+   *
+   * @param int $seconds
+   *   The duration in seconds.
+   *
+   * @return string
+   *   Formatted duration.
+   */
+  protected function formatDuration(int $seconds): string {
+    $hours = floor($seconds / 3600);
+    $minutes = floor(($seconds / 60) % 60);
+    $secs = $seconds % 60;
+
+    if ($hours > 0) {
+      return sprintf('%02d:%02d:%02d', $hours, $minutes, $secs);
+    }
+    return sprintf('%02d:%02d', $minutes, $secs);
   }
 
 }
