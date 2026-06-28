@@ -4,6 +4,7 @@ namespace Drupal\konsolifin_misc\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Pager\PagerManagerInterface;
 use Drupal\Core\Url;
+use Drupal\konsolifin_misc\Service\RssFeedService;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\RequestStack;
@@ -58,12 +59,20 @@ class KonsolifinController extends ControllerBase {
   protected RequestStack $requestStack;
 
   /**
+   * The RSS feed service.
+   *
+   * @var \Drupal\konsolifin_misc\Service\RssFeedService
+   */
+  protected RssFeedService $rssFeedService;
+
+  /**
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container): static {
     $instance               = parent::create($container);
     $instance->pagerManager = $container->get('pager.manager');
     $instance->requestStack = $container->get('request_stack');
+    $instance->rssFeedService = $container->get('konsolifin_misc.rss_feed');
     return $instance;
   }
 
@@ -450,137 +459,28 @@ class KonsolifinController extends ControllerBase {
     return new Response($html, 200, ['Content-Type' => 'text/html; charset=utf-8']);
   }
 
-  // ---------------------------------------------------------------------------
-  // rssFeed() / rssFeedForum()
-  //
-  // D7: konsolifin_content_rss($arg = 'rss')
-  //
-  // Changes:
-  //   - header("content-type:…") + print → return a Symfony Response with
-  //     the correct Content-Type header.
-  //   - global $base_url → \Drupal::request()->getSchemeAndHttpHost()
-  //   - node_load(), field access → Entity API
-  //   - drupal_get_path_alias() → path_alias.manager
-  //   - image_style_url() → ImageStyle::load()->buildUrl()
-  // ---------------------------------------------------------------------------
-
   /**
    * RSS feed (/feed/feed.php).
    */
   public function rssFeed(): Response {
-    return $this->buildRssResponse('rss');
+    return $this->rssFeedService->buildFeed(RssFeedService::MODE_FIRST_PARAGRAPH);
   }
 
   /**
    * RSS feed for forum (/feed/forforum.php).
    */
   public function rssFeedForum(): Response {
-    return $this->buildRssResponse('forum');
+    return $this->rssFeedService->buildFeed(RssFeedService::MODE_FULL_BODY);
   }
 
   /**
-   * Builds the RSS XML response.
+   * Podcast RSS feed (/podcast/podcast.rss).
+   *
+   * iTunes-compatible podcast feed. Channel metadata can be customized by
+   * editing the array below.
    */
-  protected function buildRssResponse(string $arg): Response {
-    $base_url      = \Drupal::request()->getSchemeAndHttpHost();
-    $alias_manager = \Drupal::service('path_alias.manager');
-
-    $nids = $this->entityTypeManager()
-      ->getStorage('node')
-      ->getQuery()
-      ->accessCheck(TRUE)
-      ->condition('status', 1)
-      ->condition('promote', 1)
-      ->sort('created', 'DESC')
-      ->range(0, 25)
-      ->execute();
-
-    $nodes = $this->entityTypeManager()
-      ->getStorage('node')
-      ->loadMultiple($nids);
-
-    $xml = '<?xml version="1.0" encoding="UTF-8" ?>' . "\n"
-      . '<rss version="2.0" xml:base="' . $base_url . '/uusimmat"'
-      . ' xmlns:dc="http://purl.org/dc/elements/1.1/"'
-      . ' xmlns:atom="http://www.w3.org/2005/Atom"'
-      . ' xmlns:content="http://purl.org/rss/1.0/modules/content/">'
-      . "\n<channel>\n"
-      . '<title>KonsoliFIN.netin uusin sisältö</title>' . "\n"
-      . '<ttl>5</ttl>' . "\n"
-      . '<link>' . $base_url . "</link>\n"
-      . '<description>KonsoliFINin uusin julkaistu sisältö</description>' . "\n"
-      . '<language>fi</language>' . "\n"
-      . '<atom:link href="' . $base_url . '/feed/feed.php" rel="self" type="application/rss+xml" />' . "\n";
-
-    foreach ($nodes as $node) {
-      $title = htmlspecialchars($node->label());
-
-      // Append game name for reviews.
-      if ($node->bundle() === 'arvostelu' && ! $node->get('field_pelit')->isEmpty()) {
-        if (! $node->get('field_pelin_nimi')->isEmpty()
-          && $node->get('field_pelin_nimi')->value !== '') {
-          $gamename = $node->get('field_pelin_nimi')->value;
-        } else {
-          $game_tid = $node->get('field_pelit')->target_id;
-          $game     = \Drupal\taxonomy\Entity\Term::load($game_tid);
-          $gamename = $game ? $game->label() : '';
-        }
-        $title .= htmlspecialchars(' - Arvostelussa ' . $gamename);
-      }
-
-      // Prepend series name.
-      if (! $node->get('field_sarja')->isEmpty()) {
-        $series = \Drupal\taxonomy\Entity\Term::load($node->get('field_sarja')->target_id);
-        if ($series) {
-          $title = htmlspecialchars($series->label()) . ': ' . $title;
-        }
-      }
-
-      $body_field  = $node->get('body');
-      if (! $body_field->isEmpty()) {
-        if ($arg === 'forum') {
-          $body_text = $body_field->processed;
-        } else {
-          [$first]   = explode("\r", strip_tags($body_field->value), 2);
-          $body_text = $first;
-        }
-      } else {
-        $body_text = '';
-      }
-
-      // Featured image for description.
-      $img_markup = '';
-      if (! $node->get('field_nostokuva')->isEmpty()) {
-        $file = $node->get('field_nostokuva')->entity;
-        if ($file) {
-          $style   = \Drupal\image\Entity\ImageStyle::load('banneri');
-          $img_url = $style
-            ? $style->buildUrl($file->getFileUri())
-            : \Drupal::service('file_url_generator')->generateAbsoluteString($file->getFileUri());
-          $img_markup = '<img src="' . $img_url . '"><br />';
-        }
-      }
-      $description = $img_markup . $body_text;
-
-      $alias   = $alias_manager->getAliasByPath('/node/' . $node->id());
-      $link    = $base_url . $alias . '?utm_medium=rss';
-      $author  = $node->getOwner()->getAccountName();
-      $pubdate = date('r', $node->getCreatedTime());
-
-      $xml .= "\t<item>\n"
-      . "\t\t<title>" . $title . "</title>\n"
-      . "\t\t<link>" . $link . "</link>\n"
-      . "\t\t<description>" . htmlspecialchars($description) . "</description>\n"
-      . "\t\t<pubDate>" . $pubdate . "</pubDate>\n"
-      . "\t\t<dc:creator>" . htmlspecialchars($author) . "</dc:creator>\n"
-      . "\t\t<guid isPermaLink=\"false\">" . $node->id() . " at http://www.konsolifin.net</guid>\n"
-        . "\t\t<comments>" . $base_url . $alias . "?utm_medium=rss#comments</comments>\n"
-        . "\t</item>\n";
-    }
-
-    $xml .= "</channel>\n</rss>";
-
-    return new Response($xml, 200, ['Content-Type' => 'application/rss+xml; charset=utf-8']);
+  public function podcastFeed(): Response {
+    return $this->rssFeedService->buildPodcastFeed();
   }
 
   // ---------------------------------------------------------------------------

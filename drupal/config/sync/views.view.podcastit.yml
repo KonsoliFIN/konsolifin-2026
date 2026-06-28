@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.storage.node.body
+    - field.storage.node.field_hero
+    - field.storage.node.field_mp3
     - node.type.podcast
   module:
     - node
+    - text
     - user
 id: podcastit
 label: Podcastit
@@ -71,6 +75,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          plugin_id: field
+        field_hero:
+          id: field_hero
+          table: node__field_hero
+          field: field_hero
+          plugin_id: field
+        field_mp3:
+          id: field_mp3
+          table: node__field_mp3
+          field: field_mp3
+          plugin_id: field
       pager:
         type: full
         options:
@@ -209,7 +228,10 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_hero'
+        - 'config:field.storage.node.field_mp3'
   page_1:
     id: page_1
     display_title: Page
@@ -226,4 +248,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_hero'
+        - 'config:field.storage.node.field_mp3'

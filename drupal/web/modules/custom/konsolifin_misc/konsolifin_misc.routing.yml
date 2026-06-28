@@ -50,6 +50,13 @@ konsolifin.rss_feed_forum:
   requirements:
     _access: 'TRUE'
 
+konsolifin.podcast_feed:
+  path: '/podcast/podcast.rss'
+  defaults:
+    _controller: '\Drupal\konsolifin_misc\Controller\KonsolifinController::podcastFeed'
+  requirements:
+    _access: 'TRUE'
+
 # ---------------------------------------------------------------------------
 # Error pages (registered as normal routes; configure as site 403/404 handler
 # at /admin/config/system/site-information if desired).
