@@ -50,15 +50,45 @@
   z-index: 1;
 }
 
-.card__badge--uutinen { background: var(--color-badge-uutinen); }
-.card__badge--arvostelu { background: var(--color-badge-arvostelu); }
-.card__badge--blogi { background: var(--color-badge-blogi); }
-.card__badge--artikkeli { background: var(--color-badge-artikkeli); }
-.card__badge--podcast { background: var(--color-badge-podcast); }
-.card__badge--video { background: var(--color-badge-video); }
-.card__badge--laitearvio { background: var(--color-badge-laitearvio); }
-.card__badge--peliarvostelu { background: var(--color-badge-arvostelu); }
-.card__badge--vierailija_arvostelu { background: var(--color-badge-arvostelu); }
+.card__badge--uutinen {
+  background: var(--color-badge-uutinen);
+}
+
+.card__badge--arvostelu {
+  background: var(--color-badge-arvostelu);
+}
+
+.card__badge--blogi {
+  background: var(--color-badge-blogi);
+}
+
+.card__badge--artikkeli {
+  background: var(--color-badge-artikkeli);
+}
+
+.card__badge--podcast {
+  background: var(--color-badge-podcast);
+}
+
+.card__badge--video {
+  background: var(--color-badge-video);
+}
+
+.card__badge--laitearvio {
+  background: var(--color-badge-laitearvio);
+}
+
+.card__badge--peliarvostelu {
+  background: var(--color-badge-arvostelu);
+}
+
+.card__badge--vierailija_arvostelu {
+  background: var(--color-badge-arvostelu);
+}
+
+.card__badge.node__sarja-badge {
+  top: var(--space-3xl);
+}
 
 /* Score overlay on review cards */
 .card__score {
@@ -282,6 +312,6 @@
 }
 
 span.card__badge.card__stars {
-    margin: 0px;
-    margin-top: 5px;
+  margin: 0px;
+  margin-top: 5px;
 }

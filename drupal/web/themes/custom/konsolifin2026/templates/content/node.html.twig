@@ -86,8 +86,8 @@
       <div class="node__hero-content">
         <div class="node__badges">
           <span class="card__badge card__badge--{{ node.bundle() }}">{{ type_label }}</span>
-          {% if sarja_name %}
-            <span class="node__sarja-badge">{{ sarja_name }}</span>
+          {% if content.field_sarja|render is not empty %}
+            <span class="card__badge node__sarja-badge">{{ content.field_sarja }}</span>
           {% endif %}
         </div>
 
@@ -110,6 +110,12 @@
           <div class="node__summary-item">
             <span class="node__summary-label">{{ 'Pelit'|t }}</span>
             <div class="node__summary-value">{{ content.field_pelit }}</div>
+          </div>
+        {% endif %}
+        {% if content.field_alustat|render is not empty %}
+          <div class="node__summary-item">
+            <span class="node__summary-label">{{ 'Alustat'|t }}</span>
+            <div class="node__summary-value">{{ content.field_alustat }}</div>
           </div>
         {% endif %}
         {% if content.field_studiot|render is not empty %}
