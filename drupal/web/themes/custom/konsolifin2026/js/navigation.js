@@ -52,6 +52,30 @@
           if (e.matches) close();
         });
       });
+
+      // Handle scroll transparency for desktop navigation bar.
+      once('scroll-nav', 'body', context).forEach(() => {
+        const handleScroll = () => {
+          const nav = document.querySelector('.content-nav--desktop');
+          if (!nav) return;
+
+          const bodyPadding = parseFloat(window.getComputedStyle(document.body).paddingTop) || 0;
+          const yPos = nav.getBoundingClientRect().y;
+
+          // If the navbar's top position is greater than the body padding (plus rounding tolerance),
+          // it is floating in its normal position below the header. Otherwise, it is stuck at the top.
+          if (yPos > bodyPadding + 2) {
+            nav.classList.add('is-transparent');
+          } else {
+            nav.classList.remove('is-transparent');
+          }
+        };
+
+        // Run once on load to establish correct state if scrolled on refresh.
+        handleScroll();
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+      });
     },
   };
 })(Drupal, once);
