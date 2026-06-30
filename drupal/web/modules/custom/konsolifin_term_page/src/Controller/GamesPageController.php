@@ -182,6 +182,8 @@ class GamesPageController extends ControllerBase {
         );
       }
 
+      $peli_url = $node->toUrl()->toString();
+
       // Get games.
       $pelit = [];
       foreach ($node->get('field_pelit') as $peli_item) {
@@ -202,13 +204,17 @@ class GamesPageController extends ControllerBase {
         }
       }
 
+      $tyyppi_value = $node->get('field_tyyppi')->value;
+      $tyyppi_key   = $tyyppi_value ?: 'muu';
+      $tyyppi_label = \Drupal\konsolifin_term_page\PeliHandler::TYYPPI_LABELS[$tyyppi_key] ?? ucfirst($tyyppi_key);
+
       $releases[] = [
         'title'        => $node->getTitle(),
         'url'          => sizeof($pelit) > 1 ? NULL : $peli_url,
         'platforms'    => $platforms,
         'date_display' => $dateDisplay,
         'pelit'        => $pelit,
-        'tyyppi'       => \Drupal\konsolifin_term_page\PeliHandler::TYYPPI_LABELS[$node->get('field_tyyppi')->value] ?? ucfirst($node->get('field_tyyppi')->value),
+        'tyyppi'       => $tyyppi_label,
       ];
     }
 

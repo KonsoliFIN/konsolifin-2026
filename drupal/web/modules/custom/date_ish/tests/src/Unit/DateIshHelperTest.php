@@ -27,6 +27,33 @@ use PHPUnit\Framework\TestCase;
  */
 class DateIshHelperTest extends TestCase {
 
+  protected function setUp(): void {
+    parent::setUp();
+    $container = new \Drupal\Core\DependencyInjection\ContainerBuilder();
+    $string_translation = new class implements \Drupal\Core\StringTranslation\TranslationInterface {
+      public function translate($string, array $args = [], array $options = []) {
+        return $string;
+      }
+      public function translateString(\Drupal\Core\StringTranslation\TranslatableMarkup $translated_string) {
+        $string = $translated_string->getUntranslatedString();
+        $args = $translated_string->getArguments();
+        foreach ($args as $key => $val) {
+          if ($val instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+            $val = (string) $val;
+          }
+          $args[$key] = $val;
+        }
+        return strtr($string, $args);
+      }
+      public function formatPlural($count, $singular, $plural, array $args = [], array $options = []) {
+        return $count == 1 ? $singular : $plural;
+      }
+    };
+    $container->set('string_translation', $string_translation);
+    \Drupal::setContainer($container);
+  }
+
+
   /**
    * Quarter end: Q1→Mar 31, Q2→Jun 30, Q3→Sep 30, Q4→Dec 31.
    */
@@ -280,7 +307,7 @@ class DateIshHelperTest extends TestCase {
     ?int $quarter,
     ?int $half,
   ): void {
-    $output = DateIshHelper::formatForDisplay($accuracy, $storedDate);
+    $output = (string) DateIshHelper::formatForDisplay($accuracy, $storedDate);
 
     // All accuracy levels must contain the year.
     $this->assertStringContainsString(

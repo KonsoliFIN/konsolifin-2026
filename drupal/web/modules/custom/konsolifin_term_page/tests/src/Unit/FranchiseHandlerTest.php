@@ -29,6 +29,39 @@ require_once dirname(__DIR__, 3) . '/konsolifin_term_page.module';
  */
 class FranchiseHandlerTest extends TestCase {
 
+  protected function setUp(): void {
+    parent::setUp();
+    $string_translation = new class implements \Drupal\Core\StringTranslation\TranslationInterface {
+      public function translate($string, array $args = [], array $options = []) {
+        return $string;
+      }
+      public function translateString(\Drupal\Core\StringTranslation\TranslatableMarkup $translated_string) {
+        $string = $translated_string->getUntranslatedString();
+        $args = $translated_string->getArguments();
+        foreach ($args as $key => $val) {
+          if ($val instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+            $val = (string) $val;
+          }
+          $args[$key] = $val;
+        }
+        return strtr($string, $args);
+      }
+      public function formatPlural($count, $singular, $plural, array $args = [], array $options = []) {
+        return $count == 1 ? $singular : $plural;
+      }
+    };
+
+    if (\Drupal::hasContainer()) {
+      $container = \Drupal::getContainer();
+    }
+    else {
+      $container = new \Drupal\Core\DependencyInjection\ContainerBuilder();
+      \Drupal::setContainer($container);
+    }
+    $container->set('string_translation', $string_translation);
+  }
+
+
   /**
    * Valid accuracy levels for date_ish.
    */
@@ -121,10 +154,10 @@ class FranchiseHandlerTest extends TestCase {
       // or be an empty string for dateless terms.
       $this->assertArrayHasKey('date_display', $entry);
       if ($spec['accuracy'] !== NULL && $spec['stored_date'] !== NULL) {
-        $expected = DateIshHelper::formatForDisplay($spec['accuracy'], $spec['stored_date']);
+        $expected = (string) DateIshHelper::formatForDisplay($spec['accuracy'], $spec['stored_date']);
         $this->assertSame(
           $expected,
-          $entry['date_display'],
+          (string) $entry['date_display'],
           "Entry {$idx} date_display must equal DateIshHelper::formatForDisplay('{$spec['accuracy']}', '{$spec['stored_date']}').",
         );
       }
@@ -300,8 +333,8 @@ class FranchiseHandlerTest extends TestCase {
     $seed = crc32('non_franchise_vocabulary_unaltered_property');
     mt_srand($seed);
 
-    // Pool of vocabulary IDs that are NOT 'franchise'.
-    $vocabPool = ['peli', 'tags', 'category', 'genre', 'platform', 'publisher', 'developer', 'series', 'region', 'language'];
+    // Pool of vocabulary IDs that are NOT 'franchise' or 'peli' (which have handlers).
+    $vocabPool = ['tags', 'category', 'genre', 'platform', 'publisher', 'developer', 'series', 'region', 'language'];
 
     for ($i = 0; $i < 100; $i++) {
       // Pick a random non-franchise vid.

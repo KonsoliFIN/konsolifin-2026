@@ -100,6 +100,33 @@ class StubFieldItemList implements \IteratorAggregate, FieldItemListInterface {
  */
 class DateIshFormatterTest extends TestCase {
 
+  protected function setUp(): void {
+    parent::setUp();
+    $container = new \Drupal\Core\DependencyInjection\ContainerBuilder();
+    $string_translation = new class implements \Drupal\Core\StringTranslation\TranslationInterface {
+      public function translate($string, array $args = [], array $options = []) {
+        return $string;
+      }
+      public function translateString(\Drupal\Core\StringTranslation\TranslatableMarkup $translated_string) {
+        $string = $translated_string->getUntranslatedString();
+        $args = $translated_string->getArguments();
+        foreach ($args as $key => $val) {
+          if ($val instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+            $val = (string) $val;
+          }
+          $args[$key] = $val;
+        }
+        return strtr($string, $args);
+      }
+      public function formatPlural($count, $singular, $plural, array $args = [], array $options = []) {
+        return $count == 1 ? $singular : $plural;
+      }
+    };
+    $container->set('string_translation', $string_translation);
+    \Drupal::setContainer($container);
+  }
+
+
   /**
    * Data provider generating 100 random empty field item states.
    *
@@ -189,7 +216,7 @@ class DateIshFormatterTest extends TestCase {
 
     $result = $formatter->viewElements($items, 'en');
 
-    $this->assertSame('15 March 2025', $result[0]['#markup']);
+    $this->assertSame('15 March 2025', (string) $result[0]['#markup']);
   }
 
   /**
@@ -203,7 +230,7 @@ class DateIshFormatterTest extends TestCase {
 
     $result = $formatter->viewElements($items, 'en');
 
-    $this->assertSame('March 2025', $result[0]['#markup']);
+    $this->assertSame('March 2025', (string) $result[0]['#markup']);
   }
 
   /**

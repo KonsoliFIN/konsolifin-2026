@@ -37,6 +37,33 @@ use PHPUnit\Framework\TestCase;
  */
 class GamesPageControllerTest extends TestCase {
 
+  protected function setUp(): void {
+    parent::setUp();
+    $container = new \Drupal\Core\DependencyInjection\ContainerBuilder();
+    $string_translation = new class implements \Drupal\Core\StringTranslation\TranslationInterface {
+      public function translate($string, array $args = [], array $options = []) {
+        return $string;
+      }
+      public function translateString(\Drupal\Core\StringTranslation\TranslatableMarkup $translated_string) {
+        $string = $translated_string->getUntranslatedString();
+        $args = $translated_string->getArguments();
+        foreach ($args as $key => $val) {
+          if ($val instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+            $val = (string) $val;
+          }
+          $args[$key] = $val;
+        }
+        return strtr($string, $args);
+      }
+      public function formatPlural($count, $singular, $plural, array $args = [], array $options = []) {
+        return $count == 1 ? $singular : $plural;
+      }
+    };
+    $container->set('string_translation', $string_translation);
+    \Drupal::setContainer($container);
+  }
+
+
   /**
    * Possible term "types" for random generation.
    */
@@ -543,13 +570,13 @@ class GamesPageControllerTest extends TestCase {
       );
 
       // Verify date_display matches DateIshHelper output.
-      $expectedDateDisplay = DateIshHelper::formatForDisplay(
+      $expectedDateDisplay = (string) DateIshHelper::formatForDisplay(
         $expectedSpec['accuracy_level'],
         $expectedSpec['stored_date'],
       );
       $this->assertSame(
         $expectedDateDisplay,
-        $entry['date_display'],
+        (string) $entry['date_display'],
         "Entry {$idx} date_display must match DateIshHelper::formatForDisplay() output.",
       );
     }
@@ -877,22 +904,22 @@ class GamesPageControllerTest extends TestCase {
     $this->assertSame('Game Alpha', $result[0]['title']);
     $this->assertSame('/node/100', $result[0]['url']);
     $this->assertSame(
-      DateIshHelper::formatForDisplay('exact', $futureDate1),
-      $result[0]['date_display'],
+      (string) DateIshHelper::formatForDisplay('exact', $futureDate1),
+      (string) $result[0]['date_display'],
     );
 
     $this->assertSame('Game Beta', $result[1]['title']);
     $this->assertSame('/node/200', $result[1]['url']);
     $this->assertSame(
-      DateIshHelper::formatForDisplay('month', $futureDate2),
-      $result[1]['date_display'],
+      (string) DateIshHelper::formatForDisplay('month', $futureDate2),
+      (string) $result[1]['date_display'],
     );
 
     $this->assertSame('Game Gamma', $result[2]['title']);
     $this->assertSame('/node/300', $result[2]['url']);
     $this->assertSame(
-      DateIshHelper::formatForDisplay('quarter', $futureDate3),
-      $result[2]['date_display'],
+      (string) DateIshHelper::formatForDisplay('quarter', $futureDate3),
+      (string) $result[2]['date_display'],
     );
   }
 

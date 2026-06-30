@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Drupal\date_ish;
 
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
 /**
  * Static helper for date-ish date math and formatting.
  *
@@ -69,18 +71,25 @@ class DateIshHelper {
    * @param string $storedDate
    *   ISO 8601 date string (YYYY-MM-DD).
    *
-   * @return string
+   * @return \Drupal\Core\StringTranslation\TranslatableMarkup|string
    *   Human-readable label.
    */
-  public static function formatForDisplay(string $accuracy, string $storedDate): string {
+  public static function formatForDisplay(string $accuracy, string $storedDate): TranslatableMarkup|string {
     $date = \DateTimeImmutable::createFromFormat('Y-m-d', $storedDate);
     if ($date === false) {
       return $storedDate;
     }
 
     return match ($accuracy) {
-      'exact' => $date->format('j F Y'),
-      'month' => $date->format('F Y'),
+      'exact' => new TranslatableMarkup('@day @month @year', [
+        '@day' => $date->format('j'),
+        '@month' => new TranslatableMarkup($date->format('F')),
+        '@year' => $date->format('Y'),
+      ]),
+      'month' => new TranslatableMarkup('@month @year', [
+        '@month' => new TranslatableMarkup($date->format('F')),
+        '@year' => $date->format('Y'),
+      ]),
       'quarter' => self::formatQuarter($date),
       'year_half' => self::formatHalf($date),
       'year' => $date->format('Y'),
