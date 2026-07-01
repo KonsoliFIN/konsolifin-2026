@@ -1,0 +1,12 @@
+uuid: 1c0860fb-185f-4e51-a8a1-3ab0b0475b1b
+langcode: fi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
+id: taxonomy_term
+label: Luokittelutermi
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  title: '[term:name] | [site:name]'

@@ -1,0 +1,11 @@
+uuid: 25bab0f8-467c-4987-a0ef-221fbbf073cb
+langcode: fi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Yleinen
+tags:
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
