@@ -1,0 +1,11 @@
+uuid: af4bda5c-03d0-46e3-a01d-92e2c42ff08d
+langcode: fi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: Etusivu
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

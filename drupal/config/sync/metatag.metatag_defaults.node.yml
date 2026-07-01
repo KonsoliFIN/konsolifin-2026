@@ -1,0 +1,16 @@
+uuid: 833b1d09-3193-4421-b0c2-aee6ca77822c
+langcode: fi
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Sisältö
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  og_image: '[node:field_hero:entity:field_media_image:hero_banner:url]'
+  og_see_also: '[node:field_lisaa_sisaltoa]'
+  og_site_name: KonsoliFIN
+  og_url: 'https://www.konsolifin.net'
+  title: '[node:title] | [site:name]'
