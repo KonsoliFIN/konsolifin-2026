@@ -58,6 +58,8 @@
   border-radius: var(--radius-md);
   color: var(--color-text-primary);
   transition: background var(--transition-fast);
+  position: relative;
+  z-index: calc(var(--z-overlay) + 1);
 }
 
 .menu-toggle:hover {
@@ -85,6 +87,13 @@
 
 .menu-toggle__icon::before { top: -7px; }
 .menu-toggle__icon::after { top: 7px; }
+
+.menu-toggle[aria-expanded="true"] {
+  position: fixed;
+  top: calc((var(--header-height) - 40px) / 2);
+  right: var(--space-md);
+  z-index: calc(var(--z-overlay) + 1);
+}
 
 .menu-toggle[aria-expanded="true"] .menu-toggle__icon {
   background: transparent;

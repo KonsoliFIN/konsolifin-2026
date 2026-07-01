@@ -21,6 +21,17 @@
   transition: transform var(--transition-base), visibility 0s;
 }
 
+@media (max-width: 768px) {
+  .primary-nav[data-open="true"] {
+    display: block;
+  }
+
+  .primary-nav[data-open="false"],
+  .primary-nav:not([data-open]) {
+    display: none;
+  }
+}
+
 .primary-nav__overlay {
   position: fixed;
   inset: 0;
@@ -58,7 +69,7 @@
   background: var(--color-bg-hover);
 }
 
-.primary-nav .menu-item--active-trail > a {
+.primary-nav .menu-item--active-trail>a {
   color: var(--color-accent);
   background: var(--color-accent-glow);
 }
@@ -100,8 +111,7 @@
 /* Local tasks and user menu shown inline */
 #block-konsolifin2026-primary-local-tasks li,
 #block-konsolifin2026-account-menu li {
-    display: inline;
-    padding-right: 20px;
-    margin-bottom: 10px;
+  display: inline;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
-

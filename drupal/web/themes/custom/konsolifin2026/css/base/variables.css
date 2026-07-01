@@ -74,6 +74,7 @@
   --container-narrow: 800px;
   --sidebar-width: 320px;
   --grid-gap: var(--space-lg);
+  --mobile-cutoff: 768px;
 
   /* Borders & Radius */
   --radius-sm: 4px;

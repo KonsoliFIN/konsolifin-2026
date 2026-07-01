@@ -48,12 +48,10 @@
   left: 0;
   right: 0;
   padding: var(--space-2xl) var(--space-lg) var(--space-lg);
-  background: linear-gradient(
-    to top,
-    rgba(13, 13, 15, 0.95) 0%,
-    rgba(13, 13, 15, 0.7) 60%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(13, 13, 15, 0.95) 0%,
+      rgba(13, 13, 15, 0.7) 60%,
+      transparent 100%);
 }
 
 @media (min-width: 768px) {
@@ -162,12 +160,10 @@
   left: 0;
   right: 0;
   padding: var(--space-lg) var(--space-md) var(--space-md);
-  background: linear-gradient(
-    to top,
-    rgba(13, 13, 15, 0.95) 0%,
-    rgba(13, 13, 15, 0.6) 70%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(13, 13, 15, 0.95) 0%,
+      rgba(13, 13, 15, 0.6) 70%,
+      transparent 100%);
 }
 
 .frontpage-duo-card .card__title {
@@ -316,7 +312,7 @@
 }
 
 /* Loading spinner */
-.views-infinite-scroll-content-wrapper + .js-pager__items .throbber {
+.views-infinite-scroll-content-wrapper+.js-pager__items .throbber {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -327,5 +323,7 @@
 }
 
 @keyframes vis-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
