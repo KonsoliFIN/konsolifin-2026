@@ -1,0 +1,22 @@
+uuid: f307bb02-bdda-4ea7-b62f-bd2ffb9029f6
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.katsotut
+id: node.katsotut.promote
+field_name: promote
+entity_type: node
+bundle: katsotut
+label: 'Näytetään etusivulla'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

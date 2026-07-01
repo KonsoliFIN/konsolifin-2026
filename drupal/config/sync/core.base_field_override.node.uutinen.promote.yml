@@ -1,0 +1,22 @@
+uuid: c35c87e5-f6a1-436b-91e6-0b4c8c6291e4
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.uutinen
+id: node.uutinen.promote
+field_name: promote
+entity_type: node
+bundle: uutinen
+label: 'Näytetään etusivulla'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

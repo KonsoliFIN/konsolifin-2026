@@ -1,0 +1,22 @@
+uuid: 312763d7-b8db-492c-b73b-85b5e1f59999
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.blogi
+id: node.blogi.promote
+field_name: promote
+entity_type: node
+bundle: blogi
+label: 'Näytetään etusivulla'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean

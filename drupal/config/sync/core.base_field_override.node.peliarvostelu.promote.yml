@@ -1,0 +1,22 @@
+uuid: 39788790-8bab-4c49-8fd8-99151216c83d
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.peliarvostelu
+id: node.peliarvostelu.promote
+field_name: promote
+entity_type: node
+bundle: peliarvostelu
+label: 'Näytetään etusivulla'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
+field_type: boolean
