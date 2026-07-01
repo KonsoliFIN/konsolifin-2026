@@ -1,10 +1,8 @@
 /* Sarja (event series) highlight region — prime placement */
 .region-sarja-highlight {
-  background: linear-gradient(
-    135deg,
-    var(--color-sarja-glow) 0%,
-    transparent 60%
-  );
+  background: linear-gradient(135deg,
+      var(--color-sarja-glow) 0%,
+      transparent 60%);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
@@ -63,8 +61,15 @@
 }
 
 @keyframes sarja-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .sarja-highlight__link {

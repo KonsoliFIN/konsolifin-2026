@@ -21,7 +21,8 @@
 }
 
 .layout-main {
-  min-width: 0; /* Prevent grid blowout */
+  min-width: 0;
+  /* Prevent grid blowout */
 }
 
 /* Full-width regions */
@@ -50,7 +51,7 @@
 }
 
 /* Featured content — first item spans full width */
-.content-grid--featured > *:first-child {
+.content-grid--featured>*:first-child {
   grid-column: 1 / -1;
 }
 
@@ -70,7 +71,7 @@
   padding: var(--space-2xl) 0;
 }
 
-.layout-section + .layout-section {
+.layout-section+.layout-section {
   border-top: 1px solid var(--color-border);
 }
 

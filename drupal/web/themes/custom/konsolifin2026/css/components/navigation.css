@@ -19,12 +19,17 @@
   transform: translateX(0);
   visibility: visible;
   transition: transform var(--transition-base), visibility 0s;
-  display: block;
 }
 
-.primary-nav[data-open="false"],
-.primary-nav:not([data-open]) {
-  display: none;
+@media (max-width: 768px) {
+  .primary-nav[data-open="true"] {
+    display: block;
+  }
+
+  .primary-nav[data-open="false"],
+  .primary-nav:not([data-open]) {
+    display: none;
+  }
 }
 
 .primary-nav__overlay {
