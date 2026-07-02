@@ -99,7 +99,7 @@
   color: var(--color-text-primary);
 }
 
-.pager__item--active span {
+.pager__item.is-active a {
   background: var(--color-accent);
   border-color: var(--color-accent);
   color: #fff;
