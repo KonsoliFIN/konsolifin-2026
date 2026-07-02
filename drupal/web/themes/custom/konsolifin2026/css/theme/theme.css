@@ -117,6 +117,46 @@
   color: #fff;
 }
 
+.nav.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pager__item {
+  flex: 0 0 auto;
+}
+
+/* Mobiilinäkymä: alle 768px */
+@media (max-width: 768px) {
+
+  /* Ensimmäinen ja Edellinen yläpuolelle */
+  .pager__item--first,
+  .pager__item--previous {
+    order: -1;
+    /* nostetaan yläpuolelle */
+    flex-basis: 100%;
+    /* oma rivi */
+    text-align: center;
+  }
+
+  /* Seuraava ja Viimeinen alapuolelle */
+  .pager__item--next,
+  .pager__item--last {
+    order: 1;
+    /* siirretään alas */
+    flex-basis: 100%;
+    /* oma rivi */
+    text-align: center;
+  }
+
+  /* Numerot keskelle */
+  .pager__item:not(.pager__item--first):not(.pager__item--previous):not(.pager__item--next):not(.pager__item--last) {
+    order: 0;
+  }
+}
+
 /* Views exposed filters */
 .views-exposed-form {
   background: var(--color-bg-card);
