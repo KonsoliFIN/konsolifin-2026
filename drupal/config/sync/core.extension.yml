@@ -49,10 +49,8 @@ module:
   migrate: 0
   migrate_devel: 0
   migrate_drupal: 0
-  migrate_file_to_media: 0
   migrate_plus: 0
   migrate_tools: 0
-  migrate_upgrade: 0
   mysql: 0
   node: 0
   openid_connect: 0
