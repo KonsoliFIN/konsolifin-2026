@@ -554,8 +554,8 @@ class RssFeedService {
    *   Formatted duration.
    */
   protected function formatDuration(int $seconds): string {
-    $hours = floor($seconds / 3600);
-    $minutes = floor(($seconds / 60) % 60);
+    $hours = intdiv($seconds, 3600);
+    $minutes = intdiv($seconds, 60) % 60;
     $secs = $seconds % 60;
 
     if ($hours > 0) {
