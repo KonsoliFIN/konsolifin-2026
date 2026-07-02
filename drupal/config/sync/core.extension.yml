@@ -50,7 +50,6 @@ module:
   migrate_devel: 0
   migrate_drupal: 0
   migrate_file_to_media: 0
-  migrate_konsolifin: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
