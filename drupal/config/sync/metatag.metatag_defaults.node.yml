@@ -14,5 +14,5 @@ tags:
   og_see_also: '[node:field_lisaa_sisaltoa]'
   og_site_name: KonsoliFIN
   og_title: '[node:title]'
-  og_url: 'https://www.konsolifin.net'
+  og_url: '[node:url]'
   title: '[node:title] | [site:name]'

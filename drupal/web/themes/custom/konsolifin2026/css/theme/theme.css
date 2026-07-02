@@ -78,19 +78,7 @@
 }
 
 /* Pager */
-.pager {
-  margin-top: var(--space-3xl);
-  display: flex;
-  justify-content: center;
-}
-
-.pager__items {
-  display: flex;
-  gap: var(--space-xs);
-}
-
-.pager__item a,
-.pager__item span {
+.pager__item a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,10 +99,70 @@
   color: var(--color-text-primary);
 }
 
-.pager__item--active span {
+.pager__item.is-active a {
   background: var(--color-accent);
   border-color: var(--color-accent);
   color: #fff;
+}
+
+nav.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+ul.pager__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pager__item {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+/* Mobiilinäkymä: alle 768px */
+@media (max-width: 768px) {
+  li.pager__item--ellipsis {
+    display: none;
+  }
+
+  /* Jokainen ryhmä omalle rivilleen */
+  .pager__item--first,
+  .pager__item--previous,
+  .pager__item--next,
+  .pager__item--last {
+    flex: 1 1 100%;
+    /* vie koko rivin leveys */
+    text-align: center;
+  }
+
+  /* Järjestys: ensin yläpainikkeet, sitten numerot, lopuksi alapainikkeet */
+  .pager__item--first {
+    order: -1;
+  }
+
+  .pager__item--previous {
+    order: -1;
+  }
+
+  .pager__item--next {
+    order: 1;
+  }
+
+  .pager__item--last {
+    order: 1;
+  }
+
+  /* Numerot keskelle */
+  .pager__item:not(.pager__item--first):not(.pager__item--previous):not(.pager__item--next):not(.pager__item--last) {
+    order: 0;
+  }
 }
 
 /* Views exposed filters */
