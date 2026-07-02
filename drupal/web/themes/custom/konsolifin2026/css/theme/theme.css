@@ -78,34 +78,6 @@
 }
 
 /* Pager */
-.pager {
-  margin-top: var(--space-3xl);
-  display: flex;
-  justify-content: center;
-}
-
-.pager__items {
-  display: flex;
-  gap: var(--space-xs);
-}
-
-.pager__item a,
-.pager__item span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 40px;
-  height: 40px;
-  padding: 0 var(--space-sm);
-  border-radius: var(--radius-md);
-  font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
-  color: var(--color-text-secondary);
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  transition: all var(--transition-fast);
-}
-
 .pager__item a:hover {
   background: var(--color-bg-hover);
   color: var(--color-text-primary);
@@ -122,33 +94,43 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .pager__item {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 /* Mobiilinäkymä: alle 768px */
 @media (max-width: 768px) {
 
-  /* Ensimmäinen ja Edellinen yläpuolelle */
+  /* Jokainen ryhmä omalle rivilleen */
   .pager__item--first,
-  .pager__item--previous {
-    order: -1;
-    /* nostetaan yläpuolelle */
-    flex-basis: 100%;
-    /* oma rivi */
+  .pager__item--previous,
+  .pager__item--next,
+  .pager__item--last {
+    flex: 1 1 100%;
+    /* vie koko rivin leveys */
     text-align: center;
   }
 
-  /* Seuraava ja Viimeinen alapuolelle */
-  .pager__item--next,
-  .pager__item--last {
+  /* Järjestys: ensin yläpainikkeet, sitten numerot, lopuksi alapainikkeet */
+  .pager__item--first {
+    order: -2;
+  }
+
+  .pager__item--previous {
+    order: -1;
+  }
+
+  .pager__item--next {
     order: 1;
-    /* siirretään alas */
-    flex-basis: 100%;
-    /* oma rivi */
-    text-align: center;
+  }
+
+  .pager__item--last {
+    order: 2;
   }
 
   /* Numerot keskelle */
