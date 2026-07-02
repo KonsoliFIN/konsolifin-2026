@@ -79,6 +79,7 @@
 
 /* Pager */
 .pager__item a {
+  display: flex;
   align-items: center;
   justify-content: center;
   min-width: 40px;
@@ -120,6 +121,16 @@
 
 /* Mobiilinäkymä: alle 768px */
 @media (max-width: 768px) {
+  ul.pager__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  li.pager__item--ellipsis {
+    display: none;
+  }
 
   /* Jokainen ryhmä omalle rivilleen */
   .pager__item--first,
@@ -133,7 +144,7 @@
 
   /* Järjestys: ensin yläpainikkeet, sitten numerot, lopuksi alapainikkeet */
   .pager__item--first {
-    order: -2;
+    order: -1;
   }
 
   .pager__item--previous {
@@ -145,7 +156,7 @@
   }
 
   .pager__item--last {
-    order: 2;
+    order: 1;
   }
 
   /* Numerot keskelle */
