@@ -105,13 +105,20 @@
   color: #fff;
 }
 
-.nav.pager {
+nav.pager {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+ul.pager__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .pager__item {
@@ -121,13 +128,6 @@
 
 /* Mobiilinäkymä: alle 768px */
 @media (max-width: 768px) {
-  ul.pager__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
   li.pager__item--ellipsis {
     display: none;
   }
