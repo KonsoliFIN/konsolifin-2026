@@ -25,6 +25,7 @@ process:
     source: uid
     no_stub: true
   status: status
+  promote: promote
   created:
     plugin: callback
     callable: strtotime
