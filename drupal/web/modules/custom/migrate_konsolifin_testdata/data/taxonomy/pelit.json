@@ -4,7 +4,7 @@
     "name": "Baldur's Gate 3",
     "description": "Larian Studiosin kehittämä laaja roolipeli, joka perustuu Dungeons & Dragons -sääntöihin.",
     "www_sivu": "https://baldursgate3.game",
-    "hero_image_id": 1,
+    "kuva_id": 18,
     "weight": 0
   },
   {
@@ -12,7 +12,8 @@
     "name": "Alan Wake 2",
     "description": "Remedy Entertainmentin kehittämä psykologinen toimintapeli, jatko-osa vuoden 2010 klassikkoon.",
     "www_sivu": "https://www.alanwake.com",
-    "hero_image_id": 2,
+    "kuva_id": 18,
+    "franchise_id": 6,
     "weight": 1
   },
   {
@@ -20,7 +21,7 @@
     "name": "Returnal",
     "description": "Housemarquen kehittämä roguelike-ammuntapeli PS5:lle, yhdistää arkademaista toimintaa ja tarinaa.",
     "www_sivu": "https://www.playstation.com/games/returnal",
-    "hero_image_id": 3,
+    "kuva_id": 1,
     "weight": 2
   },
   {
@@ -28,7 +29,8 @@
     "name": "The Legend of Zelda: Tears of the Kingdom",
     "description": "Nintendon Zelda-sarjan uusin osa, avoimen maailman seikkailupeli Nintendo Switchille.",
     "www_sivu": "https://zelda.nintendo.com/tears-of-the-kingdom",
-    "hero_image_id": 4,
+    "kuva_id": 2,
+    "franchise_id": 1,
     "weight": 3
   },
   {
@@ -36,7 +38,7 @@
     "name": "Cities: Skylines II",
     "description": "Colossal Orderin kehittämä kaupunginrakennuspeli, jatko-osa suositulle Cities: Skylines -pelille.",
     "www_sivu": "https://www.paradoxinteractive.com/games/cities-skylines-ii",
-    "hero_image_id": 5,
+    "kuva_id": 13,
     "weight": 4
   },
   {
@@ -44,7 +46,8 @@
     "name": "God of War Ragnarök",
     "description": "Santa Monica Studion toimintaseikkailu, Kratoksen ja Atreuksen tarina jatkuu Pohjoismaisessa mytologiassa.",
     "www_sivu": "https://www.playstation.com/games/god-of-war-ragnarok",
-    "hero_image_id": 1,
+    "kuva_id": 6,
+    "franchise_id": 3,
     "weight": 5
   },
   {
@@ -52,7 +55,34 @@
     "name": "Hogwarts Legacy",
     "description": "Avalanche Softwaren kehittämä avoimen maailman toimintaroolipeli Harry Potter -universumissa.",
     "www_sivu": "https://www.hogwartslegacy.com",
-    "hero_image_id": 2,
+    "kuva_id": 7,
     "weight": 6
+  },
+  {
+    "id": 8,
+    "name": "Halo - Combat Evolved",
+    "description": "Joo, tämä on se peli.",
+    "www_sivu": "https://www.xbox.com/games/halo-combat-evolved",
+    "kuva_id": 1,
+    "franchise_id": 4,
+    "weight": 7
+  },
+  {
+    "id": 9,
+    "name": "Halo 2",
+    "description": "Jatkoa edelliselle.",
+    "www_sivu": "https://www.xbox.com/games/halo-2",
+    "kuva_id": 1,
+    "franchise_id": 4,
+    "weight": 8
+  },
+  {
+    "id": 10,
+    "name": "Halo 3",
+    "description": "Tämä sarja ei lopu koskaan.",
+    "www_sivu": "https://www.xbox.com/games/halo-3",
+    "kuva_id": 1,
+    "franchise_id": 4,
+    "weight": 9
   }
 ]

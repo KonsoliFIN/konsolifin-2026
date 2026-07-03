@@ -21,18 +21,19 @@ process:
     default_value: basic_html
   weight: weight
   field_www_sivu/uri: www_sivu
-  field_hero_kuva:
+  field_hero_kuva: kuva_id
+  field_kuuluu_pelisarjaan:
     -
       plugin: migration_lookup
-      migration: testdata_media_images
-      source: hero_image_id
+      migration: testdata_taxonomy_franchise
+      source: franchise_id
       no_stub: true
     -
       plugin: skip_on_empty
       method: process
-      message: 'No media entity found for hero image.'
 destination:
   plugin: entity:taxonomy_term
 migration_dependencies:
   required:
     - testdata_media_images
+    - testdata_taxonomy_franchise
