@@ -97,6 +97,53 @@
       </div>
     </div>
 
+    <div class="node__author_section">
+      {% if author_headshot is defined %}
+        <div class="node__author-headshot">
+          {{ author_headshot }}
+        </div>
+      {% endif %}
+      <div class="node__author-info">
+        {% if author_name %}
+          <div class="node__author-name">{{ author_name }}</div>
+        {% endif %}
+        {% if author_bio is defined %}
+          <div class="node__author-bio">{{ author_bio }}</div>
+        {% endif %}
+        {% if author_social is defined %}
+          <div class="node__author-social">
+            {{ author_social }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="node__body">
+      {{ content|without('field_hero',
+                         'field_arvosana',
+                         'field_alustat',
+                         'field_sarja',
+                         'field_comments',
+                         'field_pelit',
+                         'field_arvosteltu_versio',
+                         'field_ihmiset',
+                         'field_julkaisijat',
+                         'field_studiot',
+                         'field_lahde',
+                         'field_lisatiedot') }}
+      {% if display_submitted %}
+        <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
+          {{ 'Julkaistu'|t }} {{ node.getCreatedTime()|date('j.n.Y H.i') }}
+        </time>
+      {% endif %}
+    </div>
+
+    {% if review_label is defined and content.field_arvosana|render is not empty %}
+      <div class="node__stars-display">
+        <div class="node__summary-value">{{ content.field_arvosana }}</div>
+      </div>
+    {% endif %}
+
     {# --- Summary info bar --- #}
     <div class="node__summary-info">
       <div class="node__summary-info-inner">
@@ -149,56 +196,6 @@
           </div>
         {% endif %}
        </div>
-    </div>
-
-    <div class="node__body">
-      {% if display_submitted %}
-        <div class="node__author">
-          <time datetime="{{ node.getCreatedTime()|date('Y-m-d') }}">
-            {{ node.getCreatedTime()|date('j.n.Y H.i') }}
-          </time> &mdash;
-          <span>{{ author_name }}</span>
-        </div>
-      {% endif %}
-      {{ content|without('field_hero',
-                         'field_arvosana',
-                         'field_alustat',
-                         'field_sarja',
-                         'field_comments',
-                         'field_pelit',
-                         'field_arvosteltu_versio',
-                         'field_ihmiset',
-                         'field_julkaisijat',
-                         'field_studiot',
-                         'field_lahde',
-                         'field_lisatiedot') }}
-    </div>
-
-    {% if review_label is defined and content.field_arvosana|render is not empty %}
-      <div class="node__stars-display">
-        <div class="node__summary-value">{{ content.field_arvosana }}</div>
-      </div>
-    {% endif %}
-
-    <div class="node__author_section">
-      {% if author_headshot is defined %}
-        <div class="node__author-headshot">
-          {{ author_headshot }}
-        </div>
-      {% endif %}
-      <div class="node__author-info">
-        {% if author_name %}
-          <div class="node__author-name">{{ author_name }}</div>
-        {% endif %}
-        {% if author_bio is defined %}
-          <div class="node__author-bio">{{ author_bio }}</div>
-        {% endif %}
-        {% if author_social is defined %}
-          <div class="node__author-social">
-            {{ author_social }}
-          </div>
-        {% endif %}
-      </div>
     </div>
 
     {% if content.field_comments|render is not empty %}
