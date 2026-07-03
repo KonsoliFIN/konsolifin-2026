@@ -1,32 +1,164 @@
 [
   {
     "id": 1,
-    "filename": "hero-placeholder-01.png",
-    "alt": "Hero-kuva: sininen gradientti placeholder",
+    "filename": "action_shooter_scene.png",
+    "alt": "Action-shooter-pelin tapahtumapaikka",
     "uid": 2
   },
   {
     "id": 2,
-    "filename": "hero-placeholder-02.png",
-    "alt": "Hero-kuva: vihreä gradientti placeholder",
-    "uid": 3
+    "filename": "character_jrpg_protagonist.png",
+    "alt": "J-RRPG-pelin päähenkilö",
+    "uid": 2
   },
   {
     "id": 3,
-    "filename": "gallery-placeholder-01.png",
-    "alt": "Galleriakuva: oranssi placeholder",
+    "filename": "character_platformer_mascot.png",
+    "alt": "Tasohyppelypelin maskotti-hahmo",
     "uid": 2
   },
   {
     "id": 4,
-    "filename": "gallery-placeholder-02.png",
-    "alt": "Galleriakuva: violetti placeholder",
-    "uid": 4
+    "filename": "character_space_marine.png",
+    "alt": "Sci-fi-avaruussotilas-hahmo",
+    "uid": 2
   },
   {
     "id": 5,
-    "filename": "term-placeholder-01.png",
-    "alt": "Taksonomian oletuskuva: harmaa placeholder",
-    "uid": 3
+    "filename": "character_stealthy_rogue.png",
+    "alt": "Hiiviskelijä-roisto-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 6,
+    "filename": "character_tank_warrior.png",
+    "alt": "Tankki-soturi-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 7,
+    "filename": "character_wise_wizard.png",
+    "alt": "Viisas velho-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 8,
+    "filename": "console_living_room_scene.png",
+    "alt": "Pelikonsoli-olohuoneskene",
+    "uid": 2
+  },
+  {
+    "id": 9,
+    "filename": "editor_at_conference_scene.png",
+    "alt": "Peli-editori konferenssitilanteessa",
+    "uid": 2
+  },
+  {
+    "id": 10,
+    "filename": "editor_conference_closeup.png",
+    "alt": "Peli-editorin lähikuva konferenssissa",
+    "uid": 2
+  },
+  {
+    "id": 11,
+    "filename": "editor_thumbs_up_scene.png",
+    "alt": "Peli-editori näyttää peukkua",
+    "uid": 2
+  },
+  {
+    "id": 12,
+    "filename": "editor_thumbsup_closeup.png",
+    "alt": "Peli-editorin peukku-lähikuva",
+    "uid": 2
+  },
+  {
+    "id": 13,
+    "filename": "farming_sim_scene.png",
+    "alt": "Farmi-simulaatiopelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 14,
+    "filename": "fighting_game_scene.png",
+    "alt": "Taistelupelin taistelutilanne",
+    "uid": 2
+  },
+  {
+    "id": 15,
+    "filename": "game_dev_crunch_scene.png",
+    "alt": "Pelihuone: myöhään valvojaisissa",
+    "uid": 2
+  },
+  {
+    "id": 16,
+    "filename": "game_editors_scene.png",
+    "alt": "Pelihuone: pelitoimittajien kokous",
+    "uid": 2
+  },
+  {
+    "id": 17,
+    "filename": "greedy_publisher_exec_scene.png",
+    "alt": "Ahne kustannuspäällikkö tilanteessa",
+    "uid": 2
+  },
+  {
+    "id": 18,
+    "filename": "horror_game_scene.png",
+    "alt": "Kauhu-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 19,
+    "filename": "jrpg_village_scene.png",
+    "alt": "J-RRPG-kylän tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 20,
+    "filename": "kid_handheld_gaming_scene.png",
+    "alt": "Lapsi käsikonsolipelaa",
+    "uid": 2
+  },
+  {
+    "id": 21,
+    "filename": "pc_gaming_setup_scene.png",
+    "alt": "PC-pelaajan setup-tila",
+    "uid": 2
+  },
+  {
+    "id": 22,
+    "filename": "puzzle_game_scene.png",
+    "alt": "Puzzle-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 23,
+    "filename": "quirky_studio_head_scene.png",
+    "alt": "Pienyrityksen outo johtaja",
+    "uid": 2
+  },
+  {
+    "id": 24,
+    "filename": "racing_game_scene.png",
+    "alt": "Kilpa-ajopelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 25,
+    "filename": "rts_game_scene.png",
+    "alt": "Reaaliaikastrategiapelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 26,
+    "filename": "scifi_game_scene.png",
+    "alt": "Scifi-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 27,
+    "filename": "scifi_platformer_scene.png",
+    "alt": "Scifi-tasohyppelyn tapahtumapaikka",
+    "uid": 2
   }
 ]
