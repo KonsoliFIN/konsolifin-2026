@@ -1,47 +1,64 @@
 [
   {
     "id": 2,
-    "name": "mikkop",
-    "mail": "mikko.pelkonen@example.com",
-    "oikea_nimi": "Mikko Pelkonen",
+    "name": "jyri",
+    "mail": "jyri@konsolifin.fi",
+    "oikea_nimi": "Jyri Hemmonen",
     "esittely": "Pelialan toimittaja vuodesta 2010. Erikoistunut JRPG- ja strategiapeleihin.",
-    "roles": ["authenticated", "toimitus"],
+    "roles": [
+      "administrator",
+      "authenticated",
+      "toimitus"
+    ],
     "status": 1
   },
   {
     "id": 3,
-    "name": "annav",
-    "mail": "anna.virtanen@example.com",
-    "oikea_nimi": "Anna Virtanen",
+    "name": "jaakko",
+    "mail": "jaakko@konsolifin.fi",
+    "oikea_nimi": "Jaakko Juustonen",
     "esittely": "KonsoliFIN:n päätoimittaja. Intohimona toimintapelit ja indie-skenessä.",
-    "roles": ["authenticated", "johtoryhma"],
+    "roles": [
+      "authenticated",
+      "johtoryhma",
+      "toimitus"
+    ],
     "status": 1
   },
   {
     "id": 4,
-    "name": "jussih",
-    "mail": "jussi.hamalainen@example.com",
-    "oikea_nimi": "Jussi Hämäläinen",
+    "name": "petri1",
+    "mail": "petri1@konsolifin.fi",
+    "oikea_nimi": "Petri Ykkönen",
     "esittely": "Podcast-juontaja ja retropelien ystävä. Striimailee viikonloppuisin.",
-    "roles": ["authenticated", "toimitus"],
+    "roles": [
+      "authenticated",
+      "toimitus"
+    ],
     "status": 1
   },
   {
     "id": 5,
-    "name": "laurak",
-    "mail": "laura.korhonen@example.com",
-    "oikea_nimi": "Laura Korhonen",
+    "name": "petri2",
+    "mail": "petri2@konsolifin.fi",
+    "oikea_nimi": "Petri Kakkonen",
     "esittely": "Videopelien yhteisömanageri ja sisällöntuottaja. Rakastaa co-op-pelejä.",
-    "roles": ["authenticated", "yhteisosisallontuottaja"],
+    "roles": [
+      "authenticated",
+      "yhteisosisallontuottaja"
+    ],
     "status": 1
   },
   {
     "id": 6,
-    "name": "sampan",
-    "mail": "sampa.nieminen@example.com",
-    "oikea_nimi": "Sampa Nieminen",
+    "name": "niko",
+    "mail": "niko@konsolifin.fi",
+    "oikea_nimi": "Niko Yleismies",
     "esittely": "Teknologiatoimittaja ja laitearviospesialisti. PC-pelaaja sydämeltään.",
-    "roles": ["authenticated", "toimitus"],
+    "roles": [
+      "authenticated",
+      "toimitus"
+    ],
     "status": 1
   }
 ]
