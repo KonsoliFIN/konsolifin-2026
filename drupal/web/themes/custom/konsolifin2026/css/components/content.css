@@ -147,6 +147,10 @@
   color: var(--color-text-muted);
 }
 
+.card__meta time {
+  padding-top: 0;
+}
+
 /* Summary info bar — between hero and body */
 .node__summary-info {
   position: relative;
