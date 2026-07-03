@@ -18,5 +18,9 @@ process:
   field_oikea_nimi: oikea_nimi
   field_esittely: esittely
   roles: roles
+  pass:
+    - 
+      plugin: default_value
+      default_value: $2y$12$g0qaO/8bCJZwBS2fWvrIyuwODhIWqwIALzP3PPGSYOsQf50OYIijO
 destination:
   plugin: entity:user
