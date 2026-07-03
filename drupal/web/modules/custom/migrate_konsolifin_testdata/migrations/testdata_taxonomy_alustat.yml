@@ -19,6 +19,7 @@ process:
   description/format:
     plugin: default_value
     default_value: basic_html
+  field_hero_kuva: kuva_id
   weight: weight
 destination:
   plugin: entity:taxonomy_term

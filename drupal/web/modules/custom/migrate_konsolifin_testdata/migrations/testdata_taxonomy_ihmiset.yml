@@ -20,6 +20,7 @@ process:
     plugin: default_value
     default_value: basic_html
   weight: weight
+  field_hero_kuva: kuva_id
 destination:
   plugin: entity:taxonomy_term
 migration_dependencies:

@@ -3,42 +3,49 @@
     "id": 1,
     "name": "PlayStation 5",
     "description": "Sonyn yhdeksännen sukupolven pelikonsoli, julkaistu marraskuussa 2020.",
+    "kuva_id": 8,
     "weight": 0
   },
   {
     "id": 2,
     "name": "Xbox Series X",
     "description": "Microsoftin yhdeksännen sukupolven lippulaivakonsoli.",
+    "kuva_id": 8,
     "weight": 1
   },
   {
     "id": 3,
     "name": "Nintendo Switch",
     "description": "Nintendon hybridikonsoli, joka toimii sekä kotona että mukana.",
+    "kuva_id": 20,
     "weight": 2
   },
   {
     "id": 4,
     "name": "PC",
     "description": "Tietokoneella pelaaminen, tukee laajinta valikoimaa laitteistoja ja oheislaitteita.",
+    "kuva_id": 21,
     "weight": 3
   },
   {
     "id": 5,
     "name": "PlayStation 4",
     "description": "Sonyn kahdeksannen sukupolven konsoli, edelleen laajasti käytössä.",
+    "kuva_id": 8,
     "weight": 4
   },
   {
     "id": 6,
     "name": "Xbox One",
     "description": "Microsoftin kahdeksannen sukupolven konsoli.",
+    "kuva_id": 8,
     "weight": 5
   },
   {
     "id": 7,
     "name": "Nintendo Switch 2",
     "description": "Nintendon seuraavan sukupolven hybridikonsoli.",
+    "kuva_id": 20,
     "weight": 6
   }
 ]

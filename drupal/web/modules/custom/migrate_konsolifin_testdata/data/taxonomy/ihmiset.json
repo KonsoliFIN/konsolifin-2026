@@ -3,36 +3,42 @@
     "id": 1,
     "name": "Mikko Rautalahti",
     "description": "Suomalainen pelikirjoittaja ja käsikirjoittaja, tunnettu työstään Remedyn peleissä.",
+    "kuva_id": 23,
     "weight": 0
   },
   {
     "id": 2,
     "name": "Sami Vanhatalo",
     "description": "Pelialan journalisti ja sisällöntuottaja, pitkän linjan pelimedia-ammattilainen.",
+    "kuva_id": 20,
     "weight": 1
   },
   {
     "id": 3,
     "name": "Aino Korhonen",
     "description": "Pelitoimittaja ja striimaaja, erikoistunut indie-peleihin.",
+    "kuva_id": 16,
     "weight": 2
   },
   {
     "id": 4,
     "name": "Jukka Viitanen",
     "description": "Retropelien asiantuntija ja keräilijä, podcast-juontaja.",
+    "kuva_id": 12,
     "weight": 3
   },
   {
     "id": 5,
     "name": "Laura Mäkinen",
     "description": "E-urheilutoimittaja ja analyytikko, seuraa kilpapelaamisen kehitystä.",
+    "kuva_id": 8,
     "weight": 4
   },
   {
     "id": 6,
     "name": "Pekka Koskinen",
     "description": "Pelisuunnittelija ja luennoitsija, opettaa pelisuunnittelua yliopistossa.",
+    "kuva_id": 7,
     "weight": 5
   }
 ]
