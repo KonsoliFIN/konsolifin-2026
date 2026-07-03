@@ -5,6 +5,7 @@
     "mail": "jyri@konsolifin.fi",
     "oikea_nimi": "Jyri Hemmonen",
     "esittely": "Pelialan toimittaja vuodesta 2010. Erikoistunut JRPG- ja strategiapeleihin.",
+    "kuva_id": 17,
     "roles": [
       "administrator",
       "authenticated",
@@ -18,6 +19,7 @@
     "mail": "jaakko@konsolifin.fi",
     "oikea_nimi": "Jaakko Juustonen",
     "esittely": "KonsoliFIN:n päätoimittaja. Intohimona toimintapelit ja indie-skenessä.",
+    "kuva_id": 10,
     "roles": [
       "authenticated",
       "johtoryhma",
@@ -31,6 +33,7 @@
     "mail": "petri1@konsolifin.fi",
     "oikea_nimi": "Petri Ykkönen",
     "esittely": "Podcast-juontaja ja retropelien ystävä. Striimailee viikonloppuisin.",
+    "kuva_id": 11,
     "roles": [
       "authenticated",
       "toimitus"
@@ -43,6 +46,7 @@
     "mail": "petri2@konsolifin.fi",
     "oikea_nimi": "Petri Kakkonen",
     "esittely": "Videopelien yhteisömanageri ja sisällöntuottaja. Rakastaa co-op-pelejä.",
+    "kuva_id": 12,
     "roles": [
       "authenticated",
       "yhteisosisallontuottaja"
@@ -55,6 +59,7 @@
     "mail": "niko@konsolifin.fi",
     "oikea_nimi": "Niko Yleismies",
     "esittely": "Teknologiatoimittaja ja laitearviospesialisti. PC-pelaaja sydämeltään.",
+    "kuva_id": 9,
     "roles": [
       "authenticated",
       "toimitus"

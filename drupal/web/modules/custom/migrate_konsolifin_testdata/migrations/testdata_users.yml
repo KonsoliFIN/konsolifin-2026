@@ -18,6 +18,7 @@ process:
   field_oikea_nimi: oikea_nimi
   field_esittely: esittely
   roles: roles
+  field_kuva/target_id: kuva_id
   pass:
     - 
       plugin: default_value
