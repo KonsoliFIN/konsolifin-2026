@@ -1,0 +1,86 @@
+id: testdata_nodes_julkaisu
+label: Import test fixture julkaisu nodes
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: nodes/julkaisu.json
+  ids:
+    id:
+      type: integer
+process:
+  type:
+    plugin: default_value
+    default_value: julkaisu
+  title: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  uid: uid
+  status: status
+  created:
+    plugin: callback
+    callable: strtotime
+    source: created
+  field_hero:
+    -
+      plugin: migration_lookup
+      migration: testdata_media_images
+      source: hero_image_id
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: process
+  field_alustat:
+    plugin: migration_lookup
+    migration: testdata_taxonomy_alustat
+    source: alustat_ids
+    no_stub: true
+  field_pelit:
+    plugin: migration_lookup
+    migration: testdata_taxonomy_pelit
+    source: pelit_ids
+    no_stub: true
+  field_julkaisijat:
+    plugin: migration_lookup
+    migration: testdata_taxonomy_pelijulkaisijat
+    source: julkaisijat_ids
+    no_stub: true
+  field_studiot:
+    plugin: migration_lookup
+    migration: testdata_taxonomy_pelistudiot
+    source: studiot_ids
+    no_stub: true
+  field_kuvat:
+    plugin: migration_lookup
+    migration: testdata_media_images
+    source: kuvat_ids
+    no_stub: true
+  field_julkaisuajankohta:
+    -
+      plugin: sub_process
+      process:
+        accuracy_level:
+          plugin: default_value
+          default_value: exact
+        stored_date:
+          plugin: callback
+          callable: strtotime
+          source: created
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - testdata_users
+    - testdata_media_images
+    - testdata_taxonomy_alustat
+    - testdata_taxonomy_alustatarkenne
+    - testdata_taxonomy_ihmiset
+    - testdata_taxonomy_pelistudiot
+    - testdata_taxonomy_pelijulkaisijat
+    - testdata_taxonomy_pelit
+    - testdata_taxonomy_sarja
+    - testdata_taxonomy_franchise
