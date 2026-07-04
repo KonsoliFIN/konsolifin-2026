@@ -34,6 +34,7 @@ process:
       plugin: skip_on_empty
       method: process
       message: 'No user found for this media entity.'
+  uuid: uuid
 destination:
   plugin: entity:media
   default_bundle: image

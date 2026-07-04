@@ -10,77 +10,36 @@ source:
   ids:
     id:
       type: integer
-  constants:
-    audio_source_base: modules/custom/migrate_konsolifin_testdata/data/audio/
-    audio_dest_base: 'public://testdata/audio/'
 process:
-  type:
-    plugin: default_value
-    default_value: podcast
   title: title
   body/value: body
   body/format:
     plugin: default_value
     default_value: full_html
   uid:
-    plugin: migration_lookup
-    migration: testdata_users
-    source: uid
-    no_stub: true
+    plugin: default_value
+    default_value: 6
   status: status
   created:
     plugin: callback
     callable: strtotime
     source: created
-  audio_source_path:
-    plugin: concat
-    source:
-      - constants/audio_source_base
-      - mp3_filename
-    delimiter: ''
-  audio_dest_path:
-    plugin: concat
-    source:
-      - constants/audio_dest_base
-      - mp3_filename
-    delimiter: ''
   field_mp3:
-    plugin: file_copy
-    source:
-      - '@audio_source_path'
-      - '@audio_dest_path'
-    file_exists: replace
+    plugin: default_value
+    default_value: 101
   field_osallistujat:
-    plugin: migration_lookup
-    migration: testdata_users
-    source: osallistujat_ids
-    no_stub: true
-  field_ihmiset:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_ihmiset
-    source: osallistujat_ids
-    no_stub: true
-  field_pelit:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_pelit
-    source: pelit_ids
-    no_stub: true
-  field_sarja:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_sarja
-    source: sarja_ids
-    no_stub: true
-  field_alustat:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_alustat
-    source: alustat_ids
-    no_stub: true
+    plugin: default_value
+    default_value: [2,3]
+  field_ihmiset: ihmiset_ids
+  field_pelit: pelit_ids
 destination:
-  plugin: entity:node
+  plugin: 'entity_complete:node'
+  default_bundle: podcast
 migration_dependencies:
   required:
     - testdata_users
     - testdata_media_images
+    - testdata_media_audio
     - testdata_taxonomy_alustat
     - testdata_taxonomy_ihmiset
     - testdata_taxonomy_pelit

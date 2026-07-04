@@ -1,0 +1,15 @@
+uuid: 95a3151a-c5fe-47da-83f7-6d8da0646b0e
+langcode: fi
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_konsolifin_testdata
+_core:
+  default_config_hash: 7fYbZJeV4oc-v84DlB5vw4Ne74xG3wgjVv5ouUPS3XI
+id: testdata
+label: 'Test Fixture Data'
+description: 'Test fixture migrations for local development. Provides realistic Finnish gaming content from JSON fixture files without requiring access to the production database.'
+source_type: null
+module: null
+shared_configuration: null

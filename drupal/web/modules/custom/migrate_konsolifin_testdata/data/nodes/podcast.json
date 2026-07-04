@@ -1,41 +1,424 @@
 [
   {
-    "id": 1,
-    "title": "KonsoliFIN Podcast #42: Kevään pelit ja odotukset",
-    "body": "<p>Tässä jaksossa käymme läpi kevään 2024 kiinnostavimmat peliljulkaisut ja keskustelemme mitä odotamme loppuvuodelta. Mikko ja Jussi väittelevät onko Baldur's Gate 3 todella vuosikymmenen paras roolipeli.</p><p>Lisäksi kuulemme kuulijan kysymyksiä ja vastaamme niihin jakson lopussa.</p>",
-    "uid": 4,
+    "id": 65440,
+    "title": "KonsoliFIN Podcast #230: Kesäpelifestarit",
+    "body": "<p>Kauden viimeistä viedään, ja sen kunniaksi dynaamisesta podcast-kaksikostamme tuli trio! Jakson juontajana toimii <strong>Niko Lähteenmäki</strong> ja trion täydentävät <strong>Petri Leskinen </strong>sekä uutishirvimme <strong>Jaakko Herranen</strong>!</p>\r\n\r\n<p>Kesäkuulumisten sekä politiikka-/urheilukornerin ohella kolmikko keskustelee taannoin pidetystä Summer Game Festistä sekä sen ympärille kiinnittyvästä hulabaloosta. <strong>Geoff Keighleyn</strong> suurtapahtumassa nähtiin jälleen kerran kasoittain mielenkiintoisia uusia nimikkeitä, niin julkistamattomia kuin julkistettujakin. Luvassa on paljon mielenkiintoista ja rönsyilevää keskustelua, sillä huomasimme, ettei aika mitenkään riittänyt ihan kaiken läpikäymiseen.</p>\r\n\r\n<p>Mediakörnerissä puhuttaa katsottujen puolella jälleen kerran <em>The Walking Dead</em> sekä hiljattain ilmestynyt <em>Obsession</em>-elokuva. Pelattujen puolella Nikoa on viihdyttänyt muun muassa <em>Resident Evil</em> -sarjan <a href=\"https://www.konsolifin.net/arvostelu/tarkoituksellisen-kaksijakoinen-kokemus-kosiskelee-erityisesti-nostalgianalkaisia-resident-evil-requiem\"><em>Requiem</em></a> ja <em><a href=\"https://www.konsolifin.net/arvostelu/pelkaatko-pimeaa-vai-rakastatko-toimintaa-ndash-nama-herkut-vain-paranevat-syodessa-resident-evil-village\">Village</a> </em>sekä kolmoskaudelle tänä vuonna suunnannut <a href=\"https://www.konsolifin.net/arvostelu/rautanyrkin-vakeva-paluu-maiskintojen-karkikahinoihin-ndash-vain-pac-man-puuttuu-tekken-8\"><em>Tekken 8</em></a>. Petri ja Niko jubailevat myös tuoreesta <em>007 First Lightista</em>, kun taas Jaakko kertoilee meille <a href=\"https://www.konsolifin.net/arvostelu/pywelin-maailma-valtava-ja-ihastuttava-mutta-itse-en-loytanyt-sielta-koukkua-crimson-desert\"><em>Crimson Desert</em></a> -seikkailuistaan.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 10.6.2026.</p>\r\n\r\n<p>Musat by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p>Katso videoversio alta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/7jlUpSh8HqP3hHl2OYo0I1?si=aPOHGoFUST-7KWmqlzIeFg\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-230-kes%C3%A4pelifestarit/id1292159750?i=1000772519527\">Apple Podcastista</a>!</p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/N70I0DGd1tY?is=YQx6bew6GNi24rwV\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Kfin podcast 230\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/N70I0DGd1tY?wmode=transparent?is=YQx6bew6GNi24rwV&amp;jqoemcache=UsWbq\" title=\"Kfin podcast 230\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 5,
     "status": 1,
-    "created": "2024-03-01T08:00:00",
-    "mp3_filename": "podcast-placeholder.mp3",
-    "osallistujat_ids": [1, 2],
-    "pelit_ids": [1, 2],
-    "sarja_ids": [3],
-    "alustat_ids": [1, 4]
+    "promote": 1,
+    "created": "2026-06-24 09:49:08",
+    "hero_image_id": 2,
+    "alustat_ids": [
+      3,
+      4
+    ],
+    "pelit_ids": [
+      7
+    ],
+    "ihmiset_ids": [
+      6
+    ],
+    "julkaisijat_ids": [
+      3
+    ],
+    "studiot_ids": [
+      3
+    ],
+    "kuvat_ids": [],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
   },
   {
-    "id": 2,
-    "title": "KonsoliFIN Podcast #43: Nintendo Switch 2 -spekulaatiot",
-    "body": "<p>Omistetamme koko jakson Nintendon seuraavan konsolin pohtimiseen. Mitä tiedämme, mitä uskomme ja mitä toivomme? Aino liittyy keskusteluun indie-pelien näkökulmasta.</p><p>Bonuksena keskustelu siitä, mitkä Switch-pelit ansaitsevat jatko-osia uudella laitteella.</p>",
+    "id": 65393,
+    "title": "KonsoliFIN Podcast #229: Putoamisvaara",
+    "body": "<p>Vaikka kesä lämmittää jo, ei dynaaminen podcast-kaksikko malttanut vielä(kään) jäädä kesätauolle. Jakson juontajana toimii <strong>Niko Lähteenmäki</strong> ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p>Aloitamme juttutuokion käymällä hiukan läpi viimeisimpiä kuulumisia sekä pitkästä aikaa jutellaan vähän myös urheilusta. Uutiskatsauksessa keskustellaan tänään muun muassa taannoin Helsingin Messukeskuksessa järjestetystä Arctic Lights Comic Conista, Finnkinon uudesta kuukausipassista sekä ex-Housemarque <strong>Harry Krügerin</strong> hiljattain perustamasta studiosta. Mietteitä luvassa myös pelien katoamisesta kauppapaikalta, joista tuoreimpana esimerkkinä on vain kolme vuotta myynnissä ollut <em>LEGO 2K Drive</em>.</p>\r\n\r\n<p>Mediakörnerissä puhuttaa katsottujen puolella jälleen kerran <em>The Walking Dead</em> sekä hiljattain ilmestynyt <em>Mortal Kombat II</em> -elokuva. Pelattujen puolella Nikoa on viihdyttänyt muun muassa <em>GTA IV</em> sekä <em>Mina the Hollower</em>, kun taas Petri on seikkaillut esimerkiksi <em>Mixtapen </em>sekä tuoreimman <em>LEGO Batmanin</em> parissa.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 20.5.2026.</p>\r\n\r\n<p>Musat by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p>Katso videoversio alta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/58VFvhRN4udAg2HNvrdVxI?si=c8718a4c92d848f8\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/tw/podcast/konsolifin-podcast-229-putoamisvaara/id1292159750?i=1000769198663\">Apple Podcastista</a>!</p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/ywOwmS6GeOA?si=N5DOko8OuLogXuO4\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"kfin podcast 229\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/ywOwmS6GeOA?wmode=transparent?si=N5DOko8OuLogXuO4&amp;jqoemcache=xTSu1\" title=\"kfin podcast 229\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
     "uid": 4,
     "status": 1,
-    "created": "2024-03-15T08:00:00",
-    "mp3_filename": "podcast-placeholder.mp3",
-    "osallistujat_ids": [2, 3, 4],
-    "pelit_ids": [4],
-    "sarja_ids": [3],
-    "alustat_ids": [3, 7]
+    "promote": 1,
+    "created": "2026-06-13 12:49:08",
+    "hero_image_id": 11,
+    "alustat_ids": [
+      3,
+      4
+    ],
+    "pelit_ids": [
+      2,
+      5,
+      8,
+      9,
+      9
+    ],
+    "ihmiset_ids": [
+      3,
+      3,
+      3
+    ],
+    "julkaisijat_ids": [
+      3,
+      4
+    ],
+    "studiot_ids": [
+      6,
+      7
+    ],
+    "kuvat_ids": [
+      18,
+      18,
+      22
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
   },
   {
-    "id": 3,
-    "title": "KonsoliFIN Podcast #44: Suomalaisen peliteollisuuden tila",
-    "body": "<p>Vieraana peliteollisuuden asiantuntija Pekka Koskinen. Keskustelemme Suomen pelialan nykytilanteesta, haasteista ja tulevaisuudennäkymistä.</p><p>Käsittelemme myös YT-neuvotteluja, joita on nähty useissa suomalaisissa studioissa viime aikoina.</p>",
-    "uid": 4,
+    "id": 65345,
+    "title": "KonsoliFIN Podcast #228: HIIRI: Palkattava yksityisetsivä",
+    "body": "<p data-encore-id=\"text\" data-slate-node=\"element\">Se olisi kuulkaas vappu! Munkin ja siman tuoksuisissa tunnelmissa onkin hyvä castailla, varsinkin kun Suomen kesä alkaa viimeinkin näyttämään parhaita puoliaan. Jakson juontajana toimii <strong>Niko Lähteenmäki </strong>ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Aloitamme juttutuokion käymällä hiukan läpi viimeisimpiä kuulumisia sekä tietenkin maailmalla tapahtuneita edesottamuksia. Uutiskatsauksessa keskustellaan tänään muun muassa <strong>Shuhei Yoshidan</strong> viimeisistä ajoista PlayStationilla, <em>MindsEye</em>-studiojohdon viimeisimmistä sekoiluista sekä Xboxin Game Pass -hinnaston tuoreimmista käänteistä. Kotimaan katsauksessa käydään läpi Housemarquen uunituoreen merkkiteoksen eli <em>SAROSin </em>arvostelumenestystä sekä keskustellaan helsinkiläisen Super Bario -baarin tilanteesta.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Mediakörnerissä puhuttaa katsottujen puolella jälleen kerran <em>The Walking Dead</em> sekä hiljattain ilmestynyt <a href=\"https://www.konsolifin.net/artikkeli/viihdyttava-joskin-ontto-jatko-osa-ndash-arvostelussa-super-mario-galaxy-movie-leffa\"><em>The Super Mario Galaxy Movie</em></a>. Pelattujen puolella Nikoa on viihdyttänyt muun muassa <a href=\"https://www.konsolifin.net/arvostelu/tarkoituksellisen-kaksijakoinen-kokemus-kosiskelee-erityisesti-nostalgianalkaisia-resident-evil-requiem\"><em>Resident Evil Requiem</em></a> sekä <em>Sonic Racing: CrossWorlds</em>, kun taas Petri on seikkaillut esimerkiksi <a href=\"https://www.konsolifin.net/arvostelu/talvinen-muumilaakso-kutsuu-lamminhenkiseen-seikkailuun-moomintroll-winter-s-warmth\">Muumien maailmassa</a> sekä viihdyttänyt itseään <em>Tomodachi Life: Living the Dreamin</em> parissa. Molemmilla on myös sananen jos toinenkin sanottavana upean visuaalisen tyylin omaavasta <a href=\"https://www.konsolifin.net/arvostelu/viihdyttava-ja-visuaalisesti-upea-sarjakuvadekkari-keskittyy-aivan-liikaa-raiskintaan-mouse-p-i-for-hire\"><em>MOUSE: P.I. for Hire</em></a> -räiskinnästä.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tämä jakso on nauhoitettu 29.4.2026.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Musat by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Katso videoversio alta (tulossa hiukan myöhemmin) tai kuuntele jakso <a href=\"https://open.spotify.com/episode/0p0gm7iqH77Zna6IOjTsRs?si=d8b1240d88f3480d\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-228-hiiri-palkattava-yksityisetsiv%C3%A4/id1292159750?i=1000765740023\">Apple Podcastista</a>!</p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/Kg5ePyzMTPg\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"KFIN Podcast #228\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/Kg5ePyzMTPg?wmode=transparent&amp;jqoemcache=a8BxN\" title=\"KFIN Podcast #228\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 6,
     "status": 1,
-    "created": "2024-04-01T08:00:00",
-    "mp3_filename": "podcast-placeholder.mp3",
-    "osallistujat_ids": [2, 6],
-    "pelit_ids": [],
-    "sarja_ids": [3],
-    "alustat_ids": []
+    "promote": 1,
+    "created": "2026-06-03 14:49:08",
+    "hero_image_id": 16,
+    "alustat_ids": [],
+    "pelit_ids": [
+      1
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      3,
+      4
+    ],
+    "studiot_ids": [],
+    "kuvat_ids": [
+      6,
+      7,
+      10
+    ],
+    "sarja_id": 4,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65270,
+    "title": "KonsoliFIN Podcast #227.5: Maapallon viimeinen talkkari (vieraana Antti Ilvessuo)",
+    "body": "<p data-encore-id=\"text\" data-slate-node=\"element\">KonsoliFIN kävi haastattelemassa <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.channel37.co/\">⁠Channel37:n⁠</a> keulakuvaa <strong>Antti Ilvessuota</strong> uuden <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.konsolifin.net/artikkeli/selviytymista-ilmastonmuutoksen-jalkeisessa-maailmassa-ndash-testissa-kotimainen-last\">⁠<em>The Last Caretaker</em>⁠</a> -pelin tiimoilta!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Mies muistetaan uuden studionsa lisäksi muun muassa RedLynxiltä, jossa hän toimi <em>Trials</em>-pelisarjan ohjaajana.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tämä jakso on nauhoitettu 16.3.2026.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Musat by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tsekkaa videoversio alta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/6Bd6qXqSvtUw9JxPHqoIS9?si=SlcydPy5QbmpprC_rrWJXA&amp;context=spotify%3Ashow%3A7MczzrQTeiKg7hICy0C1N0\">Spotifysta</a> tai Apple Podcastista!</p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/kcZOGrXmRQk?is=ziCPUQGV_UA8dohj\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Kfin cast\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/kcZOGrXmRQk?wmode=transparent?is=ziCPUQGV_UA8dohj&amp;jqoemcache=V5wRT\" title=\"Kfin cast\" width=\"425\"></iframe></div>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Kysymyksiä voi lähettää:</p>\r\n\r\n<ul data-slate-node=\"element\">\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://discord.gg/qSBUQa3APC\">⁠⁠Discordissa⁠⁠</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://bsky.app/profile/konsolifin.net\">⁠⁠Blueskyssa⁠⁠</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">⁠⁠Foorumilla⁠⁠</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n",
+    "uid": 6,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-05-17 17:49:08",
+    "hero_image_id": 15,
+    "alustat_ids": [
+      5,
+      6
+    ],
+    "pelit_ids": [
+      2
+    ],
+    "ihmiset_ids": [
+      5
+    ],
+    "julkaisijat_ids": [],
+    "studiot_ids": [
+      2
+    ],
+    "kuvat_ids": [
+      3,
+      7,
+      7,
+      23
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65269,
+    "title": "KonsoliFIN Podcast #227: Kusetuskevät",
+    "body": "<p data-encore-id=\"text\" data-slate-node=\"element\">Uutisrintamalla tapahtuu, ja viihdettä on taas kulutettu tuttuun tapaan. Jakson juontajana toimii <strong>Niko Lähteenmäki </strong>ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Aloitamme juttutuokion käymällä hiukan läpi viimeisimpiä kuulumisia sekä tietenkin maailmalla tapahtuneita edesottamuksia. Uutiskatsauksessa keskustellaan tänään muun muassa PlayStationin studiosulkemisista, Microsoftin uusista suunnitelmista sekä <em>God of War</em> -televisiosarjan ensimmäisistä kuvakaappauksista.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Mediakörnerissä puhuttaa katsottujen puolella muun muassa <em>Game of Thrones</em> -spinoff <em>A Knight of the Seven Kingdoms, </em>kun taas leffakeskusteluista löytyy yllättävän monta molempien katsastamaa tapausta, kuten <em>Send Help</em>, <em>28 vuotta myöhemmin: Luutemppeli</em> sekä <em>Angel's Egg</em> -anime. Pelattujen puolella Nikoa on viihdyttänyt muun muassa Nintendon Switch Online -palveluun lisätyt Virtual Boy -pelit, <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.konsolifin.net/arvostelu/pilvessa-elamasta-osa-2-rakkautta-anarkiaa-skeittausta-ja-tolloenergiaa-high-on-life-2\">⁠<em>High on Life 2</em>⁠</a> sekä <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.konsolifin.net/arvostelu/oletko-aina-halunnut-nakertaa-kapitalistisen-korporaation-polvilleen-sisalta-kasin-nyt-se-escape-from-ever-after\">⁠<em>Escape from Ever After</em>⁠</a>. Petri taas on perehtynyt esimerkiksi kehuja keränneeseen <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.konsolifin.net/arvostelu/paras-pokemon-peli-hetkeen-pokemon-pokopia\">⁠<em>Pokémon Pokopiaan</em>⁠</a> sekä <a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://www.konsolifin.net/arvostelu/pienet-ja-ahdistavat-painajaiset-jatkuvat-vaikka-nimi-vaihtui-reanimal\">⁠<em>Reanimaliin</em>⁠</a>.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Tämä jakso on nauhoitettu 10.3.2026.</p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Musat by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Katso videoversio alta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/3MBJecawC4BAylrY7oiMYe?si=dc030a15adc64a43\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-227-kusetuskev%C3%A4t/id1292159750?i=1000755630448\">Apple Podcastista</a>!</p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/StAVH4prgMo?si=sZL3ygbVQRuyGwRl\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"KonsoliFIN Podcast\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/StAVH4prgMo?wmode=transparent?si=sZL3ygbVQRuyGwRl&amp;jqoemcache=usW4B\" title=\"KonsoliFIN Podcast\" width=\"425\"></iframe></div>\r\n\r\n<p data-encore-id=\"text\" data-slate-node=\"element\">Kysymyksiä voi lähettää:</p>\r\n\r\n<ul data-slate-fragment=\"JTVCJTdCJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMlV1dGlzcmludGFtYWxsYSUyMHRhcGFodHV1JTJDJTIwamElMjB2aWloZGV0dCVDMyVBNCUyMG9uJTIwdGFhcyUyMGt1bHV0ZXR0dSUyMHR1dHR1dW4lMjB0YXBhYW4uJTIwSmFrc29uJTIwanVvbnRhamFuYSUyMHRvaW1paSVDMiVBMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJOaWtvJTIwTCVDMyVBNGh0ZWVubSVDMyVBNGtpJUMyJUEwJTIyJTJDJTIyYm9sZCUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyamElMjBrYXZlcmluYSUyMHN0dWRpb3NzYSUyMG9uJTIwdHV0dHV1biUyMHRhcGFhbiVDMiVBMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJQZXRyaSUyMExlc2tpbmVuJTIyJTJDJTIyYm9sZCUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyISUyMiU3RCU1RCU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyQWxvaXRhbW1lJTIwanV0dHV0dW9raW9uJTIwayVDMyVBNHltJUMzJUE0bGwlQzMlQTQlMjBoaXVrYW4lMjBsJUMzJUE0cGklMjB2aWltZWlzaW1waSVDMyVBNCUyMGt1dWx1bWlzaWElMjBzZWslQzMlQTQlMjB0aWV0ZW5raW4lMjBtYWFpbG1hbGxhJTIwdGFwYWh0dW5laXRhJTIwZWRlc290dGFtdWtzaWEuJTIwVXV0aXNrYXRzYXVrc2Vzc2ElMjBrZXNrdXN0ZWxsYWFuJTIwdCVDMyVBNG4lQzMlQTQlQzMlQTRuJTIwbXV1biUyMG11YXNzYSUyMFBsYXlTdGF0aW9uaW4lMjBzdHVkaW9zdWxrZW1pc2lzdGElMkMlMjBNaWNyb3NvZnRpbiUyMHV1c2lzdGElMjBzdXVubml0ZWxtaXN0YSUyMHNlayVDMyVBNCUyMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJHb2QlMjBvZiUyMFdhciUyMiUyQyUyMml0YWxpYyUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyJTIwLXRlbGV2aXNpb3NhcmphbiUyMGVuc2ltbSVDMyVBNGlzaXN0JUMzJUE0JTIwa3V2YWthYXBwYXVrc2lzdGEuJTIyJTdEJTVEJTdEJTJDJTdCJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMiUyMiU3RCU1RCU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJNZWRpYWslQzMlQjZybmVyaXNzJUMzJUE0JTIwcHVodXR0YWElMjBrYXRzb3R0dWplbiUyMHB1b2xlbGxhJTIwbXV1biUyMG11YXNzYSVDMiVBMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJHYW1lJTIwb2YlMjBUaHJvbmVzJTIyJTJDJTIyaXRhbGljJTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIlQzIlQTAtc3Bpbm9mZiVDMiVBMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJBJTIwS25pZ2h0JTIwb2YlMjB0aGUlMjBTZXZlbiUyMEtpbmdkb21zJTJDJTIwJTIyJTJDJTIyaXRhbGljJTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJrdW4lMjB0YWFzJTIwbGVmZmFrZXNrdXN0ZWx1aXN0YSUyMGwlQzMlQjZ5dHl5JTIweWxsJUMzJUE0dHQlQzMlQTR2JUMzJUE0biUyMG1vbnRhJTIwbW9sZW1waWVuJTIwa2F0c2FzdGFtYWElMjB0YXBhdXN0YSUyQyUyMGt1dGVuJTIwJTIyJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMlNlbmQlMjBIZWxwJTIyJTJDJTIyaXRhbGljJTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIlMkMlMjAlMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyMjglMjB2dW90dGElMjBteSVDMyVCNmhlbW1pbiUzQSUyMEx1dXRlbXBwZWxpJTIyJTJDJTIyaXRhbGljJTIyJTNBdHJ1ZSU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIlMjBzZWslQzMlQTQlMjAlMjIlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyQW5nZWwncyUyMEVnZyUyMiUyQyUyMml0YWxpYyUyMiUzQXRydWUlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyJTIwLWFuaW1lLiUyMFBlbGF0dHVqZW4lMjBwdW9sZWxsYSUyME5pa29hJTIwb24lMjB2aWloZHl0dCVDMyVBNG55dCUyMG11dW4lMjBtdWFzc2ElMjBOaW50ZW5kb24lMjBTd2l0Y2glMjBPbmxpbmUlMjAtcGFsdmVsdXVuJTIwbGlzJUMzJUE0dHl0JTIwVmlydHVhbCUyMEJveSUyMC1wZWxpdCUyQyUyMCUyMiU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJsaW5rJTIyJTJDJTIydXJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZ3d3cua29uc29saWZpbi5uZXQlMkZhcnZvc3RlbHUlMkZwaWx2ZXNzYS1lbGFtYXN0YS1vc2EtMi1yYWtrYXV0dGEtYW5hcmtpYWEtc2tlaXR0YXVzdGEtamEtdG9sbG9lbmVyZ2lhYS1oaWdoLW9uLWxpZmUtMiUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMl9ibGFuayUyMiUyQyUyMnJlbCUyMiUzQSUyMnVnYyUyMG5vb3BlbmVyJTIwbm9yZWZlcnJlciUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMkhpZ2glMjBvbiUyMExpZmUlMjAyJTIyJTJDJTIyaXRhbGljJTIyJTNBdHJ1ZSU3RCU1RCU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjIlMjBzZWslQzMlQTQlMjAlMjIlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIybGluayUyMiUyQyUyMnVybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGd3d3LmtvbnNvbGlmaW4ubmV0JTJGYXJ2b3N0ZWx1JTJGb2xldGtvLWFpbmEtaGFsdW5udXQtbmFrZXJ0YWEta2FwaXRhbGlzdGlzZW4ta29ycG9yYWF0aW9uLXBvbHZpbGxlZW4tc2lzYWx0YS1rYXNpbi1ueXQtc2UtZXNjYXBlLWZyb20tZXZlci1hZnRlciUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMl9ibGFuayUyMiUyQyUyMnJlbCUyMiUzQSUyMnVnYyUyMG5vb3BlbmVyJTIwbm9yZWZlcnJlciUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMkVzY2FwZSUyMGZyb20lMjBFdmVyJTIwQWZ0ZXIlMjIlMkMlMjJpdGFsaWMlMjIlM0F0cnVlJTdEJTVEJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMi4lMjBQZXRyaSUyMHRhYXMlMjBvbiUyMHBlcmVodHlueXQlMjBlc2ltZXJraWtzaSUyMGtlaHVqYSUyMGtlciVDMyVBNG5uZWVzZWVuJTIwJTIyJTdEJTJDJTdCJTIydHlwZSUyMiUzQSUyMmxpbmslMjIlMkMlMjJ1cmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5rb25zb2xpZmluLm5ldCUyRmFydm9zdGVsdSUyRnBhcmFzLXBva2Vtb24tcGVsaS1oZXRrZWVuLXBva2Vtb24tcG9rb3BpYSUyMiUyQyUyMnRhcmdldCUyMiUzQSUyMl9ibGFuayUyMiUyQyUyMnJlbCUyMiUzQSUyMnVnYyUyMG5vb3BlbmVyJTIwbm9yZWZlcnJlciUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMlBvayVDMyVBOW1vbiUyMFBva29waWFhbiUyMiUyQyUyMml0YWxpYyUyMiUzQXRydWUlN0QlNUQlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyJTIwc2VrJUMzJUE0JTIwJTIyJTdEJTJDJTdCJTIydHlwZSUyMiUzQSUyMmxpbmslMjIlMkMlMjJ1cmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5rb25zb2xpZmluLm5ldCUyRmFydm9zdGVsdSUyRnBpZW5ldC1qYS1haGRpc3RhdmF0LXBhaW5hamFpc2V0LWphdGt1dmF0LXZhaWtrYS1uaW1pLXZhaWh0dWktcmVhbmltYWwlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJfYmxhbmslMjIlMkMlMjJyZWwlMjIlM0ElMjJ1Z2MlMjBub29wZW5lciUyMG5vcmVmZXJyZXIlMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJSZWFuaW1hbGlpbiUyMiUyQyUyMml0YWxpYyUyMiUzQXRydWUlN0QlNUQlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyLiUyMiU3RCU1RCU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyVGVydmV0dWxvYSUyMG11a2FhbiUyMGt1dW50ZWxlbWFhbiElMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyJTIyJTdEJTVEJTdEJTJDJTdCJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMlQlQzMlQTRtJUMzJUE0JTIwamFrc28lMjBvbiUyMG5hdWhvaXRldHR1JTIwMTAuMy4yMDI2LiUyMiU3RCU1RCU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyTXVzYXQlMjBieSUzQSVDMiVBMCUyMiU3RCUyQyU3QiUyMnRleHQlMjIlM0ElMjJUb21pJTIwUnV1c2thJTIyJTJDJTIyYm9sZCUyMiUzQXRydWUlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyJTIyJTdEJTVEJTdEJTJDJTdCJTIydHlwZSUyMiUzQSUyMnBhcmFncmFwaCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydGV4dCUyMiUzQSUyMkthdHNvJTIwdmlkZW92ZXJzaW8lMjBZb3VUdWJlc3RhISUyMiU3RCU1RCU3RCUyQyU3QiUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjIlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIycGFyYWdyYXBoJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyS3lzeW15a3NpJUMzJUE0JTIwdm9pJTIwbCVDMyVBNGhldHQlQzMlQTQlQzMlQTQlM0ElMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIyYnVsbGV0ZWQtbGlzdCUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydHlwZSUyMiUzQSUyMmxpc3QtaXRlbSUyMiUyQyUyMmNoaWxkcmVuJTIyJTNBJTVCJTdCJTIydHlwZSUyMiUzQSUyMmxpbmslMjIlMkMlMjJ1cmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRpc2NvcmQuZ2clMkZxU0JVUWEzQVBDJTIyJTJDJTIydGFyZ2V0JTIyJTNBJTIyX2JsYW5rJTIyJTJDJTIycmVsJTIyJTNBJTIydWdjJTIwbm9vcGVuZXIlMjBub3JlZmVycmVyJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0ZXh0JTIyJTNBJTIyRGlzY29yZGlzc2ElMjIlN0QlNUQlN0QlMkMlN0IlMjJ0ZXh0JTIyJTNBJTIyJUMyJUEwa2FuYXZhbGxhJTIwJTIzcG9kY2FzdC1wYWxhdXRlLWphLWt5c3lteWtzZXQlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIybGlzdC1pdGVtJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0eXBlJTIyJTNBJTIybGluayUyMiUyQyUyMnVybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYnNreS5hcHAlMkZwcm9maWxlJTJGa29uc29saWZpbi5uZXQlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJfYmxhbmslMjIlMkMlMjJyZWwlMjIlM0ElMjJ1Z2MlMjBub29wZW5lciUyMG5vcmVmZXJyZXIlMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJCbHVlc2t5c3NhJTIyJTdEJTVEJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMiVDMiVBMGhhc2h0YWdpbGxhJTIwJTIza3lzeUtvbnNvbGlGSU5pbHQlQzMlQTQlMjIlN0QlNUQlN0QlMkMlN0IlMjJ0eXBlJTIyJTNBJTIybGlzdC1pdGVtJTIyJTJDJTIyY2hpbGRyZW4lMjIlM0ElNUIlN0IlMjJ0eXBlJTIyJTNBJTIybGluayUyMiUyQyUyMnVybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGZm9ydW0ua29uc29saWZpbi5uZXQlMkZ0aHJlYWRzJTJGa3lzeS1rb25zb2xpZmluaWx0YWUuOTYwMzIlMkYlMjIlMkMlMjJ0YXJnZXQlMjIlM0ElMjJfYmxhbmslMjIlMkMlMjJyZWwlMjIlM0ElMjJ1Z2MlMjBub29wZW5lciUyMG5vcmVmZXJyZXIlMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJGb29ydW1pbGxhJTIyJTdEJTVEJTdEJTJDJTdCJTIydGV4dCUyMiUzQSUyMiVDMiVBMGtldGp1c3NhJTIwS3lzeSUyMEtvbnNvbGlGSU5pbHQlQzMlQTQlMjIlN0QlNUQlN0QlNUQlN0QlNUQ=\" data-slate-node=\"element\">\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://discord.gg/qSBUQa3APC\">⁠Discordissa⁠</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://bsky.app/profile/konsolifin.net\">⁠Blueskyssa⁠</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li data-slate-node=\"element\"><a data-encore-id=\"textLink\" data-slate-inline=\"true\" data-slate-node=\"element\" href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">⁠Foorumilla⁠</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n",
+    "uid": 5,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-05-17 13:49:08",
+    "hero_image_id": 23,
+    "alustat_ids": [],
+    "pelit_ids": [
+      4,
+      7,
+      8
+    ],
+    "ihmiset_ids": [
+      5
+    ],
+    "julkaisijat_ids": [
+      4
+    ],
+    "studiot_ids": [],
+    "kuvat_ids": [],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65196,
+    "title": "KonsoliFIN Podcast #226: F**K ICE!",
+    "body": "<p>Maailma on samanaikaisesti tulessa ja jäässä, mutta ei anneta sen häiritä! Jakson juontajana toimii <strong>Niko Lähteenmäki </strong>ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p>Aloitamme juttutuokion käymällä hiukan läpi viimeisimpiä kuulumisia sekä tietenkin maailmalla tapahtuneita edesottamuksia. Uutiskatsauksessa keskustellaan tänään muun muassa sensuurista, taannoisesta Xbox Developer_Directistä sekä <em>Prince of Persia: The Sands of Time Remaken</em> yllättävästä peruuntumisesta. Lisäksi pidämme varaustilaisuuden, jossa Niko ja Petri valkkaavat viisi odotetuinta peliään tälle vuodelle. Listat saattavat yllättäen poiketa melko pahasti toisistaan.</p>\r\n\r\n<p>Mediakörnerissä puhuttaa katsottujen puolella muun muassa <em>Game of Thrones</em> -spinoff <em>A Knight of the Seven Kingdoms</em>, joka on yllättänyt castilaiset aavistuksen humoristisella otteellaan. Keskustelua riittää myös <em>Marty Supremesta</em>, <em>Falloutin </em>kakkoskaudesta sekä <em>The Walking Deadin</em> uusintakierroksesta. Pelattujen puolella Niko on muun muassa <em><a href=\"https://www.konsolifin.net/arvostelu/maailma-taa-taakse-nyt-jaa-lennetaan-avaruustanssiin-sektori\">Sektorin</a> </em>ja <em><a href=\"https://www.konsolifin.net/arvostelu/viela-kerran-tunteella-maestro-ndash-olisivatpa-kaikki-uusioversiot-nain-rakkaudella-tehtyja-dragon-quest-vii-reimagined\">Dragon Quest VII Reimaginedin</a> </em>pauloissa, kun taas Petri on kiipeillyt vuorella <em><a href=\"https://www.konsolifin.net/arvostelu/paata-huimaava-plajays-pistaa-ajattelemaan-raajoja-manuaalisesti-cairn\">Cairnin</a> </em>merkeissä sekä seikkaillut Lara Croftin ominaisuudessa viimeisimmän trilogian voimin.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 3.2.2026.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong><br />\r\nVäliaikabiisi:<strong> </strong><em>OutRun the Highway </em>by:<strong> Jukka K.</strong></p>\r\n\r\n<p>Katso videoversio YouTubesta alta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/5mSDBlfTRwT2I5xN1iEZO7?si=bac9a5f44a5344b6\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-226-f-k-ice/id1292159750?i=1000748651430\">Apple Podcastista</a>!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/Lq78ZudTCzQ?si=Mx7vy5r1QyYwfuUt\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Kfin podcast 226\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/Lq78ZudTCzQ?wmode=transparent?si=Mx7vy5r1QyYwfuUt&amp;jqoemcache=ASiTT\" title=\"Kfin podcast 226\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 5,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-05-02 01:49:08",
+    "hero_image_id": 6,
+    "alustat_ids": [
+      2,
+      3
+    ],
+    "pelit_ids": [
+      2,
+      3,
+      6,
+      7,
+      10
+    ],
+    "ihmiset_ids": [
+      4
+    ],
+    "julkaisijat_ids": [
+      1,
+      2
+    ],
+    "studiot_ids": [
+      1,
+      6
+    ],
+    "kuvat_ids": [
+      6,
+      6,
+      18,
+      27
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65145,
+    "title": "KonsoliFIN Podcast #225.5: Pelaaminen kuuluu kaikille! (vieraana TikTok- ja Instagram-vaikuttaja saarara)",
+    "body": "<p>Aloitetaan vuosi vierailulla, vieläpä Helsingin Oodi-kirjaston upeassa podcast-studiossa! Tällä kertaa vieraaksi saapuu TikTok- ja Instagram-vaikuttaja <strong>saarara</strong>! Juontajana toimii tuttuun tapaan <strong>Niko Lähteenmäki</strong>.</p>\r\n\r\n<p>Jakson ensimmäisellä puoliskolla Saara kertoo vaikuttajauransa alkutaipaleesta ja siitä, miten kaikki alkoi. Lisäksi keskustellaan hieman vaikuttajana olemisen iloista ja haittapuolista sekä algoritmeistä, palautteista ja vähän muustakin.</p>\r\n\r\n<p>Mediakörnerissä puolestaan diskuteerataan tänään erityisesti <em>Kingdom Come: Deliverance II:sta</em> ja siitä, onko vähemmän roolipelien parissa aikaa viettävien ylipäätään mahdollista oppia kyseisen teoksen laaja-alaisia saloja. Niko ja Saara laittoivat myös vuoden 2025 parhaat pelit nippuun kunkin panelistin Top 5 -listauksilla.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 8.1.2026.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong><br />\r\nVäliaikabiisi:<strong> </strong><em>OutRun the Highway </em>by:<strong> Jukka K.</strong></p>\r\n\r\n<p>Kuuntele jakso <a href=\"https://open.spotify.com/episode/0kZAQqmtUMHEOvc8iinswB?si=yzfKYAkZSDW5IR2-UnhwTw\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-225-5-pelaaminen-kuuluu-kaikille/id1292159750?i=1000744576563\">Apple Podcastista</a>! Videoversiota ei tällä kertaa ole valitettavasti saatavilla.</p>\r\n\r\n<p><strong>Saaran somet:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://www.tiktok.com/@saararaa\">TikTok</a></li>\r\n\t<li><a href=\"https://www.instagram.com/saarara/\">Instagram</a></li>\r\n</ul>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n",
+    "uid": 2,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-04-21 04:49:08",
+    "hero_image_id": 3,
+    "alustat_ids": [],
+    "pelit_ids": [
+      3,
+      5
+    ],
+    "ihmiset_ids": [
+      2,
+      6
+    ],
+    "julkaisijat_ids": [],
+    "studiot_ids": [
+      3
+    ],
+    "kuvat_ids": [
+      17,
+      26
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65127,
+    "title": "KonsoliFIN Podcast #225: GOTY – Loistavan pelivuoden tilinpäätös",
+    "body": "<p>Vuoden viimeistä (ja samalla ensimmäistä) viedään! Juontajana toimii <strong>Niko Lähteenmäki </strong>ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p>Aloitamme juttutuokion käymällä hiukan läpi tämän vuoden The Game Awardsien pelipaljastuksia. Lisäksi keskustellaan alaa kuohuttaneista ilmiöistä ja kerrataan, mitkäs ne vuoden mieleenpainuvimmat leffat ja sarjat olivatkaan!</p>\r\n\r\n<p>Mediakörnerin sijaan tänään keskustellaan odotetusti myös vuoden parhaista peleistä. Vihjeitä voi halutessaan poimia käsitellyt pelit -listauksesta, ja pienenä spoilerina kerrottakoon, että Nikon ja Petrin listat eivät voisi juuri enempää poiketa toisistaan.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 29.12.2025.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong><br />\r\nVäliaikabiisi:<strong> </strong><em>OutRun the Highway </em>by:<strong> Jukka K.</strong></p>\r\n\r\n<p>Katso videoversio YouTubesta tai kuuntele jakso <a href=\"https://open.spotify.com/episode/1tGr7Rl9E4hBX36ZKapMnD?si=DO2xafiGSkupKANU0kYnUQ\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-225-goty-loistavan-pelivuoden-tilinp%C3%A4%C3%A4t%C3%B6s/id1292159750?i=1000743595560\">Apple Podcastista</a>!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/y1y_cbOXdDA?si=7HgjZBgRwptsALcK\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Kuin podcast 224\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/y1y_cbOXdDA?wmode=transparent?si=7HgjZBgRwptsALcK&amp;jqoemcache=7CLAg\" title=\"Kuin podcast 224\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 2,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-04-17 02:49:08",
+    "hero_image_id": 10,
+    "alustat_ids": [
+      1
+    ],
+    "pelit_ids": [
+      4,
+      9
+    ],
+    "ihmiset_ids": [
+      5
+    ],
+    "julkaisijat_ids": [],
+    "studiot_ids": [
+      2,
+      5
+    ],
+    "kuvat_ids": [
+      14,
+      19
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65093,
+    "title": "KonsoliFIN Podcast #224: Oululaista eksotiikkaa (vieraana Fingersoftin kasvujohtaja Daniel Rantala)",
+    "body": "<p>KonsoliFIN Podcastin \"etästudio\" on suosittu vierailukohde tänä vuonna, sillä tässä jaksossa vieraaksi saapuu oululaisen Fingersoftin Chief Growth Officer (kasvujohtaja) <strong>Daniel Rantala</strong>! Juontajana toimii tuttuun tapaan <strong>Niko Lähteenmäki.</strong></p>\r\n\r\n<p>Haastattelun aikana käydään läpi muun muassa Danielin omaa historiaa aina näihin päiviin saakka sekä tietenkin Fingersoftin viimeaikaisimpia edesottamuksia. Erityisesti taannoin julkaistun Hill Climb Racing 3:n kehityskaaresta riittää paljon kerrottavaa, minkä ohella Rantala valottaa hiukan yhtiön omaa filosofiaa sekä tulevaisuutta. Lisäksi herralla oli aikaa turista myös hiukan tämän vuoden henkilökohtaisista pelisuosikeistaan!</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan! Tämä jakso on nauhoitettu 10.12.2025.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p>Kuuntele jakso <a href=\"https://open.spotify.com/episode/36dWOZIMZ2OciRj8Rws25P?si=3Hf8zIZ5S8OA1gaJMbBOAQ\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/fi/podcast/konsolifin-podcast-224-oululaista-eksotiikkaa-vieraana/id1292159750?i=1000741103319\">Apple Podcastista</a>, tai katso juttutuokio alta!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<p><strong>Lue lisää Fingersoftista osoitteessa <a href=\"https://fingersoft.com/\">fingersoft.com</a></strong></p>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/Z5Ej_1GYRyQ\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"KFIN Podcast 224 Daniel Rantala\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/Z5Ej_1GYRyQ?wmode=transparent&amp;jqoemcache=hqtml\" title=\"KFIN Podcast 224 Daniel Rantala\" width=\"425\"></iframe></div>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://www.youtube.com/watch?v=rB2fJ6xwvJ8\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Hill Climb Racing 3 Open Beta trailer\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/rB2fJ6xwvJ8?wmode=transparent&amp;jqoemcache=whe46\" title=\"Hill Climb Racing 3 Open Beta trailer\" width=\"425\"></iframe></div>\r\n",
+    "uid": 5,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-04-10 00:49:08",
+    "hero_image_id": 22,
+    "alustat_ids": [],
+    "pelit_ids": [
+      2,
+      2,
+      5,
+      8
+    ],
+    "ihmiset_ids": [
+      4
+    ],
+    "julkaisijat_ids": [
+      1,
+      3
+    ],
+    "studiot_ids": [
+      4,
+      4
+    ],
+    "kuvat_ids": [
+      27
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 65002,
+    "title": "KonsoliFIN Podcast #223.8: Vapaa toimittaja (vieraana kirjailija ja KonsoliFIN-alumni Esa Mäkijärvi)",
+    "body": "<p>KonsoliFIN Podcastin vieraskimara jatkuu: etästudioon saapuu kirjailija ja KonsoliFIN-alumni <strong>Esa Mäkijärvi</strong>! Juontajana toimii tuttuun tapaan <strong>Niko Lähteenmäki.</strong></p>\r\n\r\n<p>Ennen journalistin ja kirjailijan uraa Mäkijärvi oli mukana perustamassa KonsoliFINiä vannoitettuna Nintendo-miehenä 2000-luvun alussa. Juttutuokion aikana kertaillaan muutenkin miehen uran alkuvaiheita ja sitä hetkeä, kun hän lopulta päätyi tekemään tarvittavan hypyn vapaaksi toimittajaksi ja sitä myöten kirjailijaksi. Lisäksi keskustellaan tietenkin pelaamisesta – Esan konsolissa on viime aikoina viihtynyt erityisesti <em>Hollow Knight: Silksong</em>!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 23.10.2025.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p>Kuuntele jakso <a href=\"https://open.spotify.com/episode/7LgPklUpZeo17huxp1A3NL?si=pKzsT6f7SqW1FfbL2Kt02A&amp;context=spotify%3Ashow%3A7MczzrQTeiKg7hICy0C1N0\">Spotifysta</a> tai Apple Podcastista, tai katso juttutuokio alta!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<p><strong>Mistä voit löytää Esa Mäkijärven:</strong></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://www.facebook.com/kirjailijaesamakijarvi/\">Facebook</a></li>\r\n\t<li><a href=\"https://www.instagram.com/esa.makijarvi/\">Instagram</a></li>\r\n\t<li><a href=\"https://bsky.app/profile/marstravolta.bsky.social\">Bluesky</a></li>\r\n\t<li><a href=\"https://www.adlibris.com/fi/haku?pn=2&amp;ps=12&amp;filter=author%3aesa+m%c3%a4kij%c3%a4rvi\">Esan kootut teokset</a></li>\r\n\t<li><a href=\"https://www.konsolifin.net/users/esa-makijarvi\">Esan KonsoliFIN-portfolio</a></li>\r\n</ul>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/iPeCVD61frw?si=RA5n06Hh9Q5mz9vD\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"KonsoliFIN Podcast #223.8\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/iPeCVD61frw?wmode=transparent?si=RA5n06Hh9Q5mz9vD&amp;jqoemcache=weHZZ\" title=\"KonsoliFIN Podcast #223.8\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 2,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-03-21 04:49:08",
+    "hero_image_id": 20,
+    "alustat_ids": [
+      3
+    ],
+    "pelit_ids": [
+      1,
+      2,
+      10
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [
+      4
+    ],
+    "kuvat_ids": [
+      4,
+      13
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 64975,
+    "title": "KonsoliFIN Podcast #223.5: Todellista luovuutta (vieraana Lucasfilm Gamesin perustajistoon kuulunut David Fox)",
+    "body": "<p>Mitäs nyt? Tällä kertaa etästudioon saapui vieras aina Yhdysvalloista asti, nimittäin Lucasfilm Gamesin perustajistoon kuulunut legendaarinen ohjelmoija <strong>David Fox</strong>! Juontajina toimivat <strong>Niko Lähteenmäki </strong>sekä <strong>Tarja Porkka-Kontturi</strong>.</p>\r\n\r\n<p>Fox kertoilee muun muassa uransa alkuvaiheista ja siitä, miten aikoinaan päätyi ikään kuin \"laatikon ulkopuolelta\" työskentelemään Lucasfilm Gamesille. Lisäksi keskustellaan muun muassa miehen kootuista teoksista, kuten <em>Zak McKrackenista</em>, sekä hänen viime aikaisista edesottamuksistaan. Emme voineet myöskään vastustaa kiusausta ja kysyä, kävikö muuan <strong>George Lucas</strong> koskaan studiolla moikkaamassa kehittäjiä.</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 14.10.2025.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong></p>\r\n\r\n<p>Kuuntele jakso <a href=\"https://open.spotify.com/episode/29GwK5on96RM7mUNZj8zNG?si=Geys1mwFQb2aD9Zwcuw10Q\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/bz/podcast/konsolifin-podcast-223-5-todellista-luovuutta-vieraana/id1292159750?i=1000732413708\">Apple Podcastista</a>, tai katso juttutuokio alta!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<p><strong>David Foxin kootut verkkosivustot:</strong></p>\r\n\r\n<ul>\r\n\t<li>Verkkosivut: <a data-saferedirecturl=\"https://www.google.com/url?q=https://electriceggplant.com/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3o_enz3b-YtbMWjZTPsTbz\" href=\"https://electriceggplant.com/\" target=\"_blank\">https://<wbr />ElectricEggplant.com</a></li>\r\n\t<li>BlueSky: <a data-saferedirecturl=\"https://www.google.com/url?q=https://bsky.app/profile/davidbfox.com&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0Qre9nw6sSMCb2EV5wOXJa\" href=\"https://bsky.app/profile/davidbfox.com\" target=\"_blank\">https://bsky.app/profile/<wbr />davidbfox.com</a></li>\r\n\t<li>LinkedIn: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.linkedin.com/in/davidbfox/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw06FB3FMk2wHewGUezNurSC\" href=\"https://www.linkedin.com/in/davidbfox/\" target=\"_blank\">https://www.linkedin.com/in/<wbr />davidbfox/</a></li>\r\n\t<li>Instagram: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.instagram.com/davidbfox/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3L99FcYNnpUs1iZtd5QpCZ\" href=\"https://www.instagram.com/davidbfox/\" target=\"_blank\">https://www.instagram.com/<wbr />davidbfox/</a></li>\r\n\t<li>TikTok: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.tiktok.com/@davidbfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2T2lwwgnlzHGJza-7lr8u1\" href=\"https://www.tiktok.com/@davidbfox\" target=\"_blank\">https://www.tiktok.com/@<wbr />davidbfox</a></li>\r\n\t<li>Threads: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.threads.net/@davidbfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2tOszfKjn6uFTKCp7uCgz0\" href=\"https://www.threads.net/@davidbfox\" target=\"_blank\">https://www.threads.net/@<wbr />davidbfox</a></li>\r\n\t<li>Mastodon: <a data-saferedirecturl=\"https://www.google.com/url?q=https://mastodon.gamedev.place/@davidbfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2F0vhX_YqDkn6TtgmfQXgn\" href=\"https://mastodon.gamedev.place/@davidbfox\" target=\"_blank\">https://mastodon.gamedev.<wbr />place/@davidbfox</a></li>\r\n\t<li>Facebook: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.facebook.com/davidbfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw1NWZfC8oV0x01bOPgnmkFa\" href=\"https://www.facebook.com/davidbfox\" target=\"_blank\">https://www.facebook.com/<wbr />davidbfox</a></li>\r\n\t<li>YouTube: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.youtube.com/c/DavidFox1&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw04fFHGggi77nOOuDEGEjpx\" href=\"https://www.youtube.com/c/DavidFox1\" target=\"_blank\">https://www.youtube.com/c/<wbr />DavidFox1</a></li>\r\n\t<li>LinkTree: <a data-saferedirecturl=\"https://www.google.com/url?q=https://linktr.ee/davidbfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2DWrgBp1OQ3JW6ZR12gKsx\" href=\"https://linktr.ee/davidbfox\" target=\"_blank\">https://linktr.ee/davidbfox</a></li>\r\n\t<li>Rube Works XR work in progress -video: <a data-saferedirecturl=\"https://www.google.com/url?q=https://youtu.be/mUUXSuNaKn8&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3TrpML1Y8QUAZQCNd2sz1r\" href=\"https://youtu.be/mUUXSuNaKn8\" target=\"_blank\">https://youtu.be/<wbr />mUUXSuNaKn8</a></li>\r\n\t<li>Return to Monkey Island -paneeli: <a data-saferedirecturl=\"https://www.google.com/url?q=https://youtu.be/gXqOx_fjzx0&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2rTiAUuElUmAyuzSyGWak6\" href=\"https://youtu.be/gXqOx_fjzx0\" target=\"_blank\">https://youtu.be/gXqOx_<wbr />fjzx0</a></li>\r\n\t<li>Luke’s Software, Fractalus: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.lsdwa.com/projects/fractalus/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3vz2ENKhvudNhwaJLKGc-g\" href=\"https://www.lsdwa.com/projects/fractalus/\" target=\"_blank\">https://www.lsdwa.<wbr />com/projects/fractalus/</a></li>\r\n</ul>\r\n\r\n<p><strong>Annie Foxin kootut:</strong></p>\r\n\r\n<ul>\r\n\t<li>Verkkosivut: <a data-saferedirecturl=\"https://www.google.com/url?q=https://anniefox.com/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0IF_IcDgMsCJogQSCvWM_B\" href=\"https://anniefox.com/\" target=\"_blank\">https://AnnieFox.com</a></li>\r\n\t<li>BlueSky: <a data-saferedirecturl=\"https://www.google.com/url?q=https://bsky.app/profile/anniefox.com&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0YZdk0sKatEhshWSbFYJnr\" href=\"https://bsky.app/profile/anniefox.com\" target=\"_blank\">https://bsky.app/profile/<wbr />anniefox.com</a></li>\r\n\t<li>Instagram: <a data-saferedirecturl=\"https://www.google.com/url?q=https://instagram.com/annielfox/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw1wxu88wyjOPIohtIgs_XYh\" href=\"https://instagram.com/annielfox/\" target=\"_blank\">https://instagram.com/<wbr />annielfox/</a></li>\r\n\t<li>TikTok: <a data-saferedirecturl=\"https://www.google.com/url?q=https://tiktok.com/@anniefoxauthor&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0IicMDjqXyMib5FLfS203-\" href=\"https://tiktok.com/@anniefoxauthor\" target=\"_blank\">https://tiktok.com/@<wbr />anniefoxauthor</a></li>\r\n\t<li>GoodReads: <a data-saferedirecturl=\"https://www.google.com/url?q=https://goodreads.com/author/show/303519.Annie_Fox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2-neDisPGwyyqbUa9A9w5K\" href=\"https://goodreads.com/author/show/303519.Annie_Fox\" target=\"_blank\">https://goodreads.com/author/<wbr />show/303519.Annie_Fox</a></li>\r\n\t<li>Threads: <a data-saferedirecturl=\"https://www.google.com/url?q=https://threads.net/@annielfox&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3h8X9oEuEZRzJyDqs6GKuv\" href=\"https://threads.net/@annielfox\" target=\"_blank\">https://threads.net/@annielfox</a></li>\r\n\t<li>YouTube: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.youtube.com/c/AnnieFoxAuthor&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw1pRR2yTH-RT-rWJgA-XH93\" href=\"https://www.youtube.com/c/AnnieFoxAuthor\" target=\"_blank\">https://www.youtube.com/c/<wbr />AnnieFoxAuthor</a></li>\r\n\t<li>Amazon: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.amazon.com/stores/author/B001JS0XCC&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw23GWnm-ng-vMpKQ1s9_kdv\" href=\"https://www.amazon.com/stores/author/B001JS0XCC\" target=\"_blank\">https://www.amazon.com/stores/<wbr />author/B001JS0XCC</a></li>\r\n\t<li>LinkedIn: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.linkedin.com/in/annielfox/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0tRKgKti21QGXeYdwlHXVO\" href=\"https://www.linkedin.com/in/annielfox/\" target=\"_blank\">https://www.linkedin.com/in/<wbr />annielfox/</a></li>\r\n\t<li>Facebook: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.facebook.com/annie.fox.author&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw31scECGHb2W7WuKq_caOqR\" href=\"https://www.facebook.com/annie.fox.author\" target=\"_blank\">https://www.facebook.com/<wbr />annie.fox.author</a></li>\r\n\t<li>BookBub: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.bookbub.com/authors/annie-fox-0a46848d-5d34-427c-b11c-480efee38da3&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0t7eh3bt06UrPukULv5A9R\" href=\"https://www.bookbub.com/authors/annie-fox-0a46848d-5d34-427c-b11c-480efee38da3\" target=\"_blank\">https://www.bookbub.com/<wbr />authors/annie-fox-0a46848d-<wbr />5d34-427c-b11c-480efee38da3</a></li>\r\n\t<li>Kirkus Reviews: <a data-saferedirecturl=\"https://www.google.com/url?q=https://www.kirkusreviews.com/author/annie-fox-1/&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw0146h-Smnyn2PujMKDkhZw\" href=\"https://www.kirkusreviews.com/author/annie-fox-1/\" target=\"_blank\">https://www.kirkusreviews.com/<wbr />author/annie-fox-1/</a></li>\r\n\t<li>BookLife (by Publishers Weekly): <a data-saferedirecturl=\"https://www.google.com/url?q=https://booklife.com/profile/annie-fox-105679&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw3lQCH-Gma_RXcFAiU8-FDP\" href=\"https://booklife.com/profile/annie-fox-105679\" target=\"_blank\">https://booklife.com/profile/<wbr />annie-fox-105679</a></li>\r\n\t<li>LinkTree: <a data-saferedirecturl=\"https://www.google.com/url?q=https://linktr.ee/anniefoxauthor&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw1TC0I2MQa8ibf4HGGH7zGN\" href=\"https://linktr.ee/anniefoxauthor\" target=\"_blank\">https://linktr.ee/<wbr />anniefoxauthor</a></li>\r\n\t<li>DropCapMarketplace: <a data-saferedirecturl=\"https://www.google.com/url?q=https://dropcapmarketplace.com/author/annie-fox_202551533&amp;source=gmail&amp;ust=1760640153551000&amp;usg=AOvVaw2wRB2LYOMnlgMyQl5xfv8C\" href=\"https://dropcapmarketplace.com/author/annie-fox_202551533\" target=\"_blank\">https://dropcapmarketplace.<wbr />com/author/annie-fox_202551533</a></li>\r\n</ul>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/qY3rjuQIE7k?si=ehz5Wjf4JO_hFf59\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"David Fox -haastis\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/qY3rjuQIE7k?wmode=transparent?si=ehz5Wjf4JO_hFf59&amp;jqoemcache=krDft\" title=\"David Fox -haastis\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 6,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-03-15 06:49:08",
+    "hero_image_id": 12,
+    "alustat_ids": [
+      2,
+      5
+    ],
+    "pelit_ids": [
+      4,
+      4,
+      9
+    ],
+    "ihmiset_ids": [
+      2,
+      3,
+      4
+    ],
+    "julkaisijat_ids": [
+      5
+    ],
+    "studiot_ids": [
+      1
+    ],
+    "kuvat_ids": [
+      16,
+      23
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
+  },
+  {
+    "id": 64964,
+    "title": "KonsoliFIN Podcast #223: ULOS!",
+    "body": "<p>Samalla kun kelit viilenee niin castilaiset lämpenee, sillä nyt keskustellaan politiikasta kenties enemmän kuin koskaan, unohtamatta tietenkään videopelejä. Juontajana toimii <strong>Niko Lähteenmäki </strong>ja kaverina studiossa on tuttuun tapaan <strong>Petri Leskinen</strong>!</p>\r\n\r\n<p>Jakson alussa castilaiset juhlistavat KonsoliFINin 25-vuotista taivalta, sillä niitä juhlittiin taannoin helsinkiläisessä Super Bario -baarissa. Petri ja Niko pohtivat myös, miten karavaani saataisiin kulkemaan jatkossakin yhtä tasaisesti, ja käyvät läpi samalla niin syvimmät alhot kuin tähtihetketkin vuosien varrelta.</p>\r\n\r\n<p>Juhlahumun jälkeen keskustelu äityy vallan poliittiseksi: käymme läpi muun muassa Xbox Game Passin taannoisia hintamuutoksia sekä EA:n uusinta miljardiluokan yrityskauppaa, johon liittyvät niin saudit kuin <strong>Donald Trumpin</strong> vävypoikakin. Ja koska vuosi on 2025, luvassa myös peliaiheisia potku-uutisia, tällä kertaa Ruotsista. Koitimme toki löytää jotain positiivistakin viime ajoilta.</p>\r\n\r\n<p>Mediakörnerissä keskustellaan muun muassa tanskalaisesta rikosjännäristä <em>Oxenista</em>, <em>Slow Horsesista</em>, Petrin syksyisestä <em>Twin Peaks</em> -innostuksesta, Nikon <em>Back to the Future</em> -fiilistelystä sekä <em>The Long Walkista</em>, jonka kävimme yhdessä katsomassa. Pelipuolella puhuttavat muun muassa täydellistä häröilyä sisältävä <em>Baby Steps</em>, yllättävän hyvä <a href=\"https://www.konsolifin.net/artikkeli/voittamaton-digimon-niin-se-ndash-ennakkokatsauksessa-digimon-story-time-stranger\"><em>Digimon Story Time Stranger</em></a>, <a href=\"https://www.konsolifin.net/arvostelu/pelialan-elder-millenial-sai-arvoisensa-paivityksen-metroid-prime-remastered\"><em>Metroid Prime Remastered</em></a> sekä uunituore <a href=\"https://www.konsolifin.net/arvostelu/vinksahtaneesta-kauhusta-tuttu-little-nightmares-palaa-liian-yllatyksettomalla-otteella-little-nightmares-iii\"><em>Little Nightmares III</em></a>.</p>\r\n\r\n<p>Tervetuloa mukaan kuuntelemaan!</p>\r\n\r\n<p>Tämä jakso on nauhoitettu 8.10.2025.</p>\r\n\r\n<p>Alkubiisi: <em>Alleycat Bit Blues</em> ja loppubiisi: <em>Bon Voyage, players!</em> by: <strong>Tomi Ruuska</strong><br />\r\nVäliaikabiisi:<strong> </strong><em>OutRun the Highway </em>by:<strong> Jukka K.</strong></p>\r\n\r\n<p>Kuuntele jakso <a href=\"https://open.spotify.com/episode/3HIt85qUy5n8Q4BYKL6Hbz?si=75uZCpFFQOORKgb6LD80Mg\">Spotifysta</a> tai <a href=\"https://podcasts.apple.com/bz/podcast/konsolifin-podcast-223-ulos/id1292159750?i=1000731285018\">Apple Podcastista</a>! Jakso-teaserin voi puolestaan katsastaa alta!</p>\r\n\r\n<p>Kysymyksiä voi lähettää:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://discord.gg/qSBUQa3APC\" target=\"_blank\">Discordissa</a> kanavalla #podcast-palaute-ja-kysymykset</li>\r\n\t<li><a href=\"https://bsky.app/profile/konsolifin.net\">Blueskyssa</a> hashtagilla #kysyKonsoliFINiltä</li>\r\n\t<li><a href=\"https://forum.konsolifin.net/threads/kysy-konsolifiniltae.96032/\">Foorumilla</a> ketjussa Kysy KonsoliFINiltä</li>\r\n</ul>\r\n\r\n<div class=\"embeddedContent oembed-provider- oembed-provider-youtube\" data-align=\"none\" data-oembed=\"https://youtu.be/KApF4LWBbPI?si=dg6QJ-0W0hQxf9dV\" data-oembed_provider=\"youtube\" data-resizetype=\"noresize\" data-title=\"Podcast #223 -teaser\"><iframe allowfullscreen=\"true\" allowscriptaccess=\"always\" frameborder=\"0\" height=\"349\" scrolling=\"no\" src=\"//www.youtube.com/embed/KApF4LWBbPI?wmode=transparent?si=dg6QJ-0W0hQxf9dV&amp;jqoemcache=osrdh\" title=\"Podcast #223 -teaser\" width=\"425\"></iframe></div>\r\n\r\n<p> </p>\r\n",
+    "uid": 5,
+    "status": 1,
+    "promote": 1,
+    "created": "2026-03-12 14:49:08",
+    "hero_image_id": 25,
+    "alustat_ids": [
+      3
+    ],
+    "pelit_ids": [
+      4
+    ],
+    "ihmiset_ids": [
+      2,
+      4
+    ],
+    "julkaisijat_ids": [
+      4,
+      4
+    ],
+    "studiot_ids": [
+      4
+    ],
+    "kuvat_ids": [
+      6,
+      13
+    ],
+    "sarja_id": null,
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null
   }
 ]

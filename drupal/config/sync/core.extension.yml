@@ -48,6 +48,7 @@ module:
   metatag_open_graph: 0
   migrate: 0
   migrate_devel: 0
+  migrate_konsolifin_testdata: 0
   migrate_plus: 0
   migrate_tools: 0
   mysql: 0

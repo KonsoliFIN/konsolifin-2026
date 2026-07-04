@@ -138,7 +138,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-          label: 'Content Type'
+          label: Sisältötyyppi
           exclude: false
           alter:
             alter_text: false
@@ -518,10 +518,10 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'next ›'
-            previous: '‹ previous'
-            first: '« first'
-            last: 'last »'
+            next: 'seuraava ›'
+            previous: '‹ edellinen'
+            first: '« ensimmäinen'
+            last: 'viimeinen »'
       exposed_form:
         type: basic
         options:
@@ -530,8 +530,8 @@ display:
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
       access:
         type: perm
         options:
@@ -1089,7 +1089,7 @@ display:
       path: user/%user/scheduled
       menu:
         type: tab
-        title: Scheduled
+        title: Ajastettu
         description: ''
         weight: -10
         menu_name: admin

@@ -6,14 +6,15 @@ migration_tags:
 migration_group: testdata
 source:
   plugin: json_fixture
-  file: media/images.json
+  file: files/files.json
   ids:
     id:
       type: integer
   constants:
-    source_base_path: modules/custom/migrate_konsolifin_testdata/data/images/
+    source_base_path: modules/custom/migrate_konsolifin_testdata/data/files/
     file_dest: 'public://testdata/'
 process:
+  fid: id
   source_full_path:
     plugin: concat
     delimiter: ''
