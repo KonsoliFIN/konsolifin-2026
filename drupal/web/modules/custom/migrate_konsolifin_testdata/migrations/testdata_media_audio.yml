@@ -13,28 +13,9 @@ source:
 process:
   name: filename
   mid: id
-  field_media_audio/target_id:
-    -
-      plugin: migration_lookup
-      migration: testdata_files
-      source: id
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: row
-      message: 'Audio file not found for media entity, skipping row.'
-  field_media_audio/alt: alt
-  uid:
-    -
-      plugin: migration_lookup
-      migration: testdata_users
-      source: uid
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
-      message: 'No user found for this media entity.'
-  uuid: uuid
+  field_media_audio_file/target_id: id
+  field_media_audio_file/alt: thumbnail__alt
+  uid: uid
 destination:
   plugin: entity:media
   default_bundle: audio

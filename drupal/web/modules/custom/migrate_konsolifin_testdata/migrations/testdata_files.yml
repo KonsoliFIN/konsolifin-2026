@@ -39,16 +39,7 @@ process:
       method: row
       message: 'Source image file not found, skipping row.'
   filename: filename
-  uid:
-    -
-      plugin: migration_lookup
-      migration: testdata_users
-      source: uid
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
-      message: 'No user found for this file entity.'
+  uid: uid
 destination:
   plugin: entity:file
 migration_dependencies:

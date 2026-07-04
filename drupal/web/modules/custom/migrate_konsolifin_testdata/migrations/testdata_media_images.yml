@@ -13,27 +13,9 @@ source:
 process:
   name: filename
   mid: id
-  field_media_image/target_id:
-    -
-      plugin: migration_lookup
-      migration: testdata_files
-      source: id
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: row
-      message: 'Image file not found for media entity, skipping row.'
-  field_media_image/alt: alt
-  uid:
-    -
-      plugin: migration_lookup
-      migration: testdata_users
-      source: uid
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
-      message: 'No user found for this media entity.'
+  field_media_image/target_id: id
+  field_media_image/alt: thumbnail__alt
+  uid: uid
   uuid: uuid
 destination:
   plugin: entity:media
