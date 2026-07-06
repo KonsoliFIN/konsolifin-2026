@@ -1,1030 +1,568 @@
 [
   {
-    "id": 65481,
+    "nid": 65491,
+    "title": "Onimusha: Way of the Sword",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1783176712,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13456
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      927
+    ],
+    "studiot_ids": [
+      5343
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-09-04",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      7,
+      9
+    ]
+  },
+  {
+    "nid": 65481,
     "title": "Resident Evil Veronica",
     "body": "",
-    "uid": 4,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
     "status": 1,
     "promote": 0,
-    "created": "2026-07-01 14:49:08",
-    "hero_image_id": 3,
-    "alustat_ids": [],
+    "created": 1782919652,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876,
+      13626
+    ],
     "pelit_ids": [
-      1,
-      7,
-      8,
-      10,
-      10
+      14117
     ],
-    "ihmiset_ids": [
-      2,
-      4,
-      4
-    ],
-    "julkaisijat_ids": [
-      5,
-      5
-    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
     "studiot_ids": [],
-    "kuvat_ids": [
-      7,
-      12,
-      14,
-      24,
-      26
-    ],
-    "sarja_id": null,
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "year",
+    "publish_date": "2027-12-31",
+    "publish_type": "remake",
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      13,
+      18,
+      19,
+      20
+    ]
   },
   {
-    "id": 65479,
+    "nid": 65479,
     "title": "Assassin's Creed Black Flag Resynced",
     "body": "",
-    "uid": 4,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-07-01 12:49:08",
-    "hero_image_id": 15,
-    "alustat_ids": [],
+    "created": 1782903300,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
     "pelit_ids": [
-      5,
-      5,
-      6,
-      8,
-      10
-    ],
-    "ihmiset_ids": [
-      5
-    ],
-    "julkaisijat_ids": [
-      2
-    ],
-    "studiot_ids": [
-      4
-    ],
-    "kuvat_ids": [
-      7,
-      12,
-      13
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65478,
-    "title": "The Elder Scrolls IV: Oblivion Remastered",
-    "body": "",
-    "uid": 2,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-07-01 07:49:08",
-    "hero_image_id": 22,
-    "alustat_ids": [],
-    "pelit_ids": [
-      6,
-      9
+      4288
     ],
     "ihmiset_ids": [],
     "julkaisijat_ids": [],
-    "studiot_ids": [
-      2,
-      4
-    ],
-    "kuvat_ids": [
-      1,
-      5,
-      7
-    ],
-    "sarja_id": null,
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-07-09",
+    "publish_type": "remaster",
+    "hero_image_id": 3,
+    "kuvat_ids": []
   },
   {
-    "id": 65477,
+    "nid": 65478,
     "title": "The Elder Scrolls IV: Oblivion Remastered",
     "body": "",
-    "uid": 5,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-30 21:49:08",
-    "hero_image_id": 27,
-    "alustat_ids": [],
+    "created": 1782883748,
+    "alustat_ids": [
+      13626
+    ],
     "pelit_ids": [
-      6
+      461
     ],
-    "ihmiset_ids": [
-      2,
-      5
-    ],
+    "ihmiset_ids": [],
     "julkaisijat_ids": [
-      1
+      3026
     ],
     "studiot_ids": [
-      1,
-      4
+      6434
     ],
-    "kuvat_ids": [
-      27
-    ],
-    "sarja_id": null,
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65476,
-    "title": "The Elder Scrolls IV: Oblivion Remastered",
-    "body": "",
-    "uid": 2,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-30 13:49:08",
-    "hero_image_id": 23,
-    "alustat_ids": [],
-    "pelit_ids": [
-      7,
-      9,
-      9
-    ],
-    "ihmiset_ids": [
-      4,
-      4
-    ],
-    "julkaisijat_ids": [
-      6
-    ],
-    "studiot_ids": [
-      2
-    ],
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-08-11",
+    "publish_type": "remaster",
+    "hero_image_id": 6,
     "kuvat_ids": [
-      14,
+      13,
       16,
       24,
-      24
+      25,
+      26
+    ]
+  },
+  {
+    "nid": 65477,
+    "title": "The Elder Scrolls IV: Oblivion Remastered",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
+    "status": 1,
+    "promote": 0,
+    "created": 1782883462,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
     ],
-    "sarja_id": null,
+    "pelit_ids": [
+      461
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      3026
+    ],
+    "studiot_ids": [
+      6434
+    ],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-04-22",
+    "publish_type": "remaster",
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      6,
+      24
+    ]
   },
   {
-    "id": 65474,
-    "title": "Shattered Space",
+    "nid": 65476,
+    "title": "The Elder Scrolls IV: Oblivion Remastered",
     "body": "",
-    "uid": 4,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-30 10:49:08",
-    "hero_image_id": 15,
+    "created": 1782882771,
     "alustat_ids": [
-      4,
-      4,
-      5
+      9103,
+      7405,
+      4876
     ],
     "pelit_ids": [
-      4
+      14147
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      3026
+    ],
+    "studiot_ids": [
+      6434
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-04-22",
+    "publish_type": "remaster",
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "nid": 65474,
+    "title": "Shattered Space",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1782848214,
+    "alustat_ids": [
+      7405
+    ],
+    "pelit_ids": [
+      9686
     ],
     "ihmiset_ids": [],
     "julkaisijat_ids": [],
-    "studiot_ids": [
-      2
-    ],
-    "kuvat_ids": [
-      21,
-      22
-    ],
-    "sarja_id": null,
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-07",
+    "publish_type": "dlc",
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      21
+    ]
   },
   {
-    "id": 65473,
+    "nid": 65473,
     "title": "Terran Armada",
     "body": "",
-    "uid": 2,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-30 09:49:08",
-    "hero_image_id": 11,
-    "alustat_ids": [],
+    "created": 1782848086,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
     "pelit_ids": [
-      8,
-      9
+      9686
     ],
-    "ihmiset_ids": [
-      1,
-      3
-    ],
-    "julkaisijat_ids": [
-      1,
-      3
-    ],
-    "studiot_ids": [
-      4
-    ],
-    "kuvat_ids": [
-      12,
-      23
-    ],
-    "sarja_id": null,
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-07",
+    "publish_type": "dlc",
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      1,
+      19,
+      20
+    ]
   },
   {
-    "id": 65472,
+    "nid": 65472,
     "title": "Shattered Space",
     "body": "",
-    "uid": 5,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-30 05:49:08",
-    "hero_image_id": 15,
+    "created": 1782848038,
     "alustat_ids": [
-      1,
-      7,
-      7
+      9103,
+      4876
     ],
     "pelit_ids": [
-      2,
-      6,
-      7,
-      8,
-      10
+      9686
     ],
-    "ihmiset_ids": [
-      2
-    ],
-    "julkaisijat_ids": [
-      3,
-      6
-    ],
-    "studiot_ids": [
-      6
-    ],
-    "kuvat_ids": [
-      2,
-      4,
-      7,
-      18,
-      25
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65471,
-    "title": "Starfield",
-    "body": "",
-    "uid": 4,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-29 19:49:08",
-    "hero_image_id": 22,
-    "alustat_ids": [
-      6,
-      7
-    ],
-    "pelit_ids": [
-      2,
-      2,
-      3,
-      3
-    ],
-    "ihmiset_ids": [
-      6
-    ],
+    "ihmiset_ids": [],
     "julkaisijat_ids": [],
-    "studiot_ids": [
-      6,
-      6
-    ],
-    "kuvat_ids": [
-      1,
-      18,
-      25,
-      27
-    ],
-    "sarja_id": null,
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2024-09-30",
+    "publish_type": "dlc",
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      11,
+      19
+    ]
   },
   {
-    "id": 65470,
+    "nid": 65471,
     "title": "Starfield",
     "body": "",
-    "uid": 2,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-29 10:49:08",
-    "hero_image_id": 27,
+    "created": 1782847978,
     "alustat_ids": [
-      1,
-      2,
-      3
+      7405
     ],
     "pelit_ids": [
-      2,
-      4,
-      4,
-      10
+      9686
     ],
-    "ihmiset_ids": [
-      1,
-      1,
-      5
-    ],
-    "julkaisijat_ids": [
-      4,
-      6
-    ],
-    "studiot_ids": [
-      3
-    ],
-    "kuvat_ids": [
-      2,
-      12
-    ],
-    "sarja_id": null,
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-07",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 16,
+    "kuvat_ids": []
   },
   {
-    "id": 65469,
+    "nid": 65470,
+    "title": "Starfield",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1782847775,
+    "alustat_ids": [
+      9103,
+      4876
+    ],
+    "pelit_ids": [
+      9686
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2023-09-06",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      15,
+      22,
+      26
+    ]
+  },
+  {
+    "nid": 65469,
     "title": "Gran Turismo 7",
     "body": "",
-    "uid": 5,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-29 06:49:08",
-    "hero_image_id": 5,
-    "alustat_ids": [],
+    "created": 1782847657,
+    "alustat_ids": [
+      7405
+    ],
     "pelit_ids": [
-      9
+      9824
     ],
     "ihmiset_ids": [],
-    "julkaisijat_ids": [
-      2
-    ],
-    "studiot_ids": [
-      7
-    ],
-    "kuvat_ids": [
-      1,
-      15
-    ],
-    "sarja_id": null,
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2022-03-04",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      10,
+      21,
+      22,
+      24
+    ]
   },
   {
-    "id": 65468,
+    "nid": 65468,
     "title": "Control Resonant",
     "body": "",
-    "uid": 2,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-29 00:49:08",
-    "hero_image_id": 15,
+    "created": 1782847326,
     "alustat_ids": [
-      1
+      9103,
+      7405,
+      4876
     ],
     "pelit_ids": [
-      9
+      13898
     ],
-    "ihmiset_ids": [
-      1,
-      2,
-      5
-    ],
-    "julkaisijat_ids": [
-      4
-    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
     "studiot_ids": [],
-    "kuvat_ids": [
-      3,
-      6,
-      22
-    ],
-    "sarja_id": null,
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-09-24",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      7,
+      10,
+      20,
+      21,
+      27
+    ]
   },
   {
-    "id": 65467,
+    "nid": 65467,
     "title": "Clive Barker's Hellraiser: Revival",
     "body": "",
-    "uid": 4,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-28 17:49:08",
-    "hero_image_id": 10,
+    "created": 1782840730,
     "alustat_ids": [
-      2,
-      3,
-      6
+      9103,
+      7405,
+      4876
     ],
     "pelit_ids": [
-      5,
-      8,
-      9,
-      9,
-      10
+      13751
     ],
     "ihmiset_ids": [],
     "julkaisijat_ids": [],
     "studiot_ids": [],
-    "kuvat_ids": [
-      3,
-      10
-    ],
-    "sarja_id": null,
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-10-08",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      6,
+      11,
+      17,
+      20,
+      22
+    ]
   },
   {
-    "id": 65466,
+    "nid": 65466,
     "title": "EA Sports FC 26",
     "body": "",
-    "uid": 4,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-28 11:49:08",
-    "hero_image_id": 10,
+    "created": 1782840467,
     "alustat_ids": [
-      3,
-      3,
-      6
+      9103,
+      7405,
+      4876,
+      13626,
+      4440,
+      4454,
+      5778
     ],
     "pelit_ids": [
-      6,
-      6,
-      10
+      13818
     ],
-    "ihmiset_ids": [
-      3,
-      5,
-      6
-    ],
-    "julkaisijat_ids": [
-      6
-    ],
-    "studiot_ids": [
-      1,
-      2
-    ],
-    "kuvat_ids": [],
-    "sarja_id": null,
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [],
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-09-25",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      4
+    ]
   },
   {
-    "id": 65429,
+    "nid": 65429,
     "title": "Crazy Taxi: World Tour",
     "body": "",
-    "uid": 6,
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
     "status": 1,
     "promote": 0,
-    "created": "2026-06-21 10:49:08",
-    "hero_image_id": 24,
+    "created": 1780898280,
     "alustat_ids": [
-      5,
-      5
+      9103,
+      7405,
+      4876,
+      13626
     ],
     "pelit_ids": [
-      2,
-      6,
-      6
+      14120
     ],
-    "ihmiset_ids": [
-      2,
-      2
-    ],
+    "ihmiset_ids": [],
     "julkaisijat_ids": [
-      4,
-      4
+      1150
     ],
     "studiot_ids": [
-      5
+      5116
     ],
-    "kuvat_ids": [
-      1,
-      4,
-      15,
-      23,
-      27
-    ],
-    "sarja_id": null,
     "title_english": null,
     "summary_english": null,
     "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65369,
-    "title": "Clair Obscur: Expedition 33",
-    "body": "",
-    "uid": 4,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-08 00:49:08",
-    "hero_image_id": 22,
-    "alustat_ids": [
-      6,
-      7,
-      7
-    ],
-    "pelit_ids": [
-      3,
-      5,
-      5,
-      8
-    ],
-    "ihmiset_ids": [
-      6
-    ],
-    "julkaisijat_ids": [
-      3
-    ],
-    "studiot_ids": [],
-    "kuvat_ids": [],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65368,
-    "title": "Bubsy 4D",
-    "body": "",
-    "uid": 6,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-07 23:49:08",
+    "arvosana": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "publish_type": "ensijulkaisu",
     "hero_image_id": 4,
-    "alustat_ids": [
-      1,
-      4,
-      4
-    ],
-    "pelit_ids": [
-      3,
-      5
-    ],
-    "ihmiset_ids": [
-      6
-    ],
-    "julkaisijat_ids": [
-      4,
-      5
-    ],
-    "studiot_ids": [
-      3
-    ],
-    "kuvat_ids": [
-      3,
-      12,
-      13
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65365,
-    "title": "Mina the Hollower",
-    "body": "",
-    "uid": 4,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-07 13:49:08",
-    "hero_image_id": 24,
-    "alustat_ids": [
-      6
-    ],
-    "pelit_ids": [
-      2,
-      3,
-      6,
-      8,
-      9
-    ],
-    "ihmiset_ids": [],
-    "julkaisijat_ids": [
-      5
-    ],
-    "studiot_ids": [
-      5
-    ],
     "kuvat_ids": [
       4,
-      9,
-      10,
-      20,
-      21
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65358,
-    "title": "BeastLink",
-    "body": "",
-    "uid": 5,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-05 21:49:08",
-    "hero_image_id": 14,
-    "alustat_ids": [],
-    "pelit_ids": [
-      2,
-      3,
-      4,
-      5,
-      8
-    ],
-    "ihmiset_ids": [
-      2,
-      5,
-      6
-    ],
-    "julkaisijat_ids": [
-      2
-    ],
-    "studiot_ids": [
-      1,
-      6
-    ],
-    "kuvat_ids": [
-      6,
-      7,
-      23
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65352,
-    "title": "Tomodachi Life: Living the Dream",
-    "body": "",
-    "uid": 6,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-04 15:49:08",
-    "hero_image_id": 8,
-    "alustat_ids": [],
-    "pelit_ids": [
-      1,
-      2,
-      9
-    ],
-    "ihmiset_ids": [
-      2,
-      6
-    ],
-    "julkaisijat_ids": [
-      1
-    ],
-    "studiot_ids": [],
-    "kuvat_ids": [
-      10
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65351,
-    "title": "Forbidden Solitaire",
-    "body": "",
-    "uid": 2,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-04 11:49:08",
-    "hero_image_id": 15,
-    "alustat_ids": [
-      2,
-      3,
-      4
-    ],
-    "pelit_ids": [
-      3
-    ],
-    "ihmiset_ids": [
-      2,
-      4,
-      6
-    ],
-    "julkaisijat_ids": [
-      3,
-      5
-    ],
-    "studiot_ids": [
-      1
-    ],
-    "kuvat_ids": [
-      7
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65347,
-    "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
-    "body": "",
-    "uid": 4,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-03 22:49:08",
-    "hero_image_id": 8,
-    "alustat_ids": [
-      3,
-      3,
-      3
-    ],
-    "pelit_ids": [
-      4,
-      5,
-      7,
-      8,
-      9
-    ],
-    "ihmiset_ids": [
-      2,
-      4,
-      6
-    ],
-    "julkaisijat_ids": [],
-    "studiot_ids": [
-      2
-    ],
-    "kuvat_ids": [
-      4,
-      5,
-      13,
-      23
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65346,
-    "title": "Buck Bumble",
-    "body": "",
-    "uid": 2,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-03 21:49:08",
-    "hero_image_id": 9,
-    "alustat_ids": [
-      1
-    ],
-    "pelit_ids": [
-      3,
-      5,
-      6,
-      9
-    ],
-    "ihmiset_ids": [
-      1,
-      4
-    ],
-    "julkaisijat_ids": [],
-    "studiot_ids": [],
-    "kuvat_ids": [],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65339,
-    "title": "The Blood of Dawnwalker",
-    "body": "",
-    "uid": 3,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-06-02 10:49:08",
-    "hero_image_id": 21,
-    "alustat_ids": [
-      1,
-      6
-    ],
-    "pelit_ids": [
-      3,
-      5,
-      7,
-      8
-    ],
-    "ihmiset_ids": [
-      1,
-      3,
-      6
-    ],
-    "julkaisijat_ids": [],
-    "studiot_ids": [
-      7
-    ],
-    "kuvat_ids": [
-      13,
-      16
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65233,
-    "title": "Poker Night at the Inventory",
-    "body": "",
-    "uid": 4,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-05-09 19:49:08",
-    "hero_image_id": 14,
-    "alustat_ids": [
-      3,
-      3,
-      5
-    ],
-    "pelit_ids": [
-      3,
-      4
-    ],
-    "ihmiset_ids": [],
-    "julkaisijat_ids": [],
-    "studiot_ids": [
-      5,
-      6
-    ],
-    "kuvat_ids": [
-      16,
-      20,
-      27,
-      27
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65212,
-    "title": "John Wick",
-    "body": "",
-    "uid": 2,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-05-06 11:49:08",
-    "hero_image_id": 22,
-    "alustat_ids": [
-      1,
-      3,
-      7
-    ],
-    "pelit_ids": [
-      3
-    ],
-    "ihmiset_ids": [],
-    "julkaisijat_ids": [
-      1,
-      5
-    ],
-    "studiot_ids": [],
-    "kuvat_ids": [
-      9,
-      10,
-      15,
-      27
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65192,
-    "title": "Goblin’s Die",
-    "body": "",
-    "uid": 6,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-05-01 09:49:08",
-    "hero_image_id": 27,
-    "alustat_ids": [
-      1,
-      2
-    ],
-    "pelit_ids": [
-      7,
-      8
-    ],
-    "ihmiset_ids": [
-      2,
-      2,
-      6
-    ],
-    "julkaisijat_ids": [],
-    "studiot_ids": [],
-    "kuvat_ids": [
-      6,
-      7,
-      20,
-      21
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
-  },
-  {
-    "id": 65022,
-    "title": "Sacred 2: Fallen Angel Remaster",
-    "body": "<p>Ancaria on tuhon partaalla. T-Energy, salaperäinen voimanlähde, joka aikoinaan toi vaurautta, ruokkii nyt korruptiota, konflikteja ja kaaosta. Sodan ja petoksen keskellä kuusi sankaria nousee — jokaisella oma kohtalonsa, kykynsä ja polkunsa elävässä, hengittävässä avoimessa maailmassa.</p><p>Tässä rakastetun toimintaroolipelin Sacred 2: Fallen Angel uudistetussa versiossa pelaajat palaavat valtavaan fantasiamaailmaan, joka on täynnä satoja tehtäviä, vaarallisia luolastoja ja ainutlaatuisia taistelutaitoja hallittavaksi. Taistele hirviömäisiä olentoja vastaan, paljasta muinaisia salaisuuksia ja muokkaa hahmoasi varusteilla, tasoilla ja syvällisellä kustomoinnilla.</p><p>Uudistetut taistelumekaniikat, moderni käyttöliittymä, täysi ohjainyhteensopivuus ja kaikki laajennukset mukana tuovat uutta eloa fanien suosikkiin — olitpa palaamassa Ancariaan tai astumassa sinne ensi kertaa.</p><p>Luo oma legendasi. Ancaria kohtalo odottaa.</p>",
-    "uid": 6,
-    "status": 1,
-    "promote": 0,
-    "created": "2026-03-26 01:49:08",
-    "hero_image_id": 2,
-    "alustat_ids": [
-      3
-    ],
-    "pelit_ids": [
-      4
-    ],
-    "ihmiset_ids": [
-      4,
-      5
-    ],
-    "julkaisijat_ids": [
-      2,
-      3
-    ],
-    "studiot_ids": [
-      1,
-      5
-    ],
-    "kuvat_ids": [
-      3,
-      16,
-      18,
-      25
-    ],
-    "sarja_id": null,
-    "title_english": null,
-    "summary_english": null,
-    "pelin_nimi": null,
-    "arvosana": null
+      17
+    ]
   }
 ]

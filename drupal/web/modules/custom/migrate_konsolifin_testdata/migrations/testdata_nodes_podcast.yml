@@ -8,23 +8,20 @@ source:
   plugin: json_fixture
   file: nodes/podcast.json
   ids:
-    id:
+    nid:
       type: integer
 process:
+  nid: nid
   title: title
   body/value: body
+  body/summary: summary
   body/format:
     plugin: default_value
     default_value: full_html
-  uid:
-    plugin: default_value
-    default_value: 6
+  uid: uid
   status: status
   promote: promote
-  created:
-    plugin: callback
-    callable: strtotime
-    source: created
+  created: created
   field_mp3:
     plugin: default_value
     default_value: 101

@@ -110,15 +110,26 @@ def main():
                 query = """
                 SELECT
                     node.nid,
-                    node.type,
-                    nfd.status,
                     nfd.title,
+                    body.body_value as body,
+                    body.body_summary as summary,
+                    node.type,
+                    nfd.uid,
+                    nfd.status,
                     nfd.promote,
-                    body.body_value,
-                    entit.field_title_in_english_value,
-                    summa.field_summary_in_english_value,
-                    peni.field_pelin_nimi_value,
-                    score.field_arvosana_value
+                    nfd.created,
+                    t_alustat.alustat as alustat_ids,
+                    t_pelit.pelit as pelit_ids,
+                    t_ihmiset.ihmiset as ihmiset_ids,
+                    t_julkaisijat.julkaisijat as julkaisijat_ids,
+                    t_studiot.studiot as studiot_ids,
+                    entit.field_title_in_english_value as title_english,
+                    summa.field_summary_in_english_value as summary_english,
+                    peni.field_pelin_nimi_value as pelin_nimi,
+                    score.field_arvosana_value as arvosana,
+                    julk_aika.field_julkaisuajankohta_accuracy_level as publish_accuracy,
+                    julk_aika.field_julkaisuajankohta_stored_date as publish_date,
+                    julk_tyyppi.field_tyyppi_value as publish_type
                 FROM
                     node
                     LEFT JOIN node__body AS body ON node.nid = body.entity_id AND node.vid = body.revision_id
@@ -126,12 +137,69 @@ def main():
                     LEFT JOIN node__field_title_in_english AS entit ON node.nid = entit.entity_id AND node.vid = entit.revision_id
                     LEFT JOIN node__field_pelin_nimi AS peni ON node.nid = peni.entity_id AND node.vid = peni.revision_id
                     LEFT JOIN node__field_arvosana AS score ON node.nid = score.entity_id AND node.vid = score.revision_id
-                    LEFT JOIN node_field_data AS nfd ON node.nid = nfd.nid
-                    AND node.vid = nfd.vid
+                    LEFT JOIN node__field_arvosteltu_versio AS arvostelualusta ON node.nid = arvostelualusta.entity_id AND node.vid = arvostelualusta.revision_id
+                    LEFT JOIN node__field_julkaisuajankohta AS julk_aika ON node.nid = julk_aika.entity_id AND node.vid = julk_aika.revision_id
+                    LEFT JOIN node__field_tyyppi AS julk_tyyppi ON node.nid = julk_tyyppi.entity_id AND node.vid = julk_tyyppi.revision_id
+                    LEFT JOIN node_field_data AS nfd ON node.nid = nfd.nid AND node.vid = nfd.vid
+                    LEFT JOIN (
+                        SELECT
+                            entity_id AS nid,
+                            revision_id AS vid,
+                            GROUP_CONCAT(field_pelit_target_id) AS pelit
+                        FROM
+                            node__field_pelit
+                        GROUP BY
+                            nid,
+                            vid
+                    ) AS t_pelit ON node.nid = t_pelit.nid AND node.vid = t_pelit.vid
+                    LEFT JOIN (
+                        SELECT
+                            entity_id AS nid,
+                            revision_id AS vid,
+                            GROUP_CONCAT(field_ihmiset_target_id) AS ihmiset
+                        FROM
+                            node__field_ihmiset
+                        GROUP BY
+                            nid,
+                            vid
+                    ) AS t_ihmiset ON node.nid = t_ihmiset.nid AND node.vid = t_ihmiset.vid
+                    LEFT JOIN (
+                        SELECT
+                            entity_id AS nid,
+                            revision_id AS vid,
+                            GROUP_CONCAT(field_studiot_target_id) AS studiot
+                        FROM
+                            node__field_studiot
+                        GROUP BY
+                            nid,
+                            vid
+                    ) AS t_studiot ON node.nid = t_studiot.nid AND node.vid = t_studiot.vid
+                    LEFT JOIN (
+                        SELECT
+                            entity_id AS nid,
+                            revision_id AS vid,
+                            GROUP_CONCAT(field_julkaisijat_target_id) AS julkaisijat
+                        FROM
+                            node__field_julkaisijat
+                        GROUP BY
+                            nid,
+                            vid
+                    ) AS t_julkaisijat ON node.nid = t_julkaisijat.nid AND node.vid = t_julkaisijat.vid
+                    LEFT JOIN (
+                        SELECT
+                            entity_id AS nid,
+                            revision_id AS vid,
+                            GROUP_CONCAT(field_alustat_target_id) AS alustat
+                        FROM
+                            node__field_alustat
+                        GROUP BY
+                            nid,
+                            vid
+                    ) AS t_alustat ON node.nid = t_alustat.nid AND node.vid = t_alustat.vid
                 ORDER BY
                     nid DESC
                 LIMIT
-                    500;
+                    100;
                 """
 
                 with connection.cursor() as cursor:
@@ -143,35 +211,15 @@ def main():
                     serializable_results = serialize_data(results)
 
                 nodes = {}
-                hours_ago = 0
+                terms = set()
+                writers = set()
                 for res in serializable_results:
-                    # Random creation time
-                    hours_ago += randint(1,10)
-                    created = datetime.datetime.now() - datetime.timedelta(hours=hours_ago)
-
-                    # Random platforms, 0 to 3 values from range 1..7
-                    alustat = sorted(choices(range(1,8), k=randint(0,3)))
-
-                    # Random games, 1 to 5 values from range 1..10
-                    pelit = sorted(choices(range(1,11), k=randint(1,5)))
-
-                    # Random people, 0 to 3 values from range 1..6
-                    ihmiset = sorted(choices(range(1,7), k=randint(0,3)))
-
-                    # Random publishers, 0 to 2 values from range 1..6
-                    julkaisijat = sorted(choices(range(1,7), k=randint(0,2)))
-
-                    # Random studios, 0 to 2 values from range 1..7
-                    studiot = sorted(choices(range(1,8), k=randint(0,2)))
-
                     # Random images, 0 to 5 values from range 1..27
                     kuvat = sorted(choices(range(1,28), k=randint(0,5)))
-
-                    # Random series, 5% chance of selecting a single series from range 1..4
-                    sarja = choices(range(1,5), k=1)[0] if randint(1,20) == 1 else None
+                    hero_id = choice(range(1,28))
 
                     # Replace all img tags and earlier drupal-media tags with a new drupal-media tag with a random image uuid
-                    body = res['body_value'] if res['body_value'] else ''
+                    body = res['body'] if res['body'] else ''
                     parts = re.split(r"<img[^>]*>|<drupal-media.*drupal-media>", body)
                     if len(parts) > 1:
                         iterator = iter(parts)
@@ -180,33 +228,33 @@ def main():
                             body += f'<drupal-media data-entity-type="media" data-entity-uuid="{choice(image_uuids)}">&nbsp;</drupal-media>'
                             body += part
 
+                    res['body'] = body
+
+                    # Convert comma-separated strings to lists of integers, filtering out any None or empty strings
+                    res['pelit_ids'] = [int(x) for x in res['pelit_ids'].split(',')] if res['pelit_ids'] else []
+                    res['ihmiset_ids'] = [int(x) for x in res['ihmiset_ids'].split(',')] if res['ihmiset_ids'] else []
+                    res['julkaisijat_ids'] = [int(x) for x in res['julkaisijat_ids'].split(',')] if res['julkaisijat_ids'] else []
+                    res['studiot_ids'] = [int(x) for x in res['studiot_ids'].split(',')] if res['studiot_ids'] else []
+                    res['alustat_ids'] = [int(x) for x in res['alustat_ids'].split(',')] if res['alustat_ids'] else []
+
+                    terms.update(res['pelit_ids'])
+                    terms.update(res['ihmiset_ids'])
+                    terms.update(res['julkaisijat_ids'])
+                    terms.update(res['studiot_ids'])
+                    terms.update(res['alustat_ids'])
+
+                    writers.update(res['uid'])
+
+                    res['hero_image_id'] = hero_id
+                    res['kuvat_ids'] = kuvat
+
                     if res['type'] not in nodes:
                         nodes[res['type']] = []
 
-                    nodes[res['type']].append({
-                        "id": res['nid'],
-                        "title": res['title'],
-                        "body": body,
-                        "uid": randint(2, 6),
-                        "status": res['status'],
-                        "promote": res['promote'],
-                        "created": created.strftime("%Y-%m-%d %H:%M:%S"),
-                        "hero_image_id": randint(1,27),
-                        "alustat_ids": alustat,
-                        "pelit_ids": pelit,
-                        "ihmiset_ids": ihmiset,
-                        "julkaisijat_ids": julkaisijat,
-                        "studiot_ids": studiot,
-                        "kuvat_ids": kuvat,
-                        "sarja_id": sarja,
-                        "title_english": res['field_title_in_english_value'],
-                        "summary_english": res['field_summary_in_english_value'],
-                        "pelin_nimi": res['field_pelin_nimi_value'],
-                        "arvosana": res['field_arvosana_value']
-                    })
+                    nodes[res['type']].append(res)
 
                 for t in nodes:
-                    filename = t + '.json'
+                    filename = "../data/nodes/" +t + '.json'
                     json.dump(nodes[t], open(filename, 'w'), indent=2, ensure_ascii=False)
 
             finally:

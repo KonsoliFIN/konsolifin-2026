@@ -8,27 +8,22 @@ source:
   plugin: json_fixture
   file: nodes/blogi.json
   ids:
-    id:
+    nid:
       type: integer
 process:
+  nid: nid
   type:
     plugin: default_value
     default_value: blogi
   title: title
   body/value: body
+  body/summary: summary
   body/format:
     plugin: default_value
     default_value: full_html
-  uid:
-    plugin: migration_lookup
-    migration: testdata_users
-    source: uid
-    no_stub: true
+  uid: uid
   status: status
-  created:
-    plugin: callback
-    callable: strtotime
-    source: created
+  created: created
   field_hero:
     -
       plugin: migration_lookup

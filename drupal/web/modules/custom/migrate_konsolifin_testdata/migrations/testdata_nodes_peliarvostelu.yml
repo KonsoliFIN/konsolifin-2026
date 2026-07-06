@@ -8,28 +8,23 @@ source:
   plugin: json_fixture
   file: nodes/peliarvostelu.json
   ids:
-    id:
+    nid:
       type: integer
 process:
+  nid: nid
   type:
     plugin: default_value
     default_value: peliarvostelu
   title: title
   body/value: body
+  body/summary: summary
   body/format:
     plugin: default_value
     default_value: full_html
-  uid:
-    plugin: migration_lookup
-    migration: testdata_users
-    source: uid
-    no_stub: true
+  uid: uid
   status: status
   promote: promote
-  created:
-    plugin: callback
-    callable: strtotime
-    source: created
+  created: created
   field_hero:
     -
       plugin: migration_lookup
