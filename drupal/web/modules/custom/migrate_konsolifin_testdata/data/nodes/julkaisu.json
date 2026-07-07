@@ -31,13 +31,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-09-04",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 19,
+    "hero_image_id": 12,
     "kuvat_ids": [
       5,
-      13,
-      16,
-      24,
-      25
+      9,
+      10,
+      21,
+      26
     ]
   },
   {
@@ -69,10 +69,9 @@
     "publish_accuracy": "year",
     "publish_date": "2027-12-31",
     "publish_type": "remake",
-    "hero_image_id": 22,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      7,
-      7
+      25
     ]
   },
   {
@@ -103,13 +102,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-07-09",
     "publish_type": "remaster",
-    "hero_image_id": 19,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      1,
-      4,
-      15,
-      15,
-      18
+      3,
+      6,
+      12
     ]
   },
   {
@@ -142,9 +139,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-08-11",
     "publish_type": "remaster",
-    "hero_image_id": 6,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      10
+      16,
+      24,
+      25,
+      26
     ]
   },
   {
@@ -179,10 +179,10 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-04-22",
     "publish_type": "remaster",
-    "hero_image_id": 1,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      5,
-      22
+      6,
+      26
     ]
   },
   {
@@ -217,11 +217,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-04-22",
     "publish_type": "remaster",
-    "hero_image_id": 3,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      3,
-      10,
-      18
+      1,
+      6,
+      7,
+      9
     ]
   },
   {
@@ -250,8 +251,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "dlc",
-    "hero_image_id": 7,
-    "kuvat_ids": []
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      11,
+      17,
+      18,
+      27
+    ]
   },
   {
     "nid": 65473,
@@ -281,13 +287,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "dlc",
-    "hero_image_id": 1,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      7,
-      8,
-      10,
-      18,
-      25
+      6,
+      9,
+      14
     ]
   },
   {
@@ -317,13 +321,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2024-09-30",
     "publish_type": "dlc",
-    "hero_image_id": 1,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      6,
-      13,
-      16,
-      17,
-      22
+      10,
+      19,
+      21,
+      24,
+      25
     ]
   },
   {
@@ -352,9 +356,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 7,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      19
+      2,
+      19,
+      20
     ]
   },
   {
@@ -384,11 +390,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2023-09-06",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 4,
+    "hero_image_id": 16,
     "kuvat_ids": [
-      6,
-      7,
-      19
+      10,
+      15,
+      16,
+      26
     ]
   },
   {
@@ -417,14 +424,8 @@
     "publish_accuracy": "exact",
     "publish_date": "2022-03-04",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      4,
-      6,
-      9,
-      10,
-      16
-    ]
+    "hero_image_id": 13,
+    "kuvat_ids": []
   },
   {
     "nid": 65468,
@@ -454,7 +455,7 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-09-24",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 25,
+    "hero_image_id": 14,
     "kuvat_ids": []
   },
   {
@@ -485,12 +486,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-10-08",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 21,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      8,
-      13,
-      13,
-      22
+      2,
+      20,
+      22,
+      23,
+      24
     ]
   },
   {
@@ -525,12 +527,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-09-25",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 4,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      10,
-      12,
-      16,
-      26
+      14,
+      17,
+      27
     ]
   },
   {
@@ -566,9 +567,12 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 26,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      3
+      7,
+      15,
+      17,
+      25
     ]
   },
   {
@@ -603,12 +607,8 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-04-24",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      12,
-      18,
-      18
-    ]
+    "hero_image_id": 22,
+    "kuvat_ids": []
   },
   {
     "nid": 65368,
@@ -646,9 +646,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-05-22",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 7,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      20
+      15
     ]
   },
   {
@@ -687,10 +687,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-05-29",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 8,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      1,
-      16
+      27
     ]
   },
   {
@@ -723,12 +722,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-05-06",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 20,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      2,
-      4,
+      1,
       7,
-      11
+      15,
+      19
     ]
   },
   {
@@ -761,13 +760,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-16",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 21,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      6,
-      9,
-      17,
-      17,
-      22
+      5,
+      7,
+      11,
+      15,
+      16
     ]
   },
   {
@@ -802,8 +801,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-30",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 23,
-    "kuvat_ids": []
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      12,
+      23
+    ]
   },
   {
     "nid": 65347,
@@ -840,9 +842,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2021-11-11",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 19,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      14
+      25
     ]
   },
   {
@@ -875,13 +877,12 @@
     "publish_accuracy": "exact",
     "publish_date": "1998-12-18",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 27,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      5,
+      2,
+      3,
       8,
-      9,
-      15,
-      22
+      9
     ]
   },
   {
@@ -916,11 +917,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-09-03",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 20,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      8,
-      25,
-      25
+      7,
+      9,
+      15,
+      15,
+      20
     ]
   },
   {
@@ -955,9 +958,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-03-05",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 9,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      9
+      2,
+      18,
+      24
     ]
   },
   {
@@ -992,11 +997,11 @@
     "publish_accuracy": "year",
     "publish_date": "2027-12-31",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 9,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      5,
-      20,
-      27
+      9,
+      14,
+      17
     ]
   },
   {
@@ -1029,12 +1034,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-02-04",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 1,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      19,
-      20,
-      23,
-      25
+      18
     ]
   },
   {
@@ -1070,8 +1072,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-11-11",
     "publish_type": "remaster",
-    "hero_image_id": 27,
-    "kuvat_ids": []
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      9,
+      12,
+      26
+    ]
   },
   {
     "nid": 64940,
@@ -1103,13 +1109,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-30",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 11,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      3,
+      6,
       12,
-      12,
+      18,
       19,
-      23
+      25
     ]
   },
   {
@@ -1146,11 +1152,10 @@
     "publish_type": "ensijulkaisu",
     "hero_image_id": 5,
     "kuvat_ids": [
-      4,
-      5,
+      3,
       7,
-      18,
-      27
+      15,
+      22
     ]
   },
   {
@@ -1186,10 +1191,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-06-19",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 15,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      14,
-      18
+      27
     ]
   },
   {
@@ -1222,10 +1226,8 @@
     "publish_accuracy": "exact",
     "publish_date": "2024-10-03",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      13
-    ]
+    "hero_image_id": 19,
+    "kuvat_ids": []
   },
   {
     "nid": 64708,
@@ -1261,12 +1263,9 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-05-15",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 26,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      5,
-      11,
-      21,
-      24
+      10
     ]
   },
   {
@@ -1300,9 +1299,7 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-03-27",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      22
-    ]
+    "hero_image_id": 13,
+    "kuvat_ids": []
   }
 ]

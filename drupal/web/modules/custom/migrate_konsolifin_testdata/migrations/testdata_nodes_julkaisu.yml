@@ -26,31 +26,11 @@ process:
   created: created
   changed: created
   field_hero: hero_image_id
-  field_alustat:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_alustat
-    source: alustat_ids
-    no_stub: true
-  field_pelit:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_pelit
-    source: pelit_ids
-    no_stub: true
-  field_julkaisijat:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_pelijulkaisijat
-    source: julkaisijat_ids
-    no_stub: true
-  field_studiot:
-    plugin: migration_lookup
-    migration: testdata_taxonomy_pelistudiot
-    source: studiot_ids
-    no_stub: true
-  field_kuvat:
-    plugin: migration_lookup
-    migration: testdata_media_images
-    source: kuvat_ids
-    no_stub: true
+  field_alustat: alustat_ids
+  field_pelit: pelit_ids
+  field_julkaisijat: julkaisijat_ids
+  field_studiot: studiot_ids
+  field_kuvat: kuvat_ids
   field_julkaisuajankohta/accuracy_level: publish_accuracy
   field_julkaisuajankohta/stored_date: publish_date
   field_tyyppi: publish_type

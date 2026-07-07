@@ -21,9 +21,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 23,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      12
+      2,
+      3,
+      22,
+      25,
+      26
     ]
   },
   {
@@ -48,12 +52,12 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 23,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      6,
-      12,
-      13,
-      14
+      15,
+      16,
+      22,
+      24
     ]
   },
   {
@@ -78,9 +82,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 26,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      24
+      12,
+      14,
+      18,
+      20,
+      26
     ]
   },
   {
@@ -107,13 +115,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 17,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      8,
-      10,
-      13,
-      16,
-      22
+      22,
+      23,
+      25,
+      25,
+      25
     ]
   },
   {
@@ -138,11 +146,11 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 11,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      7,
-      12,
-      21
+      9,
+      16,
+      26
     ]
   },
   {
@@ -167,13 +175,12 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 23,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      2,
-      12,
-      14,
-      15,
-      22
+      13,
+      18,
+      22,
+      24
     ]
   },
   {
@@ -198,14 +205,8 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      3,
-      9,
-      13,
-      19,
-      21
-    ]
+    "hero_image_id": 7,
+    "kuvat_ids": []
   },
   {
     "nid": 65140,
@@ -234,12 +235,8 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      2,
-      10,
-      19
-    ]
+    "hero_image_id": 8,
+    "kuvat_ids": []
   },
   {
     "nid": 65135,
@@ -265,9 +262,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 13,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      5
+      5,
+      8,
+      17,
+      22,
+      24
     ]
   },
   {
@@ -292,10 +293,8 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      27
-    ]
+    "hero_image_id": 8,
+    "kuvat_ids": []
   },
   {
     "nid": 65122,
@@ -321,9 +320,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 24,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      1
+      4,
+      17,
+      24,
+      25,
+      26
     ]
   },
   {
@@ -353,10 +356,10 @@
     "hero_image_id": 4,
     "kuvat_ids": [
       7,
-      11,
-      13,
-      16,
-      17
+      8,
+      15,
+      19,
+      20
     ]
   },
   {
@@ -387,10 +390,11 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 6,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      14,
-      22
+      5,
+      18,
+      24
     ]
   },
   {
@@ -420,9 +424,9 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 9,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      20
+      27
     ]
   },
   {
@@ -453,11 +457,8 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      17,
-      26
-    ]
+    "hero_image_id": 26,
+    "kuvat_ids": []
   },
   {
     "nid": 64976,
@@ -486,11 +487,12 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 14,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      5,
-      16,
-      19
+      9,
+      12,
+      17,
+      23
     ]
   },
   {
@@ -517,10 +519,10 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 11,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      2,
-      22
+      14,
+      18
     ]
   },
   {
@@ -547,12 +549,9 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 4,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      9,
-      13,
-      16,
-      18
+      26
     ]
   },
   {
@@ -579,10 +578,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 6,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      5,
-      7
+      14,
+      18,
+      19,
+      24,
+      24
     ]
   },
   {
@@ -607,13 +609,10 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 1,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      8,
-      9,
-      21,
-      22,
-      25
+      16,
+      22
     ]
   },
   {
@@ -641,11 +640,9 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 16,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      15,
-      19,
-      21
+      18
     ]
   },
   {
@@ -670,13 +667,13 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 17,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      11,
       13,
-      13,
-      19,
-      23
+      14,
+      20,
+      21,
+      22
     ]
   },
   {
@@ -703,9 +700,12 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": null,
-    "hero_image_id": 22,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      13
+      10,
+      11,
+      16,
+      25
     ]
   }
 ]

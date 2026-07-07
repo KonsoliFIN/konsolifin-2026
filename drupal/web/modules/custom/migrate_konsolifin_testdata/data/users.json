@@ -14,7 +14,7 @@
       "toimitus",
       "administrator"
     ],
-    "kuva_id": 10
+    "kuva_id": 23
   },
   {
     "uid": 32,
@@ -26,7 +26,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 10
+    "kuva_id": 16
   },
   {
     "uid": 76,
@@ -38,7 +38,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 12
+    "kuva_id": 11
   },
   {
     "uid": 82,
@@ -54,7 +54,7 @@
       "johtoryhma",
       "administrator"
     ],
-    "kuva_id": 17
+    "kuva_id": 11
   },
   {
     "uid": 83,
@@ -70,7 +70,7 @@
       "toimitus",
       "johtoryhma"
     ],
-    "kuva_id": 17
+    "kuva_id": 23
   },
   {
     "uid": 215,
@@ -82,7 +82,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 10
+    "kuva_id": 16
   },
   {
     "uid": 558,
@@ -104,7 +104,7 @@
     "esittely": "<p>A-P \"spyde\" Kuutila hyppäsi KonsoliFINin kelkkaan alkuvuodesta 2015. Pelaaminen on kulkenut herran mukana niin kauan kuin muisti riittää. Pelien lisäksi aikaa syövät kirjoittaminen sekä musiikki.</p>\r\n\r\n<p>Gamertag: spydeZ6</p>\r\n",
     "some_urls": [],
     "roles": [],
-    "kuva_id": 16
+    "kuva_id": 23
   },
   {
     "uid": 1604,
@@ -121,7 +121,7 @@
       "toimitus",
       "johtoryhma"
     ],
-    "kuva_id": 23
+    "kuva_id": 20
   },
   {
     "uid": 3982,
@@ -133,7 +133,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 20
+    "kuva_id": 23
   },
   {
     "uid": 5594,
@@ -143,7 +143,7 @@
     "esittely": "<p>Emmi Hattunen liittyi KonsoliFINin toimitukseen vuonna 2018 uutistiimin vahvistukseksi ja raapustelee silloin tällöin arvosteluita.</p>\r\n\r\n<p>Kiinnostus peleihin on ollut olemassa jo lapsuudesta saakka&nbsp;kun&nbsp;ensimmäiset pelailut ovat tapahtuneet joko&nbsp;tietokoneella tai muilta lainatuilla konsoleilla. Emmin ensimmäinen&nbsp;ikioma konsoli oli Nintendo DS lite, joka vain syvensi hänen rakkautta tasohyppelyihin ja japanilaisiin roolipeliseikkailuihin. Mautkin kehittyvät ja nykyään pelaamista tulee harrastettua&nbsp;kaikilla mahdollisilla alustoilla.</p>\r\n\r\n<p>Välillä kun videopelit eivät nappaa niin huomio kiinnittyy kodista löytyvään hyllylliseen hienoja elokuvia Disneyn klassikoista elokuvahistorian helmiin.</p>\r\n\r\n<p>Emmin suosikkipelejä ovat Final Fantasy X, Kingdom Hearts 2 ja Fallout 3.</p>\r\n",
     "some_urls": [],
     "roles": [],
-    "kuva_id": 11
+    "kuva_id": 16
   },
   {
     "uid": 5599,
@@ -157,7 +157,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 20
+    "kuva_id": 11
   },
   {
     "uid": 5681,
@@ -169,7 +169,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 10
+    "kuva_id": 12
   },
   {
     "uid": 5807,
@@ -185,7 +185,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 11
+    "kuva_id": 23
   },
   {
     "uid": 5822,
@@ -197,7 +197,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 23
+    "kuva_id": 10
   },
   {
     "uid": 5957,
@@ -210,7 +210,7 @@
       "toimitus",
       "johtoryhma"
     ],
-    "kuva_id": 11
+    "kuva_id": 12
   },
   {
     "uid": 7513,
@@ -220,7 +220,7 @@
     "esittely": "<p>Uutisten raapustelija, joka omaa hirvittävän huonon maun niin peleissä, elokuvissa kuin musiikissakin.</p>\r\n",
     "some_urls": [],
     "roles": [],
-    "kuva_id": 9
+    "kuva_id": 16
   },
   {
     "uid": 7918,
@@ -232,7 +232,7 @@
     "roles": [
       "toimitus"
     ],
-    "kuva_id": 17
+    "kuva_id": 20
   },
   {
     "uid": 20624,
@@ -242,7 +242,7 @@
     "esittely": null,
     "some_urls": [],
     "roles": [],
-    "kuva_id": 16
+    "kuva_id": 17
   },
   {
     "uid": 24199,
@@ -252,6 +252,6 @@
     "esittely": null,
     "some_urls": [],
     "roles": [],
-    "kuva_id": 23
+    "kuva_id": 17
   }
 ]

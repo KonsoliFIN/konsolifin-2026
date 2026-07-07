@@ -261,6 +261,7 @@ def main():
                 SELECT
                     ttd.vid AS bundle,
                     ttd.tid,
+                    parent.parent_target_id AS parent,
                     ttd.revision_id,
                     fdata.name AS title,
                     fdata.description__value as body,
@@ -271,6 +272,8 @@ def main():
                     pforum.field_forum_ketju_value
                 FROM
                     taxonomy_term_data AS ttd
+                    LEFT JOIN taxonomy_term__parent AS parent ON ttd.tid = parent.entity_id
+                    AND ttd.revision_id = parent.revision_id
                     LEFT JOIN taxonomy_term_field_data AS fdata ON ttd.tid = fdata.tid
                     AND ttd.revision_id = fdata.revision_id
                     LEFT JOIN taxonomy_term__field_kuuluu_pelisarjaan AS pfrach ON ttd.tid = pfrach.entity_id
@@ -282,7 +285,7 @@ def main():
                     LEFT JOIN taxonomy_term__field_forum_ketju AS pforum ON ttd.tid = pforum.entity_id
                     AND ttd.revision_id = pforum.revision_id
                 WHERE
-                    ttd.tid in %s or  ttd.vid = 'franchise';
+                    ttd.tid in %s or  ttd.vid = 'franchise' or ttd.vid = 'alustat';
                 """
 
                 with connection.cursor() as cursor:

@@ -15,6 +15,7 @@ process:
   vid:
     plugin: default_value
     default_value: alustat
+  parent/target_id: parent
   name: title
   description/value: body
   description/format:

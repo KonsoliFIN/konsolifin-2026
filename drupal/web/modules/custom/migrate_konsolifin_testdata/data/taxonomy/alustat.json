@@ -1,113 +1,135 @@
 [
   {
     "bundle": "alustat",
-    "tid": 69,
-    "revision_id": 69,
-    "title": "Xbox 360",
+    "tid": 80,
+    "parent": 871,
+    "revision_id": 80,
+    "title": "Wii",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      8
+      26
     ]
   },
   {
     "bundle": "alustat",
-    "tid": 72,
-    "revision_id": 72,
-    "title": "PS3",
+    "tid": 89,
+    "parent": 871,
+    "revision_id": 89,
+    "title": "Xbox",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      1,
-      20
-    ]
+    "hero_image_id": 12,
+    "kuvat_ids": []
   },
   {
     "bundle": "alustat",
-    "tid": 78,
-    "revision_id": 78,
-    "title": "PSP",
+    "tid": 445,
+    "parent": 873,
+    "revision_id": 445,
+    "title": "GBA",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      8,
-      11,
-      21,
-      21,
-      23
-    ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 82,
-    "revision_id": 82,
-    "title": "PS2",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      2,
-      3,
-      6,
       20,
       27
     ]
   },
   {
     "bundle": "alustat",
-    "tid": 106,
-    "revision_id": 106,
-    "title": "Gamecube",
+    "tid": 447,
+    "parent": 873,
+    "revision_id": 447,
+    "title": "Nintendo DS",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      16,
-      23
+      1,
+      2,
+      18,
+      23,
+      26
     ]
   },
   {
     "bundle": "alustat",
-    "tid": 1724,
-    "revision_id": 1724,
-    "title": "Nintendo 3DS",
+    "tid": 871,
+    "parent": 0,
+    "revision_id": 871,
+    "title": "Retro",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": []
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      4,
+      15,
+      25
+    ]
   },
   {
     "bundle": "alustat",
-    "tid": 4390,
-    "revision_id": 4390,
-    "title": "PS Vita",
+    "tid": 872,
+    "parent": 0,
+    "revision_id": 872,
+    "title": "Edellinen sukupolvi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      22
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 873,
+    "parent": 0,
+    "revision_id": 873,
+    "title": "Käsikonsolit",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      10,
+      10
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 874,
+    "parent": 0,
+    "revision_id": 874,
+    "title": "Mobiili",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -116,13 +138,309 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 18,
     "kuvat_ids": [
-      5,
+      6,
+      11
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 4468,
+    "parent": 0,
+    "revision_id": 4468,
+    "title": "Nykysukupolvi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5777,
+    "parent": 0,
+    "revision_id": 5777,
+    "title": "Tuleva sukupolvi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
       17
     ]
   },
   {
     "bundle": "alustat",
+    "tid": 5812,
+    "parent": 871,
+    "revision_id": 5812,
+    "title": "Sega Saturn",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      3,
+      12,
+      18,
+      20
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5816,
+    "parent": 871,
+    "revision_id": 5816,
+    "title": "SNES",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5817,
+    "parent": 871,
+    "revision_id": 5817,
+    "title": "Atari Jaguar",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      22
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 6114,
+    "parent": 0,
+    "revision_id": 6114,
+    "title": "Muu",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 6529,
+    "parent": 871,
+    "revision_id": 6529,
+    "title": "N-Gage",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      8,
+      12
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 9012,
+    "parent": 0,
+    "revision_id": 9012,
+    "title": "Pilvialustat",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      14,
+      21
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 9013,
+    "parent": 9012,
+    "revision_id": 9013,
+    "title": "PlayStation Now",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 10362,
+    "parent": 9012,
+    "revision_id": 10362,
+    "title": "Amazon Luna",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 69,
+    "parent": 871,
+    "revision_id": 69,
+    "title": "Xbox 360",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 72,
+    "parent": 871,
+    "revision_id": 72,
+    "title": "PS3",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      21,
+      21,
+      24,
+      24,
+      24
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 78,
+    "parent": 873,
+    "revision_id": 78,
+    "title": "PSP",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      4,
+      14,
+      23
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 82,
+    "parent": 871,
+    "revision_id": 82,
+    "title": "PS2",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      10,
+      16,
+      27
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 106,
+    "parent": 871,
+    "revision_id": 106,
+    "title": "Gamecube",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      3,
+      20,
+      21,
+      25
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 1724,
+    "parent": 873,
+    "revision_id": 1724,
+    "title": "Nintendo 3DS",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      4,
+      9,
+      16,
+      18,
+      20
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 4390,
+    "parent": 873,
+    "revision_id": 4390,
+    "title": "PS Vita",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
     "tid": 4419,
+    "parent": 871,
     "revision_id": 4419,
     "title": "Wii U",
     "body": null,
@@ -131,7 +449,7 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
+    "hero_image_id": 23,
     "kuvat_ids": [
       25
     ]
@@ -139,6 +457,7 @@
   {
     "bundle": "alustat",
     "tid": 4440,
+    "parent": 872,
     "revision_id": 4440,
     "title": "PS4",
     "body": "<p>PS4, Sonyn näkemys kahdeksannen sukupolven konsolista, esiteltiin maailmalle 20.2.2013, ja myynti aloitettiin Yhdysvalloissa 15.11.2013, Euroopassa pari viikkoa myöhemmin.</p>\r\n",
@@ -147,18 +466,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      4,
       5,
       11,
-      21,
-      22
+      13,
+      25,
+      27
     ]
   },
   {
     "bundle": "alustat",
     "tid": 4454,
+    "parent": 872,
     "revision_id": 4454,
     "title": "Xbox One",
     "body": null,
@@ -167,16 +487,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      2,
-      20,
-      25
+      15,
+      23
     ]
   },
   {
     "bundle": "alustat",
     "tid": 4469,
+    "parent": 874,
     "revision_id": 4469,
     "title": "Android",
     "body": null,
@@ -185,12 +505,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": []
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      1,
+      9,
+      9
+    ]
   },
   {
     "bundle": "alustat",
     "tid": 4470,
+    "parent": 874,
     "revision_id": 4470,
     "title": "iOS",
     "body": null,
@@ -199,18 +524,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      2,
-      10,
-      14,
-      14,
-      20
+      18,
+      19,
+      19,
+      23,
+      24
     ]
   },
   {
     "bundle": "alustat",
     "tid": 4876,
+    "parent": 4468,
     "revision_id": 4876,
     "title": "PC / Windows",
     "body": null,
@@ -219,14 +545,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      8
+      9,
+      21
     ]
   },
   {
     "bundle": "alustat",
     "tid": 5382,
+    "parent": 4468,
     "revision_id": 5382,
     "title": "Mac",
     "body": null,
@@ -235,15 +563,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      6,
-      13
-    ]
+    "hero_image_id": 20,
+    "kuvat_ids": []
   },
   {
     "bundle": "alustat",
     "tid": 5383,
+    "parent": 4468,
     "revision_id": 5383,
     "title": "Linux",
     "body": null,
@@ -252,18 +578,151 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      12,
-      18,
-      25
+      7
     ]
   },
   {
     "bundle": "alustat",
     "tid": 5778,
+    "parent": 872,
     "revision_id": 5778,
     "title": "Nintendo Switch",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5813,
+    "parent": 871,
+    "revision_id": 5813,
+    "title": "Sega Mega Drive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      13,
+      20,
+      22,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5814,
+    "parent": 871,
+    "revision_id": 5814,
+    "title": "Sega Dreamcast",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      13,
+      17,
+      17
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 5815,
+    "parent": 871,
+    "revision_id": 5815,
+    "title": "PS1",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      11,
+      12,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 6495,
+    "parent": 871,
+    "revision_id": 6495,
+    "title": "NES",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      5,
+      14,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 7336,
+    "parent": 871,
+    "revision_id": 7336,
+    "title": "Nintendo 64",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      6,
+      16,
+      16,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 7405,
+    "parent": 4468,
+    "revision_id": 7405,
+    "title": "PS5",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      15,
+      20
+    ]
+  },
+  {
+    "bundle": "alustat",
+    "tid": 8955,
+    "parent": 9012,
+    "revision_id": 8955,
+    "title": "Stadia",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -273,127 +732,16 @@
     "hero_image_id": 3,
     "kuvat_ids": [
       4,
-      17
-    ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 5813,
-    "revision_id": 5813,
-    "title": "Sega Mega Drive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "alustat",
-    "tid": 5814,
-    "revision_id": 5814,
-    "title": "Sega Dreamcast",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      2,
-      9,
-      14,
-      19,
-      25
-    ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 5815,
-    "revision_id": 5815,
-    "title": "PS1",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      1,
-      11,
-      23
-    ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 6495,
-    "revision_id": 6495,
-    "title": "NES",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
       4,
-      19,
-      26
+      6,
+      12,
+      22
     ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 7336,
-    "revision_id": 7336,
-    "title": "Nintendo 64",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      16,
-      26
-    ]
-  },
-  {
-    "bundle": "alustat",
-    "tid": 7405,
-    "revision_id": 7405,
-    "title": "PS5",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "alustat",
-    "tid": 8955,
-    "revision_id": 8955,
-    "title": "Stadia",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
   },
   {
     "bundle": "alustat",
     "tid": 9014,
+    "parent": 9012,
     "revision_id": 9014,
     "title": "Project xCloud",
     "body": null,
@@ -402,16 +750,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 15,
     "kuvat_ids": [
       1,
-      3,
-      27
+      2,
+      6,
+      23,
+      24
     ]
   },
   {
     "bundle": "alustat",
     "tid": 9103,
+    "parent": 4468,
     "revision_id": 9103,
     "title": "Xbox Series S/X",
     "body": null,
@@ -420,14 +771,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      10
-    ]
+    "hero_image_id": 13,
+    "kuvat_ids": []
   },
   {
     "bundle": "alustat",
     "tid": 10494,
+    "parent": 6114,
     "revision_id": 10494,
     "title": "Lautapelit",
     "body": null,
@@ -436,16 +786,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      11,
-      15,
-      24
+      14,
+      19
     ]
   },
   {
     "bundle": "alustat",
     "tid": 11063,
+    "parent": 6114,
     "revision_id": 11063,
     "title": "Elokuvat ja tv-sarjat",
     "body": null,
@@ -454,16 +804,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      17,
-      23,
-      24
+      1,
+      2,
+      7,
+      10
     ]
   },
   {
     "bundle": "alustat",
     "tid": 13626,
+    "parent": 4468,
     "revision_id": 13626,
     "title": "Nintendo Switch 2",
     "body": null,
@@ -472,11 +824,7 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1,
-      2,
-      14
-    ]
+    "hero_image_id": 20,
+    "kuvat_ids": []
   }
 ]

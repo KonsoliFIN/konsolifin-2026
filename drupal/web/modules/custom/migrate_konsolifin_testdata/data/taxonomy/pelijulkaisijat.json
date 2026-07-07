@@ -2,6 +2,7 @@
   {
     "bundle": "pelijulkaisijat",
     "tid": 890,
+    "parent": 0,
     "revision_id": 890,
     "title": "Nintendo",
     "body": null,
@@ -10,18 +11,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      1,
-      4,
-      5,
-      7,
-      25
+      8,
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 927,
+    "parent": 0,
     "revision_id": 927,
     "title": "Capcom",
     "body": null,
@@ -30,15 +29,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      10,
+      6,
       15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 945,
+    "parent": 0,
     "revision_id": 945,
     "title": "Ubisoft",
     "body": null,
@@ -47,15 +47,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      4,
-      23
+      6
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 952,
+    "parent": 0,
     "revision_id": 952,
     "title": "Atari",
     "body": null,
@@ -64,15 +64,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      5,
-      16
+      1,
+      2,
+      15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 954,
+    "parent": 0,
     "revision_id": 954,
     "title": "Konami",
     "body": null,
@@ -81,17 +83,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      7,
-      7,
-      14,
-      19
+      4
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1073,
+    "parent": 0,
     "revision_id": 1073,
     "title": "505 Games",
     "body": null,
@@ -100,15 +100,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      15,
-      16
+      2,
+      9,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1150,
+    "parent": 0,
     "revision_id": 1150,
     "title": "SEGA",
     "body": null,
@@ -117,14 +119,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      17
+      11,
+      15,
+      19,
+      24
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1167,
+    "parent": 0,
     "revision_id": 1167,
     "title": "2K Games",
     "body": null,
@@ -133,16 +139,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      6,
-      8,
-      8
+      21,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1194,
+    "parent": 0,
     "revision_id": 1194,
     "title": "Square Enix",
     "body": null,
@@ -151,18 +157,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 15,
     "kuvat_ids": [
-      2,
-      3,
-      23,
-      25,
-      25
+      8,
+      15,
+      16,
+      24
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1255,
+    "parent": 0,
     "revision_id": 1255,
     "title": "Rockstar",
     "body": null,
@@ -171,15 +177,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      7,
-      11
-    ]
+    "hero_image_id": 18,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1299,
+    "parent": 0,
     "revision_id": 1299,
     "title": "Koei Tecmo Games",
     "body": null,
@@ -188,18 +192,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      5,
-      12,
-      17,
-      23,
-      25
+      9
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1597,
+    "parent": 0,
     "revision_id": 1597,
     "title": "Activision Blizzard",
     "body": null,
@@ -209,13 +210,12 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 19,
-    "kuvat_ids": [
-      22
-    ]
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1733,
+    "parent": 0,
     "revision_id": 1733,
     "title": "Nicalis",
     "body": null,
@@ -224,16 +224,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      1,
+      9,
       14,
-      15
+      23,
+      24,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1826,
+    "parent": 0,
     "revision_id": 1826,
     "title": "Reef Entertainment",
     "body": null,
@@ -242,17 +245,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      8,
-      15,
-      17,
-      20
+      4
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 1935,
+    "parent": 0,
     "revision_id": 1935,
     "title": "Acclaim",
     "body": null,
@@ -261,16 +262,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      10,
-      20,
-      20
-    ]
+    "hero_image_id": 11,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 2552,
+    "parent": 0,
     "revision_id": 2552,
     "title": "Bandai Namco Games",
     "body": null,
@@ -279,12 +277,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
+    "hero_image_id": 25,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3026,
+    "parent": 0,
     "revision_id": 3026,
     "title": "Bethesda Softworks",
     "body": null,
@@ -293,17 +292,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      8,
-      15,
-      23,
-      24
+      17,
+      22,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3520,
+    "parent": 0,
     "revision_id": 3520,
     "title": "Atlus",
     "body": null,
@@ -312,14 +311,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      23
+      5,
+      5,
+      6
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3602,
+    "parent": 0,
     "revision_id": 3602,
     "title": "Focus Home Interactive",
     "body": null,
@@ -329,11 +331,14 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 27,
-    "kuvat_ids": []
+    "kuvat_ids": [
+      26
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3700,
+    "parent": 0,
     "revision_id": 3700,
     "title": "Techland",
     "body": null,
@@ -343,17 +348,12 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 4,
-    "kuvat_ids": [
-      7,
-      17,
-      18,
-      21,
-      22
-    ]
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3712,
+    "parent": 0,
     "revision_id": 3712,
     "title": "EA Sports",
     "body": null,
@@ -362,17 +362,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      3,
-      17,
-      25,
-      26
+      1,
+      2,
+      18,
+      22,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 3898,
+    "parent": 0,
     "revision_id": 3898,
     "title": "Microsoft Game Studios",
     "body": null,
@@ -381,12 +383,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": []
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      8,
+      20,
+      25
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5318,
+    "parent": 0,
     "revision_id": 5318,
     "title": "Gearbox Software",
     "body": null,
@@ -395,15 +402,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      16,
-      24
+      23,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5469,
+    "parent": 0,
     "revision_id": 5469,
     "title": "Lionsgate",
     "body": null,
@@ -412,16 +420,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      13,
-      17,
-      18
+      1,
+      16
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5498,
+    "parent": 0,
     "revision_id": 5498,
     "title": "Valve Software",
     "body": null,
@@ -430,18 +438,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      16,
-      19,
+      7,
+      13,
+      15,
       21,
-      22,
-      27
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5514,
+    "parent": 0,
     "revision_id": 5514,
     "title": "Blizzard Entertainment",
     "body": null,
@@ -450,18 +459,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      3,
-      4,
-      5,
-      18,
-      24
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5558,
+    "parent": 0,
     "revision_id": 5558,
     "title": "Larian Studios",
     "body": null,
@@ -470,14 +476,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 15,
     "kuvat_ids": [
-      3
+      3,
+      5,
+      10,
+      17,
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5658,
+    "parent": 0,
     "revision_id": 5658,
     "title": "Paradox Interactive",
     "body": null,
@@ -487,11 +498,18 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 2,
-    "kuvat_ids": []
+    "kuvat_ids": [
+      1,
+      8,
+      11,
+      19,
+      25
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5664,
+    "parent": 0,
     "revision_id": 5664,
     "title": "Funcom",
     "body": null,
@@ -500,17 +518,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      4,
-      11,
-      12,
-      13
+      6
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5669,
+    "parent": 0,
     "revision_id": 5669,
     "title": "Studio Wildcard",
     "body": null,
@@ -519,16 +535,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      4,
-      7,
-      13
+      8,
+      15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5672,
+    "parent": 0,
     "revision_id": 5672,
     "title": "Activision",
     "body": null,
@@ -537,17 +553,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      1,
-      5,
-      11,
-      26
+      6,
+      8,
+      10,
+      18
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5725,
+    "parent": 0,
     "revision_id": 5725,
     "title": "Epic Games",
     "body": null,
@@ -556,18 +573,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      1,
-      2,
-      4,
-      11,
-      18
-    ]
+    "hero_image_id": 26,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5735,
+    "parent": 0,
     "revision_id": 5735,
     "title": "CD Projekt Red",
     "body": null,
@@ -576,18 +588,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 14,
     "kuvat_ids": [
       1,
-      15,
-      18,
-      23,
-      23
+      5,
+      14
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 5739,
+    "parent": 0,
     "revision_id": 5739,
     "title": "Frozenbyte",
     "body": null,
@@ -596,12 +607,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": []
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      10,
+      12,
+      12,
+      22
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 6020,
+    "parent": 0,
     "revision_id": 6020,
     "title": "Sony Interactive Entertainment",
     "body": null,
@@ -610,14 +627,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      24
+      14
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 6220,
+    "parent": 0,
     "revision_id": 6220,
     "title": "The Pokémon Company",
     "body": null,
@@ -626,12 +644,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      2,
+      3,
+      4,
+      9,
+      9
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 6450,
+    "parent": 0,
     "revision_id": 6450,
     "title": "Rebellion Developments",
     "body": null,
@@ -640,14 +665,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 25,
     "kuvat_ids": [
-      20
+      5,
+      6,
+      11,
+      14,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 6742,
+    "parent": 0,
     "revision_id": 6742,
     "title": "Namco",
     "body": null,
@@ -656,18 +686,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      2,
-      10,
-      12,
-      13,
-      18
+      3,
+      8,
+      8,
+      9,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 6833,
+    "parent": 0,
     "revision_id": 6833,
     "title": "Electronic Arts",
     "body": null,
@@ -676,15 +707,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      1,
-      3
+      6,
+      6,
+      7,
+      14,
+      23
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7033,
+    "parent": 0,
     "revision_id": 7033,
     "title": "Wired Productions",
     "body": null,
@@ -693,17 +728,73 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      1,
-      3
+      7,
+      7,
+      12,
+      15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7223,
+    "parent": 0,
     "revision_id": 7223,
     "title": "Finji",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      22
+    ]
+  },
+  {
+    "bundle": "pelijulkaisijat",
+    "tid": 7241,
+    "parent": 0,
+    "revision_id": 7241,
+    "title": "SNK",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      20
+    ]
+  },
+  {
+    "bundle": "pelijulkaisijat",
+    "tid": 7274,
+    "parent": 0,
+    "revision_id": 7274,
+    "title": "Infogrames",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      23,
+      23,
+      26
+    ]
+  },
+  {
+    "bundle": "pelijulkaisijat",
+    "tid": 7337,
+    "parent": 0,
+    "revision_id": 7337,
+    "title": "THQ Nordic",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -715,59 +806,8 @@
   },
   {
     "bundle": "pelijulkaisijat",
-    "tid": 7241,
-    "revision_id": 7241,
-    "title": "SNK",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      26
-    ]
-  },
-  {
-    "bundle": "pelijulkaisijat",
-    "tid": 7274,
-    "revision_id": 7274,
-    "title": "Infogrames",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      17,
-      17
-    ]
-  },
-  {
-    "bundle": "pelijulkaisijat",
-    "tid": 7337,
-    "revision_id": 7337,
-    "title": "THQ Nordic",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      2,
-      11,
-      20,
-      27
-    ]
-  },
-  {
-    "bundle": "pelijulkaisijat",
     "tid": 7412,
+    "parent": 0,
     "revision_id": 7412,
     "title": "NetEase",
     "body": null,
@@ -776,12 +816,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 4,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7460,
+    "parent": 0,
     "revision_id": 7460,
     "title": "Logitech",
     "body": null,
@@ -792,12 +833,15 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 7,
     "kuvat_ids": [
-      17
+      9,
+      11,
+      22
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7549,
+    "parent": 0,
     "revision_id": 7549,
     "title": "Bandai Namco Entertainment",
     "body": null,
@@ -806,12 +850,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 4,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7597,
+    "parent": 0,
     "revision_id": 7597,
     "title": "Nexon",
     "body": null,
@@ -820,16 +865,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      2,
-      6,
-      15
+      3,
+      13,
+      17,
+      23
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7659,
+    "parent": 0,
     "revision_id": 7659,
     "title": "Rockstar Games",
     "body": null,
@@ -838,15 +885,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      1,
-      11
-    ]
+    "hero_image_id": 10,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7789,
+    "parent": 0,
     "revision_id": 7789,
     "title": "Team 17",
     "body": null,
@@ -857,14 +902,16 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 25,
     "kuvat_ids": [
-      14,
-      21,
+      1,
+      12,
+      20,
       22
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7837,
+    "parent": 0,
     "revision_id": 7837,
     "title": "Saber Interactive",
     "body": null,
@@ -873,17 +920,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      11,
-      15,
-      23,
-      25
+      7,
+      9,
+      17,
+      20,
+      23
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 7918,
+    "parent": 0,
     "revision_id": 7918,
     "title": "Aspyr",
     "body": null,
@@ -892,15 +941,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 25,
     "kuvat_ids": [
-      10,
-      26
+      11,
+      14,
+      20,
+      20,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8013,
+    "parent": 0,
     "revision_id": 8013,
     "title": "Netflix",
     "body": null,
@@ -909,17 +962,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      8,
-      17,
-      24,
-      25
+      4
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8032,
+    "parent": 0,
     "revision_id": 8032,
     "title": "Studio MDHR",
     "body": null,
@@ -928,15 +979,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      10,
-      15
+      8
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8254,
+    "parent": 0,
     "revision_id": 8254,
     "title": "Arc System Works",
     "body": null,
@@ -945,16 +996,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      17,
-      24,
-      27
+      20,
+      22
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8274,
+    "parent": 0,
     "revision_id": 8274,
     "title": "Nightdive Studios",
     "body": null,
@@ -963,15 +1014,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      13,
-      18
+      1
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8622,
+    "parent": 0,
     "revision_id": 8622,
     "title": "Limited Run Games",
     "body": null,
@@ -980,17 +1031,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 25,
     "kuvat_ids": [
-      15,
-      16,
-      17,
-      22
+      5,
+      11,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8745,
+    "parent": 0,
     "revision_id": 8745,
     "title": "IO Interactive",
     "body": null,
@@ -1000,17 +1051,12 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 9,
-    "kuvat_ids": [
-      2,
-      12,
-      14,
-      21,
-      27
-    ]
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8754,
+    "parent": 0,
     "revision_id": 8754,
     "title": "Turtle Beach",
     "body": null,
@@ -1019,18 +1065,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      2,
-      3,
-      4,
-      8,
-      15
+      18
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8769,
+    "parent": 0,
     "revision_id": 8769,
     "title": "Razer",
     "body": null,
@@ -1039,18 +1082,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      7,
-      9,
-      13,
-      20,
-      23
+      6,
+      8,
+      14,
+      16
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 8794,
+    "parent": 0,
     "revision_id": 8794,
     "title": "Bungie",
     "body": null,
@@ -1059,18 +1102,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      12,
-      15,
-      18,
-      21,
-      22
+      2,
+      15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9092,
+    "parent": 0,
     "revision_id": 9092,
     "title": "Xbox Game Studios",
     "body": null,
@@ -1079,14 +1120,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      21
-    ]
+    "hero_image_id": 14,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9093,
+    "parent": 0,
     "revision_id": 9093,
     "title": "Vertigo Games",
     "body": null,
@@ -1095,12 +1135,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": []
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      9,
+      26,
+      26
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9221,
+    "parent": 0,
     "revision_id": 9221,
     "title": "Warner Bros.",
     "body": null,
@@ -1109,18 +1154,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      1,
-      16,
-      17,
-      19,
-      24
+      4,
+      4,
+      15,
+      15,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9380,
+    "parent": 0,
     "revision_id": 9380,
     "title": "Tencent",
     "body": null,
@@ -1129,14 +1175,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      5
+      1,
+      4,
+      13
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9476,
+    "parent": 0,
     "revision_id": 9476,
     "title": "Nacon",
     "body": null,
@@ -1145,14 +1194,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      8
+      5,
+      7,
+      10,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9551,
+    "parent": 0,
     "revision_id": 9551,
     "title": "Playstack",
     "body": null,
@@ -1161,15 +1214,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      10,
-      10
+      7,
+      9,
+      18,
+      20,
+      20
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9718,
+    "parent": 0,
     "revision_id": 9718,
     "title": "NetEase Games",
     "body": null,
@@ -1178,15 +1235,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      9,
-      23
+      10,
+      17,
+      23,
+      25,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 9864,
+    "parent": 0,
     "revision_id": 9864,
     "title": "Raw Fury",
     "body": null,
@@ -1195,14 +1256,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      10
-    ]
+    "hero_image_id": 10,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10168,
+    "parent": 0,
     "revision_id": 10168,
     "title": "Valve Corporation",
     "body": null,
@@ -1211,18 +1271,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      3,
-      6,
-      8,
-      8,
-      11
-    ]
+    "hero_image_id": 19,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10203,
+    "parent": 0,
     "revision_id": 10203,
     "title": "Warner Bros. Interactive Entertainment",
     "body": null,
@@ -1231,14 +1286,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      10
+      1,
+      3,
+      11,
+      20,
+      22
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10246,
+    "parent": 0,
     "revision_id": 10246,
     "title": "ININ Games",
     "body": null,
@@ -1247,12 +1307,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": []
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      2,
+      6,
+      9
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10540,
+    "parent": 0,
     "revision_id": 10540,
     "title": "Bloober Team",
     "body": null,
@@ -1261,14 +1326,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      17
-    ]
+    "hero_image_id": 1,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10717,
+    "parent": 0,
     "revision_id": 10717,
     "title": "Skunkape Games",
     "body": null,
@@ -1277,14 +1341,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      6
+      8,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 10820,
+    "parent": 0,
     "revision_id": 10820,
     "title": "Yacht Club Games",
     "body": null,
@@ -1293,18 +1359,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 4,
     "kuvat_ids": [
       4,
-      9,
-      23,
-      26,
-      27
+      5,
+      19,
+      24
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11145,
+    "parent": 0,
     "revision_id": 11145,
     "title": "Graffiti Games",
     "body": null,
@@ -1313,12 +1379,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 4,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11375,
+    "parent": 0,
     "revision_id": 11375,
     "title": "Focus Entertainment",
     "body": null,
@@ -1327,16 +1394,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 16,
     "kuvat_ids": [
       5,
-      16,
-      20
+      5,
+      14
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11380,
+    "parent": 0,
     "revision_id": 11380,
     "title": "PlayStation Studios",
     "body": null,
@@ -1345,18 +1413,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      5,
-      12,
+      6,
       17,
-      18,
-      26
+      20,
+      24
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11459,
+    "parent": 0,
     "revision_id": 11459,
     "title": "Kepler Interactive",
     "body": null,
@@ -1365,12 +1433,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      16,
+      18,
+      25,
+      27
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11730,
+    "parent": 0,
     "revision_id": 11730,
     "title": "Secret Mode",
     "body": null,
@@ -1379,12 +1453,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      4
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11808,
+    "parent": 0,
     "revision_id": 11808,
     "title": "GIANTS Software",
     "body": null,
@@ -1393,14 +1470,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      12
+      8,
+      9,
+      18,
+      27,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11814,
+    "parent": 0,
     "revision_id": 11814,
     "title": "Warner Bros. Games",
     "body": null,
@@ -1409,12 +1491,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": []
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1,
+      2,
+      25
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11850,
+    "parent": 0,
     "revision_id": 11850,
     "title": "Krafton",
     "body": null,
@@ -1423,12 +1510,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": []
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      2,
+      8,
+      27
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 11873,
+    "parent": 0,
     "revision_id": 11873,
     "title": "Hyper Games",
     "body": null,
@@ -1437,12 +1529,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      4,
+      8,
+      11,
+      24,
+      26
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12100,
+    "parent": 0,
     "revision_id": 12100,
     "title": "Plaion",
     "body": null,
@@ -1451,12 +1550,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 5,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12229,
+    "parent": 0,
     "revision_id": 12229,
     "title": "Supergiant Games",
     "body": null,
@@ -1465,15 +1565,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      7,
-      17
+      22
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12274,
+    "parent": 0,
     "revision_id": 12274,
     "title": "Game Science",
     "body": null,
@@ -1482,12 +1582,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": []
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      12
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12347,
+    "parent": 0,
     "revision_id": 12347,
     "title": "Frogwares",
     "body": null,
@@ -1496,12 +1599,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": []
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      1,
+      7,
+      20
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12387,
+    "parent": 0,
     "revision_id": 12387,
     "title": "Slitherine Ltd.",
     "body": null,
@@ -1510,14 +1618,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      2
+      1,
+      6
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12450,
+    "parent": 0,
     "revision_id": 12450,
     "title": "Team Cherry",
     "body": null,
@@ -1526,17 +1636,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      1,
-      1,
-      13,
-      21
+      2,
+      9,
+      22,
+      24,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12549,
+    "parent": 0,
     "revision_id": 12549,
     "title": "Poncle",
     "body": null,
@@ -1545,14 +1657,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      25
+      5,
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12820,
+    "parent": 0,
     "revision_id": 12820,
     "title": "Pocket Pair, Inc.",
     "body": null,
@@ -1561,18 +1675,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 19,
     "kuvat_ids": [
+      1,
       7,
-      13,
+      15,
       21,
-      24,
-      26
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 12859,
+    "parent": 0,
     "revision_id": 12859,
     "title": "MINTROCKET",
     "body": null,
@@ -1583,16 +1698,13 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 26,
     "kuvat_ids": [
-      9,
-      11,
-      12,
-      13,
-      26
+      3
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13161,
+    "parent": 0,
     "revision_id": 13161,
     "title": "PlayStation Publishing LLC",
     "body": null,
@@ -1601,18 +1713,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      4,
-      5,
-      10,
-      18,
-      23
-    ]
+    "hero_image_id": 18,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13266,
+    "parent": 0,
     "revision_id": 13266,
     "title": "Argonaut Games",
     "body": null,
@@ -1621,18 +1728,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      2,
-      2,
-      7,
-      16,
-      23
+      10,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13470,
+    "parent": 0,
     "revision_id": 13470,
     "title": "Crows Crows Crows",
     "body": null,
@@ -1641,14 +1746,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      1
-    ]
+    "hero_image_id": 26,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13507,
+    "parent": 0,
     "revision_id": 13507,
     "title": "Squanch Games",
     "body": null,
@@ -1657,17 +1761,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      2,
-      16,
-      17,
-      21
-    ]
+    "hero_image_id": 22,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13512,
+    "parent": 0,
     "revision_id": 13512,
     "title": "Twisted Minds",
     "body": null,
@@ -1676,12 +1776,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": []
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      21,
+      25
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13520,
+    "parent": 0,
     "revision_id": 13520,
     "title": "DON'T NOD",
     "body": null,
@@ -1690,16 +1794,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      12,
-      13,
-      16
+      10
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13571,
+    "parent": 0,
     "revision_id": 13571,
     "title": "Remedy Entertainment",
     "body": null,
@@ -1708,17 +1811,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      7,
-      16,
-      20,
-      24
+      4,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13574,
+    "parent": 0,
     "revision_id": 13574,
     "title": "Bonus Stage Publishing",
     "body": null,
@@ -1727,16 +1829,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      1,
-      3,
-      16
+      8,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13596,
+    "parent": 0,
     "revision_id": 13596,
     "title": "GameMill Publishing",
     "body": null,
@@ -1745,17 +1847,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 3,
     "kuvat_ids": [
+      9,
       14,
-      16,
-      19,
-      22
+      15,
+      18,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13640,
+    "parent": 0,
     "revision_id": 13640,
     "title": "Retro-Bit",
     "body": null,
@@ -1764,16 +1868,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      4,
-      6,
-      8
+      14,
+      22,
+      26
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13668,
+    "parent": 0,
     "revision_id": 13668,
     "title": "Perun Creative",
     "body": null,
@@ -1782,17 +1887,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      7,
-      13,
-      14,
-      23
+      2,
+      4,
+      11,
+      17,
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13673,
+    "parent": 0,
     "revision_id": 13673,
     "title": "Mainframe Industries",
     "body": null,
@@ -1801,12 +1908,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": []
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      10,
+      22
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13674,
+    "parent": 0,
     "revision_id": 13674,
     "title": "New Tales",
     "body": null,
@@ -1815,16 +1926,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      7,
-      11,
-      18
-    ]
+    "hero_image_id": 14,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13679,
+    "parent": 0,
     "revision_id": 13679,
     "title": "Shin'en Multimedia",
     "body": null,
@@ -1833,14 +1941,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      6
+      13
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13713,
+    "parent": 0,
     "revision_id": 13713,
     "title": "Landcrab",
     "body": null,
@@ -1849,17 +1958,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      9,
-      15,
-      17,
-      22
+      4,
+      16,
+      23,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13748,
+    "parent": 0,
     "revision_id": 13748,
     "title": "3DClouds",
     "body": null,
@@ -1868,12 +1978,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 9,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13781,
+    "parent": 0,
     "revision_id": 13781,
     "title": "Retroware",
     "body": null,
@@ -1882,14 +1993,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      18
+      6,
+      7,
+      17,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13853,
+    "parent": 0,
     "revision_id": 13853,
     "title": "AdHoc Studio",
     "body": null,
@@ -1898,14 +2013,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      11
+      2,
+      12,
+      21,
+      22,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13882,
+    "parent": 0,
     "revision_id": 13882,
     "title": "8BitDo",
     "body": null,
@@ -1914,18 +2034,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 25,
     "kuvat_ids": [
-      6,
-      12,
-      12,
-      17,
+      7,
+      13,
+      16,
       20
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13895,
+    "parent": 0,
     "revision_id": 13895,
     "title": "MicroProse",
     "body": null,
@@ -1934,12 +2054,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": []
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      4
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13924,
+    "parent": 0,
     "revision_id": 13924,
     "title": "ConcernedApe",
     "body": null,
@@ -1948,14 +2071,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      26
+      3,
+      9,
+      21
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13925,
+    "parent": 0,
     "revision_id": 13925,
     "title": "ZA/UM",
     "body": null,
@@ -1964,12 +2090,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 22,
     "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13926,
+    "parent": 0,
     "revision_id": 13926,
     "title": "Amistech Games",
     "body": null,
@@ -1978,15 +2105,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      15,
-      22
+      9,
+      16
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13929,
+    "parent": 0,
     "revision_id": 13929,
     "title": "Fireshine Games",
     "body": null,
@@ -1995,17 +2123,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      1,
-      9,
       15,
-      22
+      15,
+      25
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13963,
+    "parent": 0,
     "revision_id": 13963,
     "title": "Nova-box",
     "body": null,
@@ -2014,16 +2142,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      17,
-      18,
-      24
-    ]
+    "hero_image_id": 21,
+    "kuvat_ids": []
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13974,
+    "parent": 0,
     "revision_id": 13974,
     "title": "Potion 8",
     "body": null,
@@ -2032,15 +2157,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      12,
-      26
+      5,
+      6,
+      8,
+      8,
+      15
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 13991,
+    "parent": 0,
     "revision_id": 13991,
     "title": "Mega Crit",
     "body": null,
@@ -2049,36 +2178,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      14,
-      19,
-      24
+      19
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 14015,
+    "parent": 0,
     "revision_id": 14015,
     "title": "Yak & Co",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      4,
-      20,
-      22
-    ]
-  },
-  {
-    "bundle": "pelijulkaisijat",
-    "tid": 14072,
-    "revision_id": 14072,
-    "title": "Grey Alien Games",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2088,14 +2198,32 @@
     "hero_image_id": 1,
     "kuvat_ids": [
       6,
-      8,
-      22,
-      27
+      13,
+      26
+    ]
+  },
+  {
+    "bundle": "pelijulkaisijat",
+    "tid": 14072,
+    "parent": 0,
+    "revision_id": 14072,
+    "title": "Grey Alien Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      8
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 14073,
+    "parent": 0,
     "revision_id": 14073,
     "title": "Night Signal Entertainment",
     "body": null,
@@ -2104,18 +2232,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      2,
-      5,
-      9,
-      13,
-      22
+      4,
+      4,
+      14,
+      20,
+      27
     ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 14110,
+    "parent": 0,
     "revision_id": 14110,
     "title": "Amazon Games",
     "body": null,
@@ -2124,12 +2253,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": []
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      6,
+      13,
+      15,
+      18,
+      20
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 14113,
+    "parent": 0,
     "revision_id": 14113,
     "title": "Coolhead Games",
     "body": null,
@@ -2138,12 +2274,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      22
+    ]
   },
   {
     "bundle": "pelijulkaisijat",
     "tid": 14125,
+    "parent": 0,
     "revision_id": 14125,
     "title": "Cozy Age Games",
     "body": null,
@@ -2152,11 +2291,12 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      12,
-      12,
-      27
+      5,
+      13,
+      15,
+      19
     ]
   }
 ]

@@ -2,6 +2,7 @@
   {
     "bundle": "franchise",
     "tid": 14146,
+    "parent": 0,
     "revision_id": 23620,
     "title": "Grand Theft Auto",
     "body": null,
@@ -10,17 +11,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      1,
       4,
-      8,
+      6,
+      12,
+      12,
       13
     ]
   },
   {
     "bundle": "franchise",
     "tid": 14148,
+    "parent": 0,
     "revision_id": 23622,
     "title": "The Elder Scrolls",
     "body": "<p><strong>The Elder Scrolls</strong> on Bethesdan kehittämä ja julkaisema roolipelisarja, joka tunnetaan laajoista avoimista maailmoistaan, vapaasta pelityylistään ja syvällisestä fantasiatarinastaan. Pelit sijoittuvat Tamrielin mantereelle, jossa pelaaja voi tutkia eri maakuntia kuten Skyrim, Morrowind ja Cyrodiil. Sarja alkoi vuonna 1994 pelillä <strong>The Elder Scrolls: Arena</strong>, ja tunnetuimpia osia ovat <strong>Morrowind</strong> (2002), <strong>Oblivion</strong> (2006) ja <strong>Skyrim</strong> (2011).</p>",
@@ -29,15 +32,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 18,
     "kuvat_ids": [
+      6,
+      15,
       22,
-      26
+      24,
+      24
     ]
   },
   {
     "bundle": "franchise",
     "tid": 14149,
+    "parent": 0,
     "revision_id": 23623,
     "title": "Assassin's Creed",
     "body": null,
@@ -46,12 +53,12 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      7,
-      11,
+      3,
       12,
-      16
+      13,
+      22
     ]
   }
 ]

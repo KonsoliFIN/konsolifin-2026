@@ -2,6 +2,7 @@
   {
     "bundle": "ihminen",
     "tid": 315,
+    "parent": 0,
     "revision_id": 315,
     "title": "Thomas Puha",
     "body": "<p>Thomas Puha&nbsp;nousi alun perin julkisuuteen MoonTV:n peliohjelmista (PSX-Peliluola, Play, Game Planet, Konsoli Planeetta ja URL), ja hän&nbsp;toimi pitkään Pelaaja-lehden päätoimittajana. Thomas on myös yksi Pelaaja-lehden kustantamon H-Town Oy:n perustajista ja suurin omistaja. Hän toimii Warner Finlandille levyttävän Roope Salminen &amp; Koirat -hiphop-yhtyeen road managerina.&nbsp;<span style=\"line-height:1.6\">FIGMA (Finnish Games and Multimedia Assocation) valitsi vuonna 2010 Puhan Peliluolaan eli kotimaisen peliteollisuuden Hall of Fameen.</span></p>\r\n\r\n<p>Elokuussa 2011 Puha siirtyi tekemään markkinointityötä Umbra Softwarelle. Nykyisin hän on pelistudio Remedyn PR-johtaja.</p>\r\n",
@@ -10,15 +11,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      1,
-      21
+      16,
+      18,
+      18
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 332,
+    "parent": 0,
     "revision_id": 332,
     "title": "Juho Kuorikoski",
     "body": "<p>Lukuisten suomalaisten peliaiheisten teosten kirjoittaja.</p>\r\n",
@@ -27,17 +30,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      4,
-      11,
-      19,
-      27
+      16
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 4862,
+    "parent": 0,
     "revision_id": 4862,
     "title": "Phil Spencer",
     "body": null,
@@ -46,15 +47,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      4,
-      27
+      19,
+      19,
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 4901,
+    "parent": 0,
     "revision_id": 4901,
     "title": "Yu Suzuki",
     "body": null,
@@ -63,15 +66,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      15,
-      20
+      10,
+      20,
+      21,
+      24,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5138,
+    "parent": 0,
     "revision_id": 5138,
     "title": "Tony Hawk",
     "body": null,
@@ -80,18 +87,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      7,
-      7,
-      10,
-      13,
-      23
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5140,
+    "parent": 0,
     "revision_id": 5140,
     "title": "Shuhei Yoshida",
     "body": null,
@@ -100,17 +104,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 25,
     "kuvat_ids": [
-      5,
-      12,
-      14,
-      24
+      4,
+      5
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5397,
+    "parent": 0,
     "revision_id": 5397,
     "title": "Guillermo del Toro",
     "body": null,
@@ -119,18 +122,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      4,
-      11,
-      12,
-      16,
-      20
+      10,
+      21
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5398,
+    "parent": 0,
     "revision_id": 5398,
     "title": "Hideo Kojima",
     "body": null,
@@ -139,16 +140,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      11,
-      23,
-      27
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5467,
+    "parent": 0,
     "revision_id": 5467,
     "title": "Avi Arad",
     "body": null,
@@ -157,18 +157,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      7,
-      17,
-      18,
-      19,
-      25
+      4,
+      19
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5468,
+    "parent": 0,
     "revision_id": 5468,
     "title": "Ari Arad",
     "body": null,
@@ -177,14 +175,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      26
+      5,
+      17
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5492,
+    "parent": 0,
     "revision_id": 5492,
     "title": "Shigeru Miyamoto",
     "body": null,
@@ -193,18 +193,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      6,
-      15,
+      7,
+      10,
+      11,
       21,
-      21,
-      23
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5496,
+    "parent": 0,
     "revision_id": 5496,
     "title": "Nolan North",
     "body": null,
@@ -215,16 +216,14 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 4,
     "kuvat_ids": [
-      8,
-      18,
-      19,
-      23,
-      25
+      13,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5552,
+    "parent": 0,
     "revision_id": 5552,
     "title": "James Rolfe",
     "body": "<p>Angry Video Game Nerd -hahmon luoja.</p>\r\n",
@@ -233,17 +232,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      1,
-      8,
-      15,
-      23
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5586,
+    "parent": 0,
     "revision_id": 5586,
     "title": "Tomonobu Itagaki",
     "body": null,
@@ -252,16 +249,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      9,
-      10,
-      18
-    ]
+    "hero_image_id": 8,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 5668,
+    "parent": 0,
     "revision_id": 5668,
     "title": "Idris Elba",
     "body": null,
@@ -270,17 +264,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      8,
       10,
-      18,
-      22
+      14
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5760,
+    "parent": 0,
     "revision_id": 5760,
     "title": "Masahiro Sakurai",
     "body": null,
@@ -289,17 +282,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      4,
-      11,
-      19,
-      23
+      8
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5784,
+    "parent": 0,
     "revision_id": 5784,
     "title": "Sam Lake",
     "body": null,
@@ -308,12 +299,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": []
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      10,
+      16,
+      21
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 5785,
+    "parent": 0,
     "revision_id": 5785,
     "title": "Ilkka Villi",
     "body": null,
@@ -322,15 +318,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      5,
-      14
+      19,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5786,
+    "parent": 0,
     "revision_id": 5786,
     "title": "Troy Baker",
     "body": null,
@@ -339,12 +336,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": []
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      1,
+      5,
+      5,
+      10
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 5918,
+    "parent": 0,
     "revision_id": 5918,
     "title": "Shawn Ashmore",
     "body": null,
@@ -353,14 +356,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      18
+      8,
+      11,
+      11
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 5948,
+    "parent": 0,
     "revision_id": 5948,
     "title": "Ari Tommiska",
     "body": null,
@@ -369,32 +375,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 5968,
-    "revision_id": 5968,
-    "title": "Peter Molyneux",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      15,
-      20,
-      24
+      21,
+      27
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 5985,
-    "revision_id": 5985,
-    "title": "Gabe Newell",
+    "tid": 5968,
+    "parent": 0,
+    "revision_id": 5968,
+    "title": "Peter Molyneux",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -406,7 +398,23 @@
   },
   {
     "bundle": "ihminen",
+    "tid": 5985,
+    "parent": 0,
+    "revision_id": 5985,
+    "title": "Gabe Newell",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
     "tid": 6027,
+    "parent": 0,
     "revision_id": 6027,
     "title": "Neil Druckmann",
     "body": null,
@@ -416,11 +424,15 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 8,
-    "kuvat_ids": []
+    "kuvat_ids": [
+      16,
+      21
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 6057,
+    "parent": 0,
     "revision_id": 6057,
     "title": "Randy Pitchford",
     "body": null,
@@ -429,12 +441,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      21
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 6206,
+    "parent": 0,
     "revision_id": 6206,
     "title": "Norman Reedus",
     "body": null,
@@ -443,17 +458,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      2,
-      4,
-      12,
-      22
+      17,
+      19,
+      19
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 6211,
+    "parent": 0,
     "revision_id": 6211,
     "title": "Antti Ilvessuo",
     "body": null,
@@ -462,16 +477,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      3,
-      6,
-      26
+      4
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 6258,
+    "parent": 0,
     "revision_id": 6258,
     "title": "Taro Yoko",
     "body": null,
@@ -480,14 +494,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      25
+      3,
+      10,
+      20,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 6387,
+    "parent": 0,
     "revision_id": 6387,
     "title": "Dan Houser",
     "body": null,
@@ -496,15 +514,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      9,
-      10
+      1,
+      20,
+      25,
+      26,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 6444,
+    "parent": 0,
     "revision_id": 6444,
     "title": "Fumito Ueda",
     "body": null,
@@ -513,14 +535,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      25
+      2,
+      13,
+      14,
+      22,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7132,
+    "parent": 0,
     "revision_id": 7132,
     "title": "Eric Barone",
     "body": null,
@@ -529,15 +556,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      8,
-      18
+      15,
+      17,
+      21,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7145,
+    "parent": 0,
     "revision_id": 7145,
     "title": "Mads Mikkelsen",
     "body": null,
@@ -546,15 +576,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      1,
-      2
-    ]
+    "hero_image_id": 21,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 7186,
+    "parent": 0,
     "revision_id": 7186,
     "title": "Ed Annunziata",
     "body": null,
@@ -563,17 +591,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 24,
     "kuvat_ids": [
-      3,
-      11,
-      23,
-      26
+      14,
+      14,
+      15,
+      21
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7376,
+    "parent": 0,
     "revision_id": 7376,
     "title": "Ron Gilbert",
     "body": null,
@@ -582,17 +611,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      1,
-      19,
-      25,
-      27
+      14,
+      16
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7394,
+    "parent": 0,
     "revision_id": 7394,
     "title": "Donnie Yen",
     "body": null,
@@ -601,17 +629,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      5,
+      9,
+      10,
       13,
-      14,
-      19
+      16
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7403,
+    "parent": 0,
     "revision_id": 7403,
     "title": "Jason Momoa",
     "body": null,
@@ -620,15 +649,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      5,
-      26
+      4,
+      13,
+      19,
+      20,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7406,
+    "parent": 0,
     "revision_id": 7406,
     "title": "Julian Gerighty",
     "body": null,
@@ -637,17 +670,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 18,
     "kuvat_ids": [
       8,
-      11,
-      12,
-      24
+      16,
+      17
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7461,
+    "parent": 0,
     "revision_id": 7461,
     "title": "Brendan Greene",
     "body": null,
@@ -656,18 +689,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      9,
-      14,
-      17,
-      24,
-      27
+      6,
+      10,
+      11,
+      16,
+      18
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 7723,
+    "parent": 0,
     "revision_id": 7723,
     "title": "Edmund McMillen",
     "body": null,
@@ -676,100 +710,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 20,
     "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 7730,
+    "parent": 0,
     "revision_id": 7730,
     "title": "Tyler Glaiel",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 7741,
-    "revision_id": 7741,
-    "title": "Josef Fares",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      5,
-      10,
-      12,
-      22
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 8028,
-    "revision_id": 8028,
-    "title": "Manu Pärssinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 8029,
-    "revision_id": 8029,
-    "title": "Mikko Heinonen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      1,
-      9,
-      16
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 8034,
-    "revision_id": 8034,
-    "title": "Amy Hennig",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      1,
-      17,
-      21,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 8236,
-    "revision_id": 8236,
-    "title": "Miika Huttunen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -779,15 +728,106 @@
     "hero_image_id": 2,
     "kuvat_ids": [
       2,
-      3,
+      23,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7741,
+    "parent": 0,
+    "revision_id": 7741,
+    "title": "Josef Fares",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      1,
+      23,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8028,
+    "parent": 0,
+    "revision_id": 8028,
+    "title": "Manu Pärssinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8029,
+    "parent": 0,
+    "revision_id": 8029,
+    "title": "Mikko Heinonen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      1,
+      10,
+      12,
+      15
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8034,
+    "parent": 0,
+    "revision_id": 8034,
+    "title": "Amy Hennig",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      1,
+      2,
       5,
-      21,
-      24
+      13,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8236,
+    "parent": 0,
+    "revision_id": 8236,
+    "title": "Miika Huttunen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8335,
+    "parent": 0,
     "revision_id": 8335,
     "title": "Cory Barlog",
     "body": null,
@@ -796,15 +836,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      19,
-      21
+      19
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8397,
+    "parent": 0,
     "revision_id": 8397,
     "title": "Jack Black",
     "body": null,
@@ -813,14 +853,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      18
+      2,
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8844,
+    "parent": 0,
     "revision_id": 8844,
     "title": "Hidetaka Miyazaki",
     "body": null,
@@ -829,16 +871,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      8,
-      8,
-      20
+      4
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8877,
+    "parent": 0,
     "revision_id": 8877,
     "title": "Doug Cockle",
     "body": null,
@@ -847,14 +888,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      21
+      22,
+      23,
+      24,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8898,
+    "parent": 0,
     "revision_id": 8898,
     "title": "Geoff Keighley",
     "body": null,
@@ -865,14 +910,17 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 1,
     "kuvat_ids": [
-      8,
-      19,
-      24
+      3,
+      4,
+      4,
+      15,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 8948,
+    "parent": 0,
     "revision_id": 8948,
     "title": "Christofer Sundberg",
     "body": null,
@@ -881,15 +929,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 9,
     "kuvat_ids": [
+      1,
+      2,
+      9,
       13,
-      23
+      13
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9082,
+    "parent": 0,
     "revision_id": 9082,
     "title": "George R.R. Martin",
     "body": null,
@@ -898,16 +950,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 6,
     "kuvat_ids": [
-      9,
-      13,
-      17
+      7,
+      10,
+      20,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9115,
+    "parent": 0,
     "revision_id": 9115,
     "title": "Glen Schofield",
     "body": null,
@@ -916,12 +970,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      2,
+      5,
+      5,
+      7,
+      8
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 9247,
+    "parent": 0,
     "revision_id": 9247,
     "title": "Léa Seydoux",
     "body": null,
@@ -930,17 +991,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      7,
-      9,
-      17,
-      25
+      1,
+      10,
+      16
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9376,
+    "parent": 0,
     "revision_id": 9376,
     "title": "Taika Waititi",
     "body": null,
@@ -949,16 +1010,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      8,
-      22,
-      26
+      7,
+      17
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9479,
+    "parent": 0,
     "revision_id": 9479,
     "title": "Daniel Craig",
     "body": null,
@@ -967,17 +1028,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      1,
-      2,
-      16,
-      25
-    ]
+    "hero_image_id": 24,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 9485,
+    "parent": 0,
     "revision_id": 9485,
     "title": "Craig Mazin",
     "body": null,
@@ -986,9 +1043,9 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      8,
+      2,
       8,
       23
     ]
@@ -996,6 +1053,7 @@
   {
     "bundle": "ihminen",
     "tid": 9517,
+    "parent": 0,
     "revision_id": 9517,
     "title": "Martti Suosalo",
     "body": null,
@@ -1004,14 +1062,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      16
+      6,
+      6,
+      7
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9518,
+    "parent": 0,
     "revision_id": 9518,
     "title": "Petri Alanko",
     "body": null,
@@ -1020,15 +1081,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 2,
     "kuvat_ids": [
       12,
-      27
+      21,
+      21,
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9624,
+    "parent": 0,
     "revision_id": 9624,
     "title": "Hermen Hulst",
     "body": null,
@@ -1037,12 +1101,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      15,
+      16,
+      16,
+      16
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 9669,
+    "parent": 0,
     "revision_id": 9669,
     "title": "Jason Schreier",
     "body": null,
@@ -1051,12 +1121,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": []
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      9,
+      14,
+      14,
+      24,
+      26
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 9689,
+    "parent": 0,
     "revision_id": 9689,
     "title": "Arnold Schwarzenegger",
     "body": null,
@@ -1065,12 +1142,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": []
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      4,
+      22
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 9761,
+    "parent": 0,
     "revision_id": 9761,
     "title": "Jeff Fowler",
     "body": null,
@@ -1079,12 +1160,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      3,
+      6
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 9775,
+    "parent": 0,
     "revision_id": 9775,
     "title": "Ville Arvekari",
     "body": null,
@@ -1093,18 +1178,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      3,
-      4,
-      17,
-      18,
-      27
+      14,
+      26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9776,
+    "parent": 0,
     "revision_id": 9776,
     "title": "Esa Mäkijärvi",
     "body": null,
@@ -1115,13 +1198,17 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 19,
     "kuvat_ids": [
-      4,
-      23
+      2,
+      7,
+      16,
+      25,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9797,
+    "parent": 0,
     "revision_id": 9797,
     "title": "Keanu Reeves",
     "body": null,
@@ -1130,15 +1217,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      4,
-      26
+      9,
+      18,
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 9940,
+    "parent": 0,
     "revision_id": 9940,
     "title": "Shuntaro Furukawa",
     "body": null,
@@ -1147,12 +1236,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 16,
     "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 9967,
+    "parent": 0,
     "revision_id": 9967,
     "title": "Clive Barker",
     "body": null,
@@ -1161,16 +1251,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 18,
     "kuvat_ids": [
-      21,
-      21,
-      22
+      18
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10077,
+    "parent": 0,
     "revision_id": 10077,
     "title": "Ben Schwartz",
     "body": null,
@@ -1179,17 +1268,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      5,
-      16,
-      17,
+      1,
+      4,
+      8,
+      14,
       26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10307,
+    "parent": 0,
     "revision_id": 10307,
     "title": "Yuji Naka",
     "body": null,
@@ -1198,18 +1289,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      6,
-      6,
-      11,
-      12,
-      19
+      2
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10451,
+    "parent": 0,
     "revision_id": 10451,
     "title": "Naoto Ohshima",
     "body": null,
@@ -1218,15 +1306,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      14,
-      25
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10474,
+    "parent": 0,
     "revision_id": 10474,
     "title": "Simu Liu",
     "body": null,
@@ -1235,16 +1323,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      22,
-      23,
-      27
+      26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10543,
+    "parent": 0,
     "revision_id": 10543,
     "title": "Tuomas Tonteri",
     "body": null,
@@ -1253,16 +1340,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      1,
-      2,
-      6
+      5,
+      5,
+      6,
+      20
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10571,
+    "parent": 0,
     "revision_id": 10571,
     "title": "Chris Pratt",
     "body": null,
@@ -1271,16 +1360,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      2,
-      13,
-      19
+      14,
+      14,
+      17,
+      20,
+      26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10595,
+    "parent": 0,
     "revision_id": 10595,
     "title": "Niko Lähteenmäki",
     "body": null,
@@ -1289,17 +1381,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      9,
-      20,
-      20,
-      21
-    ]
+    "hero_image_id": 25,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 10598,
+    "parent": 0,
     "revision_id": 10598,
     "title": "Joonatan Itkonen",
     "body": null,
@@ -1308,12 +1396,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      1,
+      7,
+      8,
+      27,
+      27
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 10670,
+    "parent": 0,
     "revision_id": 10670,
     "title": "Vin Diesel",
     "body": null,
@@ -1322,14 +1417,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      20
+      5,
+      7,
+      17,
+      23,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10701,
+    "parent": 0,
     "revision_id": 10701,
     "title": "Teruyuki Toriyama",
     "body": null,
@@ -1338,18 +1438,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      3,
-      6,
-      12,
-      20,
-      26
+      5,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10805,
+    "parent": 0,
     "revision_id": 10805,
     "title": "Hakan Abrak",
     "body": null,
@@ -1358,15 +1456,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      1,
-      3
+      12,
+      15,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10806,
+    "parent": 0,
     "revision_id": 10806,
     "title": "Mac Walters",
     "body": null,
@@ -1375,18 +1475,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      1,
-      6,
-      10,
-      12,
-      14
+      7,
+      13,
+      17
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 10841,
+    "parent": 0,
     "revision_id": 10841,
     "title": "Pedro Pascal",
     "body": null,
@@ -1395,373 +1494,21 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 10898,
-    "revision_id": 10898,
-    "title": "Naoki Hamaguchi",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      9,
-      12,
-      19
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11045,
-    "revision_id": 11045,
-    "title": "Phoebe Waller-Bridge",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      5,
-      16,
-      17
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11152,
-    "revision_id": 11152,
-    "title": "Jaakko Herranen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      2
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11284,
-    "revision_id": 11284,
-    "title": "James Gunn",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      8
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11368,
-    "revision_id": 11368,
-    "title": "Bella Ramsey",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      12,
-      13
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11627,
-    "revision_id": 11627,
-    "title": "Strauss Zelnick",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      1,
-      5,
-      18,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 11637,
-    "revision_id": 11637,
-    "title": "John Carpenter",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12134,
-    "revision_id": 12134,
-    "title": "Jez Corden",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
     "hero_image_id": 15,
     "kuvat_ids": [
-      10,
-      17,
-      18,
-      20,
-      23
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12307,
-    "revision_id": 12307,
-    "title": "Nick Offerman",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      11
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12415,
-    "revision_id": 12415,
-    "title": "Jyri Jokinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      8,
-      14,
-      20,
+      11,
+      19,
+      19,
       21,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12416,
-    "revision_id": 12416,
-    "title": "Petri Leskinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      4,
-      7,
-      15,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12431,
-    "revision_id": 12431,
-    "title": "Bret Robbins",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": [
-      7,
-      9,
-      11,
-      13,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12507,
-    "revision_id": 12507,
-    "title": "Melanie Liburd",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      2,
-      3,
-      11,
-      17,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12621,
-    "revision_id": 12621,
-    "title": "Peter Weller",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12640,
-    "revision_id": 12640,
-    "title": "Peter Franzén",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1,
-      4,
-      23
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12682,
-    "revision_id": 12682,
-    "title": "Harri Alanne",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      11,
-      15,
-      15
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12707,
-    "revision_id": 12707,
-    "title": "Swen Vincke",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      2,
-      4,
       22
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 12713,
-    "revision_id": 12713,
-    "title": "Tove Jansson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      6,
-      12,
-      16,
-      22,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12775,
-    "revision_id": 12775,
-    "title": "Matthew Porretta",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      4,
-      13,
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12782,
-    "revision_id": 12782,
-    "title": "Noah Hawley",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      6,
-      9,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 12785,
-    "revision_id": 12785,
-    "title": "James McCaffrey",
+    "tid": 10898,
+    "parent": 0,
+    "revision_id": 10898,
+    "title": "Naoki Hamaguchi",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -1771,14 +1518,394 @@
     "hero_image_id": 9,
     "kuvat_ids": [
       1,
-      6,
-      10,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11045,
+    "parent": 0,
+    "revision_id": 11045,
+    "title": "Phoebe Waller-Bridge",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11152,
+    "parent": 0,
+    "revision_id": 11152,
+    "title": "Jaakko Herranen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      9,
+      11,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11284,
+    "parent": 0,
+    "revision_id": 11284,
+    "title": "James Gunn",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11368,
+    "parent": 0,
+    "revision_id": 11368,
+    "title": "Bella Ramsey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      3,
+      13,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11627,
+    "parent": 0,
+    "revision_id": 11627,
+    "title": "Strauss Zelnick",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11637,
+    "parent": 0,
+    "revision_id": 11637,
+    "title": "John Carpenter",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      20,
+      23,
+      23,
       26
     ]
   },
   {
     "bundle": "ihminen",
+    "tid": 12134,
+    "parent": 0,
+    "revision_id": 12134,
+    "title": "Jez Corden",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      10,
+      10,
+      12,
+      12,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12307,
+    "parent": 0,
+    "revision_id": 12307,
+    "title": "Nick Offerman",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      5,
+      8,
+      11,
+      18,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12415,
+    "parent": 0,
+    "revision_id": 12415,
+    "title": "Jyri Jokinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      11,
+      24,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12416,
+    "parent": 0,
+    "revision_id": 12416,
+    "title": "Petri Leskinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      7,
+      10,
+      11,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12431,
+    "parent": 0,
+    "revision_id": 12431,
+    "title": "Bret Robbins",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      4,
+      10,
+      14,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12507,
+    "parent": 0,
+    "revision_id": 12507,
+    "title": "Melanie Liburd",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      9,
+      17,
+      19,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12621,
+    "parent": 0,
+    "revision_id": 12621,
+    "title": "Peter Weller",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12640,
+    "parent": 0,
+    "revision_id": 12640,
+    "title": "Peter Franzén",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      9,
+      10,
+      19,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12682,
+    "parent": 0,
+    "revision_id": 12682,
+    "title": "Harri Alanne",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      1,
+      10,
+      15,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12707,
+    "parent": 0,
+    "revision_id": 12707,
+    "title": "Swen Vincke",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      5,
+      9
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12713,
+    "parent": 0,
+    "revision_id": 12713,
+    "title": "Tove Jansson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      6,
+      16,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12775,
+    "parent": 0,
+    "revision_id": 12775,
+    "title": "Matthew Porretta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      23,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12782,
+    "parent": 0,
+    "revision_id": 12782,
+    "title": "Noah Hawley",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12785,
+    "parent": 0,
+    "revision_id": 12785,
+    "title": "James McCaffrey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      1,
+      9,
+      11,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
     "tid": 12845,
+    "parent": 0,
     "revision_id": 12845,
     "title": "Kaitlyn Dever",
     "body": null,
@@ -1787,16 +1914,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      12,
-      20,
-      21
+      5,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 12879,
+    "parent": 0,
     "revision_id": 12879,
     "title": "Johan Pilestedt",
     "body": null,
@@ -1805,94 +1932,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      14
-    ]
+    "hero_image_id": 22,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13011,
+    "parent": 0,
     "revision_id": 13011,
     "title": "Nate the Hate",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13013,
-    "revision_id": 13013,
-    "title": "Hideaki Nishino",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13100,
-    "revision_id": 13100,
-    "title": "Stephen Totilo",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      1,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13123,
-    "revision_id": 13123,
-    "title": "Rosario Dawson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      12,
-      16,
-      17,
-      21
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13180,
-    "revision_id": 13180,
-    "title": "Isabela Merced",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13185,
-    "revision_id": 13185,
-    "title": "Jordan Middler",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -1904,103 +1952,36 @@
       2,
       15,
       20,
-      23,
-      26
+      23
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13354,
-    "revision_id": 13354,
-    "title": "Craig Duncan",
+    "tid": 13013,
+    "parent": 0,
+    "revision_id": 13013,
+    "title": "Hideaki Nishino",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      9,
-      10,
-      10,
+      5,
+      16,
       25,
+      26,
       26
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13361,
-    "revision_id": 13361,
-    "title": "Peter Stormare",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      18,
-      18,
-      20,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13465,
-    "revision_id": 13465,
-    "title": "Colleen O'Saughnessey",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      17,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13468,
-    "revision_id": 13468,
-    "title": "Dan Allen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13469,
-    "revision_id": 13469,
-    "title": "Christopher Stone",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      6,
-      20,
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13472,
-    "revision_id": 13472,
-    "title": "Laura Kate Dale",
+    "tid": 13100,
+    "parent": 0,
+    "revision_id": 13100,
+    "title": "Stephen Totilo",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2009,14 +1990,180 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 26,
     "kuvat_ids": [
+      1,
       6,
-      19,
+      12
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13123,
+    "parent": 0,
+    "revision_id": 13123,
+    "title": "Rosario Dawson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      3,
+      4,
+      8,
+      9,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13180,
+    "parent": 0,
+    "revision_id": 13180,
+    "title": "Isabela Merced",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      9,
+      11,
+      17,
+      17,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13185,
+    "parent": 0,
+    "revision_id": 13185,
+    "title": "Jordan Middler",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      1,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13354,
+    "parent": 0,
+    "revision_id": 13354,
+    "title": "Craig Duncan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13361,
+    "parent": 0,
+    "revision_id": 13361,
+    "title": "Peter Stormare",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
       27
     ]
   },
   {
     "bundle": "ihminen",
+    "tid": 13465,
+    "parent": 0,
+    "revision_id": 13465,
+    "title": "Colleen O'Saughnessey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      4,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13468,
+    "parent": 0,
+    "revision_id": 13468,
+    "title": "Dan Allen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      2,
+      21,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13469,
+    "parent": 0,
+    "revision_id": 13469,
+    "title": "Christopher Stone",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      14,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13472,
+    "parent": 0,
+    "revision_id": 13472,
+    "title": "Laura Kate Dale",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      16,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
     "tid": 13474,
+    "parent": 0,
     "revision_id": 13474,
     "title": "Gabriel Luna",
     "body": null,
@@ -2025,14 +2172,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 16,
     "kuvat_ids": [
-      6
+      1
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13475,
+    "parent": 0,
     "revision_id": 13475,
     "title": "Rutina Wesley",
     "body": null,
@@ -2041,17 +2189,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      16,
-      18,
-      21,
-      27
-    ]
+    "hero_image_id": 14,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13476,
+    "parent": 0,
     "revision_id": 13476,
     "title": "Young Mazino",
     "body": null,
@@ -2062,38 +2206,16 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 21,
     "kuvat_ids": [
-      1,
-      5,
-      6,
-      11,
+      8,
       26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13477,
+    "parent": 0,
     "revision_id": 13477,
     "title": "Catherine O'Hara",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      6,
-      18,
-      22,
-      23,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13478,
-    "revision_id": 13478,
-    "title": "Alex Aniel",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2105,27 +2227,10 @@
   },
   {
     "bundle": "ihminen",
-    "tid": 13479,
-    "revision_id": 13479,
-    "title": "Takanobu Mizuno",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      8,
-      25,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13480,
-    "revision_id": 13480,
-    "title": "Gen Urobuchi",
+    "tid": 13478,
+    "parent": 0,
+    "revision_id": 13478,
+    "title": "Alex Aniel",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2134,18 +2239,36 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 1,
     "kuvat_ids": [
-      11,
-      13,
-      17,
-      19,
-      24
+      23,
+      27
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13481,
-    "revision_id": 13481,
-    "title": "Andrés Muschietti",
+    "tid": 13479,
+    "parent": 0,
+    "revision_id": 13479,
+    "title": "Takanobu Mizuno",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      10,
+      20,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13480,
+    "parent": 0,
+    "revision_id": 13480,
+    "title": "Gen Urobuchi",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2154,12 +2277,31 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 6,
     "kuvat_ids": [
-      23
+      22,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13481,
+    "parent": 0,
+    "revision_id": 13481,
+    "title": "Andrés Muschietti",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      3
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13482,
+    "parent": 0,
     "revision_id": 13482,
     "title": "Ashley Brucks",
     "body": null,
@@ -2168,16 +2310,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      1,
-      11,
-      17
+      12
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13483,
+    "parent": 0,
     "revision_id": 13483,
     "title": "David F. Sandberg",
     "body": null,
@@ -2186,55 +2327,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 8,
     "kuvat_ids": [
-      6,
-      18
+      14,
+      14,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13487,
+    "parent": 0,
     "revision_id": 13487,
     "title": "Gary Dauberman",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      6,
-      22,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13496,
-    "revision_id": 13496,
-    "title": "Matthew Griffin",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      1,
-      7,
-      11,
-      18,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13497,
-    "revision_id": 13497,
-    "title": "William Pellen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2244,15 +2349,53 @@
     "hero_image_id": 9,
     "kuvat_ids": [
       2,
-      16,
-      19,
-      25,
-      27
+      17,
+      18,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13496,
+    "parent": 0,
+    "revision_id": 13496,
+    "title": "Matthew Griffin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      1,
+      6
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13497,
+    "parent": 0,
+    "revision_id": 13497,
+    "title": "William Pellen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      2,
+      9,
+      17
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13500,
+    "parent": 0,
     "revision_id": 13500,
     "title": "Charlie Cox",
     "body": null,
@@ -2261,17 +2404,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      13,
-      16,
-      19,
-      25
-    ]
+    "hero_image_id": 3,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13501,
+    "parent": 0,
     "revision_id": 13501,
     "title": "Andy Serkis",
     "body": null,
@@ -2280,15 +2419,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      2,
-      16
+      12,
+      14,
+      14,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13502,
+    "parent": 0,
     "revision_id": 13502,
     "title": "Ben Starr",
     "body": null,
@@ -2297,17 +2439,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      6,
-      16,
-      17,
-      19
+      2,
+      5,
+      14,
+      26,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13503,
+    "parent": 0,
     "revision_id": 13503,
     "title": "Jennifer English",
     "body": null,
@@ -2316,17 +2460,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      1,
-      7,
-      17,
-      23
+      13,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13519,
+    "parent": 0,
     "revision_id": 13519,
     "title": "Iikka Kivi",
     "body": null,
@@ -2335,14 +2478,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      23
+      1,
+      19
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13522,
+    "parent": 0,
     "revision_id": 13522,
     "title": "Jack Burrows",
     "body": null,
@@ -2351,15 +2496,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      20,
-      25
+      13
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13523,
+    "parent": 0,
     "revision_id": 13523,
     "title": "Garry McGee",
     "body": null,
@@ -2368,15 +2513,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      9,
-      15
+      6
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13524,
+    "parent": 0,
     "revision_id": 13524,
     "title": "Thaddeus Sasser",
     "body": null,
@@ -2385,18 +2530,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": [
-      1,
-      3,
-      5,
-      6,
-      12
-    ]
+    "hero_image_id": 23,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13525,
+    "parent": 0,
     "revision_id": 13525,
     "title": "Mat Piscatella",
     "body": null,
@@ -2405,14 +2545,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 7,
     "kuvat_ids": [
-      12
+      2,
+      6,
+      17,
+      19,
+      21
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13526,
+    "parent": 0,
     "revision_id": 13526,
     "title": "Jerry Hook",
     "body": null,
@@ -2421,16 +2566,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      13,
-      19,
-      22
+      5,
+      5,
+      8,
+      12,
+      26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13528,
+    "parent": 0,
     "revision_id": 13528,
     "title": "Toru Ohara",
     "body": null,
@@ -2439,14 +2587,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 27,
     "kuvat_ids": [
-      2
+      9,
+      17,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13529,
+    "parent": 0,
     "revision_id": 13529,
     "title": "Ben Fiquet",
     "body": null,
@@ -2455,17 +2606,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 20,
     "kuvat_ids": [
-      3,
-      13,
-      13,
+      8,
+      24,
       27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13532,
+    "parent": 0,
     "revision_id": 13532,
     "title": "Tyshawn Jones",
     "body": null,
@@ -2474,16 +2625,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 20,
     "kuvat_ids": [
       3,
-      22,
-      27
+      9,
+      11,
+      20,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13534,
+    "parent": 0,
     "revision_id": 13534,
     "title": "Ethan Gach",
     "body": null,
@@ -2492,12 +2646,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
+    "hero_image_id": 21,
     "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13538,
+    "parent": 0,
     "revision_id": 13538,
     "title": "Modern Vintage Gamer",
     "body": null,
@@ -2506,14 +2661,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 16,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      25
+      12,
+      14
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13539,
+    "parent": 0,
     "revision_id": 13539,
     "title": "Dana Gould",
     "body": null,
@@ -2522,16 +2679,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      8,
-      21,
-      27
+      1,
+      5,
+      7,
+      16,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13540,
+    "parent": 0,
     "revision_id": 13540,
     "title": "billbil-kun",
     "body": null,
@@ -2540,15 +2700,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      13,
-      18
+      3,
+      7,
+      11,
+      11,
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13547,
+    "parent": 0,
     "revision_id": 13547,
     "title": "Jonathan Dumont",
     "body": null,
@@ -2557,18 +2721,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 26,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      5,
-      15,
-      19,
-      20,
-      25
+      7,
+      16,
+      26
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13548,
+    "parent": 0,
     "revision_id": 13548,
     "title": "Jeff Jarrett",
     "body": null,
@@ -2577,14 +2740,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      4
+      12,
+      24,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13549,
+    "parent": 0,
     "revision_id": 13549,
     "title": "Alex Josef",
     "body": null,
@@ -2593,15 +2759,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      12,
-      20
+      9,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13550,
+    "parent": 0,
     "revision_id": 13550,
     "title": "Russell Binder",
     "body": null,
@@ -2610,12 +2777,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      6,
+      7,
+      21,
+      25,
+      27
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 13551,
+    "parent": 0,
     "revision_id": 13551,
     "title": "Mark Caplan",
     "body": null,
@@ -2624,18 +2798,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 10,
     "kuvat_ids": [
       1,
-      6,
-      10,
-      12,
-      17
+      7,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13557,
+    "parent": 0,
     "revision_id": 13557,
     "title": "Khary Payton",
     "body": null,
@@ -2644,14 +2817,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 26,
     "kuvat_ids": [
-      1
+      6,
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13558,
+    "parent": 0,
     "revision_id": 13558,
     "title": "Drew Moerlein",
     "body": null,
@@ -2660,17 +2835,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      4,
-      5,
       8,
-      24
+      18,
+      20,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13559,
+    "parent": 0,
     "revision_id": 13559,
     "title": "Megalyn Echikunwoke",
     "body": null,
@@ -2679,15 +2855,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      10,
-      22
-    ]
+    "hero_image_id": 16,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 13560,
+    "parent": 0,
     "revision_id": 13560,
     "title": "Marque Richardson",
     "body": null,
@@ -2696,18 +2870,698 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 1,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      13,
-      17,
-      20
+      5,
+      18
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 13576,
+    "parent": 0,
     "revision_id": 13576,
     "title": "Mike Kayatta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      12,
+      13,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13580,
+    "parent": 0,
+    "revision_id": 13580,
+    "title": "Samae Koskinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13582,
+    "parent": 0,
+    "revision_id": 13582,
+    "title": "Alex Lima",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      2,
+      15,
+      19,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13583,
+    "parent": 0,
+    "revision_id": 13583,
+    "title": "Lexi Mayfield",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      21,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13602,
+    "parent": 0,
+    "revision_id": 13602,
+    "title": "Zach Cregger",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      17,
+      17,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13603,
+    "parent": 0,
+    "revision_id": 13603,
+    "title": "Austin Abrams",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13606,
+    "parent": 0,
+    "revision_id": 13606,
+    "title": "Kouichi Kawamoto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      3
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13607,
+    "parent": 0,
+    "revision_id": 13607,
+    "title": "Takuhiro Dohuta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13608,
+    "parent": 0,
+    "revision_id": 13608,
+    "title": "Tetsuya Sasaki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13624,
+    "parent": 0,
+    "revision_id": 13624,
+    "title": "Liam Neeson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      7,
+      7,
+      9,
+      23,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13625,
+    "parent": 0,
+    "revision_id": 13625,
+    "title": "Bill Petras",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      8,
+      19,
+      20,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13631,
+    "parent": 0,
+    "revision_id": 13631,
+    "title": "Tomohiro Suzuki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      4,
+      15,
+      19,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13632,
+    "parent": 0,
+    "revision_id": 13632,
+    "title": "Hideki Irie",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      15,
+      17,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13656,
+    "parent": 0,
+    "revision_id": 13656,
+    "title": "Anssi Hyytiäinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      2,
+      15,
+      18,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13657,
+    "parent": 0,
+    "revision_id": 13657,
+    "title": "MrBeast",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      13,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13658,
+    "parent": 0,
+    "revision_id": 13658,
+    "title": "James Donaldson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      9,
+      17,
+      18,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13665,
+    "parent": 0,
+    "revision_id": 13665,
+    "title": "Marc André",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      11,
+      20,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13672,
+    "parent": 0,
+    "revision_id": 13672,
+    "title": "Sulka Haro",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      8,
+      12,
+      14,
+      15,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13701,
+    "parent": 0,
+    "revision_id": 13701,
+    "title": "Mel Brooks",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      15,
+      18,
+      19,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13702,
+    "parent": 0,
+    "revision_id": 13702,
+    "title": "Rick Moranis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      1,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13703,
+    "parent": 0,
+    "revision_id": 13703,
+    "title": "Bill Pullman",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      1,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13704,
+    "parent": 0,
+    "revision_id": 13704,
+    "title": "Keke Palmer",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      6,
+      8,
+      10,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13718,
+    "parent": 0,
+    "revision_id": 13718,
+    "title": "Katsuhiro Ōtomo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      9,
+      13,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13720,
+    "parent": 0,
+    "revision_id": 13720,
+    "title": "Ross Scott",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13730,
+    "parent": 0,
+    "revision_id": 13730,
+    "title": "Robin Lord Taylor",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      2,
+      8,
+      16,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13731,
+    "parent": 0,
+    "revision_id": 13731,
+    "title": "Michael Madsen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      3,
+      11,
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13735,
+    "parent": 0,
+    "revision_id": 13735,
+    "title": "Patrick Somerville",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      5,
+      7,
+      7,
+      10,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13737,
+    "parent": 0,
+    "revision_id": 13737,
+    "title": "Ida Kuningas",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      11,
+      11,
+      16,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13742,
+    "parent": 0,
+    "revision_id": 13742,
+    "title": "Nika Bender",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      8,
+      15
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13752,
+    "parent": 0,
+    "revision_id": 13752,
+    "title": "Doug Bradley",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      11,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13784,
+    "parent": 0,
+    "revision_id": 13784,
+    "title": "Jalmari Helander",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      1,
+      5,
+      5,
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13785,
+    "parent": 0,
+    "revision_id": 13785,
+    "title": "Sophie Turner",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      4,
+      10,
+      11,
+      19,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13794,
+    "parent": 0,
+    "revision_id": 13794,
+    "title": "Charlie Covell",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      3,
+      10,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13795,
+    "parent": 0,
+    "revision_id": 13795,
+    "title": "Toma Otowa",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      12
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13816,
+    "parent": 0,
+    "revision_id": 13816,
+    "title": "Linda Hamilton",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      5,
+      20,
+      25,
+      27,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13817,
+    "parent": 0,
+    "revision_id": 13817,
+    "title": "Edward Furlong",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      2,
+      3
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13829,
+    "parent": 0,
+    "revision_id": 13829,
+    "title": "Erno Sallinen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2719,43 +3573,48 @@
   },
   {
     "bundle": "ihminen",
-    "tid": 13580,
-    "revision_id": 13580,
-    "title": "Samae Koskinen",
+    "tid": 13830,
+    "parent": 0,
+    "revision_id": 13830,
+    "title": "Katriina Heljakka",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      7,
-      18
+      8,
+      13,
+      20
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13582,
-    "revision_id": 13582,
-    "title": "Alex Lima",
+    "tid": 13831,
+    "parent": 0,
+    "revision_id": 13831,
+    "title": "Mika Hoffrén",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      16,
+      17,
+      17,
       21
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13583,
-    "revision_id": 13583,
-    "title": "Lexi Mayfield",
+    "tid": 13832,
+    "parent": 0,
+    "revision_id": 13832,
+    "title": "Tuomo Ahlfors",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2767,78 +3626,30 @@
   },
   {
     "bundle": "ihminen",
-    "tid": 13602,
-    "revision_id": 13602,
-    "title": "Zach Cregger",
+    "tid": 13833,
+    "parent": 0,
+    "revision_id": 13833,
+    "title": "Ville Lähde",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      1,
-      2,
-      18,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13603,
-    "revision_id": 13603,
-    "title": "Austin Abrams",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      10
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13606,
-    "revision_id": 13606,
-    "title": "Kouichi Kawamoto",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
+    "hero_image_id": 10,
     "kuvat_ids": [
       4,
-      8,
-      19,
-      22,
-      25
+      7,
+      14,
+      27
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13607,
-    "revision_id": 13607,
-    "title": "Takuhiro Dohuta",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13608,
-    "revision_id": 13608,
-    "title": "Tetsuya Sasaki",
+    "tid": 13834,
+    "parent": 0,
+    "revision_id": 13834,
+    "title": "Arto Paappanen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2847,14 +3658,546 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 4,
     "kuvat_ids": [
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13835,
+    "parent": 0,
+    "revision_id": 13835,
+    "title": "Teemu Ahola",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      5,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13836,
+    "parent": 0,
+    "revision_id": 13836,
+    "title": "Tommi Lempinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      8,
+      13,
+      17,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13837,
+    "parent": 0,
+    "revision_id": 13837,
+    "title": "Tapani Joelsson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      3,
+      6,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13838,
+    "parent": 0,
+    "revision_id": 13838,
+    "title": "Petri Hiltunen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      4,
+      11,
+      18,
+      19,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13839,
+    "parent": 0,
+    "revision_id": 13839,
+    "title": "Markku Reunanen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13841,
+    "parent": 0,
+    "revision_id": 13841,
+    "title": "Mikael Eriksson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13842,
+    "parent": 0,
+    "revision_id": 13842,
+    "title": "Gregg Mayles",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      3,
+      11,
+      13,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13844,
+    "parent": 0,
+    "revision_id": 13844,
+    "title": "David Fox",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      6
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13857,
+    "parent": 0,
+    "revision_id": 13857,
+    "title": "Sarah Bond",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13886,
+    "parent": 0,
+    "revision_id": 13886,
+    "title": "Udo Kier",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      8
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13887,
+    "parent": 0,
+    "revision_id": 13887,
+    "title": "Rob Mac",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      7,
+      12,
+      18,
+      19,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13888,
+    "parent": 0,
+    "revision_id": 13888,
+    "title": "Toby Wallace",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      11,
+      12,
+      16,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13900,
+    "parent": 0,
+    "revision_id": 13900,
+    "title": "Stephen King",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13901,
+    "parent": 0,
+    "revision_id": 13901,
+    "title": "Vince Gilligan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      12,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13902,
+    "parent": 0,
+    "revision_id": 13902,
+    "title": "Justin Lin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      6,
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13907,
+    "parent": 0,
+    "revision_id": 13907,
+    "title": "Daniel Rantala",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      7,
+      10,
+      13,
+      13,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13914,
+    "parent": 0,
+    "revision_id": 13914,
+    "title": "Guillaume Broche",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      5,
+      6,
+      13,
+      18,
       22
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13624,
-    "revision_id": 13624,
-    "title": "Liam Neeson",
+    "tid": 13915,
+    "parent": 0,
+    "revision_id": 13915,
+    "title": "Lorien Testard",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13946,
+    "parent": 0,
+    "revision_id": 13946,
+    "title": "saarara",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      14,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13952,
+    "parent": 0,
+    "revision_id": 13952,
+    "title": "Teemu Närhi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      1,
+      9,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13953,
+    "parent": 0,
+    "revision_id": 13953,
+    "title": "Ryan Hurst",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      1,
+      16,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13961,
+    "parent": 0,
+    "revision_id": 13961,
+    "title": "David Gibson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13969,
+    "parent": 0,
+    "revision_id": 13969,
+    "title": "Petri Kataja",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      5,
+      10,
+      26,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13970,
+    "parent": 0,
+    "revision_id": 13970,
+    "title": "Lisa Su",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13971,
+    "parent": 0,
+    "revision_id": 13971,
+    "title": "Norbert Molle",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      11,
+      11,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13972,
+    "parent": 0,
+    "revision_id": 13972,
+    "title": "Dylan Brode",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13973,
+    "parent": 0,
+    "revision_id": 13973,
+    "title": "Mika Hämäläinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      4,
+      9,
+      9
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13978,
+    "parent": 0,
+    "revision_id": 13978,
+    "title": "Callum Vinson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13988,
+    "parent": 0,
+    "revision_id": 13988,
+    "title": "Keza MacDonald",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      6,
+      10,
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13993,
+    "parent": 0,
+    "revision_id": 13993,
+    "title": "Yoko Taro",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2863,15 +4206,46 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 11,
     "kuvat_ids": [
-      3,
-      24
+      2,
+      11
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13625,
-    "revision_id": 13625,
-    "title": "Bill Petras",
+    "tid": 14012,
+    "parent": 0,
+    "revision_id": 14012,
+    "title": "Asha Sharma",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14025,
+    "parent": 0,
+    "revision_id": 14025,
+    "title": "Roberto Patino",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14026,
+    "parent": 0,
+    "revision_id": 14026,
+    "title": "David Wiener",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2879,48 +4253,107 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 9,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13631,
-    "revision_id": 13631,
-    "title": "Tomohiro Suzuki",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
     "kuvat_ids": [
-      11
+      2
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13632,
-    "revision_id": 13632,
-    "title": "Hideki Irie",
+    "tid": 14027,
+    "parent": 0,
+    "revision_id": 14027,
+    "title": "Lola Petticrew",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 13,
+    "hero_image_id": 2,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14028,
+    "parent": 0,
+    "revision_id": 14028,
+    "title": "Laura Marcus",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      2,
-      9,
+      20,
+      21,
+      23,
       26,
       27
     ]
   },
   {
     "bundle": "ihminen",
-    "tid": 13656,
-    "revision_id": 13656,
-    "title": "Anssi Hyytiäinen",
+    "tid": 14029,
+    "parent": 0,
+    "revision_id": 14029,
+    "title": "Youseff Kerkour",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14030,
+    "parent": 0,
+    "revision_id": 14030,
+    "title": "Nabhann Rizwan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      17,
+      21,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14031,
+    "parent": 0,
+    "revision_id": 14031,
+    "title": "Claes Bang",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      2,
+      15,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14039,
+    "parent": 0,
+    "revision_id": 14039,
+    "title": "Yoshihisa Kishimoto",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -2934,1163 +4367,8 @@
   },
   {
     "bundle": "ihminen",
-    "tid": 13657,
-    "revision_id": 13657,
-    "title": "MrBeast",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      14,
-      18,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13658,
-    "revision_id": 13658,
-    "title": "James Donaldson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13665,
-    "revision_id": 13665,
-    "title": "Marc André",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      8,
-      12,
-      14,
-      16,
-      18
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13672,
-    "revision_id": 13672,
-    "title": "Sulka Haro",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      15
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13701,
-    "revision_id": 13701,
-    "title": "Mel Brooks",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13702,
-    "revision_id": 13702,
-    "title": "Rick Moranis",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      16,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13703,
-    "revision_id": 13703,
-    "title": "Bill Pullman",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13704,
-    "revision_id": 13704,
-    "title": "Keke Palmer",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      4,
-      7,
-      14,
-      16
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13718,
-    "revision_id": 13718,
-    "title": "Katsuhiro Ōtomo",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": [
-      4,
-      12,
-      12,
-      17
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13720,
-    "revision_id": 13720,
-    "title": "Ross Scott",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      14,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13730,
-    "revision_id": 13730,
-    "title": "Robin Lord Taylor",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13731,
-    "revision_id": 13731,
-    "title": "Michael Madsen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      23
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13735,
-    "revision_id": 13735,
-    "title": "Patrick Somerville",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      10,
-      14,
-      19,
-      22,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13737,
-    "revision_id": 13737,
-    "title": "Ida Kuningas",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13742,
-    "revision_id": 13742,
-    "title": "Nika Bender",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      2,
-      3,
-      10,
-      26,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13752,
-    "revision_id": 13752,
-    "title": "Doug Bradley",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      3,
-      26
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13784,
-    "revision_id": 13784,
-    "title": "Jalmari Helander",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      9,
-      10,
-      13,
-      21
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13785,
-    "revision_id": 13785,
-    "title": "Sophie Turner",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13794,
-    "revision_id": 13794,
-    "title": "Charlie Covell",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      6
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13795,
-    "revision_id": 13795,
-    "title": "Toma Otowa",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      11,
-      17,
-      19,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13816,
-    "revision_id": 13816,
-    "title": "Linda Hamilton",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      21
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13817,
-    "revision_id": 13817,
-    "title": "Edward Furlong",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      9,
-      23
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13829,
-    "revision_id": 13829,
-    "title": "Erno Sallinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      8,
-      10,
-      10,
-      22
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13830,
-    "revision_id": 13830,
-    "title": "Katriina Heljakka",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      4,
-      13,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13831,
-    "revision_id": 13831,
-    "title": "Mika Hoffrén",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      9,
-      16
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13832,
-    "revision_id": 13832,
-    "title": "Tuomo Ahlfors",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      5,
-      5,
-      13,
-      14
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13833,
-    "revision_id": 13833,
-    "title": "Ville Lähde",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      15,
-      16,
-      19,
-      20,
-      22
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13834,
-    "revision_id": 13834,
-    "title": "Arto Paappanen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      1,
-      8,
-      14
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13835,
-    "revision_id": 13835,
-    "title": "Teemu Ahola",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      4,
-      6,
-      7,
-      17,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13836,
-    "revision_id": 13836,
-    "title": "Tommi Lempinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13837,
-    "revision_id": 13837,
-    "title": "Tapani Joelsson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      3,
-      11,
-      14,
-      16,
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13838,
-    "revision_id": 13838,
-    "title": "Petri Hiltunen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      2,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13839,
-    "revision_id": 13839,
-    "title": "Markku Reunanen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13841,
-    "revision_id": 13841,
-    "title": "Mikael Eriksson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13842,
-    "revision_id": 13842,
-    "title": "Gregg Mayles",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      7,
-      10
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13844,
-    "revision_id": 13844,
-    "title": "David Fox",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      15,
-      21,
-      22,
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13857,
-    "revision_id": 13857,
-    "title": "Sarah Bond",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      9
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13886,
-    "revision_id": 13886,
-    "title": "Udo Kier",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      1,
-      1,
-      11,
-      20,
-      23
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13887,
-    "revision_id": 13887,
-    "title": "Rob Mac",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      11,
-      14,
-      19,
-      24,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13888,
-    "revision_id": 13888,
-    "title": "Toby Wallace",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      5,
-      24,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13900,
-    "revision_id": 13900,
-    "title": "Stephen King",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      14,
-      14,
-      23,
-      27
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13901,
-    "revision_id": 13901,
-    "title": "Vince Gilligan",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13902,
-    "revision_id": 13902,
-    "title": "Justin Lin",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13907,
-    "revision_id": 13907,
-    "title": "Daniel Rantala",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      6
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13914,
-    "revision_id": 13914,
-    "title": "Guillaume Broche",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13915,
-    "revision_id": 13915,
-    "title": "Lorien Testard",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13946,
-    "revision_id": 13946,
-    "title": "saarara",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      17,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13952,
-    "revision_id": 13952,
-    "title": "Teemu Närhi",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      9,
-      9,
-      13,
-      19,
-      21
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13953,
-    "revision_id": 13953,
-    "title": "Ryan Hurst",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      2,
-      6,
-      12,
-      14
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13961,
-    "revision_id": 13961,
-    "title": "David Gibson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      8,
-      19
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13969,
-    "revision_id": 13969,
-    "title": "Petri Kataja",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      3,
-      3,
-      12
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13970,
-    "revision_id": 13970,
-    "title": "Lisa Su",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      10,
-      11,
-      13,
-      14,
-      14
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13971,
-    "revision_id": 13971,
-    "title": "Norbert Molle",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13972,
-    "revision_id": 13972,
-    "title": "Dylan Brode",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      6,
-      7,
-      15,
-      16
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13973,
-    "revision_id": 13973,
-    "title": "Mika Hämäläinen",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      2,
-      3,
-      11,
-      19
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13978,
-    "revision_id": 13978,
-    "title": "Callum Vinson",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      2
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13988,
-    "revision_id": 13988,
-    "title": "Keza MacDonald",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      4,
-      6,
-      6,
-      13,
-      25
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 13993,
-    "revision_id": 13993,
-    "title": "Yoko Taro",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      11
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14012,
-    "revision_id": 14012,
-    "title": "Asha Sharma",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      18
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14025,
-    "revision_id": 14025,
-    "title": "Roberto Patino",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      22
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14026,
-    "revision_id": 14026,
-    "title": "David Wiener",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      14,
-      20
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14027,
-    "revision_id": 14027,
-    "title": "Lola Petticrew",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      3,
-      4,
-      11,
-      15,
-      22
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14028,
-    "revision_id": 14028,
-    "title": "Laura Marcus",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      10,
-      11,
-      16,
-      24,
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14029,
-    "revision_id": 14029,
-    "title": "Youseff Kerkour",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      24
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14030,
-    "revision_id": 14030,
-    "title": "Nabhann Rizwan",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      19
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14031,
-    "revision_id": 14031,
-    "title": "Claes Bang",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      4,
-      19
-    ]
-  },
-  {
-    "bundle": "ihminen",
-    "tid": 14039,
-    "revision_id": 14039,
-    "title": "Yoshihisa Kishimoto",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "ihminen",
     "tid": 14040,
+    "parent": 0,
     "revision_id": 14040,
     "title": "Ryūbō Kishimoto",
     "body": null,
@@ -4099,18 +4377,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
+    "hero_image_id": 16,
     "kuvat_ids": [
-      4,
-      8,
       11,
-      15,
-      25
+      14,
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14043,
+    "parent": 0,
     "revision_id": 14043,
     "title": "Zach Lipovsky",
     "body": null,
@@ -4119,18 +4396,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      1,
       6,
-      18,
-      19,
-      21
+      14,
+      22
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14044,
+    "parent": 0,
     "revision_id": 14044,
     "title": "Adam Stein",
     "body": null,
@@ -4139,15 +4415,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 20,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      3,
-      24
+      8,
+      8,
+      9,
+      18,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14049,
+    "parent": 0,
     "revision_id": 14049,
     "title": "Seán McLoughlin",
     "body": null,
@@ -4156,16 +4436,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 22,
     "kuvat_ids": [
       2,
-      8,
-      27
+      10,
+      13,
+      15,
+      20
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14054,
+    "parent": 0,
     "revision_id": 14054,
     "title": "Lana Del Rey",
     "body": null,
@@ -4174,14 +4457,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      10
-    ]
+    "hero_image_id": 20,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14055,
+    "parent": 0,
     "revision_id": 14055,
     "title": "Patrick Gibson",
     "body": null,
@@ -4190,14 +4472,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 10,
     "kuvat_ids": [
-      8
+      7,
+      8,
+      17,
+      26,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14058,
+    "parent": 0,
     "revision_id": 14058,
     "title": "Cailee Spaeny",
     "body": null,
@@ -4206,16 +4493,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      4,
-      14,
-      20
+      1,
+      9,
+      24,
+      26,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14059,
+    "parent": 0,
     "revision_id": 14059,
     "title": "Ben Whishaw",
     "body": null,
@@ -4224,17 +4514,17 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 16,
     "kuvat_ids": [
-      3,
-      19,
-      22,
-      23
+      4,
+      6,
+      10
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14060,
+    "parent": 0,
     "revision_id": 14060,
     "title": "Kit Connor",
     "body": null,
@@ -4243,17 +4533,15 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      9,
-      21,
-      26,
-      26
+      3
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14069,
+    "parent": 0,
     "revision_id": 14069,
     "title": "Karl Urban",
     "body": null,
@@ -4262,18 +4550,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      2,
-      12,
-      15,
-      15,
-      21
-    ]
+    "hero_image_id": 20,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14078,
+    "parent": 0,
     "revision_id": 14078,
     "title": "Cho Yonghee",
     "body": null,
@@ -4284,14 +4567,13 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 24,
     "kuvat_ids": [
-      3,
-      22,
-      26
+      15
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14081,
+    "parent": 0,
     "revision_id": 14081,
     "title": "Takashi Tezuka",
     "body": null,
@@ -4300,12 +4582,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      12,
+      22
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 14085,
+    "parent": 0,
     "revision_id": 14085,
     "title": "Wes Ball",
     "body": null,
@@ -4314,14 +4600,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      25
-    ]
+    "hero_image_id": 2,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14086,
+    "parent": 0,
     "revision_id": 14086,
     "title": "Bo Bragason",
     "body": null,
@@ -4330,18 +4615,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 12,
     "kuvat_ids": [
-      1,
-      3,
-      4,
       18,
-      25
+      19,
+      20,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14087,
+    "parent": 0,
     "revision_id": 14087,
     "title": "Benjamin Evan Ainsworth",
     "body": null,
@@ -4350,17 +4635,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      11,
-      11,
-      13,
-      15
+      15,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14091,
+    "parent": 0,
     "revision_id": 14091,
     "title": "Leslie Benzies",
     "body": null,
@@ -4369,12 +4653,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      2,
+      18,
+      21,
+      24
+    ]
   },
   {
     "bundle": "ihminen",
     "tid": 14098,
+    "parent": 0,
     "revision_id": 14098,
     "title": "Barbara Broccoli",
     "body": null,
@@ -4383,18 +4673,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      3,
-      7,
-      12,
-      14,
-      17
+      9,
+      13,
+      21,
+      24,
+      25
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14099,
+    "parent": 0,
     "revision_id": 14099,
     "title": "Ian Fleming",
     "body": null,
@@ -4403,16 +4694,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 15,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      12,
-      14,
-      23
+      2,
+      20
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14100,
+    "parent": 0,
     "revision_id": 14100,
     "title": "Andreas Krogh",
     "body": null,
@@ -4421,15 +4712,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      1,
-      10
-    ]
+    "hero_image_id": 9,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14101,
+    "parent": 0,
     "revision_id": 14101,
     "title": "Hilde Sunde",
     "body": null,
@@ -4438,18 +4727,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 7,
+    "hero_image_id": 9,
     "kuvat_ids": [
-      6,
-      14,
-      21,
-      24,
+      3,
+      11,
+      17,
+      25,
       27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14103,
+    "parent": 0,
     "revision_id": 14103,
     "title": "Sean Velasco",
     "body": null,
@@ -4458,17 +4748,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 5,
+    "hero_image_id": 14,
     "kuvat_ids": [
-      6,
-      13,
+      2,
+      18,
       19,
-      27
+      21,
+      24
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14109,
+    "parent": 0,
     "revision_id": 14109,
     "title": "Deborah Ann Woll",
     "body": null,
@@ -4477,14 +4769,18 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 16,
     "kuvat_ids": [
-      11
+      5,
+      17,
+      18,
+      23
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14132,
+    "parent": 0,
     "revision_id": 14132,
     "title": "Thordur Palsson",
     "body": null,
@@ -4493,15 +4789,16 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 25,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      17,
-      21
+      12,
+      18
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14133,
+    "parent": 0,
     "revision_id": 14133,
     "title": "Alexandre Aja",
     "body": null,
@@ -4510,14 +4807,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      14
-    ]
+    "hero_image_id": 12,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14134,
+    "parent": 0,
     "revision_id": 14134,
     "title": "David Leslie Johnson-McGoldrick",
     "body": null,
@@ -4526,16 +4822,13 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      7,
-      10,
-      11
-    ]
+    "hero_image_id": 2,
+    "kuvat_ids": []
   },
   {
     "bundle": "ihminen",
     "tid": 14140,
+    "parent": 0,
     "revision_id": 14140,
     "title": "Hirokazu Yasuhara",
     "body": null,
@@ -4546,13 +4839,15 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 20,
     "kuvat_ids": [
-      13,
+      1,
+      16,
       20
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14153,
+    "parent": 0,
     "revision_id": 23627,
     "title": "Nazeeh Tarsha",
     "body": null,
@@ -4561,17 +4856,19 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 24,
+    "hero_image_id": 2,
     "kuvat_ids": [
-      1,
-      3,
-      10,
-      25
+      5,
+      8,
+      18,
+      27,
+      27
     ]
   },
   {
     "bundle": "ihminen",
     "tid": 14154,
+    "parent": 0,
     "revision_id": 23628,
     "title": "Daisuke Namikawa",
     "body": null,
@@ -4580,7 +4877,7 @@
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
+    "hero_image_id": 21,
     "kuvat_ids": []
   }
 ]
