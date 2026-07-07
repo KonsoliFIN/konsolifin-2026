@@ -31,7 +31,7 @@ process:
   field_arvosteltu_versio: arvosteltu_versio_ids
   field_pelin_nimi: pelin_nimi
   field_title_english: title_english
-  field_summary_in_english: summary_in_english
+  field_summary_in_english: summary_english
   field_alustat: alustat_ids
   field_pelit: pelit_ids
   field_ihmiset: ihmiset_ids

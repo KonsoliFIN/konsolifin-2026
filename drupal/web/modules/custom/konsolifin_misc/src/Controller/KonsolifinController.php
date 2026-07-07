@@ -401,7 +401,7 @@ class KonsolifinController extends ControllerBase {
       ->condition('status', 1)
       ->condition('type', 'peliarvostelu')
       ->sort('created', 'DESC')
-      ->range(0, 5)
+      ->range(0, 25)
       ->execute();
 
     $nodes = $this->entityTypeManager()
