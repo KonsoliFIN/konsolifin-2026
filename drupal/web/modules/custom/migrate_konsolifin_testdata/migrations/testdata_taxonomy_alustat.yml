@@ -8,19 +8,19 @@ source:
   plugin: json_fixture
   file: taxonomy/alustat.json
   ids:
-    id:
+    tid:
       type: integer
 process:
+  tid: tid
   vid:
     plugin: default_value
     default_value: alustat
-  name: name
-  description/value: description
+  name: title
+  description/value: body
   description/format:
     plugin: default_value
-    default_value: basic_html
-  field_hero_kuva: kuva_id
-  weight: weight
+    default_value: full_html
+  field_hero_kuva: hero_image_id
 destination:
   plugin: entity:taxonomy_term
 migration_dependencies:

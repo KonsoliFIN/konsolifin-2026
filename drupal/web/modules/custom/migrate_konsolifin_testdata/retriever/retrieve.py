@@ -14,12 +14,12 @@ Usage:
     #    python retrieve.py --query "SELECT * FROM node LIMIT 5" --output articles.json
 """
 
-from dotenv import parser
 import dotenv
 import os
 import json
 import datetime
 import re
+import traceback
 from random import randint, choices, choice
 from sshtunnel import SSHTunnelForwarder
 import pymysql
@@ -199,7 +199,7 @@ def main():
                 ORDER BY
                     nid DESC
                 LIMIT
-                    100;
+                    1000;
                 """
 
                 with connection.cursor() as cursor:
@@ -243,7 +243,7 @@ def main():
                     terms.update(res['studiot_ids'])
                     terms.update(res['alustat_ids'])
 
-                    writers.update(res['uid'])
+                    writers.update([res['uid']])
 
                     res['hero_image_id'] = hero_id
                     res['kuvat_ids'] = kuvat
@@ -256,12 +256,124 @@ def main():
                 for t in nodes:
                     filename = "../data/nodes/" +t + '.json'
                     json.dump(nodes[t], open(filename, 'w'), indent=2, ensure_ascii=False)
+                
+                query = """
+                SELECT
+                    ttd.vid AS bundle,
+                    ttd.tid,
+                    ttd.revision_id,
+                    fdata.name AS title,
+                    fdata.description__value as body,
+                    pfrach.field_kuuluu_pelisarjaan_target_id AS in_franchise,
+                    jpvm.field_julkaisu_pvm_accuracy_level AS publish_accuracy,
+                    jpvm.field_julkaisu_pvm_stored_date AS publish_date,
+                    pwww.field_www_sivu_uri AS www_sivu_uri,
+                    pforum.field_forum_ketju_value
+                FROM
+                    taxonomy_term_data AS ttd
+                    LEFT JOIN taxonomy_term_field_data AS fdata ON ttd.tid = fdata.tid
+                    AND ttd.revision_id = fdata.revision_id
+                    LEFT JOIN taxonomy_term__field_kuuluu_pelisarjaan AS pfrach ON ttd.tid = pfrach.entity_id
+                    AND ttd.revision_id = pfrach.revision_id
+                    LEFT JOIN taxonomy_term__field_julkaisu_pvm AS jpvm ON ttd.tid = jpvm.entity_id
+                    AND ttd.revision_id = jpvm.revision_id
+                    LEFT JOIN taxonomy_term__field_www_sivu AS pwww ON ttd.tid = pwww.entity_id
+                    AND ttd.revision_id = pwww.revision_id
+                    LEFT JOIN taxonomy_term__field_forum_ketju AS pforum ON ttd.tid = pforum.entity_id
+                    AND ttd.revision_id = pforum.revision_id
+                WHERE
+                    ttd.tid in %s or  ttd.vid = 'franchise';
+                """
+
+                with connection.cursor() as cursor:
+                    print(f"Executing SQL: {query}")
+                    cursor.execute(query, (list(terms),))
+                    results = cursor.fetchall()
+                    print(f"Successfully retrieved {len(results)} rows.")
+
+                    serializable_results = serialize_data(results)
+
+                terms = {}
+                for res in serializable_results:
+                    # Random images, 0 to 5 values from range 1..27
+                    kuvat = sorted(choices(range(1,28), k=randint(0,5)))
+                    hero_id = choice(range(1,28))
+
+                    res['hero_image_id'] = hero_id
+                    res['kuvat_ids'] = kuvat
+
+                    if res['bundle'] not in terms:
+                        terms[res['bundle']] = []
+
+                    terms[res['bundle']].append(res)
+
+                for t in terms:
+                    filename = "../data/taxonomy/" + t + '.json'
+                    json.dump(terms[t], open(filename, 'w'), indent=2, ensure_ascii=False)
+
+                query = """
+                SELECT
+                    users.uid,
+                    udata.name,
+                    unimi.field_oikea_nimi_value AS oikea_nimi,
+                    udata.mail,
+                    uesittely.field_esittely_value AS esittely,
+                    usome.some_urls,
+                    uroles.roles
+                FROM
+                    users
+                    LEFT JOIN users_field_data AS udata ON users.uid = udata.uid
+                    LEFT JOIN user__field_oikea_nimi AS unimi ON users.uid = unimi.entity_id
+                    LEFT JOIN user__field_esittely AS uesittely ON users.uid = uesittely.entity_id
+                    LEFT JOIN (
+                        SELECT
+                            entity_id,
+                            group_concat(field_some_linkit_uri) AS some_urls
+                        FROM
+                            user__field_some_linkit
+                        GROUP BY
+                            entity_id
+                    ) AS usome ON users.uid = usome.entity_id
+                    LEFT JOIN (
+                        SELECT
+                            entity_id,
+                            group_concat(roles_target_id) AS roles
+                        FROM
+                            user__roles
+                        GROUP BY
+                            entity_id
+                    ) AS uroles ON users.uid = uroles.entity_id
+                WHERE
+                    users.uid IN %s                
+                """
+
+                with connection.cursor() as cursor:
+                    print(f"Executing SQL: {query}")
+                    cursor.execute(query, (list(writers),))
+                    results = cursor.fetchall()
+                    print(f"Successfully retrieved {len(results)} rows.")
+
+                    serializable_results = serialize_data(results)
+
+                users = []
+                for res in serializable_results:
+                    hero_id = choice([9,10,11,12,16,17,20,23])
+
+                    res['some_urls'] = res['some_urls'].split(',') if res['some_urls'] else []
+                    res['roles'] = res['roles'].split(',') if res['roles'] else []
+                    res['kuva_id'] = hero_id
+
+                    users.append(res)
+
+                filename = "../data/users.json"
+                json.dump(users, open(filename, 'w'), indent=2, ensure_ascii=False)
 
             finally:
                 connection.close()
 
     except Exception as e:
-        print(f"\nAn error occurred: {e}")
+        traceback.print_exc()
+        print(f"\nAn error occurred: {repr(e)}")
         print("Please check your SSH and Database credentials/connectivity.")
 
 

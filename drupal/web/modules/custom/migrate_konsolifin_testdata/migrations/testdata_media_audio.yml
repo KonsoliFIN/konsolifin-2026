@@ -15,11 +15,13 @@ process:
   mid: id
   field_media_audio_file/target_id: id
   field_media_audio_file/alt: thumbnail__alt
-  uid: uid
+  uid:
+    -
+      plugin: default_value
+      default_value: 8
 destination:
   plugin: entity:media
   default_bundle: audio
 migration_dependencies:
   required:
-    - testdata_users
     - testdata_files

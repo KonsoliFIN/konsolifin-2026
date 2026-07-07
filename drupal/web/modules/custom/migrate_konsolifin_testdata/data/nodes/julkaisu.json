@@ -31,10 +31,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-09-04",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 2,
+    "hero_image_id": 19,
     "kuvat_ids": [
-      7,
-      9
+      5,
+      13,
+      16,
+      24,
+      25
     ]
   },
   {
@@ -66,12 +69,10 @@
     "publish_accuracy": "year",
     "publish_date": "2027-12-31",
     "publish_type": "remake",
-    "hero_image_id": 6,
+    "hero_image_id": 22,
     "kuvat_ids": [
-      13,
-      18,
-      19,
-      20
+      7,
+      7
     ]
   },
   {
@@ -102,8 +103,14 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-07-09",
     "publish_type": "remaster",
-    "hero_image_id": 3,
-    "kuvat_ids": []
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1,
+      4,
+      15,
+      15,
+      18
+    ]
   },
   {
     "nid": 65478,
@@ -137,11 +144,7 @@
     "publish_type": "remaster",
     "hero_image_id": 6,
     "kuvat_ids": [
-      13,
-      16,
-      24,
-      25,
-      26
+      10
     ]
   },
   {
@@ -176,10 +179,10 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-04-22",
     "publish_type": "remaster",
-    "hero_image_id": 10,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      6,
-      24
+      5,
+      22
     ]
   },
   {
@@ -214,9 +217,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-04-22",
     "publish_type": "remaster",
-    "hero_image_id": 27,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      25
+      3,
+      10,
+      18
     ]
   },
   {
@@ -245,10 +250,8 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "dlc",
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      21
-    ]
+    "hero_image_id": 7,
+    "kuvat_ids": []
   },
   {
     "nid": 65473,
@@ -278,11 +281,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "dlc",
-    "hero_image_id": 24,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      1,
-      19,
-      20
+      7,
+      8,
+      10,
+      18,
+      25
     ]
   },
   {
@@ -312,10 +317,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2024-09-30",
     "publish_type": "dlc",
-    "hero_image_id": 23,
+    "hero_image_id": 1,
     "kuvat_ids": [
-      11,
-      19
+      6,
+      13,
+      16,
+      17,
+      22
     ]
   },
   {
@@ -344,8 +352,10 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-04-07",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 16,
-    "kuvat_ids": []
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      19
+    ]
   },
   {
     "nid": 65470,
@@ -374,11 +384,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2023-09-06",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 17,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      15,
-      22,
-      26
+      6,
+      7,
+      19
     ]
   },
   {
@@ -407,12 +417,13 @@
     "publish_accuracy": "exact",
     "publish_date": "2022-03-04",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 19,
+    "hero_image_id": 10,
     "kuvat_ids": [
+      4,
+      6,
+      9,
       10,
-      21,
-      22,
-      24
+      16
     ]
   },
   {
@@ -443,14 +454,8 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-09-24",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      7,
-      10,
-      20,
-      21,
-      27
-    ]
+    "hero_image_id": 25,
+    "kuvat_ids": []
   },
   {
     "nid": 65467,
@@ -480,12 +485,11 @@
     "publish_accuracy": "exact",
     "publish_date": "2026-10-08",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 3,
+    "hero_image_id": 21,
     "kuvat_ids": [
-      6,
-      11,
-      17,
-      20,
+      8,
+      13,
+      13,
       22
     ]
   },
@@ -521,9 +525,12 @@
     "publish_accuracy": "exact",
     "publish_date": "2025-09-25",
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 6,
+    "hero_image_id": 4,
     "kuvat_ids": [
-      4
+      10,
+      12,
+      16,
+      26
     ]
   },
   {
@@ -559,10 +566,743 @@
     "publish_accuracy": null,
     "publish_date": null,
     "publish_type": "ensijulkaisu",
-    "hero_image_id": 4,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      3
+    ]
+  },
+  {
+    "nid": 65369,
+    "title": "Clair Obscur: Expedition 33",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1778398542,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13209
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      11459
+    ],
+    "studiot_ids": [
+      13240
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-04-24",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      12,
+      18,
+      18
+    ]
+  },
+  {
+    "nid": 65368,
+    "title": "Bubsy 4D",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 1604,
+    "status": 1,
+    "promote": 0,
+    "created": 1778355607,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876,
+      13626,
+      4440,
+      4454,
+      5778
+    ],
+    "pelit_ids": [
+      14076
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      952
+    ],
+    "studiot_ids": [
+      14082
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-05-22",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      20
+    ]
+  },
+  {
+    "nid": 65365,
+    "title": "Mina the Hollower",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 1604,
+    "status": 1,
+    "promote": 0,
+    "created": 1778224946,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876,
+      13626,
+      5382,
+      5383,
+      5778
+    ],
+    "pelit_ids": [
+      14080
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      10820
+    ],
+    "studiot_ids": [
+      5305
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-05-29",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      1,
+      16
+    ]
+  },
+  {
+    "nid": 65358,
+    "title": "BeastLink",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 5807,
+    "status": 1,
+    "promote": 0,
+    "created": 1778058596,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      14077
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [],
+    "studiot_ids": [
+      11556
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-05-06",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      2,
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "nid": 65352,
+    "title": "Tomodachi Life: Living the Dream",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 1604,
+    "status": 1,
+    "promote": 0,
+    "created": 1777888893,
+    "alustat_ids": [
+      5778
+    ],
+    "pelit_ids": [
+      13594
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      890
+    ],
+    "studiot_ids": [
+      6100
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-16",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      6,
+      9,
+      17,
+      17,
+      22
+    ]
+  },
+  {
+    "nid": 65351,
+    "title": "Forbidden Solitaire",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 1604,
+    "status": 1,
+    "promote": 0,
+    "created": 1777886209,
+    "alustat_ids": [
+      4876
+    ],
+    "pelit_ids": [
+      14070
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      14072,
+      14073
+    ],
+    "studiot_ids": [
+      14074,
+      14075
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-30",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 23,
+    "kuvat_ids": []
+  },
+  {
+    "nid": 65347,
+    "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1777811328,
+    "alustat_ids": [
+      9103,
+      7405,
+      4440,
+      4454
+    ],
+    "pelit_ids": [
+      613,
+      4316,
+      1902
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      7659
+    ],
+    "studiot_ids": [
+      4859
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2021-11-11",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      14
+    ]
+  },
+  {
+    "nid": 65346,
+    "title": "Buck Bumble",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 1604,
+    "status": 1,
+    "promote": 0,
+    "created": 1777706832,
+    "alustat_ids": [
+      7336
+    ],
+    "pelit_ids": [
+      14067
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      945
+    ],
+    "studiot_ids": [
+      13268
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "1998-12-18",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      5,
+      8,
+      9,
+      15,
+      22
+    ]
+  },
+  {
+    "nid": 65339,
+    "title": "The Blood of Dawnwalker",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
+    "status": 1,
+    "promote": 0,
+    "created": 1777476973,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13775
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      7549
+    ],
+    "studiot_ids": [
+      12198
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-09-03",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      8,
+      25,
+      25
+    ]
+  },
+  {
+    "nid": 65233,
+    "title": "Poker Night at the Inventory",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1772006436,
+    "alustat_ids": [
+      7405,
+      4876,
+      13626
+    ],
+    "pelit_ids": [
+      13994
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      10717
+    ],
+    "studiot_ids": [
+      10718
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-03-05",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      9
+    ]
+  },
+  {
+    "nid": 65212,
+    "title": "John Wick",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1770963408,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13980
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      5469
+    ],
+    "studiot_ids": [
+      6365
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "year",
+    "publish_date": "2027-12-31",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      5,
+      20,
+      27
+    ]
+  },
+  {
+    "nid": 65192,
+    "title": "Goblin’s Die",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 5807,
+    "status": 1,
+    "promote": 0,
+    "created": 1770200901,
+    "alustat_ids": [
+      4876
+    ],
+    "pelit_ids": [
+      13975
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      13974
+    ],
+    "studiot_ids": [
+      13976
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-02-04",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      19,
+      20,
+      23,
+      25
+    ]
+  },
+  {
+    "nid": 65022,
+    "title": "Sacred 2: Fallen Angel Remaster",
+    "body": "<p>Ancaria on tuhon partaalla. T-Energy, salaperäinen voimanlähde, joka aikoinaan toi vaurautta, ruokkii nyt korruptiota, konflikteja ja kaaosta. Sodan ja petoksen keskellä kuusi sankaria nousee — jokaisella oma kohtalonsa, kykynsä ja polkunsa elävässä, hengittävässä avoimessa maailmassa.</p><p>Tässä rakastetun toimintaroolipelin Sacred 2: Fallen Angel uudistetussa versiossa pelaajat palaavat valtavaan fantasiamaailmaan, joka on täynnä satoja tehtäviä, vaarallisia luolastoja ja ainutlaatuisia taistelutaitoja hallittavaksi. Taistele hirviömäisiä olentoja vastaan, paljasta muinaisia salaisuuksia ja muokkaa hahmoasi varusteilla, tasoilla ja syvällisellä kustomoinnilla.</p><p>Uudistetut taistelumekaniikat, moderni käyttöliittymä, täysi ohjainyhteensopivuus ja kaikki laajennukset mukana tuovat uutta eloa fanien suosikkiin — olitpa palaamassa Ancariaan tai astumassa sinne ensi kertaa.</p><p>Luo oma legendasi. Ancaria kohtalo odottaa.</p>",
+    "summary": "",
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1762165987,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      3119
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      7337
+    ],
+    "studiot_ids": [
+      13869,
+      13870
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-11-11",
+    "publish_type": "remaster",
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "nid": 64940,
+    "title": "Saros",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 83,
+    "status": 1,
+    "promote": 0,
+    "created": 1758654328,
+    "alustat_ids": [
+      7405
+    ],
+    "pelit_ids": [
+      13811
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      11380
+    ],
+    "studiot_ids": [
+      5599
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2026-04-30",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      12,
+      12,
+      19,
+      23
+    ]
+  },
+  {
+    "nid": 64841,
+    "title": "Hell Is Us",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1755072924,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13685
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      9476
+    ],
+    "studiot_ids": [
+      13686
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-09-04",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 5,
     "kuvat_ids": [
       4,
-      17
+      5,
+      7,
+      18,
+      27
+    ]
+  },
+  {
+    "nid": 64792,
+    "title": "Architect Life: A House Design Simulator",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1735682400,
+    "alustat_ids": [
+      9103,
+      7405,
+      4876,
+      5778
+    ],
+    "pelit_ids": [
+      13494
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      9476
+    ],
+    "studiot_ids": [
+      13723
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-06-19",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      14,
+      18
+    ]
+  },
+  {
+    "nid": 64709,
+    "title": "Kvark",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1747890000,
+    "alustat_ids": [
+      4876
+    ],
+    "pelit_ids": [
+      13669
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      13668
+    ],
+    "studiot_ids": [
+      13670
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2024-10-03",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      13
+    ]
+  },
+  {
+    "nid": 64708,
+    "title": "Kvark",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1747892052,
+    "alustat_ids": [
+      9103,
+      7405,
+      5778,
+      4440
+    ],
+    "pelit_ids": [
+      13669
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      13668
+    ],
+    "studiot_ids": [
+      13671,
+      13670
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-05-15",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      5,
+      11,
+      21,
+      24
+    ]
+  },
+  {
+    "nid": 64608,
+    "title": "Karma: The Dark World",
+    "body": "",
+    "summary": null,
+    "type": "julkaisu",
+    "uid": 8,
+    "status": 1,
+    "promote": 0,
+    "created": 1742658441,
+    "alustat_ids": [
+      7405,
+      4876
+    ],
+    "pelit_ids": [
+      13586
+    ],
+    "ihmiset_ids": [],
+    "julkaisijat_ids": [
+      7033
+    ],
+    "studiot_ids": [
+      13587
+    ],
+    "title_english": null,
+    "summary_english": null,
+    "pelin_nimi": null,
+    "arvosana": null,
+    "publish_accuracy": "exact",
+    "publish_date": "2025-03-27",
+    "publish_type": "ensijulkaisu",
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      22
     ]
   }
 ]

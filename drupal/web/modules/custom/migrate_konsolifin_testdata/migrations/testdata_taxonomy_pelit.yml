@@ -6,31 +6,23 @@ migration_tags:
 migration_group: testdata
 source:
   plugin: json_fixture
-  file: taxonomy/pelit.json
+  file: taxonomy/peli.json
   ids:
-    id:
+    tid:
       type: integer
 process:
+  tid: tid
   vid:
     plugin: default_value
     default_value: peli
-  name: name
-  description/value: description
+  name: title
+  description/value: body
   description/format:
     plugin: default_value
-    default_value: basic_html
-  weight: weight
+    default_value: full_html
   field_www_sivu/uri: www_sivu
-  field_hero_kuva: kuva_id
-  field_kuuluu_pelisarjaan:
-    -
-      plugin: migration_lookup
-      migration: testdata_taxonomy_franchise
-      source: franchise_id
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
+  field_hero_kuva: hero_image_id
+  field_kuuluu_pelisarjaan: in_franchise
 destination:
   plugin: entity:taxonomy_term
 migration_dependencies:

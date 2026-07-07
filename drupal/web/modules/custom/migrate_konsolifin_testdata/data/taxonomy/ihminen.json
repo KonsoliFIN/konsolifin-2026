@@ -1,9 +1,512 @@
 [
   {
-    "bundle": "pelistudiot",
-    "tid": 4857,
-    "revision_id": 4857,
-    "title": "Codemasters",
+    "bundle": "ihminen",
+    "tid": 315,
+    "revision_id": 315,
+    "title": "Thomas Puha",
+    "body": "<p>Thomas Puha&nbsp;nousi alun perin julkisuuteen MoonTV:n peliohjelmista (PSX-Peliluola, Play, Game Planet, Konsoli Planeetta ja URL), ja hän&nbsp;toimi pitkään Pelaaja-lehden päätoimittajana. Thomas on myös yksi Pelaaja-lehden kustantamon H-Town Oy:n perustajista ja suurin omistaja. Hän toimii Warner Finlandille levyttävän Roope Salminen &amp; Koirat -hiphop-yhtyeen road managerina.&nbsp;<span style=\"line-height:1.6\">FIGMA (Finnish Games and Multimedia Assocation) valitsi vuonna 2010 Puhan Peliluolaan eli kotimaisen peliteollisuuden Hall of Fameen.</span></p>\r\n\r\n<p>Elokuussa 2011 Puha siirtyi tekemään markkinointityötä Umbra Softwarelle. Nykyisin hän on pelistudio Remedyn PR-johtaja.</p>\r\n",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      1,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 332,
+    "revision_id": 332,
+    "title": "Juho Kuorikoski",
+    "body": "<p>Lukuisten suomalaisten peliaiheisten teosten kirjoittaja.</p>\r\n",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      11,
+      19,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 4862,
+    "revision_id": 4862,
+    "title": "Phil Spencer",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 4901,
+    "revision_id": 4901,
+    "title": "Yu Suzuki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      15,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5138,
+    "revision_id": 5138,
+    "title": "Tony Hawk",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      7,
+      7,
+      10,
+      13,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5140,
+    "revision_id": 5140,
+    "title": "Shuhei Yoshida",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      5,
+      12,
+      14,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5397,
+    "revision_id": 5397,
+    "title": "Guillermo del Toro",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      4,
+      11,
+      12,
+      16,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5398,
+    "revision_id": 5398,
+    "title": "Hideo Kojima",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      11,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5467,
+    "revision_id": 5467,
+    "title": "Avi Arad",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      7,
+      17,
+      18,
+      19,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5468,
+    "revision_id": 5468,
+    "title": "Ari Arad",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5492,
+    "revision_id": 5492,
+    "title": "Shigeru Miyamoto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      6,
+      15,
+      21,
+      21,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5496,
+    "revision_id": 5496,
+    "title": "Nolan North",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      8,
+      18,
+      19,
+      23,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5552,
+    "revision_id": 5552,
+    "title": "James Rolfe",
+    "body": "<p>Angry Video Game Nerd -hahmon luoja.</p>\r\n",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1,
+      8,
+      15,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5586,
+    "revision_id": 5586,
+    "title": "Tomonobu Itagaki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      9,
+      10,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5668,
+    "revision_id": 5668,
+    "title": "Idris Elba",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      8,
+      10,
+      18,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5760,
+    "revision_id": 5760,
+    "title": "Masahiro Sakurai",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      4,
+      11,
+      19,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5784,
+    "revision_id": 5784,
+    "title": "Sam Lake",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5785,
+    "revision_id": 5785,
+    "title": "Ilkka Villi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      5,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5786,
+    "revision_id": 5786,
+    "title": "Troy Baker",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5918,
+    "revision_id": 5918,
+    "title": "Shawn Ashmore",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5948,
+    "revision_id": 5948,
+    "title": "Ari Tommiska",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5968,
+    "revision_id": 5968,
+    "title": "Peter Molyneux",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      15,
+      20,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 5985,
+    "revision_id": 5985,
+    "title": "Gabe Newell",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6027,
+    "revision_id": 6027,
+    "title": "Neil Druckmann",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6057,
+    "revision_id": 6057,
+    "title": "Randy Pitchford",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6206,
+    "revision_id": 6206,
+    "title": "Norman Reedus",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      2,
+      4,
+      12,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6211,
+    "revision_id": 6211,
+    "title": "Antti Ilvessuo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      6,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6258,
+    "revision_id": 6258,
+    "title": "Taro Yoko",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6387,
+    "revision_id": 6387,
+    "title": "Dan Houser",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      9,
+      10
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 6444,
+    "revision_id": 6444,
+    "title": "Fumito Ueda",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -12,16 +515,175 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 26,
     "kuvat_ids": [
-      13,
-      17,
-      17
+      25
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 4859,
-    "revision_id": 4859,
-    "title": "Rockstar",
+    "bundle": "ihminen",
+    "tid": 7132,
+    "revision_id": 7132,
+    "title": "Eric Barone",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      8,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7145,
+    "revision_id": 7145,
+    "title": "Mads Mikkelsen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7186,
+    "revision_id": 7186,
+    "title": "Ed Annunziata",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      11,
+      23,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7376,
+    "revision_id": 7376,
+    "title": "Ron Gilbert",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      1,
+      19,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7394,
+    "revision_id": 7394,
+    "title": "Donnie Yen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      5,
+      13,
+      14,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7403,
+    "revision_id": 7403,
+    "title": "Jason Momoa",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      5,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7406,
+    "revision_id": 7406,
+    "title": "Julian Gerighty",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      8,
+      11,
+      12,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7461,
+    "revision_id": 7461,
+    "title": "Brendan Greene",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      9,
+      14,
+      17,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7723,
+    "revision_id": 7723,
+    "title": "Edmund McMillen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7730,
+    "revision_id": 7730,
+    "title": "Tyler Glaiel",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -29,328 +691,1902 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 7,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 7741,
+    "revision_id": 7741,
+    "title": "Josef Fares",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      5,
+      10,
+      12,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8028,
+    "revision_id": 8028,
+    "title": "Manu Pärssinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8029,
+    "revision_id": 8029,
+    "title": "Mikko Heinonen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      1,
+      9,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8034,
+    "revision_id": 8034,
+    "title": "Amy Hennig",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      1,
+      17,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8236,
+    "revision_id": 8236,
+    "title": "Miika Huttunen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      2,
+      3,
+      5,
+      21,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8335,
+    "revision_id": 8335,
+    "title": "Cory Barlog",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      19,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8397,
+    "revision_id": 8397,
+    "title": "Jack Black",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8844,
+    "revision_id": 8844,
+    "title": "Hidetaka Miyazaki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      8,
+      8,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8877,
+    "revision_id": 8877,
+    "title": "Doug Cockle",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8898,
+    "revision_id": 8898,
+    "title": "Geoff Keighley",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      8,
+      19,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 8948,
+    "revision_id": 8948,
+    "title": "Christofer Sundberg",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      13,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9082,
+    "revision_id": 9082,
+    "title": "George R.R. Martin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      9,
+      13,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9115,
+    "revision_id": 9115,
+    "title": "Glen Schofield",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9247,
+    "revision_id": 9247,
+    "title": "Léa Seydoux",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      7,
+      9,
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9376,
+    "revision_id": 9376,
+    "title": "Taika Waititi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      8,
+      22,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9479,
+    "revision_id": 9479,
+    "title": "Daniel Craig",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      1,
+      2,
+      16,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9485,
+    "revision_id": 9485,
+    "title": "Craig Mazin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      8,
+      8,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9517,
+    "revision_id": 9517,
+    "title": "Martti Suosalo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9518,
+    "revision_id": 9518,
+    "title": "Petri Alanko",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      12,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9624,
+    "revision_id": 9624,
+    "title": "Hermen Hulst",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9669,
+    "revision_id": 9669,
+    "title": "Jason Schreier",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9689,
+    "revision_id": 9689,
+    "title": "Arnold Schwarzenegger",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9761,
+    "revision_id": 9761,
+    "title": "Jeff Fowler",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9775,
+    "revision_id": 9775,
+    "title": "Ville Arvekari",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      3,
+      4,
+      17,
+      18,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9776,
+    "revision_id": 9776,
+    "title": "Esa Mäkijärvi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      4,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9797,
+    "revision_id": 9797,
+    "title": "Keanu Reeves",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      4,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9940,
+    "revision_id": 9940,
+    "title": "Shuntaro Furukawa",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 9967,
+    "revision_id": 9967,
+    "title": "Clive Barker",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      21,
+      21,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10077,
+    "revision_id": 10077,
+    "title": "Ben Schwartz",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      5,
+      16,
+      17,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10307,
+    "revision_id": 10307,
+    "title": "Yuji Naka",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      6,
+      6,
+      11,
+      12,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10451,
+    "revision_id": 10451,
+    "title": "Naoto Ohshima",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      14,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10474,
+    "revision_id": 10474,
+    "title": "Simu Liu",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      22,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10543,
+    "revision_id": 10543,
+    "title": "Tuomas Tonteri",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      1,
+      2,
+      6
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10571,
+    "revision_id": 10571,
+    "title": "Chris Pratt",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      2,
+      13,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10595,
+    "revision_id": 10595,
+    "title": "Niko Lähteenmäki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      9,
+      20,
+      20,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10598,
+    "revision_id": 10598,
+    "title": "Joonatan Itkonen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10670,
+    "revision_id": 10670,
+    "title": "Vin Diesel",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10701,
+    "revision_id": 10701,
+    "title": "Teruyuki Toriyama",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      3,
+      6,
+      12,
+      20,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10805,
+    "revision_id": 10805,
+    "title": "Hakan Abrak",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      1,
+      3
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10806,
+    "revision_id": 10806,
+    "title": "Mac Walters",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      1,
+      6,
+      10,
+      12,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10841,
+    "revision_id": 10841,
+    "title": "Pedro Pascal",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 10898,
+    "revision_id": 10898,
+    "title": "Naoki Hamaguchi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      9,
+      12,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11045,
+    "revision_id": 11045,
+    "title": "Phoebe Waller-Bridge",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      5,
+      16,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11152,
+    "revision_id": 11152,
+    "title": "Jaakko Herranen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      2
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11284,
+    "revision_id": 11284,
+    "title": "James Gunn",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      8
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11368,
+    "revision_id": 11368,
+    "title": "Bella Ramsey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      12,
+      13
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11627,
+    "revision_id": 11627,
+    "title": "Strauss Zelnick",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      1,
+      5,
+      18,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 11637,
+    "revision_id": 11637,
+    "title": "John Carpenter",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12134,
+    "revision_id": 12134,
+    "title": "Jez Corden",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      10,
+      17,
+      18,
+      20,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12307,
+    "revision_id": 12307,
+    "title": "Nick Offerman",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12415,
+    "revision_id": 12415,
+    "title": "Jyri Jokinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      8,
+      14,
+      20,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12416,
+    "revision_id": 12416,
+    "title": "Petri Leskinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      4,
+      7,
+      15,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12431,
+    "revision_id": 12431,
+    "title": "Bret Robbins",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      7,
+      9,
+      11,
+      13,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12507,
+    "revision_id": 12507,
+    "title": "Melanie Liburd",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      2,
+      3,
+      11,
+      17,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12621,
+    "revision_id": 12621,
+    "title": "Peter Weller",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12640,
+    "revision_id": 12640,
+    "title": "Peter Franzén",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      1,
+      4,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12682,
+    "revision_id": 12682,
+    "title": "Harri Alanne",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      11,
+      15,
+      15
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12707,
+    "revision_id": 12707,
+    "title": "Swen Vincke",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      2,
+      4,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12713,
+    "revision_id": 12713,
+    "title": "Tove Jansson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      6,
+      12,
+      16,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12775,
+    "revision_id": 12775,
+    "title": "Matthew Porretta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      4,
+      13,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12782,
+    "revision_id": 12782,
+    "title": "Noah Hawley",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      6,
+      9,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12785,
+    "revision_id": 12785,
+    "title": "James McCaffrey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      1,
+      6,
+      10,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12845,
+    "revision_id": 12845,
+    "title": "Kaitlyn Dever",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      12,
+      20,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 12879,
+    "revision_id": 12879,
+    "title": "Johan Pilestedt",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13011,
+    "revision_id": 13011,
+    "title": "Nate the Hate",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13013,
+    "revision_id": 13013,
+    "title": "Hideaki Nishino",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13100,
+    "revision_id": 13100,
+    "title": "Stephen Totilo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      1,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13123,
+    "revision_id": 13123,
+    "title": "Rosario Dawson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      12,
+      16,
+      17,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13180,
+    "revision_id": 13180,
+    "title": "Isabela Merced",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13185,
+    "revision_id": 13185,
+    "title": "Jordan Middler",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      2,
+      15,
+      20,
+      23,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13354,
+    "revision_id": 13354,
+    "title": "Craig Duncan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      9,
+      10,
+      10,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13361,
+    "revision_id": 13361,
+    "title": "Peter Stormare",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      18,
+      18,
+      20,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13465,
+    "revision_id": 13465,
+    "title": "Colleen O'Saughnessey",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13468,
+    "revision_id": 13468,
+    "title": "Dan Allen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13469,
+    "revision_id": 13469,
+    "title": "Christopher Stone",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      6,
+      20,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13472,
+    "revision_id": 13472,
+    "title": "Laura Kate Dale",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      6,
+      19,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13474,
+    "revision_id": 13474,
+    "title": "Gabriel Luna",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      6
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13475,
+    "revision_id": 13475,
+    "title": "Rutina Wesley",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      16,
+      18,
+      21,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13476,
+    "revision_id": 13476,
+    "title": "Young Mazino",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      1,
+      5,
+      6,
+      11,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13477,
+    "revision_id": 13477,
+    "title": "Catherine O'Hara",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      6,
+      18,
+      22,
+      23,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13478,
+    "revision_id": 13478,
+    "title": "Alex Aniel",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13479,
+    "revision_id": 13479,
+    "title": "Takanobu Mizuno",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      8,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13480,
+    "revision_id": 13480,
+    "title": "Gen Urobuchi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      11,
+      13,
+      17,
+      19,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13481,
+    "revision_id": 13481,
+    "title": "Andrés Muschietti",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13482,
+    "revision_id": 13482,
+    "title": "Ashley Brucks",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      1,
+      11,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13483,
+    "revision_id": 13483,
+    "title": "David F. Sandberg",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      6,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13487,
+    "revision_id": 13487,
+    "title": "Gary Dauberman",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      6,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13496,
+    "revision_id": 13496,
+    "title": "Matthew Griffin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      1,
+      7,
+      11,
+      18,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13497,
+    "revision_id": 13497,
+    "title": "William Pellen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      2,
+      16,
+      19,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13500,
+    "revision_id": 13500,
+    "title": "Charlie Cox",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      13,
+      16,
+      19,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13501,
+    "revision_id": 13501,
+    "title": "Andy Serkis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      2,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13502,
+    "revision_id": 13502,
+    "title": "Ben Starr",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      6,
+      16,
+      17,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13503,
+    "revision_id": 13503,
+    "title": "Jennifer English",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1,
+      7,
+      17,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13519,
+    "revision_id": 13519,
+    "title": "Iikka Kivi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13522,
+    "revision_id": 13522,
+    "title": "Jack Burrows",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      20,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13523,
+    "revision_id": 13523,
+    "title": "Garry McGee",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      9,
+      15
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13524,
+    "revision_id": 13524,
+    "title": "Thaddeus Sasser",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      1,
+      3,
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13525,
+    "revision_id": 13525,
+    "title": "Mat Piscatella",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      12
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13526,
+    "revision_id": 13526,
+    "title": "Jerry Hook",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      13,
+      19,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13528,
+    "revision_id": 13528,
+    "title": "Toru Ohara",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      2
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13529,
+    "revision_id": 13529,
+    "title": "Ben Fiquet",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      3,
+      13,
+      13,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13532,
+    "revision_id": 13532,
+    "title": "Tyshawn Jones",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      3,
+      22,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13534,
+    "revision_id": 13534,
+    "title": "Ethan Gach",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13538,
+    "revision_id": 13538,
+    "title": "Modern Vintage Gamer",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13539,
+    "revision_id": 13539,
+    "title": "Dana Gould",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      8,
+      21,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13540,
+    "revision_id": 13540,
+    "title": "billbil-kun",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      13,
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13547,
+    "revision_id": 13547,
+    "title": "Jonathan Dumont",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      5,
+      15,
+      19,
+      20,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13548,
+    "revision_id": 13548,
+    "title": "Jeff Jarrett",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
     "kuvat_ids": [
       4
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 4863,
-    "revision_id": 4863,
-    "title": "Bungie",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      10
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4872,
-    "revision_id": 4872,
-    "title": "Massive Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      8
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4875,
-    "revision_id": 4875,
-    "title": "Starbreeze Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      2,
-      5,
-      5,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4877,
-    "revision_id": 4877,
-    "title": "Team Ninja",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4881,
-    "revision_id": 4881,
-    "title": "Frozenbyte",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      17,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4893,
-    "revision_id": 4893,
-    "title": "Insomniac Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      3,
-      5,
-      18,
-      18,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4894,
-    "revision_id": 4894,
-    "title": "Eidos-Montréal",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      6,
-      17,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 4895,
-    "revision_id": 4895,
-    "title": "Criterion Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      3,
-      5,
-      10,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5032,
-    "revision_id": 5032,
-    "title": "MachineGames",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5109,
-    "revision_id": 5109,
-    "title": "HAL Laboratory",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      9,
-      9,
-      20,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5116,
-    "revision_id": 5116,
-    "title": "Sega",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      6,
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5118,
-    "revision_id": 5118,
-    "title": "Naughty Dog",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5120,
-    "revision_id": 5120,
-    "title": "Guerrilla Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      1,
-      10
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5123,
-    "revision_id": 5123,
-    "title": "Team ICO",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      5,
-      8,
-      9,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5126,
-    "revision_id": 5126,
-    "title": "DICE",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      23,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5162,
-    "revision_id": 5162,
-    "title": "Kojima Productions",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      12,
-      12
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5178,
-    "revision_id": 5178,
-    "title": "Telltale Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      1,
-      3,
-      4,
-      16
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5261,
-    "revision_id": 5261,
-    "title": "Supermassive Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      14,
-      15,
-      22,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5266,
-    "revision_id": 5266,
-    "title": "YS Net",
+    "bundle": "ihminen",
+    "tid": 13549,
+    "revision_id": 13549,
+    "title": "Alex Josef",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -359,17 +2595,29 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 19,
     "kuvat_ids": [
-      1,
-      5,
-      17,
-      26
+      12,
+      20
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5269,
-    "revision_id": 5269,
-    "title": "Rockstar North",
+    "bundle": "ihminen",
+    "tid": 13550,
+    "revision_id": 13550,
+    "title": "Russell Binder",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13551,
+    "revision_id": 13551,
+    "title": "Mark Caplan",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -378,183 +2626,18 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 22,
     "kuvat_ids": [
-      7,
-      8,
-      12,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5273,
-    "revision_id": 5273,
-    "title": "Mojang",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      2,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5281,
-    "revision_id": 5281,
-    "title": "Turn 10 Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      2,
-      2,
-      19,
-      24,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5287,
-    "revision_id": 5287,
-    "title": "Flying Wild Hog",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
       1,
-      16
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5288,
-    "revision_id": 5288,
-    "title": "id Software",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      13,
-      14,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5295,
-    "revision_id": 5295,
-    "title": "Ninja Theory",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      1,
-      8,
-      13,
-      19,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5299,
-    "revision_id": 5299,
-    "title": "Square Enix",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      9,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5302,
-    "revision_id": 5302,
-    "title": "BioWare",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      7,
+      6,
       10,
-      17,
-      19,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5304,
-    "revision_id": 5304,
-    "title": "Crystal Dynamics",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      1,
-      6,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5305,
-    "revision_id": 5305,
-    "title": "Yacht Club Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      4,
-      6,
       12,
-      23
+      17
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5306,
-    "revision_id": 5306,
-    "title": "Konami",
+    "bundle": "ihminen",
+    "tid": 13557,
+    "revision_id": 13557,
+    "title": "Khary Payton",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -563,110 +2646,50 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 20,
     "kuvat_ids": [
-      13,
-      22,
-      23,
-      25
+      1
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5308,
-    "revision_id": 5308,
-    "title": "Ubisoft",
+    "bundle": "ihminen",
+    "tid": 13558,
+    "revision_id": 13558,
+    "title": "Drew Moerlein",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      7,
-      9,
-      12,
-      18,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5320,
-    "revision_id": 5320,
-    "title": "Gearbox Software",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      6,
-      12,
-      15
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5324,
-    "revision_id": 5324,
-    "title": "Hangar 13",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
+    "hero_image_id": 12,
     "kuvat_ids": [
       4,
-      4,
-      12,
+      5,
+      8,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13559,
+    "revision_id": 13559,
+    "title": "Megalyn Echikunwoke",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      10,
       22
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5329,
-    "revision_id": 5329,
-    "title": "Arrowhead Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      4,
-      7,
-      9,
-      12,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5334,
-    "revision_id": 5334,
-    "title": "Platinum Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      7
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5343,
-    "revision_id": 5343,
-    "title": "Capcom",
+    "bundle": "ihminen",
+    "tid": 13560,
+    "revision_id": 13560,
+    "title": "Marque Richardson",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -674,165 +2697,48 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 1,
+    "kuvat_ids": [
+      13,
+      17,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13576,
+    "revision_id": 13576,
+    "title": "Mike Kayatta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5348,
-    "revision_id": 5348,
-    "title": "The Coalition",
-    "body": "<p>The Coalition perustettiin vuonna 2010 Vancouverissa, Kanadassa, nimellä Microsoft Vancouver. Studio lakkautettiin heinäkuussa 2012, mutta se herätettiin uudelleen henkiin saman vuoden lokakuussa uudella nimellä, Black Tusk Studios. Ensimmäinen työnäyte porukalta oli vuoden 2015 Gears of War -uudelleenmasterointi Xbox Onelle.</p>\r\n\r\n<p>The Coalition -nimi on ollut käytössä kesäkuusta 2015.</p>\r\n",
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      3,
-      6,
-      9,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5350,
-    "revision_id": 5350,
-    "title": "The Chinese Room",
+    "bundle": "ihminen",
+    "tid": 13580,
+    "revision_id": 13580,
+    "title": "Samae Koskinen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5353,
-    "revision_id": 5353,
-    "title": "Electronic Arts",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      12,
-      15,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5355,
-    "revision_id": 5355,
-    "title": "Rocksteady Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      2,
-      5,
-      10,
-      12,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5357,
-    "revision_id": 5357,
-    "title": "DON'T NOD",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5361,
-    "revision_id": 5361,
-    "title": "Treyarch",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      2
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5371,
-    "revision_id": 5371,
-    "title": "Nintendo",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 20,
     "kuvat_ids": [
       7,
-      15
+      18
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5391,
-    "revision_id": 5391,
-    "title": "Techland",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      1,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5418,
-    "revision_id": 5418,
-    "title": "Firaxis",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      20,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5452,
-    "revision_id": 5452,
-    "title": "CD Projekt RED",
+    "bundle": "ihminen",
+    "tid": 13582,
+    "revision_id": 13582,
+    "title": "Alex Lima",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -840,13 +2746,30 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 13,
+    "kuvat_ids": [
+      16,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13583,
+    "revision_id": 13583,
+    "title": "Lexi Mayfield",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5461,
-    "revision_id": 5461,
-    "title": "Double Fine Productions",
+    "bundle": "ihminen",
+    "tid": 13602,
+    "revision_id": 13602,
+    "title": "Zach Cregger",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -854,32 +2777,18 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 15,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5463,
-    "revision_id": 5463,
-    "title": "IO Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
     "kuvat_ids": [
+      1,
       2,
-      6,
-      14,
-      17
+      18,
+      20
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5474,
-    "revision_id": 5474,
-    "title": "Infinity Ward",
+    "bundle": "ihminen",
+    "tid": 13603,
+    "revision_id": 13603,
+    "title": "Austin Abrams",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -888,15 +2797,48 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 11,
     "kuvat_ids": [
-      16,
-      23
+      10
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5484,
-    "revision_id": 5484,
-    "title": "NetherRealm Studios",
+    "bundle": "ihminen",
+    "tid": 13606,
+    "revision_id": 13606,
+    "title": "Kouichi Kawamoto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      4,
+      8,
+      19,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13607,
+    "revision_id": 13607,
+    "title": "Takuhiro Dohuta",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13608,
+    "revision_id": 13608,
+    "title": "Tetsuya Sasaki",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -905,67 +2847,80 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 4,
     "kuvat_ids": [
-      1,
-      10
+      22
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5487,
-    "revision_id": 5487,
-    "title": "Rare",
+    "bundle": "ihminen",
+    "tid": 13624,
+    "revision_id": 13624,
+    "title": "Liam Neeson",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 3,
+    "hero_image_id": 11,
     "kuvat_ids": [
-      4,
+      3,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13625,
+    "revision_id": 13625,
+    "title": "Bill Petras",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13631,
+    "revision_id": 13631,
+    "title": "Tomohiro Suzuki",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13632,
+    "revision_id": 13632,
+    "title": "Hideki Irie",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      2,
       9,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5491,
-    "revision_id": 5491,
-    "title": "Nixxes",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      13,
-      17,
-      22,
       26,
-      26
+      27
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 5501,
-    "revision_id": 5501,
-    "title": "Valve Software",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5516,
-    "revision_id": 5516,
-    "title": "Blizzard Entertainment",
+    "bundle": "ihminen",
+    "tid": 13656,
+    "revision_id": 13656,
+    "title": "Anssi Hyytiäinen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -973,2559 +2928,33 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 3,
-    "kuvat_ids": [
-      7,
-      11,
-      13,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5533,
-    "revision_id": 5533,
-    "title": "Avalanche Software",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1,
-      1,
-      5,
-      13,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5535,
-    "revision_id": 5535,
-    "title": "inXile Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      12,
-      19,
-      20,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5539,
-    "revision_id": 5539,
-    "title": "Fingersoft",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      10,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5559,
-    "revision_id": 5559,
-    "title": "Larian Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      1,
-      6,
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5564,
-    "revision_id": 5564,
-    "title": "Team Meat",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      3,
-      6,
-      13,
-      16,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5573,
-    "revision_id": 5573,
-    "title": "Koei Tecmo",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      11,
-      13,
-      16,
-      25,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5582,
-    "revision_id": 5582,
-    "title": "Cyanide Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      7,
-      12,
-      15
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5599,
-    "revision_id": 5599,
-    "title": "Housemarque",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5618,
-    "revision_id": 5618,
-    "title": "Bandai Namco Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      1,
-      2,
-      5,
-      13,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5635,
-    "revision_id": 5635,
-    "title": "Remedy Entertainment",
-    "body": "<p>Studio <em>Max Paynen</em>, <em>Alan Waken</em> ja <em>Quantum Breakin</em> takana. Yksi perinteikkäimpiä suomalaisia pelitaloja, jonka tuotokset ovat keränneet kiitosta sekä yleisöltä että arvostelijoilta.</p>\r\n",
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      11,
-      18,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5654,
-    "revision_id": 5654,
-    "title": "Ubisoft Massive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      1,
-      7,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5662,
-    "revision_id": 5662,
-    "title": "EA Motive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5670,
-    "revision_id": 5670,
-    "title": "Studio Wildcard",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      16,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5684,
-    "revision_id": 5684,
-    "title": "Sonic Team",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      5,
-      13,
-      15,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5727,
-    "revision_id": 5727,
-    "title": "Epic Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      7
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5751,
-    "revision_id": 5751,
-    "title": "Retro Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5759,
-    "revision_id": 5759,
-    "title": "Ubisoft Quebec",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      13,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5802,
-    "revision_id": 5802,
-    "title": "Re-Logic",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      4,
-      18,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5822,
-    "revision_id": 5822,
-    "title": "Obsidian Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5831,
-    "revision_id": 5831,
-    "title": "Visceral Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5927,
-    "revision_id": 5927,
-    "title": "Funcom",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 5932,
-    "revision_id": 5932,
-    "title": "Iron Galaxy",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      7,
-      11,
-      16,
-      20,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6033,
-    "revision_id": 6033,
-    "title": "Frogwares",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6035,
-    "revision_id": 6035,
-    "title": "BANDAI NAMCO Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      3,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6039,
-    "revision_id": 6039,
-    "title": "Respawn Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      15,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6100,
-    "revision_id": 6100,
-    "title": "Nintendo EPD",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      13,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6197,
-    "revision_id": 6197,
-    "title": "Playground Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      3,
-      10,
-      17
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6213,
-    "revision_id": 6213,
-    "title": "Ubisoft RedLynx",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      11,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6221,
-    "revision_id": 6221,
-    "title": "Game Freak",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      11,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6284,
-    "revision_id": 6284,
-    "title": "Irrational Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6353,
-    "revision_id": 6353,
-    "title": "PlayDead",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      17
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6365,
-    "revision_id": 6365,
-    "title": "Saber Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      6,
-      13,
-      25,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6412,
-    "revision_id": 6412,
-    "title": "Bugbear Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      7,
-      15,
-      23,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6434,
-    "revision_id": 6434,
-    "title": "Virtuous",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      9,
-      10,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6452,
-    "revision_id": 6452,
-    "title": "Rebellion Developments",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6498,
-    "revision_id": 6498,
-    "title": "Ubisoft Montpellier",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      1,
-      7,
-      8,
-      10
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 6502,
-    "revision_id": 6502,
-    "title": "Studio MDHR",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      15
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7030,
-    "revision_id": 7030,
-    "title": "Amistech Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      4,
-      15,
-      18,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7120,
-    "revision_id": 7120,
-    "title": "United Front Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7122,
-    "revision_id": 7122,
-    "title": "Sucker Punch",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7135,
-    "revision_id": 7135,
-    "title": "ConcernedApe",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      2,
-      2,
-      17,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7175,
-    "revision_id": 7175,
-    "title": "Supergiant Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7243,
-    "revision_id": 7243,
-    "title": "SNK",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      5,
-      5,
-      7,
-      8,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7344,
-    "revision_id": 7344,
-    "title": "Bethesda Game Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      4,
-      5,
-      13,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7351,
-    "revision_id": 7351,
-    "title": "Nicalis",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      13,
-      15,
-      17,
-      21,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7368,
-    "revision_id": 7368,
-    "title": "Toby Fox",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7396,
-    "revision_id": 7396,
-    "title": "Monolith",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7402,
-    "revision_id": 7402,
-    "title": "Ubisoft Milan",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7456,
-    "revision_id": 7456,
-    "title": "Lizardcube",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      2,
-      16
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7548,
-    "revision_id": 7548,
-    "title": "Sledgehammer Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      1,
-      2,
-      2,
-      3,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7611,
-    "revision_id": 7611,
-    "title": "Maxis",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": [
-      20,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7660,
-    "revision_id": 7660,
-    "title": "Rockstar Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      15,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7673,
-    "revision_id": 7673,
-    "title": "PlatinumGames",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7739,
-    "revision_id": 7739,
-    "title": "Hazelight Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7748,
-    "revision_id": 7748,
-    "title": "4A Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      4,
-      12,
-      14,
-      19,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7750,
-    "revision_id": 7750,
-    "title": "Deck Nine Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      11
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7807,
-    "revision_id": 7807,
-    "title": "Behaviour Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      1,
-      10,
-      13,
-      14,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7821,
-    "revision_id": 7821,
-    "title": "Zenimax Online Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      19,
-      23,
-      24,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 7864,
-    "revision_id": 7864,
-    "title": "Ubisoft Singapore",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8021,
-    "revision_id": 8021,
-    "title": "Reikon Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      12,
-      23,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8053,
-    "revision_id": 8053,
-    "title": "FuturLab",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      4,
-      18,
-      20,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8152,
-    "revision_id": 8152,
-    "title": "Panic Button",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      1,
-      5,
-      15,
-      23,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8210,
-    "revision_id": 8210,
-    "title": "Shiver Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      3,
-      8,
-      16,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8241,
-    "revision_id": 8241,
-    "title": "People Can Fly",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8258,
-    "revision_id": 8258,
-    "title": "Nightdive Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8263,
-    "revision_id": 8263,
-    "title": "Stellar Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      5,
-      13,
-      16,
-      25,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8286,
-    "revision_id": 8286,
-    "title": "22cans",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      2,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8359,
-    "revision_id": 8359,
-    "title": "Hinterland Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      1,
-      10
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8384,
-    "revision_id": 8384,
-    "title": "SIE Santa Monica Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      12,
-      16,
-      22,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8516,
-    "revision_id": 8516,
-    "title": "Bloober Team",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": [
-      6,
-      6,
-      8,
-      9,
-      12
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8552,
-    "revision_id": 8552,
-    "title": "Team Cherry",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      6,
-      12,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8617,
-    "revision_id": 8617,
-    "title": "Virtuos",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      3,
-      4,
-      15,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8618,
-    "revision_id": 8618,
-    "title": "FromSoftware",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      7,
-      15,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8743,
-    "revision_id": 8743,
-    "title": "EA Maxis",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8753,
-    "revision_id": 8753,
-    "title": "SIE Bend Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8792,
-    "revision_id": 8792,
-    "title": "Aspyr Media",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 8872,
-    "revision_id": 8872,
-    "title": "IOI Malmö",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      8,
-      12
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9077,
-    "revision_id": 9077,
-    "title": "Purple Lamp Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      19,
-      27,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9127,
-    "revision_id": 9127,
-    "title": "Creative Assembly",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      6,
-      9,
-      14,
-      16,
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9220,
-    "revision_id": 9220,
-    "title": "ZA/UM",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      16,
-      17,
-      18,
-      25,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9288,
-    "revision_id": 9288,
-    "title": "Remedy",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9291,
-    "revision_id": 9291,
-    "title": "Asobo",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9299,
-    "revision_id": 9299,
-    "title": "Squanch Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9304,
-    "revision_id": 9304,
-    "title": "Mega Crit",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      12,
-      13,
-      16,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9339,
-    "revision_id": 9339,
-    "title": "Teyon",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      2,
-      7,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9468,
-    "revision_id": 9468,
-    "title": "Activision Blizzard",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      11,
-      14,
-      15,
-      19,
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9527,
-    "revision_id": 9527,
-    "title": "TeamKill Media",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      21,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9576,
-    "revision_id": 9576,
-    "title": "IronOak Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9694,
-    "revision_id": 9694,
-    "title": "Paradox Development Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1,
-      3
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9708,
-    "revision_id": 9708,
-    "title": "Maze Theory",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9720,
-    "revision_id": 9720,
-    "title": "NetEase Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      6,
-      16,
-      19,
-      19,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9757,
-    "revision_id": 9757,
-    "title": "Digital Eclipse",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      11,
-      12,
-      22,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 9843,
-    "revision_id": 9843,
-    "title": "Motive Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10036,
-    "revision_id": 10036,
-    "title": "Ryu Ga Gotoku Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10190,
-    "revision_id": 10190,
-    "title": "Crows Crows Crows",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      1,
-      4,
-      6,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10298,
-    "revision_id": 10298,
-    "title": "Mainframe Industries",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      14
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10483,
-    "revision_id": 10483,
-    "title": "Sony Santa Monica",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
-      1,
-      1,
-      5,
-      12
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10498,
-    "revision_id": 10498,
-    "title": "Team ASOBI!",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      22,
-      24,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10718,
-    "revision_id": 10718,
-    "title": "Skunkape Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10720,
-    "revision_id": 10720,
-    "title": "GSC Game World",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      13,
-      19,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10749,
-    "revision_id": 10749,
-    "title": "Bohemia Interactive Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      4,
-      10,
-      17,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10777,
-    "revision_id": 10777,
-    "title": "3DClouds",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      23,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10948,
-    "revision_id": 10948,
-    "title": "Tribute Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      1,
-      5,
-      14,
-      18,
-      21
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 10995,
-    "revision_id": 10995,
-    "title": "Landfall Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      4,
-      15
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11258,
-    "revision_id": 11258,
-    "title": "Full Circle",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11378,
-    "revision_id": 11378,
-    "title": "Firesprite",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      1,
-      3,
-      8,
-      16
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11521,
-    "revision_id": 11521,
-    "title": "Skydance New Media",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      13,
-      13,
-      14,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11556,
-    "revision_id": 11556,
-    "title": "Grove Street Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      14,
-      15,
-      21,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11699,
-    "revision_id": 11699,
-    "title": "Hyper Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      10,
-      12,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11816,
-    "revision_id": 11816,
-    "title": "Player First Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      1,
-      6,
-      7,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11847,
-    "revision_id": 11847,
-    "title": "BlueTwelve Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      2,
-      13,
-      24,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11945,
-    "revision_id": 11945,
-    "title": "Survios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      3,
-      4,
-      11,
-      13,
-      14
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 11989,
-    "revision_id": 11989,
-    "title": "Embark Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 9,
-    "kuvat_ids": [
-      1,
-      11,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12198,
-    "revision_id": 12198,
-    "title": "Rebel Wolves",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12255,
-    "revision_id": 12255,
-    "title": "Isometricorp Games Limited",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      8,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12276,
-    "revision_id": 12276,
-    "title": "Game Science",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      3,
-      5,
-      7
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12315,
-    "revision_id": 12315,
-    "title": "Ubisoft Mainz",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": [
-      1,
-      6,
-      13,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12356,
-    "revision_id": 12356,
-    "title": "Black Salt Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12357,
-    "revision_id": 12357,
-    "title": "Neowiz Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 17,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12380,
-    "revision_id": 12380,
-    "title": "Looking Glass Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12550,
-    "revision_id": 12550,
-    "title": "Poncle",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
-    "kuvat_ids": [
-      1,
-      13,
-      15,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12815,
-    "revision_id": 12815,
-    "title": "Pocket Pair",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12860,
-    "revision_id": 12860,
-    "title": "MINTROCKET",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 13,
-    "kuvat_ids": [
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12862,
-    "revision_id": 12862,
-    "title": "Ballistic Moon",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      5,
-      10,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12947,
-    "revision_id": 12947,
-    "title": "Shift Up Corporation",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 5,
-    "kuvat_ids": [
-      13,
-      16,
-      17
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 12954,
-    "revision_id": 12954,
-    "title": "Bandai Namco Studios Inc.",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      10,
-      11
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13051,
-    "revision_id": 13051,
-    "title": "Limited Run Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      6
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13240,
-    "revision_id": 13240,
-    "title": "Sandfall Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
-      1,
-      23
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13268,
-    "revision_id": 13268,
-    "title": "Argonaut Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13283,
-    "revision_id": 13283,
-    "title": "Reflector Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      1,
-      7,
-      8,
-      16
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13284,
-    "revision_id": 13284,
-    "title": "Pearl Abyss",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 1,
-    "kuvat_ids": [
-      2,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13295,
-    "revision_id": 13295,
-    "title": "Namco",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 12,
-    "kuvat_ids": [
-      9,
-      16,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13467,
-    "revision_id": 13467,
-    "title": "Reef Entertainment",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 24,
-    "kuvat_ids": [
-      18,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13486,
-    "revision_id": 13486,
-    "title": "Appaloosa Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      17
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13511,
-    "revision_id": 13511,
-    "title": "LocalThunk",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
     "kuvat_ids": [
       3
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13531,
-    "revision_id": 13531,
-    "title": "Lohkare Games",
+    "bundle": "ihminen",
+    "tid": 13657,
+    "revision_id": 13657,
+    "title": "MrBeast",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 23,
     "kuvat_ids": [
-      2,
-      9,
-      16,
-      23,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13535,
-    "revision_id": 13535,
-    "title": "Warner Bros. San Diego",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 21,
-    "kuvat_ids": [
-      1,
-      5,
-      7,
-      12,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13537,
-    "revision_id": 13537,
-    "title": "Bitmap Bureau",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13573,
-    "revision_id": 13573,
-    "title": "CodeForce",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 6,
-    "kuvat_ids": [
-      2,
-      6,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13575,
-    "revision_id": 13575,
-    "title": "Hanki Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      24,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13577,
-    "revision_id": 13577,
-    "title": "Oxide Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13587,
-    "revision_id": 13587,
-    "title": "Pollard Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      21,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13598,
-    "revision_id": 13598,
-    "title": "Stellar Stone",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      2,
-      10,
+      14,
       18,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13633,
-    "revision_id": 13633,
-    "title": "Sirius Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      7,
-      17,
-      17,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13635,
-    "revision_id": 13635,
-    "title": "Screen Juice",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      2
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13642,
-    "revision_id": 13642,
-    "title": "Auroch Digital",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": [
-      7,
-      11,
-      15,
-      16,
       25
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13670,
-    "revision_id": 13670,
-    "title": "Perun Creative",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13671,
-    "revision_id": 13671,
-    "title": "Latest Past",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 22,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13676,
-    "revision_id": 13676,
-    "title": "Cliffhanger Games",
+    "bundle": "ihminen",
+    "tid": 13658,
+    "revision_id": 13658,
+    "title": "James Donaldson",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -3533,153 +2962,13 @@
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
     "hero_image_id": 9,
-    "kuvat_ids": [
-      6
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13681,
-    "revision_id": 13681,
-    "title": "Shin'en",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      11,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13686,
-    "revision_id": 13686,
-    "title": "Rogue Factor",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      8,
-      10,
-      12,
-      15,
-      26
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13693,
-    "revision_id": 13693,
-    "title": "Sluggerfly",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 27,
-    "kuvat_ids": [
-      9,
-      13,
-      14,
-      17
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13715,
-    "revision_id": 13715,
-    "title": "Aggro Crab",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 4,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13723,
-    "revision_id": 13723,
-    "title": "Shine Research",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 19,
-    "kuvat_ids": [
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13725,
-    "revision_id": 13725,
-    "title": "TRIGGER",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 11,
-    "kuvat_ids": [
-      6,
-      7,
-      12,
-      13,
-      15
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13726,
-    "revision_id": 13726,
-    "title": "Titanium Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": [
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13727,
-    "revision_id": 13727,
-    "title": "Big Boat Interactive",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      8
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13732,
-    "revision_id": 13732,
-    "title": "Arkane Lyon",
+    "bundle": "ihminen",
+    "tid": 13665,
+    "revision_id": 13665,
+    "title": "Marc André",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -3688,46 +2977,184 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 20,
     "kuvat_ids": [
-      22
+      8,
+      12,
+      14,
+      16,
+      18
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13734,
-    "revision_id": 13734,
-    "title": "Ubisoft Düsseldorf",
+    "bundle": "ihminen",
+    "tid": 13672,
+    "revision_id": 13672,
+    "title": "Sulka Haro",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 2,
+    "hero_image_id": 5,
     "kuvat_ids": [
-      11,
-      13,
-      19
+      15
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13740,
-    "revision_id": 13740,
-    "title": "Byking",
+    "bundle": "ihminen",
+    "tid": 13701,
+    "revision_id": 13701,
+    "title": "Mel Brooks",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 9,
+    "hero_image_id": 6,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13741,
-    "revision_id": 13741,
-    "title": "Ripple Effect",
+    "bundle": "ihminen",
+    "tid": 13702,
+    "revision_id": 13702,
+    "title": "Rick Moranis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      16,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13703,
+    "revision_id": 13703,
+    "title": "Bill Pullman",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13704,
+    "revision_id": 13704,
+    "title": "Keke Palmer",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      7,
+      14,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13718,
+    "revision_id": 13718,
+    "title": "Katsuhiro Ōtomo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      4,
+      12,
+      12,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13720,
+    "revision_id": 13720,
+    "title": "Ross Scott",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      14,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13730,
+    "revision_id": 13730,
+    "title": "Robin Lord Taylor",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13731,
+    "revision_id": 13731,
+    "title": "Michael Madsen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13735,
+    "revision_id": 13735,
+    "title": "Patrick Somerville",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      10,
+      14,
+      19,
+      22,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13737,
+    "revision_id": 13737,
+    "title": "Ida Kuningas",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -3736,406 +3163,84 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 24,
     "kuvat_ids": [
+      1
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13742,
+    "revision_id": 13742,
+    "title": "Nika Bender",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
       2,
-      6,
-      14,
-      17,
-      27
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13750,
-    "revision_id": 13750,
-    "title": "HoYoverse",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      5,
-      7,
-      14,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13756,
-    "revision_id": 13756,
-    "title": "PUBG Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      14,
-      14,
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13762,
-    "revision_id": 13762,
-    "title": "C Prompt Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13767,
-    "revision_id": 13767,
-    "title": "KOF Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      18
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13777,
-    "revision_id": 13777,
-    "title": "Sad Owl Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      8
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13783,
-    "revision_id": 13783,
-    "title": "Mega Cat Studios",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": [
       3,
-      9,
-      16,
-      20,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13793,
-    "revision_id": 13793,
-    "title": "Media Vision",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      1,
-      12,
-      13,
-      21,
-      24
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13807,
-    "revision_id": 13807,
-    "title": "Now Production",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      1,
-      19,
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13815,
-    "revision_id": 13815,
-    "title": "NeoBards Entertainment Ltd.",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 14,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13827,
-    "revision_id": 13827,
-    "title": "Accolade",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 7,
-    "kuvat_ids": [
-      19
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13855,
-    "revision_id": 13855,
-    "title": "AdHoc Studio",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 2,
-    "kuvat_ids": [
-      2,
       10,
       26,
       27
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13860,
-    "revision_id": 13860,
-    "title": "Ironwood Studios",
+    "bundle": "ihminen",
+    "tid": 13752,
+    "revision_id": 13752,
+    "title": "Doug Bradley",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 8,
+    "hero_image_id": 13,
     "kuvat_ids": [
-      4,
-      6,
-      13
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13867,
-    "revision_id": 13867,
-    "title": "PlayerUnknown Productions",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 3,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13869,
-    "revision_id": 13869,
-    "title": "Jumpgate AB",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 25,
-    "kuvat_ids": []
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13870,
-    "revision_id": 13870,
-    "title": "SparklingBit",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 18,
-    "kuvat_ids": [
-      14
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13880,
-    "revision_id": 13880,
-    "title": "Channel37",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 23,
-    "kuvat_ids": [
-      6,
-      6,
-      8
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13910,
-    "revision_id": 13910,
-    "title": "Fuse Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 16,
-    "kuvat_ids": [
-      2,
-      2
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13923,
-    "revision_id": 13923,
-    "title": "Dogubomb",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 20,
-    "kuvat_ids": [
+      3,
       26
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13931,
-    "revision_id": 13931,
-    "title": "Pugstorm",
+    "bundle": "ihminen",
+    "tid": 13784,
+    "revision_id": 13784,
+    "title": "Jalmari Helander",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 21,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      9,
+      10,
+      13,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13785,
+    "revision_id": 13785,
+    "title": "Sophie Turner",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13937,
-    "revision_id": 13937,
-    "title": "Tassei Denki Co. Ltd.",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      4,
-      7,
-      15,
-      20
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13938,
-    "revision_id": 13938,
-    "title": "Dashine Electronics Co. Ltd.",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 15,
-    "kuvat_ids": [
-      8,
-      11,
-      22
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13950,
-    "revision_id": 13950,
-    "title": "A&R Atelier",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 26,
-    "kuvat_ids": [
-      14
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13957,
-    "revision_id": 13957,
-    "title": "QLOC",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 10,
-    "kuvat_ids": [
-      25
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 13965,
-    "revision_id": 13965,
-    "title": "Nova-box",
+    "bundle": "ihminen",
+    "tid": 13794,
+    "revision_id": 13794,
+    "title": "Charlie Covell",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4144,68 +3249,159 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 27,
     "kuvat_ids": [
-      3,
-      7
+      6
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13968,
-    "revision_id": 13968,
-    "title": "Infogrames",
+    "bundle": "ihminen",
+    "tid": 13795,
+    "revision_id": 13795,
+    "title": "Toma Otowa",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 19,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      11,
+      17,
+      19,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13816,
+    "revision_id": 13816,
+    "title": "Linda Hamilton",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
     "kuvat_ids": [
       21
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 13976,
-    "revision_id": 13976,
-    "title": "Potion 8",
+    "bundle": "ihminen",
+    "tid": 13817,
+    "revision_id": 13817,
+    "title": "Edward Furlong",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 4,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      12,
-      12,
-      14,
-      24,
-      26
+      9,
+      23
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14000,
-    "revision_id": 14000,
-    "title": "RedOctane Games",
+    "bundle": "ihminen",
+    "tid": 13829,
+    "revision_id": 13829,
+    "title": "Erno Sallinen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 12,
+    "hero_image_id": 3,
     "kuvat_ids": [
-      12,
-      24
+      8,
+      10,
+      10,
+      22
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14001,
-    "revision_id": 14001,
-    "title": "RedOctane",
+    "bundle": "ihminen",
+    "tid": 13830,
+    "revision_id": 13830,
+    "title": "Katriina Heljakka",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      4,
+      13,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13831,
+    "revision_id": 13831,
+    "title": "Mika Hoffrén",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      9,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13832,
+    "revision_id": 13832,
+    "title": "Tuomo Ahlfors",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      5,
+      5,
+      13,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13833,
+    "revision_id": 13833,
+    "title": "Ville Lähde",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      15,
+      16,
+      19,
+      20,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13834,
+    "revision_id": 13834,
+    "title": "Arto Paappanen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4215,16 +3411,35 @@
     "hero_image_id": 23,
     "kuvat_ids": [
       1,
-      16,
-      26,
-      27
+      8,
+      14
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14017,
-    "revision_id": 14017,
-    "title": "Yak & Co",
+    "bundle": "ihminen",
+    "tid": 13835,
+    "revision_id": 13835,
+    "title": "Teemu Ahola",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      4,
+      6,
+      7,
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13836,
+    "revision_id": 13836,
+    "title": "Tommi Lempinen",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4233,15 +3448,708 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 15,
     "kuvat_ids": [
-      12,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13837,
+    "revision_id": 13837,
+    "title": "Tapani Joelsson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      11,
+      14,
+      16,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13838,
+    "revision_id": 13838,
+    "title": "Petri Hiltunen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      2,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13839,
+    "revision_id": 13839,
+    "title": "Markku Reunanen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13841,
+    "revision_id": 13841,
+    "title": "Mikael Eriksson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13842,
+    "revision_id": 13842,
+    "title": "Gregg Mayles",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      7,
+      10
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13844,
+    "revision_id": 13844,
+    "title": "David Fox",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      15,
+      21,
+      22,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13857,
+    "revision_id": 13857,
+    "title": "Sarah Bond",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      9
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13886,
+    "revision_id": 13886,
+    "title": "Udo Kier",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      1,
+      1,
+      11,
+      20,
       23
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14035,
-    "revision_id": 14035,
-    "title": "The Pokémon Works",
+    "bundle": "ihminen",
+    "tid": 13887,
+    "revision_id": 13887,
+    "title": "Rob Mac",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      11,
+      14,
+      19,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13888,
+    "revision_id": 13888,
+    "title": "Toby Wallace",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      5,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13900,
+    "revision_id": 13900,
+    "title": "Stephen King",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      14,
+      14,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13901,
+    "revision_id": 13901,
+    "title": "Vince Gilligan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13902,
+    "revision_id": 13902,
+    "title": "Justin Lin",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13907,
+    "revision_id": 13907,
+    "title": "Daniel Rantala",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      6
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13914,
+    "revision_id": 13914,
+    "title": "Guillaume Broche",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13915,
+    "revision_id": 13915,
+    "title": "Lorien Testard",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13946,
+    "revision_id": 13946,
+    "title": "saarara",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13952,
+    "revision_id": 13952,
+    "title": "Teemu Närhi",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      9,
+      9,
+      13,
+      19,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13953,
+    "revision_id": 13953,
+    "title": "Ryan Hurst",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      2,
+      6,
+      12,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13961,
+    "revision_id": 13961,
+    "title": "David Gibson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      8,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13969,
+    "revision_id": 13969,
+    "title": "Petri Kataja",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      3,
+      3,
+      12
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13970,
+    "revision_id": 13970,
+    "title": "Lisa Su",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      10,
+      11,
+      13,
+      14,
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13971,
+    "revision_id": 13971,
+    "title": "Norbert Molle",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13972,
+    "revision_id": 13972,
+    "title": "Dylan Brode",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      6,
+      7,
+      15,
+      16
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13973,
+    "revision_id": 13973,
+    "title": "Mika Hämäläinen",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      2,
+      3,
+      11,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13978,
+    "revision_id": 13978,
+    "title": "Callum Vinson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      2
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13988,
+    "revision_id": 13988,
+    "title": "Keza MacDonald",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      4,
+      6,
+      6,
+      13,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 13993,
+    "revision_id": 13993,
+    "title": "Yoko Taro",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14012,
+    "revision_id": 14012,
+    "title": "Asha Sharma",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      18
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14025,
+    "revision_id": 14025,
+    "title": "Roberto Patino",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14026,
+    "revision_id": 14026,
+    "title": "David Wiener",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      14,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14027,
+    "revision_id": 14027,
+    "title": "Lola Petticrew",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      3,
+      4,
+      11,
+      15,
+      22
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14028,
+    "revision_id": 14028,
+    "title": "Laura Marcus",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      10,
+      11,
+      16,
+      24,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14029,
+    "revision_id": 14029,
+    "title": "Youseff Kerkour",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14030,
+    "revision_id": 14030,
+    "title": "Nabhann Rizwan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14031,
+    "revision_id": 14031,
+    "title": "Claes Bang",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      4,
+      19
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14039,
+    "revision_id": 14039,
+    "title": "Yoshihisa Kishimoto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14040,
+    "revision_id": 14040,
+    "title": "Ryūbō Kishimoto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      4,
+      8,
+      11,
+      15,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14043,
+    "revision_id": 14043,
+    "title": "Zach Lipovsky",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      1,
+      6,
+      18,
+      19,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14044,
+    "revision_id": 14044,
+    "title": "Adam Stein",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      3,
+      24
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14049,
+    "revision_id": 14049,
+    "title": "Seán McLoughlin",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4252,35 +4160,14 @@
     "kuvat_ids": [
       2,
       8,
-      19,
-      23,
       27
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14074,
-    "revision_id": 14074,
-    "title": "Grey Alien Games",
-    "body": null,
-    "in_franchise": null,
-    "publish_accuracy": null,
-    "publish_date": null,
-    "www_sivu_uri": null,
-    "field_forum_ketju_value": null,
-    "hero_image_id": 8,
-    "kuvat_ids": [
-      1,
-      5,
-      6,
-      8
-    ]
-  },
-  {
-    "bundle": "pelistudiot",
-    "tid": 14075,
-    "revision_id": 14075,
-    "title": "Night Signal Entertainment",
+    "bundle": "ihminen",
+    "tid": 14054,
+    "revision_id": 14054,
+    "title": "Lana Del Rey",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4289,70 +4176,245 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 2,
     "kuvat_ids": [
-      5,
-      8,
-      12,
-      24
+      10
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14082,
-    "revision_id": 14082,
-    "title": "Fabraz",
+    "bundle": "ihminen",
+    "tid": 14055,
+    "revision_id": 14055,
+    "title": "Patrick Gibson",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 23,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      8
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14058,
+    "revision_id": 14058,
+    "title": "Cailee Spaeny",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      4,
+      14,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14059,
+    "revision_id": 14059,
+    "title": "Ben Whishaw",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      3,
+      19,
+      22,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14060,
+    "revision_id": 14060,
+    "title": "Kit Connor",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      9,
+      21,
+      26,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14069,
+    "revision_id": 14069,
+    "title": "Karl Urban",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      2,
+      12,
+      15,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14078,
+    "revision_id": 14078,
+    "title": "Cho Yonghee",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      3,
+      22,
+      26
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14081,
+    "revision_id": 14081,
+    "title": "Takashi Tezuka",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
     "kuvat_ids": []
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14121,
-    "revision_id": 14121,
-    "title": "Sega Sapporo",
+    "bundle": "ihminen",
+    "tid": 14085,
+    "revision_id": 14085,
+    "title": "Wes Ball",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 22,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14086,
+    "revision_id": 14086,
+    "title": "Bo Bragason",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
     "kuvat_ids": [
       1,
       3,
-      22,
-      27
+      4,
+      18,
+      25
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14127,
-    "revision_id": 14127,
-    "title": "Cozy Age Games",
+    "bundle": "ihminen",
+    "tid": 14087,
+    "revision_id": 14087,
+    "title": "Benjamin Evan Ainsworth",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
     "publish_date": null,
     "www_sivu_uri": null,
     "field_forum_ketju_value": null,
-    "hero_image_id": 11,
+    "hero_image_id": 17,
     "kuvat_ids": [
-      5,
-      9,
-      14,
-      17,
-      22
+      11,
+      11,
+      13,
+      15
     ]
   },
   {
-    "bundle": "pelistudiot",
-    "tid": 14151,
-    "revision_id": 23625,
-    "title": "Radical Fish Games",
+    "bundle": "ihminen",
+    "tid": 14091,
+    "revision_id": 14091,
+    "title": "Leslie Benzies",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14098,
+    "revision_id": 14098,
+    "title": "Barbara Broccoli",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      3,
+      7,
+      12,
+      14,
+      17
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14099,
+    "revision_id": 14099,
+    "title": "Ian Fleming",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      12,
+      14,
+      23
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14100,
+    "revision_id": 14100,
+    "title": "Andreas Krogh",
     "body": null,
     "in_franchise": null,
     "publish_accuracy": null,
@@ -4361,7 +4423,164 @@
     "field_forum_ketju_value": null,
     "hero_image_id": 14,
     "kuvat_ids": [
+      1,
+      10
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14101,
+    "revision_id": 14101,
+    "title": "Hilde Sunde",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      6,
+      14,
+      21,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14103,
+    "revision_id": 14103,
+    "title": "Sean Velasco",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      6,
+      13,
+      19,
+      27
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14109,
+    "revision_id": 14109,
+    "title": "Deborah Ann Woll",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
       11
     ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14132,
+    "revision_id": 14132,
+    "title": "Thordur Palsson",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      17,
+      21
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14133,
+    "revision_id": 14133,
+    "title": "Alexandre Aja",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      14
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14134,
+    "revision_id": 14134,
+    "title": "David Leslie Johnson-McGoldrick",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14140,
+    "revision_id": 14140,
+    "title": "Hirokazu Yasuhara",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      13,
+      20
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14153,
+    "revision_id": 23627,
+    "title": "Nazeeh Tarsha",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      1,
+      3,
+      10,
+      25
+    ]
+  },
+  {
+    "bundle": "ihminen",
+    "tid": 14154,
+    "revision_id": 23628,
+    "title": "Daisuke Namikawa",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
   }
 ]
