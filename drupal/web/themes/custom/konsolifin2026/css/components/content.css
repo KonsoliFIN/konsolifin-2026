@@ -326,6 +326,11 @@
   margin: var(--space-xl) 0;
 }
 
+div.sisalto-kuvateksti {
+  margin-top: calc(-1*var(--space-xl));
+  margin-bottom: var(--space-xl);
+}
+
 .node__body ul,
 .node__body ol {
   padding-left: var(--space-xl);
