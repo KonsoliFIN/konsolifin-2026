@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "filename": "action_shooter_scene.png",
+    "thumbnail__alt": "Action-shooter-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 2,
+    "filename": "character_jrpg_protagonist.png",
+    "thumbnail__alt": "J-RRPG-pelin päähenkilö",
+    "uid": 2
+  },
+  {
+    "id": 3,
+    "filename": "character_platformer_mascot.png",
+    "thumbnail__alt": "Tasohyppelypelin maskotti-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 4,
+    "filename": "character_space_marine.png",
+    "thumbnail__alt": "Sci-fi-avaruussotilas-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 5,
+    "filename": "character_stealthy_rogue.png",
+    "thumbnail__alt": "Hiiviskelijä-roisto-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 6,
+    "filename": "character_tank_warrior.png",
+    "thumbnail__alt": "Tankki-soturi-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 7,
+    "filename": "character_wise_wizard.png",
+    "thumbnail__alt": "Viisas velho-hahmo",
+    "uid": 2
+  },
+  {
+    "id": 8,
+    "filename": "console_living_room_scene.png",
+    "thumbnail__alt": "Pelikonsoli-olohuoneskene",
+    "uid": 2
+  },
+  {
+    "id": 9,
+    "filename": "editor_at_conference_scene.png",
+    "thumbnail__alt": "Peli-editori konferenssitilanteessa",
+    "uid": 2
+  },
+  {
+    "id": 10,
+    "filename": "editor_conference_closeup.png",
+    "thumbnail__alt": "Peli-editorin lähikuva konferenssissa",
+    "uid": 2
+  },
+  {
+    "id": 11,
+    "filename": "editor_thumbs_up_scene.png",
+    "thumbnail__alt": "Peli-editori näyttää peukkua",
+    "uid": 2
+  },
+  {
+    "id": 12,
+    "filename": "editor_thumbsup_closeup.png",
+    "thumbnail__alt": "Peli-editorin peukku-lähikuva",
+    "uid": 2
+  },
+  {
+    "id": 13,
+    "filename": "farming_sim_scene.png",
+    "thumbnail__alt": "Farmi-simulaatiopelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 14,
+    "filename": "fighting_game_scene.png",
+    "thumbnail__alt": "Taistelupelin taistelutilanne",
+    "uid": 2
+  },
+  {
+    "id": 15,
+    "filename": "game_dev_crunch_scene.png",
+    "thumbnail__alt": "Pelihuone: myöhään valvojaisissa",
+    "uid": 2
+  },
+  {
+    "id": 16,
+    "filename": "game_editors_scene.png",
+    "thumbnail__alt": "Pelihuone: pelitoimittajien kokous",
+    "uid": 2
+  },
+  {
+    "id": 17,
+    "filename": "greedy_publisher_exec_scene.png",
+    "thumbnail__alt": "Ahne kustannuspäällikkö tilanteessa",
+    "uid": 2
+  },
+  {
+    "id": 18,
+    "filename": "horror_game_scene.png",
+    "thumbnail__alt": "Kauhu-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 19,
+    "filename": "jrpg_village_scene.png",
+    "thumbnail__alt": "J-RRPG-kylän tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 20,
+    "filename": "kid_handheld_gaming_scene.png",
+    "thumbnail__alt": "Lapsi käsikonsolipelaa",
+    "uid": 2
+  },
+  {
+    "id": 21,
+    "filename": "pc_gaming_setup_scene.png",
+    "thumbnail__alt": "PC-pelaajan setup-tila",
+    "uid": 2
+  },
+  {
+    "id": 22,
+    "filename": "puzzle_game_scene.png",
+    "thumbnail__alt": "Puzzle-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 23,
+    "filename": "quirky_studio_head_scene.png",
+    "thumbnail__alt": "Pienyrityksen outo johtaja",
+    "uid": 2
+  },
+  {
+    "id": 24,
+    "filename": "racing_game_scene.png",
+    "thumbnail__alt": "Kilpa-ajopelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 25,
+    "filename": "rts_game_scene.png",
+    "thumbnail__alt": "Reaaliaikastrategiapelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 26,
+    "filename": "scifi_game_scene.png",
+    "thumbnail__alt": "Scifi-pelin tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 27,
+    "filename": "scifi_platformer_scene.png",
+    "thumbnail__alt": "Scifi-tasohyppelyn tapahtumapaikka",
+    "uid": 2
+  },
+  {
+    "id": 101,
+    "filename": "podcast-placeholder.mp3",
+    "thumbnail__alt": "Podcastin esittelypätkä",
+    "uid": 2
+  }
+]

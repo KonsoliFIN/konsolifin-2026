@@ -153,7 +153,7 @@ display:
             items_per_page_options_all: false
             items_per_page_options_all_label: '- Kaikki -'
             offset: false
-            offset_label: Offset
+            offset_label: Siirtymä
       exposed_form:
         type: basic
         options:
@@ -162,8 +162,8 @@ display:
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
       access:
         type: perm
         options:

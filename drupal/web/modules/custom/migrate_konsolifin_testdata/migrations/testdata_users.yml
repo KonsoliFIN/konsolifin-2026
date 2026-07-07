@@ -8,15 +8,27 @@ source:
   plugin: json_fixture
   file: users.json
   ids:
-    id:
+    uid:
       type: integer
 process:
-  uid: id
+  uid: uid
   name: name
   mail: mail
-  status: status
+  status:
+    - 
+      plugin: default_value
+      default_value: 1
   field_oikea_nimi: oikea_nimi
-  field_esittely: esittely
+  field_esittely/value: esittely
+  field_esittely/format:
+    plugin: default_value
+    default_value: full_html
   roles: roles
+  field_kuva/target_id: kuva_id
+  field_some_linkit: some_urls
+  pass:
+    - 
+      plugin: default_value
+      default_value: $2y$12$g0qaO/8bCJZwBS2fWvrIyuwODhIWqwIALzP3PPGSYOsQf50OYIijO
 destination:
   plugin: entity:user

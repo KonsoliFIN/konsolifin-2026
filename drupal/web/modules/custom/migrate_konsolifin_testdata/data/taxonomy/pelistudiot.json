@@ -1,44 +1,4714 @@
 [
   {
-    "id": 1,
-    "name": "Remedy Entertainment",
-    "description": "Suomalainen pelinkehittäjä, tunnettu Alan Wake- ja Control-peleistä. Perustettu 1995 Espoossa.",
-    "weight": 0
+    "bundle": "pelistudiot",
+    "tid": 4857,
+    "parent": 0,
+    "revision_id": 4857,
+    "title": "Codemasters",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      4
+    ]
   },
   {
-    "id": 2,
-    "name": "Housemarque",
-    "description": "Helsinkiläinen studio, erikoistunut arcade-tyylisiin toimintapeleihin. Tunnettu Returnal-pelistä.",
-    "weight": 1
+    "bundle": "pelistudiot",
+    "tid": 4859,
+    "parent": 0,
+    "revision_id": 4859,
+    "title": "Rockstar",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": []
   },
   {
-    "id": 3,
-    "name": "Supercell",
-    "description": "Helsinkiläinen mobiilipelistudio, maailman menestyneimpiä pelinkehittäjiä.",
-    "weight": 2
+    "bundle": "pelistudiot",
+    "tid": 4863,
+    "parent": 0,
+    "revision_id": 4863,
+    "title": "Bungie",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      4,
+      8,
+      26
+    ]
   },
   {
-    "id": 4,
-    "name": "Colossal Order",
-    "description": "Tamperelaislähtöinen studio, tunnettu Cities: Skylines -kaupunginrakennuspelistä.",
-    "weight": 3
+    "bundle": "pelistudiot",
+    "tid": 4872,
+    "parent": 0,
+    "revision_id": 4872,
+    "title": "Massive Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      12,
+      19,
+      21
+    ]
   },
   {
-    "id": 5,
-    "name": "Frozenbyte",
-    "description": "Helsinkiläinen pelinkehittäjä, tunnettu Trine-pelisarjasta ja Starbase-avaruuspelistä.",
-    "weight": 4
+    "bundle": "pelistudiot",
+    "tid": 4875,
+    "parent": 0,
+    "revision_id": 4875,
+    "title": "Starbreeze Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      5,
+      17,
+      26,
+      26,
+      27
+    ]
   },
   {
-    "id": 6,
-    "name": "Larian Studios",
-    "description": "Belgialainen pelinkehittäjä, tunnettu Baldur's Gate 3 -roolipelistä.",
-    "weight": 5
+    "bundle": "pelistudiot",
+    "tid": 4877,
+    "parent": 0,
+    "revision_id": 4877,
+    "title": "Team Ninja",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      1,
+      4,
+      6,
+      27
+    ]
   },
   {
-    "id": 7,
-    "name": "Santa Monica Studio",
-    "description": "Sony Interactive Entertainmentin sisäinen studio, tunnettu God of War -sarjasta.",
-    "weight": 6
+    "bundle": "pelistudiot",
+    "tid": 4881,
+    "parent": 0,
+    "revision_id": 4881,
+    "title": "Frozenbyte",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 4893,
+    "parent": 0,
+    "revision_id": 4893,
+    "title": "Insomniac Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      3,
+      6,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 4894,
+    "parent": 0,
+    "revision_id": 4894,
+    "title": "Eidos-Montréal",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      12
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 4895,
+    "parent": 0,
+    "revision_id": 4895,
+    "title": "Criterion Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      5,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5032,
+    "parent": 0,
+    "revision_id": 5032,
+    "title": "MachineGames",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      1,
+      10,
+      14,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5109,
+    "parent": 0,
+    "revision_id": 5109,
+    "title": "HAL Laboratory",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      2,
+      10,
+      10,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5116,
+    "parent": 0,
+    "revision_id": 5116,
+    "title": "Sega",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      6,
+      14,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5118,
+    "parent": 0,
+    "revision_id": 5118,
+    "title": "Naughty Dog",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      2,
+      5,
+      13,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5120,
+    "parent": 0,
+    "revision_id": 5120,
+    "title": "Guerrilla Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5123,
+    "parent": 0,
+    "revision_id": 5123,
+    "title": "Team ICO",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      3,
+      11,
+      11,
+      14,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5126,
+    "parent": 0,
+    "revision_id": 5126,
+    "title": "DICE",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      4,
+      12,
+      15,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5162,
+    "parent": 0,
+    "revision_id": 5162,
+    "title": "Kojima Productions",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      7,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5178,
+    "parent": 0,
+    "revision_id": 5178,
+    "title": "Telltale Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      3,
+      9,
+      12,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5261,
+    "parent": 0,
+    "revision_id": 5261,
+    "title": "Supermassive Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5266,
+    "parent": 0,
+    "revision_id": 5266,
+    "title": "YS Net",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      1,
+      2,
+      4,
+      12,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5269,
+    "parent": 0,
+    "revision_id": 5269,
+    "title": "Rockstar North",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5273,
+    "parent": 0,
+    "revision_id": 5273,
+    "title": "Mojang",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5281,
+    "parent": 0,
+    "revision_id": 5281,
+    "title": "Turn 10 Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5287,
+    "parent": 0,
+    "revision_id": 5287,
+    "title": "Flying Wild Hog",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      4,
+      6,
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5288,
+    "parent": 0,
+    "revision_id": 5288,
+    "title": "id Software",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      18,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5295,
+    "parent": 0,
+    "revision_id": 5295,
+    "title": "Ninja Theory",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5299,
+    "parent": 0,
+    "revision_id": 5299,
+    "title": "Square Enix",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      14,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5302,
+    "parent": 0,
+    "revision_id": 5302,
+    "title": "BioWare",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      1,
+      9,
+      20,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5304,
+    "parent": 0,
+    "revision_id": 5304,
+    "title": "Crystal Dynamics",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      3,
+      14
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5305,
+    "parent": 0,
+    "revision_id": 5305,
+    "title": "Yacht Club Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5306,
+    "parent": 0,
+    "revision_id": 5306,
+    "title": "Konami",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      6,
+      11,
+      23,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5308,
+    "parent": 0,
+    "revision_id": 5308,
+    "title": "Ubisoft",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      8,
+      10,
+      10,
+      16,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5320,
+    "parent": 0,
+    "revision_id": 5320,
+    "title": "Gearbox Software",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      1,
+      8,
+      15,
+      18,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5324,
+    "parent": 0,
+    "revision_id": 5324,
+    "title": "Hangar 13",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      4
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5329,
+    "parent": 0,
+    "revision_id": 5329,
+    "title": "Arrowhead Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      7,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5334,
+    "parent": 0,
+    "revision_id": 5334,
+    "title": "Platinum Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      6,
+      7,
+      15,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5343,
+    "parent": 0,
+    "revision_id": 5343,
+    "title": "Capcom",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      17,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5348,
+    "parent": 0,
+    "revision_id": 5348,
+    "title": "The Coalition",
+    "body": "<p>The Coalition perustettiin vuonna 2010 Vancouverissa, Kanadassa, nimellä Microsoft Vancouver. Studio lakkautettiin heinäkuussa 2012, mutta se herätettiin uudelleen henkiin saman vuoden lokakuussa uudella nimellä, Black Tusk Studios. Ensimmäinen työnäyte porukalta oli vuoden 2015 Gears of War -uudelleenmasterointi Xbox Onelle.</p>\r\n\r\n<p>The Coalition -nimi on ollut käytössä kesäkuusta 2015.</p>\r\n",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      1,
+      14,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5350,
+    "parent": 0,
+    "revision_id": 5350,
+    "title": "The Chinese Room",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      12,
+      12,
+      16,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5353,
+    "parent": 0,
+    "revision_id": 5353,
+    "title": "Electronic Arts",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      7,
+      11,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5355,
+    "parent": 0,
+    "revision_id": 5355,
+    "title": "Rocksteady Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5357,
+    "parent": 0,
+    "revision_id": 5357,
+    "title": "DON'T NOD",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      8,
+      8,
+      18,
+      19,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5361,
+    "parent": 0,
+    "revision_id": 5361,
+    "title": "Treyarch",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      2,
+      20,
+      22,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5371,
+    "parent": 0,
+    "revision_id": 5371,
+    "title": "Nintendo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      2,
+      11,
+      15,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5391,
+    "parent": 0,
+    "revision_id": 5391,
+    "title": "Techland",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      3,
+      8,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5418,
+    "parent": 0,
+    "revision_id": 5418,
+    "title": "Firaxis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      10,
+      11,
+      16,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5452,
+    "parent": 0,
+    "revision_id": 5452,
+    "title": "CD Projekt RED",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      1,
+      9,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5461,
+    "parent": 0,
+    "revision_id": 5461,
+    "title": "Double Fine Productions",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5463,
+    "parent": 0,
+    "revision_id": 5463,
+    "title": "IO Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      7,
+      20,
+      22,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5474,
+    "parent": 0,
+    "revision_id": 5474,
+    "title": "Infinity Ward",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      7,
+      8,
+      11,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5484,
+    "parent": 0,
+    "revision_id": 5484,
+    "title": "NetherRealm Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      2,
+      4,
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5487,
+    "parent": 0,
+    "revision_id": 5487,
+    "title": "Rare",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      5,
+      18,
+      21,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5491,
+    "parent": 0,
+    "revision_id": 5491,
+    "title": "Nixxes",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      4,
+      13,
+      19,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5501,
+    "parent": 0,
+    "revision_id": 5501,
+    "title": "Valve Software",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      13,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5516,
+    "parent": 0,
+    "revision_id": 5516,
+    "title": "Blizzard Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      12,
+      17,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5533,
+    "parent": 0,
+    "revision_id": 5533,
+    "title": "Avalanche Software",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      6,
+      7,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5535,
+    "parent": 0,
+    "revision_id": 5535,
+    "title": "inXile Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5539,
+    "parent": 0,
+    "revision_id": 5539,
+    "title": "Fingersoft",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      14,
+      15,
+      18,
+      20,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5559,
+    "parent": 0,
+    "revision_id": 5559,
+    "title": "Larian Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      3,
+      5,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5564,
+    "parent": 0,
+    "revision_id": 5564,
+    "title": "Team Meat",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      6,
+      9,
+      13,
+      17,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5573,
+    "parent": 0,
+    "revision_id": 5573,
+    "title": "Koei Tecmo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      5,
+      9,
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5582,
+    "parent": 0,
+    "revision_id": 5582,
+    "title": "Cyanide Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5599,
+    "parent": 0,
+    "revision_id": 5599,
+    "title": "Housemarque",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      5,
+      8,
+      10,
+      23,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5618,
+    "parent": 0,
+    "revision_id": 5618,
+    "title": "Bandai Namco Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      15,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5635,
+    "parent": 0,
+    "revision_id": 5635,
+    "title": "Remedy Entertainment",
+    "body": "<p>Studio <em>Max Paynen</em>, <em>Alan Waken</em> ja <em>Quantum Breakin</em> takana. Yksi perinteikkäimpiä suomalaisia pelitaloja, jonka tuotokset ovat keränneet kiitosta sekä yleisöltä että arvostelijoilta.</p>\r\n",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      21,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5654,
+    "parent": 0,
+    "revision_id": 5654,
+    "title": "Ubisoft Massive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      1,
+      9
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5662,
+    "parent": 0,
+    "revision_id": 5662,
+    "title": "EA Motive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      8
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5670,
+    "parent": 0,
+    "revision_id": 5670,
+    "title": "Studio Wildcard",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      6,
+      10,
+      11,
+      18,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5684,
+    "parent": 0,
+    "revision_id": 5684,
+    "title": "Sonic Team",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      2,
+      8,
+      11,
+      11,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5727,
+    "parent": 0,
+    "revision_id": 5727,
+    "title": "Epic Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      5,
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5751,
+    "parent": 0,
+    "revision_id": 5751,
+    "title": "Retro Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      12,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5759,
+    "parent": 0,
+    "revision_id": 5759,
+    "title": "Ubisoft Quebec",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      1,
+      3,
+      16,
+      18,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5802,
+    "parent": 0,
+    "revision_id": 5802,
+    "title": "Re-Logic",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      12,
+      21,
+      23,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5822,
+    "parent": 0,
+    "revision_id": 5822,
+    "title": "Obsidian Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      11,
+      14
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5831,
+    "parent": 0,
+    "revision_id": 5831,
+    "title": "Visceral Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5927,
+    "parent": 0,
+    "revision_id": 5927,
+    "title": "Funcom",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 5932,
+    "parent": 0,
+    "revision_id": 5932,
+    "title": "Iron Galaxy",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      7,
+      8,
+      11,
+      15,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6033,
+    "parent": 0,
+    "revision_id": 6033,
+    "title": "Frogwares",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6035,
+    "parent": 0,
+    "revision_id": 6035,
+    "title": "BANDAI NAMCO Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      7,
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6039,
+    "parent": 0,
+    "revision_id": 6039,
+    "title": "Respawn Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      3,
+      14,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6100,
+    "parent": 0,
+    "revision_id": 6100,
+    "title": "Nintendo EPD",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      12,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6197,
+    "parent": 0,
+    "revision_id": 6197,
+    "title": "Playground Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6213,
+    "parent": 0,
+    "revision_id": 6213,
+    "title": "Ubisoft RedLynx",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      10,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6221,
+    "parent": 0,
+    "revision_id": 6221,
+    "title": "Game Freak",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6284,
+    "parent": 0,
+    "revision_id": 6284,
+    "title": "Irrational Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      2
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6353,
+    "parent": 0,
+    "revision_id": 6353,
+    "title": "PlayDead",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6365,
+    "parent": 0,
+    "revision_id": 6365,
+    "title": "Saber Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6412,
+    "parent": 0,
+    "revision_id": 6412,
+    "title": "Bugbear Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      9,
+      9,
+      12,
+      19,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6434,
+    "parent": 0,
+    "revision_id": 6434,
+    "title": "Virtuous",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6452,
+    "parent": 0,
+    "revision_id": 6452,
+    "title": "Rebellion Developments",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      4,
+      7,
+      8,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6498,
+    "parent": 0,
+    "revision_id": 6498,
+    "title": "Ubisoft Montpellier",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      3,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 6502,
+    "parent": 0,
+    "revision_id": 6502,
+    "title": "Studio MDHR",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      9,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7030,
+    "parent": 0,
+    "revision_id": 7030,
+    "title": "Amistech Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      12,
+      14,
+      19,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7120,
+    "parent": 0,
+    "revision_id": 7120,
+    "title": "United Front Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      21,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7122,
+    "parent": 0,
+    "revision_id": 7122,
+    "title": "Sucker Punch",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      7,
+      20,
+      21,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7135,
+    "parent": 0,
+    "revision_id": 7135,
+    "title": "ConcernedApe",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      12,
+      18,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7175,
+    "parent": 0,
+    "revision_id": 7175,
+    "title": "Supergiant Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      4,
+      4
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7243,
+    "parent": 0,
+    "revision_id": 7243,
+    "title": "SNK",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      2,
+      5,
+      20,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7344,
+    "parent": 0,
+    "revision_id": 7344,
+    "title": "Bethesda Game Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      4,
+      18,
+      22,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7351,
+    "parent": 0,
+    "revision_id": 7351,
+    "title": "Nicalis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      13,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7368,
+    "parent": 0,
+    "revision_id": 7368,
+    "title": "Toby Fox",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      2,
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7396,
+    "parent": 0,
+    "revision_id": 7396,
+    "title": "Monolith",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      20,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7402,
+    "parent": 0,
+    "revision_id": 7402,
+    "title": "Ubisoft Milan",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      2
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7456,
+    "parent": 0,
+    "revision_id": 7456,
+    "title": "Lizardcube",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      3,
+      9,
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7548,
+    "parent": 0,
+    "revision_id": 7548,
+    "title": "Sledgehammer Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      2,
+      10,
+      14,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7611,
+    "parent": 0,
+    "revision_id": 7611,
+    "title": "Maxis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7660,
+    "parent": 0,
+    "revision_id": 7660,
+    "title": "Rockstar Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      5,
+      7,
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7673,
+    "parent": 0,
+    "revision_id": 7673,
+    "title": "PlatinumGames",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      16,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7739,
+    "parent": 0,
+    "revision_id": 7739,
+    "title": "Hazelight Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      8,
+      10,
+      10,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7748,
+    "parent": 0,
+    "revision_id": 7748,
+    "title": "4A Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      8,
+      20,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7750,
+    "parent": 0,
+    "revision_id": 7750,
+    "title": "Deck Nine Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      8,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7807,
+    "parent": 0,
+    "revision_id": 7807,
+    "title": "Behaviour Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      3,
+      8,
+      16,
+      19,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7821,
+    "parent": 0,
+    "revision_id": 7821,
+    "title": "Zenimax Online Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 14,
+    "kuvat_ids": [
+      1,
+      2,
+      3,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 7864,
+    "parent": 0,
+    "revision_id": 7864,
+    "title": "Ubisoft Singapore",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8021,
+    "parent": 0,
+    "revision_id": 8021,
+    "title": "Reikon Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      9
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8053,
+    "parent": 0,
+    "revision_id": 8053,
+    "title": "FuturLab",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      5,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8152,
+    "parent": 0,
+    "revision_id": 8152,
+    "title": "Panic Button",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      7,
+      8,
+      21,
+      24,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8210,
+    "parent": 0,
+    "revision_id": 8210,
+    "title": "Shiver Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      9,
+      10,
+      14,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8241,
+    "parent": 0,
+    "revision_id": 8241,
+    "title": "People Can Fly",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8258,
+    "parent": 0,
+    "revision_id": 8258,
+    "title": "Nightdive Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      13,
+      19,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8263,
+    "parent": 0,
+    "revision_id": 8263,
+    "title": "Stellar Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      6,
+      7,
+      13,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8286,
+    "parent": 0,
+    "revision_id": 8286,
+    "title": "22cans",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8359,
+    "parent": 0,
+    "revision_id": 8359,
+    "title": "Hinterland Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      4,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8384,
+    "parent": 0,
+    "revision_id": 8384,
+    "title": "SIE Santa Monica Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      6,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8516,
+    "parent": 0,
+    "revision_id": 8516,
+    "title": "Bloober Team",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      4,
+      10,
+      20,
+      21,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8552,
+    "parent": 0,
+    "revision_id": 8552,
+    "title": "Team Cherry",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8617,
+    "parent": 0,
+    "revision_id": 8617,
+    "title": "Virtuos",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      1,
+      10,
+      18,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8618,
+    "parent": 0,
+    "revision_id": 8618,
+    "title": "FromSoftware",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8743,
+    "parent": 0,
+    "revision_id": 8743,
+    "title": "EA Maxis",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      6,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8753,
+    "parent": 0,
+    "revision_id": 8753,
+    "title": "SIE Bend Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      3
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8792,
+    "parent": 0,
+    "revision_id": 8792,
+    "title": "Aspyr Media",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      1,
+      4,
+      7,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 8872,
+    "parent": 0,
+    "revision_id": 8872,
+    "title": "IOI Malmö",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      15,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9077,
+    "parent": 0,
+    "revision_id": 9077,
+    "title": "Purple Lamp Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      2,
+      4,
+      14,
+      18
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9127,
+    "parent": 0,
+    "revision_id": 9127,
+    "title": "Creative Assembly",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      12,
+      15,
+      16,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9220,
+    "parent": 0,
+    "revision_id": 9220,
+    "title": "ZA/UM",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9288,
+    "parent": 0,
+    "revision_id": 9288,
+    "title": "Remedy",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      7,
+      16,
+      19,
+      23,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9291,
+    "parent": 0,
+    "revision_id": 9291,
+    "title": "Asobo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      3,
+      10,
+      19,
+      24,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9299,
+    "parent": 0,
+    "revision_id": 9299,
+    "title": "Squanch Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      5,
+      10,
+      19,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9304,
+    "parent": 0,
+    "revision_id": 9304,
+    "title": "Mega Crit",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      11,
+      21,
+      25,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9339,
+    "parent": 0,
+    "revision_id": 9339,
+    "title": "Teyon",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      13,
+      17,
+      22,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9468,
+    "parent": 0,
+    "revision_id": 9468,
+    "title": "Activision Blizzard",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      7,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9527,
+    "parent": 0,
+    "revision_id": 9527,
+    "title": "TeamKill Media",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      12,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9576,
+    "parent": 0,
+    "revision_id": 9576,
+    "title": "IronOak Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      4,
+      12,
+      18,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9694,
+    "parent": 0,
+    "revision_id": 9694,
+    "title": "Paradox Development Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      14,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9708,
+    "parent": 0,
+    "revision_id": 9708,
+    "title": "Maze Theory",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9720,
+    "parent": 0,
+    "revision_id": 9720,
+    "title": "NetEase Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      7,
+      11
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9757,
+    "parent": 0,
+    "revision_id": 9757,
+    "title": "Digital Eclipse",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      2,
+      20,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 9843,
+    "parent": 0,
+    "revision_id": 9843,
+    "title": "Motive Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      5,
+      19,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10036,
+    "parent": 0,
+    "revision_id": 10036,
+    "title": "Ryu Ga Gotoku Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10190,
+    "parent": 0,
+    "revision_id": 10190,
+    "title": "Crows Crows Crows",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      7,
+      9,
+      12,
+      26,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10298,
+    "parent": 0,
+    "revision_id": 10298,
+    "title": "Mainframe Industries",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      4,
+      12,
+      17,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10483,
+    "parent": 0,
+    "revision_id": 10483,
+    "title": "Sony Santa Monica",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      2,
+      9,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10498,
+    "parent": 0,
+    "revision_id": 10498,
+    "title": "Team ASOBI!",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      8,
+      10,
+      18,
+      21,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10718,
+    "parent": 0,
+    "revision_id": 10718,
+    "title": "Skunkape Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10720,
+    "parent": 0,
+    "revision_id": 10720,
+    "title": "GSC Game World",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      12,
+      17,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10749,
+    "parent": 0,
+    "revision_id": 10749,
+    "title": "Bohemia Interactive Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      6,
+      21,
+      22,
+      26,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10777,
+    "parent": 0,
+    "revision_id": 10777,
+    "title": "3DClouds",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10948,
+    "parent": 0,
+    "revision_id": 10948,
+    "title": "Tribute Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 10995,
+    "parent": 0,
+    "revision_id": 10995,
+    "title": "Landfall Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      5,
+      10,
+      24,
+      27,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11258,
+    "parent": 0,
+    "revision_id": 11258,
+    "title": "Full Circle",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11378,
+    "parent": 0,
+    "revision_id": 11378,
+    "title": "Firesprite",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      4,
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11521,
+    "parent": 0,
+    "revision_id": 11521,
+    "title": "Skydance New Media",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      1,
+      10,
+      24,
+      24,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11556,
+    "parent": 0,
+    "revision_id": 11556,
+    "title": "Grove Street Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      11,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11699,
+    "parent": 0,
+    "revision_id": 11699,
+    "title": "Hyper Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      2,
+      16,
+      19,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11816,
+    "parent": 0,
+    "revision_id": 11816,
+    "title": "Player First Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      1,
+      10,
+      12,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11847,
+    "parent": 0,
+    "revision_id": 11847,
+    "title": "BlueTwelve Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      9,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11945,
+    "parent": 0,
+    "revision_id": 11945,
+    "title": "Survios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 11989,
+    "parent": 0,
+    "revision_id": 11989,
+    "title": "Embark Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12198,
+    "parent": 0,
+    "revision_id": 12198,
+    "title": "Rebel Wolves",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      6,
+      11,
+      17,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12255,
+    "parent": 0,
+    "revision_id": 12255,
+    "title": "Isometricorp Games Limited",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      7,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12276,
+    "parent": 0,
+    "revision_id": 12276,
+    "title": "Game Science",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      6,
+      8,
+      24,
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12315,
+    "parent": 0,
+    "revision_id": 12315,
+    "title": "Ubisoft Mainz",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      20,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12356,
+    "parent": 0,
+    "revision_id": 12356,
+    "title": "Black Salt Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12357,
+    "parent": 0,
+    "revision_id": 12357,
+    "title": "Neowiz Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      8,
+      16,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12380,
+    "parent": 0,
+    "revision_id": 12380,
+    "title": "Looking Glass Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      11,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12550,
+    "parent": 0,
+    "revision_id": 12550,
+    "title": "Poncle",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      4
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12815,
+    "parent": 0,
+    "revision_id": 12815,
+    "title": "Pocket Pair",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      9,
+      9,
+      15,
+      25,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12860,
+    "parent": 0,
+    "revision_id": 12860,
+    "title": "MINTROCKET",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      3,
+      5,
+      6,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12862,
+    "parent": 0,
+    "revision_id": 12862,
+    "title": "Ballistic Moon",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      15,
+      19,
+      19,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12947,
+    "parent": 0,
+    "revision_id": 12947,
+    "title": "Shift Up Corporation",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      2,
+      19,
+      20,
+      20,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 12954,
+    "parent": 0,
+    "revision_id": 12954,
+    "title": "Bandai Namco Studios Inc.",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      4,
+      4,
+      7,
+      21,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13051,
+    "parent": 0,
+    "revision_id": 13051,
+    "title": "Limited Run Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      9,
+      18,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13240,
+    "parent": 0,
+    "revision_id": 13240,
+    "title": "Sandfall Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13268,
+    "parent": 0,
+    "revision_id": 13268,
+    "title": "Argonaut Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      4,
+      7,
+      10,
+      21,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13283,
+    "parent": 0,
+    "revision_id": 13283,
+    "title": "Reflector Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      2,
+      4,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13284,
+    "parent": 0,
+    "revision_id": 13284,
+    "title": "Pearl Abyss",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      17,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13295,
+    "parent": 0,
+    "revision_id": 13295,
+    "title": "Namco",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      1,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13467,
+    "parent": 0,
+    "revision_id": 13467,
+    "title": "Reef Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 26,
+    "kuvat_ids": [
+      6,
+      8,
+      9,
+      13,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13486,
+    "parent": 0,
+    "revision_id": 13486,
+    "title": "Appaloosa Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13511,
+    "parent": 0,
+    "revision_id": 13511,
+    "title": "LocalThunk",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13531,
+    "parent": 0,
+    "revision_id": 13531,
+    "title": "Lohkare Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      12,
+      12,
+      15,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13535,
+    "parent": 0,
+    "revision_id": 13535,
+    "title": "Warner Bros. San Diego",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      6,
+      13,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13537,
+    "parent": 0,
+    "revision_id": 13537,
+    "title": "Bitmap Bureau",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": [
+      12,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13573,
+    "parent": 0,
+    "revision_id": 13573,
+    "title": "CodeForce",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13575,
+    "parent": 0,
+    "revision_id": 13575,
+    "title": "Hanki Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      2,
+      7,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13577,
+    "parent": 0,
+    "revision_id": 13577,
+    "title": "Oxide Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      16,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13587,
+    "parent": 0,
+    "revision_id": 13587,
+    "title": "Pollard Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      7,
+      14,
+      18,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13598,
+    "parent": 0,
+    "revision_id": 13598,
+    "title": "Stellar Stone",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 5,
+    "kuvat_ids": [
+      3,
+      4,
+      5,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13633,
+    "parent": 0,
+    "revision_id": 13633,
+    "title": "Sirius Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      12
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13635,
+    "parent": 0,
+    "revision_id": 13635,
+    "title": "Screen Juice",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      6,
+      10,
+      22,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13642,
+    "parent": 0,
+    "revision_id": 13642,
+    "title": "Auroch Digital",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13670,
+    "parent": 0,
+    "revision_id": 13670,
+    "title": "Perun Creative",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      2,
+      6,
+      9,
+      15,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13671,
+    "parent": 0,
+    "revision_id": 13671,
+    "title": "Latest Past",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      1,
+      11,
+      25,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13676,
+    "parent": 0,
+    "revision_id": 13676,
+    "title": "Cliffhanger Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 21,
+    "kuvat_ids": [
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13681,
+    "parent": 0,
+    "revision_id": 13681,
+    "title": "Shin'en",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      4,
+      9,
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13686,
+    "parent": 0,
+    "revision_id": 13686,
+    "title": "Rogue Factor",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      14
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13693,
+    "parent": 0,
+    "revision_id": 13693,
+    "title": "Sluggerfly",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      8,
+      10,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13715,
+    "parent": 0,
+    "revision_id": 13715,
+    "title": "Aggro Crab",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13723,
+    "parent": 0,
+    "revision_id": 13723,
+    "title": "Shine Research",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13725,
+    "parent": 0,
+    "revision_id": 13725,
+    "title": "TRIGGER",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      4,
+      4,
+      20
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13726,
+    "parent": 0,
+    "revision_id": 13726,
+    "title": "Titanium Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13727,
+    "parent": 0,
+    "revision_id": 13727,
+    "title": "Big Boat Interactive",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      4,
+      5,
+      17,
+      24,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13732,
+    "parent": 0,
+    "revision_id": 13732,
+    "title": "Arkane Lyon",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      7,
+      9
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13734,
+    "parent": 0,
+    "revision_id": 13734,
+    "title": "Ubisoft Düsseldorf",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      10,
+      16,
+      19,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13740,
+    "parent": 0,
+    "revision_id": 13740,
+    "title": "Byking",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      13
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13741,
+    "parent": 0,
+    "revision_id": 13741,
+    "title": "Ripple Effect",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      24
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13750,
+    "parent": 0,
+    "revision_id": 13750,
+    "title": "HoYoverse",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 8,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13756,
+    "parent": 0,
+    "revision_id": 13756,
+    "title": "PUBG Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      22,
+      24,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13762,
+    "parent": 0,
+    "revision_id": 13762,
+    "title": "C Prompt Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      1
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13767,
+    "parent": 0,
+    "revision_id": 13767,
+    "title": "KOF Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 2,
+    "kuvat_ids": [
+      7,
+      13,
+      17,
+      19,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13777,
+    "parent": 0,
+    "revision_id": 13777,
+    "title": "Sad Owl Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 9,
+    "kuvat_ids": [
+      17,
+      20,
+      21
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13783,
+    "parent": 0,
+    "revision_id": 13783,
+    "title": "Mega Cat Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 16,
+    "kuvat_ids": [
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13793,
+    "parent": 0,
+    "revision_id": 13793,
+    "title": "Media Vision",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      5,
+      9,
+      13,
+      22,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13807,
+    "parent": 0,
+    "revision_id": 13807,
+    "title": "Now Production",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      3,
+      15
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13815,
+    "parent": 0,
+    "revision_id": 13815,
+    "title": "NeoBards Entertainment Ltd.",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13827,
+    "parent": 0,
+    "revision_id": 13827,
+    "title": "Accolade",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 13,
+    "kuvat_ids": [
+      3,
+      12,
+      17,
+      18,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13855,
+    "parent": 0,
+    "revision_id": 13855,
+    "title": "AdHoc Studio",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 6,
+    "kuvat_ids": [
+      2,
+      22,
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13860,
+    "parent": 0,
+    "revision_id": 13860,
+    "title": "Ironwood Studios",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      3,
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13867,
+    "parent": 0,
+    "revision_id": 13867,
+    "title": "PlayerUnknown Productions",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 23,
+    "kuvat_ids": [
+      16,
+      22,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13869,
+    "parent": 0,
+    "revision_id": 13869,
+    "title": "Jumpgate AB",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 1,
+    "kuvat_ids": [
+      7,
+      16
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13870,
+    "parent": 0,
+    "revision_id": 13870,
+    "title": "SparklingBit",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13880,
+    "parent": 0,
+    "revision_id": 13880,
+    "title": "Channel37",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      2,
+      8,
+      15,
+      22,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13910,
+    "parent": 0,
+    "revision_id": 13910,
+    "title": "Fuse Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": [
+      10,
+      22,
+      23,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13923,
+    "parent": 0,
+    "revision_id": 13923,
+    "title": "Dogubomb",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 24,
+    "kuvat_ids": [
+      16,
+      21,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13931,
+    "parent": 0,
+    "revision_id": 13931,
+    "title": "Pugstorm",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      6,
+      25
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13937,
+    "parent": 0,
+    "revision_id": 13937,
+    "title": "Tassei Denki Co. Ltd.",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      10
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13938,
+    "parent": 0,
+    "revision_id": 13938,
+    "title": "Dashine Electronics Co. Ltd.",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      9,
+      14,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13950,
+    "parent": 0,
+    "revision_id": 13950,
+    "title": "A&R Atelier",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": [
+      11,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13957,
+    "parent": 0,
+    "revision_id": 13957,
+    "title": "QLOC",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 3,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13965,
+    "parent": 0,
+    "revision_id": 13965,
+    "title": "Nova-box",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 25,
+    "kuvat_ids": [
+      8,
+      19
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13968,
+    "parent": 0,
+    "revision_id": 13968,
+    "title": "Infogrames",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 13976,
+    "parent": 0,
+    "revision_id": 13976,
+    "title": "Potion 8",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      6,
+      8,
+      14,
+      23
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14000,
+    "parent": 0,
+    "revision_id": 14000,
+    "title": "RedOctane Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 17,
+    "kuvat_ids": [
+      1,
+      10,
+      13,
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14001,
+    "parent": 0,
+    "revision_id": 14001,
+    "title": "RedOctane",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 4,
+    "kuvat_ids": [
+      5,
+      10,
+      17,
+      18,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14017,
+    "parent": 0,
+    "revision_id": 14017,
+    "title": "Yak & Co",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 20,
+    "kuvat_ids": [
+      17,
+      19,
+      20,
+      23,
+      27
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14035,
+    "parent": 0,
+    "revision_id": 14035,
+    "title": "The Pokémon Works",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 15,
+    "kuvat_ids": [
+      9,
+      16,
+      18,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14074,
+    "parent": 0,
+    "revision_id": 14074,
+    "title": "Grey Alien Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 10,
+    "kuvat_ids": [
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14075,
+    "parent": 0,
+    "revision_id": 14075,
+    "title": "Night Signal Entertainment",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 12,
+    "kuvat_ids": []
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14082,
+    "parent": 0,
+    "revision_id": 14082,
+    "title": "Fabraz",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 27,
+    "kuvat_ids": [
+      1,
+      2,
+      19,
+      22
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14121,
+    "parent": 0,
+    "revision_id": 14121,
+    "title": "Sega Sapporo",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      3,
+      11,
+      16,
+      25,
+      26
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14127,
+    "parent": 0,
+    "revision_id": 14127,
+    "title": "Cozy Age Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 22,
+    "kuvat_ids": [
+      17
+    ]
+  },
+  {
+    "bundle": "pelistudiot",
+    "tid": 14151,
+    "parent": 0,
+    "revision_id": 23625,
+    "title": "Radical Fish Games",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 11,
+    "kuvat_ids": [
+      5,
+      16,
+      23
+    ]
   }
 ]

@@ -1,0 +1,27 @@
+id: testdata_media_audio
+label: Import test fixture media audio
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: media/audio.json
+  ids:
+    id:
+      type: integer
+process:
+  name: filename
+  mid: id
+  field_media_audio_file/target_id: id
+  field_media_audio_file/alt: thumbnail__alt
+  uid:
+    -
+      plugin: default_value
+      default_value: 8
+destination:
+  plugin: entity:media
+  default_bundle: audio
+migration_dependencies:
+  required:
+    - testdata_files

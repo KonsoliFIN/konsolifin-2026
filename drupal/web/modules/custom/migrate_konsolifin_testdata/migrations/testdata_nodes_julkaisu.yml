@@ -1,0 +1,50 @@
+id: testdata_nodes_julkaisu
+label: Import test fixture julkaisu nodes
+migration_tags:
+  - KonsoliFIN Testdata
+  - testdata
+migration_group: testdata
+source:
+  plugin: json_fixture
+  file: nodes/julkaisu.json
+  ids:
+    nid:
+      type: integer
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: julkaisu
+  title: title
+  body/value: body
+  body/summary: summary
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  uid: uid
+  status: status
+  created: created
+  changed: created
+  field_hero: hero_image_id
+  field_alustat: alustat_ids
+  field_pelit: pelit_ids
+  field_julkaisijat: julkaisijat_ids
+  field_studiot: studiot_ids
+  field_kuvat: kuvat_ids
+  field_julkaisuajankohta/accuracy_level: publish_accuracy
+  field_julkaisuajankohta/stored_date: publish_date
+  field_tyyppi: publish_type
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - testdata_users
+    - testdata_media_images
+    - testdata_taxonomy_alustat
+    - testdata_taxonomy_alustatarkenne
+    - testdata_taxonomy_ihmiset
+    - testdata_taxonomy_pelistudiot
+    - testdata_taxonomy_pelijulkaisijat
+    - testdata_taxonomy_pelit
+    - testdata_taxonomy_sarja
+    - testdata_taxonomy_franchise

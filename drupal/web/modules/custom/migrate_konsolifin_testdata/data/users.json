@@ -1,47 +1,257 @@
 [
   {
-    "id": 2,
-    "name": "mikkop",
-    "mail": "mikko.pelkonen@example.com",
-    "oikea_nimi": "Mikko Pelkonen",
-    "esittely": "Pelialan toimittaja vuodesta 2010. Erikoistunut JRPG- ja strategiapeleihin.",
-    "roles": ["authenticated", "toimitus"],
-    "status": 1
+    "uid": 8,
+    "name": "jryi",
+    "oikea_nimi": "Jyri Jokinen",
+    "mail": "jryi@iki.fi",
+    "esittely": "<p>Jyri liittyi KonsoliFINin toimitukseen vuonna 2005. Hänet tunnetaan lähinnä KonsoliFIN Podcastin perustajajäsenenä ja sen ensimmäisenä juontajana, mitä virkaa hän hoiti yli sadan jakson ajan. Lisäksi Jyri on kirjoittanut lukuisia arvosteluja, blogikirjoituksia ja jokusen uutisen.</p><p>Nykyisin Jyri koodailee uutta toiminnallisuutta sivuille minkä viitsii ja häärää KonsoliFIN ry:n puikoissa. Jos tunnet suunnatonta intohimoa Drupal-kehittämiseen ilman korvausta, ota yhteyttä; Jyri tarvitsee&nbsp;jatkuvasti apua.</p><p>Siviilissä Jyri harrastaa TV:n katselua, lukemista, kahvakuulan heiluttelua ja matkustelua niin paljon kuin aikaa ja rahaa riittää. Jyrillä on kaksi maisterintutkintoa, erääntynyt tietosuoja-ammattilaisen sertifikaatti ja Museokortti.</p>",
+    "some_urls": [
+      "https://bsky.app/profile/jryi.net",
+      "https://www.linkedin.com/in/jyrijokinen/",
+      "https://www.instagram.com/jryi/"
+    ],
+    "roles": [
+      "toimitus",
+      "administrator"
+    ],
+    "kuva_id": 23
   },
   {
-    "id": 3,
-    "name": "annav",
-    "mail": "anna.virtanen@example.com",
-    "oikea_nimi": "Anna Virtanen",
-    "esittely": "KonsoliFIN:n päätoimittaja. Intohimona toimintapelit ja indie-skenessä.",
-    "roles": ["authenticated", "johtoryhma"],
-    "status": 1
+    "uid": 32,
+    "name": "Eliminaattori",
+    "oikea_nimi": "Toni Turunen",
+    "mail": "x2029@hotmail.com",
+    "esittely": "<p>Arvosteluissani keskityn erityisen hartaasti moniin pieniin yksityiskohtiin ja lukijan kannalta polttaviin asioihin, kuten pelattavuuteen, ulkoasuun, seikkailun pituuteen, vaikeustasoon sekä musiikki- ja äänimaailmaan. KonsoliFINin keskustelufoorumilta minut voi bongata nimimerkillä Eliminaattori.</p>",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 16
   },
   {
-    "id": 4,
-    "name": "jussih",
-    "mail": "jussi.hamalainen@example.com",
-    "oikea_nimi": "Jussi Hämäläinen",
-    "esittely": "Podcast-juontaja ja retropelien ystävä. Striimailee viikonloppuisin.",
-    "roles": ["authenticated", "toimitus"],
-    "status": 1
+    "uid": 76,
+    "name": "ulukai",
+    "oikea_nimi": "Petri Kataja",
+    "mail": "peter.juniper1@gmail.com",
+    "esittely": "<p>Pelejä on pelattu iät ja ajat. Suosikkeihin kuuluvat muun muassa Mystical Ninja Starring Goemon, The Last of Us Part II, The Legend of Zelda: The Wind Waker, EarthBound ja Red Dead Redemption II.</p>",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 11
   },
   {
-    "id": 5,
-    "name": "laurak",
-    "mail": "laura.korhonen@example.com",
-    "oikea_nimi": "Laura Korhonen",
-    "esittely": "Videopelien yhteisömanageri ja sisällöntuottaja. Rakastaa co-op-pelejä.",
-    "roles": ["authenticated", "yhteisosisallontuottaja"],
-    "status": 1
+    "uid": 82,
+    "name": "P33RO",
+    "oikea_nimi": "Petri Leskinen",
+    "mail": "lespet@gmail.com",
+    "esittely": "<p>Vuodesta 2016 KonsoliFINin arvostelu- ja artikkelitoimitusta vetänyt indiepelien nautiskelija. Elokuvaharrastaja, suoratoistopalveluiden suurkuluttaja. Perheenisä ja Tottenham-fani.</p>",
+    "some_urls": [
+      "https://bsky.app/profile/p33ro.bsky.social"
+    ],
+    "roles": [
+      "toimitus",
+      "johtoryhma",
+      "administrator"
+    ],
+    "kuva_id": 11
   },
   {
-    "id": 6,
-    "name": "sampan",
-    "mail": "sampa.nieminen@example.com",
-    "oikea_nimi": "Sampa Nieminen",
-    "esittely": "Teknologiatoimittaja ja laitearviospesialisti. PC-pelaaja sydämeltään.",
-    "roles": ["authenticated", "toimitus"],
-    "status": 1
+    "uid": 83,
+    "name": "Jaakkimo",
+    "oikea_nimi": "Jaakko Herranen",
+    "mail": "jaakko.herranen@gmail.com",
+    "esittely": "<p>Olen voittanut<em> Punch-Outissa</em> Mike Tysonin ja pelannut <em>Ecco the Dolphinin</em> läpi, olen siis ansainnut paikkani KonsoliFINin ylläpidossa tai oikeastaan missä vain ylläpidossa ikinä. Moneen muuhunkin paikkaan on tullut kirjoiteltua arvosteluja ja uutisia, niin Pelaajaan kuin Tiltillekin – pelimaailman seuraaminen muutoinkin on se omin juttuni.</p><p>Vihaan epäoikeudenmukaisuutta sekä kaikenlaista pahansuopaisuutta. Puolustan aikalailla tasapuolisesti niin eläin- kuin ihmisoikeuksiakin. Haluan ison telkkarin, kissan, koiran ja uusimmat pelikonsolit, vaikka en niillä edes pelaisi.</p><p>Yhteydenotot: jaakko.herranen(AT)konsolifin.net</p><p>Xbox Live: JaakkimO / PSN: Jaakkimous / Nintendo: Jaakkimous / <a href=\"https://steamcommunity.com/id/jaakkim0\" target=\"_blank\">Steam: jaakkim0</a>&nbsp;</p>",
+    "some_urls": [
+      "https://bsky.app/profile/jaakkimo.bsky.social",
+      "https://www.instagram.com/jaakkim0/"
+    ],
+    "roles": [
+      "toimitus",
+      "johtoryhma"
+    ],
+    "kuva_id": 23
+  },
+  {
+    "uid": 215,
+    "name": "TeRm0z",
+    "oikea_nimi": "Tero Lepistö ",
+    "mail": "terolep@hotmail.com",
+    "esittely": "<p>Tero \"TeRm0z\" Lepistö on pyörinyt foorumilla vakituisesti vuodesta 2004. Vaikka pelaaminen kuuluu edelleen tiiviisti elämään, arjen puristuksessa rakkaalle harrastukselle uhrattu aika pienenee vääjäämättä ja samalla pelimaku jalostuu. Nykyään parhautta edustavat (kaahauspelien lisäksi) sopivan tiiviit juonelliset toimintapläjäykset, jotka jättävät takaraivoon muitakin tunteita kuin turhautumista. Virtuaalimaailmoiden lisäksi suhtautuu tarpeettoman intohimoisesti automaailman ilmiöiden seuraamiseen ja yleiseen viisasteluun.</p>",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 16
+  },
+  {
+    "uid": 558,
+    "name": "fly",
+    "oikea_nimi": "Niklas Isberg",
+    "mail": "niklas.ibg@gmail.com",
+    "esittely": "<p>Niklas liittyi Konsolifinin kaartiin vuonna 2014 arvostelijana, mutta&nbsp;on ehtinyt puuhailemaan niiden lisäksi uutisia ja&nbsp;artikkeleita. Vääntelee myös grafiikkaa työkseen ja&nbsp;omaksi ilokseen. Vapaa-aika kuluu lukuisten harrastusten parissa, mutta laadukkaat televisiosarjat,&nbsp;huonot leffat sekä videopelit vievät eniten aikaa. Retropelit ovat lähellä sydäntä, vaikka yhtään retrokonetta ei löydykään talosta. Niklas haikailee menetettyä nuoruuttaan ja myytyä Sega Megadriveaan.</p>\r\n\r\n<p>PSN &amp; Steam: nSuperfly</p>\r\n\r\n<p>Kotisivut: <a href=\"https://isbergdesign.com\">https://isbergdesign.com</a></p>\r\n",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 12
+  },
+  {
+    "uid": 1373,
+    "name": "spydeZ6",
+    "oikea_nimi": "A-P Kuutila",
+    "mail": "pghamis@hotmail.com",
+    "esittely": "<p>A-P \"spyde\" Kuutila hyppäsi KonsoliFINin kelkkaan alkuvuodesta 2015. Pelaaminen on kulkenut herran mukana niin kauan kuin muisti riittää. Pelien lisäksi aikaa syövät kirjoittaminen sekä musiikki.</p>\r\n\r\n<p>Gamertag: spydeZ6</p>\r\n",
+    "some_urls": [],
+    "roles": [],
+    "kuva_id": 23
+  },
+  {
+    "uid": 1604,
+    "name": "Nikender",
+    "oikea_nimi": "Niko Lähteenmäki",
+    "mail": "niko.lahteenmaki@hotmail.com",
+    "esittely": "<p>KonsoliFINissä keväällä 2020 aloittanut populaarikulttuuri-intoilija ja jokapaikanhöylä. KonsoliFIN Podcastin juontaja ja tuottaja loppuvuodesta 2020 alkaen, podcast-puolen päätoimittaja alkuvuodesta 2026 alkaen. Kirjoittanut myös aikoinaan Pelaajalle verkkouutisia.</p><p>KonsoliFIN-touhujen ohella peliaikaa syövät päivätyön ohella muun muassa lukeminen, liikunta, koiran kanssa touhuilu sekä keräilyintoilu – kokoelmista löytyy parisenkymmentä konsolia ja vajaa 600 videopeliä.&nbsp;</p><p>Yhteydenotot: <a href=\"mailto:niko.lahteenmaki@konsolifin.net\">niko.lahteenmaki@konsolifin.net</a>&nbsp;</p>",
+    "some_urls": [
+      "https://bsky.app/profile/nikender.bsky.social",
+      "https://www.instagram.com/niilonikender/",
+      "https://www.linkedin.com/in/niko-lahteenmaki/"
+    ],
+    "roles": [
+      "toimitus",
+      "johtoryhma"
+    ],
+    "kuva_id": 20
+  },
+  {
+    "uid": 3982,
+    "name": "little_1985",
+    "oikea_nimi": "Laura",
+    "mail": "laura_paivalainen@hotmail.com",
+    "esittely": "<p>Laura \"little_1985\" liittyi KonsoliFINin suoratoistotiimin vahvuuteen keväällä 2017. Kouvolassa majaansa pitävä nainen harrastelee pienimuotoisesti pelien keräilyä ja konsolipelit ovat lähellä sydäntä.Laura tituleeraa itseään casual-pelaajaksi ilman taitoa ja yhteisön tuella aikoo kehittyä yksinpelaajasta moninpelitaitajaksi ja yhteisönjäseneksi. Lisäksi elämään sisältöä tuovat pieni perhe ja kaksi pöljää kissaa.&nbsp;</p>\r\n",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 23
+  },
+  {
+    "uid": 5594,
+    "name": "emm1h",
+    "oikea_nimi": "Emmi Hattunen",
+    "mail": "meimieemi@gmail.com",
+    "esittely": "<p>Emmi Hattunen liittyi KonsoliFINin toimitukseen vuonna 2018 uutistiimin vahvistukseksi ja raapustelee silloin tällöin arvosteluita.</p>\r\n\r\n<p>Kiinnostus peleihin on ollut olemassa jo lapsuudesta saakka&nbsp;kun&nbsp;ensimmäiset pelailut ovat tapahtuneet joko&nbsp;tietokoneella tai muilta lainatuilla konsoleilla. Emmin ensimmäinen&nbsp;ikioma konsoli oli Nintendo DS lite, joka vain syvensi hänen rakkautta tasohyppelyihin ja japanilaisiin roolipeliseikkailuihin. Mautkin kehittyvät ja nykyään pelaamista tulee harrastettua&nbsp;kaikilla mahdollisilla alustoilla.</p>\r\n\r\n<p>Välillä kun videopelit eivät nappaa niin huomio kiinnittyy kodista löytyvään hyllylliseen hienoja elokuvia Disneyn klassikoista elokuvahistorian helmiin.</p>\r\n\r\n<p>Emmin suosikkipelejä ovat Final Fantasy X, Kingdom Hearts 2 ja Fallout 3.</p>\r\n",
+    "some_urls": [],
+    "roles": [],
+    "kuva_id": 16
+  },
+  {
+    "uid": 5599,
+    "name": "Mewna",
+    "oikea_nimi": "Senja Littman",
+    "mail": "senja.littman@gmail.com",
+    "esittely": "<p>Olen ollut KonsoliFINin toimituksen jäsen tammikuusta 2018 lähtien. Pelitaitoni ovat keskivertoa huonommat, ja uusien pelien opettelu viekin minulta yleensä runsaasti aikaa sekä hermoja. Tykkään kuitenkin astua ulos mukavuusalueeltani ja kokeilla rohkeasti minulle vieraitakin peligenrejä – joskus tosin aika huonoin tuloksin.&nbsp;</p><p>Elämää suurempi peli minulle on World of Warcraft, jota olenkin pelannut jo vuodesta 2007 saakka. Muihin suosikkeihini lukeutuvat tarinavetoiset rooli- ja seikkailupelit, ihkusöpöt elämäsimulaatiot sekä hurjan pelottavat kauhupelit.&nbsp;</p><p>Ihmisenä olen rauhaa ja hiljaisuutta rakastava introvertti, joka pysyy kaukana turhista kinasteluista ja internetin eipäs-juupas-väittelyistä. Minussa on kaksi puolta, joista toinen rakastaa kissanpentuja, pinkkiä väriä sekä muita suloisia söpöyksiä ja toinen taas kaikkia ihanan synkkiä ja makaabereja asioita.&nbsp;Tykkään myös syödä pullaa ja juoda kahvia.</p><p>Videopelien lisäksi kulutan aikaani lautapelien sekä sarjojen ja leffojen katselun parissa. Yritän myös käydä mahdollisimman usein livekeikoilla ja festareilla kuuntelemassa vähän raskaampia säveliä.</p><p>Lempisanontani on elokuvista tuttu fraasi: I'm too old for this shit, jota käytän lähes päivittäin monissa eri tilanteissa.</p><p>Arvostelujani voi halutessaan lukaista myös Muropaketista sekä Fintendosta.</p>",
+    "some_urls": [
+      "https://bsky.app/profile/mmewna.bsky.social"
+    ],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 11
+  },
+  {
+    "uid": 5681,
+    "name": "Sensenoi",
+    "oikea_nimi": "Tommi Viitanen",
+    "mail": "tommi.viitanen@konsolifin.net",
+    "esittely": "<p>Arvostelujen naputtelua vuodesta 2018.&nbsp;<br>Videopelien, sarjakuvien, kirjoittamisen ja eläinten ystävä.&nbsp;</p>",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 12
+  },
+  {
+    "uid": 5807,
+    "name": "Tarja_pk",
+    "oikea_nimi": "Tarja Porkka-Kontturi",
+    "mail": "tarja.kontturi@konsolifin.net",
+    "esittely": "<p data-end=\"568\" data-start=\"0\">Puusepän töistä pelialalle luikahtanut kulttuurituottaja ja yrittäjä, jonka työssä korostuvat liiketoiminnan kehittäminen, saavutettavuus sekä yhteisöjen rakentaminen ja niiden kanssa työskentely.</p><p data-end=\"568\" data-start=\"0\">Tarja tuli mukaan KonsoliFINin riveihin vuonna 2020 uutisten, peli- ja laitearvioiden pariin, ja on sittemmin kirjoittanut myös mm. Pelaaja-lehteen. Työn ohella hän on aktiivisesti mukana erilaisessa (yhdistys)toiminnassa pelialan ja maailman parantamiseksi, panostaa jatkuvaan oppimiseen sekä mentoroi alalle pyrkiviä uusia tekijöitä. BAFTA-jäsen vuodesta 2025.</p><p data-end=\"829\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"570\">Arjessa aika kuluu nörttijuttujen ohella kissojen ja puolison kanssa elämää ihmetellen, joogaillen sekä niin digi- kuin lautapelien parissa. Lapset ovat jo lehahtaneet maailmalle, joten nykyisin jaloissa pyörii lähinnä se ikuinen backlog, joka ei pelaamalla lopu.</p><p data-end=\"829\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"570\"><em>\"I used to be an adventurer like you, then I took an arrow in the knee.\"</em><br><br>Sähköposti: tarja.kontturi[ a t ]konsolifin .net</p>",
+    "some_urls": [
+      "https://bsky.app/profile/tarjapk.bsky.social",
+      "https://www.instagram.com/tarja_pk",
+      "https://www.linkedin.com/in/tarja-porkka-kontturi/"
+    ],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 23
+  },
+  {
+    "uid": 5822,
+    "name": "KKorkki",
+    "oikea_nimi": "Risto Karinkanta",
+    "mail": "risto.karinkanta@iki.fi",
+    "esittely": "<p>Kulttuurin sekakäyttäjä ja monessa sukkamehussa keitetty pelaaja. Innostunut erityisesti rakentelupeleistä, narratiivisista vahvoista peleistä sekä pelisivistyksen&nbsp;helmistä.&nbsp;Ajoittain töiden jälkeen aivot on syytä nollata myös Counter-Strikella tai Apex Legendsillä. Pelikulttuurin ulkopuolella maistuvat niin elokuvat, kirjallisuus kuin oopperakin.</p>\r\n\r\n<p>Toiminut KonsoliFINin avustajana vuodesta 2020 lähtien.</p>\r\n",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 10
+  },
+  {
+    "uid": 5957,
+    "name": "FleeingNevada",
+    "oikea_nimi": "Joonatan Itkonen",
+    "mail": "joonatanitkonen@gmail.com",
+    "esittely": "<p>KonsoliFINin vastaava päätoimittaja. Olen Suomeen paluumuuttanut keskittymishäiriöinen autisti, joka tykkää erityisesti tarinavetoisista tunnelmoinneista ja rakentelusta. Tavoitteenani on rakentaa entistä inkluusivisempaa ja kansainvälistä peli- ja elokuvakulttuuria kotimaan skeneen.</p>\r\n\r\n<p>KonsoliFINin toiminnan ohella toimitan arvosteluja, kansainvälisten tapahtumien raportteja sekä haastatteluja. Kansainvälisesti vaikutan englanniksi Region Free -sivustollani ja aktiivijäsenenä GALECAn, FIPRESCIn ja Euroopan elokuva-akatemian parissa. Elokuva-aiheisia juttujani voi lukea <a href=\"https://www.rottentomatoes.com/critics/joonatan-itkonen\">Rotten Tomatoes -aggregaatorista</a>.</p>\r\n\r\n<p>Joonatan is the editor-at-large for KonsoliFIN. He is a queer, neurodivergent pop culture critic and narrative designer based in Helsinki, Finland, and the founder of Region Free (regionfree.net), where, along with KonsoliFIN, he champions inclusive and brave storytelling across cinema and gaming. He is a published author and essayist with bylines in FILMHOUNDS, Debug Magazine, and Movies We Texted About. He is a member of GALECA, the European Film Academy, FIPRESCI, and the International Film Society Critics Association.</p>\r\n\r\n<p><a href=\"https://regionfree.net\">Region Free</a> | <a href=\"https://www.metacritic.com/publication/region-free\">Metacritic</a> | <a href=\"https://opencritic.com/critic/11047/joonatan-itkonen\">OpenCritic</a></p>\r\n",
+    "some_urls": [],
+    "roles": [
+      "toimitus",
+      "johtoryhma"
+    ],
+    "kuva_id": 12
+  },
+  {
+    "uid": 7513,
+    "name": "tinuri",
+    "oikea_nimi": "Marko Rompasaari",
+    "mail": "marko.rompasaari@konsolifin.net",
+    "esittely": "<p>Uutisten raapustelija, joka omaa hirvittävän huonon maun niin peleissä, elokuvissa kuin musiikissakin.</p>\r\n",
+    "some_urls": [],
+    "roles": [],
+    "kuva_id": 16
+  },
+  {
+    "uid": 7918,
+    "name": "sannapallo",
+    "oikea_nimi": "Sanna",
+    "mail": "loytonensanna@gmail.com",
+    "esittely": "<p>Kirjoittamiselle ja pelaamiselle sielunsa myynyt Sanna liittyi mukaan KonsoliFINin arvostelutiimiin toukokuussa 2022. Eniten Sanna rakastaa toiminta- ja seikkailupelejä, mutta yrittää toisinaan kerätä rohkeutta myös uuden lempigenrensä, kauhun, tutkimiselle. Pelaamisen lisäksi Sanna käyttää aikansa omien tarinoiden kirjoittamiselle, kirjojen lukemiselle sekä japanilaiselle populaarikulttuurille.&nbsp;</p>\r\n",
+    "some_urls": [],
+    "roles": [
+      "toimitus"
+    ],
+    "kuva_id": 20
+  },
+  {
+    "uid": 20624,
+    "name": "RacceReijonen",
+    "oikea_nimi": null,
+    "mail": "rasmus1995@msn.com",
+    "esittely": null,
+    "some_urls": [],
+    "roles": [],
+    "kuva_id": 17
+  },
+  {
+    "uid": 24199,
+    "name": "markushieno",
+    "oikea_nimi": "Markus Heino",
+    "mail": "kogakosuru@hotmail.com",
+    "esittely": null,
+    "some_urls": [],
+    "roles": [],
+    "kuva_id": 17
   }
 ]

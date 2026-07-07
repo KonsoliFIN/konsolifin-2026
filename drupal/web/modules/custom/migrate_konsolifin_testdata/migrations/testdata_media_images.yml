@@ -12,31 +12,17 @@ source:
       type: integer
 process:
   name: filename
-  field_media_image/target_id:
-    -
-      plugin: migration_lookup
-      migration: testdata_files
-      source: id
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: row
-      message: 'Image file not found for media entity, skipping row.'
-  field_media_image/alt: alt
+  mid: id
+  field_media_image/target_id: id
+  field_media_image/alt: thumbnail__alt
   uid:
     -
-      plugin: migration_lookup
-      migration: testdata_users
-      source: uid
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
-      message: 'No user found for this media entity.'
+      plugin: default_value
+      default_value: 8
+  uuid: uuid
 destination:
   plugin: entity:media
   default_bundle: image
 migration_dependencies:
   required:
-    - testdata_users
     - testdata_files

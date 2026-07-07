@@ -1,38 +1,64 @@
 [
   {
-    "id": 1,
-    "name": "The Legend of Zelda",
-    "description": "Nintendon pitkäikäinen seikkailupelisarja, seurannut Link-nimistä sankaria vuodesta 1986.",
-    "weight": 0
+    "bundle": "franchise",
+    "tid": 14146,
+    "parent": 0,
+    "revision_id": 23620,
+    "title": "Grand Theft Auto",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 19,
+    "kuvat_ids": [
+      4,
+      6,
+      12,
+      12,
+      13
+    ]
   },
   {
-    "id": 2,
-    "name": "Final Fantasy",
-    "description": "Square Enixin roolipelisarja, yksi genren tunnetuimmista ja pitkäikäisimmistä sarjoista.",
-    "weight": 1
+    "bundle": "franchise",
+    "tid": 14148,
+    "parent": 0,
+    "revision_id": 23622,
+    "title": "The Elder Scrolls",
+    "body": "<p><strong>The Elder Scrolls</strong> on Bethesdan kehittämä ja julkaisema roolipelisarja, joka tunnetaan laajoista avoimista maailmoistaan, vapaasta pelityylistään ja syvällisestä fantasiatarinastaan. Pelit sijoittuvat Tamrielin mantereelle, jossa pelaaja voi tutkia eri maakuntia kuten Skyrim, Morrowind ja Cyrodiil. Sarja alkoi vuonna 1994 pelillä <strong>The Elder Scrolls: Arena</strong>, ja tunnetuimpia osia ovat <strong>Morrowind</strong> (2002), <strong>Oblivion</strong> (2006) ja <strong>Skyrim</strong> (2011).</p>",
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 18,
+    "kuvat_ids": [
+      6,
+      15,
+      22,
+      24,
+      24
+    ]
   },
   {
-    "id": 3,
-    "name": "God of War",
-    "description": "PlayStation-yksinoikeussarja, jossa Kratos taistelee mytologisia olentoja vastaan.",
-    "weight": 2
-  },
-  {
-    "id": 4,
-    "name": "Halo",
-    "description": "Microsoftin lippulaiva-ammuntapelisarja, Master Chiefin tarina avaruudessa.",
-    "weight": 3
-  },
-  {
-    "id": 5,
-    "name": "Gran Turismo",
-    "description": "PlayStationin kilpa-ajopelisarja, tunnettu realistisesta ajomallinnuksestaan.",
-    "weight": 4
-  },
-  {
-    "id": 6,
-    "name": "Alan Wake",
-    "description": "Remedy Entertainmentin psykologinen trilleri-pelisarja, yhdistää toimintaa ja kauhua.",
-    "weight": 5
+    "bundle": "franchise",
+    "tid": 14149,
+    "parent": 0,
+    "revision_id": 23623,
+    "title": "Assassin's Creed",
+    "body": null,
+    "in_franchise": null,
+    "publish_accuracy": null,
+    "publish_date": null,
+    "www_sivu_uri": null,
+    "field_forum_ketju_value": null,
+    "hero_image_id": 7,
+    "kuvat_ids": [
+      3,
+      12,
+      13,
+      22
+    ]
   }
 ]

@@ -42,6 +42,24 @@ sammuttaa komennolla `make stop`.
 Jos Drupal-core tai yksittäisiä moduleita pitää päivittää, tämä onnistuu komennolla
 `make update`. Tämä tosin toimii vain, jos olet käyttänyt gitiä koodin kloonaamiseen.
 
+## Testidatan luominen
+
+Kehitys- ja testausympäristöjä varten on käytettävissä ns. testi-fikstuurit, jotka voidaan
+luoda helposti omalle sivulle seuraavalla komentosarjalla:
+
+```sh
+docker exec konsolifin_web ./vendor/bin/drush pm:install migrate_konsolifin_testdata
+./testdata.sh
+docker exec konsolifin_web ./vendor/bin/drush pm:uninstall migrate_konsolifin_testdata
+```
+
+Tämä edellyttää, että sivusto on jo muuten asennettu. Tietokanta on myös hyvä olla tyhjä,
+sillä testi-fikstuurit ajavat osittain aiemmin syötetyn yli, ja lopputulos voi olla 
+kaoottinen.
+
+Voit kirjautua sisään minä tahansa testikäyttäjällä, salasana on kaikilla "password".
+Login-polku on `/user/login/?showcore`.
+
 ## Debuggaaminen VSCodella
 
 Jos haluat debugata koodia, ota docker-compose.yml -tiedoston lopusta risuaita pois
