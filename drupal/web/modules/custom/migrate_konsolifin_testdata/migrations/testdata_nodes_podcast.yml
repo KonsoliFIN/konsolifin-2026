@@ -22,6 +22,8 @@ process:
   status: status
   promote: promote
   created: created
+  changed: created
+  field_hero: hero_image_id
   field_mp3:
     plugin: default_value
     default_value: 101

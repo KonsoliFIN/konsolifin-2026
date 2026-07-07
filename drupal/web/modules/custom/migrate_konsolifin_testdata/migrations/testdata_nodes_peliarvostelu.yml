@@ -25,15 +25,8 @@ process:
   status: status
   promote: promote
   created: created
-  field_hero:
-    -
-      plugin: migration_lookup
-      migration: testdata_media_images
-      source: hero_image_id
-      no_stub: true
-    -
-      plugin: skip_on_empty
-      method: process
+  changed: created
+  field_hero: hero_image_id
   field_arvosana: arvosana
   field_arvosteltu_versio:
     plugin: migration_lookup
