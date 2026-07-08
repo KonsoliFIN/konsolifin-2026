@@ -65,7 +65,7 @@
 }
 
 .frontpage-featured-card .card__title {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   font-weight: var(--weight-extrabold);
 }
 
@@ -89,6 +89,12 @@
   font-size: var(--text-base);
   -webkit-line-clamp: 3;
   margin-bottom: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .frontpage-featured-card .card__excerpt {
+    display: none;
+  }
 }
 
 .frontpage-featured-card .card__meta {

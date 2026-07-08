@@ -518,16 +518,18 @@ display:
           hide_alter_empty: true
           destination: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 50
+          items_per_page: 25
           total_pages: 0
           id: 0
           tags:
             next: 'Seuraava ›'
             previous: '‹ Edellinen'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
           expose:
             items_per_page: false
             items_per_page_label: 'Merkintöjä sivua kohti'
@@ -536,6 +538,7 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset: false
             offset_label: Siirtymä
+          quantity: 7
       exposed_form:
         type: basic
         options:
@@ -1049,16 +1052,18 @@ display:
           prefix: ''
           suffix: ''
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 10
+          items_per_page: 25
           total_pages: 0
           id: 0
           tags:
             next: 'Seuraava ›'
             previous: '‹ Edellinen'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
           expose:
             items_per_page: false
             items_per_page_label: 'Merkintöjä sivua kohti'
@@ -1067,6 +1072,7 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset: false
             offset_label: Siirtymä
+          quantity: 7
       empty: {  }
       arguments:
         fid:

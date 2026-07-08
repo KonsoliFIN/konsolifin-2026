@@ -179,14 +179,17 @@ class RssFeedService {
     // Append game name for reviews (peliarvostelu bundle).
     if ($node->bundle() === 'peliarvostelu') {
       $gameName = '';
-      if ($node->hasField('field_pelin_nimi') && !$node->get('field_pelin_nimi')->isEmpty()
-          && $node->get('field_pelin_nimi')->value !== '') {
-        $gameName = $node->get('field_pelin_nimi')->value;
-      }
-      elseif ($node->hasField('field_pelit') && !$node->get('field_pelit')->isEmpty()) {
+
+      if ($node->hasField('field_pelit') && !$node->get('field_pelit')->isEmpty()) {
         $term = $node->get('field_pelit')->entity;
         $gameName = $term ? $term->label() : '';
       }
+
+      if ($node->hasField('field_pelin_nimi') && !$node->get('field_pelin_nimi')->isEmpty()
+          && $node->get('field_pelin_nimi')->value !== '') {
+        $gameName .= ' ' . $node->get('field_pelin_nimi')->value;
+      }
+
       if ($gameName !== '') {
         $title .= ' - Arvostelussa ' . $gameName;
       }
