@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_hero
+    - image.style.teaser_thumbnail
     - node.type.page
   module:
+    - media
     - text
     - user
 _core:
@@ -23,6 +26,17 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 100
+    region: content
+  field_hero:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: teaser_thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     weight: 101
