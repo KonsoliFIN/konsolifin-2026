@@ -308,7 +308,7 @@
 
 .node__body p {
   margin-bottom: var(--space-lg);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
 }
 
 .node__body h2 {
@@ -319,6 +319,7 @@
 .node__body h3 {
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-md);
+  color: var(--color-accent);
 }
 
 .node__body img {
