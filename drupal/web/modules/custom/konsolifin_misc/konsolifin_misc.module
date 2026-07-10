@@ -81,7 +81,12 @@ function konsolifin_misc_pathauto_alias_alter(&$alias, array &$context)
       }
     }
 
-    if ($node->hasField('field_pelit') && !$node->get('field_pelit')->isEmpty() && count($node->get('field_pelit')) == 1) {
+    if (
+      $node->hasField('field_pelit') &&
+      !$node->get('field_pelit')->isEmpty() &&
+      count($node->get('field_pelit')) == 1 &&
+      $node->get('field_pelit')->entity
+    ) {
       $alias = $alias . '-' . \Drupal::service('pathauto.alias_cleaner')->cleanString($node->get('field_pelit')->entity->getName());
     }
 
