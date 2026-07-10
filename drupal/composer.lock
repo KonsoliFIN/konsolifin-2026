@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1824bb29a8b9da14afae1e1f2c86788b",
+    "content-hash": "84e02981736215a50ca0215dc8788801",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1781,26 +1781,26 @@
         },
         {
             "name": "drupal/js_cookie",
-            "version": "1.0.2",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/js_cookie.git",
-                "reference": "1.0.2"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/js_cookie-1.0.2.zip",
-                "reference": "1.0.2",
-                "shasum": "effcbee68083efc866aca2a1bfa3fc6e14fe0c2f"
+                "url": "https://ftp.drupal.org/files/projects/js_cookie-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "23e7209e538b9cf2539ca43ef0bd4f0b1658086b"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11"
+                "drupal/core": "^11.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.2",
-                    "datestamp": "1762168962",
+                    "version": "2.0.1",
+                    "datestamp": "1765792652",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1895,59 +1895,6 @@
             "homepage": "https://www.drupal.org/project/matomo",
             "support": {
                 "source": "https://git.drupalcode.org/project/matomo"
-            }
-        },
-        {
-            "name": "drupal/media_gallery",
-            "version": "3.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/media_gallery.git",
-                "reference": "3.2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_gallery-3.2.3.zip",
-                "reference": "3.2.3",
-                "shasum": "00324c0ade02843f2285ae72a8f165f77ad3253e"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11",
-                "drupal/photoswipe": "^5.0"
-            },
-            "require-dev": {
-                "drupal/migrate_plus": "*",
-                "drupal/migrate_tools": "*",
-                "drupal/pathauto": "^1.11",
-                "drupal/swiper_formatter": "^2.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.2.3",
-                    "datestamp": "1762943634",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Andrei Ivnitskii",
-                    "homepage": "https://www.drupal.org/u/ivnish",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A simple gallery of media.",
-            "homepage": "https://www.drupal.org/project/media_gallery",
-            "support": {
-                "source": "https://git.drupalcode.org/project/media_gallery",
-                "issues": "https://www.drupal.org/project/issues/media_gallery"
             }
         },
         {
@@ -2091,68 +2038,6 @@
             }
         },
         {
-            "name": "drupal/migrate_file_to_media",
-            "version": "2.0.15",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_file_to_media.git",
-                "reference": "2.0.15"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_file_to_media-2.0.15.zip",
-                "reference": "2.0.15",
-                "shasum": "206ec756e4dbdf4d33693981c5d2114a707b33ae"
-            },
-            "require": {
-                "drupal/core": "^10.2 || ^11",
-                "drupal/migrate_plus": "^6",
-                "drupal/migrate_tools": "^6",
-                "php": ">=8.1.0"
-            },
-            "require-dev": {
-                "drupal/crop": "^2.0",
-                "drupal/paragraphs": "^1.10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.15",
-                    "datestamp": "1771004844",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10 || ^11"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jon (ayalon)",
-                    "homepage": "https://www.drupal.org/u/ayalon",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "hitchshock",
-                    "homepage": "https://www.drupal.org/user/3552980"
-                }
-            ],
-            "description": "Migrate file fields to media fields.",
-            "homepage": "https://drupal.org/project/migrate_file_to_media",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_file_to_media",
-                "issues": "https://www.drupal.org/project/issues/migrate_file_to_media"
-            }
-        },
-        {
             "name": "drupal/migrate_plus",
             "version": "6.0.10",
             "source": {
@@ -2286,61 +2171,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/migrate_tools",
                 "issues": "https://www.drupal.org/project/issues/migrate_tools",
-                "slack": "#migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_upgrade",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_upgrade.git",
-                "reference": "4.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_upgrade-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "358f3cea91411b179a1c78841f1cc3166a947088"
-            },
-            "require": {
-                "drupal/core": ">=9",
-                "drupal/migrate_plus": ">=5",
-                "drush/drush": ">=9",
-                "php": ">7.3"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1719350600",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Lucas Hedding",
-                    "homepage": "https://www.drupal.org/u/heddn",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Drush support for direct upgrades from older Drupal versions.",
-            "homepage": "https://www.drupal.org/project/migrate_upgrade",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_upgrade",
-                "issues": "https://www.drupal.org/project/issues/migrate_upgrade",
                 "slack": "#migrate"
             }
         },
@@ -2494,82 +2324,6 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
-            }
-        },
-        {
-            "name": "drupal/photoswipe",
-            "version": "5.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/photoswipe.git",
-                "reference": "5.0.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-5.0.6.zip",
-                "reference": "5.0.6",
-                "shasum": "6f3ae21b678908aed903698e7f04cf7ab988dc6a"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10 || ^11"
-            },
-            "suggest": {
-                "npm-asset/photoswipe": "Required to make the 'photoswipe' module functional. Expected version: ^5",
-                "npm-asset/photoswipe-dynamic-caption-plugin": "Required to make the 'photoswipe_dynamic_caption' submodule functional. Expected version: ^1.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.0.6",
-                    "datestamp": "1758701729",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "anybody",
-                    "homepage": "https://www.drupal.org/user/291091"
-                },
-                {
-                    "name": "dinazaur",
-                    "homepage": "https://www.drupal.org/user/3637512"
-                },
-                {
-                    "name": "grevil",
-                    "homepage": "https://www.drupal.org/user/3668491"
-                },
-                {
-                    "name": "julou",
-                    "homepage": "https://www.drupal.org/user/273952"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                },
-                {
-                    "name": "thomas.frobieter",
-                    "homepage": "https://www.drupal.org/user/409335"
-                }
-            ],
-            "description": "Javascript-based photo gallery display for your Drupal website (very sleek with mobile browsers).",
-            "homepage": "https://www.drupal.org/project/photoswipe",
-            "keywords": [
-                "Drupal",
-                "Gallery",
-                "Lightbox",
-                "Mobile",
-                "Photoswipe"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/photoswipe",
-                "issues": "https://www.drupal.org/project/issues/photoswipe"
             }
         },
         {
@@ -2773,57 +2527,6 @@
             "homepage": "https://www.drupal.org/project/search_autocomplete",
             "support": {
                 "source": "https://git.drupalcode.org/project/search_autocomplete"
-            }
-        },
-        {
-            "name": "drupal/simpleads",
-            "version": "2.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/simpleads.git",
-                "reference": "2.0.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simpleads-2.0.12.zip",
-                "reference": "2.0.12",
-                "shasum": "704c3d11c245704675544ac8070b6aaa1a0eacd6"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11",
-                "drupal/js_cookie": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.12",
-                    "datestamp": "1750032666",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Minnur Yunusov (minnur)",
-                    "homepage": "https://www.drupal.org/u/minnur",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Advertisement module.",
-            "homepage": "http://drupal.org/project/simpleads",
-            "keywords": [
-                "Advertisement",
-                "SimpleAds"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/simpleads",
-                "issues": "https://www.drupal.org/project/issues/simpleads"
             }
         },
         {
