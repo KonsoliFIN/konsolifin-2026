@@ -197,6 +197,9 @@ class MatomoService {
     usort($results, function (array $a, array $b): int {
       return $b['view_count'] <=> $a['view_count'];
     });
+    
+    // Only return the first 10 results.
+    $results = array_slice($results, 0, 10);
 
     return $results;
   }
