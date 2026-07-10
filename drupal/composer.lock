@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d08b5717d76435a7edca6028e63fbd4",
+    "content-hash": "1824bb29a8b9da14afae1e1f2c86788b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2884,6 +2884,51 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/slick",
                 "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/stable9-stable9",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stable9.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stable9-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "c884b90834b5b5a4126ead90cb52c61f0dd85713"
+            },
+            "require": {
+                "drupal/core": "^11.3 || ^12"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1783376179",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
+                }
+            ],
+            "description": "A base theme using Drupal 9.0.0's core markup and CSS.",
+            "homepage": "https://drupal.org/project/stable9",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stable9",
+                "issues": "https://drupal.org/project/issues/stable9"
             }
         },
         {

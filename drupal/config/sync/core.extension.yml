@@ -26,7 +26,6 @@ module:
   file: 0
   filter: 0
   help: 0
-  history: 0
   image: 0
   imce: 0
   js_cookie: 0
