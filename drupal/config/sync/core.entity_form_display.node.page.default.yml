@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_hero
     - node.type.page
   module:
+    - media_library
     - path
     - text
 _core:
@@ -30,6 +32,13 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_hero:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
