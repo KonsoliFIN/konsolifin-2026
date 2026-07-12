@@ -6,6 +6,7 @@ dependencies:
     - comment
     - media
     - search
+    - search_autocomplete
     - system
     - taxonomy
 _core:
@@ -19,5 +20,6 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'search content'
+  - 'use search autocomplete'
   - 'view media'
   - 'view vocabulary labels'

@@ -38,8 +38,8 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Seuraava ›'
-            previous: '‹ Edellinen'
+            next: ››
+            previous: ‹‹
             first: '« Ensimmäinen'
             last: 'Viimeinen »'
           expose:
