@@ -95,7 +95,7 @@ class AdInjector implements TrustedCallbackInterface {
 
     // Process from end to start to avoid shifting indices.
     for ($i = $num_rows - 1; $i >= 0; $i--) {
-      if (($i + 1) % 10 === 0) {
+      if (($i + 1) % 10 === 6) {
         $ad_render_array = $ad_extension->renderAd('content');;
         $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
 
