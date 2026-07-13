@@ -15,7 +15,7 @@ class AdExtension extends AbstractExtension {
    *
    * @var int
    */
-  private int $adCounter = 1;
+  private static int $adCounter = 1;
 
   /**
    * {@inheritdoc}
@@ -36,11 +36,14 @@ class AdExtension extends AbstractExtension {
    *   A render array.
    */
   public function renderAd($base_id) {
+    // Write $base_id in a log
+    \Drupal::logger('konsolifin_ads')->notice('renderAd called with base_id: ' . $base_id);
+
     if ($base_id ==='top') {
       $unique_suffix = "";
     } else {
       // We add an incrementing unique suffix so multiple calls on the same page don't clash.
-      $unique_suffix = "_" . $this->adCounter++;
+      $unique_suffix = "_" . AdExtension::$adCounter++;
     }
 
     return [

@@ -3,6 +3,7 @@
 namespace Drupal\konsolifin_ads\Render;
 
 use Drupal\Core\Security\TrustedCallbackInterface;
+use Drupal\konsolifin_ads\TwigExtension\AdExtension;
 
 /**
  * Helper class for injecting ads into rendered content.
@@ -10,17 +11,10 @@ use Drupal\Core\Security\TrustedCallbackInterface;
 class AdInjector implements TrustedCallbackInterface {
 
   /**
-   * A counter to keep track of ad invocations.
-   *
-   * @var int
-   */
-  private static int $adCounter = 1;
-
-  /**
    * {@inheritdoc}
    */
   public static function trustedCallbacks() {
-    return ['postRenderNodeBody', 'postRenderView', 'postRenderPage'];
+    return ['postRenderNodeBody', 'postRenderView'];
   }
 
   /**
@@ -31,12 +25,8 @@ class AdInjector implements TrustedCallbackInterface {
       return $html;
     }
 
-    $unique_suffix = "_" . self::$adCounter++;
-    $ad_render_array = [
-      '#theme' => 'konsolifin_ad',
-      '#base_id' => 'content',
-      '#unique_suffix' => $unique_suffix,
-    ];
+    $ad_extension = \Drupal::service('konsolifin_ads.twig_extension');
+    $ad_render_array = $ad_extension->renderAd('content');
     $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
 
     // Split html by paragraph boundaries
@@ -101,15 +91,12 @@ class AdInjector implements TrustedCallbackInterface {
     $num_rows = count($rows);
     $output = $html;
 
+    $ad_extension = \Drupal::service('konsolifin_ads.twig_extension');
+
     // Process from end to start to avoid shifting indices.
     for ($i = $num_rows - 1; $i >= 0; $i--) {
       if (($i + 1) % 10 === 0) {
-        $unique_suffix = "_" . self::$adCounter++;
-        $ad_render_array = [
-          '#theme' => 'konsolifin_ad',
-          '#base_id' => 'content',
-          '#unique_suffix' => $unique_suffix,
-        ];
+        $ad_render_array = $ad_extension->renderAd('content');;
         $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
 
         // Insert ad html after the row
@@ -119,35 +106,6 @@ class AdInjector implements TrustedCallbackInterface {
     }
 
     return $output;
-  }
-
-  /**
-   * Post-render callback to inject top ad.
-   */
-  public static function postRenderPage($html, array $elements) {
-    if (empty(trim($html))) {
-      return $html;
-    }
-
-    $pos = stripos($html, '<div class="layout-content-wrapper">');
-    if ($pos === FALSE) {
-      $pos = stripos($html, '</header>');
-      if ($pos !== FALSE) {
-        $pos += 9;
-      }
-    }
-
-    if ($pos !== FALSE) {
-      $ad_render_array = [
-        '#theme' => 'konsolifin_ad',
-        '#base_id' => 'top',
-        '#unique_suffix' => '',
-      ];
-      $ad_html = \Drupal::service('renderer')->renderPlain($ad_render_array);
-      $html = substr_replace($html, $ad_html, $pos, 0);
-    }
-
-    return $html;
   }
 
   /**
