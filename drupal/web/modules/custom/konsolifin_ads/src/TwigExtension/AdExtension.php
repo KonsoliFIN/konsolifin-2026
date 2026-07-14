@@ -73,6 +73,9 @@ class AdExtension extends AbstractExtension {
           '#attributes' => [
             'class' => ['gta_online_banner'],
             'id' => $ad_id,
+            'data-track-content' => '',
+            'data-content-name' => 'GTA Online Banner',
+            'data-content-piece' => $ad_id,
           ],
           'ad_link' => [
             '#type' => 'link',
@@ -85,21 +88,6 @@ class AdExtension extends AbstractExtension {
             '#options' => [
               'html' => TRUE,
             ],
-          ],
-          'analytics_script' => [
-            '#type' => 'html_tag',
-            '#tag' => 'script',
-            '#attributes' => [
-              'type' => 'text/javascript',
-              'async' => TRUE,
-            ],
-            '#value' => Markup::create("
-window._mtm = window._mtm || [];
-window._mtm.push({
-  'event':        'banner_view',
-  'destination':  '".$ad_id."'
-});
-"),
           ],
         ];
       }
