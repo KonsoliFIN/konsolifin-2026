@@ -52,7 +52,7 @@ class AdExtension extends AbstractExtension {
 
     // Special handling for a campaign from July 17th through July 31st
     $now = \Drupal::time()->getCurrentTime();
-    $start_date = strtotime('2026-07-13');
+    $start_date = strtotime('2026-07-17');
     $end_date = strtotime('2026-07-31');
     if ($now >= $start_date && $now <= $end_date) {
       $destination_url = 'https://www.rockstargames.com/newswire/article/2525o93834o413/the-kortz-center-heist-now-available-in-gta-online?&utm_source=konsolfin&utm_medium=p_sitedisplay&utm_campaign=00:emea-endemic-20260714&utm_content=fi-eng';
