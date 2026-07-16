@@ -63,12 +63,28 @@ class AdExtension extends AbstractExtension {
       $ad_id = '';
       if ($base_id === 'top') {
         $ad_id = 'gtao_primary';
-        $srcset = $image_url_mobile . ' 300w, ' . $image_url_desktop . ' 970w, ' . $image_url_oversize . ' 1920w';
-        $sizes = '(width <= 800px) 300px, (width <= 1600px) 970px, 1920px';
+        $picture_markup = Markup::create(sprintf(
+          '<picture>' .
+          '<source media="(max-width: 800px)" srcset="%s">' .
+          '<source media="(max-width: 1600px)" srcset="%s">' .
+          '<img src="%s" alt="%s">' .
+          '</picture>',
+          $image_url_mobile,
+          $image_url_desktop,
+          $image_url_oversize,
+          htmlspecialchars($alt_text, ENT_QUOTES, 'UTF-8')
+        ));
       } else if ($base_id === 'content' && $unique_suffix === '_2') {
         $ad_id = 'gtao_secondary';
-        $srcset = $image_url_mobile . ' 300w, ' . $image_url_desktop . ' 970w';
-        $sizes = '(width <= 800px) 300px, 970px';
+        $picture_markup = Markup::create(sprintf(
+          '<picture>' .
+          '<source media="(max-width: 800px)" srcset="%s">' .
+          '<img src="%s" alt="%s">' .
+          '</picture>',
+          $image_url_mobile,
+          $image_url_desktop,
+          htmlspecialchars($alt_text, ENT_QUOTES, 'UTF-8')
+        ));
       }
       if ($ad_id !== '') {
         return [
@@ -79,13 +95,7 @@ class AdExtension extends AbstractExtension {
           'ad_link' => [
             '#type' => 'link',
             '#title' => [
-              '#theme' => 'image',
-              '#uri' => $image_url_mobile,
-              '#alt' => $alt_text,
-              '#attributes' => [
-                'srcset' => $srcset,
-                'sizes' => $sizes,
-              ],
+              '#markup' => $picture_markup,
             ],
             '#url' => Url::fromUri($destination_url),
             '#options' => [
