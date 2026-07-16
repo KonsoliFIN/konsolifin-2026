@@ -1,16 +1,21 @@
+.gta_online_banner,
 .konsolifin_ad_wrapper {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.frontpage-tier--compact .konsolifin_ad_wrapper {
-    grid-column: 1 / -1;
+.frontpage-tier--compact .konsolifin_ad_wrapper,
+.frontpage-tier--compact .gta_online_banner {
+  grid-column: 1 / -1;
 }
 
 .konsolifin_ad_top_bar,
 .konsolifin_ad_bottom_bar {
   text-align: center;
   margin: 10px 0;
-  position: relative; /* required for absolute children */
+  position: relative;
+  /* required for absolute children */
 }
 
 .node__body .konsolifin_ad_top_bar:before,
@@ -21,7 +26,8 @@
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
-  background: var(--color-bg-primary); /* hides the line behind text */
+  background: var(--color-bg-primary);
+  /* hides the line behind text */
   z-index: 1;
   font-size: 10px;
 }

@@ -27,8 +27,4 @@
   <div{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
   </div>
-
-  {% if loop.index % 10 == 0 %}
-    {{ konsolifin_ad('content') }}
-  {% endif %}
 {% endfor %}
