@@ -56,19 +56,19 @@ class AdExtension extends AbstractExtension {
     $end_date = strtotime('2026-07-31');
     if ($now >= $start_date && $now <= $end_date) {
       $destination_url = 'https://www.rockstargames.com/newswire/article/2525o93834o413/the-kortz-center-heist-now-available-in-gta-online?&utm_source=konsolfin&utm_medium=p_sitedisplay&utm_campaign=00:emea-endemic-20260714&utm_content=fi-eng';
+      $image_url_oversize = 'https://www.konsolifin.net/sites/default/files/2026-07/GTAO_TKCH_LaunchPM_Multi_1920x1080_R01_fi_fi.jpg';
       $image_url_desktop = 'https://www.konsolifin.net/sites/default/files/2026-07/GTAO_TKCH_LaunchPM_Multi_970x250_R01_fi_fi.jpg';
       $image_url_mobile = 'https://www.konsolifin.net/sites/default/files/2026-07/GTAO_TKCH_LaunchPM_Multi_300x600_R01_fi_fi.jpg';
       $alt_text = 'GTA Online: The Kortz Center Heist pelattavissa nyt!';
       $ad_id = '';
       if ($base_id === 'top') {
         $ad_id = 'gtao_primary';
-        $image_url_oversize = 'https://www.konsolifin.net/sites/default/files/2026-07/GTAO_TKCH_LaunchPM_Multi_1920x1080_R01_fi_fi.jpg';
-        $srcset = $image_url_mobile . ' 300w,' . $image_url_desktop . ' 970w, ' . $image_url_oversize . ' 1920w';
-        $sizes = '(width < 1000px) 300px, (width < 2000px) 970px, 1920px';
+        $srcset = $image_url_mobile . ' 300w, ' . $image_url_desktop . ' 970w, ' . $image_url_oversize . ' 1920w';
+        $sizes = '(width <= 800px) 300px, (width <= 1600px) 970px, 1920px';
       } else if ($base_id === 'content' && $unique_suffix === '_2') {
         $ad_id = 'gtao_secondary';
-        $srcset = $image_url_mobile . ' 300w,' . $image_url_desktop . ' 970w';
-        $sizes = '(width < 1000px) 300px, 970px';
+        $srcset = $image_url_mobile . ' 300w, ' . $image_url_desktop . ' 970w';
+        $sizes = '(width <= 800px) 300px, 970px';
       }
       if ($ad_id !== '') {
         return [
