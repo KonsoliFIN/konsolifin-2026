@@ -1,6 +1,8 @@
 .gta_online_banner,
 .konsolifin_ad_wrapper {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .frontpage-tier--compact .konsolifin_ad_wrapper,
