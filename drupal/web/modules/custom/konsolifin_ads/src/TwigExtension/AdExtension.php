@@ -40,9 +40,6 @@ class AdExtension extends AbstractExtension {
    *   A render array.
    */
   public function renderAd($base_id) {
-    // Write $base_id in a log
-    \Drupal::logger('konsolifin_ads')->notice('renderAd called with base_id: ' . $base_id);
-
     if ($base_id ==='top') {
       $unique_suffix = "";
     } else {
@@ -117,7 +114,11 @@ class AdExtension extends AbstractExtension {
     if (Settings::get('dev_environment', FALSE)) {
       return [
         '#type' => 'markup',
-        '#markup' => '<div class="konsolifin_ad_wrapper">Ad Placeholder '.$base_id.$unique_suffix.'</div>',
+        '#markup' => '<div class="konsolifin_ad_wrapper">
+          <div class="konsolifin_ad_top_bar"></div>
+          <div class="konsolifin-ad-container">Ad Placeholder '.$base_id.$unique_suffix.'</div>
+          <div class="konsolifin_ad_bottom_bar"></div>
+        </div>',
       ];
     }
 
