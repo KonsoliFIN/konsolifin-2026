@@ -91,6 +91,7 @@ class AdExtension extends AbstractExtension {
           '#type' => 'container',
           '#attributes' => [
             'class' => ['gta_online_banner'],
+            'id' => $ad_id . '_banner',
           ],
           'ad_link' => [
             '#type' => 'link',
