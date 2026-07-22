@@ -13,7 +13,8 @@ use Drupal\konsolifin_ads\Render\AdInjector;
 /**
  * Implements hook_page_attachments().
  */
-function konsolifin_ads_page_attachments(array &$attachments) {
+function konsolifin_ads_page_attachments(array &$attachments)
+{
   $basePath = \Drupal::service('extension.list.module')->getPath('konsolifin_ads');
   $attachments['#attached']['library'][] = 'konsolifin_ads/ads_setup';
 
@@ -56,7 +57,8 @@ function konsolifin_ads_page_attachments(array &$attachments) {
   ];
 }
 
-function konsolifin_ads_page_bottom(array &$page_bottom) {
+function konsolifin_ads_page_bottom(array &$page_bottom)
+{
   $page_bottom['anchor_ad'] = [
     '#theme' => 'konsolifin_ad',
     '#base_id' => 'anchor',
@@ -67,7 +69,8 @@ function konsolifin_ads_page_bottom(array &$page_bottom) {
 /**
  * Implements hook_theme().
  */
-function konsolifin_ads_theme($existing, $type, $theme, $path) {
+function konsolifin_ads_theme($existing, $type, $theme, $path)
+{
   return [
     'konsolifin_ad' => [
       'variables' => [
@@ -82,7 +85,8 @@ function konsolifin_ads_theme($existing, $type, $theme, $path) {
 /**
  * Implements hook_entity_view_alter().
  */
-function konsolifin_ads_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+function konsolifin_ads_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display)
+{
   // Only target nodes in full view mode.
   if ($entity->getEntityTypeId() === 'node' && $build['#view_mode'] === 'full') {
     // Check if the body field is being rendered.
@@ -96,18 +100,21 @@ function konsolifin_ads_entity_view_alter(array &$build, EntityInterface $entity
 /**
  * Implements hook_preprocess_views_view().
  */
-function konsolifin_ads_preprocess_views_view(&$variables) {
+function konsolifin_ads_preprocess_views_view(&$variables)
+{
   $view = $variables['view'];
-  if (in_array(
-    $view->id(),
-    [
-      'uutiset',
-      'artikkelit_blogit_ja_laitearviot',
-      'frontpage',
-      'peliarvostelut',
-      'podcastit',
-    ])) {
-    \Drupal::logger('konsolifin_ads')->notice("Preprocess views invoked, view: ".$variables['view']->id().", plugin: ".$variables['view']->style_plugin->getPluginId().", is there rows? " . is_array($variables['rows']));
+  if (
+    in_array(
+      $view->id(),
+      [
+        'uutiset',
+        'artikkelit_blogit_ja_laitearviot',
+        'frontpage',
+        'peliarvostelut',
+        'podcastit',
+      ]
+    )
+  ) {
 
     if (isset($variables['rows']) && is_array($variables['rows'])) {
       $variables['rows']['#post_render'][] = [AdInjector::class, 'postRenderView'];
@@ -118,7 +125,8 @@ function konsolifin_ads_preprocess_views_view(&$variables) {
 /**
  * Implements hook_preprocess_page().
  */
-function konsolifin_ads_preprocess_page(&$variables) {
+function konsolifin_ads_preprocess_page(&$variables)
+{
   if (isset($variables['page']) && is_array($variables['page'])) {
     $variables['page']['#post_render'][] = [AdInjector::class, 'postRenderPage'];
   }
