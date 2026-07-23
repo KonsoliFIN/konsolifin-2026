@@ -3,11 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.full_html
     - node.type.uutinen
     - node.type.video
   module:
-    - filter
     - node
     - system
 id: yhteisosisallontuottaja
@@ -20,6 +18,5 @@ permissions:
   - 'create video content'
   - 'edit own uutinen content'
   - 'edit own video content'
-  - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'

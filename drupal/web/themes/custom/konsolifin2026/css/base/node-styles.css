@@ -50,7 +50,7 @@ figure img {
     margin-bottom: 0 !important;
 }
 
-p + div.sisalto-kuvateksti {
+p+div.sisalto-kuvateksti {
     margin-top: -2em;
     margin-bottom: 1em;
 }
@@ -81,7 +81,8 @@ figcaption {
 
 .video-embed-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
     margin: 2rem 0;
 }
@@ -104,7 +105,7 @@ figcaption {
     margin: 1rem;
 }
 
-p.sisalto-lisatieto + p.sisalto-lisatieto {
+p.sisalto-lisatieto+p.sisalto-lisatieto {
     margin-top: -3rem;
     border-top: none;
 }
@@ -117,10 +118,14 @@ div.sisalto-lisatieto p {
     font-size: 1rem;
 }
 
-div.sisalto-lisatieto :first-child  {
+div.sisalto-lisatieto :first-child {
     margin-top: 0px;
 }
 
 div.sisalto-lisatieto :last-child {
     margin-bottom: 0px;
+}
+
+span.sisalto-oikoluku {
+    display: none;
 }
