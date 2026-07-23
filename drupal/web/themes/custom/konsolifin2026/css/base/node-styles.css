@@ -127,5 +127,6 @@ div.sisalto-lisatieto :last-child {
 }
 
 span.sisalto-oikoluku {
-    display: none;
+    background-color: yellow;
+    color: black !important;
 }
