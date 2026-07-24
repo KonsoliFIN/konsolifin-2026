@@ -109,6 +109,9 @@ settings:
         -
           label: Lisätietolaatikko
           element: '<p class="sisalto-lisatieto">'
+        -
+          label: Oikolukukommentti
+          element: '<span class="sisalto-oikoluku">'
     media_media:
       allow_view_mode_override: false
     video_embed_wysiwyg_video_embed:
@@ -120,6 +123,7 @@ settings:
           height: '480'
           title_format: '@provider | @title'
           title_fallback: true
+          loading: lazy
 image_upload:
   status: true
   scheme: public

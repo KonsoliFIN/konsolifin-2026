@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\node\NodeInterface;
+
 /**
  * Implements hook_preprocess_node().
  */
@@ -92,6 +94,57 @@ function konsolifin_misc_pathauto_alias_alter(&$alias, array &$context)
 
     if ($node->hasField('field_pelin_nimi') && !$node->get('field_pelin_nimi')->isEmpty()) {
       $alias = $alias . '-' . \Drupal::service('pathauto.alias_cleaner')->cleanString($node->get('field_pelin_nimi')->value);
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ */
+function konsolifin_misc_node_presave(NodeInterface $node) {
+  // If the status is 1 (published) and the node has a body field.
+  if ((int) $node->get('status')->value === 1 && $node->hasField('body') && !$node->get('body')->isEmpty()) {
+    $body_field = $node->get('body');
+    $html = $body_field->value;
+
+    // Quick check before parsing DOM to optimize performance.
+    if (strpos($html, 'sisalto-oikoluku') !== FALSE) {
+      $dom = new \DOMDocument();
+      // Disable entity loader/warnings for HTML parsing.
+      libxml_use_internal_errors(TRUE);
+
+      // Wrap in a div and convert encoding to preserve UTF-8 characters properly.
+      $wrapped = '<?xml encoding="utf-8" ?><div>' . $html . '</div>';
+      $dom->loadHTML($wrapped, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+      $xpath = new \DOMXPath($dom);
+      // Query for span elements with class 'sisalto-oikoluku'
+      $spans = $xpath->query('//span[contains(concat(" ", normalize-space(@class), " "), " sisalto-oikoluku ")]');
+
+      if ($spans->length > 0) {
+        $to_remove = [];
+        foreach ($spans as $span) {
+          $to_remove[] = $span;
+        }
+        foreach ($to_remove as $span) {
+          $span->parentNode->removeChild($span);
+        }
+
+        // Save the modified HTML of the children of the wrapper div.
+        $root = $dom->getElementsByTagName('div')->item(0);
+        $new_html = '';
+        if ($root) {
+          foreach ($root->childNodes as $child) {
+            $new_html .= $dom->saveHTML($child);
+          }
+        }
+
+        $node->set('body', [
+          'value' => $new_html,
+          'format' => $body_field->format,
+        ]);
+      }
+      libxml_clear_errors();
     }
   }
 }

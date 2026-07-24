@@ -42,7 +42,11 @@
     border-bottom: none;
 }
 
-.ck-editor .sisalto-lisatieto + .sisalto-lisatieto {
+.ck-editor .sisalto-lisatieto+.sisalto-lisatieto {
     margin-top: 0;
     border-top: none;
+}
+
+.ck-editor .sisalto-oikoluku {
+    background-color: yellow;
 }
