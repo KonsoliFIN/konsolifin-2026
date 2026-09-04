@@ -42,7 +42,8 @@ use Symfony\Component\HttpFoundation\Response;
  *   - field_view_field()        → $entity->field_name->view()
  *   - node_view($node, $mode)   → \Drupal::entityTypeManager()→getViewBuilder()
  */
-class KonsolifinController extends ControllerBase {
+class KonsolifinController extends ControllerBase
+{
 
   /**
    * The pager manager service.
@@ -68,8 +69,9 @@ class KonsolifinController extends ControllerBase {
   /**
    * {@inheritdoc}
    */
-  public static function create(ContainerInterface $container): static {
-    $instance               = parent::create($container);
+  public static function create(ContainerInterface $container): static
+  {
+    $instance = parent::create($container);
     $instance->pagerManager = $container->get('pager.manager');
     $instance->requestStack = $container->get('request_stack');
     $instance->rssFeedService = $container->get('konsolifin_misc.rss_feed');
@@ -89,7 +91,8 @@ class KonsolifinController extends ControllerBase {
   /**
    * Redirects the current user to their own profile edit page.
    */
-  public function editMyProfile(): RedirectResponse {
+  public function editMyProfile(): RedirectResponse
+  {
     $uid = $this->currentUser()->id();
     $url = Url::fromRoute('entity.user.edit_form', ['user' => $uid]);
     return new RedirectResponse($url->toString());
@@ -117,9 +120,10 @@ class KonsolifinController extends ControllerBase {
   /**
    * Games listing page (/pelit).
    */
-  public function gamesList(): array {
-    $request      = $this->requestStack->getCurrentRequest();
-    $search_term  = $request->query->get('gamename', '');
+  public function gamesList(): array
+  {
+    $request = $this->requestStack->getCurrentRequest();
+    $search_term = $request->query->get('gamename', '');
     $first_letter = $request->query->get('f', '');
 
     // Build the alphabet filter links.
@@ -135,7 +139,7 @@ class KonsolifinController extends ControllerBase {
     // D7 used db_select('taxonomy_term_data') directly.  In D11 we use the
     // Entity Query API which is storage-backend agnostic.
     $storage = $this->entityTypeManager()->getStorage('taxonomy_vocabulary');
-    $vocabs  = $storage->loadByProperties(['vid' => 'peli']);
+    $vocabs = $storage->loadByProperties(['vid' => 'peli']);
     if (empty($vocabs)) {
       $output['error'] = ['#markup' => '<p>Sanastoa "peli" ei löydy.</p>'];
       return $output;
@@ -161,7 +165,7 @@ class KonsolifinController extends ControllerBase {
     // );
 
     $games_per_page = 20;
-    $total          = count($tids);
+    $total = count($tids);
 
     // Single match → redirect straight to the term page.
     if ($total === 1) {
@@ -172,16 +176,16 @@ class KonsolifinController extends ControllerBase {
 
     // Initialise pager.
     $pager = $this->pagerManager->createPager($total, $games_per_page);
-    $page  = $pager->getCurrentPage();
+    $page = $pager->getCurrentPage();
 
     $output['page_header'] = ['#markup' => '<h2>' . $this->t('Game list') . '</h2>'];
-    $output['list_start']  = ['#markup' => '<div class="row"><div class="col-lg-10 col-lg-offset-1">'];
+    $output['list_start'] = ['#markup' => '<div class="row"><div class="col-lg-10 col-lg-offset-1">'];
 
     if ($total === 0) {
       $output['empty'] = ['#markup' => '<p>Pelejä ei löytynyt!</p>'];
     } else {
       $paged_tids = array_slice(array_values($tids), $page * $games_per_page, $games_per_page);
-      $terms      = $this->entityTypeManager()
+      $terms = $this->entityTypeManager()
         ->getStorage('taxonomy_term')
         ->loadMultiple($paged_tids);
 
@@ -191,26 +195,26 @@ class KonsolifinController extends ControllerBase {
         $alias = $alias_manager->getAliasByPath('/taxonomy/term/' . $term->id());
 
         $output['term_' . $k] = [
-          '#type'         => 'container',
-          '#attributes'   => ['class' => ['row']],
-          'image_col'     => [
+          '#type' => 'container',
+          '#attributes' => ['class' => ['row']],
+          'image_col' => [
             '#markup' => '<div class="col-xs-1"><a href="' . $alias . '">',
           ],
-          'image'         => $term->get('field_nostokuva')->view([
-            'label'    => 'hidden',
+          'image' => $term->get('field_nostokuva')->view([
+            'label' => 'hidden',
             'settings' => ['image_style' => 'uutisvirta'],
           ]),
           'image_col_end' => ['#markup' => '</a></div>'],
-          'title_col'     => [
+          'title_col' => [
             '#markup' => '<div class="col-xs-11"><h3><a href="' . $alias . '">'
-            . $term->label() . '</a></h3></div>',
+              . $term->label() . '</a></h3></div>',
           ],
         ];
       }
     }
 
     $output['list_end'] = ['#markup' => '</div></div>'];
-    $output['pager']    = ['#type' => 'pager'];
+    $output['pager'] = ['#type' => 'pager'];
 
     return $output;
   }
@@ -231,12 +235,13 @@ class KonsolifinController extends ControllerBase {
   /**
    * Staff listing page (/toimitus).
    */
-  public function staffList(): array {
+  public function staffList(): array
+  {
     $output = [];
 
     $role_labels = [
-      'Board'             => 'johtoryhmä',
-      'Editorial Staff'   => 'toimitus',
+      'Board' => 'johtoryhmä',
+      'Editorial Staff' => 'toimitus',
       'Community Writers' => 'yhteisosisallontuottaja',
     ];
 
@@ -244,7 +249,7 @@ class KonsolifinController extends ControllerBase {
     // NOTE: In D11 uid=1 may not be a reliable fallback; adapt as needed.
     $default_user = \Drupal\user\Entity\User::load(1);
 
-    $shown_people  = [];
+    $shown_people = [];
     $alias_manager = \Drupal::service('path_alias.manager');
 
     foreach ($role_labels as $group_label => $role_machine_name) {
@@ -261,8 +266,8 @@ class KonsolifinController extends ControllerBase {
       }
 
       $output[$group_label . '_block'] = [
-        '#type'       => 'fieldset',
-        '#title'      => $this->t($group_label),
+        '#type' => 'fieldset',
+        '#title' => $this->t($group_label),
         '#attributes' => ['class' => ['bg-info', 'text-info']],
       ];
 
@@ -274,36 +279,36 @@ class KonsolifinController extends ControllerBase {
 
         /** @var \Drupal\user\Entity\User $profile */
         $profile = \Drupal\user\Entity\User::load($uid);
-        if (! $profile) {
+        if (!$profile) {
           continue;
         }
 
-        $url  = $alias_manager->getAliasByPath('/user/' . $uid);
-        $name = (! $profile->get('field_oikea_nimi')->isEmpty())
+        $url = $alias_manager->getAliasByPath('/user/' . $uid);
+        $name = (!$profile->get('field_oikea_nimi')->isEmpty())
           ? $profile->get('field_oikea_nimi')->value
           : $profile->getAccountName();
 
         // Profile picture: use user's own image or fall back to default user.
-        $has_pic    = ! $profile->get('field_nostokuva')->isEmpty();
+        $has_pic = !$profile->get('field_nostokuva')->isEmpty();
         $pic_entity = $has_pic ? $profile : $default_user;
-        $pic        = $pic_entity->get('field_nostokuva')->view([
-          'label'    => 'hidden',
+        $pic = $pic_entity->get('field_nostokuva')->view([
+          'label' => 'hidden',
           'settings' => ['image_style' => 'uutisvirta'],
         ]);
 
         $desc = $profile->get('field_esittely')->view(['label' => 'hidden']);
 
         $output[$group_label . '_block'][] = [
-          '#markup'  =>
-          '<div class="row">'
-          . '<div class="col-xs-3"><a href="' . $url . '">',
-          'pic'      => $pic,
-          'pic_end'  => ['#markup' => '</a></div>'],
+          '#markup' =>
+            '<div class="row">'
+            . '<div class="col-xs-3"><a href="' . $url . '">',
+          'pic' => $pic,
+          'pic_end' => ['#markup' => '</a></div>'],
           'desc_col' => [
             '#markup' => '<div class="col-xs-9">'
-            . '<a href="' . $url . '"><h3>' . $name . '</h3></a>',
+              . '<a href="' . $url . '"><h3>' . $name . '</h3></a>',
           ],
-          'desc'     => $desc,
+          'desc' => $desc,
           'desc_end' => ['#markup' => '</div></div>'],
         ];
       }
@@ -327,7 +332,8 @@ class KonsolifinController extends ControllerBase {
   /**
    * Video content listing page (/videot).
    */
-  public function videoContent(): array {
+  public function videoContent(): array
+  {
     $videos_per_page = 12;
 
     $count_query = $this->entityTypeManager()
@@ -340,7 +346,7 @@ class KonsolifinController extends ControllerBase {
     $count = (int) $count_query->execute();
 
     $pager = $this->pagerManager->createPager($count, $videos_per_page);
-    $page  = $pager->getCurrentPage();
+    $page = $pager->getCurrentPage();
 
     $nids = $this->entityTypeManager()
       ->getStorage('node')
@@ -361,17 +367,17 @@ class KonsolifinController extends ControllerBase {
     $fields = ['div_open' => ['#markup' => '<div class="row">']];
 
     foreach ($nodes as $node) {
-      $nid                         = $node->id();
+      $nid = $node->id();
       $fields['open_node_' . $nid] = [
         '#markup' => '<div class="video-node-teasers col-md-6 col-xs-12" '
-        . 'style="height: 0px; padding-bottom: 33%;">',
+          . 'style="height: 0px; padding-bottom: 33%;">',
       ];
-      $fields['node_' . $nid]       = $view_builder->view($node, 'highlight');
+      $fields['node_' . $nid] = $view_builder->view($node, 'highlight');
       $fields['close_node_' . $nid] = ['#markup' => '</div>'];
     }
 
     $fields['div_close'] = ['#markup' => '</div>'];
-    $fields['pager']     = ['#type' => 'pager'];
+    $fields['pager'] = ['#type' => 'pager'];
 
     return $fields;
   }
@@ -393,7 +399,8 @@ class KonsolifinController extends ControllerBase {
   /**
    * Review summaries page (/review_summaries).
    */
-  public function reviewSummaries(): Response {
+  public function reviewSummaries(): Response
+  {
     $nids = $this->entityTypeManager()
       ->getStorage('node')
       ->getQuery()
@@ -418,21 +425,23 @@ class KonsolifinController extends ControllerBase {
       // Determine game name.
       $gamename = '(tuntematon peli)';
 
-      if (! $node->get('field_pelit')->isEmpty()) {
+      if (!$node->get('field_pelit')->isEmpty()) {
         $game_tid = $node->get('field_pelit')->target_id;
-        $game     = \Drupal\taxonomy\Entity\Term::load($game_tid);
+        $game = \Drupal\taxonomy\Entity\Term::load($game_tid);
         $gamename = $game ? $game->label() : '(tuntematon peli)';
       }
 
-      if (! $node->get('field_pelin_nimi')->isEmpty()
-        && $node->get('field_pelin_nimi')->value !== '') {
+      if (
+        !$node->get('field_pelin_nimi')->isEmpty()
+        && $node->get('field_pelin_nimi')->value !== ''
+      ) {
         $gamename .= ' ' . $node->get('field_pelin_nimi')->value;
       }
 
       $platform_name = '';
-      if (! $node->get('field_arvosteltu_versio')->isEmpty()) {
-        $platform_tid  = $node->get('field_arvosteltu_versio')->target_id;
-        $platform      = \Drupal\taxonomy\Entity\Term::load($platform_tid);
+      if (!$node->get('field_arvosteltu_versio')->isEmpty()) {
+        $platform_tid = $node->get('field_arvosteltu_versio')->target_id;
+        $platform = \Drupal\taxonomy\Entity\Term::load($platform_tid);
         $platform_name = $platform ? $platform->label() : '';
       }
 
@@ -442,16 +451,16 @@ class KonsolifinController extends ControllerBase {
       }
 
       $score_raw = (int) ($node->get('field_arvosana')->value ?? 0);
-      $score     = round($score_raw / 40) / 2;
-      $url       = $base_url . '/node/' . $node->id();
-      $summary   = $node->get('field_summary_in_english')->value;
-      $title     = $gamename . ' - ' . $platform_name . ' - ' . $score . '/5';
+      $score = round($score_raw / 40) / 2;
+      $url = $base_url . '/node/' . $node->id();
+      $summary = $node->get('field_summary_in_english')->value;
+      $title = $gamename . ' - ' . $platform_name . ' - ' . $score . '/5';
       $published = \Drupal::service('date.formatter')->format($node->getCreatedTime(), 'custom', 'Y-m-d H:i');
 
       $html .= "<h2>" . htmlspecialchars($title) . "</h2>\n"
-      . "<p><em>Published on " . $published . "</em></p>\n"
-      . "<p><a href=\"" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "\">" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "</a></p>\n"
-      . "<p>" . htmlspecialchars($summary) . "</p>\n";
+        . "<p><em>Published on " . $published . "</em></p>\n"
+        . "<p><a href=\"" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "\">" . htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . "</a></p>\n"
+        . "<p>" . htmlspecialchars($summary) . "</p>\n";
     }
 
     $html .= "</body>\n</html>";
@@ -462,14 +471,16 @@ class KonsolifinController extends ControllerBase {
   /**
    * RSS feed (/feed/feed.php).
    */
-  public function rssFeed(): Response {
+  public function rssFeed(): Response
+  {
     return $this->rssFeedService->buildFeed(RssFeedService::MODE_FIRST_PARAGRAPH);
   }
 
   /**
    * RSS feed for forum (/feed/forforum.php).
    */
-  public function rssFeedForum(): Response {
+  public function rssFeedForum(): Response
+  {
     return $this->rssFeedService->buildFeed(RssFeedService::MODE_FULL_BODY);
   }
 
@@ -479,7 +490,8 @@ class KonsolifinController extends ControllerBase {
    * iTunes-compatible podcast feed. Channel metadata can be customized by
    * editing the array below.
    */
-  public function podcastFeed(): Response {
+  public function podcastFeed(): Response
+  {
     return $this->rssFeedService->buildPodcastFeed();
   }
 
@@ -497,7 +509,8 @@ class KonsolifinController extends ControllerBase {
   /**
    * Test page listing one teaser per content type (/kfintest/linkit).
    */
-  public function testLinks(): array {
+  public function testLinks(): array
+  {
     $output = [];
 
     /** @var \Drupal\node\NodeTypeInterface[] $node_types */
@@ -518,7 +531,7 @@ class KonsolifinController extends ControllerBase {
         ->range(0, 1)
         ->execute();
 
-      if (! empty($nids)) {
+      if (!empty($nids)) {
         $node = $this->entityTypeManager()
           ->getStorage('node')
           ->load(reset($nids));
@@ -529,30 +542,6 @@ class KonsolifinController extends ControllerBase {
     }
 
     return $output;
-  }
-
-  // ---------------------------------------------------------------------------
-  // Legacy redirects
-  //
-  // D7 used raw header() calls. D11 uses RedirectResponse.
-  // ---------------------------------------------------------------------------
-
-  /**
-   * 301 redirect to site root for old legacy paths.
-   *
-   * D7: konsolifin_legacy_path_redirect() — header("HTTP/1.1 301 …"); header("Location: /");
-   */
-  public function legacyRedirect(): RedirectResponse {
-    return new RedirectResponse('/', 301);
-  }
-
-  /**
-   * 301 redirect to the external forum.
-   *
-   * D7: konsolifin_legacy_forum_path() — header("HTTP/1.1 301 …"); header("Location: //forum.konsolifin.net");
-   */
-  public function legacyForumRedirect(): RedirectResponse {
-    return new RedirectResponse('//forum.konsolifin.net', 301);
   }
 
   // ---------------------------------------------------------------------------
@@ -570,7 +559,8 @@ class KonsolifinController extends ControllerBase {
   /**
    * Redirects the password-reset path to the external forum (HTTP 410).
    */
-  public function resetPasswordRedirect(): Response {
+  public function resetPasswordRedirect(): Response
+  {
     // A 410 Gone with a Location header is non-standard but matches the D7
     // behaviour.  Alternatively, return a 301 or a plain 410 without redirect.
     $response = new Response('', 410);
@@ -600,40 +590,44 @@ class KonsolifinController extends ControllerBase {
   /**
    * Custom 403 page (/403_not_allowed).
    */
-  public function accessDenied(): array {
+  public function accessDenied(): array
+  {
     $request = $this->requestStack->getCurrentRequest();
     $account = $this->currentUser();
-    $output  = [];
+    $output = [];
 
     if ($account->isAuthenticated()) {
       $roles_raw = $account->getRoles();
-      $output[]  = ['#markup' => '<h2>Ei käyttöoikeuksia</h2>'];
-      $output[]  = ['#markup' => '<p>Moi, ' . $account->getAccountName() . '</p>'];
-      $output[]  = ['#markup' =>
-        '<p>olet yrittänyt toimintoa, johon sinulla ei tunnu olevan oikeuksia. Mikäli '
-        . 'epäilet tämän johtuvan teknisestä virheestä, ota yhteyttä '
-        . '<a href="mailto:toimitus@konsolifin.net">KonsoliFINin toimitukseen</a>. '
-        . 'Kopioi seuraavat tiedot sähköpostiin.</p>',
+      $output[] = ['#markup' => '<h2>Ei käyttöoikeuksia</h2>'];
+      $output[] = ['#markup' => '<p>Moi, ' . $account->getAccountName() . '</p>'];
+      $output[] = [
+        '#markup' =>
+          '<p>olet yrittänyt toimintoa, johon sinulla ei tunnu olevan oikeuksia. Mikäli '
+          . 'epäilet tämän johtuvan teknisestä virheestä, ota yhteyttä '
+          . '<a href="mailto:toimitus@konsolifin.net">KonsoliFINin toimitukseen</a>. '
+          . 'Kopioi seuraavat tiedot sähköpostiin.</p>',
       ];
-      $output[] = ['#markup' =>
-        '<pre>'
-        . 'Käyttäjätunnus : ' . $account->getAccountName() . '<br />'
-        . 'UID            : ' . $account->id() . '<br />'
-        . 'Käyttäjäroolit : ' . implode(', ', $roles_raw) . '<br />'
-        . 'Sivun polku    : ' . htmlspecialchars($request->getRequestUri()) . '<br />'
-        . '</pre>',
+      $output[] = [
+        '#markup' =>
+          '<pre>'
+          . 'Käyttäjätunnus : ' . $account->getAccountName() . '<br />'
+          . 'UID            : ' . $account->id() . '<br />'
+          . 'Käyttäjäroolit : ' . implode(', ', $roles_raw) . '<br />'
+          . 'Sivun polku    : ' . htmlspecialchars($request->getRequestUri()) . '<br />'
+          . '</pre>',
       ];
     } else {
       $output[] = ['#markup' => '<h2>Kirjaudu sisään!</h2>'];
-      $output[] = ['#markup' =>
-        '<p>Moi,</p><p>olet yrittänyt toimintoa, jota varten täytyy olla kirjautuneena sisään. '
-        . 'Jatka syöttämällä käyttäjätunnus ja salasana.</p>'
-        . '<p>Mikäli et ole vielä rekisteröitynyt KonsoliFIN-sivustolle, '
-        . '<a href="//forum.konsolifin.net/login/">rekisteröidy foorumillamme</a>.</p>',
+      $output[] = [
+        '#markup' =>
+          '<p>Moi,</p><p>olet yrittänyt toimintoa, jota varten täytyy olla kirjautuneena sisään. '
+          . 'Jatka syöttämällä käyttäjätunnus ja salasana.</p>'
+          . '<p>Mikäli et ole vielä rekisteröitynyt KonsoliFIN-sivustolle, '
+          . '<a href="//forum.konsolifin.net/login/">rekisteröidy foorumillamme</a>.</p>',
       ];
       // In D11 the login form lives at its own route; link to it.
       $login_url = Url::fromRoute('user.login')->toString();
-      $output[]  = ['#markup' => '<p><a href="' . $login_url . '">Kirjaudu sisään</a></p>'];
+      $output[] = ['#markup' => '<p><a href="' . $login_url . '">Kirjaudu sisään</a></p>'];
     }
 
     return $output;
@@ -642,9 +636,10 @@ class KonsolifinController extends ControllerBase {
   /**
    * Custom 404 page (/404_not_found).
    */
-  public function notFound(): array {
+  public function notFound(): array
+  {
     $request = $this->requestStack->getCurrentRequest();
-    $path    = htmlspecialchars($request->getRequestUri());
+    $path = htmlspecialchars($request->getRequestUri());
 
     $output[] = ['#markup' => '<h2>404-sivu</h2>'];
     $output[] = ['#markup' => "<p>Sivua, jota etsit ($path), ei löydy.</p>"];
