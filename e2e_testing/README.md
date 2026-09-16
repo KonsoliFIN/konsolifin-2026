@@ -2,7 +2,7 @@
 
 Tämä hakemisto sisältää KonsoliFINin End-to-End- (E2E) regressio- ja savutestit, jotka on toteutettu [Playwright](https://playwright.dev/)-testauskehyksellä.
 
-Testit varmistavat sivuston kriittiset toiminnot, kuten julkisten sivujen navigaation, evästebannerin kuittaamisen, sisällön selauksen, kirjautumisen (`/user/login?showcore`) sekä ylläpidon hallintanäkymät Drupal-coren ja moduulipäivitysten jälkeen.
+Testit kattavat sekä paikallisen kehitysympäristön (`tests/konsolifin.spec.js`) että staging-testiympäristön (`tests/staging.spec.js`), joka sijaitsee osoitteessa [https://stage.konsolifin.net](https://stage.konsolifin.net).
 
 ---
 
@@ -10,16 +10,18 @@ Testit varmistavat sivuston kriittiset toiminnot, kuten julkisten sivujen naviga
 
 - [Suomeksi (Finnish)](#suomeksi)
   - [1. Esivaatimukset](#1-esivaatimukset)
-  - [2. Alkuasennus ja konfigurointi](#2-alkuasennus-ja-konfigurointi)
-  - [3. Testien ajaminen](#3-testien-ajaminen)
-  - [4. Testiraportit ja virheenjäljitys](#4-testiraportit-ja-virheenjäljitys)
-  - [5. Uusien testien nauhoitus ja kirjoittaminen](#5-uusien-testien-nauhoitus-ja-kirjoittaminen)
+  - [2. Alkuasennus ja .env-konfigurointi](#2-alkuasennus-ja-env-konfigurointi)
+  - [3. Testisarjat (Local vs Staging)](#3-testisarjat)
+  - [4. Testien ajaminen](#4-testien-ajaminen)
+  - [5. Testiraportit ja virheenjäljitys](#5-testiraportit-ja-virheenjäljitys)
+  - [6. Uusien testien nauhoitus ja kirjoittaminen](#6-uusien-testien-nauhoitus-ja-kirjoittaminen)
 - [In English](#in-english)
   - [1. Prerequisites](#1-prerequisites)
-  - [2. Initial Setup and Configuration](#2-initial-setup-and-configuration)
-  - [3. Running the Tests](#3-running-the-tests)
-  - [4. Reports and Troubleshooting](#4-reports-and-troubleshooting)
-  - [5. Recording and Writing New Tests](#5-recording-and-writing-new-tests)
+  - [2. Initial Setup and .env Configuration](#2-initial-setup-and-env-configuration)
+  - [3. Test Suites (Local vs Staging)](#3-test-suites)
+  - [4. Running the Tests](#4-running-the-tests)
+  - [5. Reports and Troubleshooting](#5-reports-and-troubleshooting)
+  - [6. Recording and Writing New Tests](#6-recording-and-writing-new-tests)
 
 ---
 
@@ -31,24 +33,23 @@ Testit varmistavat sivuston kriittiset toiminnot, kuten julkisten sivujen naviga
 Ennen testien ajamista varmista, että:
 
 1. **Node.js ja npm** on asennettu kehityskoneelle (suositus: Node.js LTS v18 tai uudempi).
-2. **KonsoliFINin paikallinen kehitysympäristö pyörii**:
+2. **Paikallinen kehitysympäristö (paikallisia testejä varten)**:
    ```bash
    # Projektin juurihakemistossa
    make start
    ```
-3. **Testidata on tuotu kantaan**:
-   Osa testeistä (kuten `konsolifin.spec.js`) olettaa, että sivustolla on testidatan mukaiset artikkelit ja testikäyttäjät:
+3. **Paikallinen testidata tuotu (paikallisia testejä varten)**:
+   Paikallinen testisarja (`konsolifin.spec.js`) olettaa, että kehitysympäristöön on tuotu testidatan mukaiset artikkelit ja testikäyttäjät:
    ```bash
    # Projektin juurihakemistossa
    docker exec konsolifin_web ./vendor/bin/drush pm:install migrate_konsolifin_testdata
    ./testdata.sh
    docker exec konsolifin_web ./vendor/bin/drush pm:uninstall migrate_konsolifin_testdata
    ```
-   *Huom:* Testikäyttäjien salasana on `password`.
 
 ---
 
-### 2. Alkuasennus ja konfigurointi
+### 2. Alkuasennus ja .env-konfigurointi
 
 Siirry `e2e_testing`-alihakemistoon:
 
@@ -64,42 +65,43 @@ npm install
 
 #### 2.2 Asenna Playwrightin selainbinäärit
 
-Testikonfiguraatio käyttää oletuksena Chromium-selainta:
-
 ```bash
 npx playwright install chromium
 ```
 
-*(Mikäli haluat asentaa kaikki Playwrightin selaimet tai ajaa testejä Linux-ympäristössä, käytä komentoa `npx playwright install --with-deps`)*.
+*(Linux- ja CI-ympäristöissä käytä tarvittaessa komentoa `npx playwright install --with-deps chromium`)*.
 
-#### 2.3 Kohdeosoitteen (`BASE_URL`) määrittäminen
+#### 2.3 Ympäristömuuttujat ja `.env`-tiedosto
 
-Oletusosoite tiedostossa `playwright.config.js` on:
-```text
-https://web.konsolifin.orb.local/
+Kaikki luottamukselliset tiedot (kuten staging-ympäristön testikäyttäjän salasana ja paikalliset kirjautumistiedot) määritellään `.env`-tiedostossa.
+
+Hakemistossa on valmis mallipohja `.env.example`. Luo oma `.env`-tiedosto kopioimalla se:
+
+```bash
+cp .env.example .env
 ```
 
-Jos käytät toista osoitetta (esim. Docker Desktopin `http://localhost:8080` tai toista OrbStack-osoitetta `https://web.konsolifin-2026.orb.local/`), voit määrittää sen ympäristömuuttujalla `BASE_URL`:
+`.env`-tiedoston sisältö:
 
-- **Kertaluonteisesti testiajon yhteydessä:**
-  ```bash
-  BASE_URL=http://localhost:8080 npm test
-  # tai
-  BASE_URL=http://localhost:8080 npx playwright test
-  ```
+```dotenv
+# --- Staging-ympäristö (https://stage.konsolifin.net) ---
+STAGING_BASE_URL=https://stage.konsolifin.net
+STAGING_USERNAME=oma_staging_tunnus
+STAGING_PASSWORD=oma_staging_salasana
 
-- **Pysyvämmin komentorivisessiossa:**
-  ```bash
-  export BASE_URL=http://localhost:8080
-  npm test
-  ```
+# --- Paikallinen kehitysympäristö ---
+BASE_URL=https://web.konsolifin.orb.local/
+LOCAL_USERNAME=admin
+LOCAL_PASSWORD=admin
+```
 
-- **Tiedostossa `playwright.config.js`:**
-  Voit myös muokata `baseURL`-kenttää suoraan konfiguraatiotiedostossa.
+> [!NOTE]
+> `.env`-tiedosto on lisätty `.gitignore`-tiedostoon, joten salasanat eivät koskaan päädy versionhallintaan.
+> Jos `STAGING_USERNAME` ja `STAGING_PASSWORD` jätetään tyhjiksi, staging-testien julkiset savutestit ajetaan normaalisti ja kirjautumista vaativa ylläpitotesti ohitetaan automaattisesti.
 
 #### 2.4 Itseallekirjoitetut SSL-varmenteet
 
-Jos käytät paikallista HTTPS-osoitetta ja selain valittaa varmenteesta, voit sallia varmenteet lisäämällä `playwright.config.js` -tiedoston `use`-lohkoon:
+Jos käytät paikallista HTTPS-osoitetta ja selain ilmoittaa varmennevirheestä, voit sallia varmenteet lisäämällä `playwright.config.js` -tiedoston `use`-lohkoon rivin:
 
 ```javascript
 ignoreHTTPSErrors: true,
@@ -107,36 +109,50 @@ ignoreHTTPSErrors: true,
 
 ---
 
-### 3. Testien ajaminen
+### 3. Testisarjat
+
+Hakemistossa on kaksi erillistä testikokonaisuutta:
+
+1. **Paikalliset testit (`tests/konsolifin.spec.js`)**:
+   - Kohdistuu paikalliseen kehitysympäristöön (`BASE_URL` tai `https://web.konsolifin.orb.local/`).
+   - Testaa valikoita, testidatan artikkeleita ja kirjautumista lokaalilla `LOCAL_USERNAME`/`LOCAL_PASSWORD` -tunnuksella.
+2. **Staging-testit (`tests/staging.spec.js`)**:
+   - Kohdistuu staging-palvelimeen (`STAGING_BASE_URL` tai `https://stage.konsolifin.net`).
+   - Testaa julkisen sivuston toimivuutta (etusivu, brändäys, Pelit-, Arvostelut-, Uutiset-, Podcastit- ja Jutut-osiot, artikkelin lukunäkymä).
+   - Testaa ylläpitäjän kirjautumista (`/user/login?showcore`) ja hallintapaneelia (`STAGING_USERNAME`/`STAGING_PASSWORD`).
+
+---
+
+### 4. Testien ajaminen
 
 Kaikki komennot suoritetaan `e2e_testing`-hakemistossa.
 
 | Komento | Kuvaus |
 |---------|--------|
-| `npm test` tai `npx playwright test` | Ajaa kaikki testit taustalla (headless-tila). |
-| `npm run test:headed` tai `npx playwright test --headed` | Avaa selaimen näkyviin ja näyttää testin etenemisen reaaliajassa. |
-| `npm run test:ui` tai `npx playwright test --ui` | Käynnistää Playwrightin interaktiivisen graafisen käyttöliittymän (suositeltu testien kehitykseen). |
-| `npm run test:debug` tai `npx playwright test --debug` | Käynnistää Playwright Inspector -virheenjäljittimen askel askeleelta suoritukseen. |
+| `npm run test:staging` | Ajaa staging-ympäristön testit (`stage.konsolifin.net`). |
+| `npm run test:staging:headed` | Ajaa staging-testit näkyvällä selaimella. |
+| `npm run test:staging:ui` | Käynnistää staging-testit Playwrightin interaktiivisessa UI-tilassa. |
+| `npm run test:local` | Ajaa paikallisen kehitysympäristön testit. |
+| `npm test` | Ajaa molemmat testisarjat (paikallinen + staging). |
+| `npm run test:headed` | Ajaa testit näkyvällä selaimella. |
+| `npm run test:ui` | Avaa Playwright UI -tilanteen virheenjäljitykseen. |
+| `npm run test:debug` | Käynnistää Playwright Inspector -askeltimen. |
 
-#### Yksittäisen testitiedoston ajaminen
-
-```bash
-npx playwright test tests/konsolifin.spec.js
-```
-
-#### Testien rajaaminen nimen perusteella
+#### Yksittäisen testin ajaminen suoraan npx:llä
 
 ```bash
-npx playwright test -g "Regressiotestit"
+# Vain staging-testit:
+npx playwright test --project=staging
+
+# Vain paikalliset testit:
+npx playwright test --project=chromium
 ```
 
 ---
 
-### 4. Testiraportit ja virheenjäljitys
+### 5. Testiraportit ja virheenjäljitys
 
-#### HTML-raportin tarkastelu
-
-Testiajon jälkeen tuloksista generoidaan automaattisesti HTML-raportti hakemistoon `playwright-report/`. Avaa raportti selaimeen komennolla:
+#### HTML-raportin avaaminen
 
 ```bash
 npm run report
@@ -146,31 +162,33 @@ npx playwright show-report
 
 #### Epäonnistuneen testin tallenteet (Trace Viewer & kuvakaappaukset)
 
-- Konfiguraatiossa on päällä `screenshot: 'only-on-failure'` ja `trace: 'on-first-retry'`.
 - Epäonnistuneiden testien ruutukaappaukset ja diagnostiikkatiedot tallentuvat hakemistoon `test-results/`.
-- Voit avata nauhoitetun trace-tiedoston komentoriviltä:
+- Avaa nauhoitettu trace-tiedosto:
   ```bash
   npx playwright show-trace test-results/<testikansion-nimi>/trace.zip
   ```
 
 ---
 
-### 5. Uusien testien nauhoitus ja kirjoittaminen
+### 6. Uusien testien nauhoitus ja kirjoittaminen
 
-Voit luoda uusia testejä hyödyntämällä Playwright Codegen -työkalua, joka generoi testikoodia samalla kun klikkaat sivustoa selaimessa:
+Playwright Codegenilla voit generoida uusia testejä selaintoimintojen pohjalta:
 
 ```bash
+# Staging-sivustoa vasten:
+npx playwright codegen https://stage.konsolifin.net
+
+# Paikallista sivustoa vasten:
 npx playwright codegen https://web.konsolifin.orb.local/
-# tai
-npx playwright codegen http://localhost:8080/
 ```
 
 **Huomioitavaa KonsoliFIN-testejä kirjoittaessa:**
-1. **Kirjautumispolku:** KonsoliFIN käyttää SimpleSAMLphp-kertakirjautumista, joten perinteinen käyttäjätunnus/salasana-kirjautumislomake saadaan näkyviin lisäämällä parametrina `?showcore` polkuun: `/user/login?showcore`.
-2. **Evästebanneri:** Sivusto käyttää InMobi Choice CMP -suostumushallintaa. Testin alussa on suositeltavaa kuitata banneri, mikäli se on näkyvissä:
+1. **Kirjautumispolku:** KonsoliFIN käyttää SimpleSAMLphp-kertakirjautumista, joten perinteinen käyttäjätunnus/salasana-kirjautumislomake avataan parametrilla `?showcore`: `/user/login?showcore`.
+2. **Evästebanneri:** Sivustolla on InMobi Choice CMP -suostumushallinta. Testin alussa banneri kuitataan tarvittaessa:
    ```javascript
-   if (await page.getByRole('button', { name: 'HYVÄKSY' }).isVisible()) {
-       await page.getByRole('button', { name: 'HYVÄKSY' }).click();
+   const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
+   if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+       await cookieButton.click();
    }
    ```
 
@@ -184,24 +202,23 @@ npx playwright codegen http://localhost:8080/
 Before running the tests, make sure:
 
 1. **Node.js & npm** are installed on your machine (Node.js LTS v18+ recommended).
-2. **Local KonsoliFIN environment is running**:
+2. **Local KonsoliFIN environment (for local tests)**:
    ```bash
    # In project root
    make start
    ```
-3. **Test data fixtures are imported**:
-   The test suite (e.g. `konsolifin.spec.js`) expects articles and users from the test fixtures:
+3. **Test data fixtures imported (for local tests)**:
+   The local test suite (`konsolifin.spec.js`) expects articles and users from the test fixtures:
    ```bash
    # In project root
    docker exec konsolifin_web ./vendor/bin/drush pm:install migrate_konsolifin_testdata
    ./testdata.sh
    docker exec konsolifin_web ./vendor/bin/drush pm:uninstall migrate_konsolifin_testdata
    ```
-   *Note:* Default password for test users is `password`.
 
 ---
 
-### 2. Initial Setup and Configuration
+### 2. Initial Setup and .env Configuration
 
 Navigate to the `e2e_testing` directory:
 
@@ -217,79 +234,90 @@ npm install
 
 #### 2.2 Install Playwright browser binaries
 
-The default test project runs on Chromium:
-
 ```bash
 npx playwright install chromium
 ```
 
-*(If you need all browser binaries or are running on Linux/CI, run `npx playwright install --with-deps`)*.
+*(On Linux or CI environments, run `npx playwright install --with-deps chromium`)*.
 
-#### 2.3 Configuring the Base URL (`BASE_URL`)
+#### 2.3 Environment Variables and `.env` File
 
-The default base URL in `playwright.config.js` is:
-```text
-https://web.konsolifin.orb.local/
+All confidential data (such as staging passwords and local credentials) should be stored in a `.env` file.
+
+A template is provided as `.env.example`. Copy it to create your `.env`:
+
+```bash
+cp .env.example .env
 ```
 
-If your local environment runs on a different URL (such as Docker Desktop's `http://localhost:8080` or another OrbStack domain `https://web.konsolifin-2026.orb.local/`), supply it using the `BASE_URL` environment variable:
+Contents of `.env`:
 
-- **For a single test run:**
-  ```bash
-  BASE_URL=http://localhost:8080 npm test
-  # or
-  BASE_URL=http://localhost:8080 npx playwright test
-  ```
+```dotenv
+# --- Staging Environment (https://stage.konsolifin.net) ---
+STAGING_BASE_URL=https://stage.konsolifin.net
+STAGING_USERNAME=your_staging_username
+STAGING_PASSWORD=your_staging_password
 
-- **Export for the current shell session:**
-  ```bash
-  export BASE_URL=http://localhost:8080
-  npm test
-  ```
+# --- Local Environment ---
+BASE_URL=https://web.konsolifin.orb.local/
+LOCAL_USERNAME=admin
+LOCAL_PASSWORD=admin
+```
 
-- **Directly in `playwright.config.js`:**
-  You can also change the `baseURL` property directly in `playwright.config.js`.
+> [!NOTE]
+> `.env` is listed in `.gitignore` so your credentials will not be committed.
+> If `STAGING_USERNAME` and `STAGING_PASSWORD` are left blank, public staging smoke tests will run and the authenticated administration test will be automatically skipped.
 
 #### 2.4 Self-Signed SSL Certificates
 
-If you run local HTTPS with self-signed certificates and Playwright throws SSL certificate errors, enable certificate bypass in `playwright.config.js` under the `use` object:
-
-```javascript
-ignoreHTTPSErrors: true,
-```
+If your local environment uses self-signed HTTPS certificates, you can ignore SSL errors by adding `ignoreHTTPSErrors: true` inside `playwright.config.js` under the `use` block.
 
 ---
 
-### 3. Running the Tests
+### 3. Test Suites
 
-All commands should be executed inside the `e2e_testing` directory.
+The test repository contains two test suites:
+
+1. **Local Suite (`tests/konsolifin.spec.js`)**:
+   - Targets the local development instance (`BASE_URL` or `https://web.konsolifin.orb.local/`).
+   - Verifies navigation, test fixture content, and login using local credentials.
+2. **Staging Suite (`tests/staging.spec.js`)**:
+   - Targets the staging environment (`STAGING_BASE_URL` or `https://stage.konsolifin.net`).
+   - Verifies public site stability (homepage, branding, Pelit, Arvostelut, Uutiset, Podcastit, Muut jutut, article reader view).
+   - Verifies admin authentication (`/user/login?showcore`) and dashboard access when credentials are provided in `.env`.
+
+---
+
+### 4. Running the Tests
+
+All commands are run from within the `e2e_testing` directory.
 
 | Command | Description |
 |---------|-------------|
-| `npm test` or `npx playwright test` | Runs all tests in headless mode. |
-| `npm run test:headed` or `npx playwright test --headed` | Runs tests in a visible browser window. |
-| `npm run test:ui` or `npx playwright test --ui` | Launches Playwright's interactive UI mode (recommended for test development). |
-| `npm run test:debug` or `npx playwright test --debug` | Runs tests in Playwright Inspector for step-by-step debugging. |
+| `npm run test:staging` | Runs staging environment tests (`stage.konsolifin.net`). |
+| `npm run test:staging:headed` | Runs staging tests in a visible browser window. |
+| `npm run test:staging:ui` | Launches staging tests in Playwright's interactive UI mode. |
+| `npm run test:local` | Runs local environment tests. |
+| `npm test` | Runs all test suites (local + staging). |
+| `npm run test:headed` | Runs all tests in a visible browser window. |
+| `npm run test:ui` | Launches Playwright UI mode for interactive debugging. |
+| `npm run test:debug` | Launches Playwright Inspector for step-by-step debugging. |
 
-#### Running a specific test file
-
-```bash
-npx playwright test tests/konsolifin.spec.js
-```
-
-#### Filtering tests by name
+#### Running with npx directly
 
 ```bash
-npx playwright test -g "Regressiotestit"
+# Run staging project only:
+npx playwright test --project=staging
+
+# Run local project only:
+npx playwright test --project=chromium
 ```
 
 ---
 
-### 4. Reports and Troubleshooting
+### 5. Reports and Troubleshooting
 
-#### Viewing the HTML Report
-
-An HTML report is automatically created in `playwright-report/` after running tests. Open it with:
+#### Opening the HTML Report
 
 ```bash
 npm run report
@@ -297,32 +325,32 @@ npm run report
 npx playwright show-report
 ```
 
-#### Failure Artifacts (Trace Viewer & Screenshots)
+#### Viewing Trace Files
 
-- Configured settings: `screenshot: 'only-on-failure'` and `trace: 'on-first-retry'`.
-- Failed test artifacts are stored in `test-results/`.
-- Open a recorded trace ZIP file with:
-  ```bash
-  npx playwright show-trace test-results/<test-run-folder>/trace.zip
-  ```
+```bash
+npx playwright show-trace test-results/<test-directory>/trace.zip
+```
 
 ---
 
-### 5. Recording and Writing New Tests
+### 6. Recording and Writing New Tests
 
-Generate test scripts automatically using Playwright Codegen while interacting with the site:
+Record browser actions using Playwright Codegen:
 
 ```bash
+# Against staging:
+npx playwright codegen https://stage.konsolifin.net
+
+# Against local:
 npx playwright codegen https://web.konsolifin.orb.local/
-# or
-npx playwright codegen http://localhost:8080/
 ```
 
-**Things to keep in mind when writing KonsoliFIN tests:**
-1. **Login Route:** Due to the SimpleSAMLphp SSO module, standard username/password login requires appending `?showcore` to the URL: `/user/login?showcore`.
-2. **Cookie Banner:** The site uses InMobi Choice CMP. It is recommended to dismiss the cookie banner if visible:
+**Tips for writing KonsoliFIN tests:**
+1. **Login Route:** Due to SimpleSAMLphp SSO, standard login forms require appending `?showcore`: `/user/login?showcore`.
+2. **Cookie Banner:** Dismiss the InMobi Choice CMP cookie banner if present:
    ```javascript
-   if (await page.getByRole('button', { name: 'HYVÄKSY' }).isVisible()) {
-       await page.getByRole('button', { name: 'HYVÄKSY' }).click();
+   const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
+   if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+       await cookieButton.click();
    }
    ```

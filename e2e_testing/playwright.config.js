@@ -5,9 +5,9 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * @see https://playwright.dev/docs/test-configuration
@@ -34,12 +34,24 @@ export default defineConfig({
     screenshot: 'only-on-failure',
   },
 
-  /* Configure projects for major browsers */
+  /* Configure projects for major browsers and test suites */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    }
+      testIgnore: /.*staging\.spec\.js/,
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: process.env.BASE_URL || 'https://web.konsolifin.orb.local/',
+      },
+    },
+    {
+      name: 'staging',
+      testMatch: /.*staging\.spec\.js/,
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: process.env.STAGING_BASE_URL || 'https://stage.konsolifin.net',
+      },
+    },
   ]
 });
 
