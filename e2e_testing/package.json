@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:local": "playwright test --project=chromium",
+    "test:staging": "playwright test --project=staging",
+    "test:staging:headed": "playwright test --project=staging --headed",
+    "test:staging:ui": "playwright test --project=staging --ui",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
@@ -16,6 +20,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.1.1"
+    "@types/node": "^26.1.1",
+    "dotenv": "^17.4.2"
   }
 }
