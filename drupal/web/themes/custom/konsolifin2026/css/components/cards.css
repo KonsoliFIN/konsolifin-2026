@@ -86,8 +86,16 @@
   background: var(--color-badge-arvostelu);
 }
 
-.card__badge.node__sarja-badge {
-  top: var(--space-3xl);
+@media (max-width: 767px) {
+  .card__badge.node__sarja-badge {
+    left: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__badge.node__sarja-badge {
+    top: var(--space-3xl);
+  }
 }
 
 /* Score overlay on review cards */
