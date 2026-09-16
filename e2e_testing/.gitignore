@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Playwright Test Artifacts & Reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+coverage/
+.nyc_output/
+
+# Test media artifacts (traces, videos, screenshots)
+trace/
+videos/
+screenshots/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files & secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Operating System Files (macOS, Windows, Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Temporary & Build Directories
+.temp/
+temp/
+tmp/
+dist/
+build/
