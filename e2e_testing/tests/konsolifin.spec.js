@@ -25,8 +25,10 @@ test.describe('Drupal Core Päivityksen Regressiotestit', () => {
         await page.getByRole('link', { name: 'Peliala esitti toivelistan' }).click();
         await page.getByRole('link', { name: 'KonsoliFIN' }).click();
         await page.goto('/user/login?showcore');
+        await page.getByRole('textbox', { name: 'Käyttäjätunnus *' }).click();
+        await page.getByRole('textbox', { name: 'Käyttäjätunnus *' }).fill('admin');
         await page.getByRole('textbox', { name: 'Salasana *' }).click();
-        await page.getByRole('textbox', { name: 'Salasana *' }).fill('password');
+        await page.getByRole('textbox', { name: 'Salasana *' }).fill('admin');
         await page.getByRole('button', { name: 'Kirjaudu sisään' }).click();
         await page.getByRole('link', { name: 'Sisältö', exact: true }).click();
         await page.getByRole('link', { name: 'Lohkot' }).click();
