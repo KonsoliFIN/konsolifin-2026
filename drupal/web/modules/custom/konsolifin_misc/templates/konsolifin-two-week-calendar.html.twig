@@ -1,0 +1,236 @@
+{#
+/**
+ * @file
+ * Template for the Two Week Editorial Calendar block.
+ *
+ * Available variables:
+ * - weeks: Array of week data (keyed by 'current' and 'next'), each with:
+ *   - id: 'current' or 'next'
+ *   - title: Human readable week title (e.g. 'Kuluva viikko (vko 38)')
+ *   - week_number: ISO week number
+ *   - year: ISO year
+ *   - is_current_week: Boolean
+ *   - days: Array of 7 day items, each with:
+ *     - date: 'YYYY-MM-DD'
+ *     - day_number: Day of month (int)
+ *     - formatted_date: 'd.m.'
+ *     - day_name_short: 'Ma', 'Ti', etc.
+ *     - day_name_full: 'Maanantai', etc.
+ *     - is_today: Boolean
+ *     - is_past: Boolean
+ *     - is_weekend: Boolean
+ *     - items: Array of scheduled node items for this day
+ * - unscheduled_content: Array of unpublished, non-scheduled node items
+ * - later_scheduled_content: Array of nodes scheduled after next week
+ * - overdue_scheduled_content: Array of unpublished nodes with past publish_on
+ * - total_scheduled_count: Count of scheduled items in 2-week window
+ * - total_unscheduled_count: Count of unscheduled unpublished items
+ * - current_time_formatted: Formatted current timestamp
+ * - timezone: Timezone string (e.g. 'Europe/Helsinki')
+ */
+#}
+<div class="kf-editorial-calendar">
+
+  {# Header summary #}
+  <header class="kf-calendar-header">
+    <div class="kf-calendar-title-wrap">
+      <h2 class="kf-calendar-main-title">{{ 'Toimituksen julkaisukalenteri'|t }}</h2>
+      <span class="kf-calendar-subtitle">
+        {{ '2 viikon näkymä'|t }} ({{ timezone }})
+      </span>
+    </div>
+
+    <div class="kf-calendar-stats">
+      <span class="kf-stat-badge kf-stat-scheduled">
+        <strong>{{ total_scheduled_count }}</strong> {{ 'ajastettu 2 vko sisällä'|t }}
+      </span>
+      <span class="kf-stat-badge kf-stat-unscheduled">
+        <strong>{{ total_unscheduled_count }}</strong> {{ 'ajastamatonta luonnosta'|t }}
+      </span>
+    </div>
+  </header>
+
+  {# Overdue warning alert if any items missed publication #}
+  {% if overdue_scheduled_content is not empty %}
+    <div class="kf-calendar-alert kf-alert--warning" role="alert">
+      <div class="kf-alert-icon">⚠️</div>
+      <div class="kf-alert-content">
+        <strong>{{ 'Huomio: Menneelle ajalle ajastettuja julkaisemattomia sisältöjä (@count kpl):'|t({'@count': overdue_scheduled_content|length}) }}</strong>
+        <ul class="kf-alert-list">
+          {% for item in overdue_scheduled_content %}
+            <li>
+              <span class="kf-item-time">{{ item.publish_date_formatted }}</span>
+              <span class="kf-item-bundle kf-bundle--{{ item.bundle }}">{{ item.bundle_label }}</span>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              <span class="kf-item-author">({{ item.author }})</span>
+              <a href="{{ item.edit_url }}" class="kf-action-link">{{ 'Muokkaa'|t }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+
+  {# Two-week calendar grid #}
+  <div class="kf-calendar-weeks">
+    {% for week_key, week in weeks %}
+      <section class="kf-calendar-week kf-week--{{ week.id }} {% if week.is_current_week %}is-current-week{% endif %}">
+        <div class="kf-week-heading">
+          <h3 class="kf-week-title">{{ week.title }}</h3>
+          <span class="kf-week-badge">
+            {% if week.is_current_week %}
+              {{ 'Kuluva viikko'|t }}
+            {% else %}
+              {{ 'Seuraava viikko'|t }}
+            {% endif %}
+          </span>
+        </div>
+
+        <div class="kf-days-grid">
+          {% for day in week.days %}
+            <div class="kf-day-col {% if day.is_today %}is-today{% endif %} {% if day.is_past %}is-past{% endif %} {% if day.is_weekend %}is-weekend{% endif %} {% if day.items is not empty %}has-items{% endif %}">
+              <div class="kf-day-header">
+                <span class="kf-day-name">{{ day.day_name_short }}</span>
+                <span class="kf-day-date">{{ day.formatted_date }}</span>
+                {% if day.is_today %}
+                  <span class="kf-badge-today">{{ 'Tänään'|t }}</span>
+                {% endif %}
+              </div>
+
+              <div class="kf-day-body">
+                {% if day.items is not empty %}
+                  <div class="kf-day-items">
+                    {% for item in day.items %}
+                      <article class="kf-calendar-item kf-item-bundle--{{ item.bundle }}">
+                        <div class="kf-item-top">
+                          <span class="kf-item-time">{{ item.publish_time }}</span>
+                          <span class="kf-item-bundle kf-bundle--{{ item.bundle }}">{{ item.bundle_label }}</span>
+                        </div>
+                        <h4 class="kf-item-title">
+                          <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+                        </h4>
+                        <div class="kf-item-footer">
+                          <span class="kf-item-author" title="{{ 'Kirjoittaja'|t }}">{{ item.author }}</span>
+                          <a href="{{ item.edit_url }}" class="kf-item-edit" title="{{ 'Muokkaa sisältöä'|t }}">
+                            ✏️ {{ 'Muokkaa'|t }}
+                          </a>
+                        </div>
+                      </article>
+                    {% endfor %}
+                  </div>
+                {% else %}
+                  <div class="kf-day-empty">
+                    <span class="kf-day-empty-text">{{ '—' }}</span>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+
+  {# Section for non-scheduled and non-published content #}
+  <section class="kf-unscheduled-section">
+    <div class="kf-section-header">
+      <div class="kf-section-title-wrap">
+        <h3 class="kf-section-title">
+          {{ 'Ajastamattomat ja julkaisemattomat sisällöt'|t }}
+          <span class="kf-count-pill">{{ total_unscheduled_count }}</span>
+        </h3>
+        <p class="kf-section-desc">
+          {{ 'Sisällöt, jotka ovat luonnostilassa eikä niille ole asetettu julkaisuajankohtaa.'|t }}
+        </p>
+      </div>
+    </div>
+
+    {% if unscheduled_content is not empty %}
+      <div class="kf-table-responsive">
+        <table class="kf-content-table">
+          <thead>
+            <tr>
+              <th scope="col">{{ 'Otsikko'|t }}</th>
+              <th scope="col">{{ 'Tyyppi'|t }}</th>
+              <th scope="col">{{ 'Kirjoittaja'|t }}</th>
+              <th scope="col">{{ 'Muokattu'|t }}</th>
+              <th scope="col" class="kf-col-actions">{{ 'Toiminnot'|t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in unscheduled_content %}
+              <tr class="kf-row-bundle--{{ item.bundle }}">
+                <td class="kf-cell-title">
+                  <a href="{{ item.url }}" class="kf-title-link">{{ item.title }}</a>
+                </td>
+                <td class="kf-cell-bundle">
+                  <span class="kf-item-bundle kf-bundle--{{ item.bundle }}">{{ item.bundle_label }}</span>
+                </td>
+                <td class="kf-cell-author">
+                  {{ item.author }}
+                </td>
+                <td class="kf-cell-date">
+                  <time datetime="{{ item.changed }}">{{ item.changed_formatted }}</time>
+                </td>
+                <td class="kf-cell-actions">
+                  <a href="{{ item.edit_url }}" class="kf-btn-edit">
+                    {{ 'Muokkaa'|t }}
+                  </a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <div class="kf-empty-state">
+        <p>{{ 'Ei ajastamattomia tai julkaisemattomia sisältöjä.'|t }}</p>
+      </div>
+    {% endif %}
+  </section>
+
+  {# Later scheduled content if any exists #}
+  {% if later_scheduled_content is not empty %}
+    <details class="kf-later-scheduled-details">
+      <summary class="kf-later-scheduled-summary">
+        <span class="kf-summary-title">
+          {{ 'Myöhemmin ajastetut sisällöt (2 viikon jälkeen)'|t }}
+          <span class="kf-count-pill">{{ later_scheduled_content|length }}</span>
+        </span>
+      </summary>
+      <div class="kf-table-responsive">
+        <table class="kf-content-table">
+          <thead>
+            <tr>
+              <th scope="col">{{ 'Ajastusaika'|t }}</th>
+              <th scope="col">{{ 'Otsikko'|t }}</th>
+              <th scope="col">{{ 'Tyyppi'|t }}</th>
+              <th scope="col">{{ 'Kirjoittaja'|t }}</th>
+              <th scope="col" class="kf-col-actions">{{ 'Toiminnot'|t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in later_scheduled_content %}
+              <tr>
+                <td class="kf-cell-date">
+                  <strong>{{ item.publish_date_formatted }}</strong>
+                </td>
+                <td class="kf-cell-title">
+                  <a href="{{ item.url }}" class="kf-title-link">{{ item.title }}</a>
+                </td>
+                <td class="kf-cell-bundle">
+                  <span class="kf-item-bundle kf-bundle--{{ item.bundle }}">{{ item.bundle_label }}</span>
+                </td>
+                <td class="kf-cell-author">{{ item.author }}</td>
+                <td class="kf-cell-actions">
+                  <a href="{{ item.edit_url }}" class="kf-btn-edit">{{ 'Muokkaa'|t }}</a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  {% endif %}
+
+</div>

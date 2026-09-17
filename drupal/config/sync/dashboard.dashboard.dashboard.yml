@@ -1,0 +1,32 @@
+uuid: 48b270f5-9d72-4f7e-8262-5d86856645cb
+langcode: fi
+status: true
+dependencies:
+  module:
+    - konsolifin_misc
+    - layout_builder
+id: dashboard
+label: Dashboard
+description: ''
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: Sisällönhallinta
+      context_mapping: {  }
+      column_widths: 75-25
+    components:
+      796083a5-4485-4996-8d1a-a146aceecca3:
+        uuid: 796083a5-4485-4996-8d1a-a146aceecca3
+        region: first
+        configuration:
+          id: konsolifin_two_week_calendar
+          label: 'Julkaistavat sisällöt'
+          label_display: visible
+          provider: konsolifin_misc
+          context_mapping: {  }
+          bundles: {  }
+        weight: 0
+        additional: {  }
+    third_party_settings: {  }
+weight: 0

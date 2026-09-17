@@ -1,0 +1,4 @@
+two-week-calendar:
+  css:
+    theme:
+      css/two-week-calendar.css: {}
