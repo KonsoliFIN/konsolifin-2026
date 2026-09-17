@@ -20,6 +20,12 @@ function konsolifin_misc_theme(): array {
       ],
       'template' => 'konsolifin-two-week-calendar',
     ],
+    'konsolifin_create_content_links' => [
+      'variables' => [
+        'content_types' => [],
+      ],
+      'template' => 'konsolifin-create-content-links',
+    ],
   ];
 }
 

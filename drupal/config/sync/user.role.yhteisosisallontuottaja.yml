@@ -14,8 +14,6 @@ weight: -6
 is_admin: false
 permissions:
   - 'access administration pages'
-  - 'create uutinen content'
-  - 'create video content'
   - 'edit own uutinen content'
   - 'edit own video content'
   - 'view own unpublished content'

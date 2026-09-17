@@ -28,5 +28,16 @@ layout:
           bundles: {  }
         weight: 0
         additional: {  }
+      5a795eef-23a5-4380-ad56-630892e66c3a:
+        uuid: 5a795eef-23a5-4380-ad56-630892e66c3a
+        region: second
+        configuration:
+          id: konsolifin_create_content_links
+          label: 'Luo uutta sisältöä'
+          label_display: visible
+          provider: konsolifin_misc
+          context_mapping: {  }
+        weight: 0
+        additional: {  }
     third_party_settings: {  }
 weight: 0

@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Template for the Create Content Links block.
+ *
+ * Available variables:
+ * - content_types: Array of allowed content type data:
+ *   - id: Machine name of the node type
+ *   - label: Human-readable label of the node type
+ *   - description: Description of the node type
+ *   - url: URL to create a node of this type (node/add/{type})
+ */
+#}
+<div class="kf-create-content-block">
+  <div class="kf-create-content-header">
+    <h3 class="kf-create-content-title">{{ 'Luo uutta sisältöä'|t }}</h3>
+  </div>
+
+  {% if content_types is not empty %}
+    <div class="kf-create-content-grid">
+      {% for type in content_types %}
+        <a href="{{ type.url }}" class="kf-create-content-card kf-card-bundle--{{ type.id }}">
+          <div class="kf-create-card-inner">
+            <span class="kf-create-plus-icon" aria-hidden="true">+</span>
+            <div class="kf-create-card-text">
+              <span class="kf-create-label">{{ type.label }}</span>
+              {% if type.description %}
+                <span class="kf-create-desc">{{ type.description }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="kf-create-content-empty">
+      <p class="kf-no-permission-text">{{ 'No permission to create new content.'|t }}</p>
+    </div>
+  {% endif %}
+</div>

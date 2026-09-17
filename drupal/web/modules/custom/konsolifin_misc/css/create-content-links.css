@@ -1,0 +1,167 @@
+/**
+ * Create Content Links block styling for konsolifin_misc
+ */
+
+.kf-create-content-block {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.kf-create-content-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.kf-create-content-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.kf-create-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.kf-create-content-card {
+  display: block;
+  text-decoration: none;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.15s ease-in-out;
+  color: #1e293b;
+}
+
+.kf-create-content-card:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.kf-create-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.kf-create-plus-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.kf-create-content-card:hover .kf-create-plus-icon {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.kf-create-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.kf-create-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.kf-create-content-card:hover .kf-create-label {
+  color: #2563eb;
+}
+
+.kf-create-desc {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+  line-height: 1.3;
+}
+
+/* Content type specific color highlights */
+.kf-card-bundle--peliarvostelu {
+  border-left-color: #7c3aed;
+}
+.kf-card-bundle--peliarvostelu:hover .kf-create-plus-icon {
+  background: #7c3aed;
+}
+
+.kf-card-bundle--uutinen {
+  border-left-color: #2563eb;
+}
+.kf-card-bundle--uutinen:hover .kf-create-plus-icon {
+  background: #2563eb;
+}
+
+.kf-card-bundle--artikkeli, .kf-card-bundle--article {
+  border-left-color: #059669;
+}
+.kf-card-bundle--artikkeli:hover .kf-create-plus-icon,
+.kf-card-bundle--article:hover .kf-create-plus-icon {
+  background: #059669;
+}
+
+.kf-card-bundle--blogi {
+  border-left-color: #d97706;
+}
+.kf-card-bundle--blogi:hover .kf-create-plus-icon {
+  background: #d97706;
+}
+
+.kf-card-bundle--podcast {
+  border-left-color: #db2777;
+}
+.kf-card-bundle--podcast:hover .kf-create-plus-icon {
+  background: #db2777;
+}
+
+.kf-card-bundle--laitearvio {
+  border-left-color: #0891b2;
+}
+.kf-card-bundle--laitearvio:hover .kf-create-plus-icon {
+  background: #0891b2;
+}
+
+.kf-card-bundle--katsotut {
+  border-left-color: #ea580c;
+}
+.kf-card-bundle--katsotut:hover .kf-create-plus-icon {
+  background: #ea580c;
+}
+
+/* Empty / No Permission state */
+.kf-create-content-empty {
+  padding: 1.25rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+}
+
+.kf-no-permission-text {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b;
+  font-style: italic;
+}
