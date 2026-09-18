@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.basic
+    - dashboard.dashboard.dashboard
     - filter.format.basic_html
     - filter.format.full_html
     - media.type.audio
@@ -35,6 +36,7 @@ dependencies:
     - announcements_feed
     - block_content
     - comment
+    - dashboard
     - file
     - filter
     - help
@@ -183,6 +185,7 @@ permissions:
   - 'view any video media revisions'
   - 'view article revisions'
   - 'view blogi revisions'
+  - 'view dashboard dashboard'
   - 'view historianosto revisions'
   - 'view julkaisu revisions'
   - 'view katsotut revisions'
