@@ -3,6 +3,33 @@
 use Drupal\node\NodeInterface;
 
 /**
+ * Implements hook_theme().
+ */
+function konsolifin_misc_theme(): array {
+  return [
+    'konsolifin_two_week_calendar' => [
+      'variables' => [
+        'weeks' => [],
+        'unscheduled_content' => [],
+        'later_scheduled_content' => [],
+        'overdue_scheduled_content' => [],
+        'total_scheduled_count' => 0,
+        'total_unscheduled_count' => 0,
+        'current_time_formatted' => NULL,
+        'timezone' => NULL,
+      ],
+      'template' => 'konsolifin-two-week-calendar',
+    ],
+    'konsolifin_create_content_links' => [
+      'variables' => [
+        'content_types' => [],
+      ],
+      'template' => 'konsolifin-create-content-links',
+    ],
+  ];
+}
+
+/**
  * Implements hook_preprocess_node().
  */
 function konsolifin_misc_preprocess_node(&$variables) {

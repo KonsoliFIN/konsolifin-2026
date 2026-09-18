@@ -19,3 +19,12 @@ services:
       - '@request_stack'
       - '@cache.default'
       - '@file_system'
+
+  konsolifin_misc.editorial_calendar:
+    class: Drupal\konsolifin_misc\Service\EditorialCalendarService
+    arguments:
+      - '@entity_type.manager'
+      - '@date.formatter'
+      - '@datetime.time'
+      - '@config.factory'
+

@@ -1,0 +1,10 @@
+two-week-calendar:
+  css:
+    theme:
+      css/two-week-calendar.css: {}
+
+create-content-links:
+  css:
+    theme:
+      css/create-content-links.css: {}
+
