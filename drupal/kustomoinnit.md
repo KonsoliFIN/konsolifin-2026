@@ -107,6 +107,11 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Korvaa Drupalin sisäänrakennetun `/user/password`-reitin ja palauttaa HTTP 410 Gone -vastauksen, joka ohjaa käyttäjän ulkoisen foorumin salasananpalautukseen (`https://forum.konsolifin.net/lost-password/`).
 - **Syötepalvelu (`RssFeedService`):**
   - Vastaa XML-syötteiden luonnista, polku-aliasten selvittämisestä, välimuistituksesta, UTM-seurantaparametrien lisäämisestä (`?utm_medium=rss`) sekä MP3-keston automaattisesta käsittelystä.
+- **Toimituksen julkaisukalenteri (`EditorialCalendarService`, lohko: `TwoWeekCalendarBlock`):**
+  - Renderöi toimitukselle 2 viikon dynaamisen julkaisukalenterin ja julkaisemattoman sisällön listausnäkymän (`templates/konsolifin-two-week-calendar.html.twig`).
+  - **Työnkulkujen ajastukset:** Hakee `workflow_scheduled_transition`-entiteetit, joiden kohdetilana on julkaistu tila (`yleinen_julkaisuputki_julkaistu` tai `uutisputki_julkaistu`), ja sijoittaa sisällöt kalenteriin ajastusajankohdan mukaan. Tukee myös `publish_on`-kenttää työnkuluttomille sisällöille.
+  - **Työnkulun tilan näyttäminen:** Julkaisemattoman sisällön taulukkolistauksessa näytetään solmun nykyinen työnkulun tila ihmisluettavana värikoodattuna laatikkomerkintänä (`.kf-workflow-badge`).
+  - **Hylättyjen sisältöjen suodatus:** Kaikki tilassa *Hylätty* (`yleinen_julkaisuputki_hylatty` tai `uutisputki_hylatty`) olevat sisällöt jätetään kokonaan pois julkaisemattomien listauksesta.
 
 #### 3. Sisältö- ja teemahookit:
 - **`konsolifin_misc_preprocess_node`:**

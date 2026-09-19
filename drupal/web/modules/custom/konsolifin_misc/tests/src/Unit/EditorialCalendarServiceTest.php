@@ -31,6 +31,8 @@ class EditorialCalendarServiceTest extends TestCase {
   protected TimeInterface $time;
   protected ConfigFactoryInterface $configFactory;
   protected ImmutableConfig $dateConfig;
+  protected ?EntityStorageInterface $workflowScheduledTransitionStorage = NULL;
+  protected ?EntityStorageInterface $workflowStateStorage = NULL;
 
   protected function setUp(): void {
     parent::setUp();
@@ -79,6 +81,12 @@ class EditorialCalendarServiceTest extends TestCase {
         }
         if ($entity_type === 'node_type') {
           return $this->nodeTypeStorage;
+        }
+        if ($entity_type === 'workflow_scheduled_transition') {
+          return $this->workflowScheduledTransitionStorage;
+        }
+        if ($entity_type === 'workflow_state') {
+          return $this->workflowStateStorage;
         }
         return NULL;
       });
@@ -430,4 +438,200 @@ class EditorialCalendarServiceTest extends TestCase {
     return $node;
   }
 
+  /**
+   * Helper to create a mock NodeInterface with workflow fields.
+   */
+  protected function createMockWorkflowNode(int $id, string $title, string $bundle, string $bundleLabel, string $fieldName, ?string $workflowState, int $status = 0): NodeInterface {
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('id')->willReturn((string) $id);
+    $node->method('getTitle')->willReturn($title);
+    $node->method('bundle')->willReturn($bundle);
+    $node->method('isPublished')->willReturn($status === 1);
+    $node->method('getOwnerId')->willReturn('1');
+    $node->method('getCreatedTime')->willReturn(1726500000);
+    $node->method('getChangedTime')->willReturn(1726505000);
+    $node->method('hasLinkTemplate')->willReturn(FALSE);
+
+    $owner = $this->createMock(AccountInterface::class);
+    $owner->method('getDisplayName')->willReturn('Test Writer');
+    $node->method('getOwner')->willReturn($owner);
+
+    $node->method('hasField')->willReturnCallback(function ($field) use ($fieldName) {
+      return $field === $fieldName || $field === 'publish_on';
+    });
+
+    $fieldItem = new \stdClass();
+    $fieldItem->value = $workflowState;
+    $fieldItemList = $this->createMock(\Drupal\Core\Field\FieldItemListInterface::class);
+    $fieldItemList->method('isEmpty')->willReturn($workflowState === null);
+    $fieldItemList->method('__get')->with('value')->willReturn($fieldItem->value);
+
+    $emptyPublishOn = $this->createMock(\Drupal\Core\Field\FieldItemListInterface::class);
+    $emptyPublishOn->method('__get')->with('value')->willReturn(NULL);
+
+    $node->method('get')->willReturnCallback(function ($field) use ($fieldName, $fieldItemList, $emptyPublishOn) {
+      if ($field === $fieldName) {
+        return $fieldItemList;
+      }
+      if ($field === 'publish_on') {
+        return $emptyPublishOn;
+      }
+      return NULL;
+    });
+
+    $this->nodeTypeStorage->method('load')
+      ->willReturnCallback(function ($b) {
+        $nt = $this->createMock(NodeTypeInterface::class);
+        $labels = [
+          'uutinen' => 'Uutinen',
+          'peliarvostelu' => 'Peliarvostelu',
+          'article' => 'Artikkeli',
+        ];
+        $nt->method('label')->willReturn($labels[$b] ?? ucfirst($b));
+        return $nt;
+      });
+
+    return $node;
+  }
+
+  /**
+   * Tests that workflow scheduled transitions targeting published states are placed in calendar.
+   */
+  public function testWorkflowScheduledTransitionsInCalendar(): void {
+    $tz = new \DateTimeZone('Europe/Helsinki');
+    $refDate = new \DateTimeImmutable('2026-09-17 12:00:00', $tz); // Thursday
+    $refTimestamp = $refDate->getTimestamp();
+
+    // Scheduled transition for Friday 18.9. at 14:00
+    $scheduledTs = (new \DateTimeImmutable('2026-09-18 14:00:00', $tz))->getTimestamp();
+    $mockNode = $this->createMockWorkflowNode(301, 'Workflow News Article', 'uutinen', 'Uutinen', 'field_tyonkulku_uutinen', 'uutisputki_tyon_alla', 0);
+
+    $mockTransition = $this->createMock(\Drupal\workflow\Entity\WorkflowTransitionInterface::class);
+    $mockTransition->method('getTargetEntity')->willReturn($mockNode);
+    $mockTransition->method('getTargetEntityId')->willReturn(301);
+    $mockTransition->method('getTimestamp')->willReturn($scheduledTs);
+    $mockTransition->method('getToSid')->willReturn(EditorialCalendarService::STATE_NEWS_PUBLISHED);
+
+    $this->workflowScheduledTransitionStorage = $this->createMock(EntityStorageInterface::class);
+    $transitionQuery = $this->createMock(QueryInterface::class);
+    $transitionQuery->method('accessCheck')->willReturnSelf();
+    $transitionQuery->method('condition')->willReturnSelf();
+    $transitionQuery->method('sort')->willReturnSelf();
+    $transitionQuery->method('execute')->willReturn([1]);
+
+    $this->workflowScheduledTransitionStorage->method('getQuery')->willReturn($transitionQuery);
+    $this->workflowScheduledTransitionStorage->method('loadMultiple')->with([1])->willReturn([1 => $mockTransition]);
+
+    // Node storage query for unscheduled/publish_on will be empty
+    $emptyNodeQuery = $this->createMock(QueryInterface::class);
+    $emptyNodeQuery->method('accessCheck')->willReturnSelf();
+    $emptyNodeQuery->method('condition')->willReturnSelf();
+    $emptyNodeQuery->method('sort')->willReturnSelf();
+    $emptyNodeQuery->method('orConditionGroup')->willReturn($emptyNodeQuery);
+    $emptyNodeQuery->method('notExists')->willReturnSelf();
+    $emptyNodeQuery->method('execute')->willReturn([]);
+    $this->nodeStorage->method('getQuery')->willReturn($emptyNodeQuery);
+
+    $service = new EditorialCalendarService(
+      $this->entityTypeManager,
+      $this->dateFormatter,
+      $this->time,
+      $this->configFactory,
+    );
+
+    $data = $service->getCalendarData(NULL, $refTimestamp);
+
+    // Total scheduled count should be 1
+    $this->assertEquals(1, $data['total_scheduled_count']);
+
+    // Check Friday 18.9. in current week contains the workflow scheduled node
+    $friday = $data['weeks']['current']['days'][4];
+    $this->assertEquals('2026-09-18', $friday['date']);
+    $this->assertCount(1, $friday['items']);
+    $this->assertEquals('Workflow News Article', $friday['items'][0]['title']);
+    $this->assertEquals('14:00', $friday['items'][0]['publish_time']);
+  }
+
+  /**
+   * Tests that nodes in 'Hylätty' state are excluded from the unpublished list altogether.
+   */
+  public function testHylattyStateExcludedFromUnscheduledContent(): void {
+    $tz = new \DateTimeZone('Europe/Helsinki');
+    $refTimestamp = (new \DateTimeImmutable('2026-09-17 12:00:00', $tz))->getTimestamp();
+
+    // Node 401: Rejected article (yleinen_julkaisuputki_hylatty)
+    $rejectedArticle = $this->createMockWorkflowNode(401, 'Rejected Article', 'article', 'Artikkeli', 'field_tyonkulku', EditorialCalendarService::STATE_GENERAL_REJECTED, 0);
+
+    // Node 402: Rejected news (uutisputki_hylatty)
+    $rejectedNews = $this->createMockWorkflowNode(402, 'Rejected News', 'uutinen', 'Uutinen', 'field_tyonkulku_uutinen', EditorialCalendarService::STATE_NEWS_REJECTED, 0);
+
+    // Node 403: Normal draft article (yleinen_julkaisuputki_tyon_alla)
+    $draftArticle = $this->createMockWorkflowNode(403, 'Active Draft Article', 'article', 'Artikkeli', 'field_tyonkulku', 'yleinen_julkaisuputki_tyon_alla', 0);
+
+    $queryCount = 0;
+    $this->nodeStorage->method('getQuery')->willReturnCallback(function () use (&$queryCount) {
+      $queryCount++;
+      $q = $this->createMock(QueryInterface::class);
+      $q->method('accessCheck')->willReturnSelf();
+      $q->method('condition')->willReturnSelf();
+      $q->method('sort')->willReturnSelf();
+      $q->method('orConditionGroup')->willReturn($q);
+      $q->method('notExists')->willReturnSelf();
+
+      if ($queryCount === 2) {
+        $q->method('execute')->willReturn([401, 402, 403]);
+      }
+      else {
+        $q->method('execute')->willReturn([]);
+      }
+      return $q;
+    });
+
+    $this->nodeStorage->method('loadMultiple')->willReturn([
+      401 => $rejectedArticle,
+      402 => $rejectedNews,
+      403 => $draftArticle,
+    ]);
+
+    $service = new EditorialCalendarService(
+      $this->entityTypeManager,
+      $this->dateFormatter,
+      $this->time,
+      $this->configFactory,
+    );
+
+    $data = $service->getCalendarData(NULL, $refTimestamp);
+
+    // The unscheduled list must only contain the active draft (403), neither of the rejected ones!
+    $this->assertCount(1, $data['unscheduled_content']);
+    $this->assertEquals('Active Draft Article', $data['unscheduled_content'][0]['title']);
+    $this->assertEquals(403, $data['unscheduled_content'][0]['id']);
+  }
+
+  /**
+   * Tests that formatNodeItem correctly exposes workflow state ID, human label, and has_workflow.
+   */
+  public function testWorkflowStateFormattedInNodeItem(): void {
+    $this->workflowStateStorage = $this->createMock(EntityStorageInterface::class);
+    $mockState = $this->createMock(\Drupal\workflow\Entity\WorkflowState::class);
+    $mockState->method('label')->willReturn('Oikoluettavana');
+    $this->workflowStateStorage->method('load')->with('yleinen_julkaisuputki_oikoluettavana')->willReturn($mockState);
+
+    $node = $this->createMockWorkflowNode(501, 'Proofreading Article', 'article', 'Artikkeli', 'field_tyonkulku', 'yleinen_julkaisuputki_oikoluettavana', 0);
+
+    $service = new EditorialCalendarService(
+      $this->entityTypeManager,
+      $this->dateFormatter,
+      $this->time,
+      $this->configFactory,
+    );
+
+    $formatted = $service->formatNodeItem($node);
+
+    $this->assertTrue($formatted['has_workflow']);
+    $this->assertEquals('yleinen_julkaisuputki_oikoluettavana', $formatted['workflow_state_id']);
+    $this->assertEquals('Oikoluettavana', $formatted['workflow_state_label']);
+  }
+
 }
+

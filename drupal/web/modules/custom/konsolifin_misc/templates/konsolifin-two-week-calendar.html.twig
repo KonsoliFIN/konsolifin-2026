@@ -152,6 +152,7 @@
             <tr>
               <th scope="col">{{ 'Otsikko'|t }}</th>
               <th scope="col">{{ 'Tyyppi'|t }}</th>
+              <th scope="col">{{ 'Tila'|t }}</th>
               <th scope="col">{{ 'Kirjoittaja'|t }}</th>
               <th scope="col">{{ 'Muokattu'|t }}</th>
               <th scope="col" class="kf-col-actions">{{ 'Toiminnot'|t }}</th>
@@ -165,6 +166,15 @@
                 </td>
                 <td class="kf-cell-bundle">
                   <span class="kf-item-bundle kf-bundle--{{ item.bundle }}">{{ item.bundle_label }}</span>
+                </td>
+                <td class="kf-cell-workflow-state">
+                  {% if item.workflow_state_label %}
+                    <span class="kf-workflow-badge {% if item.workflow_state_id %}kf-workflow-badge--{{ item.workflow_state_id|clean_class }}{% endif %}">
+                      {{ item.workflow_state_label }}
+                    </span>
+                  {% else %}
+                    <span class="kf-text-muted">—</span>
+                  {% endif %}
                 </td>
                 <td class="kf-cell-author">
                   {{ item.author }}

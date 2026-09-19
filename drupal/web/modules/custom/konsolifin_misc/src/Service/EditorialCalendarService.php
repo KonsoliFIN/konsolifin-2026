@@ -19,6 +19,26 @@ class EditorialCalendarService
   use StringTranslationTrait;
 
   /**
+   * Published state machine name for general workflow.
+   */
+  public const STATE_GENERAL_PUBLISHED = 'yleinen_julkaisuputki_julkaistu';
+
+  /**
+   * Published state machine name for news workflow.
+   */
+  public const STATE_NEWS_PUBLISHED = 'uutisputki_julkaistu';
+
+  /**
+   * Rejected state machine name for general workflow.
+   */
+  public const STATE_GENERAL_REJECTED = 'yleinen_julkaisuputki_hylatty';
+
+  /**
+   * Rejected state machine name for news workflow.
+   */
+  public const STATE_NEWS_REJECTED = 'uutisputki_hylatty';
+
+  /**
    * Constructs an EditorialCalendarService object.
    */
   public function __construct(
@@ -27,6 +47,32 @@ class EditorialCalendarService
     protected TimeInterface $time,
     protected ConfigFactoryInterface $configFactory,
   ) {
+  }
+
+  /**
+   * Returns workflow state IDs that represent published content.
+   *
+   * @return string[]
+   */
+  public function getPublishedWorkflowStates(): array
+  {
+    return [
+      self::STATE_GENERAL_PUBLISHED,
+      self::STATE_NEWS_PUBLISHED,
+    ];
+  }
+
+  /**
+   * Returns workflow state IDs that represent rejected content.
+   *
+   * @return string[]
+   */
+  public function getRejectedWorkflowStates(): array
+  {
+    return [
+      self::STATE_GENERAL_REJECTED,
+      self::STATE_NEWS_REJECTED,
+    ];
   }
 
   /**
@@ -107,12 +153,13 @@ class EditorialCalendarService
     }
 
     // Query scheduled content within the 2-week window.
-    $scheduledNodes = $this->queryScheduledNodes($startTs, $endTs, $bundles);
-    $totalScheduledCount = count($scheduledNodes);
+    $scheduledItems = $this->queryScheduledItems($startTs, $endTs, $bundles);
+    $totalScheduledCount = count($scheduledItems);
 
-    foreach ($scheduledNodes as $node) {
-      $publishOn = (int) $node->get('publish_on')->value;
-      $scheduledDateTime = (new \DateTimeImmutable('@' . $publishOn))->setTimezone($tz);
+    foreach ($scheduledItems as $scheduledItem) {
+      $node = $scheduledItem['node'];
+      $scheduledTs = $scheduledItem['timestamp'];
+      $scheduledDateTime = (new \DateTimeImmutable('@' . $scheduledTs))->setTimezone($tz);
       $dateKey = $scheduledDateTime->format('Y-m-d');
 
       $item = $this->formatNodeItem($node, $scheduledDateTime);
@@ -149,27 +196,29 @@ class EditorialCalendarService
     ];
 
     // Query non-scheduled and non-published content.
-    $unscheduledNodes = $this->queryUnscheduledNodes($bundles);
+    $unscheduledNodes = $this->queryUnscheduledNodes($bundles, array_keys($scheduledItems));
     $unscheduledContent = [];
     foreach ($unscheduledNodes as $node) {
       $unscheduledContent[] = $this->formatNodeItem($node);
     }
 
     // Query content scheduled beyond next week.
-    $laterNodes = $this->queryLaterScheduledNodes($endTs, $bundles);
+    $laterScheduledItems = $this->queryScheduledItems($endTs + 1, NULL, $bundles);
     $laterScheduledContent = [];
-    foreach ($laterNodes as $node) {
-      $publishOn = (int) $node->get('publish_on')->value;
-      $scheduledDateTime = (new \DateTimeImmutable('@' . $publishOn))->setTimezone($tz);
+    foreach ($laterScheduledItems as $laterItem) {
+      $node = $laterItem['node'];
+      $scheduledTs = $laterItem['timestamp'];
+      $scheduledDateTime = (new \DateTimeImmutable('@' . $scheduledTs))->setTimezone($tz);
       $laterScheduledContent[] = $this->formatNodeItem($node, $scheduledDateTime);
     }
 
     // Query overdue scheduled items (scheduled before current week Monday but still unpublished).
-    $overdueNodes = $this->queryOverdueScheduledNodes($startTs, $bundles);
+    $overdueScheduledItems = $this->queryScheduledItems(NULL, $startTs - 1, $bundles);
     $overdueScheduledContent = [];
-    foreach ($overdueNodes as $node) {
-      $publishOn = (int) $node->get('publish_on')->value;
-      $scheduledDateTime = (new \DateTimeImmutable('@' . $publishOn))->setTimezone($tz);
+    foreach ($overdueScheduledItems as $overdueItem) {
+      $node = $overdueItem['node'];
+      $scheduledTs = $overdueItem['timestamp'];
+      $scheduledDateTime = (new \DateTimeImmutable('@' . $scheduledTs))->setTimezone($tz);
       $overdueScheduledContent[] = $this->formatNodeItem($node, $scheduledDateTime);
     }
 
@@ -183,6 +232,131 @@ class EditorialCalendarService
       'current_time_formatted' => $this->dateFormatter->format($timestamp, 'short'),
       'timezone' => $tz->getName(),
     ];
+  }
+
+  /**
+   * Queries scheduled items between optional timestamps.
+   *
+   * Combines workflow scheduled transitions targeting published states and
+   * any non-workflow nodes scheduled via Scheduler publish_on.
+   *
+   * @param int|null $minTs
+   *   Optional minimum timestamp (inclusive).
+   * @param int|null $maxTs
+   *   Optional maximum timestamp (inclusive).
+   * @param array|null $bundles
+   *   Optional bundle filter.
+   *
+   * @return array<int, array{node: \Drupal\node\NodeInterface, timestamp: int}>
+   *   Array of scheduled items keyed by node ID.
+   */
+  protected function queryScheduledItems(?int $minTs, ?int $maxTs, ?array $bundles = NULL): array
+  {
+    $items = [];
+    $seenNids = [];
+
+    // 1. Query workflow scheduled transitions targeting published status.
+    try {
+      $transitionStorage = $this->entityTypeManager->getStorage('workflow_scheduled_transition');
+      if ($transitionStorage) {
+        $query = $transitionStorage->getQuery()
+          ->accessCheck(FALSE)
+          ->condition('entity_type', 'node')
+          ->condition('to_sid', $this->getPublishedWorkflowStates(), 'IN');
+
+        if ($minTs !== NULL) {
+          $query->condition('timestamp', $minTs, '>=');
+        }
+        if ($maxTs !== NULL) {
+          $query->condition('timestamp', $maxTs, '<=');
+        }
+
+        $query->sort('timestamp', 'ASC');
+        $tids = $query->execute();
+
+        if (!empty($tids)) {
+          $transitions = $transitionStorage->loadMultiple($tids);
+          foreach ($transitions as $transition) {
+            $node = $transition->getTargetEntity();
+            if (!$node instanceof NodeInterface || $node->isPublished()) {
+              continue;
+            }
+            $nid = (int) $node->id();
+            if (isset($seenNids[$nid])) {
+              continue;
+            }
+            if (!empty($bundles) && !in_array($node->bundle(), $bundles, TRUE)) {
+              continue;
+            }
+
+            $ts = (int) $transition->getTimestamp();
+            $seenNids[$nid] = $nid;
+            $items[$nid] = [
+              'node' => $node,
+              'timestamp' => $ts,
+            ];
+          }
+        }
+      }
+    }
+    catch (\Exception $e) {
+      // Storage not available or not configured yet.
+    }
+
+    // 2. Query nodes scheduled via publish_on (for non-workflow nodes or fallback).
+    try {
+      $nodeStorage = $this->entityTypeManager->getStorage('node');
+      if ($nodeStorage) {
+        $query = $nodeStorage->getQuery()
+          ->accessCheck(FALSE)
+          ->condition('status', 0);
+
+        if ($minTs !== NULL) {
+          $query->condition('publish_on', $minTs, '>=');
+        }
+        else {
+          $query->condition('publish_on', 0, '>');
+        }
+
+        if ($maxTs !== NULL) {
+          $query->condition('publish_on', $maxTs, '<=');
+        }
+
+        if (!empty($bundles)) {
+          $query->condition('type', $bundles, 'IN');
+        }
+
+        $query->sort('publish_on', 'ASC');
+        $nids = $query->execute();
+
+        if (!empty($nids)) {
+          $nodes = $nodeStorage->loadMultiple($nids);
+          foreach ($nodes as $node) {
+            $nid = (int) $node->id();
+            if (isset($seenNids[$nid])) {
+              continue;
+            }
+            // For workflow-managed content, only workflow scheduled transitions to published status count.
+            if ($node->hasField('field_tyonkulku') || $node->hasField('field_tyonkulku_uutinen')) {
+              continue;
+            }
+
+            $publishOn = (int) $node->get('publish_on')->value;
+            $seenNids[$nid] = $nid;
+            $items[$nid] = [
+              'node' => $node,
+              'timestamp' => $publishOn,
+            ];
+          }
+        }
+      }
+    }
+    catch (\Exception $e) {
+    }
+
+    // Sort items by timestamp ASC.
+    uasort($items, fn($a, $b) => $a['timestamp'] <=> $b['timestamp']);
+    return $items;
   }
 
   /**
@@ -200,38 +374,39 @@ class EditorialCalendarService
    */
   protected function queryScheduledNodes(int $startTs, int $endTs, ?array $bundles = NULL): array
   {
-    $storage = $this->entityTypeManager->getStorage('node');
-    $query = $storage->getQuery()
-      ->accessCheck(FALSE)
-      ->condition('status', 0)
-      ->condition('publish_on', $startTs, '>=')
-      ->condition('publish_on', $endTs, '<=')
-      ->sort('publish_on', 'ASC');
-
-    if (!empty($bundles)) {
-      $query->condition('type', $bundles, 'IN');
-    }
-
-    $nids = $query->execute();
-    return !empty($nids) ? $storage->loadMultiple($nids) : [];
+    $items = $this->queryScheduledItems($startTs, $endTs, $bundles);
+    return array_column($items, 'node');
   }
 
   /**
    * Queries unpublished nodes that have no scheduled publication date.
    *
+   * Excludes any nodes currently in 'Hylätty' state and any nodes scheduled to be published.
+   *
    * @param array|null $bundles
    *   Optional bundle filter.
+   * @param array $excludedNids
+   *   Optional array of node IDs to exclude (e.g. scheduled items).
    *
    * @return \Drupal\node\NodeInterface[]
    *   Array of loaded node entities.
    */
-  protected function queryUnscheduledNodes(?array $bundles = NULL): array
+  protected function queryUnscheduledNodes(?array $bundles = NULL, array $excludedNids = []): array
   {
     $storage = $this->entityTypeManager->getStorage('node');
+    if (!$storage) {
+      return [];
+    }
+
     $query = $storage->getQuery()
       ->accessCheck(FALSE)
       ->condition('status', 0);
 
+    if (!empty($excludedNids)) {
+      $query->condition('nid', $excludedNids, 'NOT IN');
+    }
+
+    // Also condition on publish_on = 0 or missing for non-workflow nodes.
     $orGroup = $query->orConditionGroup()
       ->notExists('publish_on')
       ->condition('publish_on', 0);
@@ -244,7 +419,20 @@ class EditorialCalendarService
     $query->sort('changed', 'DESC');
 
     $nids = $query->execute();
-    return !empty($nids) ? $storage->loadMultiple($nids) : [];
+    $nodes = !empty($nids) ? $storage->loadMultiple($nids) : [];
+
+    // Filter out any nodes that might be in Hylätty state in memory.
+    $filteredNodes = [];
+    $rejectedStates = $this->getRejectedWorkflowStates();
+    foreach ($nodes as $node) {
+      $state = $this->getNodeWorkflowStateId($node);
+      if ($state && in_array($state, $rejectedStates, TRUE)) {
+        continue;
+      }
+      $filteredNodes[] = $node;
+    }
+
+    return $filteredNodes;
   }
 
   /**
@@ -260,19 +448,8 @@ class EditorialCalendarService
    */
   protected function queryLaterScheduledNodes(int $endTs, ?array $bundles = NULL): array
   {
-    $storage = $this->entityTypeManager->getStorage('node');
-    $query = $storage->getQuery()
-      ->accessCheck(FALSE)
-      ->condition('status', 0)
-      ->condition('publish_on', $endTs, '>')
-      ->sort('publish_on', 'ASC');
-
-    if (!empty($bundles)) {
-      $query->condition('type', $bundles, 'IN');
-    }
-
-    $nids = $query->execute();
-    return !empty($nids) ? $storage->loadMultiple($nids) : [];
+    $items = $this->queryScheduledItems($endTs + 1, NULL, $bundles);
+    return array_column($items, 'node');
   }
 
   /**
@@ -288,20 +465,62 @@ class EditorialCalendarService
    */
   protected function queryOverdueScheduledNodes(int $startTs, ?array $bundles = NULL): array
   {
-    $storage = $this->entityTypeManager->getStorage('node');
-    $query = $storage->getQuery()
-      ->accessCheck(FALSE)
-      ->condition('status', 0)
-      ->condition('publish_on', 0, '>')
-      ->condition('publish_on', $startTs, '<')
-      ->sort('publish_on', 'ASC');
+    $items = $this->queryScheduledItems(NULL, $startTs - 1, $bundles);
+    return array_column($items, 'node');
+  }
 
-    if (!empty($bundles)) {
-      $query->condition('type', $bundles, 'IN');
+  /**
+   * Retrieves the current workflow state ID of a node, if any.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The node entity.
+   *
+   * @return string|null
+   *   The workflow state machine name, or NULL if none.
+   */
+  public function getNodeWorkflowStateId(NodeInterface $node): ?string
+  {
+    if ($node->hasField('field_tyonkulku') && !$node->get('field_tyonkulku')->isEmpty()) {
+      return (string) $node->get('field_tyonkulku')->value;
+    }
+    if ($node->hasField('field_tyonkulku_uutinen') && !$node->get('field_tyonkulku_uutinen')->isEmpty()) {
+      return (string) $node->get('field_tyonkulku_uutinen')->value;
+    }
+    return NULL;
+  }
+
+  /**
+   * Retrieves the human-readable workflow state label of a node.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The node entity.
+   *
+   * @return string
+   *   The workflow state label, or empty string if no workflow.
+   */
+  public function getNodeWorkflowStateLabel(NodeInterface $node): string
+  {
+    $stateId = $this->getNodeWorkflowStateId($node);
+    if (!empty($stateId)) {
+      try {
+        $stateStorage = $this->entityTypeManager->getStorage('workflow_state');
+        if ($stateStorage) {
+          $stateEntity = $stateStorage->load($stateId);
+          if ($stateEntity) {
+            return (string) $stateEntity->label();
+          }
+        }
+      }
+      catch (\Exception $e) {
+      }
+      return $stateId;
     }
 
-    $nids = $query->execute();
-    return !empty($nids) ? $storage->loadMultiple($nids) : [];
+    if ($node->hasField('field_tyonkulku') || $node->hasField('field_tyonkulku_uutinen')) {
+      return (string) $this->t('Ei määritelty');
+    }
+
+    return '';
   }
 
   /**
@@ -315,7 +534,7 @@ class EditorialCalendarService
    * @return array
    *   Structured node data.
    */
-  protected function formatNodeItem(NodeInterface $node, ?\DateTimeImmutable $scheduledDateTime = NULL): array
+  public function formatNodeItem(NodeInterface $node, ?\DateTimeImmutable $scheduledDateTime = NULL): array
   {
     $bundle = $node->bundle();
     $bundleLabel = $bundle;
@@ -344,7 +563,13 @@ class EditorialCalendarService
       // Fallback if routes cannot be generated.
     }
 
-    $publishOn = $node->hasField('publish_on') ? (int) $node->get('publish_on')->value : 0;
+    $scheduledTs = $scheduledDateTime
+      ? $scheduledDateTime->getTimestamp()
+      : ($node->hasField('publish_on') ? (int) $node->get('publish_on')->value : 0);
+
+    $workflowStateId = $this->getNodeWorkflowStateId($node) ?? '';
+    $workflowStateLabel = $this->getNodeWorkflowStateLabel($node);
+    $hasWorkflow = $node->hasField('field_tyonkulku') || $node->hasField('field_tyonkulku_uutinen');
 
     return [
       'id' => (int) $node->id(),
@@ -357,9 +582,12 @@ class EditorialCalendarService
       'created_formatted' => $this->dateFormatter->format($node->getCreatedTime(), 'short'),
       'changed' => (int) $node->getChangedTime(),
       'changed_formatted' => $this->dateFormatter->format($node->getChangedTime(), 'short'),
-      'publish_on' => $publishOn,
-      'publish_time' => $scheduledDateTime ? $scheduledDateTime->format('H:i') : ($publishOn > 0 ? $this->dateFormatter->format($publishOn, 'custom', 'H:i') : ''),
-      'publish_date_formatted' => $publishOn > 0 ? $this->dateFormatter->format($publishOn, 'short') : '',
+      'publish_on' => $scheduledTs,
+      'publish_time' => $scheduledDateTime ? $scheduledDateTime->format('H:i') : ($scheduledTs > 0 ? $this->dateFormatter->format($scheduledTs, 'custom', 'H:i') : ''),
+      'publish_date_formatted' => $scheduledTs > 0 ? $this->dateFormatter->format($scheduledTs, 'short') : '',
+      'workflow_state_id' => $workflowStateId,
+      'workflow_state_label' => $workflowStateLabel,
+      'has_workflow' => $hasWorkflow,
       'url' => $url,
       'edit_url' => $editUrl,
     ];

@@ -22,3 +22,8 @@ $loader->addPsr4('Drupal\\Component\\', $drupal_root . '/core/lib/Drupal/Compone
 // Register node and user module namespaces.
 $loader->addPsr4('Drupal\\node\\', $drupal_root . '/core/modules/node/src');
 $loader->addPsr4('Drupal\\user\\', $drupal_root . '/core/modules/user/src');
+
+// Register workflow namespaces.
+$loader->addPsr4('Drupal\\workflow\\', $drupal_root . '/modules/contrib/workflow/src');
+$loader->addPsr4('Drupal\\konsolifin_workflows\\', $drupal_root . '/modules/custom/konsolifin_workflows/src');
+
