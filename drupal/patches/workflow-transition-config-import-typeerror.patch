@@ -1,3 +1,34 @@
+diff --git a/src/Entity/Workflow.php b/src/Entity/Workflow.php
+index 3807645..22dbd64 100644
+--- a/src/Entity/Workflow.php
++++ b/src/Entity/Workflow.php
+@@ -196,7 +196,7 @@ class Workflow extends ConfigEntityBase implements WorkflowInterface {
+   public function save() {
+     $status = parent::save();
+     // Make sure a Creation state exists, when saving a Workflow.
+-    if ($status == SAVED_NEW) {
++    if (!$this->isSyncing() && $status == SAVED_NEW) {
+       $this->createCreationState();
+     }
+ 
+@@ -304,7 +304,7 @@ class Workflow extends ConfigEntityBase implements WorkflowInterface {
+   /**
+    * {@inheritdoc}
+    */
+-  public function createCreationState(): WorkflowStateInterface {
++  public function createCreationState(): ?WorkflowStateInterface {
+     if (\Drupal::isConfigSyncing()) {
+       // Do not create the default state while configuration are importing.
+       return $this->creation_state;
+@@ -345,7 +345,7 @@ class Workflow extends ConfigEntityBase implements WorkflowInterface {
+   /**
+    * {@inheritdoc}
+    */
+-  public function getCreationState(): WorkflowState {
++  public function getCreationState(): ?WorkflowState {
+ 
+     // First, find it.
+     if (!$this->creation_state) {
 diff --git a/src/Entity/WorkflowConfigTransition.php b/src/Entity/WorkflowConfigTransition.php
 index cfae54f..0e68ab0 100644
 --- a/src/Entity/WorkflowConfigTransition.php
@@ -24,6 +55,28 @@ index cfae54f..0e68ab0 100644
      return $wid;
    }
  
+diff --git a/src/Entity/WorkflowInterface.php b/src/Entity/WorkflowInterface.php
+index cf80b7a..3ff7f5a 100644
+--- a/src/Entity/WorkflowInterface.php
++++ b/src/Entity/WorkflowInterface.php
+@@ -54,7 +54,7 @@ interface WorkflowInterface extends EntityInterface {
+    * @return \Drupal\workflow\Entity\WorkflowStateInterface
+    *   The initial state.
+    */
+-  public function createCreationState(): WorkflowStateInterface;
++  public function createCreationState(): ?WorkflowStateInterface;
+ 
+   /**
+    * Create a new state for this workflow.
+@@ -80,7 +80,7 @@ interface WorkflowInterface extends EntityInterface {
+    * @return \Drupal\workflow\Entity\WorkflowState
+    *   The initial state.
+    */
+-  public function getCreationState(): WorkflowState;
++  public function getCreationState(): ?WorkflowState;
+ 
+   /**
+    * Gets the ID of the initial state for a newly created entity.
 diff --git a/src/Entity/WorkflowTransition.php b/src/Entity/WorkflowTransition.php
 index 7a96688..eff0c0c 100644
 --- a/src/Entity/WorkflowTransition.php
