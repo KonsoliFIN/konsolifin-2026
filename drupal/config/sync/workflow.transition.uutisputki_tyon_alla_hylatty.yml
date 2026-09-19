@@ -1,0 +1,17 @@
+uuid: 5f424dc0-d668-4339-9c71-87c77e70c4de
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_hylatty
+    - workflow.state.uutisputki_tyon_alla
+id: uutisputki_tyon_alla_hylatty
+label: null
+module: workflow
+from_sid: uutisputki_tyon_alla
+to_sid: uutisputki_hylatty
+roles:
+  workflow_author: '0'
+  toimitus: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

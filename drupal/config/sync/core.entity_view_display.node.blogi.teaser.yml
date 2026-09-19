@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.blogi.field_pelit
     - field.field.node.blogi.field_sarja
     - field.field.node.blogi.field_studiot
+    - field.field.node.blogi.field_tyonkulku
     - image.style.teaser_thumbnail
     - node.type.blogi
   module:
@@ -63,4 +64,5 @@ hidden:
   field_pelit: true
   field_sarja: true
   field_studiot: true
+  field_tyonkulku: true
   langcode: true

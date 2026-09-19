@@ -1,0 +1,17 @@
+uuid: e3c14ec1-5ab2-40fb-a3af-2e534a1f1bda
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_creation
+    - workflow.state.uutisputki_julkaistu
+id: uutisputki_creation_julkaistu
+label: null
+module: workflow
+from_sid: uutisputki_creation
+to_sid: uutisputki_julkaistu
+roles:
+  workflow_author: '0'
+  toimitus: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

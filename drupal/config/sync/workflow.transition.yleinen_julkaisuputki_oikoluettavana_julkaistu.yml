@@ -1,0 +1,17 @@
+uuid: 269a999f-681d-4465-9539-8d6004b2ab1d
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_julkaistu
+    - workflow.state.yleinen_julkaisuputki_oikoluettavana
+id: yleinen_julkaisuputki_oikoluettavana_julkaistu
+label: null
+module: workflow
+from_sid: yleinen_julkaisuputki_oikoluettavana
+to_sid: yleinen_julkaisuputki_julkaistu
+roles:
+  workflow_author: '0'
+  toimitus: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

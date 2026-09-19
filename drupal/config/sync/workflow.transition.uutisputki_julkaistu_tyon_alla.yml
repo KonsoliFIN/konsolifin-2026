@@ -1,0 +1,17 @@
+uuid: 03d21706-76b4-4f19-9e42-443a904f527c
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_julkaistu
+    - workflow.state.uutisputki_tyon_alla
+id: uutisputki_julkaistu_tyon_alla
+label: 'Palauta työpöydälle'
+module: workflow
+from_sid: uutisputki_julkaistu
+to_sid: uutisputki_tyon_alla
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

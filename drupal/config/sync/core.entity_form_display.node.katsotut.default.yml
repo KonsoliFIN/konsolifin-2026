@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.katsotut.field_hero
     - field.field.node.katsotut.field_lisaa_sisaltoa
     - field.field.node.katsotut.field_lisatiedot
+    - field.field.node.katsotut.field_tyonkulku
     - node.type.katsotut
   module:
     - comment
@@ -17,6 +18,7 @@ dependencies:
     - path
     - scheduler
     - text
+    - workflow
 id: node.katsotut.default
 targetEntityType: node
 bundle: katsotut
@@ -47,7 +49,7 @@ content:
     third_party_settings: {  }
   field_comments:
     type: comment_default
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -76,6 +78,13 @@ content:
       rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_tyonkulku:
+    type: workflow_default
+    weight: 10
+    region: content
+    settings:
+      form_mode: add
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 6
@@ -91,32 +100,32 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 16
+    weight: 17
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 11
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
@@ -141,7 +150,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,13 @@
+uuid: 9cf472ce-94e4-4ace-b9af-cd904e6e814d
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_hylatty
+label: Hylätty
+weight: 2
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 0
+single_state_widget: ''

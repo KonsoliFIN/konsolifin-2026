@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_sarja
     - field.field.node.peliarvostelu.field_summary_in_english
     - field.field.node.peliarvostelu.field_title_in_english
+    - field.field.node.peliarvostelu.field_tyonkulku
     - image.style.teaser_thumbnail
     - node.type.peliarvostelu
   module:
@@ -64,4 +65,5 @@ hidden:
   field_sarja: true
   field_summary_in_english: true
   field_title_in_english: true
+  field_tyonkulku: true
   langcode: true

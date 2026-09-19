@@ -32,6 +32,8 @@ dependencies:
     - taxonomy.vocabulary.pelijulkaisijat
     - taxonomy.vocabulary.pelistudiot
     - taxonomy.vocabulary.sarja
+    - workflow.workflow.uutisputki
+    - workflow.workflow.yleinen_julkaisuputki
   module:
     - announcements_feed
     - block_content
@@ -52,6 +54,7 @@ dependencies:
     - taxonomy
     - toolbar
     - update
+    - workflow
 id: toimitus
 label: toimitus
 weight: -8
@@ -96,8 +99,10 @@ permissions:
   - 'create terms in sarja'
   - 'create url aliases'
   - 'create uutinen content'
+  - 'create uutisputki workflow_transition'
   - 'create video media'
   - 'create vierailija_arvostelu content'
+  - 'create yleinen_julkaisuputki workflow_transition'
   - 'delete media'
   - 'edit any article content'
   - 'edit any audio media'
@@ -166,6 +171,7 @@ permissions:
   - 'revert video revisions'
   - 'revert vierailija_arvostelu revisions'
   - 'schedule publishing of nodes'
+  - 'schedule uutisputki workflow_transition'
   - 'search content'
   - 'skip comment approval'
   - 'translate interface'

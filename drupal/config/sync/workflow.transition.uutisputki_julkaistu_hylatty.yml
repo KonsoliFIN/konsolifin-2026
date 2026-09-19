@@ -1,0 +1,17 @@
+uuid: abbfa98a-3e53-454a-b725-01a9d51531b9
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_hylatty
+    - workflow.state.uutisputki_julkaistu
+id: uutisputki_julkaistu_hylatty
+label: Hylkää
+module: workflow
+from_sid: uutisputki_julkaistu
+to_sid: uutisputki_hylatty
+roles:
+  toimitus: toimitus
+  workflow_author: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

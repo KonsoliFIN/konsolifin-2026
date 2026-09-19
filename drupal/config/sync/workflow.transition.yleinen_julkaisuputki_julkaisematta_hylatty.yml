@@ -1,0 +1,17 @@
+uuid: c78dbf9a-96dc-411f-ab99-bb6215c4e151
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_hylatty
+    - workflow.state.yleinen_julkaisuputki_julkaisematta
+id: yleinen_julkaisuputki_julkaisematta_hylatty
+label: Hylkää
+module: workflow
+from_sid: yleinen_julkaisuputki_julkaisematta
+to_sid: yleinen_julkaisuputki_hylatty
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

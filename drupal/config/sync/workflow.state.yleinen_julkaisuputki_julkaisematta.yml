@@ -1,0 +1,13 @@
+uuid: 9ca9060a-8f78-48b2-85be-6eea940d33ff
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_julkaisematta
+label: 'Valmis, ei julkaistu'
+weight: -7
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 0
+single_state_widget: ''

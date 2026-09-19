@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
     - field.field.node.article.field_studiot
+    - field.field.node.article.field_tyonkulku
     - image.style.hero_banner
     - node.type.article
   module:
@@ -42,7 +43,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 8
     region: content
   field_comments:
     type: comment_default
@@ -51,7 +52,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 10
+    weight: 9
     region: content
   field_hero:
     type: media_thumbnail
@@ -70,7 +71,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_julkaisijat:
     type: entity_reference_label
@@ -78,7 +79,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 7
     region: content
   field_kuvat:
     type: slick_media
@@ -108,6 +109,7 @@ content:
       preload: false
       responsive_image_style: ''
       use_theme_field: false
+      field_api_classes: false
       box_style: ''
       image_style: ''
       media_switch: ''
@@ -154,14 +156,14 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 10
     region: content
   field_lisatiedot:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 11
     region: content
   field_pelit:
     type: entity_reference_label
@@ -169,7 +171,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
   field_sarja:
     type: entity_reference_label
@@ -185,8 +187,9 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
 hidden:
+  field_tyonkulku: true
   langcode: true
   links: true

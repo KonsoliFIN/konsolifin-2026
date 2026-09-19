@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_sarja
     - field.field.node.peliarvostelu.field_summary_in_english
     - field.field.node.peliarvostelu.field_title_in_english
+    - field.field.node.peliarvostelu.field_tyonkulku
     - image.style.hero_banner
     - node.type.peliarvostelu
   module:
@@ -44,7 +45,7 @@ content:
     settings:
       width: '400'
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
   field_arvosteltu_versio:
     type: entity_reference_label
@@ -52,7 +53,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 7
     region: content
   field_comments:
     type: comment_default
@@ -61,7 +62,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 7
+    weight: 6
     region: content
   field_hero:
     type: media_thumbnail
@@ -102,6 +103,7 @@ content:
       preload: false
       responsive_image_style: ''
       use_theme_field: false
+      field_api_classes: false
       box_style: ''
       image_style: ''
       media_switch: ''
@@ -148,14 +150,14 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 8
     region: content
   field_lisatiedot:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 9
     region: content
   field_pelit:
     type: entity_reference_label
@@ -163,7 +165,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_sarja:
     type: entity_reference_label
@@ -177,5 +179,6 @@ hidden:
   field_pelin_nimi: true
   field_summary_in_english: true
   field_title_in_english: true
+  field_tyonkulku: true
   langcode: true
   links: true

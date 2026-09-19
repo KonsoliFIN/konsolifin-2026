@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
     - field.field.node.article.field_studiot
+    - field.field.node.article.field_tyonkulku
     - node.type.article
   module:
     - autocomplete_deluxe
@@ -23,6 +24,7 @@ dependencies:
     - path
     - scheduler
     - text
+    - workflow
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -63,7 +65,7 @@ content:
     third_party_settings: {  }
   field_comments:
     type: comment_default
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -184,6 +186,13 @@ content:
       new_terms: true
       no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
+  field_tyonkulku:
+    type: workflow_default
+    weight: 15
+    region: content
+    settings:
+      form_mode: add
+    third_party_settings: {  }
   path:
     type: path
     weight: 14
@@ -192,32 +201,32 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 21
+    weight: 22
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 19
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 15
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 17
+    weight: 18
     region: content
     settings:
       display_label: true
@@ -242,7 +251,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 20
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,17 @@
+uuid: 4297b78c-ef23-4cca-8afb-4fdf1ba630f4
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_julkaisematta
+    - workflow.state.yleinen_julkaisuputki_tyon_alla
+id: yleinen_julkaisuputki_julkaisematta_tyon_alla
+label: 'Palauta työn alle'
+module: workflow
+from_sid: yleinen_julkaisuputki_julkaisematta
+to_sid: yleinen_julkaisuputki_tyon_alla
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

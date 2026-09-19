@@ -1,0 +1,12 @@
+uuid: 537a9851-123a-4f8c-b92b-8ed2eb0a2aa5
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_julkaistu
+id: uutisputki_julkaistu_julkaistu
+label: Tallenna
+module: workflow
+from_sid: uutisputki_julkaistu
+to_sid: uutisputki_julkaistu
+roles: {  }

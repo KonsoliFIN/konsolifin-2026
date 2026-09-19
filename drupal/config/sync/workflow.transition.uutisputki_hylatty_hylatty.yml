@@ -1,0 +1,12 @@
+uuid: 131b27f8-900d-4951-8adc-1a2fb2c2d781
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_hylatty
+id: uutisputki_hylatty_hylatty
+label: Hylkää
+module: workflow
+from_sid: uutisputki_hylatty
+to_sid: uutisputki_hylatty
+roles: {  }

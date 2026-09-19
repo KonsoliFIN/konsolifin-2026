@@ -1,0 +1,17 @@
+uuid: e1738577-0d31-400e-b6dc-08fcf38d30b0
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_hylatty
+    - workflow.state.yleinen_julkaisuputki_julkaistu
+id: yleinen_julkaisuputki_hylatty_julkaistu
+label: null
+module: workflow
+from_sid: yleinen_julkaisuputki_hylatty
+to_sid: yleinen_julkaisuputki_julkaistu
+roles:
+  workflow_author: '0'
+  toimitus: '0'
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

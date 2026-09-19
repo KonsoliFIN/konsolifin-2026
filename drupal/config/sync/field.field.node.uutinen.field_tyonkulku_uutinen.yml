@@ -1,0 +1,21 @@
+uuid: caa22abf-ca86-4065-8e93-2f92837c4b49
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyonkulku_uutinen
+    - node.type.uutinen
+  module:
+    - workflow
+id: node.uutinen.field_tyonkulku_uutinen
+field_name: field_tyonkulku_uutinen
+entity_type: node
+bundle: uutinen
+label: 'Työnkulku '
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

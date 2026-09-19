@@ -1,0 +1,12 @@
+uuid: aad799da-89ff-43ab-a2e4-622df2d79477
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_hylatty
+id: yleinen_julkaisuputki_hylatty_hylatty
+label: Tallenna
+module: workflow
+from_sid: yleinen_julkaisuputki_hylatty
+to_sid: yleinen_julkaisuputki_hylatty
+roles: {  }

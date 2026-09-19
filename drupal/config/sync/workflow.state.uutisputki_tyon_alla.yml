@@ -1,0 +1,13 @@
+uuid: 8f1ed12e-2368-45ef-86e4-08e1ef8dce16
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisputki
+id: uutisputki_tyon_alla
+label: 'Työn alla'
+weight: 1
+module: workflow
+wid: uutisputki
+sysid: 0
+single_state_widget: ''
