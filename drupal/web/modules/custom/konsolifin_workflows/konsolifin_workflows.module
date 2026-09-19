@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for KonsoliFIN Workflows module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ */
+function konsolifin_workflows_node_presave(NodeInterface $node): void {
+  /** @var \Drupal\konsolifin_workflows\WorkflowPublicationManager $publication_manager */
+  $publication_manager = \Drupal::service('konsolifin_workflows.publication_manager');
+  $publication_manager->syncPublishingStatus($node);
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node forms.
+ */
+function konsolifin_workflows_form_node_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  $form_object = $form_state->getFormObject();
+  if (!method_exists($form_object, 'getEntity')) {
+    return;
+  }
+
+  $entity = $form_object->getEntity();
+  if (!$entity instanceof NodeInterface) {
+    return;
+  }
+
+  /** @var \Drupal\konsolifin_workflows\WorkflowPublicationManager $publication_manager */
+  $publication_manager = \Drupal::service('konsolifin_workflows.publication_manager');
+  if ($publication_manager->hasWorkflowField($entity)) {
+    if (isset($form['status'])) {
+      $form['status']['#access'] = FALSE;
+    }
+  }
+}

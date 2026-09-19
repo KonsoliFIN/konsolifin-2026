@@ -172,6 +172,7 @@ permissions:
   - 'revert vierailija_arvostelu revisions'
   - 'schedule publishing of nodes'
   - 'schedule uutisputki workflow_transition'
+  - 'schedule yleinen_julkaisuputki workflow_transition'
   - 'search content'
   - 'skip comment approval'
   - 'translate interface'

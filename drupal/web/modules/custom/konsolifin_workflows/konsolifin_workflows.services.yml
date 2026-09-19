@@ -1,0 +1,3 @@
+services:
+  konsolifin_workflows.publication_manager:
+    class: Drupal\konsolifin_workflows\WorkflowPublicationManager

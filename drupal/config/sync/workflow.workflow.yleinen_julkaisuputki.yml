@@ -10,7 +10,7 @@ options:
   fieldset: 0
   options: buttons
   schedule_enable: true
-  schedule_timezone: 1
+  schedule_timezone: 0
   always_update_entity: 0
-  comment_log_node: 1
+  comment_log_node: 0
   watchdog_log: 1

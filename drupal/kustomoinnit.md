@@ -14,6 +14,7 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
 6. [KonsoliFIN Term Page (`konsolifin_term_page`)](#konsolifin-term-page-konsolifin_term_page)
 7. [Migrate KonsoliFIN (`migrate_konsolifin`)](#migrate-konsolifin-migrate_konsolifin)
 8. [Migrate KonsoliFIN Testidata (`migrate_konsolifin_testdata`)](#migrate-konsolifin-testidata-migrate_konsolifin_testdata)
+9. [KonsoliFIN Workflows (`konsolifin_workflows`)](#konsolifin-workflows-konsolifin_workflows)
 
 ---
 
@@ -264,6 +265,25 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
     - `ImportRollbackReadinessTest`: Tarkistaa, että migraatiot voidaan ajaa alas ja uudelleen ilman ristiriitoja.
 - **Datan noutotyökalu (`retriever/`):**
   - Sisältää Python-pohjaisen apuskriptin (`retrieve.py`), jolla voidaan tarvittaessa hakea ja anonymisoida otos tuotantosivuston aineistosta testikäyttöön.
+
+---
+
+### KonsoliFIN Workflows (`konsolifin_workflows`)
+
+**Sijainti:** `web/modules/custom/konsolifin_workflows`  
+**Tarkoitus:** Täydentää Drupalin `workflow`-kontribuutiomoduulia hallitsemalla solmujen (node) julkaisutilaa (`status`) automaattisesti työnkulun tilan perusteella sekä piilottamalla manuaalisen julkaisutilan valintalaatikon työnkulkua käyttäviltä sisältötyypeiltä.
+
+#### Ominaisuudet ja arkkitehtuuri:
+- **Julkaisutilan automaattinen synkronointi (`WorkflowPublicationManager`):**
+  - **Yleinen julkaisuputki (`field_tyonkulku`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `yleinen_julkaisuputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
+  - **Uutisputki (`field_tyonkulku_uutinen`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `uutisputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
+  - Sisältötyypit, joilla ei ole kumpaakaan kenttää, säilyttävät manuaalisen julkaisutilansa ilman puuttumista.
+- **Entiteetin tallennushook (`konsolifin_workflows_node_presave`):**
+  - Varmistaa julkaisutilan oikeellisuuden kaikissa tallennustilanteissa: manuaalinen muokkaus, ohjelmalliset tallennukset, ajastetut tilasiirtymät cron-ajossa sekä aineistotuonnit.
+- **Lomakemuokkaukset (`konsolifin_workflows_form_node_form_alter`):**
+  - Piilottaa Drupalin oletusarvoisen "Julkaistu" -valintaruudun (`$form['status']['#access'] = FALSE`) kaikilta sisältötyypeiltä, joissa on työnkulkukenttä, jotta käyttäjät eivät vahingossa ohita työnkulun tilaan perustuvaa julkaisulogiikkaa.
+- **Yksikkötestit (`tests/src/Unit`):**
+  - `WorkflowPublicationManagerTest` kattaa kattavasti molempien työnkulkujen eri tilat, tyhjät arvot, työnkuluttomat solmut sekä `setPublished`/`setUnpublished`-kutsut.
 
 ---
 

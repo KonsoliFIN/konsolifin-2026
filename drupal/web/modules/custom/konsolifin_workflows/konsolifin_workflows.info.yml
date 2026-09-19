@@ -1,0 +1,8 @@
+name: 'KonsoliFIN Workflows'
+type: module
+description: 'Workflow customizations and publishing automation for KonsoliFIN.'
+package: 'KonsoliFIN'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node
+  - workflow:workflow
