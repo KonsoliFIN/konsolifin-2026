@@ -11,6 +11,7 @@ test.describe('KonsoliFIN Staging - Julkisen sivuston savutestit', () => {
     test.beforeEach(async ({ page }) => {
         // Avataan etusivu ja kuitataan evästekysely tarvittaessa
         await page.goto('/');
+        await page.waitForTimeout(1000);
         const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
         if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
             await cookieButton.click();
@@ -63,7 +64,7 @@ test.describe('KonsoliFIN Staging - Julkisen sivuston savutestit', () => {
         // Varmistetaan, että siirryttiin artikkelisivulle ja otsikko (h1) on näkyvissä
         await expect(page).toHaveURL(/\/(artikkeli|uutinen|peliarvostelu|blogi)\//);
         await expect(page.locator('h1')).toBeVisible();
-        await expect(page.locator('article, .node--type-article, .node--view-mode-full')).toBeVisible();
+        await expect(page.locator('article, .node--type-article, .node--view-mode-full').first()).toBeVisible();
     });
 
     test('Peliarvostelujen listaussivu latautuu', async ({ page }) => {
@@ -75,6 +76,17 @@ test.describe('KonsoliFIN Staging - Julkisen sivuston savutestit', () => {
 });
 
 test.describe('KonsoliFIN Staging - Ylläpito ja kirjautuminen', () => {
+
+    test.beforeEach(async ({ page }) => {
+        // Avataan etusivu ja kuitataan evästekysely tarvittaessa
+        await page.goto('/');
+        await page.waitForTimeout(1000);
+        const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
+        if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+            await cookieButton.click();
+        }
+    });
+
 
     test('Kirjautumissivun perusnäkymä ja kentät ovat saatavilla (?showcore)', async ({ page }) => {
         await page.goto('/user/login?showcore');
@@ -120,4 +132,57 @@ test.describe('KonsoliFIN Staging - Ylläpito ja kirjautuminen', () => {
         await page.goto('/admin/reports/status');
         await expect(page.locator('h1')).toBeVisible();
     });
+
+});
+
+test.describe('KonsoliFIN Staging - Forum-tunnuksilla toimiminen', () => {
+
+    test.beforeEach(async ({ page }) => {
+        // Avataan etusivu ja kuitataan evästekysely tarvittaessa
+        await page.goto('/');
+        await page.waitForTimeout(1000);
+        const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
+        if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+            await cookieButton.click();
+        }
+    });
+
+    test('Forum-tunnuksilla kirjautuminen, oman profiilin tarkistus ja uloskirjautuminen', async ({ page }) => {
+        const stagingUser = process.env.FORUM_USERNAME;
+        const stagingPass = process.env.FORUM_PASSWORD;
+
+        // Ohitetaan testi hallitusti, mikäli salaisia kirjautumistietoja ei ole asetettu .env-tiedostoon
+        test.skip(
+            !stagingUser || !stagingPass,
+            'Ohitettu: FORUM_USERNAME ja/tai FORUM_PASSWORD puuttuvat .env-tiedostosta.'
+        );
+
+        await page.goto('/');
+        await page.getByRole('button', { name: 'Log in with Forum stage' }).click();
+
+        // Foorumilla tulee todennäköisesti uusi evästekysely
+        await page.waitForTimeout(1000);
+        const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
+        if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
+            await cookieButton.click();
+        }
+
+        const usernameField = page.getByRole('textbox', { name: /Käyttäjänimi tai sähkö/i });
+        const passwordField = page.getByRole('textbox', { name: /Salasana:/i });
+        const loginButton = page.getByRole('button', { name: 'Kirjaudu' });
+
+        await usernameField.click();
+        await usernameField.fill(stagingUser || '');
+        await passwordField.click();
+        await passwordField.fill(stagingPass || '');
+        await loginButton.click();
+
+        const authorizeButton = page.getByRole('button', { name: 'Authorize' });
+        await authorizeButton.click();
+
+        await page.getByRole('link', { name: 'Oma käyttäjätilini' }).click();
+        await page.getByRole('link', { name: 'Kirjaudu ulos' }).click();
+
+    });
+
 });
