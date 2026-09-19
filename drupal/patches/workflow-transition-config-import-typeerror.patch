@@ -1,0 +1,67 @@
+diff --git a/src/Entity/WorkflowConfigTransition.php b/src/Entity/WorkflowConfigTransition.php
+index cfae54f..0e68ab0 100644
+--- a/src/Entity/WorkflowConfigTransition.php
++++ b/src/Entity/WorkflowConfigTransition.php
+@@ -238,6 +238,10 @@ class WorkflowConfigTransition extends ConfigEntityBase implements WorkflowConfi
+    * {@inheritdoc}
+    */
+   public function save() {
++    if ($this->isSyncing()) {
++      return parent::save();
++    }
++
+     $workflow = $this->getWorkflow();
+ 
+     if (!$workflow) {
+@@ -390,7 +394,9 @@ class WorkflowConfigTransition extends ConfigEntityBase implements WorkflowConfi
+ 
+     // Apparently, from_state can be null here, during config import.
+     $wid = $this->getFromState()?->getWorkflowId();
+-    $this->setWorkflowId($wid);
++    if ($wid !== NULL && $wid !== '') {
++      $this->setWorkflowId($wid);
++    }
+     return $wid;
+   }
+ 
+diff --git a/src/Entity/WorkflowTransition.php b/src/Entity/WorkflowTransition.php
+index 7a96688..eff0c0c 100644
+--- a/src/Entity/WorkflowTransition.php
++++ b/src/Entity/WorkflowTransition.php
+@@ -1020,7 +1020,9 @@ class WorkflowTransition extends ContentEntityBase implements WorkflowTransition
+           $wid = $state?->getWorkflowId();
+         }
+       }
+-      $this->setWorkflowId($wid);
++      if ($wid !== NULL && $wid !== '') {
++        $this->setWorkflowId($wid);
++      }
+     }
+     catch (\UnhandledMatchError $e) {
+       workflow_debug(__FILE__, __FUNCTION__, __LINE__, '', '');
+diff --git a/src/WorkflowTypeAttributeInterface.php b/src/WorkflowTypeAttributeInterface.php
+index 93d30c8..9027934 100644
+--- a/src/WorkflowTypeAttributeInterface.php
++++ b/src/WorkflowTypeAttributeInterface.php
+@@ -42,7 +42,7 @@ interface WorkflowTypeAttributeInterface {
+    * @return \Drupal\workflow\WorkflowTypeAttributeInterface
+    *   The Workflow object.
+    */
+-  public function setWorkflowId(string $wid): WorkflowTypeAttributeInterface;
++  public function setWorkflowId(?string $wid = NULL): WorkflowTypeAttributeInterface;
+ 
+   /**
+    * Gets the Workflow ID of this object.
+diff --git a/src/WorkflowTypeAttributeTrait.php b/src/WorkflowTypeAttributeTrait.php
+index 1ca1124..2601f5a 100644
+--- a/src/WorkflowTypeAttributeTrait.php
++++ b/src/WorkflowTypeAttributeTrait.php
+@@ -63,7 +63,7 @@ trait WorkflowTypeAttributeTrait {
+   /**
+    * {@inheritdoc}
+    */
+-  public function setWorkflowId(string $wid): WorkflowTypeAttributeInterface {
++  public function setWorkflowId(?string $wid = NULL): WorkflowTypeAttributeInterface {
+     $this->wid = $wid;
+     $this->workflow = NULL;
+     return $this;
