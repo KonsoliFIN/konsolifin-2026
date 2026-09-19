@@ -287,8 +287,21 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Varmistaa julkaisutilan oikeellisuuden kaikissa tallennustilanteissa: manuaalinen muokkaus, ohjelmalliset tallennukset, ajastetut tilasiirtymät cron-ajossa sekä aineistotuonnit.
 - **Lomakemuokkaukset (`konsolifin_workflows_form_node_form_alter`):**
   - Piilottaa Drupalin oletusarvoisen "Julkaistu" -valintaruudun (`$form['status']['#access'] = FALSE`) kaikilta sisältötyypeiltä, joissa on työnkulkukenttä, jotta käyttäjät eivät vahingossa ohita työnkulun tilaan perustuvaa julkaisulogiikkaa.
+- **Slack-ilmoituspalvelu ja triggerit (`SlackNotificationService`, `WorkflowTransitionSubscriber`):**
+  - Kuuntelee työnkulun tapahtumaa `WorkflowEvents::POST_TRANSITION`.
+  - **Oikolukutriggeri:** Kun sisältö siirtyy tilaan *Oikoluettavana* (`yleinen_julkaisuputki_oikoluettavana`), lähetetään ilmoitus määritetylle oikoluvun Slack-kanavalle (`channel_oikoluku`) linkkeineen ja kirjoittajatietoineen (täggää kirjoittajan käyttäjätililtä löytyvän `field_slack_id`-tunnuksen muodossa `<@ID>`).
+  - **Julkaisutriggeri:** Kun sisältö siirtyy tilaan *Julkaistu* (`yleinen_julkaisuputki_julkaistu` tai `uutisputki_julkaistu`):
+    - Uutisille (`uutinen` / `uutisputki`) ilmoitus reititetään uutiskanavalle (`channel_news_published`).
+    - Muille sisältötyypeille (artikkelit, arviot ym.) ilmoitus reititetään toiselle kanavalle (`channel_other_published`).
+  - Tukee sekä Slack Bot User OAuth Tokeneita (`xoxb-...` `chat.postMessage`-rajapinnalla) että suoria Incoming Webhook -osoitteita. Virheet ja aikakatkaisut käsitellään siististi lokiin keskeyttämättä julkaisuprosessia.
+- **Hallintalomake ja asetukset (`KonsolifinWorkflowsSettingsForm`):**
+  - Reitti `/admin/config/workflow/konsolifin-workflows` (oikeus: `administer konsolifin workflows`).
+  - Mahdollistaa Slack-ilmoitusten kytkemisen päälle/pois, API-avaimen/tokenin syöttämisen sekä oikoluku-, uutis- ja julkaisukanavien määrittämisen erikseen.
+  - Sisältää painikkeen testi-ilmoituksen lähettämiseen suoraan hallintakäyttöliittymästä.
 - **Yksikkötestit (`tests/src/Unit`):**
-  - `WorkflowPublicationManagerTest` kattaa kattavasti molempien työnkulkujen eri tilat, tyhjät arvot, työnkuluttomat solmut sekä `setPublished`/`setUnpublished`-kutsut.
+  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan eri tiloilla ja kentillä (16 testiä).
+  - `SlackNotificationServiceTest`: Kattaa viestin lähetyksen Bot Tokenilla, webhoookeilla, virhetilanteet, author-täggäykset ja kanavareititykset (10 testiä).
+  - `WorkflowTransitionSubscriberTest`: Kattaa Oikoluku- ja julkaisutriggerit, ajastettujen tilojen ja samojen tilojen ohitukset (8 testiä).
 
 ---
 

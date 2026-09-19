@@ -1,3 +1,18 @@
 services:
   konsolifin_workflows.publication_manager:
     class: Drupal\konsolifin_workflows\WorkflowPublicationManager
+
+  konsolifin_workflows.slack_notifier:
+    class: Drupal\konsolifin_workflows\SlackNotificationService
+    arguments:
+      - '@http_client'
+      - '@config.factory'
+      - '@logger.factory'
+      - '@entity_type.manager'
+
+  konsolifin_workflows.workflow_transition_subscriber:
+    class: Drupal\konsolifin_workflows\EventSubscriber\WorkflowTransitionSubscriber
+    arguments:
+      - '@konsolifin_workflows.slack_notifier'
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,5 @@
+slack_enabled: false
+slack_api_token: ''
+channel_oikoluku: ''
+channel_news_published: ''
+channel_other_published: ''

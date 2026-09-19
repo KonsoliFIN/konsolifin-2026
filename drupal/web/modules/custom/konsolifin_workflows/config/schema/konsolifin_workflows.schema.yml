@@ -1,0 +1,19 @@
+konsolifin_workflows.settings:
+  type: config_object
+  label: 'KonsoliFIN Workflows settings'
+  mapping:
+    slack_enabled:
+      type: boolean
+      label: 'Enable Slack notifications'
+    slack_api_token:
+      type: string
+      label: 'Slack Bot Token or Webhook URL'
+    channel_oikoluku:
+      type: string
+      label: 'Channel for Oikoluku'
+    channel_news_published:
+      type: string
+      label: 'Channel for published news'
+    channel_other_published:
+      type: string
+      label: 'Channel for other published content'
