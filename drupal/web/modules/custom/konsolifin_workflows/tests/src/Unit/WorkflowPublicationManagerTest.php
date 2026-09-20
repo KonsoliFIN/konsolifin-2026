@@ -371,11 +371,170 @@ class WorkflowPublicationManagerTest extends TestCase {
       WorkflowPublicationManager::FIELD_GENERAL => WorkflowPublicationManager::STATE_GENERAL_PUBLISHED,
     ], true);
     $node->method('getOriginal')->willReturn($original);
-
     $node->expects($this->never())->method('setCreatedTime');
 
     $result = $this->manager->syncPublishingTimestamp($node);
     $this->assertFalse($result);
   }
 
+  /**
+   * Tests stripProofreadingHtml with various HTML inputs.
+   */
+  #[DataProvider('proofreadingHtmlDataProvider')]
+  public function testStripProofreadingHtml(string $input, string $expected): void {
+    $result = $this->manager->stripProofreadingHtml($input);
+    $this->assertEquals($expected, $result);
+  }
+
+  /**
+   * Data provider for testStripProofreadingHtml.
+   */
+  public static function proofreadingHtmlDataProvider(): array {
+    return [
+      'empty html' => [
+        '',
+        '',
+      ],
+      'no proofreading comments' => [
+        '<p>Tämä on tavallista tekstiä ilman huomautuksia.</p>',
+        '<p>Tämä on tavallista tekstiä ilman huomautuksia.</p>',
+      ],
+      'single proofreading comment' => [
+        '<p>Artikkelin tekstiä <span class="sisalto-oikoluku">Tarkista tämä kappale</span> ja jatkoa.</p>',
+        '<p>Artikkelin tekstiä  ja jatkoa.</p>',
+      ],
+      'multiple proofreading comments' => [
+        '<p>Alku <span class="sisalto-oikoluku">Huomio 1</span> väli <span class="sisalto-oikoluku">Huomio 2</span> loppu.</p>',
+        '<p>Alku  väli  loppu.</p>',
+      ],
+      'proofreading comment with extra classes' => [
+        '<p>Tekstiä <span class="toimitus sisalto-oikoluku tarkistettu">Oikolukijan viesti</span> jatkuu.</p>',
+        '<p>Tekstiä  jatkuu.</p>',
+      ],
+      'preserves finnish characters and symbols' => [
+        '<p>Hän sanoi: ”Älä tee näin!” <span class="sisalto-oikoluku">Oikoluku</span> — ja maksoi 50 €.</p>',
+        '<p>Hän sanoi: ”Älä tee näin!”  — ja maksoi 50 €.</p>',
+      ],
+    ];
+  }
+
+  /**
+   * Tests stripProofreadingComments does nothing on unpublished node.
+   */
+  public function testStripProofreadingCommentsDoesNothingWhenUnpublished(): void {
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(FALSE);
+    $node->expects($this->never())->method('set');
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertFalse($result);
+  }
+
+  /**
+   * Tests stripProofreadingComments does nothing when node lacks body field.
+   */
+  public function testStripProofreadingCommentsDoesNothingWhenNoBody(): void {
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(TRUE);
+    $node->method('hasField')->with('body')->willReturn(FALSE);
+    $node->expects($this->never())->method('set');
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertFalse($result);
+  }
+
+  /**
+   * Tests stripProofreadingComments does nothing when body is empty.
+   */
+  public function testStripProofreadingCommentsDoesNothingWhenBodyEmpty(): void {
+    $bodyList = $this->createMock(FieldItemListInterface::class);
+    $bodyList->method('isEmpty')->willReturn(TRUE);
+
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(TRUE);
+    $node->method('hasField')->with('body')->willReturn(TRUE);
+    $node->method('get')->with('body')->willReturn($bodyList);
+    $node->expects($this->never())->method('set');
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertFalse($result);
+  }
+
+  /**
+   * Tests stripProofreadingComments does nothing when body has no comments.
+   */
+  public function testStripProofreadingCommentsDoesNothingWhenNoComments(): void {
+    $bodyList = new class extends \stdClass {
+      public string $value = '<p>Puhdasta tekstiä ilman huomautuksia.</p>';
+      public string $format = 'full_html';
+      public function isEmpty(): bool { return FALSE; }
+    };
+
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(TRUE);
+    $node->method('hasField')->with('body')->willReturn(TRUE);
+    $node->method('get')->with('body')->willReturn($bodyList);
+    $node->expects($this->never())->method('set');
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertFalse($result);
+  }
+
+  /**
+   * Tests stripProofreadingComments removes comments on published node and preserves summary and format.
+   */
+  public function testStripProofreadingCommentsStripsOnPublishedNode(): void {
+    $bodyList = new class extends \stdClass {
+      public string $value = '<p>Alku <span class="sisalto-oikoluku">Poistettava kommentti</span> loppu.</p>';
+      public string $format = 'full_html';
+      public string $summary = 'Lyhyt ingressi';
+      public function isEmpty(): bool { return FALSE; }
+    };
+
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(TRUE);
+    $node->method('hasField')->with('body')->willReturn(TRUE);
+    $node->method('get')->with('body')->willReturn($bodyList);
+
+    $node->expects($this->once())
+      ->method('set')
+      ->with('body', [
+        'value' => '<p>Alku  loppu.</p>',
+        'format' => 'full_html',
+        'summary' => 'Lyhyt ingressi',
+      ]);
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertTrue($result);
+  }
+
+  /**
+   * Tests stripProofreadingComments removes comments from summary if present.
+   */
+  public function testStripProofreadingCommentsStripsFromSummary(): void {
+    $bodyList = new class extends \stdClass {
+      public string $value = '<p>Puhdas leipäteksti.</p>';
+      public string $format = 'full_html';
+      public string $summary = '<p>Ingressi <span class="sisalto-oikoluku">Oikolue ingressi</span> valmis.</p>';
+      public function isEmpty(): bool { return FALSE; }
+    };
+
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('isPublished')->willReturn(TRUE);
+    $node->method('hasField')->with('body')->willReturn(TRUE);
+    $node->method('get')->with('body')->willReturn($bodyList);
+
+    $node->expects($this->once())
+      ->method('set')
+      ->with('body', [
+        'value' => '<p>Puhdas leipäteksti.</p>',
+        'format' => 'full_html',
+        'summary' => '<p>Ingressi  valmis.</p>',
+      ]);
+
+    $result = $this->manager->stripProofreadingComments($node);
+    $this->assertTrue($result);
+  }
+
 }
+

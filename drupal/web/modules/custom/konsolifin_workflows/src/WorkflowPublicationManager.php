@@ -220,4 +220,99 @@ class WorkflowPublicationManager {
     return TRUE;
   }
 
+  /**
+   * Removes editorial proofreading comments (<span class="sisalto-oikoluku">...</span>) from HTML.
+   *
+   * @param string $html
+   *   The HTML string to sanitize.
+   *
+   * @return string
+   *   The sanitized HTML string.
+   */
+  public function stripProofreadingHtml(string $html): string {
+    if (strpos($html, 'sisalto-oikoluku') === FALSE) {
+      return $html;
+    }
+
+    $dom = new \DOMDocument();
+    libxml_use_internal_errors(TRUE);
+
+    // Wrap in a div and convert encoding to preserve UTF-8 characters properly.
+    $wrapped = '<?xml encoding="utf-8" ?><div>' . $html . '</div>';
+    $dom->loadHTML($wrapped, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+    $xpath = new \DOMXPath($dom);
+    // Query for span elements with class 'sisalto-oikoluku'.
+    $spans = $xpath->query('//span[contains(concat(" ", normalize-space(@class), " "), " sisalto-oikoluku ")]');
+
+    if ($spans && $spans->length > 0) {
+      $to_remove = [];
+      foreach ($spans as $span) {
+        $to_remove[] = $span;
+      }
+      foreach ($to_remove as $span) {
+        if ($span->parentNode) {
+          $span->parentNode->removeChild($span);
+        }
+      }
+
+      $root = $dom->getElementsByTagName('div')->item(0);
+      $new_html = '';
+      if ($root) {
+        foreach ($root->childNodes as $child) {
+          $new_html .= $dom->saveHTML($child);
+        }
+      }
+      libxml_clear_errors();
+      return $new_html;
+    }
+
+    libxml_clear_errors();
+    return $html;
+  }
+
+  /**
+   * Removes editorial proofreading comments from the node's body and summary if published.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The node entity being saved.
+   *
+   * @return bool
+   *   TRUE if comments were found and stripped, FALSE otherwise.
+   */
+  public function stripProofreadingComments(NodeInterface $node): bool {
+    if (!$node->isPublished() || !$node->hasField('body') || $node->get('body')->isEmpty()) {
+      return FALSE;
+    }
+
+    $body_field = $node->get('body');
+    $html = (string) $body_field->value;
+    $summary = isset($body_field->summary) ? (string) $body_field->summary : NULL;
+
+    $has_in_body = strpos($html, 'sisalto-oikoluku') !== FALSE;
+    $has_in_summary = $summary !== NULL && strpos($summary, 'sisalto-oikoluku') !== FALSE;
+
+    if (!$has_in_body && !$has_in_summary) {
+      return FALSE;
+    }
+
+    $cleaned_html = $has_in_body ? $this->stripProofreadingHtml($html) : $html;
+    $cleaned_summary = $has_in_summary ? $this->stripProofreadingHtml($summary) : $summary;
+
+    if ($cleaned_html !== $html || $cleaned_summary !== $summary) {
+      $values = [
+        'value' => $cleaned_html,
+        'format' => $body_field->format,
+      ];
+      if ($summary !== NULL) {
+        $values['summary'] = $cleaned_summary;
+      }
+      $node->set('body', $values);
+      return TRUE;
+    }
+
+    return FALSE;
+  }
+
 }
+

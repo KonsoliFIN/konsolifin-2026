@@ -120,8 +120,6 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Hakee käyttäjän todellisen nimen `realname`-moduulilta tai `getDisplayName()`-metodista ja estää Drupalia lyhentämästä nimeä (`truncated = FALSE`).
 - **`konsolifin_misc_pathauto_alias_alter`:**
   - Räätälöi automaattisia URL-aliaksia: lisää osoitteeseen sarjan nimen (`field_sarja`), pelitaksonomian nimen (`field_pelit`) tai vapaamuotoisen pelin nimen (`field_pelin_nimi`).
-- **`konsolifin_misc_node_presave` (Oikolukumerkintöjen siivous):**
-  - Käy läpi julkaistavan artikkelin leipätekstin HTML:n ja poistaa automaattisesti kaikki toimituksen sisäiset oikolukumerkinnät (`<span class="sisalto-oikoluku">...</span>`) DOMDocument/XPath-jäsentimellä, jotta toimituksen sisäiset kommentit eivät päädy julkiselle sivustolle.
 
 ---
 
@@ -288,8 +286,11 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
     1. Yleinen julkaisuputki: `yleinen_julkaisuputki_julkaisematta` &rarr; `yleinen_julkaisuputki_julkaistu`
     2. Uutisputki: `uutisputki_tyon_alla` &rarr; `uutisputki_julkaistu`
   - Kaikissa muissa tilanteissa (kuten jo julkaistun solmun muokkaaminen ja tallentaminen, kymmenien tuhansien vanhojen aineistojen migraatiot ja massamuokkaukset sekä luonnostilojen väliset siirtymät) aikaleima säilytetään täysin koskemattomana.
+- **Oikolukumerkintöjen automaattinen siivous (`stripProofreadingComments`):**
+  - Käy läpi julkaistavan artikkelin leipätekstin ja ingressin HTML:n ja poistaa automaattisesti kaikki toimituksen sisäiset oikolukumerkinnät (`<span class="sisalto-oikoluku">...</span>`) DOMDocument/XPath-jäsentimellä, jotta toimituksen sisäiset kommentit eivät päädy julkiselle sivustolle.
+  - Koska siivous ajetaan `konsolifin_workflows_node_presave`-hookissa julkaisutilan synkronoinnin (`syncPublishingStatus`) jälkeen, merkinnät poistetaan luotettavasti myös silloin, kun sisältö julkaistaan **ajastetun työnkulkusiirtymän** (cron) kautta.
 - **Entiteetin tallennushook (`konsolifin_workflows_node_presave`):**
-  - Kutsuu sekä `syncPublishingStatus($node)` että `syncPublishingTimestamp($node)` -metodeja varmistaen julkaisutilan ja -aikaleiman oikeellisuuden kaikissa tallennustilanteissa (lomakemuokkaus, cronin ajastetut siirtymät, ohjelmalliset tallennukset).
+  - Kutsuu `syncPublishingStatus($node)`, `syncPublishingTimestamp($node)` ja `stripProofreadingComments($node)` -metodeja varmistaen julkaisutilan, julkaisuaikaleiman sekä sisällön siisteyden kaikissa tallennustilanteissa (lomakemuokkaus, cronin ajastetut siirtymät, ohjelmalliset tallennukset).
 - **Lomakemuokkaukset (`konsolifin_workflows_form_node_form_alter`):**
   - Piilottaa Drupalin oletusarvoisen "Julkaistu" -valintaruudun (`$form['status']['#access'] = FALSE`) kaikilta sisältötyypeiltä, joissa on työnkulkukenttä, jotta käyttäjät eivät vahingossa ohita työnkulun tilaan perustuvaa julkaisulogiikkaa.
 - **Slack-ilmoituspalvelu ja triggerit (`SlackNotificationService`, `WorkflowTransitionSubscriber`):**
@@ -304,7 +305,7 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Mahdollistaa Slack-ilmoitusten kytkemisen päälle/pois, API-avaimen/tokenin syöttämisen sekä oikoluku-, uutis- ja julkaisukanavien määrittämisen erikseen.
   - Sisältää painikkeen testi-ilmoituksen lähettämiseen suoraan hallintakäyttöliittymästä.
 - **Yksikkötestit (`tests/src/Unit`):**
-  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan, julkaisuaikaleiman päivityksen vain sallituissa tilasiirtymissä, vanhojen solmujen aikaleiman koskemattomuuden sekä ajastettujen siirtymien aikaleimojen selvityksen (32 testiä).
+  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan, julkaisuaikaleiman päivityksen vain sallituissa tilasiirtymissä, vanhojen solmujen aikaleiman koskemattomuuden, ajastettujen siirtymien aikaleimojen selvityksen sekä oikolukukommenttien siivouksen ja UTF-8-eheyden (44 testiä).
   - `SlackNotificationServiceTest`: Kattaa viestin lähetyksen Bot Tokenilla, webhoookeilla, virhetilanteet, author-täggäykset ja kanavareititykset (10 testiä).
   - `WorkflowTransitionSubscriberTest`: Kattaa Oikoluku- ja julkaisutriggerit, ajastettujen tilojen ja samojen tilojen ohitukset (8 testiä).
 
