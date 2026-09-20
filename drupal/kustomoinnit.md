@@ -283,8 +283,13 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - **Yleinen julkaisuputki (`field_tyonkulku`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `yleinen_julkaisuputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
   - **Uutisputki (`field_tyonkulku_uutinen`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `uutisputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
   - Sisältötyypit, joilla ei ole kumpaakaan kenttää, säilyttävät manuaalisen julkaisutilansa ilman puuttumista.
+- **Julkaisuajankohdan automaattinen päivitys (`syncPublishingTimestamp`):**
+  - Jotta julkaistujen sisältöjen järjestys sivustolla ja syötteissä vastaa niiden todellista julkaisuajankohtaa, solmun luontiaikaleima (`created`) päivitetään tilasiirtymän todelliseen ajankohtaan **ainoastaan seuraavissa kahdessa tilanteessa**:
+    1. Yleinen julkaisuputki: `yleinen_julkaisuputki_julkaisematta` &rarr; `yleinen_julkaisuputki_julkaistu`
+    2. Uutisputki: `uutisputki_tyon_alla` &rarr; `uutisputki_julkaistu`
+  - Kaikissa muissa tilanteissa (kuten jo julkaistun solmun muokkaaminen ja tallentaminen, kymmenien tuhansien vanhojen aineistojen migraatiot ja massamuokkaukset sekä luonnostilojen väliset siirtymät) aikaleima säilytetään täysin koskemattomana.
 - **Entiteetin tallennushook (`konsolifin_workflows_node_presave`):**
-  - Varmistaa julkaisutilan oikeellisuuden kaikissa tallennustilanteissa: manuaalinen muokkaus, ohjelmalliset tallennukset, ajastetut tilasiirtymät cron-ajossa sekä aineistotuonnit.
+  - Kutsuu sekä `syncPublishingStatus($node)` että `syncPublishingTimestamp($node)` -metodeja varmistaen julkaisutilan ja -aikaleiman oikeellisuuden kaikissa tallennustilanteissa (lomakemuokkaus, cronin ajastetut siirtymät, ohjelmalliset tallennukset).
 - **Lomakemuokkaukset (`konsolifin_workflows_form_node_form_alter`):**
   - Piilottaa Drupalin oletusarvoisen "Julkaistu" -valintaruudun (`$form['status']['#access'] = FALSE`) kaikilta sisältötyypeiltä, joissa on työnkulkukenttä, jotta käyttäjät eivät vahingossa ohita työnkulun tilaan perustuvaa julkaisulogiikkaa.
 - **Slack-ilmoituspalvelu ja triggerit (`SlackNotificationService`, `WorkflowTransitionSubscriber`):**
@@ -299,7 +304,7 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Mahdollistaa Slack-ilmoitusten kytkemisen päälle/pois, API-avaimen/tokenin syöttämisen sekä oikoluku-, uutis- ja julkaisukanavien määrittämisen erikseen.
   - Sisältää painikkeen testi-ilmoituksen lähettämiseen suoraan hallintakäyttöliittymästä.
 - **Yksikkötestit (`tests/src/Unit`):**
-  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan eri tiloilla ja kentillä (16 testiä).
+  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan, julkaisuaikaleiman päivityksen vain sallituissa tilasiirtymissä, vanhojen solmujen aikaleiman koskemattomuuden sekä ajastettujen siirtymien aikaleimojen selvityksen (32 testiä).
   - `SlackNotificationServiceTest`: Kattaa viestin lähetyksen Bot Tokenilla, webhoookeilla, virhetilanteet, author-täggäykset ja kanavareititykset (10 testiä).
   - `WorkflowTransitionSubscriberTest`: Kattaa Oikoluku- ja julkaisutriggerit, ajastettujen tilojen ja samojen tilojen ohitukset (8 testiä).
 

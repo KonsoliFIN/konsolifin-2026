@@ -1,6 +1,8 @@
 services:
   konsolifin_workflows.publication_manager:
     class: Drupal\konsolifin_workflows\WorkflowPublicationManager
+    arguments:
+      - '@datetime.time'
 
   konsolifin_workflows.slack_notifier:
     class: Drupal\konsolifin_workflows\SlackNotificationService

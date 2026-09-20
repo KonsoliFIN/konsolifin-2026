@@ -17,6 +17,7 @@ function konsolifin_workflows_node_presave(NodeInterface $node): void {
   /** @var \Drupal\konsolifin_workflows\WorkflowPublicationManager $publication_manager */
   $publication_manager = \Drupal::service('konsolifin_workflows.publication_manager');
   $publication_manager->syncPublishingStatus($node);
+  $publication_manager->syncPublishingTimestamp($node);
 }
 
 /**
