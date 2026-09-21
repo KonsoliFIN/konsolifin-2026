@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.laitearvio.field_lisaa_sisaltoa
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
+    - field.field.node.laitearvio.field_tyonkulku
     - image.style.teaser_thumbnail
     - node.type.laitearvio
   module:
@@ -53,4 +54,5 @@ hidden:
   field_lisaa_sisaltoa: true
   field_lisatiedot: true
   field_sarja: true
+  field_tyonkulku: true
   langcode: true

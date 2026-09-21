@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.peliarvostelu.field_sarja
     - field.field.node.peliarvostelu.field_summary_in_english
     - field.field.node.peliarvostelu.field_title_in_english
+    - field.field.node.peliarvostelu.field_tyonkulku
     - node.type.peliarvostelu
   module:
     - autocomplete_deluxe
@@ -26,6 +27,7 @@ dependencies:
     - scheduler
     - term_reference_tree
     - text
+    - workflow
 id: node.peliarvostelu.default
 targetEntityType: node
 bundle: peliarvostelu
@@ -68,7 +70,7 @@ content:
     third_party_settings: {  }
   field_comments:
     type: comment_default
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -162,6 +164,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_tyonkulku:
+    type: workflow_default
+    weight: 17
+    region: content
+    settings:
+      form_mode: add
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 13
@@ -177,32 +186,32 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 23
+    weight: 24
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 21
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 20
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 17
+    weight: 18
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 19
+    weight: 20
     region: content
     settings:
       display_label: true
@@ -227,7 +236,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 22
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }

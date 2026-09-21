@@ -1,0 +1,13 @@
+uuid: 85fdbe73-349a-4c70-ab52-d6745e6088c6
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisputki
+id: uutisputki_creation
+label: Creation
+weight: -1000
+module: workflow
+wid: uutisputki
+sysid: 1
+single_state_widget: ''

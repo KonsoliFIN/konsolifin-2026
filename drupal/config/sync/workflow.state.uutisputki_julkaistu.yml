@@ -1,0 +1,13 @@
+uuid: a67cc022-b6ff-4215-8a92-ddc7fff084d6
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisputki
+id: uutisputki_julkaistu
+label: Julkaistu
+weight: 2
+module: workflow
+wid: uutisputki
+sysid: 0
+single_state_widget: ''

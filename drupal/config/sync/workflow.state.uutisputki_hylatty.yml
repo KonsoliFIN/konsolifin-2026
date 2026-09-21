@@ -1,0 +1,13 @@
+uuid: f3553e4a-dc66-4319-a573-8acb3cc9e512
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.uutisputki
+id: uutisputki_hylatty
+label: Hylätty
+weight: 3
+module: workflow
+wid: uutisputki
+sysid: 0
+single_state_widget: ''

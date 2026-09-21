@@ -1,0 +1,17 @@
+uuid: b5c0b35e-6c45-4d15-8a55-4f17477e25f5
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.uutisputki_creation
+    - workflow.state.uutisputki_tyon_alla
+id: uutisputki_creation_tyon_alla
+label: 'Ota työn alle'
+module: workflow
+from_sid: uutisputki_creation
+to_sid: uutisputki_tyon_alla
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: yhteisosisallontuottaja
+  administrator: administrator

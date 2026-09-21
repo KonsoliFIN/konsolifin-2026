@@ -1,0 +1,13 @@
+uuid: a11aae41-ae23-420c-b5d9-07a596c301c3
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_julkaistu
+label: Julkaistu
+weight: -6
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 0
+single_state_widget: ''

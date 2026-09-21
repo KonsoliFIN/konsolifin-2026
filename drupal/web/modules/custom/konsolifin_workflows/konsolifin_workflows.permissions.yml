@@ -1,0 +1,4 @@
+administer konsolifin workflows:
+  title: 'Administer KonsoliFIN workflows and Slack notifications'
+  description: 'Configure workflow triggers, channels, and Slack API credentials.'
+  restrict access: true

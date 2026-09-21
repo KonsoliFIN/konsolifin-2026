@@ -1,0 +1,17 @@
+uuid: 198968b4-365a-4ccb-82a1-ce63cbd68ca3
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_oikoluettavana
+    - workflow.state.yleinen_julkaisuputki_tyon_alla
+id: yleinen_julkaisuputki_tyon_alla_oikoluettavana
+label: 'Siirrä oikolukuun'
+module: workflow
+from_sid: yleinen_julkaisuputki_tyon_alla
+to_sid: yleinen_julkaisuputki_oikoluettavana
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: '0'
+  administrator: '0'

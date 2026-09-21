@@ -1,0 +1,13 @@
+uuid: 17b0f3b9-c58b-4331-9055-c18e345107fe
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_oikoluettavana
+label: Oikoluettavana
+weight: -8
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 0
+single_state_widget: ''

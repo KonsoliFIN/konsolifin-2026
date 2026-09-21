@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.laitearvio.field_lisaa_sisaltoa
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
+    - field.field.node.laitearvio.field_tyonkulku
     - node.type.laitearvio
   module:
     - autocomplete_deluxe
@@ -18,6 +19,7 @@ dependencies:
     - path
     - scheduler
     - text
+    - workflow
 id: node.laitearvio.default
 targetEntityType: node
 bundle: laitearvio
@@ -41,7 +43,7 @@ content:
     third_party_settings: {  }
   field_comments:
     type: comment_default
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -94,6 +96,13 @@ content:
       new_terms: true
       no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
+  field_tyonkulku:
+    type: workflow_default
+    weight: 11
+    region: content
+    settings:
+      form_mode: add
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 7
@@ -109,32 +118,32 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 17
+    weight: 18
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 12
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 13
+    weight: 14
     region: content
     settings:
       display_label: true
@@ -159,7 +168,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }

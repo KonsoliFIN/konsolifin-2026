@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.uutinen.field_pelit
     - field.field.node.uutinen.field_sarja
     - field.field.node.uutinen.field_studiot
+    - field.field.node.uutinen.field_tyonkulku_uutinen
     - image.style.hero_banner
     - node.type.uutinen
   module:
@@ -109,6 +110,7 @@ content:
       preload: false
       responsive_image_style: ''
       use_theme_field: false
+      field_api_classes: false
       box_style: ''
       image_style: ''
       media_switch: ''
@@ -194,5 +196,6 @@ content:
     weight: 6
     region: content
 hidden:
+  field_tyonkulku_uutinen: true
   langcode: true
   links: true

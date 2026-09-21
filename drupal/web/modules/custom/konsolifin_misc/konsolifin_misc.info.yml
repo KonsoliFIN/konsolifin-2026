@@ -7,3 +7,5 @@ dependencies:
   - drupal:node
   - drupal:pathauto
   - drupal:taxonomy
+  - workflow:workflow
+  - konsolifin_workflows:konsolifin_workflows

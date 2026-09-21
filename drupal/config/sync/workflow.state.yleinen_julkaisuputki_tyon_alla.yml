@@ -1,0 +1,13 @@
+uuid: 58aac27a-71b9-42ad-b175-9aa4a4cec8e4
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_tyon_alla
+label: 'Työn alla'
+weight: -9
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 0
+single_state_widget: ''

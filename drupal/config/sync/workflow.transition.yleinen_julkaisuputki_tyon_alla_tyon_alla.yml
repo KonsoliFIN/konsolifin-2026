@@ -1,0 +1,12 @@
+uuid: e2d497ed-4227-4ede-9317-8eda845f40cc
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_tyon_alla
+id: yleinen_julkaisuputki_tyon_alla_tyon_alla
+label: Tallenna
+module: workflow
+from_sid: yleinen_julkaisuputki_tyon_alla
+to_sid: yleinen_julkaisuputki_tyon_alla
+roles: {  }

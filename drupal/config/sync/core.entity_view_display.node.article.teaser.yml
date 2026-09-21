@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.article.field_pelit
     - field.field.node.article.field_sarja
     - field.field.node.article.field_studiot
+    - field.field.node.article.field_tyonkulku
     - image.style.teaser_thumbnail
     - node.type.article
   module:
@@ -63,4 +64,5 @@ hidden:
   field_pelit: true
   field_sarja: true
   field_studiot: true
+  field_tyonkulku: true
   langcode: true

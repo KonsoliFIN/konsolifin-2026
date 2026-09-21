@@ -1,0 +1,7 @@
+konsolifin_workflows.settings:
+  path: '/admin/config/workflow/konsolifin-workflows'
+  defaults:
+    _form: '\Drupal\konsolifin_workflows\Form\KonsolifinWorkflowsSettingsForm'
+    _title: 'KonsoliFIN Workflows'
+  requirements:
+    _permission: 'administer konsolifin workflows'

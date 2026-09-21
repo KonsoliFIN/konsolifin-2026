@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.katsotut.field_hero
     - field.field.node.katsotut.field_lisaa_sisaltoa
     - field.field.node.katsotut.field_lisatiedot
+    - field.field.node.katsotut.field_tyonkulku
     - image.style.teaser_thumbnail
     - node.type.katsotut
   module:
@@ -50,4 +51,5 @@ hidden:
   field_comments: true
   field_lisaa_sisaltoa: true
   field_lisatiedot: true
+  field_tyonkulku: true
   langcode: true

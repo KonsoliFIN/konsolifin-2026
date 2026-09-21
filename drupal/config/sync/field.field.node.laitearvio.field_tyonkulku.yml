@@ -1,0 +1,21 @@
+uuid: 57e536e3-83ee-4416-a9b7-325e634feea2
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyonkulku
+    - node.type.laitearvio
+  module:
+    - workflow
+id: node.laitearvio.field_tyonkulku
+field_name: field_tyonkulku
+entity_type: node
+bundle: laitearvio
+label: Työnkulku
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

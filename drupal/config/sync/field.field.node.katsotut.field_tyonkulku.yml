@@ -1,0 +1,21 @@
+uuid: 79ef4e6f-9440-4379-9113-96cd1508f267
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyonkulku
+    - node.type.katsotut
+  module:
+    - workflow
+id: node.katsotut.field_tyonkulku
+field_name: field_tyonkulku
+entity_type: node
+bundle: katsotut
+label: Työnkulku
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

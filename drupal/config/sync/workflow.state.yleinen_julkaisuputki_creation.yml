@@ -1,0 +1,13 @@
+uuid: 86e9f1ef-d194-4b98-b8a6-ca2cab79da12
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.workflow.yleinen_julkaisuputki
+id: yleinen_julkaisuputki_creation
+label: Creation
+weight: -1000
+module: workflow
+wid: yleinen_julkaisuputki
+sysid: 1
+single_state_widget: ''

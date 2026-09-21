@@ -1,0 +1,16 @@
+uuid: 87e118a8-927e-4a3c-9159-20a27c892d97
+langcode: fi
+status: true
+dependencies: {  }
+id: uutisputki
+label: Uutisputki
+module: workflow
+options:
+  name_as_title: 0
+  fieldset: 0
+  options: buttons
+  schedule_enable: true
+  schedule_timezone: 0
+  always_update_entity: 0
+  comment_log_node: 0
+  watchdog_log: 1

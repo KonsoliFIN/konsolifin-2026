@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.laitearvio.field_lisaa_sisaltoa
     - field.field.node.laitearvio.field_lisatiedot
     - field.field.node.laitearvio.field_sarja
+    - field.field.node.laitearvio.field_tyonkulku
     - image.style.hero_banner
     - node.type.laitearvio
   module:
@@ -38,7 +39,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_hero:
     type: media_thumbnail
@@ -79,6 +80,7 @@ content:
       preload: false
       responsive_image_style: ''
       use_theme_field: false
+      field_api_classes: false
       box_style: ''
       image_style: ''
       media_switch: ''
@@ -125,14 +127,14 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 11
+    weight: 5
     region: content
   field_lisatiedot:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 6
     region: content
   field_sarja:
     type: entity_reference_label
@@ -143,5 +145,6 @@ content:
     weight: 3
     region: content
 hidden:
+  field_tyonkulku: true
   langcode: true
   links: true

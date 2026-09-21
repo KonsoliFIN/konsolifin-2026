@@ -1,0 +1,21 @@
+uuid: 837447ea-cb55-4ab6-9ea9-826baf057afb
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyonkulku
+    - node.type.blogi
+  module:
+    - workflow
+id: node.blogi.field_tyonkulku
+field_name: field_tyonkulku
+entity_type: node
+bundle: blogi
+label: Työnkulku
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: workflow

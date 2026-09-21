@@ -1,0 +1,17 @@
+uuid: fdd12aa7-dea6-49f3-87e3-59cf568afaaa
+langcode: fi
+status: true
+dependencies:
+  config:
+    - workflow.state.yleinen_julkaisuputki_creation
+    - workflow.state.yleinen_julkaisuputki_tyon_alla
+id: yleinen_julkaisuputki_creation_tyon_alla
+label: 'Ota työn alle'
+module: workflow
+from_sid: yleinen_julkaisuputki_creation
+to_sid: yleinen_julkaisuputki_tyon_alla
+roles:
+  workflow_author: workflow_author
+  toimitus: toimitus
+  yhteisosisallontuottaja: yhteisosisallontuottaja
+  administrator: administrator

@@ -14,6 +14,7 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
 6. [KonsoliFIN Term Page (`konsolifin_term_page`)](#konsolifin-term-page-konsolifin_term_page)
 7. [Migrate KonsoliFIN (`migrate_konsolifin`)](#migrate-konsolifin-migrate_konsolifin)
 8. [Migrate KonsoliFIN Testidata (`migrate_konsolifin_testdata`)](#migrate-konsolifin-testidata-migrate_konsolifin_testdata)
+9. [KonsoliFIN Workflows (`konsolifin_workflows`)](#konsolifin-workflows-konsolifin_workflows)
 
 ---
 
@@ -106,6 +107,11 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Korvaa Drupalin sisäänrakennetun `/user/password`-reitin ja palauttaa HTTP 410 Gone -vastauksen, joka ohjaa käyttäjän ulkoisen foorumin salasananpalautukseen (`https://forum.konsolifin.net/lost-password/`).
 - **Syötepalvelu (`RssFeedService`):**
   - Vastaa XML-syötteiden luonnista, polku-aliasten selvittämisestä, välimuistituksesta, UTM-seurantaparametrien lisäämisestä (`?utm_medium=rss`) sekä MP3-keston automaattisesta käsittelystä.
+- **Toimituksen julkaisukalenteri (`EditorialCalendarService`, lohko: `TwoWeekCalendarBlock`):**
+  - Renderöi toimitukselle 2 viikon dynaamisen julkaisukalenterin ja julkaisemattoman sisällön listausnäkymän (`templates/konsolifin-two-week-calendar.html.twig`).
+  - **Työnkulkujen ajastukset:** Hakee `workflow_scheduled_transition`-entiteetit, joiden kohdetilana on julkaistu tila (`yleinen_julkaisuputki_julkaistu` tai `uutisputki_julkaistu`), ja sijoittaa sisällöt kalenteriin ajastusajankohdan mukaan. Tukee myös `publish_on`-kenttää työnkuluttomille sisällöille.
+  - **Työnkulun tilan näyttäminen:** Julkaisemattoman sisällön taulukkolistauksessa näytetään solmun nykyinen työnkulun tila ihmisluettavana värikoodattuna laatikkomerkintänä (`.kf-workflow-badge`).
+  - **Hylättyjen sisältöjen suodatus:** Kaikki tilassa *Hylätty* (`yleinen_julkaisuputki_hylatty` tai `uutisputki_hylatty`) olevat sisällöt jätetään kokonaan pois julkaisemattomien listauksesta.
 
 #### 3. Sisältö- ja teemahookit:
 - **`konsolifin_misc_preprocess_node`:**
@@ -114,8 +120,6 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Hakee käyttäjän todellisen nimen `realname`-moduulilta tai `getDisplayName()`-metodista ja estää Drupalia lyhentämästä nimeä (`truncated = FALSE`).
 - **`konsolifin_misc_pathauto_alias_alter`:**
   - Räätälöi automaattisia URL-aliaksia: lisää osoitteeseen sarjan nimen (`field_sarja`), pelitaksonomian nimen (`field_pelit`) tai vapaamuotoisen pelin nimen (`field_pelin_nimi`).
-- **`konsolifin_misc_node_presave` (Oikolukumerkintöjen siivous):**
-  - Käy läpi julkaistavan artikkelin leipätekstin HTML:n ja poistaa automaattisesti kaikki toimituksen sisäiset oikolukumerkinnät (`<span class="sisalto-oikoluku">...</span>`) DOMDocument/XPath-jäsentimellä, jotta toimituksen sisäiset kommentit eivät päädy julkiselle sivustolle.
 
 ---
 
@@ -264,6 +268,46 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
     - `ImportRollbackReadinessTest`: Tarkistaa, että migraatiot voidaan ajaa alas ja uudelleen ilman ristiriitoja.
 - **Datan noutotyökalu (`retriever/`):**
   - Sisältää Python-pohjaisen apuskriptin (`retrieve.py`), jolla voidaan tarvittaessa hakea ja anonymisoida otos tuotantosivuston aineistosta testikäyttöön.
+
+---
+
+### KonsoliFIN Workflows (`konsolifin_workflows`)
+
+**Sijainti:** `web/modules/custom/konsolifin_workflows`  
+**Tarkoitus:** Täydentää Drupalin `workflow`-kontribuutiomoduulia hallitsemalla solmujen (node) julkaisutilaa (`status`) automaattisesti työnkulun tilan perusteella sekä piilottamalla manuaalisen julkaisutilan valintalaatikon työnkulkua käyttäviltä sisältötyypeiltä.
+
+#### Ominaisuudet ja arkkitehtuuri:
+- **Julkaisutilan automaattinen synkronointi (`WorkflowPublicationManager`):**
+  - **Yleinen julkaisuputki (`field_tyonkulku`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `yleinen_julkaisuputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
+  - **Uutisputki (`field_tyonkulku_uutinen`):** Solmu on julkaistu (`status = 1`) ainoastaan tilassa `uutisputki_julkaistu`. Kaikissa muissa tiloissa (ja kentän ollessa tyhjä) solmu asetetaan automaattisesti julkaisemattomaksi (`status = 0`).
+  - Sisältötyypit, joilla ei ole kumpaakaan kenttää, säilyttävät manuaalisen julkaisutilansa ilman puuttumista.
+- **Julkaisuajankohdan automaattinen päivitys (`syncPublishingTimestamp`):**
+  - Jotta julkaistujen sisältöjen järjestys sivustolla ja syötteissä vastaa niiden todellista julkaisuajankohtaa, solmun luontiaikaleima (`created`) päivitetään tilasiirtymän todelliseen ajankohtaan **ainoastaan seuraavissa kahdessa tilanteessa**:
+    1. Yleinen julkaisuputki: `yleinen_julkaisuputki_julkaisematta` &rarr; `yleinen_julkaisuputki_julkaistu`
+    2. Uutisputki: `uutisputki_tyon_alla` &rarr; `uutisputki_julkaistu`
+  - Kaikissa muissa tilanteissa (kuten jo julkaistun solmun muokkaaminen ja tallentaminen, kymmenien tuhansien vanhojen aineistojen migraatiot ja massamuokkaukset sekä luonnostilojen väliset siirtymät) aikaleima säilytetään täysin koskemattomana.
+- **Oikolukumerkintöjen automaattinen siivous (`stripProofreadingComments`):**
+  - Käy läpi julkaistavan artikkelin leipätekstin ja ingressin HTML:n ja poistaa automaattisesti kaikki toimituksen sisäiset oikolukumerkinnät (`<span class="sisalto-oikoluku">...</span>`) DOMDocument/XPath-jäsentimellä, jotta toimituksen sisäiset kommentit eivät päädy julkiselle sivustolle.
+  - Koska siivous ajetaan `konsolifin_workflows_node_presave`-hookissa julkaisutilan synkronoinnin (`syncPublishingStatus`) jälkeen, merkinnät poistetaan luotettavasti myös silloin, kun sisältö julkaistaan **ajastetun työnkulkusiirtymän** (cron) kautta.
+- **Entiteetin tallennushook (`konsolifin_workflows_node_presave`):**
+  - Kutsuu `syncPublishingStatus($node)`, `syncPublishingTimestamp($node)` ja `stripProofreadingComments($node)` -metodeja varmistaen julkaisutilan, julkaisuaikaleiman sekä sisällön siisteyden kaikissa tallennustilanteissa (lomakemuokkaus, cronin ajastetut siirtymät, ohjelmalliset tallennukset).
+- **Lomakemuokkaukset (`konsolifin_workflows_form_node_form_alter`):**
+  - Piilottaa Drupalin oletusarvoisen "Julkaistu" -valintaruudun (`$form['status']['#access'] = FALSE`) kaikilta sisältötyypeiltä, joissa on työnkulkukenttä, jotta käyttäjät eivät vahingossa ohita työnkulun tilaan perustuvaa julkaisulogiikkaa.
+- **Slack-ilmoituspalvelu ja triggerit (`SlackNotificationService`, `WorkflowTransitionSubscriber`):**
+  - Kuuntelee työnkulun tapahtumaa `WorkflowEvents::POST_TRANSITION`.
+  - **Oikolukutriggeri:** Kun sisältö siirtyy tilaan *Oikoluettavana* (`yleinen_julkaisuputki_oikoluettavana`), lähetetään ilmoitus määritetylle oikoluvun Slack-kanavalle (`channel_oikoluku`) linkkeineen ja kirjoittajatietoineen (täggää kirjoittajan käyttäjätililtä löytyvän `field_slack_id`-tunnuksen muodossa `<@ID>`).
+  - **Julkaisutriggeri:** Kun sisältö siirtyy tilaan *Julkaistu* (`yleinen_julkaisuputki_julkaistu` tai `uutisputki_julkaistu`):
+    - Uutisille (`uutinen` / `uutisputki`) ilmoitus reititetään uutiskanavalle (`channel_news_published`).
+    - Muille sisältötyypeille (artikkelit, arviot ym.) ilmoitus reititetään toiselle kanavalle (`channel_other_published`).
+  - Tukee sekä Slack Bot User OAuth Tokeneita (`xoxb-...` `chat.postMessage`-rajapinnalla) että suoria Incoming Webhook -osoitteita. Virheet ja aikakatkaisut käsitellään siististi lokiin keskeyttämättä julkaisuprosessia.
+- **Hallintalomake ja asetukset (`KonsolifinWorkflowsSettingsForm`):**
+  - Reitti `/admin/config/workflow/konsolifin-workflows` (oikeus: `administer konsolifin workflows`).
+  - Mahdollistaa Slack-ilmoitusten kytkemisen päälle/pois, API-avaimen/tokenin syöttämisen sekä oikoluku-, uutis- ja julkaisukanavien määrittämisen erikseen.
+  - Sisältää painikkeen testi-ilmoituksen lähettämiseen suoraan hallintakäyttöliittymästä.
+- **Yksikkötestit (`tests/src/Unit`):**
+  - `WorkflowPublicationManagerTest`: Kattaa julkaisutilojen logiikan, julkaisuaikaleiman päivityksen vain sallituissa tilasiirtymissä, vanhojen solmujen aikaleiman koskemattomuuden, ajastettujen siirtymien aikaleimojen selvityksen sekä oikolukukommenttien siivouksen ja UTF-8-eheyden (44 testiä).
+  - `SlackNotificationServiceTest`: Kattaa viestin lähetyksen Bot Tokenilla, webhoookeilla, virhetilanteet, author-täggäykset ja kanavareititykset (10 testiä).
+  - `WorkflowTransitionSubscriberTest`: Kattaa Oikoluku- ja julkaisutriggerit, ajastettujen tilojen ja samojen tilojen ohitukset (8 testiä).
 
 ---
 

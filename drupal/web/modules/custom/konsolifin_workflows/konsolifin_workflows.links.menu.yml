@@ -1,0 +1,6 @@
+konsolifin_workflows.settings:
+  title: 'KonsoliFIN Workflows'
+  description: 'Configure workflow triggers and Slack notifications.'
+  route_name: konsolifin_workflows.settings
+  parent: system.admin_config_workflow
+  weight: 20

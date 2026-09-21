@@ -5,15 +5,20 @@ dependencies:
   config:
     - node.type.uutinen
     - node.type.video
+    - workflow.workflow.uutisputki
+    - workflow.workflow.yleinen_julkaisuputki
   module:
     - node
     - system
+    - workflow
 id: yhteisosisallontuottaja
 label: yhteisosisallontuottaja
 weight: -6
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'create uutisputki workflow_transition'
+  - 'create yleinen_julkaisuputki workflow_transition'
   - 'edit own uutinen content'
   - 'edit own video content'
   - 'view own unpublished content'
