@@ -50,9 +50,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_slack_id:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_some_linkit:
     type: link_default
-    weight: 6
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -73,7 +81,6 @@ content:
     weight: 6
     region: content
 hidden:
-  field_slack_id: true
   field_xenforo_id: true
   langcode: true
   language: true

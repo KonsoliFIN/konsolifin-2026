@@ -23,7 +23,6 @@ dependencies:
     - link
     - media_library
     - path
-    - scheduler
     - text
     - workflow
 id: node.uutinen.default
@@ -189,17 +188,10 @@ content:
     third_party_settings: {  }
   field_tyonkulku_uutinen:
     type: workflow_default
-    weight: 26
-    region: content
-    settings:
-      form_mode: add
-    third_party_settings: {  }
-  langcode:
-    type: language_select
     weight: 19
     region: content
     settings:
-      include_locked: true
+      form_mode: add
     third_party_settings: {  }
   path:
     type: path
@@ -209,21 +201,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 22
+    weight: 18
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 20
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  scheduler_settings:
-    weight: 18
-    region: content
-    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -257,10 +238,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 21
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
+  publish_on: true
+  scheduler_settings: true
+  unpublish_on: true
