@@ -15,6 +15,14 @@ konsolifin_term_page.games_page:
   requirements:
     _access: 'TRUE'
 
+konsolifin_term_page.upcoming_releases:
+  path: '/pelit/tulevat_julkaisut'
+  defaults:
+    _controller: '\Drupal\konsolifin_term_page\Controller\GamesPageController::buildUpcomingReleasesPage'
+    _title: 'Tulevat julkaisut'
+  requirements:
+    _access: 'TRUE'
+
 konsolifin_term_page.admin_config_konsolifin:
   path: '/admin/config/konsolifin'
   defaults:

@@ -31,3 +31,9 @@ $loader->addPsr4('Drupal\\node\\', $drupal_root . '/core/modules/node/src');
 
 // Register user module namespace (for EntityOwnerInterface, needed by NodeInterface).
 $loader->addPsr4('Drupal\\user\\', $drupal_root . '/core/modules/user/src');
+
+// Register file, media, and image module namespaces.
+$loader->addPsr4('Drupal\\file\\', $drupal_root . '/core/modules/file/src');
+$loader->addPsr4('Drupal\\media\\', $drupal_root . '/core/modules/media/src');
+$loader->addPsr4('Drupal\\image\\', $drupal_root . '/core/modules/image/src');
+

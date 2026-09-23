@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Theme override for the upcoming releases page (/pelit/tulevat_julkaisut).
+ *
+ * Available variables:
+ * - releases: Array of upcoming release entries, each with:
+ *   - title: Node title string.
+ *   - url: URL string or null.
+ *   - platforms: Array of platform names.
+ *   - date_display: Formatted date string.
+ *   - pelit: Array of referenced game items (name, url).
+ *   - tyyppi: Release type label (e.g. Ensijulkaisu, DLC).
+ *   - hero_image: Render array with #theme => 'image' or null.
+ * - back_url: URL to return to the main games page.
+ */
+#}
+<div class="upcoming-releases-page">
+
+  {% if back_url %}
+    <div class="upcoming-releases-page__back">
+      <a href="{{ back_url }}" class="button button--secondary">&larr; {{ 'Takaisin pelisivulle'|t }}</a>
+    </div>
+  {% endif %}
+
+  <h1 class="upcoming-releases-page__title">{{ 'Tulevat julkaisut'|t }}</h1>
+
+  {% if releases is not empty %}
+    <div class="upcoming-releases-list">
+      {% for release in releases %}
+        {% set initial_release = release.tyyppi == 'Ensijulkaisu' %}
+        <div class="upcoming-release-item">
+          {% if release.hero_image %}
+            <div class="hero-thumbnail">
+              {% if release.url %}
+                <a href="{{ release.url }}">{{ release.hero_image }}</a>
+              {% else %}
+                {{ release.hero_image }}
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="upcoming-release-item__details">
+            <span class="upcoming-release-item__title">
+              {% if release.tyyppi == 'DLC' %}
+                {{ release.title }} (<a href="{{ release.url }}">{{ release.pelit|first.name }}</a> - {{ release.tyyppi }})
+              {% elseif release.url is not null %}
+                <a href="{{ release.url }}">{{ release.title }}</a>{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
+              {% else %}
+                {{ release.title }}{% if not initial_release %} ({{ release.tyyppi }}){% endif %}
+              {% endif %}
+            </span>
+            <span class="upcoming-release-item__date">{{ release.date_display }}</span>
+            {% if release.pelit|length > 1 %}
+              <span class="upcoming-release-item__games">Sisältää pelit:
+                {% for peli in release.pelit %}
+                  <a href="{{ peli.url }}">{{ peli.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+              </span>
+            {% endif %}
+            {% if release.platforms is not empty %}
+              <span class="upcoming-release-item__platforms">Alusta(t): {{ release.platforms|join(', ') }}</span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="upcoming-releases-page__empty">{{ 'Ei tulevia julkaisuja.'|t }}</p>
+  {% endif %}
+
+</div>

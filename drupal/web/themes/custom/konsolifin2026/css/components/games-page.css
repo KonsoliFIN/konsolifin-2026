@@ -140,3 +140,97 @@ a.games-page__upcoming-releases-title:hover {
   grid-column: 1 / -1;
   padding-left: var(--space-xs);
 }
+
+.games-page__more-releases {
+  margin-top: 1.5rem;
+}
+
+/* Full upcoming releases page (/pelit/tulevat_julkaisut) */
+.upcoming-releases-page {
+  max-width: 900px;
+}
+
+.upcoming-releases-page__back {
+  margin-bottom: 1.5rem;
+}
+
+.upcoming-releases-page__title {
+  margin-bottom: 2rem;
+}
+
+.upcoming-releases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.upcoming-release-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.upcoming-release-item .hero-thumbnail {
+  width: 100px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.upcoming-release-item .hero-thumbnail img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.upcoming-release-item__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.upcoming-release-item__title {
+  font-size: 1.05rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-primary);
+}
+
+.upcoming-release-item__title a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.upcoming-release-item__title a:hover {
+  text-decoration: underline;
+}
+
+.upcoming-release-item__date {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.upcoming-release-item__platforms,
+.upcoming-release-item__games {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.upcoming-releases-page__empty {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .upcoming-release-item {
+    gap: 1rem;
+  }
+  .upcoming-release-item .hero-thumbnail {
+    width: 80px;
+  }
+}

@@ -5,6 +5,7 @@
  *
  * Available variables:
  * - admin_url: URL to the games page admin settings form, or null.
+ * - upcoming_releases_url: URL to the full upcoming releases page (/pelit/tulevat_julkaisut).
  * - top_games: Array of top game entries, each with 'name', 'url', 'hero_image'.
  * - search_form: Render array for the search autocomplete form.
  * - upcoming_releases: Array of upcoming release entries, each with 'title', 'url', 'date_display'.
@@ -56,6 +57,11 @@
             </li>
           {% endfor %}
         </ul>
+        {% if upcoming_releases_url %}
+          <div class="games-page__more-releases">
+            <a href="{{ upcoming_releases_url }}" class="button button--secondary">{{ 'Lisää tulevia pelejä'|t }}</a>
+          </div>
+        {% endif %}
       {% endif %}
     </section>
 
