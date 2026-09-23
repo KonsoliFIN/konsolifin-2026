@@ -5,6 +5,7 @@ declare (strict_types = 1);
 namespace Drupal\konsolifin_term_page\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Url;
 use Drupal\date_ish\DateIshHelper;
 use Drupal\konsolifin_term_page\MatomoService;
@@ -22,11 +23,16 @@ class GamesPageController extends ControllerBase {
    *
    * @param \Drupal\konsolifin_term_page\MatomoService $matomoService
    *   The Matomo analytics service.
+   * @param \Drupal\Core\Session\AccountInterface|null $currentUser
+   *   The current user account.
    */
   public function __construct(
     #[Autowire(service: 'konsolifin_term_page.matomo_service')]
     protected readonly MatomoService $matomoService,
-  ) {}
+    ?AccountInterface $currentUser = NULL,
+  ) {
+    $this->currentUser = $currentUser;
+  }
 
   /**
    * {@inheritdoc}
@@ -34,6 +40,7 @@ class GamesPageController extends ControllerBase {
   public static function create(ContainerInterface $container): static {
     return new static(
       $container->get('konsolifin_term_page.matomo_service'),
+      $container->get('current_user'),
     );
   }
 
@@ -60,8 +67,14 @@ class GamesPageController extends ControllerBase {
       }
     }
 
+    $adminUrl = NULL;
+    if ($this->currentUser()->hasPermission('administer konsolifin games page')) {
+      $adminUrl = Url::fromRoute('konsolifin_term_page.games_page_settings')->toString();
+    }
+
     return [
       '#theme'                => 'games_page',
+      '#admin_url'            => $adminUrl,
       '#top_games'            => $topGames,
       '#top_games_heading'    => $this->t('Pinnalla juuri nyt'),
       '#search_form'          => $searchForm,
@@ -75,7 +88,7 @@ class GamesPageController extends ControllerBase {
           'config:konsolifin_term_page.games_page_settings',
         ],
         'max-age'  => 3600,
-        'contexts' => [],
+        'contexts' => ['user.permissions'],
       ],
     ];
   }

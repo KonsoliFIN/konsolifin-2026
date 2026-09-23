@@ -13,6 +13,9 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelInterface;
 use Drupal\Core\Entity\Query\QueryInterface;
+use Drupal\Core\Form\FormBuilderInterface;
+use Drupal\Core\Routing\UrlGeneratorInterface;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\date_ish\DateIshHelper;
 use Drupal\konsolifin_term_page\Controller\GamesPageController;
 use Drupal\konsolifin_term_page\MatomoService;
@@ -921,6 +924,107 @@ class GamesPageControllerTest extends TestCase {
       (string) DateIshHelper::formatForDisplay('quarter', $futureDate3),
       (string) $result[2]['date_display'],
     );
+  }
+
+  /**
+   * Tests that build() includes admin_url when user has administer permission.
+   */
+  public function testBuildWithAdminPermission(): void {
+    $urlGenerator = $this->createStub(UrlGeneratorInterface::class);
+    $urlGenerator->method('generateFromRoute')
+      ->willReturnCallback(function ($name) {
+        return $name === 'konsolifin_term_page.games_page_settings' ? '/admin/config/konsolifin/games-page' : '';
+      });
+    \Drupal::getContainer()->set('url_generator', $urlGenerator);
+
+    $currentUser = $this->createStub(AccountInterface::class);
+    $currentUser->method('hasPermission')
+      ->willReturn(TRUE);
+
+    $formBuilder = $this->createStub(FormBuilderInterface::class);
+    $formBuilder->method('getForm')
+      ->willReturn(['#markup' => 'search_form']);
+
+    $nodeQueryMock = $this->createStub(QueryInterface::class);
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('range')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+      ['taxonomy_term', $this->createStub(EntityStorageInterface::class)],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $configMock->method('get')->willReturn(NULL);
+
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $userReflection = new \ReflectionProperty($controller, 'currentUser');
+    $userReflection->setAccessible(TRUE);
+    $userReflection->setValue($controller, $currentUser);
+
+    $fbReflection = new \ReflectionProperty($controller, 'formBuilder');
+    $fbReflection->setAccessible(TRUE);
+    $fbReflection->setValue($controller, $formBuilder);
+
+    $build = $controller->build();
+
+    $this->assertSame('/admin/config/konsolifin/games-page', $build['#admin_url']);
+    $this->assertContains('user.permissions', $build['#cache']['contexts']);
+  }
+
+  /**
+   * Tests that build() omits admin_url when user lacks administer permission.
+   */
+  public function testBuildWithoutAdminPermission(): void {
+    $currentUser = $this->createStub(AccountInterface::class);
+    $currentUser->method('hasPermission')
+      ->willReturn(FALSE);
+
+    $formBuilder = $this->createStub(FormBuilderInterface::class);
+    $formBuilder->method('getForm')
+      ->willReturn(['#markup' => 'search_form']);
+
+    $nodeQueryMock = $this->createStub(QueryInterface::class);
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('range')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+      ['taxonomy_term', $this->createStub(EntityStorageInterface::class)],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $configMock->method('get')->willReturn(NULL);
+
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $userReflection = new \ReflectionProperty($controller, 'currentUser');
+    $userReflection->setAccessible(TRUE);
+    $userReflection->setValue($controller, $currentUser);
+
+    $fbReflection = new \ReflectionProperty($controller, 'formBuilder');
+    $fbReflection->setAccessible(TRUE);
+    $fbReflection->setValue($controller, $formBuilder);
+
+    $build = $controller->build();
+
+    $this->assertNull($build['#admin_url']);
+    $this->assertContains('user.permissions', $build['#cache']['contexts']);
   }
 
 }

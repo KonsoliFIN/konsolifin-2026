@@ -4,6 +4,7 @@
  * Template for the games page (/pelit).
  *
  * Available variables:
+ * - admin_url: URL to the games page admin settings form, or null.
  * - top_games: Array of top game entries, each with 'name', 'url', 'hero_image'.
  * - search_form: Render array for the search autocomplete form.
  * - upcoming_releases: Array of upcoming release entries, each with 'title', 'url', 'date_display'.
@@ -12,6 +13,12 @@
  */
 #}
 <div class="games-page">
+
+  {% if admin_url %}
+    <div class="games-page__admin">
+      <a href="{{ admin_url }}" class="button button--secondary">{{ 'Muokkaa pelisivun asetuksia'|t }}</a>
+    </div>
+  {% endif %}
 
   {% if top_games is not empty %}
     <section class="games-page__top-games">

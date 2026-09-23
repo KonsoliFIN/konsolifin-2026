@@ -1,3 +1,8 @@
+/* Admin actions link at the top of the games page. */
+.games-page__admin {
+  margin-bottom: 1.5rem;
+}
+
 /* Games page: top games side by side with title overlay. */
 .games-page__top-games-list {
   display: flex;

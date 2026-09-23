@@ -27,6 +27,7 @@ function konsolifin_term_page_theme(): array {
     ],
     'games_page'               => [
       'variables' => [
+        'admin_url'            => NULL,
         'top_games'            => [],
         'top_games_heading'    => '',
         'search_form'          => [],
