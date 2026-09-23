@@ -12,7 +12,6 @@ dependencies:
   module:
     - link
     - media_library
-    - path
     - text
     - user
 _core:
@@ -50,6 +49,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_slack_id:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_some_linkit:
     type: link_default
     weight: 6
@@ -63,17 +70,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
 hidden:
-  field_slack_id: true
   field_xenforo_id: true
   langcode: true
   language: true
+  path: true

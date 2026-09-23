@@ -1,5 +1,8 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\user\UserInterface;
+
 /**
  * Implements hook_theme().
  */
@@ -123,3 +126,21 @@ function konsolifin_misc_pathauto_alias_alter(&$alias, array &$context)
   }
 }
 
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for user_form.
+ */
+function konsolifin_misc_form_user_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  $form_object = $form_state->getFormObject();
+  if (!method_exists($form_object, 'getEntity')) {
+    return;
+  }
+
+  $user = $form_object->getEntity();
+  if (!$user instanceof UserInterface) {
+    return;
+  }
+
+  if (isset($form['field_slack_id']) && !$user->hasRole('toimitus')) {
+    $form['field_slack_id']['#access'] = FALSE;
+  }
+}
