@@ -27,14 +27,23 @@ function konsolifin_term_page_theme(): array {
     ],
     'games_page'               => [
       'variables' => [
-        'top_games'            => [],
-        'top_games_heading'    => '',
-        'search_form'          => [],
-        'upcoming_releases'    => [],
-        'most_discussed'       => [],
-        'most_discussed_error' => NULL,
+        'admin_url'             => NULL,
+        'upcoming_releases_url' => NULL,
+        'top_games'             => [],
+        'top_games_heading'     => '',
+        'search_form'           => [],
+        'upcoming_releases'     => [],
+        'most_discussed'        => [],
+        'most_discussed_error'  => NULL,
       ],
       'template'  => 'games-page',
+    ],
+    'upcoming_releases_page'   => [
+      'variables' => [
+        'releases' => [],
+        'back_url' => NULL,
+      ],
+      'template'  => 'upcoming-releases-page',
     ],
   ];
 }

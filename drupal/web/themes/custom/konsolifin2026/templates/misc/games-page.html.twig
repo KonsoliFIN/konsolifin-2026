@@ -4,6 +4,8 @@
  * Theme override for the games page (/pelit).
  *
  * Available variables:
+ * - admin_url: URL to the games page admin settings form, or null.
+ * - upcoming_releases_url: URL to the full upcoming releases page (/pelit/tulevat_julkaisut).
  * - top_games: Array of top game entries, each with 'name', 'url',
  *   'hero_image' (array with 'url' and 'alt').
  * - search_form: Render array for the search autocomplete form.
@@ -15,6 +17,12 @@
  */
 #}
 <div class="games-page">
+
+  {% if admin_url %}
+    <div class="games-page__admin">
+      <a href="{{ admin_url }}" class="button button--secondary">{{ 'Muokkaa pelisivun asetuksia'|t }}</a>
+    </div>
+  {% endif %}
 
   {% if top_games is not empty %}
     <section class="games-page__top-games">
@@ -67,6 +75,11 @@
             </li>
           {% endfor %}
         </ul>
+        {% if upcoming_releases_url %}
+          <div class="games-page__more-releases">
+            <a href="{{ upcoming_releases_url }}" class="button button--secondary">{{ 'Lisää tulevia pelejä'|t }}</a>
+          </div>
+        {% endif %}
       {% endif %}
     </section>
 

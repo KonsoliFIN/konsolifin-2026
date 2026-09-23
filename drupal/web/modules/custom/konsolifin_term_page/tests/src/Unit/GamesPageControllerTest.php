@@ -13,6 +13,9 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelInterface;
 use Drupal\Core\Entity\Query\QueryInterface;
+use Drupal\Core\Form\FormBuilderInterface;
+use Drupal\Core\Routing\UrlGeneratorInterface;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\date_ish\DateIshHelper;
 use Drupal\konsolifin_term_page\Controller\GamesPageController;
 use Drupal\konsolifin_term_page\MatomoService;
@@ -60,6 +63,19 @@ class GamesPageControllerTest extends TestCase {
       }
     };
     $container->set('string_translation', $string_translation);
+
+    $urlGenerator = $this->createStub(UrlGeneratorInterface::class);
+    $urlGenerator->method('generateFromRoute')
+      ->willReturnCallback(function ($name) {
+        return match ($name) {
+          'konsolifin_term_page.games_page_settings' => '/admin/config/konsolifin/games-page',
+          'konsolifin_term_page.upcoming_releases'   => '/pelit/tulevat_julkaisut',
+          'konsolifin_term_page.games_page'          => '/pelit',
+          default => '/' . str_replace('.', '/', $name),
+        };
+      });
+    $container->set('url_generator', $urlGenerator);
+
     \Drupal::setContainer($container);
   }
 
@@ -921,6 +937,221 @@ class GamesPageControllerTest extends TestCase {
       (string) DateIshHelper::formatForDisplay('quarter', $futureDate3),
       (string) $result[2]['date_display'],
     );
+  }
+
+  /**
+   * Tests that build() includes admin_url when user has administer permission.
+   */
+  public function testBuildWithAdminPermission(): void {
+    $currentUser = $this->createStub(AccountInterface::class);
+    $currentUser->method('hasPermission')
+      ->willReturn(TRUE);
+
+    $formBuilder = $this->createStub(FormBuilderInterface::class);
+    $formBuilder->method('getForm')
+      ->willReturn(['#markup' => 'search_form']);
+
+    $nodeQueryMock = $this->createStub(QueryInterface::class);
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('range')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+      ['taxonomy_term', $this->createStub(EntityStorageInterface::class)],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $configMock->method('get')->willReturn(NULL);
+
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $userReflection = new \ReflectionProperty($controller, 'currentUser');
+    $userReflection->setAccessible(TRUE);
+    $userReflection->setValue($controller, $currentUser);
+
+    $fbReflection = new \ReflectionProperty($controller, 'formBuilder');
+    $fbReflection->setAccessible(TRUE);
+    $fbReflection->setValue($controller, $formBuilder);
+
+    $build = $controller->build();
+
+    $this->assertSame('/admin/config/konsolifin/games-page', $build['#admin_url']);
+    $this->assertSame('/pelit/tulevat_julkaisut', $build['#upcoming_releases_url']);
+    $this->assertContains('user.permissions', $build['#cache']['contexts']);
+  }
+
+  /**
+   * Tests that build() omits admin_url when user lacks administer permission.
+   */
+  public function testBuildWithoutAdminPermission(): void {
+    $currentUser = $this->createStub(AccountInterface::class);
+    $currentUser->method('hasPermission')
+      ->willReturn(FALSE);
+
+    $formBuilder = $this->createStub(FormBuilderInterface::class);
+    $formBuilder->method('getForm')
+      ->willReturn(['#markup' => 'search_form']);
+
+    $nodeQueryMock = $this->createStub(QueryInterface::class);
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('range')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+      ['taxonomy_term', $this->createStub(EntityStorageInterface::class)],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $configMock->method('get')->willReturn(NULL);
+
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $userReflection = new \ReflectionProperty($controller, 'currentUser');
+    $userReflection->setAccessible(TRUE);
+    $userReflection->setValue($controller, $currentUser);
+
+    $fbReflection = new \ReflectionProperty($controller, 'formBuilder');
+    $fbReflection->setAccessible(TRUE);
+    $fbReflection->setValue($controller, $formBuilder);
+
+    $build = $controller->build();
+
+    $this->assertNull($build['#admin_url']);
+    $this->assertSame('/pelit/tulevat_julkaisut', $build['#upcoming_releases_url']);
+    $this->assertContains('user.permissions', $build['#cache']['contexts']);
+  }
+
+  /**
+   * Tests buildUpcomingReleasesPage() renders full list and back link.
+   */
+  public function testBuildUpcomingReleasesPage(): void {
+    $nodeQueryMock = $this->createStub(QueryInterface::class);
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $build = $controller->buildUpcomingReleasesPage();
+
+    $this->assertSame('upcoming_releases_page', $build['#theme']);
+    $this->assertSame('/pelit', $build['#back_url']);
+    $this->assertIsArray($build['#releases']);
+    $this->assertContains('node_list:julkaisu', $build['#cache']['tags']);
+    $this->assertContains('taxonomy_term_list:peli', $build['#cache']['tags']);
+  }
+
+  /**
+   * Tests buildUpcomingReleases(NULL) does not limit query range.
+   */
+  public function testBuildUpcomingReleasesWithoutLimit(): void {
+    $nodeQueryMock = $this->createMock(QueryInterface::class);
+    $nodeQueryMock->expects($this->never())->method('range');
+    $nodeQueryMock->method('condition')->willReturnSelf();
+    $nodeQueryMock->method('sort')->willReturnSelf();
+    $nodeQueryMock->method('accessCheck')->willReturnSelf();
+    $nodeQueryMock->method('execute')->willReturn([]);
+
+    $nodeStorageMock = $this->createStub(EntityStorageInterface::class);
+    $nodeStorageMock->method('getQuery')->willReturn($nodeQueryMock);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('getStorage')->willReturnMap([
+      ['node', $nodeStorageMock],
+    ]);
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $releases = $controller->buildUpcomingReleases(NULL);
+    $this->assertSame([], $releases);
+  }
+
+  /**
+   * Tests buildReleaseHeroThumbnail extracts thumbnail from node field_hero.
+   */
+  public function testBuildReleaseHeroThumbnailFromNodeFieldHero(): void {
+    $fileEntity = new class {
+      public function getFileUri(): string {
+        return 'public://test.png';
+      }
+    };
+
+    $mediaImageField = new class($fileEntity) {
+      public string $alt = 'Test hero alt';
+      public function __construct(public $entity) {}
+      public function isEmpty(): bool {
+        return FALSE;
+      }
+    };
+
+    $mediaEntity = new class($mediaImageField) {
+      public function __construct(private $mediaImageField) {}
+      public function hasField(string $name): bool {
+        return $name === 'field_media_image';
+      }
+      public function get(string $name) {
+        return $this->mediaImageField;
+      }
+    };
+
+    $heroField = new class($mediaEntity) {
+      public function __construct(public $entity) {}
+      public function isEmpty(): bool {
+        return FALSE;
+      }
+    };
+
+    $node = $this->createStub(NodeInterface::class);
+    $node->method('hasField')->willReturnCallback(fn($field) => $field === 'field_hero');
+    $node->method('get')->willReturnCallback(fn($field) => $field === 'field_hero' ? $heroField : NULL);
+    $node->method('getTitle')->willReturn('Test Node');
+
+    $imageStyle = $this->createStub(\Drupal\image\ImageStyleInterface::class);
+    $imageStyle->method('buildUrl')->willReturn('http://test/styles/thumb.png');
+
+    $imageStyleStorage = $this->createStub(EntityStorageInterface::class);
+    $imageStyleStorage->method('load')->willReturn($imageStyle);
+
+    $entityTypeManagerMock = $this->createStub(EntityTypeManagerInterface::class);
+    $entityTypeManagerMock->method('hasDefinition')->willReturn(TRUE);
+    $entityTypeManagerMock->method('getStorage')->willReturnCallback(
+      fn(string $type) => $type === 'image_style' ? $imageStyleStorage : NULL,
+    );
+
+    $configMock = $this->createStub(ImmutableConfig::class);
+    $controller = $this->createControllerForUnitTest($configMock, $entityTypeManagerMock);
+
+    $result = $controller->buildReleaseHeroThumbnail($node);
+
+    $this->assertNotNull($result);
+    $this->assertSame('image', $result['#theme']);
+    $this->assertSame('http://test/styles/thumb.png', $result['#uri']);
+    $this->assertSame('Test hero alt', $result['#alt']);
   }
 
 }
