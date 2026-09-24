@@ -99,10 +99,16 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
 | **Podcast RSS** | `/podcast/podcast.rss` | Täysi Apple Podcasts / iTunes -yhteensopiva XML-syöte. Hakee MP3-mediatiedoston URL:n, tiedostokoon ja keston, kuvan (`field_hero`) sekä iTunes-spesifit metatiedot (`<itunes:duration>`, `<itunes:image>`, `<itunes:author>`). |
 | **403 Kielletty** | `/403_not_allowed` | Kustomoitu pääsy estetty -sivu. Kirjautuneelle käyttäjälle näytetään virheilmoitus, käyttäjätunnus, UID ja roolit ylläpidolle raportointia varten; anonyymille ohjaus kirjautumiseen ja foorumin rekisteröintiin. |
 | **404 Ei löydy** | `/404_not_found` | Kustomoitu sivua ei löydy -ilmoitus linkkeineen etusivulle ja navigointiin. |
+| **Poistetut polut (410)** | `/admin/config/system/gone-paths` | Ylläpidon asetuslomake (`GonePathsForm`) pysyvästi poistettujen polkualkuosien hallintaan (esim. `/bbs/`, `/konsolifin.php`, `/arviolista.php`). |
 | **Testilinkit** | `/kfintest/linkit` | Ylläpidon kehityssivu (vaatii `access administration pages` -oikeuden), joka hakee yhden tuoreimman solmun jokaisesta sisältötyypistä ja renderöi sen `teaser`-näkymässä teeman tyylien testausta varten. |
 | **Oma profiili** | `editMyProfile()` | Apufunktio, joka ohjaa kirjautuneen käyttäjän suoraan omaan profiilinmuokkauslomakkeeseensa (`/user/{uid}/edit`). |
 
 #### 2. Palvelut ja tapahtumatilaajat:
+- **Pysyvästi poistettujen polkujen 410 Gone -tilaaja (`GonePathSubscriber`):**
+  - Kuuntelee `KernelEvents::REQUEST` -tapahtumaa prioriteetilla 50 (ennen Drupalin ja Symfonyn reititintä `RouterListener`, jonka prioriteetti on 32).
+  - Sieppaa vanhoille osoiterakenteille (kuten vanha vBulletin-foorumi `/bbs/` ja vanhat PHP-skriptit `/konsolifin.php`, `/arviolista.php`) kohdistuvat pyynnöt heti ilman tietokanta- tai reitityskyselyitä.
+  - Palauttaa välittömästi kevyen, KonsoliFINin brändin mukaisen tumman HTML-vastaussivun ja HTTP 410 Gone -tilakoodin. Estää 404-virheiden kertymisen Drupalin lokeihin ja ohjaa hakukoneet poistamaan vanhat sivut indeksistään nopeasti.
+  - Polkualkuosat ovat hallittavissa Drupalin hallinnasta (`/admin/config/system/gone-paths`) tai konfiguraatiosta (`konsolifin_misc.gone_paths`).
 - **Salasanan palautuksen ohjaus (`RouteSubscriber`):**
   - Korvaa Drupalin sisäänrakennetun `/user/password`-reitin ja palauttaa HTTP 410 Gone -vastauksen, joka ohjaa käyttäjän ulkoisen foorumin salasananpalautukseen (`https://forum.konsolifin.net/lost-password/`).
 - **Syötepalvelu (`RssFeedService`):**

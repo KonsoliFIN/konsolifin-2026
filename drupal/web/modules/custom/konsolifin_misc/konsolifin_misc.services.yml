@@ -10,6 +10,14 @@ services:
     tags:
       - { name: event_subscriber }
 
+  # Catches legacy URLs and immediately returns HTTP 410 Gone before routing.
+  konsolifin_misc.gone_path_subscriber:
+    class: Drupal\konsolifin_misc\EventSubscriber\GonePathSubscriber
+    arguments:
+      - '@config.factory'
+    tags:
+      - { name: event_subscriber }
+
   konsolifin_misc.rss_feed:
     class: Drupal\konsolifin_misc\Service\RssFeedService
     arguments:
