@@ -90,3 +90,15 @@ konsolifin.test_links:
   requirements:
     # Restrict to administrators in production; adjust permission as needed.
     _permission: 'access administration pages'
+
+# ---------------------------------------------------------------------------
+# Administration settings
+# ---------------------------------------------------------------------------
+
+konsolifin_misc.gone_paths:
+  path: '/admin/config/system/gone-paths'
+  defaults:
+    _form: '\Drupal\konsolifin_misc\Form\GonePathsForm'
+    _title: 'Poistetut polut (HTTP 410 Gone)'
+  requirements:
+    _permission: 'administer site configuration'

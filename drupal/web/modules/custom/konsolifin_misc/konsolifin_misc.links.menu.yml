@@ -1,0 +1,6 @@
+konsolifin_misc.gone_paths:
+  title: 'Poistetut polut (HTTP 410 Gone)'
+  description: 'Määritä pysyvästi poistetut URL-alkuosat, jotka palauttavat HTTP 410 -tilakoodin.'
+  route_name: konsolifin_misc.gone_paths
+  parent: system.admin_config_system
+  weight: 50

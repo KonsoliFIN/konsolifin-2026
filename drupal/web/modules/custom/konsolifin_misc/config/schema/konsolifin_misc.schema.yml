@@ -1,0 +1,10 @@
+konsolifin_misc.gone_paths:
+  type: config_object
+  label: 'KonsoliFIN Gone (410) Paths Settings'
+  mapping:
+    prefixes:
+      type: sequence
+      label: 'Path prefixes'
+      sequence:
+        type: string
+        label: 'Prefix'
