@@ -1,9 +1,14 @@
 prefixes:
-  - /bbs/
+  - /bbs
   - /konsolifin.php
   - /arviolista.php
-  - /xbox/
-  - /playstation/
-  - /nintendo/
-  - '/etusivu?'
+  - /xbox
+  - /playstation
+  - /nintendo
+  - /etusivu
   - /perheet
+  - /podcast/tangentti.rss
+  - /media
+  - /uutinen.php
+  - /arvostelu.php
+  - /juttu.php
