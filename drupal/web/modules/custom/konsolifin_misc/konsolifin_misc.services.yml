@@ -36,3 +36,9 @@ services:
       - '@datetime.time'
       - '@config.factory'
 
+  konsolifin_misc.datalayer:
+    class: Drupal\konsolifin_misc\Service\DataLayerService
+    arguments:
+      - '@date.formatter'
+
+
