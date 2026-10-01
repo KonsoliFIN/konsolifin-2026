@@ -118,6 +118,9 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - **Työnkulkujen ajastukset:** Hakee `workflow_scheduled_transition`-entiteetit, joiden kohdetilana on julkaistu tila (`yleinen_julkaisuputki_julkaistu` tai `uutisputki_julkaistu`), ja sijoittaa sisällöt kalenteriin ajastusajankohdan mukaan. Tukee myös `publish_on`-kenttää työnkuluttomille sisällöille.
   - **Työnkulun tilan näyttäminen:** Julkaisemattoman sisällön taulukkolistauksessa näytetään solmun nykyinen työnkulun tila ihmisluettavana värikoodattuna laatikkomerkintänä (`.kf-workflow-badge`).
   - **Hylättyjen sisältöjen suodatus:** Kaikki tilassa *Hylätty* (`yleinen_julkaisuputki_hylatty` tai `uutisputki_hylatty`) olevat sisällöt jätetään kokonaan pois julkaisemattomien listauksesta.
+- **Google Analytics / Tag Manager dataLayer -palvelu (`DataLayerService`, palvelu: `konsolifin_misc.datalayer`):**
+  - Tuottaa solvusivuille Google Analytics / Tag Manager -seurantaa varten jäsennellyn `window.dataLayer.push(...)` -JavaScript-skriptin.
+  - Kerää automaattisesti solmun metatiedot: `platform` (`drupal`), `site_section` (`editorial`), `content_type` (bundle), `content_id` (`nid`), `author` (Realname tai näyttönimi), `game_title` (`field_pelit` ja/tai `field_pelin_nimi`) ja `publication_date` (`YYYY-MM-DD`).
 
 #### 3. Sisältö- ja teemahookit:
 - **`konsolifin_misc_preprocess_node`:**
@@ -126,6 +129,8 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Hakee käyttäjän todellisen nimen `realname`-moduulilta tai `getDisplayName()`-metodista ja estää Drupalia lyhentämästä nimeä (`truncated = FALSE`).
 - **`konsolifin_misc_pathauto_alias_alter`:**
   - Räätälöi automaattisia URL-aliaksia: lisää osoitteeseen sarjan nimen (`field_sarja`), pelitaksonomian nimen (`field_pelit`) tai vapaamuotoisen pelin nimen (`field_pelin_nimi`).
+- **`konsolifin_misc_page_attachments`:**
+  - Tunnistaa kanoniset solvusivut (`entity.node.canonical`) ja liittää sivun `<head>`-osioon dataLayer-metatiedot sekä huolehtii solmun, kirjoittajan ja pelitaksonomian välimuistitunnisteiden (`cache tags`) liittämisestä vastaukseen.
 
 ---
 
