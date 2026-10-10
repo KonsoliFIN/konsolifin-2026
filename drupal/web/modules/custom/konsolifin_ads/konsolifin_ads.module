@@ -64,6 +64,37 @@ function konsolifin_ads_page_bottom(array &$page_bottom)
     '#base_id' => 'anchor',
     '#unique_suffix' => '',
   ];
+
+  // Interstitial Video Ad Logic
+  $config = \Drupal::config('konsolifin_ads.settings');
+  $now = \Drupal::time()->getCurrentTime();
+  $start_date_str = $config->get('video_start_date');
+  $end_date_str = $config->get('video_end_date');
+  $start_date = $start_date_str ? strtotime($start_date_str) : 0;
+  $end_date = $end_date_str ? strtotime($end_date_str) : 0;
+  $youtube_url = $config->get('youtube_url');
+
+  if ($start_date && $end_date && $now >= $start_date && $now <= $end_date && !empty($youtube_url)) {
+    // Extract embed url if full watch url is provided
+    $embed_url = $youtube_url;
+    if (preg_match('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i', $youtube_url, $matches)) {
+      $video_id = $matches[1];
+      $embed_url = 'https://www.youtube.com/embed/' . $video_id;
+    }
+
+    $page_bottom['interstitial_ad'] = [
+      '#theme' => 'konsolifin_interstitial',
+      '#youtube_embed_url' => $embed_url,
+      '#attached' => [
+        'library' => [
+          'konsolifin_ads/interstitial',
+        ],
+      ],
+      '#cache' => [
+        'tags' => $config->getCacheTags(),
+      ],
+    ];
+  }
 }
 
 /**
@@ -78,6 +109,12 @@ function konsolifin_ads_theme($existing, $type, $theme, $path)
         'unique_suffix' => NULL,
       ],
       'template' => 'konsolifin-ad',
+    ],
+    'konsolifin_interstitial' => [
+      'variables' => [
+        'youtube_embed_url' => NULL,
+      ],
+      'template' => 'konsolifin-interstitial',
     ],
   ];
 }

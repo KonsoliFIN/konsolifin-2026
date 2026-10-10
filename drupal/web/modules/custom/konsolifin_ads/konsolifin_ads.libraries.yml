@@ -4,3 +4,13 @@ ads_setup:
   css:
     component:
       css/ads.css: {}
+
+interstitial:
+  version: 1.x
+  css:
+    component:
+      css/interstitial.css: {}
+  js:
+    js/interstitial.js: {}
+  dependencies:
+    - core/drupal
