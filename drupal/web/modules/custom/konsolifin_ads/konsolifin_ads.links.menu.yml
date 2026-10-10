@@ -1,0 +1,6 @@
+konsolifin_ads.settings:
+  title: 'KonsoliFIN Ads Settings'
+  description: 'Configure image and interstitial video campaigns.'
+  route_name: konsolifin_ads.settings
+  parent: system.admin_config_system
+  weight: 50

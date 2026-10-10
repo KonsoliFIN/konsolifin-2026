@@ -1,0 +1,40 @@
+konsolifin_ads.settings:
+  type: config_object
+  label: 'KonsoliFIN Ads settings'
+  mapping:
+    image_start_date:
+      type: string
+      label: 'Image Campaign Start Date'
+    image_end_date:
+      type: string
+      label: 'Image Campaign End Date'
+    destination_url:
+      type: string
+      label: 'Destination URL'
+    image_url_oversize:
+      type: string
+      label: 'Oversize Image URL'
+    breakpoint_oversize:
+      type: integer
+      label: 'Oversize Breakpoint'
+    image_url_desktop:
+      type: string
+      label: 'Desktop Image URL'
+    breakpoint_desktop:
+      type: integer
+      label: 'Desktop Breakpoint'
+    image_url_mobile:
+      type: string
+      label: 'Mobile Image URL'
+    alt_text:
+      type: string
+      label: 'Alt Text'
+    video_start_date:
+      type: string
+      label: 'Video Campaign Start Date'
+    video_end_date:
+      type: string
+      label: 'Video Campaign End Date'
+    youtube_url:
+      type: string
+      label: 'YouTube URL'

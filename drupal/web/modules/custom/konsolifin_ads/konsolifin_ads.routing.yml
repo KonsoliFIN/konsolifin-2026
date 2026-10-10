@@ -1,0 +1,7 @@
+konsolifin_ads.settings:
+  path: '/admin/config/system/konsolifin-ads'
+  defaults:
+    _form: '\Drupal\konsolifin_ads\Form\AdsSettingsForm'
+    _title: 'KonsoliFIN Ads Settings'
+  requirements:
+    _permission: 'administer site configuration'
