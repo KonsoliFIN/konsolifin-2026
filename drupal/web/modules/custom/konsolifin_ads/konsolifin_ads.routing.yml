@@ -4,4 +4,4 @@ konsolifin_ads.settings:
     _form: '\Drupal\konsolifin_ads\Form\AdsSettingsForm'
     _title: 'KonsoliFIN Ads Settings'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer konsolifin ads'
