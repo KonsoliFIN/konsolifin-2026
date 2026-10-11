@@ -117,6 +117,9 @@ class AdExtension extends AbstractExtension {
               'data-content-piece' => $ad_id,
             ],
           ],
+          '#cache' => [
+            'tags' => $config->getCacheTags(),
+          ],
         ];
       }
     }

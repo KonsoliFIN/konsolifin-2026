@@ -35,10 +35,10 @@
         // Close modal event
         closeBtn.addEventListener('click', function() {
           modal.style.display = 'none';
-          // Stop iframe video by removing its src
+          // Stop iframe video completely
           const iframe = modal.querySelector('iframe');
           if (iframe) {
-            iframe.src = iframe.src;
+            iframe.src = '';
           }
         });
 
