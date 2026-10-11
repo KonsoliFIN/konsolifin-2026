@@ -18,11 +18,11 @@
         return null;
       }
 
-      function setCookie(name, value, days) {
+      function setCookie(name, value, hours) {
         let expires = "";
-        if (days) {
+        if (hours) {
           const date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
           expires = "; expires=" + date.toUTCString();
         }
         document.cookie = name + "=" + (value || "")  + expires + "; path=/";
@@ -42,8 +42,11 @@
           }
         });
 
-        // Set cookie so it won't show again for 1 day
-        setCookie(cookieName, '1', 1);
+        // Set cookie so it won't show again for configured interval
+        const intervalHours = settings.konsolifin_ads && settings.konsolifin_ads.interstitial_interval !== undefined
+          ? parseInt(settings.konsolifin_ads.interstitial_interval, 10)
+          : 24;
+        setCookie(cookieName, '1', intervalHours);
       }
     }
   };

@@ -38,3 +38,6 @@ konsolifin_ads.settings:
     youtube_url:
       type: string
       label: 'YouTube URL'
+    interstitial_interval:
+      type: integer
+      label: 'Show Interval (Hours)'

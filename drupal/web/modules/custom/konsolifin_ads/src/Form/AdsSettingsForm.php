@@ -116,6 +116,13 @@ class AdsSettingsForm extends ConfigFormBase {
       '#description' => $this->t('e.g., https://www.youtube.com/watch?v=dQw4w9WgXcQ or https://www.youtube.com/embed/dQw4w9WgXcQ'),
     ];
 
+    $form['video_campaign']['interstitial_interval'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Show Interval (Hours)'),
+      '#default_value' => $config->get('interstitial_interval') ?: 24,
+      '#description' => $this->t('The number of hours to wait before showing the interstitial ad to the same user again.'),
+    ];
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -142,6 +149,7 @@ class AdsSettingsForm extends ConfigFormBase {
       ->set('video_start_date', $video_start ? $video_start->format('Y-m-d H:i:s') : NULL)
       ->set('video_end_date', $video_end ? $video_end->format('Y-m-d H:i:s') : NULL)
       ->set('youtube_url', $form_state->getValue('youtube_url'))
+      ->set('interstitial_interval', $form_state->getValue('interstitial_interval'))
       ->save();
 
     parent::submitForm($form, $form_state);

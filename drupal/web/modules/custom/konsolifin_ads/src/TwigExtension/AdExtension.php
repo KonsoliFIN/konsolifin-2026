@@ -12,8 +12,7 @@ use Twig\TwigFunction;
 /**
  * Custom Twig extension for rendering ads.
  */
-class AdExtension extends AbstractExtension
-{
+class AdExtension extends AbstractExtension {
 
   /**
    * A counter to keep track of ad invocations.
@@ -25,8 +24,7 @@ class AdExtension extends AbstractExtension
   /**
    * {@inheritdoc}
    */
-  public function getFunctions()
-  {
+  public function getFunctions() {
     return [
       new TwigFunction('konsolifin_ad', [$this, 'renderAd'], ['is_safe' => ['html']]),
     ];
@@ -41,9 +39,8 @@ class AdExtension extends AbstractExtension
    * @return array
    *   A render array.
    */
-  public function renderAd($base_id)
-  {
-    if ($base_id === 'top') {
+  public function renderAd($base_id) {
+    if ($base_id ==='top') {
       $unique_suffix = "";
     } else {
       // We add an incrementing unique suffix so multiple calls on the same page don't clash.
@@ -101,7 +98,7 @@ class AdExtension extends AbstractExtension
         return [
           '#type' => 'container',
           '#attributes' => [
-            'class' => ['media_campaign_banner'],
+            'class' => ['gta_online_banner'],
             'id' => $ad_id . '_banner',
           ],
           'ad_link' => [
@@ -133,7 +130,7 @@ class AdExtension extends AbstractExtension
         '#type' => 'markup',
         '#markup' => '<div class="konsolifin_ad_wrapper">
           <div class="konsolifin_ad_top_bar"></div>
-          <div class="konsolifin-ad-container">Ad Placeholder ' . $base_id . $unique_suffix . '</div>
+          <div class="konsolifin-ad-container">Ad Placeholder '.$base_id.$unique_suffix.'</div>
           <div class="konsolifin_ad_bottom_bar"></div>
         </div>',
       ];

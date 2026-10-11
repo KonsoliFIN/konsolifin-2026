@@ -1,4 +1,4 @@
-.media_campaign_banner,
+.gta_online_banner,
 .konsolifin_ad_wrapper {
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
 }
 
 .frontpage-tier--compact .konsolifin_ad_wrapper,
-.frontpage-tier--compact .media_campaign_banner {
+.frontpage-tier--compact .gta_online_banner {
   grid-column: 1 / -1;
 }
 

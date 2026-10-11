@@ -94,6 +94,11 @@ function konsolifin_ads_page_bottom(array &$page_bottom)
         'library' => [
           'konsolifin_ads/interstitial',
         ],
+        'drupalSettings' => [
+          'konsolifin_ads' => [
+            'interstitial_interval' => $config->get('interstitial_interval') ?: 24,
+          ],
+        ],
       ],
       '#cache' => [
         'tags' => $config->getCacheTags(),
