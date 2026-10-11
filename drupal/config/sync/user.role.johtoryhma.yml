@@ -11,6 +11,7 @@ dependencies:
     - node.type.video
   module:
     - filter
+    - konsolifin_ads
     - locale
     - node
     - system
@@ -25,6 +26,7 @@ permissions:
   - 'access site reports'
   - 'access toolbar'
   - 'access user profiles'
+  - 'administer konsolifin ads'
   - 'administer menu'
   - 'administer nodes'
   - 'administer themes'
