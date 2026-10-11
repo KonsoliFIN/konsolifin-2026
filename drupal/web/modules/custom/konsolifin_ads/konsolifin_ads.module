@@ -66,6 +66,11 @@ function konsolifin_ads_page_bottom(array &$page_bottom)
   ];
 
   // Interstitial Video Ad Logic
+  // Do not show on admin routes.
+  if (\Drupal::service('router.admin_context')->isAdminRoute()) {
+    return;
+  }
+
   $config = \Drupal::config('konsolifin_ads.settings');
   $now = \Drupal::time()->getCurrentTime();
   $start_date_str = $config->get('video_start_date');
