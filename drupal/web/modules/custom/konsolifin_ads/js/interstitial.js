@@ -17,6 +17,10 @@
       const unmuteBtn = document.getElementById('konsolifin-interstitial-unmute');
       const iframe = modal.querySelector('iframe');
       let isMuted = true;
+      let openTime = 0;
+      let isClosed = false;
+
+      window.dataLayer = window.dataLayer || [];
 
       // Check if we already showed it within the interval
       const cookieName = 'konsolifin_interstitial_seen';
@@ -38,7 +42,20 @@
         document.cookie = name + '=' + (value || '') + expires + '; path=/';
       }
 
-      function closeModal() {
+      function closeModal(method) {
+        if (isClosed) {
+          return;
+        }
+        isClosed = true;
+
+        const durationSeconds = openTime ? Math.round((Date.now() - openTime) / 1000) : 0;
+        window.dataLayer.push({
+          event: 'interstitial_ad_close',
+          ad_type: 'video_interstitial',
+          close_method: method || 'button',
+          watch_duration_seconds: durationSeconds
+        });
+
         modal.style.display = 'none';
         // Stop iframe video completely
         if (iframe) {
@@ -49,6 +66,13 @@
       if (!getCookie(cookieName)) {
         // Show modal
         modal.style.display = 'flex';
+        openTime = Date.now();
+
+        // Push impression event to dataLayer
+        window.dataLayer.push({
+          event: 'interstitial_ad_impression',
+          ad_type: 'video_interstitial'
+        });
 
         // Load iframe source now that the modal is visible to trigger autoplay reliably
         if (iframe && iframe.dataset.src) {
@@ -71,6 +95,12 @@
               if (icon) icon.textContent = '🔊';
               if (label) label.textContent = 'Mykistä (Mute)';
               isMuted = false;
+
+              // Push unmute event to dataLayer
+              window.dataLayer.push({
+                event: 'interstitial_ad_unmute',
+                ad_type: 'video_interstitial'
+              });
             } else {
               iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'mute' }), '*');
               if (icon) icon.textContent = '🔇';
@@ -82,20 +112,22 @@
 
         // Close modal events
         if (closeBtn) {
-          closeBtn.addEventListener('click', closeModal);
+          closeBtn.addEventListener('click', function () {
+            closeModal('button');
+          });
         }
 
         // Close when clicking outside content (on overlay backdrop)
         modal.addEventListener('click', function (e) {
           if (e.target === modal) {
-            closeModal();
+            closeModal('backdrop');
           }
         });
 
         // Close on ESC key
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape' && modal.style.display !== 'none') {
-            closeModal();
+            closeModal('esc');
           }
         });
 
