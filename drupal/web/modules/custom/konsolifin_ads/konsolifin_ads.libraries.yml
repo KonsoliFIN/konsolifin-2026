@@ -14,3 +14,4 @@ interstitial:
     js/interstitial.js: {}
   dependencies:
     - core/drupal
+    - core/once
