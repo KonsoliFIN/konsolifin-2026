@@ -180,6 +180,7 @@ test.describe('KonsoliFIN Staging - Forum-tunnuksilla toimiminen', () => {
         const authorizeButton = page.getByRole('button', { name: 'Authorize' });
         await authorizeButton.click();
 
+        await page.getByRole('link', { name: 'Etusivu' }).click();
         await page.getByRole('link', { name: 'Oma käyttäjätilini' }).click();
         await page.getByRole('link', { name: 'Kirjaudu ulos' }).click();
 
