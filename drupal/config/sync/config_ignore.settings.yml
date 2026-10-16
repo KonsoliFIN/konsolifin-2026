@@ -11,6 +11,7 @@ ignored_config_entities:
     - openid_connect.client.forum
     - system.site
   export:
+    - konsolifin_ads.settings
     - konsolifin_term_page.games_page_settings
     - konsolifin_workflows.settings
     - matomo.settings
