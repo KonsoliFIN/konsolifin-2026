@@ -6,18 +6,25 @@ namespace Drupal\Tests\konsolifin_misc\Unit;
 
 use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\konsolifin_misc\Hook\KonsolifinMiscFormHooks;
 use Drupal\user\UserInterface;
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\TestCase;
 
-require_once dirname(__DIR__, 3) . '/konsolifin_misc.module';
-
 /**
- * Unit tests for konsolifin_misc_form_user_form_alter().
+ * Unit tests for KonsolifinMiscFormHooks.
  */
 #[AllowMockObjectsWithoutExpectations]
 class UserFormAlterTest extends TestCase
 {
+
+  protected KonsolifinMiscFormHooks $hooks;
+
+  protected function setUp(): void
+  {
+    parent::setUp();
+    $this->hooks = new KonsolifinMiscFormHooks();
+  }
 
   /**
    * Tests that field_slack_id is hidden when user does not have toimitus role.
@@ -39,7 +46,7 @@ class UserFormAlterTest extends TestCase
       ],
     ];
 
-    konsolifin_misc_form_user_form_alter($form, $formState, 'user_form');
+    $this->hooks->formUserFormAlter($form, $formState, 'user_form');
 
     $this->assertArrayHasKey('#access', $form['field_slack_id']);
     $this->assertFalse($form['field_slack_id']['#access']);
@@ -65,7 +72,7 @@ class UserFormAlterTest extends TestCase
       ],
     ];
 
-    konsolifin_misc_form_user_form_alter($form, $formState, 'user_form');
+    $this->hooks->formUserFormAlter($form, $formState, 'user_form');
 
     $this->assertArrayNotHasKey('#access', $form['field_slack_id']);
   }
@@ -90,7 +97,7 @@ class UserFormAlterTest extends TestCase
       ],
     ];
 
-    konsolifin_misc_form_user_form_alter($form, $formState, 'user_form');
+    $this->hooks->formUserFormAlter($form, $formState, 'user_form');
 
     $this->assertArrayNotHasKey('field_slack_id', $form);
   }
@@ -111,7 +118,7 @@ class UserFormAlterTest extends TestCase
       ],
     ];
 
-    konsolifin_misc_form_user_form_alter($form, $formState, 'user_form');
+    $this->hooks->formUserFormAlter($form, $formState, 'user_form');
 
     $this->assertArrayNotHasKey('#access', $form['field_slack_id']);
   }

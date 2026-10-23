@@ -7,15 +7,16 @@ namespace Drupal\Tests\konsolifin_misc\Unit;
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use Drupal\Component\Render\MarkupInterface;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\konsolifin_misc\Hook\KonsolifinMiscPageAttachmentsHook;
 use Drupal\konsolifin_misc\Service\DataLayerService;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\TermInterface;
 use Drupal\user\UserInterface;
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\TestCase;
-
-require_once dirname(__DIR__, 3) . '/konsolifin_misc.module';
 
 /**
  * Helper class for mocking iterable Drupal field item lists.
@@ -352,7 +353,7 @@ class DataLayerServiceTest extends TestCase {
   }
 
   /**
-   * Tests konsolifin_misc_page_attachments() on canonical node route.
+   * Tests KonsolifinMiscPageAttachmentsHook::pageAttachments() on canonical node route.
    */
   public function testHookPageAttachmentsCanonicalRoute(): void {
     $node = $this->createMock(NodeInterface::class);
@@ -367,13 +368,11 @@ class DataLayerServiceTest extends TestCase {
     $routeMatch->method('getRouteName')->willReturn('entity.node.canonical');
     $routeMatch->method('getParameter')->with('node')->willReturn($node);
 
-    $container = new ContainerBuilder();
-    $container->set('current_route_match', $routeMatch);
-    $container->set('konsolifin_misc.datalayer', $this->service);
-    \Drupal::setContainer($container);
+    $entityTypeManager = $this->createMock(EntityTypeManagerInterface::class);
+    $hook = new KonsolifinMiscPageAttachmentsHook($routeMatch, $entityTypeManager, $this->service);
 
     $attachments = [];
-    konsolifin_misc_page_attachments($attachments);
+    $hook->pageAttachments($attachments);
 
     $this->assertArrayHasKey('#attached', $attachments);
     $this->assertArrayHasKey('html_head', $attachments['#attached']);
@@ -381,36 +380,66 @@ class DataLayerServiceTest extends TestCase {
   }
 
   /**
-   * Tests konsolifin_misc_page_attachments() on non-canonical route.
+   * Tests KonsolifinMiscPageAttachmentsHook::pageAttachments() with numeric node ID.
+   */
+  public function testHookPageAttachmentsNumericNodeId(): void {
+    $node = $this->createMock(NodeInterface::class);
+    $node->method('bundle')->willReturn('uutinen');
+    $node->method('id')->willReturn(12345);
+    $node->method('getCreatedTime')->willReturn(1790856000);
+    $node->method('getOwner')->willReturn(NULL);
+    $node->method('hasField')->willReturn(FALSE);
+    $node->method('getCacheTags')->willReturn(['node:12345']);
+
+    $routeMatch = $this->createMock(RouteMatchInterface::class);
+    $routeMatch->method('getRouteName')->willReturn('entity.node.canonical');
+    $routeMatch->method('getParameter')->with('node')->willReturn('12345');
+
+    $storage = $this->createMock(EntityStorageInterface::class);
+    $storage->method('load')->with('12345')->willReturn($node);
+
+    $entityTypeManager = $this->createMock(EntityTypeManagerInterface::class);
+    $entityTypeManager->method('getStorage')->with('node')->willReturn($storage);
+
+    $hook = new KonsolifinMiscPageAttachmentsHook($routeMatch, $entityTypeManager, $this->service);
+
+    $attachments = [];
+    $hook->pageAttachments($attachments);
+
+    $this->assertArrayHasKey('#attached', $attachments);
+    $this->assertArrayHasKey('html_head', $attachments['#attached']);
+    $this->assertSame('konsolifin_misc_datalayer', $attachments['#attached']['html_head'][0][1]);
+  }
+
+  /**
+   * Tests KonsolifinMiscPageAttachmentsHook::pageAttachments() on non-canonical route.
    */
   public function testHookPageAttachmentsNonCanonicalRoute(): void {
     $routeMatch = $this->createMock(RouteMatchInterface::class);
     $routeMatch->method('getRouteName')->willReturn('view.frontpage.page_1');
 
-    $container = new ContainerBuilder();
-    $container->set('current_route_match', $routeMatch);
-    \Drupal::setContainer($container);
+    $entityTypeManager = $this->createMock(EntityTypeManagerInterface::class);
+    $hook = new KonsolifinMiscPageAttachmentsHook($routeMatch, $entityTypeManager, $this->service);
 
     $attachments = [];
-    konsolifin_misc_page_attachments($attachments);
+    $hook->pageAttachments($attachments);
 
     $this->assertEmpty($attachments);
   }
 
   /**
-   * Tests konsolifin_misc_page_attachments() when node is not found.
+   * Tests KonsolifinMiscPageAttachmentsHook::pageAttachments() when node is not found.
    */
   public function testHookPageAttachmentsCanonicalRouteWithoutNode(): void {
     $routeMatch = $this->createMock(RouteMatchInterface::class);
     $routeMatch->method('getRouteName')->willReturn('entity.node.canonical');
     $routeMatch->method('getParameter')->with('node')->willReturn(NULL);
 
-    $container = new ContainerBuilder();
-    $container->set('current_route_match', $routeMatch);
-    \Drupal::setContainer($container);
+    $entityTypeManager = $this->createMock(EntityTypeManagerInterface::class);
+    $hook = new KonsolifinMiscPageAttachmentsHook($routeMatch, $entityTypeManager, $this->service);
 
     $attachments = [];
-    konsolifin_misc_page_attachments($attachments);
+    $hook->pageAttachments($attachments);
 
     $this->assertEmpty($attachments);
   }

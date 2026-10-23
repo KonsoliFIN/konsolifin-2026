@@ -122,15 +122,17 @@ Tähän on dokumentoitu kaikki erityisesti KonsoliFINiä varten luodut custom-mo
   - Tuottaa solvusivuille Google Analytics / Tag Manager -seurantaa varten jäsennellyn `window.dataLayer.push(...)` -JavaScript-skriptin.
   - Kerää automaattisesti solmun metatiedot: `platform` (`drupal`), `site_section` (`editorial`), `content_type` (bundle), `content_id` (`nid`), `author` (Realname tai näyttönimi), `game_title` (`field_pelit` ja/tai `field_pelin_nimi`) ja `publication_date` (`YYYY-MM-DD`).
 
-#### 3. Sisältö- ja teemahookit:
-- **`konsolifin_misc_preprocess_node`:**
+#### 3. Sisältö- ja teemahookit (Drupal 11 OOP #[Hook] -luokat `src/Hook/`):
+- **`KonsolifinMiscThemeHooks` (`#[Hook('theme')]`, `#[Hook('preprocess_node')]`, `#[Hook('preprocess_username')]`):**
+  - Määrittelee teematyylit: `konsolifin_two_week_calendar` ja `konsolifin_create_content_links`.
   - Rikastaa artikkelinäkymän tekijätiedoilla: lisää kirjoittajan kuvan (`author_headshot`, kuvaformaatti `teaser_thumbnail`), esittelyn ensimmäisen kappaleen (`author_bio`) ja sosiaalisen median linkit (`author_social`).
-- **`konsolifin_misc_preprocess_username`:**
   - Hakee käyttäjän todellisen nimen `realname`-moduulilta tai `getDisplayName()`-metodista ja estää Drupalia lyhentämästä nimeä (`truncated = FALSE`).
-- **`konsolifin_misc_pathauto_alias_alter`:**
-  - Räätälöi automaattisia URL-aliaksia: lisää osoitteeseen sarjan nimen (`field_sarja`), pelitaksonomian nimen (`field_pelit`) tai vapaamuotoisen pelin nimen (`field_pelin_nimi`).
-- **`konsolifin_misc_page_attachments`:**
-  - Tunnistaa kanoniset solvusivut (`entity.node.canonical`) ja liittää sivun `<head>`-osioon dataLayer-metatiedot sekä huolehtii solmun, kirjoittajan ja pelitaksonomian välimuistitunnisteiden (`cache tags`) liittämisestä vastaukseen.
+- **`KonsolifinMiscPathautoHooks` (`#[Hook('pathauto_alias_alter')]`):**
+  - Räätälöi automaattisia URL-aliaksia: lisää osoitteeseen sarjan nimen (`field_sarja`), pelitaksonomian nimen (`field_pelit`) tai vapaamuotoisen pelin nimen (`field_pelin_nimi`). Käyttää injektoitua `AliasCleanerInterface`-palvelua.
+- **`KonsolifinMiscFormHooks` (`#[Hook('form_user_form_alter')]`):**
+  - Piilottaa `field_slack_id`-kentän käyttäjiltä, joilla ei ole `toimitus`-roolia.
+- **`KonsolifinMiscPageAttachmentsHook` (`#[Hook('page_attachments')]`):**
+  - Tunnistaa kanoniset solmusivut (`entity.node.canonical`) ja liittää sivun `<head>`-osioon dataLayer-metatiedot injektoidun `DataLayerService`-palvelun avulla.
 
 ---
 

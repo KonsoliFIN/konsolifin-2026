@@ -1,6 +1,5 @@
-# konsolifin.services.yml
-#
-# Register services used by the konsolifin module.
+parameters:
+  konsolifin_misc.skip_procedural_hook_scan: true
 
 services:
 
@@ -40,5 +39,17 @@ services:
     class: Drupal\konsolifin_misc\Service\DataLayerService
     arguments:
       - '@date.formatter'
+  Drupal\konsolifin_misc\Service\DataLayerService: '@konsolifin_misc.datalayer'
 
+  # OOP Hook implementations.
+  Drupal\konsolifin_misc\Hook\KonsolifinMiscThemeHooks:
+    autowire: true
 
+  Drupal\konsolifin_misc\Hook\KonsolifinMiscPathautoHooks:
+    autowire: true
+
+  Drupal\konsolifin_misc\Hook\KonsolifinMiscFormHooks:
+    autowire: true
+
+  Drupal\konsolifin_misc\Hook\KonsolifinMiscPageAttachmentsHook:
+    autowire: true

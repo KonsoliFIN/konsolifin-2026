@@ -28,3 +28,8 @@ $loader->addPsr4('Drupal\\taxonomy\\', $drupal_root . '/core/modules/taxonomy/sr
 $loader->addPsr4('Drupal\\workflow\\', $drupal_root . '/modules/contrib/workflow/src');
 $loader->addPsr4('Drupal\\konsolifin_workflows\\', $drupal_root . '/modules/custom/konsolifin_workflows/src');
 
+// Register pathauto and media/file namespaces for hook testing.
+$loader->addPsr4('Drupal\\pathauto\\', $drupal_root . '/modules/contrib/pathauto/src');
+$loader->addPsr4('Drupal\\media\\', $drupal_root . '/core/modules/media/src');
+$loader->addPsr4('Drupal\\file\\', $drupal_root . '/core/modules/file/src');
+
