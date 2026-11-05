@@ -1,0 +1,8 @@
+uuid: ee6e2a85-5cdf-4d28-be50-a629d38f26ab
+langcode: fi
+status: true
+dependencies: {  }
+id: node__peliarvostelu
+label: 'Sisältö: Peliarvostelu'
+tags:
+  title: 'Peliarvostelu: [node:field_pelit:entity:name] | KonsoliFIN'

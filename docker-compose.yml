@@ -14,7 +14,7 @@ services:
 
   web:
     container_name: konsolifin_web
-    image: thecodingmachine/php:8.4-v4-apache
+    image: thecodingmachine/php:8.5-v5-apache
     working_dir: /var/www
     ports:
       - "8080:80"

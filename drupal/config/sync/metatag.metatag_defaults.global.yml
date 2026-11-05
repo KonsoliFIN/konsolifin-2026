@@ -8,4 +8,8 @@ id: global
 label: Yleinen
 tags:
   canonical_url: '[current-page:url]'
+  description: 'KonsoliFIN on Suomen suurin harrastajavoimin pyöritettävä videopeliaiheinen uutissivusto ja keskustelupalsta.'
+  keywords: 'videopelit,pelikonsolit,playstation,xbox,nintendo'
+  og_description: 'KonsoliFIN on Suomen suurin harrastajavoimin pyöritettävä videopeliaiheinen uutissivusto ja keskustelupalsta.'
+  og_site_name: KonsoliFIN
   title: '[current-page:title] | [site:name]'
