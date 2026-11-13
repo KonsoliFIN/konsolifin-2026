@@ -138,16 +138,6 @@ test.describe('KonsoliFIN Staging - Ylläpito ja kirjautuminen', () => {
 test.describe('KonsoliFIN Staging - Forum-tunnuksilla toimiminen', () => {
 
     test.beforeEach(async ({ page }) => {
-        // Avataan etusivu ja kuitataan evästekysely tarvittaessa
-        await page.goto('/');
-        await page.waitForTimeout(1000);
-        const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
-        if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
-            await cookieButton.click();
-        }
-    });
-
-    test('Forum-tunnuksilla kirjautuminen, oman profiilin tarkistus ja uloskirjautuminen', async ({ page }) => {
         const stagingUser = process.env.FORUM_USERNAME;
         const stagingPass = process.env.FORUM_PASSWORD;
 
@@ -157,14 +147,22 @@ test.describe('KonsoliFIN Staging - Forum-tunnuksilla toimiminen', () => {
             'Ohitettu: FORUM_USERNAME ja/tai FORUM_PASSWORD puuttuvat .env-tiedostosta.'
         );
 
+        // Avataan etusivu ja kuitataan evästekysely tarvittaessa
+        await page.goto('/');
+        await page.waitForTimeout(1000);
+        const cookieButtonMain = page.getByRole('button', { name: 'HYVÄKSY' });
+        if (await cookieButtonMain.isVisible({ timeout: 3000 }).catch(() => false)) {
+            await cookieButtonMain.click();
+        }
+
         await page.goto('/');
         await page.getByRole('button', { name: 'Log in with Forum stage' }).click();
 
         // Foorumilla tulee todennäköisesti uusi evästekysely
         await page.waitForTimeout(1000);
-        const cookieButton = page.getByRole('button', { name: 'HYVÄKSY' });
-        if (await cookieButton.isVisible({ timeout: 3000 }).catch(() => false)) {
-            await cookieButton.click();
+        const cookieButtonForum = page.getByRole('button', { name: 'HYVÄKSY' });
+        if (await cookieButtonForum.isVisible({ timeout: 3000 }).catch(() => false)) {
+            await cookieButtonForum.click();
         }
 
         const usernameField = page.getByRole('textbox', { name: /Käyttäjänimi tai sähkö/i });
@@ -179,11 +177,44 @@ test.describe('KonsoliFIN Staging - Forum-tunnuksilla toimiminen', () => {
 
         const authorizeButton = page.getByRole('button', { name: 'Authorize' });
         await authorizeButton.click();
+    });
 
+    test('Forum-tunnuksilla kirjautuminen, oman profiilin tarkistus ja uloskirjautuminen', async ({ page }) => {
         await page.getByRole('link', { name: 'Etusivu' }).click();
         await page.getByRole('link', { name: 'Oma käyttäjätilini' }).click();
         await page.getByRole('link', { name: 'Kirjaudu ulos' }).click();
 
+    });
+
+    test('Forum-tunnuksilla kirjautuminen ja uuden uutisen kirjoittaminen', async ({ page }) => {
+        await page.getByRole('link', { name: 'Työpöytä' }).click();
+        await page.getByRole('link', { name: 'Uutinen', exact: true }).click();
+
+        const now = new Date();
+        const pad = (/** @type {number} */ n) => String(n).padStart(2, '0');
+        const timestamp = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        await page.locator('#edit-title-0-value').fill(`Uutinen ${timestamp}`);
+
+        const bodyEditor = page.locator('#edit-body-wrapper .ck-editor__editable[contenteditable="true"]');
+        await bodyEditor.click();
+        await bodyEditor.fill('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .');
+
+        await page.locator('#edit-workflow-uutisputki-tyon-alla').click();
+
+        const statusMessage = page.locator('.messages--status, [data-drupal-messages]').first();
+        await expect(statusMessage).toContainText(new RegExp(`Uutinen.*${timestamp}.*on lisätty\\.`));
+
+        const createdLink = statusMessage.getByRole('link', { name: new RegExp(timestamp) });
+        await expect(createdLink).toBeVisible();
+        await expect(createdLink).toHaveAttribute('href', /\/uutinen\/.+/);
+
+        await page.getByRole('link', { name: 'Muokkaa' }).click();
+
+        await page.locator('#edit-field-hero-open-button').click();
+        await page.locator('input[name^="media_library_select_form["]').first().check();
+        await page.getByRole('button', { name: 'Insert selected' }).click();
+        await page.waitForTimeout(1000);
+        await page.getByRole('button', { name: 'Julkaise' }).click();
     });
 
 });

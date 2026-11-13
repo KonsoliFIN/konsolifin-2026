@@ -6,6 +6,7 @@
   "scripts": {
     "test": "playwright test",
     "test:local": "playwright test --project=chromium",
+    "test:local:headed": "playwright test --project=chromium --headed",
     "test:staging": "playwright test --project=staging",
     "test:staging:headed": "playwright test --project=staging --headed",
     "test:staging:ui": "playwright test --project=staging --ui",
