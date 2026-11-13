@@ -46,5 +46,32 @@ test.describe('Drupal Core Päivityksen Regressiotestit', () => {
         await page.getByRole('link', { name: 'Games Page Settings' }).click();
         await page.getByRole('link', { name: 'Etusivu' }).click();
         await page.getByRole('link', { name: 'KonsoliFIN', exact: true }).click();
+        await page.getByRole('link', { name: 'Työpöytä' }).click();
+        await page.getByRole('link', { name: 'Uutinen', exact: true }).click();
+
+        const now = new Date();
+        const pad = (/** @type {number} */ n) => String(n).padStart(2, '0');
+        const timestamp = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        await page.locator('#edit-title-0-value').fill(`Uutinen ${timestamp}`);
+
+        const bodyEditor = page.locator('#edit-body-wrapper .ck-editor__editable[contenteditable="true"]');
+        await bodyEditor.click();
+        await bodyEditor.fill('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .');
+        await page.locator('#edit-workflow-uutisputki-tyon-alla').click();
+
+        const statusMessage = page.locator('.messages--status, [data-drupal-messages]').first();
+        await expect(statusMessage).toContainText(new RegExp(`Uutinen.*${timestamp}.*on lisätty\\.`));
+
+        const createdLink = statusMessage.getByRole('link', { name: new RegExp(timestamp) });
+        await expect(createdLink).toBeVisible();
+        await expect(createdLink).toHaveAttribute('href', /\/uutinen\/.+/);
+
+        await page.getByRole('link', { name: 'Muokkaa' }).click();
+
+        await page.locator('#edit-field-hero-open-button').click();
+        await page.locator('input[name^="media_library_select_form["]').first().check();
+        await page.getByRole('button', { name: 'Insert selected' }).click();
+        await page.waitForTimeout(1000);
+        await page.getByRole('button', { name: 'Julkaise' }).click();
     })
 });
