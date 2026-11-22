@@ -29,8 +29,8 @@
 }
 
 .site-branding__logo img {
-  height: 75px;
-  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 .site-branding__name {
@@ -85,8 +85,13 @@
   transition: transform var(--transition-base);
 }
 
-.menu-toggle__icon::before { top: -7px; }
-.menu-toggle__icon::after { top: 7px; }
+.menu-toggle__icon::before {
+  top: -7px;
+}
+
+.menu-toggle__icon::after {
+  top: 7px;
+}
 
 .menu-toggle[aria-expanded="true"] {
   position: fixed;
