@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6840e0a9613e6f8711b3ff13b5b9c8a1",
+    "content-hash": "d415a6df24c6531e229dd7d53fda7cf0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3165,17 +3165,17 @@
         },
         {
             "name": "drupal/workflow",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/workflow.git",
-                "reference": "2.1.13"
+                "reference": "2.1.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/workflow-2.1.13.zip",
-                "reference": "2.1.13",
-                "shasum": "4f27c76ac2a737df48e5ab898e99def910d123d1"
+                "url": "https://ftp.drupal.org/files/projects/workflow-2.1.14.zip",
+                "reference": "2.1.14",
+                "shasum": "a5a584ea1c2908843bc65014307cab81ac76f430"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10 || ^11 || ^12"
@@ -3187,8 +3187,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.13",
-                    "datestamp": "1789727694",
+                    "version": "2.1.14",
+                    "datestamp": "1791557908",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
