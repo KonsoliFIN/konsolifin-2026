@@ -1,4 +1,4 @@
-When the bug is officially fixed in an upstream release of the module (e.g., `2.1.14`), here is the standard, foolproof process to update and remove the patch:
+When the bug is officially fixed in an upstream release of the module (e.g., `2.1.15`?), here is the standard, foolproof process to update and remove the patch:
 
 ---
 
